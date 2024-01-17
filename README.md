@@ -1,4 +1,7 @@
-# [Eleventy](https://www.11ty.dev/) version of brootaylor.com &#8674; [![Netlify Status](https://api.netlify.com/api/v1/badges/712367e5-7510-4813-9a24-5805f092cfa1/deploy-status)](https://app.netlify.com/sites/brootaylor-eleventy/deploys)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/brootaylor/brootaylor-v2) [![1x-badge](https://img.shields.io/github/stars/cutenode/1x.engineer.svg?color=purple&label=1x%20Engineers&logo=image%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADAElEQVRoQ%2B1YPZMNQRQ9RyYiUCVkI0J%2BASUi4xfYzYjsVsmXX2BFZFauigyJ4hcQEtkNVQmoEjvqqh7VM6%2B%2FZ%2BapqXodvtdz%2B56%2B59zT3cTCBxeePzYA%2FncFNxUoqYCkEwC2AbwjeVTyTemctVRA0iUAH11SxwBekLxfmmRq3roA3AHwxEvkLcnrSwJwCOC2l%2FBDkg%2BWBOAzgAtewjdIvlkEAElnAHwDYEK28RvAWZLflwLAuP7aS%2FYLyYtTJG8xZhexJOP6vpfwc5LWUicZ6wDwHsAVL9u7JJ9Okv2YCki6SfJVKhFnYL8AnPTmXSb5yf%2BuJFZsnaYKSHoEYBfAIcmdWPCBgdk0E64J2IT8d0h65lz6gORebWWqAEg6DeAlgKveQjskrc%2BvDElJA5NkWjAA3TC63SL5oxRIMQC3m5b8%2BUHwn%2FZbaFFJUQNzm2HnolODePabgejRbBSF3E4ZbawC%2FrBzjWkhuJikpIG5TTEdnRvEtQrsxSrrz81WwOP7cBM%2BuOSD5S41MFcJA%2BF3qm6trC6iACJ87wI%2FJmkijg5JVQYm6QDAvUDApC6CADJ83y0pbYuBOaoakGJdrACwnuw6QxXfhzsnqcnAMrqwjtfznhCAr4FOk%2BR7IHk7uGUNLMa%2FhC6OSG4lRSzJ2tiwK1T15xIDy%2Bgn5Df2yTHJXhuPUcj6dzEPAxVovoFl9LedpZAlM7Y%2Fpwwss%2FPmzFV%2Bk2ujTf05Z2AhEK1%2BU2JkVf251MA6EGP9JgvAUcpKW9SfawxsCr8pAlCgi63uMFdqYG7nrWWP8ptiAA6ELTbURe84XWNggeN0ld9YTlUAPN52uujdb0tvYL6IvY6VPV%2BFxN8EwFVj5UrZamBrv1ImjgDNBpbyh9R%2FzRWI9PLZnhBjIKYGMNsT4uwAag2slTLD7yarQI2BTZV8cxuN8H%2FWJ8R1UKjpBja2GlNSyMzNrqPdZWjlCXFsspMaWcIL7MZ0zT07%2FntCnCP5STUwV4K5uJNRKLfQXP9vAMy1s6VxF1%2BBPxWSokDSvlDHAAAAAElFTkSuQmCC&style=for-the-badge)](https://1x.engineer)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/712367e5-7510-4813-9a24-5805f092cfa1/deploy-status)](https://app.netlify.com/sites/brootaylor-eleventy/deploys)
+
+# brootaylor.com
 
 This version of the website is comprised of static files built using the fabulous [Eleventy](https://www.11ty.io/) (SSG), configurable [NPM](https://docs.npmjs.com/cli/npm) build scripts, global data configuration, [Sass](https://sass-lang.com/) powered CSS system and [rollup.js](https://rollupjs.org/) to bundle JavaScript modules. Much of the content is also available offline thanks to a [Service Worker](https://developers.google.com/web/fundamentals/primers/service-workers).
 
@@ -100,6 +103,71 @@ brootaylor.com
 
 ---
 
+## Getting setup
+
+Instructions for cloning and installing.
+
+```bash
+# Clone this repository
+git clone git@github.com:brootaylor/brootaylor-v2.git
+
+# Go to the working directory
+cd brootaylor-v2
+
+# Install dependencies
+npm install
+```
+
+## Netlify CI & CD setup
+
+Instructions for installing, creating a [*new Netlify instance*], or linking a local dev instance to an existing remote Netlify site instance.
+
+```bash
+# Install the Netlify CLI globally
+npm i -g netlify-cli
+
+# Set up the deployment rules => (follow the instructions in this process)
+netlify init
+
+# Deploy to Netlify
+netlify deploy
+```
+
+## Useful Netlify commands
+
+Here are some other Netlify commands that can often be useful.
+
+```bash
+# Opens current site admin UI in Netlify
+netlify open:admin
+
+# Opens current site url in default browser
+netlify open:site
+
+# Handle various site operations
+netlify sites
+
+# Prints status info about the current Netlify user and site
+netlify status
+
+# Create a new deploy from the `dist` folder (creates a draft URL)
+netlify deploy
+
+# Manage netlify functions
+# Ref: https://www.netlify.com/tags/functions/
+netlify functions
+
+# list installed plugins
+# Ref: https://www.netlify.com/tags/plugins/
+netlify plugins
+
+# Link local repo or project folder (ie. `dist`) to an existing site on Netlify
+netlify link
+
+# Unlink local folder (ie. `dist`) from a Netlify site
+netlify unlink
+```
+
 ## Manually building & deploying
 
 ```bash
@@ -157,120 +225,6 @@ netlify dev --live
 
 ---
 
-## Versioning *(before deployment)*
-
-Use commands like the following to automatically update / change the `package.json` *version* number...
-
-```bash
-# Generating a "major" version tag (eg. >>1<<.0.0)
-npm version major
-
-# Generating a "minor" version tag (eg. 1.>>1<<.0)
-npm version minor
-
-# Generating a "patch" version tag (eg. 1.0.>>1<<)
-npm version patch
-```
-
-```markdown
-The `serviceworker.js` file dynamically use the `package.json` version value as its version.
-This makes sure a newer version is installed when updated content is deployed.
-```
-
-To make the `git commit` more meaningful, add a *message* to the version `major`, `minor` or `patch`.
-
-```bash
-# Something like this...
-npm version patch -m "Upgraded to version %s. Updated the service worker."
-```
-
-## Branching model
-
-This is the branching model I use when version controlling my code.
-
-**Production branch**: `main`
-
-```md
-- This is the branch for deploying code ready for release.
-- The `release/` branch merges into this branch.
-```
-
-**Development branch**: `develop`
-
-```md
-- This is the branch where all the development work is gathered.
-- The `feature/` branches merge into this branch.
-```
-
-**Feature branch**: `feature/`
-
-```md
-- The `feature/` branches use `develop` as their parent branch.
-- When a feature is complete, it gets merged back into develop.
-- Features should never interact directly with main.
-```
-
-**Release branch**: `release/`
-
-```md
-- Once develop has acquired enough features for a release, (or a predetermined release date is approaching),
-  fork a `release/` branch off of `develop`.
-- At this point a new `major`, `minor` or `patch` version should be generated. (See "Versioning" section).
-- The `release/` branch is then merged into both the `main` (production) and `develop` branches.
-- The release branch can then be deleted.
-```
-
-**Bugfix branch**: `bugfix/`
-
-```md
-- The `bugfix/` branches are used to fix `release/` branches.
-```
-
-**Hotfix branch**: `hotfix/`
-
-```md
-- The `hotfix/` branches are used to fix the production branch, `main`, without interrupting changes in the development branch.
-- Usually used to fix urgent bugs on production, that have a high impact.
-- The `hotfix/` branch is then merged into both the `main` (production) and `develop` branches.
-```
-
-## Split Test branching
-
-This branching strategy allows me to deploy branch-based (Beta) changes - and then use [Netlify to run the split tests](https://docs.netlify.com/site-deploys/split-testing/).
-
-**Beta test branch**: `beta-test-*`
-
-```md
-- These branches are used in the Netlify split tests.
-- The beta test branch - eg. `beta-test-1` - is created off the `develop` branch.
-- The beta test branches are added/removed in the Netlify deploy context settings.
-- When a beta test branch has been tested and approved, it gets merged back into the `develop` branch.
-- If the test isn't successful, the branch can be deleted from the repo and removed from the Netlify deploy context settings.
-```
-
-**Beta test feature branch**: `feature/beta-test-*/*`
-
-```md
-- The beta test 'feature' branches are created off the beta test branch - eg. `feature/beta-test-1/WSB-123` or `feature/beta-test-1/hero-banner`.
-- These are features being developed specifically for the relative beta test branch.
-- The beta test 'feature' branches are merged back into the beta test branch.
-```
-
-## Split Test Tracking
-
-This is useful in determining which branches user's viewed. This placeholder script snippet is currently [injected into the code using Netlify](https://docs.netlify.com/site-deploys/post-processing/snippet-injection/#snippet-injection-ui).
-
-```html
-<!-- Placeholder script rendering the 'BRANCH' value (eg. 'beta-test-1') -->
-<!-- This is useful when doing Split Testing -->
-<!-- This value could be passed into an Analytics call at some stage -->
-<script>
-  var branch = function() {
-    Branch: '{{ BRANCH }}'
-  }
-</script>
-```
-
 ## Running audits
 
 ```bash
@@ -283,3 +237,7 @@ npm run audit:accessibility
 # Runs a "lighthouse" performance report
 npm run audit:performance
 ```
+
+---
+
+© [Bruce Taylor](https://brootaylor.com)
