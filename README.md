@@ -17,7 +17,7 @@ It's deployed by and hosted with [Netlify](https://www.netlify.com/).
 * ✅ [Accessibility test runner](https://github.com/pa11y/pa11y-ci)
 * 🌈 [Sass](https://sass-lang.com/) powered CSS system using the [Dart Sass implementation](https://sass-lang.com/dart-sass) - (utilising modern [custom CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) and methods)
 * 🧩 [Design Tokens](https://github.com/brootaylor/brootaylor-v3/tree/main/tokens)
-* 🎳 [JS config to handle code-splitting](https://github.com/brootaylor/brootaylor-v3/blob/main/config/rollup.config.js) (ie. splitting code into smaller chunks to be loaded on demand)
+* 🎳 [JS config to handle code-splitting](https://github.com/brootaylor/brootaylor-v3/blob/main/config/rollup.config.mjs) (ie. splitting code into smaller chunks to be loaded on demand)
 * 🎛 [Site & build config](https://github.com/brootaylor/brootaylor-v3/blob/main/netlify.toml)
 * 🛄 [Selective build outputs](https://github.com/brootaylor/brootaylor-v3/blob/main/.eleventyignore) using `.eleventyignore`
 * ↩️ [Redirects](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_redirects) for local `netlify dev`

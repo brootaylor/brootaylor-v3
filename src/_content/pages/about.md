@@ -11,19 +11,6 @@ bodyClass: "about"
 date: 2024-01-08T12:21:00
 ---
 
-{% from "components/core/images/images.njk" import imageFigure %}
-
-{{ imageFigure(
-  "/assets/images/pages/about/about_hero.webp",
-  "Outside view of accommodation building",
-  "2400",
-  "1600",
-  "Blah blah",
-  false,
-  false,
-  "lazy")
-}}
-
 Before I ever touched a computer, my life revolved around teasing cows, off-road motorbiking, hiking and wild camping in the mountains, staring up at the stars, canoeing, fishing and sport. That certainly feels like quite some time ago now!
 
 My wife and I moved to the UK at the tail end of 1995 &mdash; *initially for one year* &mdash; but as you've probably gathered&hellip; we never left. We have 3 children. 2 sons and a daughter.
