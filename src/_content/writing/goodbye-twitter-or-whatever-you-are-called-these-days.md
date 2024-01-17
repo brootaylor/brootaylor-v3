@@ -20,7 +20,7 @@ Twitter, we've certainly had an on-and-off relationship over the years haven't w
 
 Numerous times, I've allowed you to creep back into my life &mdash; *(who the heck knows why!)* &mdash; only to discover that you often do me more harm than good. You have a knack for making me feel awful about myself and my place in this world.
 
-**Every single time**.
+**Every. Single. Time.**
 
 Of course, I can't solely lay the blame at your doorstep. I'm equally complicit in this unhealthy affair. My desire to belong, to have my voice heard, to be noticed, to feel valued. This need occasionally clouds my judgment and leads me to forget why I walked away from you in the first place. I mean, I *even* reopened the door to Facebook recently, a platform I had abandoned over a decade ago!
 
