@@ -3,7 +3,7 @@
 
 # brootaylor.com
 
-This version of the website is comprised of static files built using the fabulous [Eleventy](https://www.11ty.io/) (SSG), configurable [NPM](https://docs.npmjs.com/cli/npm) build scripts, global data configuration, [Sass](https://sass-lang.com/) powered CSS system and [rollup.js](https://rollupjs.org/) to bundle JavaScript modules. Much of the content is also available offline thanks to a [Service Worker](https://developers.google.com/web/fundamentals/primers/service-workers).
+This version of my website is comprised of static files built using the fabulous [Eleventy](https://www.11ty.io/) (SSG), configurable [NPM](https://docs.npmjs.com/cli/npm) build scripts, global data configuration, [Sass](https://sass-lang.com/) powered CSS system and [rollup.js](https://rollupjs.org/) to bundle JavaScript modules. Much of the content is also available offline thanks to a [Service Worker](https://developers.google.com/web/fundamentals/primers/service-workers).
 
 It's deployed by and hosted with [Netlify](https://www.netlify.com/).
 
@@ -28,6 +28,7 @@ It's deployed by and hosted with [Netlify](https://www.netlify.com/).
   * [`manifest.json`](https://github.com/brootaylor/brootaylor-v2/blob/main/sites/eleventy/src/manifest.njk)
   * [`sitemap.xml`](https://github.com/brootaylor/brootaylor-v2/blob/main/sites/eleventy/src/sitemap.njk)
   * [`robots.txt`](https://github.com/brootaylor/brootaylor-v2/blob/main/sites/eleventy/src/robots.njk)
+  * [`ai.txt`](https://github.com/brootaylor/brootaylor-v2/blob/main/sites/eleventy/src/ai.njk)
   * [`feed.xml`](https://github.com/brootaylor/brootaylor-v2/blob/main/sites/eleventy/src/feed.njk)
 * [JAMstack](https://jamstack.org/) methodology
 * [Eleventy](https://www.11ty.io/) (SSG)
