@@ -195,10 +195,10 @@ Here are a few ways to *watch* your code changes (while developing) and getting 
 ### 1. Watch "local" environment
 
 * Uses browserSync to open a local server
-* Various NPM commands run on the `watch` command and output any changes
+* Various NPM commands run on the `dev` command and output any changes
 
 ```bash
-npm run watch
+npm run dev
 ```
 
 ### 2. Spawn a full "local Netlify" environment
