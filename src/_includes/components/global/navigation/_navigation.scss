@@ -1,0 +1,59 @@
+/**********************************************************
+ * Main navigation styles
+ **********************************************************/
+
+@use '../../../../styles/abstracts' as *;
+@use '../../../../styles/utilities' as *;
+
+.navigation {
+  padding: 1rem;
+
+    @include min-width($breakpoint-large) {
+      padding: 0 2rem;
+    }
+
+  a {
+    color: var(--black);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    box-shadow: none;
+    line-height: 2;
+    display: inline-block;
+    padding: 0.2em 0;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &[aria-current="page"] {
+      color: var(--black);
+      text-decoration-color: var(--green-custom);
+    }
+
+    &[aria-current="page"] {
+      font-weight: 700;
+    }
+  }
+
+  &__list {
+    @include font-size(16px);
+    display: flex;
+    flex-wrap: wrap;
+
+    & > li {
+      display: inline-flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        &::after {
+          content: '\00B7';
+          font-size: 1.6rem;
+          line-height: 0;
+          opacity: 0.4;
+          padding: 0 0.5em;
+        }
+      }
+    }
+  }
+}

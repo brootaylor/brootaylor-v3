@@ -1,0 +1,64 @@
+@use '../../../../styles/abstracts' as *;
+
+
+.message {
+  // Create `--message-background` and `--message-text` variables scoped to this class
+  background: var(--message-background);
+  color: var(--message-text);
+  text-wrap: balance;
+  text-align: center;
+  // position: sticky;
+  // top: 0;
+  padding: 1em;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  border: 1px solid var(--grey-dark);
+  border-width: 1px 0 2px 0;
+  box-shadow: 0 10px 0 -5px var(--green-custom), 0 20px 0 -10px var(--orange-custom);
+  margin-top: -2rem;
+
+  // Fallback for older browsers
+  margin-bottom: 3rem;
+
+  // Browsers supporting `clamp()`
+  @supports (margin-bottom: clamp(2.5rem, 5vw, 4rem)) {
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  }
+
+    // Creates an offset type look using these negative margins...
+    @include min-width($breakpoint-medium) {
+      margin-top: -3rem;
+    }
+
+    @include min-width($breakpoint-large) {
+      // top: 3.8rem;
+      margin-top: -4rem;
+      margin-left: -0.75rem;
+      margin-right: -0.75rem;
+    }
+
+  // 'Info' type message
+  &--info {
+    --message-text: var(--black);
+    --message-background: var(--grey-light);
+  }
+
+  // 'Alert' type message
+  &--alert {
+    --message-text: var(--black);
+    --message-background: var(--orange-custom);
+  }
+
+  // Ukraine theme overrides...
+  .theme-ukraine & {
+    top: 4.3rem;
+    margin-top: -1.5rem;
+
+    @include min-width($breakpoint-medium) {
+      margin-top: -2.5rem;
+    }
+
+    @include min-width($breakpoint-large) {
+      margin-top: -2rem;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+/**********************************************************
+ * Footer styles
+ **********************************************************/
+
+@use '../../../../styles/abstracts' as *;
+@use '../../../../styles/utilities' as *;
+
+
+#footer {
+  background-color: var(--grey-light);
+  padding: 1rem 0;
+  border-top: 1px solid var(--grey-mid);
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  small {
+    font-size: 0.90rem;
+    padding: 0.5rem 0;
+
+      @include min-width($breakpoint-small) {
+        flex: 1 1 55%;
+        max-width: 55%;
+        margin-right: 1rem;
+      }
+  }
+
+  nav {
+    font-size: 0.90rem;
+
+    ul {
+      @include font-size(16px);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    li {
+      line-height: 0;
+      padding: 0.5em 1rem 0.5em 0;
+
+      // Only the last 2 list items in this list
+      &:nth-last-child(-n+2) {
+        font-size: 0.9rem;
+      }
+
+      // All list items except the last 2
+      &:not(:nth-last-child(-n+2)) {
+        a {
+          display: inline-flex;
+          box-shadow: none;
+        }
+      }
+
+      // Targeting the list element that's 3rd last
+      &:nth-last-child(3) {
+        a {
+          font-size: 0.9rem;
+          text-decoration-line: line-through;
+          opacity: 0.6;
+        }
+      }
+
+      &:nth-last-child(2) {
+        @include min-width($breakpoint-small) {
+          margin-left: 3em;
+        }
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    a {
+      &:hover {
+        color: var(--black);
+      }
+    }
+  }
+}

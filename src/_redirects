@@ -1,0 +1,29 @@
+# Redirect rules for developing locally
+# netlify.toml `[dev] publish` rule uses this file - eg. when using `netlify dev` command
+# This isn't deployed / published to production
+
+# Pages (standard)
+/about /about.html 200!
+/about/me /about/me.html 200!
+/experience /experience.html 200!
+/work /work.html 200!
+/accessibility /accessibility.html 200!
+/styleguide /styleguide.html 200!
+/reading /reading.html 200!
+
+/contact /contact.html 200!
+/contact/thanks /contact/thanks.html 200!
+
+/writing /writing.html 200!
+/writing/2022-02-22/redesigning-in-the-open /writing/2022-02-22/redesigning-in-the-open.html 200!
+
+/notes /notes.html 200!
+/bookmarks /bookmarks.html 200!
+/photos /photos.html 200!
+
+# Error pages
+/error/404 /error/404.html 200!
+
+# Files eg. CV
+/BruceTaylorCV /assets/docs/cv/BruceTaylorCV.pdf 200!
+/BruceTaylorCV.pdf /assets/docs/cv/BruceTaylorCV.pdf 200!

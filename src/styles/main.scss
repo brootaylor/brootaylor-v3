@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+
+/***************************************
+ * Base rules
+ *
+ * Eg. global reset, `:root` custom CSS properties, typography and grid.
+ */
+@use 'base';
+
+/***************************************
+ * Utility (helper) classes
+ *
+ * Eg. `.wrapper`, `.flow`, `.visually-hidden`
+ */
+@use 'utilities';
+
+/***************************************
+ * Components
+ *
+ * Eg. 'core' (links, buttons etc.), 'global' (logo, navigation etc.) and 'units' (card, carousel etc.)
+ */
+@use '../_includes/components';
+
+/***************************************
+ * Layout / page-specific
+ *
+ * Eg. base, homepage, contact page etc.
+ */
+ @use '../_includes/layouts';
+ @use 'pages';

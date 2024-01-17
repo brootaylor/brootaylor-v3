@@ -1,0 +1,54 @@
+/**********************************************************
+ * Links
+ **********************************************************/
+
+@use '../../../../styles/abstracts' as *;
+
+
+a {
+  &,
+  &:active,
+  &:visited {
+      color: inherit;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: inset 0 -0.45em 0 var(--orange-custom-light);
+  }
+
+  &:hover,
+  &:active {
+      outline: none;
+  }
+
+  &:hover {
+      box-shadow: inset 0 -1em 0 var(--orange-custom-light);
+  }
+
+  // In the context of an article...
+  article & {
+    // External link
+    &[rel~="external"] {
+      &::after {
+        background: url(/assets/icons/icon_external.svg) no-repeat;
+        content: "";
+        display: inline-block;
+        width: 0.75em;
+        height: 0.75em;
+        margin-left: 0.125em;
+        margin-right: 0.125em;
+        vertical-align: baseline;
+        opacity: 0.4;
+      }
+
+      // On hover...
+      &:hover::after {
+          opacity: 1;
+      }
+    }
+  }
+
+  // If a link's in a list within an article, but the list item doesn't have a class...
+  article li:not([class]) & {
+    line-height: 1.8;
+  }
+}

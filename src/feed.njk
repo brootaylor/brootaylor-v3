@@ -1,0 +1,41 @@
+---
+permalink: '/feed.xml'
+hidden: true
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ site.rootUrl }}">
+	<title>{{ site.name }}</title>
+	<subtitle>{{ site.metaTitle }}</subtitle>
+	<link rel="self" href="{{ site.rootUrl }}{{ permalink }}" type="application/atom+xml"/>
+	<link rel="alternate" href="{{ site.rootUrl }}/" type="text/html"/>
+	{% if collections.post | length %}
+	<updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+	{% endif %}
+	<id>{{ site.rootUrl }}</id>
+	<author>
+		<name>{{ site.author.name }}</name>
+		<email>{{ site.author.email }}</email>
+		<uri>{{ site.author.url }}</uri>
+	</author>
+	{% for post in collections.post | reverse %}
+		{% set absolutePostUrl %}{{ site.rootUrl }}{{ post.url | pretty }}{% endset %}
+		{% set postDate %}{{ post.date | dateToRfc3339 }}{% endset %}
+		<entry>
+			<title>{{ post.data.title }}</title>
+			<link rel="alternate" href="{{ absolutePostUrl }}" type="text/html"/>
+			<updated>{{ postDate }}</updated>
+			<id>{{ absolutePostUrl }}</id>
+			<content type="html" xml:base="{{ absolutePostUrl }}"><![CDATA[
+				{%- if post.data.bookmarkExternal -%}
+					Original post can be viewed at: <a href="{{ post.data.bookmarkExternal }}" rel="external">{{ post.data.bookmarkLabel }}</a>
+				{%- endif -%}
+				{%- if post.data.lead -%}
+					<p>{{ post.data.lead | safe }}</p>
+				{%- endif -%}
+				{{ post.templateContent | safe }}
+				<p><a href="mailto:{{ site.author.email }}?subject=Replying%20to:%20“{{ post.data.title }}“">Reply via email</a></p>
+			]]></content>
+		</entry>
+	{% endfor %}
+</feed>

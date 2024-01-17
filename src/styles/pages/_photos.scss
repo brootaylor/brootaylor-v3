@@ -1,0 +1,11 @@
+/*********************************************
+ * Photos post page-specific rules
+ *********************************************/
+
+@use '../abstracts' as *;
+
+.photos {
+  figure {
+    max-width: 90ch;
+  }
+}

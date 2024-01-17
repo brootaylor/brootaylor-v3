@@ -1,0 +1,46 @@
+/******************************************
+ * "Root" custom CSS properties / variables
+ ******************************************/
+
+@use '../abstracts/config' as *;
+@use '../abstracts/functions' as *;
+
+
+/// Custom CSS Properties set on the `:root`
+///
+/// They are global placeholder values that can then be overridden in local CSS declaration scopes.
+
+:root {
+  /* Fonts */
+  --font-family-base: #{unquote(#{$font-family-base})};
+  --font-family-secondary: #{unquote(#{$font-family-secondary})};
+  --font-size-base-percent: 100%;
+  --font-colour-base: #{rgb-format($font-colour-base)};
+  --line-height-base: #{$line-height-base};
+
+  /* Colours (background) */
+  --background-colour: #{rgb-format($grey-dark)}; // `html` element
+  --background-colour-overlay: #{rgb-format($white)}; // `body` element
+
+
+  /* Colours (base) */
+  --black: #{rgb-format($black)};
+  --white: #{rgb-format($white)};
+  --grey-mid: #{rgb-format($grey-mid)};
+  --grey-light: #{rgb-format($grey-light)};
+  --grey-dark: #{rgb-format($grey-dark)};
+  --orange-custom: #{rgb-format($orange-custom)};
+  --orange-custom-light: #{rgb-format($orange-custom-light)};
+  --green-custom: #{rgb-format($green-custom)};
+  --green-custom-light: #{rgb-format($green-custom-light)};
+  --green-custom-lighter: #{rgb-format($green-custom-lighter)};
+  --green-custom-dark: #{rgb-format($green-custom-dark)};
+
+  /* Links */
+  --link-initial: var(--green-custom);
+  --link-text-hover: var(--green-custom-dark);
+  --link-border-hover: var(--green-custom-light);
+
+  /* Sizes */
+  --site-width: #{convert-to-rem($site-width)};
+}

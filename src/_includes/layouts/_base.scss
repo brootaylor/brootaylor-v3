@@ -1,0 +1,79 @@
+/*********************************************
+ * Base styles that affect the entire website
+ *********************************************/
+
+@use '../../styles/abstracts' as *;
+@use '../../styles/utilities/flow' as *;
+
+html {
+  background-color: var(--background-colour);
+
+    @include min-width($breakpoint-large) {
+      padding: 1.5rem;
+    }
+}
+
+body {
+  min-height: calc(100vh - 0.5rem);
+  background-color: var(--background-colour-overlay);
+
+    @include min-width($breakpoint-large) {
+      min-height: calc(100vh - 3rem);
+    }
+}
+
+#main {
+  padding-bottom: 2rem;
+  margin-top: 2em;
+
+    @include min-width($breakpoint-medium) {
+      padding-bottom: 3em;
+      margin-top: 3em;
+    }
+
+    @include min-width($breakpoint-large) {
+      padding-bottom: 4em;
+      margin-top: 4em;
+    }
+
+  // Making sure the `.flow` margin rules still apply..
+  // to `.no-list` elements in the main content area.
+  .no-list {
+    margin-top: var(--flow-space);
+  }
+}
+
+// This is using CSS Grid to define grid template areas
+// =====================================================
+// NOTE: Section and component-level grid layouts will be done in those Sass files
+// Progressive enhancement method
+// If the browser supports `grid`, it'll also support the `@supports` feature.
+@supports (display: grid) {
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 'header' 'main' 'footer'; // Helps 'visualise' the grid template areas
+  }
+
+  // "Header" contains the logo and nav
+  #header {
+    grid-area: header;
+  }
+
+  // "Main" is where are the primary content will render
+  #main {
+    grid-area: main;
+  }
+
+  // "Footer" is for the typical site info stuff
+  #footer {
+    grid-area: footer;
+  }
+}
+
+// Ukraine theming...
+.theme-ukraine {
+  .site-header {
+    box-shadow: 0 0.25em 0 0 rgb(0, 89, 184), 0 0.5em 0 0 rgb(255, 217, 0);
+  }
+}

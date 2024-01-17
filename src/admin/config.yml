@@ -1,0 +1,102 @@
+# Config for how content is created, modified and previewed using the Netlify CMS GUI.
+# ====================================================================================
+
+backend:
+  name: git-gateway
+  branch: main
+
+# when using the default proxy server port
+# local_backend: true
+
+local_backend:
+  # when using a custom proxy server port
+  url: http://localhost:8082/api/v1
+  # when accessing the local site from a host other than 'localhost' or '127.0.0.1'
+  allowed_hosts: ['192.168.0.1']
+
+# These lines should *not* be indented
+publish_mode: editorial_workflow # Ensures content goes through workflow first, ("Drafts" --> "In Review" --> "Ready"), before being published
+media_folder: "/src/assets/images/uploads" # Media files will be stored in the repo under /src/assets/images/uploads
+public_folder: "/assets/images/uploads" # The src attribute for uploaded media will begin with /assets/images/uploads
+site_url: https://brootaylor.com
+display_url: https://brootaylor.com
+logo_url: https://brootaylor.com/assets/images/common/logo.png
+
+collections:
+  # 'Writing'
+  - label: "Writing"
+    name: "writing"
+    description: "Here you'll find a few of my thoughts on a variety of things. Some web tech related, some philosophical, some of a religious nature and some just me trying to process something as honestly as I can."
+    folder: "sites/eleventy/src/_content/writing"
+    slug: "{{slug}}"
+    preview_path: "writing/{{year}}-{{month}}-{{day}}/{{slug}}" # A deployment preview URL. Allows a preview of the URL that's not on the production domain
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Description", name: "summary", widget: "string"}
+      - {label: "Lead", name: "lead", widget: "string", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime", picker_utc: true}
+      - {label: "Updated Date", name: "updated", widget: "datetime", default: "", picker_utc: true, required: false}
+      - label: "Location"
+        name: "location"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "locality", name: "locality", widget: "string", default: "Crawley"}
+          - {label: "Country", name: "country_name", widget: "string", default: "UK"}
+      - {label: "Categories", name: "category", widget: "list", allow_add: true}
+      - {label: "Hide this post?", name: "eleventyExcludeFromCollections", hint: "Excludes page from an Eleventy collection as well as being indexed by search engines.", widget: "boolean", default: false, required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  # 'Notes'
+  - label: "Notes"
+    name: "notes"
+    description: "Quick notes, thoughts and ramblings."
+    folder: "sites/eleventy/src/_content/notes"
+    identifier_field: "file-name" # Changing `identifier_field` to `file-name` so that default `title` isn't used in this instance
+    slug: "{{file-name}}"
+    preview_path: "notes/{{year}}-{{month}}-{{day}}/note_{{slug}}" # A deployment preview URL. Allows a preview of the URL that's not on the production domain
+    create: true
+    fields:
+      - {label: "File Name", name: "file-name", widget: "string"}
+      - {label: "Meta Description", name: "summary", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", picker_utc: true}
+      - {label: "Updated Date", name: "updated", widget: "datetime", default: "", picker_utc: true, required: false}
+      - label: "Location"
+        name: "location"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "locality", name: "locality", widget: "string", default: "Crawley"}
+          - {label: "Country", name: "country_name", widget: "string", default: "UK"}
+      - {label: "Categories", name: "category", widget: "list", allow_add: true}
+      - {label: "Hide this post?", name: "eleventyExcludeFromCollections", hint: "Excludes page from an Eleventy collection as well as being indexed by search engines.", widget: "boolean", default: false, required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  # 'Bookmarks'
+  - label: "Bookmarks"
+    name: "bookmarks"
+    description: "Links to articles and various things I've enjoyed and found interesting. Technical and non-technical. Quite a few of them offer perspectives / advice I appreciate."
+    folder: "sites/eleventy/src/_content/bookmarks"
+    slug: "{{slug}}"
+    preview_path: "bookmarks/{{year}}-{{month}}-{{day}}/{{slug}}" # A deployment preview URL. Allows a preview of the URL that's not on the production domain
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Description", name: "summary", widget: "string"}
+      - {label: "Lead", name: "lead", widget: "string", required: false}
+      - {label: "Bookmark URL", name: "bookmarkExternal", widget: "string"}
+      - {label: "Bookmark Label", name: "bookmarkLabel", widget: "string"}
+      - {label: "Bookmark Author", name: "bookmarkAuthor", widget: "string", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime", picker_utc: true}
+      - {label: "Updated Date", name: "updated", widget: "datetime", default: "", picker_utc: true, required: false}
+      - label: "Location"
+        name: "location"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "locality", name: "locality", widget: "string", default: "Crawley"}
+          - {label: "Country", name: "country_name", widget: "string", default: "UK"}
+      - {label: "Categories", name: "category", widget: "list", allow_add: true}
+      - {label: "Hide this post?", name: "eleventyExcludeFromCollections", hint: "Excludes page from an Eleventy collection as well as being indexed by search engines.", widget: "boolean", default: false, required: false}
+      - {label: "Body", name: "body", widget: "markdown"}

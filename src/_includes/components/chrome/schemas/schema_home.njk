@@ -1,0 +1,46 @@
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "WebPage",
+	"name": "{{ site.metaTitle }}",
+	"url": "{{ site.rootUrl }}{{ page.url | pretty }}",
+	"description": "{{ summary }}",
+	"inLanguage": "{{ site.lang }}",
+	"breadcrumb": {
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Home",
+				"item": "{{ site.rootUrl }}{{ page.url | pretty }}"
+			}
+		]
+	},
+	"mainEntity": {
+		"@type": "WebPage",
+		"name": "{{ site.metaTitle }}",
+		"description": "{{ summary }}",
+		"url": "{{ site.rootUrl }}{{ page.url | pretty }}"
+	},
+	"primaryImageOfPage": {
+		"@type": "ImageObject",
+		"url": "{{ site.author.thumbnail }}"
+	},
+	"author": {
+		"@type": "Person",
+		"name": "{{ site.author.name }}",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Crawley",
+			"addressRegion": "West Sussex",
+			"addressCountry": "GB"
+		}
+	},
+	"sameAs": [
+		"https://www.linkedin.com/in/brootaylor",
+		"https://twitter.com/brootaylor",
+		"https://github.com/brootaylor"
+	]
+}
+</script>

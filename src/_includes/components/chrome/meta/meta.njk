@@ -1,0 +1,114 @@
+{# These variables are set here to pull from the global `site.json` file #}
+{% set metaTitle = site.metaTitle %}
+{% set metaDescription = site.metaDescription %}
+{% set metaImage = site.metaImage %}
+{% set metaImageAlt = site.metaImageAlt %}
+{% set rootUrl = site.rootUrl %}
+
+{# This 'hidden' variable is used to exclude pages from an Eleventy collection as well as being indexed by search engines #}
+{% set hidden = (hidden == true or eleventyExcludeFromCollections == true) %}
+
+{#
+	-> Setting page level content variables
+#}
+{# Check whether `title` value exists first... #}
+{% if title %}
+	{# And then whether it's the `homepage`... #}
+	{% if bodyClass === 'homepage' %}
+		{% set pageTitle = metaTitle %}
+	{% else %}
+		{% set pageTitle = title + ' • ' + metaDescription %}
+	{% endif %}
+{% else %}
+	{% set pageTitle = metaTitle %}
+{% endif %}
+
+{# Check whether `summary` value exists first... #}
+{% if summary %}
+  {% set metaDescription = summary %}
+{% endif %}
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ pageTitle | safe }}</title>
+<meta name="description" content="{{ metaDescription }}">
+
+{# Checking whether page is to be indexed or not --> ie. whether `hidden` variable equals `true` or `false` #}
+<meta name="robots" content="{% if hidden %}noindex, nosnippet{% else %}index{% endif %}, follow">
+
+{# Displaying the build number / version #}
+<meta name="build" content="{{ pkg.version }}.{{ site.timeCurrent }}">
+
+{# Displaying the version of Eleventy used to generate this website #}
+<meta name="generator" content="{{ eleventy.generator }}">
+
+{# Styles (pre-load)... #}
+<link rel="preload" as="style" href="/styles/main.css?version={{ pkg.version }}.{{ site.timeCurrent }}">
+
+{# Styles (load) #}
+<link rel="stylesheet" href="/styles/main.css?version={{ pkg.version }}.{{ site.timeCurrent }}">
+
+{# Generates extra page-specific <head> metadata fields eg. styles, fonts & custom preload/prefetch #}
+{% if head %}
+	<!-- Extra page-specific metadata fields & rules eg. styles, fonts, SVGs & custom preload/prefetch -->
+	{{ head | safe }}
+{% endif %}
+
+{# Canonical #}
+{% if hidden !== true %}
+	<link rel="canonical" href="{{ rootUrl }}{{ page.url | pretty }}">
+{% endif %}
+
+{# Author 'humans' document #}
+<link rel="author" href="{{ rootUrl }}/humans.txt">
+
+{# RSS feed #}
+<link rel="alternate" type="application/rss+xml" title="{{ metaTitle }}" href="{{ rootUrl }}/feed.xml">
+
+{# Open graph #}
+{% if hidden !== true %}
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="{{ site.name }}">
+	<meta property="og:title" content="{{ pageTitle }}">
+	<meta property="og:image" content="{{ rootUrl }}{{ metaImage }}">
+	<meta property="og:image:alt" content="{{ metaImageAlt }}">
+	<meta property="og:description" content="{{ metaDescription }}">
+	<meta property="og:url" content="{{ rootUrl }}{{ page.url | pretty }}">
+{% endif %}
+
+{#
+	Twitter...
+	Only render this code snippet if `twitter` has a handler value in `_data/site.js`
+#}
+{% if site.twitter and hidden !== true %}
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="{{ site.twitter }}">
+	<meta name="twitter:title" content="{{ pageTitle }}">
+	<meta name="twitter:image" content="{{ rootUrl }}{{ metaImage }}">
+	<meta name="twitter:image:alt"  content="{{ metaImageAlt }}">
+	<meta name="twitter:description" content="{{ metaDescription }}">
+	<meta name="twitter:url" property="og:url" content="{{ rootUrl }}{{ page.url | pretty }}">
+{% endif %}
+
+{# Favicons, icons and manifests #}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.icon | url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/ico/favicon-16x16.png">
+<link rel="mask-icon" href="/assets/ico/safari-pinned-tab.svg" color="{{ site.theme_color_ios }}">
+<link rel="shortcut icon" href="{{ site.favicon | url }}">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="{{ site.background_color_mstile }}">
+<meta name="theme-color" content="{{ site.theme_color_android }}">
+
+{#
+	Preconnect / dns-prefect stuff...
+	@NOTE: Only render this code snippet if `analyticsUrchin` has a value in `_data/site.js`
+#}
+{% if site.analyticsUrchin %}
+	<link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin>
+	<link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+	<link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
+	<link rel="dns-prefetch" href="https://www.google-analytics.com/">
+{% endif %}

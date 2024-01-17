@@ -1,0 +1,36 @@
+/**********************************************************
+ * Buttons placeholder
+ **********************************************************/
+
+@use '../../../../styles/abstracts' as *;
+
+
+a,
+button,
+input {
+  &.button {
+    display: inline-block;
+    padding: 1rem 1.25rem;
+    color: #fff;
+    font-size: 1.25rem;
+    text-decoration: unset;
+    background-color: var(--green-custom);
+    outline: none;
+    border: 1px solid rgba($white, 0.1);
+    box-shadow: 5px 5px var(--grey-dark);
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+
+      // Button `:hover` state
+      &:hover {
+        background-color: var(--green-custom-dark);
+      }
+
+      // Button `:active` and `:focus` states
+      &:active,
+      &:focus {
+        background-color: var(--green-custom-dark);
+        border: 2px dotted var(--white)
+      }
+  }
+}

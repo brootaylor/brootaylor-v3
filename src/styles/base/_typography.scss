@@ -1,0 +1,253 @@
+/******************************************
+ * Typography styles / rules
+ ******************************************/
+
+@use '../abstracts' as *;
+
+
+html {
+  font-family: var(--font-family-base);
+
+  // This percentage value is the equivalent of 16px in pretty much every browser.
+  // Aka, "1rem = 16px".
+  // This is more 'accessible' (in terms of a user increasing their browser's font-size).
+  // By contrast, setting this as a 'px' value prevents this ability.
+  font-size: var(--font-size-base-percent);
+	font-weight: normal;
+  font-style: normal;
+  color: var(--font-colour-base);
+  letter-spacing: -0.03em;
+}
+
+body {
+  @include font-size($font-size-base);
+
+  // This line-height rule overrides what's been declared in the `reset.scss` file
+  line-height: var(--line-height-base);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+h1 {
+  // Fallback for older browsers
+  font-size: convert-to-rem(36px);
+  font-weight: 900;
+
+  // Browsers supporting `clamp()`
+  @supports (font-size: clamp(36px, 5vw, 50px)) {
+    font-size: clamp(#{convert-to-rem(36px)}, 5vw, #{convert-to-rem(50px)});
+  }
+
+  &::after {
+    content: '';
+    display: block;
+
+    // Fallback for older browsers
+    min-width: convert-to-rem(200px) ;
+    max-width: 30%;
+
+    height: 0.4rem;
+    background-color: var(--grey-mid);
+    margin: 0.5em 0 1em;
+  }
+
+  // Browsers supporting `clamp()`
+  @supports (width: clamp(200px, 50vw, 30%)) {
+    &::after {
+      min-width: unset;
+      max-width: unset;
+      width: clamp(#{convert-to-rem(200px)}, 50vw, 30%);
+    }
+  }
+}
+
+h2 {
+  // Fallback for older browsers
+  font-size: convert-to-rem(28px);
+  font-weight: 700;
+
+  // Browsers supporting `clamp()`
+  @supports (font-size: clamp(28px, 3vw, 34px)) {
+    font-size: clamp(#{convert-to-rem(28px)}, 3vw, #{convert-to-rem(34px)});
+  }
+}
+
+h3 {
+  // Fallback for older browsers
+  font-size: convert-to-rem(24px);
+  font-weight: 600;
+
+  // Browsers supporting `clamp()`
+  @supports (font-size: clamp(24px, 3vw, 28px)) {
+    font-size: clamp(#{convert-to-rem(24px)}, 3vw, #{convert-to-rem(28px)});
+  }
+}
+
+p,
+ul:not(.navigation__list), // Not the primary navigation list element
+ol,
+pre {
+  // Fallback for older browsers
+  font-size: convert-to-rem(18px);
+  max-width: 60ch;
+  text-wrap: pretty; // Prevents orphans & widows (eg. a single word on a line by itself)
+
+  // Browsers supporting `clamp()`
+  @supports (font-size: clamp(18px, 1.9vw, 22px)) {
+    font-size: clamp(#{convert-to-rem(18px)}, 1.9vw, #{convert-to-rem(20px)});
+  }
+}
+
+// Often use this HTML element for icons...
+i {
+  font-style: normal;
+}
+
+// Abbreviation "abbr" styling
+abbr {
+  &[title] {
+    text-decoration: none;
+
+    @include min-width($breakpoint-x-large) {
+      cursor: help;
+      text-decoration: underline dotted;
+    }
+
+    &:after {
+      font-size: 0.875rem;
+      font-style: italic;
+      content: " (" attr(title) ")";
+
+        @include min-width($breakpoint-x-large) {
+          content: "";
+        }
+    }
+  }
+}
+
+// Code formatting
+// @TODO: Move this code into its own SCSS partail & component
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--green-custom);
+}
+
+code,
+:not(pre)>code,
+pre {
+  &[class*=language-] {
+    color: var(--grey-mid);
+    background-color: var(--background-colour);
+    hyphens: none;
+  }
+
+  .token {
+    color: lighten(#f3bb69, 10%);
+  }
+
+  .comment {
+    color: var(--green-custom-light);
+  }
+
+  .punctuation {
+    color: #e6db74;
+  }
+
+  .function {
+    color: darken(#f3bb69, 20%);
+  }
+
+  .parameter {
+    color: var(--grey-mid);
+  }
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+  padding: 2em;
+  border-radius: 0.5rem;
+  line-height: 1.05;
+}
+
+
+hr {
+  border: 0;
+  background-color: var(--grey-light);
+  margin-top: 2rem !important;
+  margin-left: 0;
+  margin-right: auto;
+  height: 0.1rem;
+  max-width: 50rem;
+}
+
+// Global article styles...
+article {
+  time,
+  time + div {
+    display: inline-block;
+  }
+
+  time {
+    font-size: 0.90rem;
+
+    + div {
+      font-size: 1.2rem;
+    }
+  }
+
+  > a {
+   display: inline-block;
+
+    time {
+      display: inline;
+      padding-bottom: 0;
+    }
+  }
+
+  // Use this class on something like a `span` when the `datetime` element not necessary
+  .date-time {
+    font-size: 0.90rem;
+    font-style: italic;
+    display: block;
+  }
+}
+
+// `Lead` / intro text...
+.lead {
+  // For the <p> element in a `lead` element
+  p {
+    // Fallback for older browsers
+    font-size: convert-to-rem(20px);
+    max-width: 55ch;
+
+    // Browsers supporting `clamp()`
+    @supports (font-size: clamp(20px, 2.5vw, 26px)) {
+      font-size: clamp(#{convert-to-rem(20px)}, 2.5vw, #{convert-to-rem(26px)});
+    }
+
+    // An <hr> that's a sibling of the `lead` element
+    + hr {
+      max-width: 90%;
+      height: 0.2rem;
+      background-color: var(--grey-light);
+      margin: 2.5em 0 !important;
+    }
+  }
+}
+
+// Header anchor link '#'...
+.header-anchor {
+  font-family: var(--font-family-secondary);
+  font-size: 80%;
+  box-shadow: none;
+}

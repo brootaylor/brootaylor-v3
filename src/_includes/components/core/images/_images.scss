@@ -1,0 +1,85 @@
+/**********************************************************
+ * Images placeholder
+ **********************************************************/
+
+@use '../../../../styles/abstracts' as *;
+
+img,
+picture {
+  display: block;
+}
+
+// Normal inline images
+.img-normal {
+  margin: 0 auto;
+
+    @include min-width($breakpoint-medium) {
+      margin: unset;
+    }
+}
+
+// Figure elements
+figure {
+  > * {
+    margin: 0 auto;
+    text-align: center;
+
+      @include min-width($breakpoint-medium) {
+        margin: unset;
+      }
+  }
+
+  figcaption {
+    text-align: left;
+    margin-block-start: 0.5em;
+  }
+}
+
+// Alignment rules for figure and image elements...
+.img-left,
+.fig-left {
+  margin-inline: auto;
+  margin-block-end: 1em;
+
+  @include min-width($breakpoint-medium) {
+    float: left;
+    width: 33%;
+    margin-inline-end: 1em;
+  }
+}
+
+.img-right,
+.fig-right {
+  margin-inline: auto;
+  margin-block-end: 1em;
+
+  @include min-width($breakpoint-medium) {
+    float: right;
+    width: 33%;
+    margin-inline-start: 1em;
+  }
+}
+
+// Alignment rules for `figure` elements...
+.fig-left {
+  > * {
+    @include min-width($breakpoint-medium) {
+      text-align: left;
+      margin-inline-end: auto;
+    }
+  }
+}
+
+.fig-right {
+  > * {
+    @include min-width($breakpoint-medium) {
+      text-align: right;
+      margin-inline-start: auto;
+    }
+  }
+}
+
+// To make image into a circle
+.img-circle {
+  border-radius: 50%;
+}

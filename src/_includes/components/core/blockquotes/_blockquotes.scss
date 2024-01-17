@@ -1,0 +1,42 @@
+/**********************************************************
+ * Blockquotes
+ **********************************************************/
+
+@use '../../../../styles/abstracts' as *;
+@use '../../../../styles/utilities' as *;
+
+
+blockquote {
+  @extend %flow;
+  @include font-size(20px);
+  display: block;
+  margin-left: 0;
+  padding: 0 0 0 1em;
+  border-left: 0.3em solid var(--grey-mid);
+
+    @include min-width($breakpoint-small) {
+      @include font-size(22px);
+    }
+
+    @include min-width($breakpoint-medium) {
+      @include font-size(24px);
+      max-width: 80%;
+    }
+
+    @include min-width($breakpoint-large) {
+      max-width: 70%;
+    }
+
+  > * {
+    font-style: italic;
+  }
+
+  p {
+    font-family: var(--font-family-secondary);
+  }
+
+  footer {
+    font-style: normal;
+    font-size: 0.95rem;
+  }
+}

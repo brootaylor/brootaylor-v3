@@ -1,0 +1,24 @@
+/// Influenced by Andy Bell.
+///
+/// Add the `.flow` utility class to an element / component to benefit from the 'flow-space'.
+///
+/// @link https://24ways.org/2018/managing-flow-and-rhythm-with-css-custom-properties/ Managing Flow and Rhythm with CSS Custom Properties
+
+%flow {
+  --flow-space: 1em; // `em` value used cause wanting this value to be relative to it's context.
+
+  // > * + * {
+  //   margin-top: var(--flow-space);
+  // }
+
+  //  A newer implementation...
+  > :where(:not(:first-child)) {
+    margin-top: var(--flow-space);
+  }
+}
+
+// Flow utility class
+// Using the `%flow` placeholder
+.flow {
+  @extend %flow;
+}
