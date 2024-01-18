@@ -1,15 +1,9 @@
 {
-  "name": "brootaylor-v3",
-  "version": "1.0.0",
-  "description": "Version 3 of my personal website, brootaylor.com. Built in Eleventy.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brootaylor/brootaylor-v3.git"
-  },
-  "bugs": {
-    "url": "https://github.com/brootaylor/brootaylor-v3/issues"
-  },
-  "homepage": "https://github.com/brootaylor/brootaylor-v3#readme",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE",
+  "name": "brootaylor.com",
+  "version": "3.0.0",
+  "description": "Version 3 of my personal website, brootaylor.com.",
   "keywords": [
     "personal-website",
     "blog"
@@ -18,8 +12,14 @@
     "name": "Bruce Taylor",
     "url": "https://brootaylor.com"
   },
-  "license": "SEE LICENSE IN LICENSE",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brootaylor/brootaylor-v3.git"
+  },
+  "homepage": "https://github.com/brootaylor/brootaylor-v3#readme",
+  "bugs": {
+    "url": "https://github.com/brootaylor/brootaylor-v3/issues"
+  },
   "scripts": {
     "clean": "rimraf dist && mkdir dist",
     "prebuild": "npm run clean && echo 'Getting rid of old stuff first 🔥'",
@@ -62,7 +62,7 @@
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
-    "autoprefixer": "^10.4.16",
+    "autoprefixer": "^10.4.17",
     "cross-env": "^7.0.3",
     "date-fns": "^3.2.0",
     "dotenv": "^16.3.1",
@@ -81,7 +81,7 @@
     "postcss-preset-env": "^9.3.0",
     "rimraf": "^5.0.5",
     "rollup": "^4.9.5",
-    "sass": "^1.69.7",
+    "sass": "^1.70.0",
     "slugify": "^1.6.6"
   },
   "devDependencies": {
@@ -96,5 +96,8 @@
     "netlify-cli": "^17.14.0",
     "onchange": "^7.1.0",
     "prettier": "^3.2.4"
+  },
+  "engines": {
+    "node": "^18.0.0"
   }
 }
