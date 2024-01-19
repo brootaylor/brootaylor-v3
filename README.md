@@ -76,6 +76,7 @@ brootaylor.com
 │   ├── assets                     # Assets (ie. Static files like Fonts, Images, Video, Favicons)
 │   ├── scripts                    # JavaScript (Global)
 │   ├── styles                     # SCSS (Global)
+│   ├── ai.njk                     # ai.txt template
 │   ├── browserconfig.njk          # browserconfig.xml template (For Microsoft application usage)
 │   ├── feed.njk                   # feed.xml template
 │   ├── manifest.njk               # manifest.json template
@@ -94,7 +95,6 @@ brootaylor.com
 ├── .gitignore                     # Files not tracked by Git
 ├── .markdownlint.json             # Markdownlint configuration
 ├── .nvmrc                         # Sets (and installs if necessary) the version of Node needed for this project
-├── .sass-lint.yml                 # SCSS linting configuration
 ├── LICENCE                        # Repo licence (MIT)
 ├── netlify.toml                   # Netlify configuration (server)
 ├── package.json                   # Node.js package manifest
