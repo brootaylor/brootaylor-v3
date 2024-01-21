@@ -8,7 +8,7 @@ lead:
 
 bodyClass: "about"
 
-date: 2024-01-08T12:21:00
+date: 2024-01-21T15:32:00
 ---
 
 Before I ever touched a computer, my life revolved around teasing cows, off-road motorbiking, hiking and wild camping in the mountains, staring up at the stars, canoeing, fishing and sport. That certainly feels like quite some time ago now!
@@ -59,7 +59,7 @@ I also use it as a platform for experimenting with newer frontend web technologi
 
 I resonate with Ethan when he says, [let a website be a worry stone](https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/). {.call-out}
 
-If you have any issues, questions or spot any spelling mistakes(!), I'd appreciate it if you could let me know by submitting a [GitHub issue](https://github.com/brootaylor/brootaylor-v2/issues), or by [emailing me directly](/contact).
+If you have any issues, questions or spot any spelling mistakes(!), I'd appreciate it if you could let me know by submitting a [GitHub issue](https://github.com/brootaylor/brootaylor-v3/issues), or by [emailing me directly](/contact).
 
 I've also written about my decision to [redesign & develop my website in the open](/writing/2022-02-22/redesigning-in-the-open) which has both been fun and scary. Not least because I'm a bit of a perfectionist and doing it this way has helped wean me off the need to have things completely polished before showing them.
 
