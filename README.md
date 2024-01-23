@@ -79,6 +79,7 @@ brootaylor.com
 │   ├── ai.njk                     # ai.txt template
 │   ├── browserconfig.njk          # browserconfig.xml template (For Microsoft application usage)
 │   ├── feed.njk                   # feed.xml template
+│   ├── humans.txt.njk             # humans.txt template
 │   ├── manifest.njk               # manifest.json template
 │   ├── robots.njk                 # robots.txt template
 │   ├── serviceworker.njk          # serviceworker.js template
