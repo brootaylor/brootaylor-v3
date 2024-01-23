@@ -8,10 +8,10 @@ lead:
 
 bodyClass: "about"
 
-date: 2024-01-23T16:57:00
+date: 2024-01-23T23:05:00
 ---
 
-Before I ever touched a computer, my life revolved around ‘teasing’ cows on a dairy farm, off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, and aspiring to be a pilot.
+Before ever touching a computer, my life revolved around ‘teasing’ cows on a dairy farm, off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, and aspiring to be a pilot.
 
 I write now and then &ndash; and have [written a few posts](/writing), [jotted down some notes](/notes), and [bookmarked links to articles](/bookmarks) I've enjoyed and found interesting. Hopefully some of them will resonate with you.
 
