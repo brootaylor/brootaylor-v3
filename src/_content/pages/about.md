@@ -5,14 +5,11 @@ summary: "I'm originally from South Africa and grew up on a dairy farm in a very
 # Populates the opening / `lead` text on a page
 lead:
   - I'm originally from South Africa and grew up on a dairy farm in a very <a href="https://youtu.be/bGQbM3QfA5w">beautiful part of the country</a>. I now live in West Sussex, England with my family and build websites for a living.
+  - Before ever touching a computer, my life revolved around ‘teasing’ cows on a dairy farm, off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, training as a chef, and aspiring to be a pilot.
 
 bodyClass: "about"
 
-date: 2024-01-23T23:05:00
----
-
-Before ever touching a computer, my life revolved around ‘teasing’ cows on a dairy farm, off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, and aspiring to be a pilot.
-
+date: 2024-01-24T12:48:00
 ---
 
 ## What I do
@@ -25,9 +22,7 @@ I'm quite good at picking up new skills and programming languages, as well as pr
 
 From time to time, you’ll also find me with my hands in the “*back-of-the-front-end*” utilising  Node.js, configuring an API, optimising a JavaScript bundler, as well as streamlining build and deployment processes to help improve frontend development efficiency.
 
-I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/), [usable](https://trentwalton.com/2014/03/10/device-agnostic/) and as future-friendly as possible. For this reason I *prefer* a vanilla approach and tend to be fairly tech-agnostic. Choosing the *right* tool for the job seems to be a better approach than using a framework for the sake of it. {.call-out}
-
-Don't get me wrong, JavaScript frameworks certainly have their place and I think they can be wonderfully powerful tools when we keep the end user in mind &mdash; rather than *only* prioritising the developer experience. At the moment I'm not sure we're getting that balance quite right.
+I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/), [usable](https://trentwalton.com/2014/03/10/device-agnostic/) and as future-friendly as possible. For this reason I *prefer* a vanilla approach and tend to be fairly tech-agnostic. Choosing the *right* tool for the job seems to be a better approach than using a framework for the sake of it.
 
 ---
 
