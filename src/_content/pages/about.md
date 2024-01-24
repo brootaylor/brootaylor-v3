@@ -5,14 +5,30 @@ summary: "I'm originally from South Africa and grew up on a dairy farm in a very
 # Populates the opening / `lead` text on a page
 lead:
   - I'm originally from South Africa and grew up on a dairy farm in a very <a href="https://youtu.be/bGQbM3QfA5w">beautiful part of the country</a>. I now live in West Sussex, England with my family and build websites for a living.
-  - Before ever touching a computer, my life revolved around ‘teasing’ cows on a dairy farm, off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, training as a chef, and aspiring to be a pilot.
 
 bodyClass: "about"
 
-date: 2024-01-24T12:48:00
+date: 2024-01-24T21:13:00
 ---
 
-## What I do
+{% from "components/core/images/images.njk" import imageFigure %}
+
+{{ imageFigure(
+  "/assets/images/pages/about/giants_castle_2022.webp",
+  "My mum looking at a beautiful view of the Giants Castle mountain from the Giants Castle Camp's main dining room balcony",
+  "2000",
+  "1125",
+  "Mum looking towards Giants Castle. (KZN, South Africa)",
+  false,
+  false,
+  "lazy")
+}}
+
+Before ever touching a computer, my life revolved around ‘teasing’ cows on a dairy farm, off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, training as a chef, and aspiring to be a pilot.
+
+---
+
+## What I do now
 
 I build websites and have been doing so for around two decades.
 
