@@ -18,7 +18,7 @@ date: 2024-01-24T21:13:00
   "My mum looking at a beautiful view of the Giants Castle mountain from the Giants Castle Camp's main dining room balcony",
   "2000",
   "1125",
-  "Mum looking towards Giants Castle. (KZN, South Africa)",
+  "Giants Castle. (KZN, South Africa)",
   false,
   false,
   "lazy")
