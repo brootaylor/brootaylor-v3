@@ -1,19 +1,19 @@
 ---
 title: "Projects"
 # Populates the `meta description` for a page
-summary: "I help businesses build websites that are user-friendly, responsive, accessible, resilient, and as future-friendly as possible."
+summary: "I help businesses build websites that are user-friendly, responsive, accessible, and resilient, so they stand the test of time"
 # Populates the opening / `lead` text on a page
 lead:
-  - I help businesses build websites that are user-friendly, responsive, accessible, resilient, and as future-friendly as possible.
+  - I help businesses build websites that are user-friendly, responsive, accessible, and resilient, so they stand the test of time.
   - Need some help with your next project? <a href="/contact">Get in touch</a>.
 
-bodyClass: "work"
+bodyClass: "projects"
 
 date: 2024-02-12T12:13:00
 ---
 
-<section aria-labelledby="work-current" class="companies | flow">
-  <h2 id="work-current" tabindex="-1">Currently on the go <a class="header-anchor" href="#work-current">#</a></h2>
+<section aria-labelledby="projects-current" class="companies | flow">
+  <h2 id="projects-current" tabindex="-1">Currently on the go <a class="header-anchor" href="#projects-current">#</a></h2>
   <ul role="list" class="auto-grid | no-list">
     <li>
       <article class="card card--stacked call-out">
@@ -39,8 +39,8 @@ date: 2024-02-12T12:13:00
 
 ---
 
-<section aria-labelledby="work-past" class="companies | flow">
-  <h2 id="work-past" tabindex="-1">Other people I've worked with <a class="header-anchor" href="#work-past">#</a></h2>
+<section aria-labelledby="projects-past" class="companies | flow">
+  <h2 id="projects-past" tabindex="-1">Other projects I've worked on <a class="header-anchor" href="#projects-past">#</a></h2>
   <ul role="list" class="auto-grid | no-list">
     <li>
       <article class="card card--stacked">
@@ -53,8 +53,8 @@ date: 2024-02-12T12:13:00
           </header>
           <div class="card__body | flow">
             <ul class="flow">
-              <li>Worked on a website for one of Hugo & Cat’s clients, <a href="https://www.ecarxgroup.com/">ECARX</a>, featuring a substantial amount of animation and interactivity.</li>
-              <li>Umbraco based website, incorporating a Storybook component library for the site build.</li>
+              <li>Collaborated with Hugo & Cat on a successful web project for <a href="https://www.ecarxgroup.com/">ECARX</a>, a leading automotive technology company.</li>
+              <li>Umbraco based website, incorporating a Storybook component library for the site build and featuring a substantial amount of animation and interactivity.</li>
               <li>Frontend development of the site using HTML, SCSS / CSS, JavaScript, GSAP, Handlebars, Cypress and Storybook.</li>
             </ul>
           </div>

@@ -2,12 +2,12 @@
 layout: "layouts/homepage.njk"
 title: Hi, I'm Bruce.
 # Populates the `meta description` for a page
-summary: "Bruce lives in Crawley, West Sussex, England with his family. He's a Frontend Web Developer & UI Engineer with nearly two decades of expertise in creating user-friendly websites."
+summary: "Bruce lives in Crawley, West Sussex, England with his family. He's a Frontend Web Developer and helps businesses build websites that are user-friendly, responsive, accessible, and resilient, so they stand the test of time."
 
 # Populates the opening / `lead` text on a page
 lead:
-  - I build websites and have been doing so for around two decades. I recently collaborated with <a href="projects#:~:text=Hugo%20%26%20Cat">Hugo & Cat</a> on a web project for one of their clients, ECARX.
-  - I specialise in the “<a href="https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/"><em>front-of-the-front-end</em></a>”, the somewhat broad and fuzzy intersection between design and back-end engineering.
+  - I help businesses build websites that are user-friendly, responsive, accessible, and resilient, so they stand the test of time.
+  - Over the past two decades, I've had the pleasure of contributing to a <a href="/projects">wide range of projects</a> in industries like travel, hospitality, e-commerce, healthcare, charities, and education.
 
 # Page-specific metadata content added to the `<head>`
 head: "
@@ -37,15 +37,19 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2024-02-12T12:13:00
+date: 2024-02-12T13:48:00
 
 priority: 1
 ---
 
-I thrive in roles that ***strike a balance between user and developer experiences***, empowering teams to write great code that aligns with their needs and preferences while ensuring a positive user experience. {.call-out}
+I'd [love to hear from you](/contact) if you think I may be able to help out with your next project &mdash; or if you'd just like to connect. 👋 {.call-out}
 
 Even though I've done this web building thing for a while now, I certainly haven't got it all figured out. I'm still learning and I imagine you are as well.
 
 ---
 
-I'd [love to hear from you](/contact) if you think I may be able to help out with your next project &mdash; or if you'd just like to say hi. 👋
+{% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
+{%- call blockquote('Paul Davison, Head Of Design', 'https://charanga.com', 'Charanga Music') -%}
+  We got Bruce in to to help us develop a front-end boilerplate / component library as we were inundated with projects and needed a safe pair of hands that could help us achieve quality results with minimal supervision.<br><br>
+  Bruce delivered a high-quality framework that ticks all of the boxes for us. And to top it all he’s a great guy to work with, highly professional, he gets on well with everyone and really cares about his work. I would not hesitate to hire Bruce again.
+{%- endcall %}

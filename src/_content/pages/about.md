@@ -1,5 +1,5 @@
 ---
-title: "About me"
+title: "About"
 # Populates the `meta description` for a page
 summary: "I'm originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. I now live in West Sussex, England with my family and build websites for a living."
 # Populates the opening / `lead` text on a page
