@@ -37,7 +37,7 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2024-02-12T13:48:00
+date: 2024-02-12T15:36:00
 
 priority: 1
 ---
@@ -48,8 +48,12 @@ Even though I've done this web building thing for a while now, I certainly haven
 
 ---
 
+<h2 class="visually-hidden">Testimonials</h2>
+
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
-{%- call blockquote('Paul Davison, Head Of Design', 'https://charanga.com', 'Charanga Music') -%}
-  We got Bruce in to to help us develop a front-end boilerplate / component library as we were inundated with projects and needed a safe pair of hands that could help us achieve quality results with minimal supervision.<br><br>
-  Bruce delivered a high-quality framework that ticks all of the boxes for us. And to top it all he’s a great guy to work with, highly professional, he gets on well with everyone and really cares about his work. I would not hesitate to hire Bruce again.
+
+{%- call blockquote('Nicola Crome, Senior Media and Content Marketing Manager', 'https://www.avios.com/', 'Avios') -%}
+  I worked with Bruce for many years at Avios, both within the same team and across projects.<br>
+  Bruce was incredibly knowledgeable in website design and development, always came up with great solutions, delivered to a high standard with great attention to detail, and was very easy to work with. He was also able to communicate his technical knowledge in a straightforward way to someone who was not from a technical background.<br>
+  I would highly recommend Bruce to any organisation.
 {%- endcall %}

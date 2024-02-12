@@ -9,7 +9,7 @@ lead:
 
 bodyClass: "projects"
 
-date: 2024-02-12T12:13:00
+date: 2024-02-12T15:40:00
 ---
 
 <section aria-labelledby="projects-current" class="companies | flow">
@@ -280,13 +280,13 @@ date: 2024-02-12T12:13:00
   <ul role="list" class="auto-grid | no-list">
     <li>
     {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
-    {%- call blockquote('Stephen Scott, Chief Digital Officer, IAG Loyalty') -%}
+    {%- call blockquote('Stephen Scott, Chief Digital Officer', 'https://www.iagloyalty.com', 'IAG Loyalty') -%}
       Bruce is a true digital native. Starting in the industry back as far as Boo.com and continually striving to push the boundaries of front end code design. He takes it upon himself to continually keep up to date with the latest trends and to apply that to his work to the benefit of whoever he is working for. I have no hesitation in recommending Bruce for any role in which pushing your digital boundaries is at the core of your agenda.
     {%- endcall %}
     </li>
     <li>
     {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
-    {%- call blockquote('Nicola Crome, Senior Media and Content Marketing Manager, Avios') -%}
+    {%- call blockquote('Nicola Crome, Senior Media and Content Marketing Manager', 'https://www.avios.com/', 'Avios') -%}
       I worked with Bruce for many years at Avios, both within the same team and across projects.<br>
       Bruce was incredibly knowledgeable in website design and development, always came up with great solutions, delivered to a high standard with great attention to detail, and was very easy to work with. He was also able to communicate his technical knowledge in a straightforward way to someone who was not from a technical background.<br>
       I would highly recommend Bruce to any organisation.
@@ -300,7 +300,7 @@ date: 2024-02-12T12:13:00
     </li>
     <li>
     {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
-    {%- call blockquote('Paul Davison, Head Of Design, Charanga Music') -%}
+    {%- call blockquote('Paul Davison, Head Of Design', 'https://charanga.com', 'Charanga Music') -%}
       We got Bruce in to to help us develop a front-end boilerplate / component library as we were inundated with projects and needed a safe pair of hands that could help us achieve quality results with minimal supervision. Bruce delivered a high-quality framework that ticks all of the boxes for us. And to top it all he’s a great guy to work with, highly professional, he gets on well with everyone and really cares about his work. I would not hesitate to hire Bruce again.
     {%- endcall %}
     </li>
