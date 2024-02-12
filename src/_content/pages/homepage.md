@@ -42,9 +42,7 @@ date: 2024-02-12T15:36:00
 priority: 1
 ---
 
-I'd [love to hear from you](/contact) if you think I may be able to help out with your next project &mdash; or if you'd just like to connect. 👋 {.call-out}
-
-Even though I've done this web building thing for a while now, I certainly haven't got it all figured out. I'm still learning and I imagine you are as well.
+I'd [love to hear from you](/contact) if you think I may be able to help out with your next project &mdash; or if you'd just like to connect. 👋{.call-out}
 
 ---
 
