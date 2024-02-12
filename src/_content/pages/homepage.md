@@ -2,12 +2,12 @@
 layout: "layouts/homepage.njk"
 title: Hi, I'm Bruce.
 # Populates the `meta description` for a page
-summary: "Bruce lives in Crawley, West Sussex, England with his family. He's a Frontend Web Developer and helps businesses build websites that are user-friendly, responsive, accessible, and resilient, so they stand the test of time."
+summary: "Bruce lives in Crawley, West Sussex, England with his family. He's a Frontend Web Developer and helps businesses build user-friendly, responsive, accessible, and resilient websites that stand the test of time."
 
 # Populates the opening / `lead` text on a page
 lead:
-  - I help businesses build websites that are user-friendly, responsive, accessible, and resilient, so they stand the test of time.
-  - Over the past two decades, I've had the pleasure of contributing to a <a href="/projects">wide range of projects</a> in industries like e-commerce, travel and tourism, hospitality, healthcare and medical, digital marketing, education, and charities.
+  - I help businesses build user-friendly, responsive, accessible, and resilient websites that stand the test of time.
+  - Over the past two decades, I've had the opportunity to contribute to <a href="/projects">various projects</a> in industries like e-commerce, travel and tourism, hospitality, healthcare and medical, digital marketing, education, and charities.
 
 # Page-specific metadata content added to the `<head>`
 head: "

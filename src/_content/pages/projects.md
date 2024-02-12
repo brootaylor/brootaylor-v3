@@ -1,10 +1,10 @@
 ---
 title: "Projects"
 # Populates the `meta description` for a page
-summary: "I help businesses build websites that are user-friendly, responsive, accessible, and resilient, so they stand the test of time"
+summary: "I help businesses build user-friendly, responsive, accessible, and resilient websites that stand the test of time."
 # Populates the opening / `lead` text on a page
 lead:
-  - I help businesses build websites that are user-friendly, responsive, accessible, and resilient, so they stand the test of time.
+  - I help businesses build user-friendly, responsive, accessible, and resilient websites that stand the test of time.
   - Need some help with your next project? <a href="/contact">Get in touch</a>.
 
 bodyClass: "projects"
