@@ -8,7 +8,7 @@ lead:
 
 bodyClass: "about"
 
-date: 2024-01-24T21:13:00
+date: 2024-02-12T12:13:00
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}

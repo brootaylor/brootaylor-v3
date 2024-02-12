@@ -1,15 +1,15 @@
 ---
-title: "Work"
+title: "Projects"
 # Populates the `meta description` for a page
-summary: "I help businesses build web solutions that are user-friendly, responsive, accessible, resilient, and as future-friendly as possible."
+summary: "I help businesses build websites that are user-friendly, responsive, accessible, resilient, and as future-friendly as possible."
 # Populates the opening / `lead` text on a page
 lead:
-  - I help businesses build web solutions that are user-friendly, responsive, accessible, resilient, and as future-friendly as possible.
+  - I help businesses build websites that are user-friendly, responsive, accessible, resilient, and as future-friendly as possible.
   - Need some help with your next project? <a href="/contact">Get in touch</a>.
 
 bodyClass: "work"
 
-date: 2024-01-08T13:12:00
+date: 2024-02-12T12:13:00
 ---
 
 <section aria-labelledby="work-current" class="companies | flow">

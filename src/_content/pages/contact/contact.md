@@ -1,12 +1,12 @@
 ---
 layout: "layouts/contact.njk"
-title: "Get in touch"
+title: "Contact"
 # Populates the `meta description` for a page
-summary: "Please get in touch if you need to."
+summary: "Interested in learning more about what I do and potentially working with me on your next project? Or just want to connect? Feel free to reach out using the form below."
 # Populates the opening / `lead` text on a page
 lead:
-  - "If you’d like to hire me, or if you’re just hoping to get in touch, feel free to complete the form below."
+  - "Interested in learning more about what I do and potentially working with me on your next project? Or just want to connect? Feel free to reach out using the form below."
 bodyClass: "contact"
 
-date: 2023-06-08T17:37:00
+date: 2024-02-12T12:13:00
 ---

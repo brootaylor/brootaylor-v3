@@ -1,6 +1,6 @@
-/// Drop shadow utility class placeholder.
+/// Drop shadow utility class placeholders.
 ///
-/// Use the `.shadow` class on any element
+/// Use the `.shadow` or `.shadow--layers` class on any element
 ///
 /// @group Utility Classes
 ///
@@ -14,8 +14,18 @@
   box-shadow: 1px 1px 4px -1px rgb(0, 0, 0, 0.3);
 }
 
+%shadow--layers {
+  box-shadow: 0 10px 0 -5px var(--green-custom), 0 20px 0 -10px var(--orange-custom);
+}
+
 // Drop shadow utility class
 // Using the `%shadow` placeholder
 .shadow {
   @extend %shadow;
+}
+
+// Drop shadow utility class
+// Using the `%shadow--layers` placeholder
+.shadow--layers {
+  @extend %shadow--layers;
 }
