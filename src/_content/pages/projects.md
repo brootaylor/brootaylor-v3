@@ -54,7 +54,7 @@ date: 2024-02-12T12:13:00
           <div class="card__body | flow">
             <ul class="flow">
               <li>Collaborated with Hugo & Cat on a successful web project for <a href="https://www.ecarxgroup.com/">ECARX</a>, a leading automotive technology company.</li>
-              <li>Umbraco based website, incorporating a Storybook component library for the site build and featuring a substantial amount of animation and interactivity.</li>
+              <li>Umbraco based website, incorporating a Storybook component library for the site build, and featuring a substantial amount of animation and interactivity.</li>
               <li>Frontend development of the site using HTML, SCSS / CSS, JavaScript, GSAP, Handlebars, Cypress and Storybook.</li>
             </ul>
           </div>
