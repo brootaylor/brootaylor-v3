@@ -7,7 +7,7 @@ summary: "Bruce lives in Crawley, West Sussex, England with his family. He's a F
 # Populates the opening / `lead` text on a page
 lead:
   - I help businesses build websites that are user-friendly, responsive, accessible, and resilient, so they stand the test of time.
-  - Over the past two decades, I've had the pleasure of contributing to a <a href="/projects">wide range of projects</a> in industries like travel, hospitality, e-commerce, healthcare, charities, and education.
+  - Over the past two decades, I've had the pleasure of contributing to a <a href="/projects">wide range of projects</a> in industries like e-commerce, travel and tourism, hospitality, healthcare and medical, digital marketing, education, and charities.
 
 # Page-specific metadata content added to the `<head>`
 head: "
