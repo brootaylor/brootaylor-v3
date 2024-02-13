@@ -26,6 +26,7 @@ const htmlMinify = require('./lib/utils/transforms/minify-html.js')
 const photoGallery = require('./lib/shortcodes/photoGallery.js')
 
 // Import (collections)
+const pageProjects = require('./lib/collections/pageProjects.js')
 const postWriting = require('./lib/collections/postWriting.js')
 const postNotes = require('./lib/collections/postNotes.js')
 const postBookmarks = require('./lib/collections/postBookmarks.js')
@@ -71,6 +72,7 @@ module.exports = function (eleventy) {
   eleventy.addNunjucksAsyncShortcode('photo', photoGallery);
 
   // Collections
+  eleventy.addCollection('pageProjects', pageProjects)
   eleventy.addCollection('postWriting', postWriting)
   eleventy.addCollection('postNotes', postNotes)
   eleventy.addCollection('postBookmarks', postBookmarks)

@@ -7,7 +7,14 @@ lead:
   - I help businesses build user-friendly, responsive, accessible, and resilient websites that stand the test of time.
   - Need some help with your next project? <a href="/contact">Get in touch</a>.
 
-bodyClass: "projects"
+bodyClass: "projects-home"
+
+permalink: "{% if pagination.pageNumber > 0 %}/projects/{{ pagination.pageNumber + 1 }}/index.html{% else %}/projects.html{% endif %}"
+
+pagination:
+  data: collections.pageProjects # This data is called using the `pageProjects.js` collection script
+  size: 15
+  alias: projects
 
 date: 2024-02-12T15:40:00
 ---
@@ -39,8 +46,38 @@ date: 2024-02-12T15:40:00
 
 ---
 
-<section aria-labelledby="projects-past" class="companies | flow">
-  <h2 id="projects-past" tabindex="-1">Other projects I've worked on <a class="header-anchor" href="#projects-past">#</a></h2>
+<section aria-labelledby="projects-select" class="companies | flow">
+  <h2 id="projects-select" tabindex="-1">Selected projects <a class="header-anchor" href="#projects-select">#</a></h2>
+  {# List of project pages #}
+  <ul role="list" class="projects__list | auto-grid | no-list">
+  {% for project in projects -%}
+    <li class="projects__list-item">
+      <article class="card card--stacked">
+        <div class="card__content">
+          <header class="card__header">
+            <h3 class="card__title">
+              <a href="{{ project.url }}">
+              {{- project.data.title | safe }}
+              </a>
+            </h3>
+          </header>
+          <div class="card__body | flow">
+            {%- if project.data.lead -%}
+              <p>{{ project.data.lead | safe | trim }}</p>
+            {% else %}
+              <p>{{ project.data.summary | safe | trim }}</p>
+            {%- endif -%}
+          </div>
+        </div>
+      </article>
+    </li>
+  {% endfor -%}
+  </ul>
+</section>
+
+
+<section aria-labelledby="projects-select" class="companies | flow">
+  <h2 id="projects-select" tabindex="-1">Selected projects <a class="header-anchor" href="#projects-select">#</a></h2>
   <ul role="list" class="auto-grid | no-list">
     <li>
       <article class="card card--stacked">
