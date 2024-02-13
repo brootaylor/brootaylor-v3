@@ -37,7 +37,7 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2024-02-12T18:32:00
+date: 2024-02-13T01:05:00
 
 priority: 1
 ---
@@ -46,7 +46,7 @@ I'd [love to hear from you](/contact) if you think I may be able to help out wit
 
 ---
 
-<h2 class="visually-hidden">Testimonials</h2>
+<h2 id="testimonial" tabindex="-1" class="visually-hidden">Testimonial <a class="header-anchor" href="#testimonial">#</a></h2>
 
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
 
