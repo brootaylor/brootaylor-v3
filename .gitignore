@@ -3,6 +3,7 @@
 .vscode
 dist
 /docs
+/resources
 
 # Files to ignore
 .DS_Store
