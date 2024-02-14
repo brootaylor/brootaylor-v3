@@ -31,7 +31,9 @@ blockquote {
     font-style: italic;
   }
 
-  p {
+  p,
+  ul,
+  ol {
     font-family: var(--font-family-secondary);
   }
 
