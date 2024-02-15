@@ -8,5 +8,12 @@
     "func-names": "off",
     "no-undef": "warn",
     "prefer-const": "off"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2015,
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true
   }
 }
