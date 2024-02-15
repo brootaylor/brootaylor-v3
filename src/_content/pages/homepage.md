@@ -37,7 +37,7 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2024-02-14T17:52:00
+date: 2024-02-15T16:11:00
 
 priority: 1
 ---
@@ -49,8 +49,6 @@ I'd [love to hear from you](/contact) if you think I may be able to help out wit
 <h2 id="testimonial" tabindex="-1" class="visually-hidden">Testimonial <a class="header-anchor" href="#testimonial">#</a></h2>
 
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
-
-{%- call blockquote('Nicola Crome, Senior Media and Content Marketing Manager', 'https://www.avios.com/', 'Avios') -%}
-  Bruce was incredibly knowledgeable in website design and development, always came up with great solutions, delivered to a high standard with great attention to detail, and was very easy to work with. He was also able to communicate his technical knowledge in a straightforward way to someone who was not from a technical background.<br>
-  I would highly recommend Bruce to any organisation.
+{%- call blockquote('Stephen Scott, Chief Digital Officer', 'https://www.iagloyalty.com', 'IAG Loyalty') -%}
+  Bruce is a true digital native. Starting in the industry back as far as Boo.com and continually striving to push the boundaries of front end code design. He takes it upon himself to continually keep up to date with the latest trends and to apply that to his work to the benefit of whoever he is working for. I have no hesitation in recommending Bruce for any role in which pushing your digital boundaries is at the core of your agenda.
 {%- endcall %}
