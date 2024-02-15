@@ -1,39 +1,75 @@
 ---
 title: Hugo & Cat
-summary: Collaborated with Hugo & Cat on a successful web project for <a href="https://www.ecarxgroup.com/">ECARX</a>, a leading automotive technology company.
-projectExternalUrl: https://luroapp.com/
-projectUrlLabel: luroapp.com
-date: 2023-09-18T12:54:27.631Z
-updated: ""
-location:
-  locality: Crawley
-  country_name: UK
-category:
-  - tech
-  - web
-  - design-system
-  - product
-  - frontend
-  - components
+# Populates the `meta description` for a page as well as the project landing page project-specific summary
+summary: Collaborated with Hugo & Cat on a successful web project for ECARX, a leading automotive technology company.
+# Populates the opening / `lead` text on a page
+lead:
+  - Collaborated with Hugo & Cat on a successful web project for ECARX, a leading automotive technology company.
+
+project:
+  year: 2023
+  role: Senior Frontend Web Developer
+  technologies: HTML5, CSS, SCSS, JavaScript, GSAP, Handlebars, Storybook, Webpack, Gulp, Cypress, Umbraco, .NET Razor Views, Azure DevOps, Figma
+
+date: 2024-02-14T18:37:27.631Z
+
 eleventyExcludeFromCollections: false
 ---
 
-And there was [Luro](https://luroapp.com/).
+{% from "components/core/images/images.njk" import imageFigure %}
 
-Made by the legends at [Paravel](https://paravelinc.com/about/) &mdash; Reagan Ray, Dave Rupert and Trent Walton.
-
-{% from "components/core/images/images.njk" import imageNormal %}
-{{ imageNormal(
-  "/assets/images/posts/bookmarks/luro-design-system-tracker-screenshot.jpg",
-  "A screenshot of the Luro app website homepage",
+{{ imageFigure(
+  "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
+  "A screenshot of the ECARX software services website page",
   "1200",
-  "1129",
+  "972",
+  "ECARX software services website page",
   false,
-  "shadow")
+  false,
+  "lazy")
 }}
 
-Chris Coyier provides a really nice [breakdown & description of what Luro is](https://chriscoyier.net/2023/09/14/luro/), which is a worthwhile read.
+ECARX is an Umbraco based website, incorporating a Storybook component library for the site build, and featuring a substantial amount of animation and interactivity.
 
-Here's a *'scratching-the-surface'* quote from Chris of what Luro can do:
+I was brought on to implement some of the larger animation pieces. Using GSAP I used the `scrollTrigger` method to initialise various animations on the timeline. This can be experienced when visiting the homepage and seeing how the hero banner reveals the video as the user begins to scroll.
 
-> “Track your components” is just one of many things Luro can do, but it’s a pretty cool one. Imagine you’re on the design systems team on a product. You’re actually rolling out a design system, which is something that tends to happen over time. You can define the components in Luro (which can be sucked in via Figma if you want, which is que fancy), then tell Luro what CSS selector represents those components and Luro will watch the pages of your site to see if they are used. And even watch the old selector if you’re trying to compare old vs. new coverage.
+<ol class="auto-grid | no-list">
+  <li>
+    {{ imageFigure(
+      "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
+      "A screenshot of the ECARX software services website page",
+      "1200",
+      "972",
+      "ECARX software services website page",
+      false,
+      false,
+      "lazy")
+    }}
+  </li>
+  <li>
+    {{ imageFigure(
+      "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
+      "A screenshot of the ECARX software services website page",
+      "1200",
+      "972",
+      "ECARX software services website page",
+      false,
+      false,
+      "lazy")
+    }}
+  </li>
+  <li>
+    {{ imageFigure(
+      "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
+      "A screenshot of the ECARX software services website page",
+      "1200",
+      "972",
+      "ECARX software services website page",
+      false,
+      false,
+      "lazy")
+    }}
+  </li>
+</ol>
+
+The website can be viewed at [www.ecarxgroup.com](https://www.ecarxgroup.com)

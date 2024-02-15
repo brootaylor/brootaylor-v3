@@ -21,38 +21,11 @@ date: 2024-02-14T17:29:00
 
 <section aria-labelledby="projects-select" class="companies | flow">
   <h2 id="projects-select" tabindex="-1">Selected projects <a class="header-anchor" href="#projects-select">#</a></h2>
-  <ul role="list" class="auto-grid | no-list">
-    <li>
-      <article class="card card--stacked call-out">
-        <div class="card__content">
-          <header class="card__header">
-            <h3 class="card__title">
-              <a href="https://uxbri.org">UX Brighton</a>
-            </h3>
-            <span class="date-time">February 2022 &ndash; present <small>(freelance)</small></span>
-          </header>
-          <div class="card__body | flow">
-            <ul class="flow">
-              <li>Enhancing and optimising their user interface, overall website experience, developer experience, content management workflow, search and <abbr title="Search Engine Optimisation.">SEO</abbr>.</li>
-              <li>Rebuilt the <a href="https://uxbri.org/jobs">UX Brighton job board</a> so it renders as a <abbr title="Multiple Page Application.">MPA</abbr> rather than a <abbr title="Single Page Application.">SPA</abbr>.</li>
-              <li>Built logic to dynamically include valid <code>JobPosting</code> and <code>Event</code> <a href="https://developers.google.com/search/docs/appearance/structured-data ">structured schema data</a> in every job & event page at build time &mdash; and automatically notify Google of these changes.</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-    </li>
-  </ul>
-</section>
-
----
-
-<section aria-labelledby="projects-select" class="companies | flow">
-  <h2 id="projects-select" tabindex="-1">Selected projects <a class="header-anchor" href="#projects-select">#</a></h2>
   {# List of project pages #}
   <ul role="list" class="projects__list | auto-grid | no-list">
   {% for project in projects -%}
     <li class="projects__list-item">
-      <article class="card card--stacked">
+      <article class="card card--stacked{% if project.data.highlighted %} call-out{% endif %}">
         <div class="card__content">
           <header class="card__header">
             <h3 class="card__title">
@@ -62,9 +35,7 @@ date: 2024-02-14T17:29:00
             </h3>
           </header>
           <div class="card__body | flow">
-            {%- if project.data.lead -%}
-              <p>{{ project.data.lead | safe | trim }}</p>
-            {% else %}
+            {%- if project.data.summary -%}
               <p>{{ project.data.summary | safe | trim }}</p>
             {%- endif -%}
           </div>
