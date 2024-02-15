@@ -19,12 +19,12 @@ pagination:
 date: 2024-02-14T17:29:00
 ---
 
+{% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
+
 <section aria-labelledby="projects-select" class="companies | flow">
   <h2 id="projects-select" tabindex="-1">Selected projects <a class="header-anchor" href="#projects-select">#</a></h2>
   {# List of project pages #}
   <ul role="list" class="projects__list | auto-grid | no-list">
-
-
   {% for project in projects -%}
     <li class="projects__list-item">
       <article class="card card--stacked{% if project.data.highlighted %} call-out{% endif %}">
@@ -45,13 +45,11 @@ date: 2024-02-14T17:29:00
       </article>
     </li>
   {% endfor -%}
-
   </ul>
 </section>
 
 ---
 
-{% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
 <section aria-labelledby="testimonials" class="testimonials | flow">
   <h2 id="testimonials" tabindex="-1">Nice things people have said <a class="header-anchor" href="#testimonials">#</a></h2>
   <ul role="list" class="auto-grid | no-list">

@@ -90,8 +90,8 @@ h3 {
 }
 
 p,
-ul:not(.navigation__list), // Not the primary navigation list element
-ol,
+ul:not(.navigation__list, .auto-grid), // Not the primary navigation list or grid list element
+ol:not(.auto-grid), // Not the grid list element
 pre {
   // Fallback for older browsers
   font-size: convert-to-rem(18px);

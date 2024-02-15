@@ -17,14 +17,15 @@ date: 2024-02-14T18:37:27.631Z
 eleventyExcludeFromCollections: false
 ---
 
+{% from "components/core/images/images.njk" import imageNormal %}
 {% from "components/core/images/images.njk" import imageFigure %}
 
 {{ imageFigure(
   "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
-  "A screenshot of the ECARX software services website page",
+  "A screenshot of ECARX's software services website page",
   "1200",
   "972",
-  "ECARX software services website page",
+  "ECARX's software services page",
   false,
   false,
   "lazy")
@@ -36,38 +37,35 @@ I was brought on to implement some of the larger animation pieces. Using GSAP I 
 
 <ol class="auto-grid | no-list">
   <li>
-    {{ imageFigure(
+    {{ imageNormal(
       "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
-      "A screenshot of the ECARX software services website page",
+      "A screenshot of ECARX's software services website page",
       "1200",
       "972",
-      "ECARX software services website page",
       false,
-      false,
+      "shadow",
       "lazy")
     }}
   </li>
   <li>
-    {{ imageFigure(
+    {{ imageNormal(
       "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
-      "A screenshot of the ECARX software services website page",
+      "A screenshot of ECARX's software services website page",
       "1200",
       "972",
-      "ECARX software services website page",
       false,
-      false,
+      "shadow",
       "lazy")
     }}
   </li>
   <li>
-    {{ imageFigure(
+    {{ imageNormal(
       "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
-      "A screenshot of the ECARX software services website page",
+      "A screenshot of ECARX's software services website page",
       "1200",
       "972",
-      "ECARX software services website page",
       false,
-      false,
+      "shadow",
       "lazy")
     }}
   </li>

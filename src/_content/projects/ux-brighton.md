@@ -1,14 +1,14 @@
 ---
 title: UX Brighton
 # Populates the `meta description` for a page as well as the project landing page project-specific summary
-summary: Collaborated with Hugo & Cat on a successful web project for ECARX, a leading automotive technology company.
+summary: Enhanced and optimised their user interface, overall website experience, developer experience, content management workflow, search and SEO.
 # Populates the opening / `lead` text on a page
 lead:
-  - Collaborated with Hugo & Cat on a successful web project for ECARX, a leading automotive technology company.
+  - Enhanced and optimised their user interface, overall website experience, developer experience, content management workflow, search and SEO.
 
 project:
-  year: 2023
-  role: Senior Frontend Web Developer
+  year: Ongoing
+  role: Frontend Web Development
   technologies: HTML5, CSS, SCSS, JavaScript, GSAP, Handlebars, Storybook, Webpack, Gulp, Cypress, Umbraco, .NET Razor Views, Azure DevOps, Figma
   order: 2
 
@@ -17,14 +17,15 @@ date: 2024-02-14T18:37:27.631Z
 eleventyExcludeFromCollections: false
 ---
 
+{% from "components/core/images/images.njk" import imageNormal %}
 {% from "components/core/images/images.njk" import imageFigure %}
 
 {{ imageFigure(
-  "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
-  "A screenshot of the ECARX software services website page",
+  "/assets/images/projects/ux-brighton/uxbrighton-homepage01.jpg",
+  "A screenshot of UX Brighton's website homepage",
   "1200",
   "972",
-  "ECARX software services website page",
+  "UX Brighton's homepage",
   false,
   false,
   "lazy")
@@ -36,38 +37,35 @@ I was brought on to implement some of the larger animation pieces. Using GSAP I 
 
 <ol class="auto-grid | no-list">
   <li>
-    {{ imageFigure(
-      "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
-      "A screenshot of the ECARX software services website page",
+    {{ imageNormal(
+      "/assets/images/projects/ux-brighton/uxbrighton-homepage01.jpg",
+      "A screenshot of UX Brighton's website homepage",
       "1200",
       "972",
-      "ECARX software services website page",
       false,
-      false,
+      "shadow",
       "lazy")
     }}
   </li>
   <li>
-    {{ imageFigure(
-      "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
-      "A screenshot of the ECARX software services website page",
+    {{ imageNormal(
+      "/assets/images/projects/ux-brighton/uxbrighton-homepage01.jpg",
+      "A screenshot of UX Brighton's website homepage",
       "1200",
       "972",
-      "ECARX software services website page",
       false,
-      false,
+      "shadow",
       "lazy")
     }}
   </li>
   <li>
-    {{ imageFigure(
-      "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
-      "A screenshot of the ECARX software services website page",
+    {{ imageNormal(
+      "/assets/images/projects/ux-brighton/uxbrighton-homepage01.jpg",
+      "A screenshot of UX Brighton's website homepage",
       "1200",
       "972",
-      "ECARX software services website page",
       false,
-      false,
+      "shadow",
       "lazy")
     }}
   </li>

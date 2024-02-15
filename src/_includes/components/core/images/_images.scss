@@ -31,7 +31,9 @@ figure {
 
   figcaption {
     text-align: left;
-    margin-block-start: 0.5em;
+    padding-block-start: 0.5em;
+    margin-block-end: 3em;
+    max-width: 40ch;
   }
 }
 
