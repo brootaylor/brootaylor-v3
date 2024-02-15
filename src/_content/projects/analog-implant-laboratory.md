@@ -1,5 +1,5 @@
 ---
-title: UX Brighton
+title: Analog Implant Laboratory
 # Populates the `meta description` for a page as well as the project landing page project-specific summary
 summary: Collaborated with Hugo & Cat on a successful web project for ECARX, a leading automotive technology company.
 # Populates the opening / `lead` text on a page
@@ -10,7 +10,7 @@ project:
   year: 2023
   role: Senior Frontend Web Developer
   technologies: HTML5, CSS, SCSS, JavaScript, GSAP, Handlebars, Storybook, Webpack, Gulp, Cypress, Umbraco, .NET Razor Views, Azure DevOps, Figma
-  order: 2
+  order: 8
 
 date: 2024-02-14T18:37:27.631Z
 

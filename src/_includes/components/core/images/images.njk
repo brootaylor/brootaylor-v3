@@ -176,7 +176,7 @@
 			alt="{{ alt }}."
 			width="{{ width }}"
 			height="{{ height }}"
-			class="{% if shadow %}shadow{% endif %}"
+			{%- if shadow %}class="shadow"{% endif %}
 			{%- if lazyLoad == 'lazy' %}
 				loading="lazy"
 				decoding="async"

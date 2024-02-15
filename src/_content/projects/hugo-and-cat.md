@@ -10,6 +10,7 @@ project:
   year: 2023
   role: Senior Frontend Web Developer
   technologies: HTML5, CSS, SCSS, JavaScript, GSAP, Handlebars, Storybook, Webpack, Gulp, Cypress, Umbraco, .NET Razor Views, Azure DevOps, Figma
+  order: 1
 
 date: 2024-02-14T18:37:27.631Z
 
