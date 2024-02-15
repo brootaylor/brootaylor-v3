@@ -67,3 +67,9 @@ date: 2024-02-14T17:29:00
     </li>
   </ul>
 </section>
+
+---
+
+<h2 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h2>
+
+**Need a copy of my CV for some reason?** You're welcome to [download a copy here](/BruceTaylorCV). { .call-out }
