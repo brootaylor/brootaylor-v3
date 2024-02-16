@@ -12,11 +12,24 @@ project:
   technologies: HTML5, CSS, SCSS, JavaScript, GSAP, Handlebars, Storybook, Webpack, Gulp, Cypress, Umbraco, .NET Razor Views, Azure DevOps, Figma
   order: 8
 
+# Image component rules / properties for projects list page
+# #######################################################
+image:
+  # The projects landing list page uses the `srcWebp` and `srcJpg` values
+  srcWebp: "/assets/images/projects/hugo-and-cat/ecarx-services_02--thumbnail.webp"
+  srcJpg: "/assets/images/projects/hugo-and-cat/ecarx-services_02--thumbnail.jpg"
+  alt: "A screenshot of ECARX's software services website page"
+  width: 650
+  height: 464
+  # Should the image thumbnail on the list page lazy load?
+  lazyLoad: true
+
 date: 2024-02-14T18:37:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
 
+{% from "components/core/images/images.njk" import imageNormal %}
 {% from "components/core/images/images.njk" import imageFigure %}
 
 {{ imageFigure(
@@ -29,48 +42,3 @@ eleventyExcludeFromCollections: false
   false,
   "lazy")
 }}
-
-ECARX is an Umbraco based website, incorporating a Storybook component library for the site build, and featuring a substantial amount of animation and interactivity.
-
-I was brought on to implement some of the larger animation pieces. Using GSAP I used the `scrollTrigger` method to initialise various animations on the timeline. This can be experienced when visiting the homepage and seeing how the hero banner reveals the video as the user begins to scroll.
-
-<ol class="auto-grid | no-list">
-  <li>
-    {{ imageFigure(
-      "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
-      "A screenshot of the ECARX software services website page",
-      "1200",
-      "972",
-      "ECARX software services website page",
-      false,
-      false,
-      "lazy")
-    }}
-  </li>
-  <li>
-    {{ imageFigure(
-      "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
-      "A screenshot of the ECARX software services website page",
-      "1200",
-      "972",
-      "ECARX software services website page",
-      false,
-      false,
-      "lazy")
-    }}
-  </li>
-  <li>
-    {{ imageFigure(
-      "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
-      "A screenshot of the ECARX software services website page",
-      "1200",
-      "972",
-      "ECARX software services website page",
-      false,
-      false,
-      "lazy")
-    }}
-  </li>
-</ol>
-
-The website can be viewed at [www.ecarxgroup.com](https://www.ecarxgroup.com)

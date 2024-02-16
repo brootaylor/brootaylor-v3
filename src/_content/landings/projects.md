@@ -27,7 +27,22 @@ date: 2024-02-14T17:29:00
   <ul role="list" class="projects__list | auto-grid | no-list">
   {% for project in projects -%}
     <li class="projects__list-item">
-      <article class="card card--stacked{% if project.data.highlighted %} call-out{% endif %}">
+      <article class="card card--stacked">
+        <div class="card__visual">
+          <picture>
+            <source type="image/webp" srcset="{{ project.data.image.srcWebp }}">
+            <source type="image/jpeg" srcset="{{ project.data.image.srcJpg }}">
+            <img src="{{ project.data.image.srcJpg }}"
+              alt="{{ project.data.image.alt }}."
+              width="{{ project.data.image.width }}"
+              height="{{ project.data.image.height }}"
+              class="obj-fit"
+              {%- if project.data.image.lazyLoad %}
+                loading="lazy"
+                decoding="async"
+              {% endif %}>
+          </picture>
+        </div>
         <div class="card__content">
           <header class="card__header">
             <h3 class="card__title">

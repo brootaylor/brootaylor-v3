@@ -12,6 +12,18 @@ project:
   technologies: HTML5, CSS, SCSS, JavaScript, GSAP, Handlebars, Storybook, Webpack, Gulp, Cypress, Umbraco, .NET Razor Views, Azure DevOps, Figma
   order: 1
 
+# Image component rules / properties for projects list page
+# #######################################################
+image:
+  # The projects landing list page uses the `srcWebp` and `srcJpg` values
+  srcWebp: "/assets/images/projects/hugo-and-cat/ecarx-services_02--thumbnail.webp"
+  srcJpg: "/assets/images/projects/hugo-and-cat/ecarx-services_02--thumbnail.jpg"
+  alt: "A screenshot of ECARX's software services website page"
+  width: 650
+  height: 464
+  # Should the image thumbnail on the list page lazy load?
+  lazyLoad: true
+
 date: 2024-02-14T18:37:27.631Z
 
 eleventyExcludeFromCollections: false
@@ -71,4 +83,4 @@ I was brought on to implement some of the larger animation pieces. Using GSAP I 
   </li>
 </ol>
 
-The website can be viewed at [www.ecarxgroup.com](https://www.ecarxgroup.com)
+The website can be viewed at [www.ecarxgroup.com](https://www.ecarxgroup.com).

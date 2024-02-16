@@ -15,7 +15,7 @@
   .companies {
     @supports (display: grid) {
       .auto-grid {
-        grid-gap: 1em;
+        grid-gap: 1.5em;
 
         @include min-width($breakpoint-small) {
           --auto-grid-min-size: 17rem;
@@ -43,7 +43,6 @@
   }
 
   .card {
-    min-height: 100%;
     margin-bottom: 0;
 
     // Not cards that use the `call-out` class...
@@ -58,13 +57,33 @@
       }
     }
 
+    img {
+      transition: transform 0.5s ease-in-out;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
     &__content {
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
     }
 
     &__title {
       font-size: convert-to-rem(24px);
+
+      a {
+        &:before {
+          content: '';
+          z-index: 2;
+          position: absolute;
+          inset: 0;
+        }
+      }
     }
 
     &__body {

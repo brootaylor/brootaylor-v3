@@ -10,6 +10,7 @@
 /// Typically horizontal layout with image to the left or right. It will 'stack' at smaller screen (viewport) and/or (container) sizes.
 
 .card {
+  position: relative;
 	display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -21,6 +22,7 @@
 	// Image / Video element
 	> .card__visual {
 		position: relative;
+    overflow: hidden;
 
 			@include min-width($breakpoint-medium) {
 				flex: 1 0 50%;
@@ -36,7 +38,6 @@
 
 	// Content element
 	> .card__content {
-
 			@include min-width($breakpoint-medium) {
 				flex: 1 1 50%;
 				max-width: 50%;
