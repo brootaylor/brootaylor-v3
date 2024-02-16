@@ -16,8 +16,8 @@ project:
 # #######################################################
 image:
   # The projects landing list page uses the `srcWebp` and `srcJpg` values
-  srcWebp: "/assets/images/projects/hugo-and-cat/ecarx-services_02--thumbnail.webp"
-  srcJpg: "/assets/images/projects/hugo-and-cat/ecarx-services_02--thumbnail.jpg"
+  srcWebp: "/assets/images/projects/euromoney/fastmarkets_01--thumbnail.webp"
+  srcJpg: "/assets/images/projects/euromoney/fastmarkets_01--thumbnail.jpg"
   alt: "A screenshot of ECARX's software services website page"
   width: 650
   height: 464
@@ -33,12 +33,12 @@ eleventyExcludeFromCollections: false
 {% from "components/core/images/images.njk" import imageFigure %}
 
 {{ imageFigure(
-  "/assets/images/projects/hugo-and-cat/ecarx-services-page_02.jpg",
+  "/assets/images/projects/euromoney/fastmarkets_01.jpg",
   "A screenshot of the ECARX software services website page",
   "1200",
   "972",
   "ECARX software services website page",
   false,
-  false,
+  "shadow",
   "lazy")
 }}

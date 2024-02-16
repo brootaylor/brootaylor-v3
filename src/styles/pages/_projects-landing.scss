@@ -15,7 +15,7 @@
   .companies {
     @supports (display: grid) {
       .auto-grid {
-        grid-gap: 1.5em;
+        grid-gap: 2em;
 
         @include min-width($breakpoint-small) {
           --auto-grid-min-size: 17rem;

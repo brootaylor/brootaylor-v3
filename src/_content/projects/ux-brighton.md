@@ -16,8 +16,8 @@ project:
 # #######################################################
 image:
   # The projects landing list page uses the `srcWebp` and `srcJpg` values
-  srcWebp: "/assets/images/projects/hugo-and-cat/ecarx-services_02--thumbnail.webp"
-  srcJpg: "/assets/images/projects/hugo-and-cat/ecarx-services_02--thumbnail.jpg"
+  srcWebp: "/assets/images/projects/ux-brighton/uxbrighton_01--thumbnail.webp"
+  srcJpg: "/assets/images/projects/ux-brighton/uxbrighton_01--thumbnail.jpg"
   alt: "A screenshot of ECARX's software services website page"
   width: 650
   height: 464
@@ -36,49 +36,13 @@ eleventyExcludeFromCollections: false
   "/assets/images/projects/ux-brighton/uxbrighton-homepage_01.jpg",
   "A screenshot of UX Brighton's website homepage",
   "1200",
-  "972",
+  "970",
   "UX Brighton's homepage",
   false,
-  false,
+  "shadow",
   "lazy")
 }}
 
 UX Brighton is a static website. It's built using the Jekyll static site generator (SSG) and deployed using Netlify. It uses a Netlify CMS configuration to management the content.
 
-<ol class="auto-grid | no-list">
-  <li>
-    {{ imageNormal(
-      "/assets/images/projects/ux-brighton/uxbrighton-homepage_01.jpg",
-      "A screenshot of UX Brighton's website homepage",
-      "1200",
-      "972",
-      false,
-      "shadow",
-      "lazy")
-    }}
-  </li>
-  <li>
-    {{ imageNormal(
-      "/assets/images/projects/ux-brighton/uxbrighton-homepage_01.jpg",
-      "A screenshot of UX Brighton's website homepage",
-      "1200",
-      "972",
-      false,
-      "shadow",
-      "lazy")
-    }}
-  </li>
-  <li>
-    {{ imageNormal(
-      "/assets/images/projects/ux-brighton/uxbrighton-homepage_01.jpg",
-      "A screenshot of UX Brighton's website homepage",
-      "1200",
-      "972",
-      false,
-      "shadow",
-      "lazy")
-    }}
-  </li>
-</ol>
-
-The website can be viewed at [uxbri.org](https://uxbri.org/).
+The website can be viewed at [uxbri.org](https://uxbri.org/)

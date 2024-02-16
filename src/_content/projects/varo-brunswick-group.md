@@ -1,5 +1,5 @@
 ---
-title: Macmillan Cancer Support
+title: Varo / Brunswick Group
 # Populates the `meta description` for a page as well as the project landing page project-specific summary
 summary: Collaborated with Hugo & Cat on a successful web project for ECARX, a leading automotive technology company.
 # Populates the opening / `lead` text on a page
@@ -8,16 +8,16 @@ lead:
 
 project:
   year: 2023
-  role: Senior Frontend Web Developer
-  technologies: HTML5, CSS, SCSS, JavaScript, GSAP, Handlebars, Storybook, Webpack, Gulp, Cypress, Umbraco, .NET Razor Views, Azure DevOps, Figma
-  order: 10
+  role: Frontend Web Developer
+  technologies: HTML5, CSS, SCSS, JavaScript, jQuery, Vue.JS, VueX, Vue Router, GSAP, Bootstrap 5, Bitbucket, WordPress, (Headless CMS & Advanced Custom Fields), Umbraco, Photoshop, Figma, JIRA, Confluence.
+  order: 3
 
 # Image component rules / properties for projects list page
 # #######################################################
 image:
   # The projects landing list page uses the `srcWebp` and `srcJpg` values
-  srcWebp: "/assets/images/projects/hugo-and-cat/ecarx-services_02--thumbnail.webp"
-  srcJpg: "/assets/images/projects/hugo-and-cat/ecarx-services_02--thumbnail.jpg"
+  srcWebp: "/assets/images/projects/brunswick-group/varo/varo_01--thumbnail.webp"
+  srcJpg: "/assets/images/projects/brunswick-group/varo/varo_01--thumbnail.jpg"
   alt: "A screenshot of ECARX's software services website page"
   width: 650
   height: 464
@@ -33,12 +33,14 @@ eleventyExcludeFromCollections: false
 {% from "components/core/images/images.njk" import imageFigure %}
 
 {{ imageFigure(
-  "/assets/images/projects/hugo-and-cat/ecarx-services-page_02.jpg",
+  "/assets/images/projects/brunswick-group/varo/varo-homepage_01.jpg",
   "A screenshot of the ECARX software services website page",
   "1200",
-  "972",
+  "970",
   "ECARX software services website page",
   false,
-  false,
+  "shadow",
   "lazy")
 }}
+
+The website can be viewed at [www.varoenergy.com](https://www.varoenergy.com/)

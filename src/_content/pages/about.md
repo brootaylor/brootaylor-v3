@@ -20,7 +20,7 @@ date: 2024-02-12T12:13:00
   "1125",
   "Giants Castle. (KZN, South Africa)",
   false,
-  false,
+  "shadow",
   "lazy")
 }}
 
