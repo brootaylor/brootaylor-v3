@@ -33,7 +33,7 @@ eleventyExcludeFromCollections: false
 {% from "components/core/images/images.njk" import imageFigure %}
 
 {{ imageFigure(
-  "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
+  "/assets/images/projects/hugo-and-cat/ecarx-services-page_02.jpg",
   "A screenshot of ECARX's software services website page",
   "1200",
   "972",
@@ -50,7 +50,7 @@ I was brought on to implement some of the larger animation pieces. Using GSAP I 
 <ol class="auto-grid | no-list">
   <li>
     {{ imageNormal(
-      "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
+      "/assets/images/projects/hugo-and-cat/ecarx-services-page_02.jpg",
       "A screenshot of ECARX's software services website page",
       "1200",
       "972",
@@ -61,7 +61,7 @@ I was brought on to implement some of the larger animation pieces. Using GSAP I 
   </li>
   <li>
     {{ imageNormal(
-      "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
+      "/assets/images/projects/hugo-and-cat/ecarx-services-page_02.jpg",
       "A screenshot of ECARX's software services website page",
       "1200",
       "972",
@@ -72,7 +72,7 @@ I was brought on to implement some of the larger animation pieces. Using GSAP I 
   </li>
   <li>
     {{ imageNormal(
-      "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
+      "/assets/images/projects/hugo-and-cat/ecarx-services-page_02.jpg",
       "A screenshot of ECARX's software services website page",
       "1200",
       "972",

@@ -33,7 +33,7 @@ eleventyExcludeFromCollections: false
 {% from "components/core/images/images.njk" import imageFigure %}
 
 {{ imageFigure(
-  "/assets/images/projects/hugo-and-cat/ecarx-services-page02.jpg",
+  "/assets/images/projects/hugo-and-cat/ecarx-services-page_02.jpg",
   "A screenshot of the ECARX software services website page",
   "1200",
   "972",

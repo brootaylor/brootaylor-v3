@@ -33,7 +33,7 @@ eleventyExcludeFromCollections: false
 {% from "components/core/images/images.njk" import imageFigure %}
 
 {{ imageFigure(
-  "/assets/images/projects/ux-brighton/uxbrighton-homepage01.jpg",
+  "/assets/images/projects/ux-brighton/uxbrighton-homepage_01.jpg",
   "A screenshot of UX Brighton's website homepage",
   "1200",
   "972",
@@ -48,7 +48,7 @@ UX Brighton is a static website. It's built using the Jekyll static site generat
 <ol class="auto-grid | no-list">
   <li>
     {{ imageNormal(
-      "/assets/images/projects/ux-brighton/uxbrighton-homepage01.jpg",
+      "/assets/images/projects/ux-brighton/uxbrighton-homepage_01.jpg",
       "A screenshot of UX Brighton's website homepage",
       "1200",
       "972",
@@ -59,7 +59,7 @@ UX Brighton is a static website. It's built using the Jekyll static site generat
   </li>
   <li>
     {{ imageNormal(
-      "/assets/images/projects/ux-brighton/uxbrighton-homepage01.jpg",
+      "/assets/images/projects/ux-brighton/uxbrighton-homepage_01.jpg",
       "A screenshot of UX Brighton's website homepage",
       "1200",
       "972",
@@ -70,7 +70,7 @@ UX Brighton is a static website. It's built using the Jekyll static site generat
   </li>
   <li>
     {{ imageNormal(
-      "/assets/images/projects/ux-brighton/uxbrighton-homepage01.jpg",
+      "/assets/images/projects/ux-brighton/uxbrighton-homepage_01.jpg",
       "A screenshot of UX Brighton's website homepage",
       "1200",
       "972",
