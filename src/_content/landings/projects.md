@@ -66,7 +66,7 @@ date: 2024-02-14T17:29:00
 ---
 
 <section aria-labelledby="projects-other" class="companies | flow">
-  <h2 id="projects-other" tabindex="-1">Other people I've worked with <a class="header-anchor" href="#projects-other">#</a></h2>
+  <h2 id="projects-other" tabindex="-1">I have also worked with <a class="header-anchor" href="#projects-other">#</a></h2>
   <ul role="list" class="auto-grid | no-list">
     <li>
       <article class="card card--stacked">
@@ -111,7 +111,7 @@ date: 2024-02-14T17:29:00
             <p>Some examples being; Rapid White, Cetraben, TalkingEczematool and Movelat.</p>
           </div>
           <footer id="fn:pegasus" class="card__footer">
-            <p><sup>*</sup> Since I last worked with them, they've become <a href="https://www.evokegroup.com/">Evoke</a>.</p>
+            <p><sup>*</sup> Since I last worked with them, they've become <a href="https://www.inizioevoke.com/">Inizio Evoke</a>.</p>
           </footer>
         </div>
       </article>

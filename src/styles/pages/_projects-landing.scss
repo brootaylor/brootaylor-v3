@@ -73,7 +73,7 @@
     &__title {
       font-size: convert-to-rem(24px);
 
-      a {
+      a:not(.footnote) {
         // Getting the `a` to cover everyting relative to its parent element (which is the `card`)
         &:before {
           content: '';
