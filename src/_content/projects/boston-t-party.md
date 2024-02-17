@@ -4,7 +4,7 @@ title: Boston T Party
 summary: A fast customer informational website for Boston T Party in South Africa.
 # Populates the opening / `lead` text on a page
 lead:
-  - A fast customer informational website for Boston T Party in South Africa.
+  - A fast customer informational <abbr title="Progressive Web App.">PWA</abbr> website for Boston T Party in South Africa.
 
 project:
   year: 2022
@@ -43,8 +43,10 @@ eleventyExcludeFromCollections: false
   "lazy")
 }}
 
-Developed a high speed <abbr title="Progressive Web App.">PWA</abbr> website tailored for Boston T Party, emphasising performance and resilience through progressive enhancement and offline caching techniques.
+Developed a high speed PWA website tailored for Boston T Party, emphasising performance and resilience through progressive enhancement and offline caching techniques.
 
 This was particularly crucial considering the limited connectivity, data and bandwidth availability in South Africa.
 
 The website can be viewed at [bostontparty.co.za](https://bostontparty.co.za/)
+
+*[PWA]: Progressive Web App.

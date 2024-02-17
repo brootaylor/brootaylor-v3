@@ -4,7 +4,7 @@ title: Varo / Brunswick Group
 summary: Developed & enhanced a CMS driven corporate communication website for Varo. One of Brunswick Group's clients.
 # Populates the opening / `lead` text on a page
 lead:
-  - Developed & enhanced a CMS driven <abbr title="Multi Page Application.">MPA</abbr> corporate communication website for Varo. One of Brunswick Group's clients.
+  - Developed & enhanced a <abbr title="Content Management System.">CMS</abbr> driven <abbr title="Multi Page Application.">MPA</abbr> corporate communication website for Varo. One of Brunswick Group's clients.
 
 project:
   year: 2023
@@ -44,3 +44,6 @@ eleventyExcludeFromCollections: false
 }}
 
 The website can be viewed at [www.varoenergy.com](https://www.varoenergy.com/)
+
+*[CMS]: Content Management System.
+*[MPA]: Multi Page Application.

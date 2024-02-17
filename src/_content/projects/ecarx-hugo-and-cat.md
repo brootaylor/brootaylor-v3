@@ -83,4 +83,4 @@ I was brought on to implement some of the larger animation pieces. Using GSAP I 
   </li>
 </ol>
 
-The website can be viewed at [www.ecarxgroup.com](https://www.ecarxgroup.com)
+The website can be viewed at [www.ecarxgroup.com](https://www.ecarxgroup.com){rel=external}

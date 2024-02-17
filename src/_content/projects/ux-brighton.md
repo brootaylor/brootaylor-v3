@@ -4,7 +4,7 @@ title: UX Brighton
 summary: Enhanced and optimised their user interface, overall website experience, developer experience, content management workflow, search and SEO.
 # Populates the opening / `lead` text on a page
 lead:
-  - Enhanced and optimised their user interface, overall website experience, developer experience, content management workflow, search and SEO.
+  - Enhanced and optimised their user interface, overall website experience, developer experience, content management workflow, search and <abbr title="Search Engine Optimisation.">SEO</abbr>.
 
 project:
   year: Ongoing
@@ -43,6 +43,10 @@ eleventyExcludeFromCollections: false
   "lazy")
 }}
 
-UX Brighton is a static website. It's built using the Jekyll static site generator (SSG) and deployed using Netlify. It uses a Netlify CMS configuration to management the content.
+UX Brighton is a static website. It's built using the Jekyll SSG and deployed using Netlify. It uses a Netlify CMS configuration to management the content.
 
 The website can be viewed at [uxbri.org](https://uxbri.org/)
+
+*[SSG]: Static Site Generator.
+*[CMS]: Content Management System.
+*[SEO]: Search Engine Optimisation.

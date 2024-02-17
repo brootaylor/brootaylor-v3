@@ -43,4 +43,6 @@ eleventyExcludeFromCollections: false
   "lazy")
 }}
 
-Worked with a team of web developers to build this <abbr title="Single Page Application.">SPA</abbr> microsite using Vue.js. This was specifically to support Naspers 2022 annual financial report.
+Worked with a team of web developers to build this SPA microsite using Vue.js. This was specifically to support Naspers 2022 annual financial report.
+
+*[SPA]: Single Page Application.
