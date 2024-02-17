@@ -33,7 +33,7 @@ date: 2024-02-12T12:13:00
   "lazy")
 }}
 
-Before ever touching a computer, my life revolved around ‘teasing’ cows on a dairy farm, off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, training as a chef, and aspiring to be a pilot.
+Before ever touching a computer, my life revolved around *‘teasing’* cows on a dairy farm, off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, training as a chef, and aspiring to be a pilot.
 
 ---
 
@@ -41,7 +41,9 @@ Before ever touching a computer, my life revolved around ‘teasing’ cows on a
 
 I build websites and have been doing so for around two decades.
 
-I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}". The somewhat broad and *fuzzy* intersection between design and back-end engineering. I thrive in roles that ***strike a balance between user and developer experiences***, empowering teams to write great code that aligns with their needs and preferences while ensuring a positive user experience. {.call-out}
+I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}". The somewhat broad and *fuzzy* intersection between design and back-end engineering. I thrive in roles that ***strike a balance between user and developer experiences***, empowering teams to write great code that aligns with their needs and preferences while ensuring a positive user experience.
+
+Here's where to view some of the **[projects I've worked on](/projects)**. {.call-out}
 
 I'm quite good at picking up new skills and programming languages, as well as problem solving. My skill set is fairly diverse, encompassing HTML, CSS, JavaScript, responsive & device-agnostic web design, themeable design system configuration, Progressive Web Apps (*PWAs*), Static Site Generation (*SSG*), web performance optimisation, and web accessibility.
 
@@ -53,7 +55,7 @@ I try my best to build web solutions that are [resilient](https://resilientwebde
 
 ## Webby stuff I'm enjoying
 
-[Eleventy](https://www.11ty.io/){rel=external}, [Astro](https://astro.build/){rel=external}, [Svelte](https://svelte.dev/){rel=external}, [Preact](https://preactjs.com/){rel=external}, [Vite](https://vitejs.dev/){rel=external}, [Netlify](https://www.netlify.com/){rel=external}, [Netlify CMS](https://www.netlifycms.org/){rel=external}, [Fractal](https://fractal.build/){rel=external}, [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG){rel=external} animation using [GreenSock](https://greensock.com/){rel=external}, and [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components){rel=external} are proving really enjoyable to work with and have restored some of the magic of building websites again.
+[Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [Svelte](https://svelte.dev/), [Preact](https://preactjs.com/), [Vite](https://vitejs.dev/), [Netlify](https://www.netlify.com/), [Netlify CMS](https://www.netlifycms.org/), [Fractal](https://fractal.build/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation using [GreenSock](https://greensock.com/), and [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) are proving really enjoyable to work with and have restored some of the magic of building websites again.
 
 ---
 
