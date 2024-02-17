@@ -24,17 +24,16 @@ image:
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2024-02-14T18:37:27.631Z
+date: 2024-02-17T23:09:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
 
 {% from "components/core/images/images.njk" import imageNormal %}
-{% from "components/core/images/images.njk" import imageFigure %}
 
 <picture>
   <source srcset="/assets/images/projects/ux-brighton/uxbrighton-homepage--lg-screen_01.webp" type="image/webp" media="(min-width: 640px)">
-  <img src="/assets/images/projects/ux-brighton/uxbrighton-homepage--sml-screen_01.webp" width="1200" height="951" alt="A screenshot of UX Brighton's website homepage." loading="lazy" decoding="async">
+  <img src="/assets/images/projects/ux-brighton/uxbrighton-homepage--sml-screen_01.webp" width="1200" height="951" alt="A screenshot of UX Brighton's homepage on a desktop monitor." loading="lazy" decoding="async">
 </picture>
 
 UX Brighton is a static website. It's built using the Jekyll SSG and deployed using Netlify. It uses a Netlify CMS configuration to management the content.
