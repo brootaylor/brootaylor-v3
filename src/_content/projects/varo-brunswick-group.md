@@ -1,15 +1,15 @@
 ---
 title: Varo / Brunswick Group
 # Populates the `meta description` for a page as well as the project landing page project-specific summary
-summary: Collaborated with Hugo & Cat on a successful web project for ECARX, a leading automotive technology company.
+summary: Developed & enhanced a CMS driven corporate communication website for Varo. One of Brunswick Group's clients.
 # Populates the opening / `lead` text on a page
 lead:
-  - Collaborated with Hugo & Cat on a successful web project for ECARX, a leading automotive technology company.
+  - Developed & enhanced a CMS driven <abbr title="Multi Page Application.">MPA</abbr> corporate communication website for Varo. One of Brunswick Group's clients.
 
 project:
   year: 2023
   role: Frontend Web Developer
-  technologies: HTML5, CSS, SCSS, JavaScript, jQuery, Vue.JS, VueX, Vue Router, GSAP, Bootstrap 5, Bitbucket, WordPress, (Headless CMS & Advanced Custom Fields), Umbraco, Photoshop, Figma, JIRA, Confluence.
+  technologies: HTML5, CSS, SCSS, JavaScript, jQuery, Bootstrap 5, Bitbucket, Umbraco, Photoshop, Figma, JIRA, Confluence.
   order: 3
 
 # Image component rules / properties for projects list page
@@ -37,7 +37,7 @@ eleventyExcludeFromCollections: false
   "A screenshot of the ECARX software services website page",
   "1200",
   "970",
-  "ECARX software services website page",
+  "Varo's homepage",
   false,
   "shadow",
   "lazy")

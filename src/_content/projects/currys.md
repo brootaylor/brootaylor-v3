@@ -1,15 +1,15 @@
 ---
 title: Currys
 # Populates the `meta description` for a page as well as the project landing page project-specific summary
-summary: Collaborated with Hugo & Cat on a successful web project for ECARX, a leading automotive technology company.
+summary: Migration of the Carphone Warehouse website content to a more advanced in-house content management platform.
 # Populates the opening / `lead` text on a page
 lead:
-  - Collaborated with Hugo & Cat on a successful web project for ECARX, a leading automotive technology company.
+  - Migration of the Carphone Warehouse website content to a more advanced in-house content management platform.
 
 project:
-  year: 2023
-  role: Senior Frontend Web Developer
-  technologies: HTML5, CSS, SCSS, JavaScript, GSAP, Handlebars, Storybook, Webpack, Gulp, Cypress, Umbraco, .NET Razor Views, Azure DevOps, Figma
+  year: 2022
+  role: Frontend Web Developer
+  technologies: HTML5, CSS, SCSS, JavaScript, jQuery, PHP, Twig, Docker, GitLab, Photoshop, JIRA, Confluence.
   order: 4
 
 # Image component rules / properties for projects list page
@@ -37,8 +37,10 @@ eleventyExcludeFromCollections: false
   "A screenshot of the ECARX software services website page",
   "1200",
   "972",
-  "ECARX software services website page",
+  "Carphone Warehouse website",
   false,
   "shadow",
   "lazy")
 }}
+
+Worked with one of Currys' web teams to improve and optimise the user interface and usability of the [Mobiles.co.uk](https://www.mobiles.co.uk/) and [e2save](https://www.e2save.com/) websites.

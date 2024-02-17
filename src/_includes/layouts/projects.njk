@@ -18,9 +18,7 @@
 			{# This `title` comes from the front matter in the relevant `.md` file - within the `projects` directory #}
 			{% if title %}
 				<h1>
-					{{- title | safe }}
-					{#- Checks whether a `bookmarkAuthor` value has been entered. If so, then the `h1` heading is updated... -#}
-					{% if bookmarkAuthor %}<span class="visually-hidden"> &mdash; written by</span><i aria-hidden="true"> &rarr;</i> {{ bookmarkAuthor | safe }}{% endif -%}
+					{{- title | safe }}{% if bookmarkAuthor %}<span class="visually-hidden"> &mdash; written by</span><i aria-hidden="true"> &rarr;</i> {{ bookmarkAuthor | safe }}{% endif -%}
 				</h1>
 			{% else %}
 				{# Pages need a `title` hence the reason for this fallback #}
@@ -47,11 +45,11 @@
 		<footer class="footnotes">
 			<dl class="flow">
 				<dt>Year:</dt>
-				<dd>{{ project.year }}</dd>
+				<dd>{{ project.year | safe }}</dd>
 				<dt>Role:</dt>
-				<dd>{{ project.role }}</dd>
+				<dd>{{ project.role | safe }}</dd>
 				<dt>Technologies:</dt>
-				<dd>{{ project.technologies }}</dd>
+				<dd>{{ project.technologies | safe }}</dd>
 			</dl>
 		</footer>
 

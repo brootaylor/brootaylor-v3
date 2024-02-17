@@ -1,16 +1,16 @@
 ---
 title: Naspers / Brunswick Group
 # Populates the `meta description` for a page as well as the project landing page project-specific summary
-summary: Collaborated with Hugo & Cat on a successful web project for ECARX, a leading automotive technology company.
+summary: A microsite to support the release of Naspers PLC's annual financial information.
 # Populates the opening / `lead` text on a page
 lead:
-  - Collaborated with Hugo & Cat on a successful web project for ECARX, a leading automotive technology company.
+  - A microsite to support the release of Naspers PLC's annual financial information.
 
 project:
-  year: 2023
+  year: 2022
   role: Frontend Web Developer
-  technologies: HTML5, CSS, SCSS, JavaScript, jQuery, Vue.JS, VueX, Vue Router, GSAP, Bootstrap 5, Bitbucket, WordPress, (Headless CMS & Advanced Custom Fields), Umbraco, Photoshop, Figma, JIRA, Confluence.
-  order: 3
+  technologies: HTML5, CSS, SCSS, JavaScript, Vue.JS, GSAP, Bootstrap 5, Webpack, Bitbucket, WordPress <em>(Headless CMS Config & Advanced Custom Fields)</em>, Photoshop, Figma, JIRA, Confluence.
+  order: 5
 
 # Image component rules / properties for projects list page
 # #######################################################
@@ -37,10 +37,10 @@ eleventyExcludeFromCollections: false
   "A screenshot of the ECARX software services website page",
   "1200",
   "970",
-  "ECARX software services website page",
+  "Naspers 2022 Annual Report website homepage",
   false,
   "shadow",
   "lazy")
 }}
 
-The website can be viewed at [www.varoenergy.com](https://www.varoenergy.com/)
+Worked with a team of web developers to build this <abbr title="Single Page Application.">SPA</abbr> microsite using Vue.js. This was specifically to support Naspers 2022 annual financial report.

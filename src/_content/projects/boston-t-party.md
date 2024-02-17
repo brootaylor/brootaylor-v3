@@ -1,16 +1,16 @@
 ---
 title: Boston T Party
 # Populates the `meta description` for a page as well as the project landing page project-specific summary
-summary: Collaborated with Hugo & Cat on a successful web project for ECARX, a leading automotive technology company.
+summary: A fast customer informational website for Boston T Party in South Africa.
 # Populates the opening / `lead` text on a page
 lead:
-  - Collaborated with Hugo & Cat on a successful web project for ECARX, a leading automotive technology company.
+  - A fast customer informational website for Boston T Party in South Africa.
 
 project:
-  year: 2023
-  role: Senior Frontend Web Developer
-  technologies: HTML5, CSS, SCSS, JavaScript, GSAP, Handlebars, Storybook, Webpack, Gulp, Cypress, Umbraco, .NET Razor Views, Azure DevOps, Figma
-  order: 5
+  year: 2022
+  role: Frontend Web Design & Development
+  technologies: HTML5, CSS, SCSS, JavaScript, Service Worker, PWA manifest, Eleventy, Nunjucks, Jest, Rollup.js, Node.js, GitHub, Netlify, Photoshop.
+  order: 6
 
 # Image component rules / properties for projects list page
 # #######################################################
@@ -42,5 +42,9 @@ eleventyExcludeFromCollections: false
   "shadow",
   "lazy")
 }}
+
+Developed a high speed <abbr title="Progressive Web App.">PWA</abbr> website tailored for Boston T Party, emphasising performance and resilience through progressive enhancement and offline caching techniques.
+
+This was particularly crucial considering the limited connectivity, data and bandwidth availability in South Africa.
 
 The website can be viewed at [bostontparty.co.za](https://bostontparty.co.za/)
