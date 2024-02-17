@@ -16,6 +16,10 @@ head: "
         max-width: 300px;
     }
 
+    .lead a {
+      text-wrap: nowrap;
+    }
+
     @media screen and (min-width: 48rem) {
       .profile {
         max-width: 250px;
