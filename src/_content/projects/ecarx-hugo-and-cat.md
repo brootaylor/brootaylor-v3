@@ -47,40 +47,4 @@ ECARX is an Umbraco based website, incorporating a Storybook component library f
 
 I was brought on to implement some of the larger animation pieces. Using GSAP I used the `scrollTrigger` method to initialise various animations on the timeline. This can be experienced when visiting the homepage and seeing how the hero banner reveals the video as the user begins to scroll.
 
-<ol class="auto-grid | no-list">
-  <li>
-    {{ imageNormal(
-      "/assets/images/projects/hugo-and-cat/ecarx/ecarx-services-page_01.jpg",
-      "A screenshot of ECARX's software services website page",
-      "1200",
-      "972",
-      false,
-      "shadow",
-      "lazy")
-    }}
-  </li>
-  <li>
-    {{ imageNormal(
-      "/assets/images/projects/hugo-and-cat/ecarx/ecarx-services-page_01.jpg",
-      "A screenshot of ECARX's software services website page",
-      "1200",
-      "972",
-      false,
-      "shadow",
-      "lazy")
-    }}
-  </li>
-  <li>
-    {{ imageNormal(
-      "/assets/images/projects/hugo-and-cat/ecarx/ecarx-services-page_01.jpg",
-      "A screenshot of ECARX's software services website page",
-      "1200",
-      "972",
-      false,
-      "shadow",
-      "lazy")
-    }}
-  </li>
-</ol>
-
 The website can be viewed at [www.ecarxgroup.com](https://www.ecarxgroup.com){rel=external}
