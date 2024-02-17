@@ -43,7 +43,7 @@ eleventyExcludeFromCollections: false
   "lazy")
 }}
 
-The website can be viewed at [www.varoenergy.com](https://www.varoenergy.com/)
+The website can be viewed at [www.varoenergy.com](https://www.varoenergy.com/){rel=external}
 
 *[CMS]: Content Management System.
 *[MPA]: Multi Page Application.

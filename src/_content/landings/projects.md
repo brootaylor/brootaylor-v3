@@ -75,43 +75,8 @@ date: 2024-02-14T17:29:00
             <h3 class="card__title">IAG Loyalty</h3>
             <span class="date-time">Year: 2018 &ndash; 2021 <small>(contract)</small></span>
           </header>
-          <div class="card__body | flow">
-            <p>Instrumental in researching, planning & configuring the beginnings of a scalable <abbr title="Software as a service.">SaaS</abbr> micro-frontend configuration that focussed on reusability & themeable / whitelabel components.</p>
-            <p><a href="https://www.iagloyalty.com/">www.iagloyalty.com</a></p>
-          </div>
-        </div>
-      </article>
-    </li>
-    <li>
-      <article class="card card--stacked">
-        <div class="card__content">
-          <header class="card__header">
-            <h3 class="card__title">Time Inc. UK <a href="#fn:time-inc" class="footnote" rel="footnote"><sup>*</sup></a></h3>
-            <span class="date-time">Year: 2016 <small>(contract)</small></span>
-          </header>
-          <div class="card__body | flow">
-            <p>Worked with a team of developers to develop a responsive, customisable & themeable web solution on their WordPress Multisite application.</p>
-            <p>This enabled the creation, build & deployment of websites like Marie Claire, Home & Gardens, Country Life and Decanter.</p>
-          </div>
-          <footer id="fn:time-inc" class="card__footer">
-            <p><sup>*</sup> Since I last worked with them, they've now been taken over by <a href="https://www.futureplc.com/">Future plc</a>.</p>
-          </footer>
-        </div>
-      </article>
-    </li>
-    <li>
-      <article class="card card--stacked">
-        <div class="card__content">
-          <header class="card__header">
-            <h3 class="card__title">Pegasus <a href="#fn:pegasus" class="footnote" rel="footnote"><sup>*</sup></a></h3>
-            <span class="date-time">Year: 2016 <small>(contract)</small></span>
-          </header>
-          <div class="card__body | flow">
-            <p>Developed & enhanced brochure <abbr title="business-to-business.">B2B</abbr> websites for Pegasus’ healthcare clients.</p>
-            <p>Some examples being; Rapid White, Cetraben, TalkingEczematool and Movelat.</p>
-          </div>
-          <footer id="fn:pegasus" class="card__footer">
-            <p><sup>*</sup> Since I last worked with them, they've become <a href="https://www.inizioevoke.com/">Inizio Evoke</a>.</p>
+          <footer class="card__footer">
+            <p>Visit them at <a href="https://www.iagloyalty.com/" rel="external">www.iagloyalty.com</a></p>
           </footer>
         </div>
       </article>
@@ -123,10 +88,9 @@ date: 2024-02-14T17:29:00
             <h3 class="card__title">Macmillan Cancer Support</h3>
             <span class="date-time">Year: 2015 <small>(contract)</small></span>
           </header>
-          <div class="card__body | flow">
-            <p>Worked with Macmillan's core website application team on frontend solutions for their brand identity and business proposition.</p>
-            <p><a href="https://www.macmillan.org.uk/">www.macmillan.org.uk</a></p>
-          </div>
+          <footer class="card__footer">
+            <p>Visit them at <a href="https://www.macmillan.org.uk/" rel="external">www.macmillan.org.uk</a></p>
+          </footer>
         </div>
       </article>
     </li>
@@ -137,11 +101,34 @@ date: 2024-02-14T17:29:00
             <h3 class="card__title">Avios <a href="#fn:avios" class="footnote" rel="footnote"><sup>*</sup></a></h3>
             <span class="date-time">Year: 2004 - 2015 <small>(permanent)</small></span>
           </header>
-          <div class="card__body">
-            <p>Was the senior / lead developer designing and developing ecommerce front-end solutions for Airmiles &amp; Avios.</p>
-          </div>
           <footer id="fn:avios" class="card__footer">
-            <p><sup>*</sup> Formerly a subsidiary of British Airways and also known as <a href="https://en.wikipedia.org/wiki/Air_Miles#Air_Miles_United_Kingdom">Airmiles</a>. Avios is now the loyalty currency run by <a href="https://iagloyalty.com">IAG Loyalty</a>.</p>
+            <p><sup>*</sup> Formerly a subsidiary of British Airways and also known as <a href="https://en.wikipedia.org/wiki/Air_Miles#Air_Miles_United_Kingdom" rel="external">Airmiles</a>. Avios is now the loyalty currency run by <a href="https://iagloyalty.com" rel="external">IAG Loyalty</a>.</p>
+          </footer>
+        </div>
+      </article>
+    </li>
+    <li>
+      <article class="card card--stacked">
+        <div class="card__content">
+          <header class="card__header">
+            <h3 class="card__title">Time Inc. UK <a href="#fn:time-inc" class="footnote" rel="footnote"><sup>*</sup></a></h3>
+            <span class="date-time">Year: 2016 <small>(contract)</small></span>
+          </header>
+          <footer id="fn:time-inc" class="card__footer">
+            <p><sup>*</sup> Since I last worked with them, they've now been taken over by <a href="https://www.futureplc.com/" rel="external">Future plc</a>.</p>
+          </footer>
+        </div>
+      </article>
+    </li>
+    <li>
+      <article class="card card--stacked">
+        <div class="card__content">
+          <header class="card__header">
+            <h3 class="card__title">Pegasus <a href="#fn:pegasus" class="footnote" rel="footnote"><sup>*</sup></a></h3>
+            <span class="date-time">Year: 2016 <small>(contract)</small></span>
+          </header>
+          <footer id="fn:pegasus" class="card__footer">
+            <p><sup>*</sup> Since I last worked with them, they've become <a href="https://www.inizioevoke.com/" rel="external">Inizio Evoke</a>.</p>
           </footer>
         </div>
       </article>

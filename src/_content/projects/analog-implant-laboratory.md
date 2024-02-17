@@ -49,4 +49,4 @@ I approached the design and development with 'Mobile First' in mind and built it
 
 It goes without saying, I wasn't able to test the website on all device types and screen sizes but I tried my best to ensure it's built in a <a href="http://trentwalton.com/2014/03/10/device-agnostic/" rel="external">device-agnostic</a> manner.
 
-The website can be viewed at [analog-lab.co.uk](http://analog-lab.co.uk/)
+The website can be viewed at [analog-lab.co.uk](http://analog-lab.co.uk/){rel=external}

@@ -7,7 +7,7 @@ lead:
   - Enhanced and optimised their user interface, overall website experience, developer experience, content management workflow, search and <abbr title="Search Engine Optimisation.">SEO</abbr>.
 
 project:
-  year: Ongoing
+  year: 2022 &mdash; Present
   role: Frontend Web Development
   technologies: HTML5, CSS, SCSS, JavaScript, GSAP, Handlebars, Storybook, Webpack, Gulp, Cypress, Umbraco, .NET Razor Views, Azure DevOps, Figma
   order: 2
@@ -45,7 +45,7 @@ eleventyExcludeFromCollections: false
 
 UX Brighton is a static website. It's built using the Jekyll SSG and deployed using Netlify. It uses a Netlify CMS configuration to management the content.
 
-The website can be viewed at [uxbri.org](https://uxbri.org/)
+The website can be viewed at [uxbri.org](https://uxbri.org/){rel=external}
 
 *[SSG]: Static Site Generator.
 *[CMS]: Content Management System.

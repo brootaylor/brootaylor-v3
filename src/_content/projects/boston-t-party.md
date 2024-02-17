@@ -47,6 +47,6 @@ Developed a high speed PWA website tailored for Boston T Party, emphasising perf
 
 This was particularly crucial considering the limited connectivity, data and bandwidth availability in South Africa.
 
-The website can be viewed at [bostontparty.co.za](https://bostontparty.co.za/)
+The website can be viewed at [bostontparty.co.za](https://bostontparty.co.za/){rel=external}
 
 *[PWA]: Progressive Web App.

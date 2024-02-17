@@ -43,4 +43,4 @@ eleventyExcludeFromCollections: false
   "lazy")
 }}
 
-Worked with one of Currys' web teams to improve and optimise the user interface and usability of the [Mobiles.co.uk](https://www.mobiles.co.uk/) and [e2save](https://www.e2save.com/) websites.
+Worked with one of Currys' web teams to improve and optimise the user interface and usability of the [Mobiles.co.uk](https://www.mobiles.co.uk/){rel=external} and [e2save](https://www.e2save.com/){rel=external} websites.
