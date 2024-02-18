@@ -6,17 +6,6 @@
 	"url": "{{ site.rootUrl }}{{ page.url | pretty }}",
 	"description": "{{ summary }}",
 	"inLanguage": "{{ site.lang }}",
-	"breadcrumb": {
-		"@type": "BreadcrumbList",
-		"itemListElement": [
-			{
-				"@type": "ListItem",
-				"position": 3,
-				"name": "Projects",
-				"item": "{{ site.rootUrl }}{{ page.url | pretty }}"
-			}
-		]
-	},
 	"mainEntity": {
 		"@type": "WebPage",
 		"name": "{{ title }} • {{ site.metaDescription }}",

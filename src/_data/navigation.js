@@ -1,10 +1,6 @@
 module.exports = {
   mainnav: [
     {
-      label: 'About',
-      url: '/about',
-    },
-    {
       label: 'Projects',
       url: '/projects',
     },
@@ -23,6 +19,10 @@ module.exports = {
     {
       label: 'Photos',
       url: '/photos',
+    },
+    {
+      label: 'About',
+      url: '/about',
     },
     {
       label: 'Contact',
