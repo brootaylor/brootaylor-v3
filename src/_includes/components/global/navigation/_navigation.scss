@@ -64,19 +64,24 @@
       a {
         padding: 0 0.5em;
         background-color: var(--grey-mid02);
+        border: 2px solid transparent;
         border-radius: 4px;
         text-decoration: none;
-        transition: background-color 0.25s ease;
+        transition: background-color 0.25s ease-in-out,
+                    border 0.25s ease-in-out;
 
         // Button `:hover` state
         &:hover {
           background-color: var(--grey-mid03);
+          border-block-end-color: var(--green-custom);
         }
 
         // Button `:active` and `:focus` states
         &:active,
-        &:focus {
+        &:focus,
+        &[aria-current="page"] {
           background-color: var(--grey-mid03);
+          border-block-end-color: var(--green-custom);
         }
       }
     }
