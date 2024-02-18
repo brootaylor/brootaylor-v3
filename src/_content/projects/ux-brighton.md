@@ -32,8 +32,8 @@ eleventyExcludeFromCollections: false
 {% from "components/core/images/images.njk" import imageNormal %}
 
 <picture>
-  <source srcset="/assets/images/projects/ux-brighton/uxbrighton-homepage--lg-screen_01.webp" type="image/webp" media="(min-width: 640px)">
-  <img src="/assets/images/projects/ux-brighton/uxbrighton-homepage--sml-screen_01.webp" width="1200" height="951" alt="A screenshot of UX Brighton's homepage on a desktop monitor." loading="lazy" decoding="async">
+  <source srcset="/assets/images/projects/ux-brighton/uxbrighton-homepage--lg-screen_01.webp" type="image/webp" media="(min-width: 768px)">
+  <img src="/assets/images/projects/ux-brighton/uxbrighton-homepage--sml-screen_01.webp" width="1068" height="726" alt="A screenshot of UX Brighton's homepage on a desktop monitor." loading="lazy" decoding="async">
 </picture>
 
 UX Brighton is a static website. It's built using the Jekyll SSG and deployed using Netlify. It uses a Netlify CMS configuration to management the content.

@@ -30,7 +30,7 @@ eleventyExcludeFromCollections: false
 ---
 
 <picture>
-  <source srcset="/assets/images/projects/boston-t-party/bostontparty-homepage--lg-screen_01.webp" type="image/webp" media="(min-width: 640px)">
+  <source srcset="/assets/images/projects/boston-t-party/bostontparty-homepage--lg-screen_01.webp" type="image/webp" media="(min-width: 768px)">
   <img src="/assets/images/projects/boston-t-party/bostontparty-homepage--sml-screen_01.webp" width="1068" height="726" alt="A screenshot of Boston T Party's homepage on a desktop monitor." loading="lazy" decoding="async">
 </picture>
 

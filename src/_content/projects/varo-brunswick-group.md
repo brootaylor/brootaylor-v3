@@ -9,7 +9,7 @@ lead:
 project:
   year: 2023
   role: Frontend Web Developer
-  technologies: HTML5, CSS, SCSS, JavaScript, jQuery, Bootstrap 5, Bitbucket, Umbraco, Photoshop, Figma, JIRA, Confluence.
+  technologies: HTML5, CSS, SCSS, JavaScript (ES6), jQuery, Bootstrap 5, Bitbucket, Umbraco, Photoshop, Figma, JIRA, Confluence.
   order: 3
 
 # Image component rules / properties for projects list page
@@ -32,8 +32,8 @@ eleventyExcludeFromCollections: false
 {% from "components/core/images/images.njk" import imageNormal %}
 
 <picture>
-  <source srcset="/assets/images/projects/brunswick-group/varo/varo-homepage--lg-screen_01.webp" type="image/webp" media="(min-width: 640px)">
-  <img src="/assets/images/projects/brunswick-group/varo/varo-homepage--sml-screen_01.webp" width="1200" height="951" alt="A screenshot of Varo's homepage on a desktop monitor." loading="lazy" decoding="async">
+  <source srcset="/assets/images/projects/brunswick-group/varo/varo-homepage--lg-screen_01.webp" type="image/webp" media="(min-width: 768px)">
+  <img src="/assets/images/projects/brunswick-group/varo/varo-homepage--sml-screen_01.webp" width="1068" height="726" alt="A screenshot of Varo's homepage on a desktop monitor." loading="lazy" decoding="async">
 </picture>
 
 Collaborated with a team of designers and developers at Brunswick Group to implement improvements on Varo's corporate communication website, with a focus on enhancing the user experience and maintaining alignment with the client’s communication objectives.

@@ -32,8 +32,8 @@ eleventyExcludeFromCollections: false
 {% from "components/core/images/images.njk" import imageNormal %}
 
 <picture>
-  <source srcset="/assets/images/projects/hugo-and-cat/ecarx/ecarx-news--lg-screen_01.webp" type="image/webp" media="(min-width: 640px)">
-  <img src="/assets/images/projects/hugo-and-cat/ecarx/ecarx-news--sml-screen_01.webp" width="1200" height="951" alt="A screenshot of ECARX's news page on a desktop monitor." loading="lazy" decoding="async">
+  <source srcset="/assets/images/projects/hugo-and-cat/ecarx/ecarx-news--lg-screen_01.webp" type="image/webp" media="(min-width: 768px)">
+  <img src="/assets/images/projects/hugo-and-cat/ecarx/ecarx-news--sml-screen_01.webp" width="1068" height="726" alt="A screenshot of ECARX's news page on a desktop monitor." loading="lazy" decoding="async">
 </picture>
 
 I had the opportunity to work on the frontend development for ECARX's new website with a team of developers from [Hugo & Cat](https://www.hugoandcat.com/){rel=external}. The website, based on Umbraco, incorporated a Storybook component library for the site build.

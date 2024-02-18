@@ -9,7 +9,7 @@ lead:
 project:
   year: 2022
   role: Frontend Web Developer
-  technologies: HTML5, CSS, SCSS, JavaScript, Vue.JS, GSAP, Bootstrap 5, Webpack, Bitbucket, WordPress <em>(Headless CMS Config & Advanced Custom Fields)</em>, Photoshop, Figma, JIRA, Confluence.
+  technologies: HTML5, CSS, SCSS, JavaScript (ES6), Vue.JS, GSAP, Bootstrap 5, Webpack, Bitbucket, WordPress <em>(Headless CMS Config & Advanced Custom Fields)</em>, Photoshop, Figma, JIRA, Confluence.
   order: 5
 
 # Image component rules / properties for projects list page
