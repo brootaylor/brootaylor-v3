@@ -10,6 +10,8 @@ project:
   year: 2023
   role: Senior Frontend Web Developer
   technologies: HTML5, CSS, SCSS, JavaScript (ES6), GSAP, Handlebars, Storybook, Webpack, Gulp, Cypress, Umbraco, .NET Razor Views, Azure DevOps, Figma
+  websiteLabel: www.ecarxgroup.com
+  websiteUrl: https://www.ecarxgroup.com/
   order: 1
 
 # Image component rules / properties for projects list page
@@ -64,5 +66,3 @@ Using [GSAP](https://gsap.com/){rel=external}, I implemented various animations,
     }}
   </li>
 </ol>
-
-The website can be viewed at [www.ecarxgroup.com](https://www.ecarxgroup.com){rel=external}

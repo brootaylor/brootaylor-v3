@@ -10,6 +10,8 @@ project:
   year: 2017
   role: Frontend Web Design & Development
   technologies: HTML5, CSS, SCSS, JavaScript, jQuery, PHP, Grunt, Photoshop, Bitbucket
+  websiteLabel: analog-lab.co.uk
+  websiteUrl: http://analog-lab.co.uk/
   order: 8
 
 # Image component rules / properties for projects list page
@@ -39,7 +41,5 @@ This particular project turned out to be one of the enjoyable ones. A lot of thi
 I approached the design and development with 'Mobile First' in mind and built it responsively &ndash; *(small screen upwards)* &ndash; to work on as many screens and devices as possible. It's [progressively enhanced](https://www.gov.uk/service-manual/technology/using-progressive-enhancement){rel=external} and makes substantial use of WCAG.
 
 It goes without saying, I wasn't able to test the website on all device types and screen sizes but I tried my best to ensure it's built in a [device-agnostic](http://trentwalton.com/2014/03/10/device-agnostic/){rel=external} manner.
-
-The website can be viewed at [analog-lab.co.uk](http://analog-lab.co.uk/){rel=external}
 
 *[WCAG]: Web Content Accessibility Guidelines.

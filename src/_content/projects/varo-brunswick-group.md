@@ -10,6 +10,8 @@ project:
   year: 2023
   role: Frontend Web Developer
   technologies: HTML5, CSS, SCSS, JavaScript (ES6), jQuery, Bootstrap 5, Bitbucket, Umbraco, Photoshop, Figma, JIRA, Confluence.
+  websiteLabel: www.varoenergy.com
+  websiteUrl: https://www.varoenergy.com/
   order: 3
 
 # Image component rules / properties for projects list page
@@ -62,8 +64,6 @@ Collaborated with a team of designers and developers at Brunswick Group to imple
     }}
   </li>
 </ol>
-
-The website can be viewed at [www.varoenergy.com](https://www.varoenergy.com/){rel=external}
 
 *[CMS]: Content Management System.
 *[MPA]: Multi Page Application.

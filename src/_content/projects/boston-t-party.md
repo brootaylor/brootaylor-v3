@@ -10,6 +10,8 @@ project:
   year: 2022
   role: Frontend Web Design & Development
   technologies: HTML5, CSS, SCSS, JavaScript, Service Worker, PWA manifest, Eleventy, Nunjucks, Jest, Rollup.js, Node.js, GitHub, Netlify, Photoshop.
+  websiteLabel: bostontparty.co.za
+  websiteUrl: https://bostontparty.co.za/
   order: 6
 
 # Image component rules / properties for projects list page
@@ -36,8 +38,6 @@ eleventyExcludeFromCollections: false
 
 Developed a high speed PWA website tailored for Boston T Party, emphasising performance and resilience through progressive enhancement and offline caching techniques.
 
-Performance and resilience where particularly crucial considering the limited connectivity, data and bandwidth availability in South Africa.
-
-The website can be viewed at [bostontparty.co.za](https://bostontparty.co.za/){rel=external}
+Performance and resilience were particularly crucial considering the limited connectivity, data and bandwidth availability in South Africa.
 
 *[PWA]: Progressive Web App.

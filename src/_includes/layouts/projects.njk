@@ -50,6 +50,10 @@
 				<dd>{{ project.role | safe }}</dd>
 				<dt>Technologies:</dt>
 				<dd>{{ project.technologies | safe }}</dd>
+				{% if project.websiteUrl %}
+					<dt>Website URL:</dt>
+					<dd><a href="{{ project.websiteUrl }}" rel="external">{{ project.websiteLabel | safe }}</a></dd>
+				{% endif %}
 			</dl>
 		</footer>
 

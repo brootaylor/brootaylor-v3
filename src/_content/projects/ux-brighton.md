@@ -10,6 +10,8 @@ project:
   year: 2022 &mdash; Present
   role: Frontend Web Development
   technologies: HTML5, CSS, SCSS, JavaScript (ES6), jQuery, Jekyll, Liquid, JSON, GitHub, GitHub Pages, Node.js, Retool, Swagger, Netlify, Netlify CMS, Google Analytics, Figma, Photoshop.
+  websiteLabel: uxbri.org
+  websiteUrl: https://uxbri.org/
   order: 2
 
 # Image component rules / properties for projects list page
@@ -36,7 +38,7 @@ eleventyExcludeFromCollections: false
   <img src="/assets/images/projects/ux-brighton/uxbrighton-homepage--sml-screen_01.webp" width="1068" height="726" alt="A screenshot of UX Brighton's homepage on a desktop monitor." loading="lazy" decoding="async">
 </picture>
 
-UX Brighton is a static website. It's built using the Jekyll SSG and deployed using Netlify. It uses a Netlify CMS configuration to management the content.
+UX Brighton is a static website. It's built using the Jekyll SSG and deployed using Netlify. It uses a Netlify CMS configuration to manage the content.
 
 We rebuilt the [UX Brighton job board](https://uxbri.org/jobs){rel=external} so it renders as a MPA rather than a SPA. This allows for far richer indexing by search engines. Every job post and event page also dynamically includes valid structured schema data at build time, generates a new `sitemap.xml` file, and automatically notifies Google of these changes.
 
@@ -64,8 +66,6 @@ We rebuilt the [UX Brighton job board](https://uxbri.org/jobs){rel=external} so 
     }}
   </li>
 </ol>
-
-The website can be viewed at [uxbri.org](https://uxbri.org/){rel=external}
 
 *[SSG]: Static Site Generator.
 *[CMS]: Content Management System.
