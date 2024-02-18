@@ -56,4 +56,27 @@
       }
     }
   }
+
+  &__item {
+    &:last-child {
+      a {
+        color: var(--white);
+        padding-inline: 0.75em;
+        background-color: var(--green-custom);
+        border-radius: 4px;
+        transition: background-color 0.1s ease;
+
+        // Button `:hover` state
+        &:hover {
+          background-color: var(--green-custom-dark);
+        }
+
+        // Button `:active` and `:focus` states
+        &:active,
+        &:focus {
+          background-color: var(--green-custom-dark);
+        }
+      }
+    }
+  }
 }
