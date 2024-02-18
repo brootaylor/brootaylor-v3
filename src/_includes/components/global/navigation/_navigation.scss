@@ -17,11 +17,12 @@
     text-decoration: underline;
     text-decoration-color: transparent;
     text-decoration-thickness: 2px;
-    text-underline-offset: 10px;
+    text-underline-offset: 7px;
     box-shadow: none;
     line-height: 2;
     display: inline-block;
     padding: 0.2em 0;
+    transition: text-decoration 0.25s ease-in-out;
 
     &:active,
     &:focus,
@@ -32,7 +33,7 @@
     }
 
     &[aria-current="page"] {
-      font-weight: 700;
+      text-decoration-thickness: 5px;
     }
   }
 
@@ -40,6 +41,7 @@
     @include font-size(16px);
     display: flex;
     flex-wrap: wrap;
+    gap: 0.25em;
 
     & > li {
       display: inline-flex;
@@ -51,7 +53,7 @@
           font-size: 1.6rem;
           line-height: 0;
           opacity: 0.4;
-          padding: 0 0.5em;
+          padding: 0 0.3em 0 0.5em;
         }
       }
     }
@@ -60,7 +62,7 @@
   &__item {
     &:last-child {
       a {
-        padding-inline: 0.75em;
+        padding: 0 0.5em;
         background-color: var(--grey-mid02);
         border-radius: 4px;
         text-decoration: none;
