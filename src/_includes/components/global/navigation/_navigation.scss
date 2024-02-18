@@ -72,7 +72,6 @@
 
         // Button `:hover` state
         &:hover {
-          background-color: var(--grey-mid03);
           border-block-end-color: var(--green-custom);
         }
 
@@ -80,7 +79,6 @@
         &:active,
         &:focus,
         &[aria-current="page"] {
-          background-color: var(--grey-mid03);
           border-block-end-color: var(--green-custom);
         }
       }
