@@ -36,7 +36,7 @@ eleventyExcludeFromCollections: false
   <img src="/assets/images/projects/analog-implant-laboratory/analog-implant-laboratory--sml-screen_01.webp" width="1068" height="726" alt="A screenshot of Analog Implant Laboratory's homepage on a desktop monitor." loading="lazy" decoding="async">
 </picture>
 
-This particular project turned out to be one of the enjoyable ones. A lot of this had to do with Analog Implant Laboratory's open-handed and open-hearted involvement in the whole design and development process. I appreciated it immensely. I'm conscious that not every project has or necessarily ends up being a pleasant one, so I'm grateful for the ones that are.
+This particular project turned out to be one of the enjoyable ones. A lot of this had to do with Analog Implant Laboratory's open-handed and open-hearted involvement in the whole design and development process.
 
 I approached the design and development with 'Mobile First' in mind and built it responsively &ndash; *(small screen upwards)* &ndash; to work on as many screens and devices as possible. It's [progressively enhanced](https://www.gov.uk/service-manual/technology/using-progressive-enhancement){rel=external} and makes substantial use of WCAG.
 
