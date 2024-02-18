@@ -60,21 +60,21 @@
   &__item {
     &:last-child {
       a {
-        color: var(--white);
         padding-inline: 0.75em;
-        background-color: var(--green-custom);
+        background-color: var(--grey-mid02);
         border-radius: 4px;
-        transition: background-color 0.1s ease;
+        text-decoration: none;
+        transition: background-color 0.25s ease;
 
         // Button `:hover` state
         &:hover {
-          background-color: var(--green-custom-dark);
+          background-color: var(--grey-mid03);
         }
 
         // Button `:active` and `:focus` states
         &:active,
         &:focus {
-          background-color: var(--green-custom-dark);
+          background-color: var(--grey-mid03);
         }
       }
     }

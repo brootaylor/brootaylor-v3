@@ -6,6 +6,8 @@
   "secondary-highlight": "#fedb8b",
   "light": "#eeeeee",
   "mid": "#cccccc",
+  "mid02": "#a9a7a7",
+  "mid03": "#999999",
   "dark": "#333333",
   "slate": "#404040",
   "orange-custom": "#f3bb69",
