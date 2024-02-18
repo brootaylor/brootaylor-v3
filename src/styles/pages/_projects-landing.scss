@@ -1,0 +1,120 @@
+/*********************************************
+ * Projects page-specific rules
+ *********************************************/
+
+@use '../abstracts' as *;
+
+.projects-home {
+  article {
+    ul,
+    blockquote {
+      max-width: 100%;
+    }
+  }
+
+  .companies {
+    @supports (display: grid) {
+      .auto-grid {
+        grid-gap: 2em;
+
+        @include min-width($breakpoint-small) {
+          --auto-grid-min-size: 17rem;
+        }
+
+        @include min-width($breakpoint-medium) {
+          --auto-grid-min-size: 20rem;
+        }
+      }
+    }
+  }
+
+  .testimonials {
+    margin-block-start: 3em;
+
+    @supports (display: grid) {
+      .auto-grid {
+        grid-gap: 2em;
+
+        @include min-width($breakpoint-small) {
+          --auto-grid-min-size: 23rem;
+        }
+      }
+    }
+  }
+
+  .card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100%;
+    margin-block-end: 0;
+
+    // Not cards that use the `call-out` class...
+    &:not(.call-out) {
+      background: var(--grey-light);
+      border: 1px solid var(--grey-mid);
+      box-shadow: -4px 4px 0px 1px rgb($grey-dark, 0.2);
+
+      .card__content {
+        padding: 1em;
+        border-width: 0 1px 1px;
+      }
+    }
+
+    img {
+      transition: transform 0.5s ease-in-out;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    &__title {
+      font-size: convert-to-rem(24px);
+
+      a:not(.footnote) {
+        // Getting the `a` to cover everyting relative to its parent element (which is the `card`)
+        &:before {
+          content: '';
+          z-index: 2;
+          position: absolute;
+          inset: 0;
+        }
+      }
+    }
+
+    &__body {
+      margin-top: 0.5em;
+
+      p,
+      ul {
+        @include font-size(18px);
+      }
+
+      ul {
+        padding-inline-start: 1em;
+      }
+    }
+
+    &__footer {
+      padding-top: 1em;
+      margin-top: auto;
+
+      p {
+        @include font-size(14px);
+        font-style: italic;
+        padding-top: 1em;
+        box-shadow: inset 0 1px var(--grey-mid);
+      }
+    }
+
+    // Anchor tag to foot note reference
+    // @NOTE: May need to move this to a separate component
+    .footnote {
+      font-size: 80%;
+      text-decoration: none;
+      box-shadow: none;
+    }
+  }
+}

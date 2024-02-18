@@ -153,14 +153,12 @@
 		alt="{{ alt }}."
 		width="{{ width }}"
 		height="{{ height }}"
-		{%- if shadow %}
-			class="shadow"
-		{% endif %}
+		{%- if shadow %}class="shadow"{% endif %}
 		{%- if lazyLoad == 'lazy' %}
 			loading="lazy"
 			decoding="async"
 		{% endif %}>
-	<figcaption>{{ caption }}.</figcaption>
+	<figcaption>{{ caption | safe }}.</figcaption>
 </figure>
 {% endmacro %}
 
@@ -178,11 +176,11 @@
 			alt="{{ alt }}."
 			width="{{ width }}"
 			height="{{ height }}"
-			class="{% if shadow %}shadow{% endif %}"
+			{%- if shadow %}class="shadow"{% endif %}
 			{%- if lazyLoad == 'lazy' %}
 				loading="lazy"
 				decoding="async"
 			{% endif %}>
-	<figcaption>{{ caption }}.</figcaption>
+	<figcaption>{{ caption | safe }}.</figcaption>
 </figure>
 {% endmacro %}

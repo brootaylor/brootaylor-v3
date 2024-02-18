@@ -24,8 +24,10 @@ const htmlMinify = require('./lib/utils/transforms/minify-html.js')
 
 // Import (shortcodes)
 const photoGallery = require('./lib/shortcodes/photoGallery.js')
+const projectThumbnails = require('./lib/shortcodes/projectThumbnails.js')
 
 // Import (collections)
+const pageProjects = require('./lib/collections/pageProjects.js')
 const postWriting = require('./lib/collections/postWriting.js')
 const postNotes = require('./lib/collections/postNotes.js')
 const postBookmarks = require('./lib/collections/postBookmarks.js')
@@ -69,8 +71,10 @@ module.exports = function (eleventy) {
   // Shortcodes
   eleventy.addShortcode('year', () => `${new Date().getFullYear()}`)
   eleventy.addNunjucksAsyncShortcode('photo', photoGallery);
+  eleventy.addNunjucksAsyncShortcode('thumbnail', projectThumbnails);
 
   // Collections
+  eleventy.addCollection('pageProjects', pageProjects)
   eleventy.addCollection('postWriting', postWriting)
   eleventy.addCollection('postNotes', postNotes)
   eleventy.addCollection('postBookmarks', postBookmarks)
