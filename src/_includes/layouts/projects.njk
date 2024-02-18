@@ -18,7 +18,7 @@
 			{# This `title` comes from the front matter in the relevant `.md` file - within the `projects` directory #}
 			{% if title %}
 				<h1>
-					{{- title | safe }}{% if bookmarkAuthor %}<span class="visually-hidden"> &mdash; written by</span><i aria-hidden="true"> &rarr;</i> {{ bookmarkAuthor | safe }}{% endif -%}
+					{{- title | safe -}}
 				</h1>
 			{% else %}
 				{# Pages need a `title` hence the reason for this fallback #}

@@ -16,7 +16,7 @@ pagination:
   size: 15
   alias: projects
 
-date: 2024-02-14T17:29:00
+date: 2024-02-17T23:09:27.631Z
 ---
 
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
