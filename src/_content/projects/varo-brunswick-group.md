@@ -18,7 +18,7 @@ image:
   # The projects landing list page uses the `srcWebp` and `srcJpg` values
   srcWebp: "/assets/images/projects/brunswick-group/varo/varo_01--thumbnail.webp"
   srcJpg: "/assets/images/projects/brunswick-group/varo/varo_01--thumbnail.jpg"
-  alt: "A screenshot of ECARX's software services website page"
+  alt: "A screenshot of Varo's homepage"
   width: 650
   height: 464
   # Should the image thumbnail on the list page lazy load?
@@ -36,7 +36,7 @@ eleventyExcludeFromCollections: false
   <img src="/assets/images/projects/brunswick-group/varo/varo-homepage--sml-screen_01.webp" width="1200" height="951" alt="A screenshot of Varo's homepage on a desktop monitor." loading="lazy" decoding="async">
 </picture>
 
-Implemented improvements to the corporate communication website, focussing on enhancing parts of the user experience and maintaining alignment with the client's communication objectives.
+Collaborated with a team of designers and developers at Brunswick Group to implement improvements on Varo's corporate communication website, with a focus on enhancing the user experience and maintaining alignment with the client’s communication objectives.
 
 <ol role="list" class="auto-grid | no-list">
   <li>

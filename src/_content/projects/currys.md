@@ -18,7 +18,7 @@ image:
   # The projects landing list page uses the `srcWebp` and `srcJpg` values
   srcWebp: "/assets/images/projects/currys/carphone-warehouse_01--thumbnail.webp"
   srcJpg: "/assets/images/projects/currys/carphone-warehouse_01--thumbnail.jpg"
-  alt: "A screenshot of ECARX's software services website page"
+  alt: "A screenshot of Carphone Warehouse's website"
   width: 650
   height: 464
   # Should the image thumbnail on the list page lazy load?

@@ -18,31 +18,32 @@ image:
   # The projects landing list page uses the `srcWebp` and `srcJpg` values
   srcWebp: "/assets/images/projects/brunswick-group/naspers/naspers_01--thumbnail.webp"
   srcJpg: "/assets/images/projects/brunswick-group/naspers/naspers_01--thumbnail.jpg"
-  alt: "A screenshot of ECARX's software services website page"
+  alt: "A screenshot of Naspers 2022 Annual Report homepage"
   width: 650
   height: 464
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2024-02-14T18:37:27.631Z
+date: 2024-02-17T23:09:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
 
 {% from "components/core/images/images.njk" import imageNormal %}
-{% from "components/core/images/images.njk" import imageFigure %}
 
-{{ imageFigure(
-  "/assets/images/projects/brunswick-group/naspers/naspers-homepage_01.jpg",
-  "A screenshot of the ECARX software services website page",
+{{ imageNormal(
+  "/assets/images/projects/brunswick-group/naspers/naspers-homepage--sml-screen_01.webp",
+  "A screenshot of Naspers 2022 Annual Report homepage on a desktop monitor",
   "1200",
-  "970",
-  "Naspers 2022 Annual Report website homepage",
+  "951",
   false,
-  "shadow",
+  false,
   "lazy")
 }}
 
-Worked with a team of web developers to build this SPA microsite using Vue.js. This was specifically to support Naspers 2022 annual financial report.
+Collaborated with a team of web developers at Brunswick Group to construct a CMS-driven SPA microsite employing Vue.js, with WordPress serving as a headless CMS.
+
+This specialised microsite was developed to support the Naspers 2022 annual financial report.
 
 *[SPA]: Single Page Application.
+*[CMS]: Content Management System.
