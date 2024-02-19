@@ -2,7 +2,7 @@
 layout: "layouts/contact.njk"
 title: "Contact"
 # Populates the `meta description` for a page
-summary: "Interested in learning more about what I do and potentially working with me on your next project? Or just want to connect? Feel free to reach out using the form below."
+summary: "Interested in learning more about what I do and potentially working with me on your next project? Or just want to connect? Feel free to reach out."
 # Populates the opening / `lead` text on a page
 lead:
   - "Interested in learning more about what I do and potentially working with me on your next project? Or just want to connect?"
