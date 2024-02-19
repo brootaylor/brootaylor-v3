@@ -5,16 +5,16 @@ module.exports = {
       url: '/projects',
     },
     {
+      label: 'Bookmarks',
+      url: '/bookmarks',
+    },
+    {
       label: 'Writing',
       url: '/writing',
     },
     {
       label: 'Notes',
       url: '/notes',
-    },
-    {
-      label: 'Bookmarks',
-      url: '/bookmarks',
     },
     {
       label: 'Photos',
