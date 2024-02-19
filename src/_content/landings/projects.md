@@ -1,11 +1,11 @@
 ---
 title: "Projects"
 # Populates the `meta description` for a page
-summary: "I assist businesses in crafting user-friendly, responsive, accessible, and resilient websites, aiming to establish a solid groundwork that contributes to a lasting and meaningful online presence."
+summary: "I help individuals, non-profits, and businesses craft user-friendly, responsive, accessible, and resilient websites. Whether you're starting fresh or improving an existing one, I'm here to assist you in establishing a lasting and meaningful online presence."
 # Populates the opening / `lead` text on a page
 lead:
-  - I assist businesses in crafting user-friendly, responsive, accessible, and resilient websites, aiming to establish a solid groundwork that contributes to a lasting and meaningful online presence.
-  - Need some help with your next project? <a href="/contact">Get in touch</a>.
+  - I help individuals, non-profits, and businesses craft user-friendly, responsive, accessible, and resilient websites. Whether you're starting fresh or improving an existing one, I'm here to assist you in establishing a lasting and meaningful online presence.
+  - Think I could help with your next project? <a href="/contact">Get in touch</a>.
 
 bodyClass: "projects-home"
 
@@ -16,7 +16,7 @@ pagination:
   size: 15
   alias: projects
 
-date: 2024-02-17T23:09:27.631Z
+date: 2024-02-19T13:24:27.631Z
 ---
 
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}

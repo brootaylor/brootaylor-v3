@@ -2,12 +2,11 @@
 layout: "layouts/homepage.njk"
 title: Hi, I'm Bruce.
 # Populates the `meta description` for a page
-summary: "Bruce lives in Crawley, West Sussex, England with his family. He's a Web Developer and assists businesses in crafting user-friendly, responsive, accessible, and resilient websites, aiming to establish a solid groundwork that contributes to a lasting and meaningful online presence."
+summary: "Bruce is a Web Developer based in Crawley, West Sussex. Specialising in crafting user-friendly, responsive, and resilient websites for individuals, non-profits, and businesses. Build from scratch or update your site for a lasting online presence."
 
 # Populates the opening / `lead` text on a page
 lead:
-  - I assist businesses in crafting user-friendly, responsive, accessible, and resilient websites, aiming to establish a solid groundwork that contributes to a lasting and meaningful online presence.
-  - Over the past two decades, I've had the opportunity to contribute to <a href="/projects">various projects</a> in industries like e-commerce, travel and tourism, hospitality, healthcare and medical, digital marketing, education, and charities.
+  - Whether you're an individual, non-profit or business needing a website built from scratch or looking to update, enhance, or optimise your current one, I specialise in crafting user-friendly, responsive, accessible, and resilient websites.
 
 # Page-specific metadata content added to the `<head>`
 head: "
@@ -41,10 +40,12 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2024-02-17T23:09:27.631Z
+date: 2024-02-19T13:24:27.631Z
 
 priority: 1
 ---
+
+Over the past two decades, [I've contributed to projects](/projects) across various industries, including e-commerce, travel, hospitality, healthcare, digital marketing, education, and charities.
 
 I'd [love to hear from you](/contact) if you think I may be able to help out with your next project &mdash; or if you'd just like to connect. 👋 {.call-out}
 
