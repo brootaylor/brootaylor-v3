@@ -2,11 +2,11 @@
 layout: "layouts/homepage.njk"
 title: Hi, I'm Bruce.
 # Populates the `meta description` for a page
-summary: "Bruce is a Web Developer based in Crawley, West Sussex. Specialising in crafting user-friendly, responsive, and resilient websites for individuals, non-profits, and businesses. Build from scratch or update your site for a lasting online presence."
+summary: "Bruce is a Web Developer based in Crawley, West Sussex. Specialising in crafting user-friendly, responsive, and resilient websites for individuals, businesses, and non-profit organisations. Build from scratch or update your site for a lasting online presence."
 
 # Populates the opening / `lead` text on a page
 lead:
-  - Whether you're an individual, non-profit or business needing a website built from scratch or looking to update, enhance, or optimise your current one, I specialise in crafting <strong>user-friendly</strong>, <strong>responsive</strong>, <strong>accessible</strong>, and <strong>resilient websites</strong>.
+  - Whether you're an individual, business or non-profit organisation needing a website built from scratch or looking to update, enhance, or optimise your current one, I specialise in crafting <strong>user-friendly</strong>, <strong>responsive</strong>, <strong>accessible</strong>, and <strong>resilient websites</strong>.
 
 # Page-specific metadata content added to the `<head>`
 head: "

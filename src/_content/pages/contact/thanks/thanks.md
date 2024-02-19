@@ -9,10 +9,8 @@ bodyClass: "contact-thanks"
 
 permalink: "/contact/thanks.html"
 
-date: 2023-07-25T19:06:00
+date: 2024-02-19T16:47:27.631Z
 
 hidden: true
 eleventyExcludeFromCollections: true
 ---
-
-Return me to the <a href="/">homepage</a>.
