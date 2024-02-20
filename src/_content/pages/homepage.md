@@ -40,12 +40,12 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2024-02-19T13:24:27.631Z
+date: 2024-02-20T11:16:27.631Z
 
 priority: 1
 ---
 
-Over the past two decades, [I've contributed to projects](/projects) across various industries, including e-commerce, travel, hospitality, healthcare, digital marketing, education, and charities.
+Over the past two decades, [I've contributed to projects](/projects) across various industries including e-commerce, travel and tourism, hospitality, healthcare and medical, digital marketing, education, and charities.
 
 I'd [love to hear from you](/contact) if you think I may be able to help out with your next project &mdash; or if you'd just like to connect. 👋 {.call-out}
 
