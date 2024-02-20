@@ -3,6 +3,7 @@
 .vscode
 dist
 /docs
+/psd
 /resources
 
 # Files to ignore
