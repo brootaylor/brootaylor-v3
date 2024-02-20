@@ -45,7 +45,7 @@
   targetPort = 8080 # The port for my application server, framework or site generator
   publish = "dist" # The path to my static content folder
   autoLaunch = true # A boolean value that determines if Netlify Dev launches the local server address in the browser
-  framework = "#custom" # Property that uses the command value to run an app server and the targetPort value to connect to it. Required if `command` and `targetPort` are both set.
+  framework = "#static" # Property that uses the command value to run an app server and the targetPort value to connect to it. Required if `command` and `targetPort` are both set.
   # envFiles = [".env"] # The env files to use, ordered by priority (left - highest, right - lowest)
 
 
@@ -112,21 +112,6 @@
 # NOTE: This requires the DNS records to be updated to point to Netlify.
 [[redirects]]
   from = "https://brootaylor-eleventy.netlify.app/*"
-  to = "https://brootaylor.com/:splat"
-  status = 301
-  force = true
-
-# Alias URLs pointing at primary domain & redirected as well
-# ========================================================================
-# NOTE: These require the DNS records to be updated to point to Netlify.
-[[redirects]]
-  from = "https://brootaylor.co.uk/*"
-  to = "https://brootaylor.com/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.brootaylor.co.uk/*"
   to = "https://brootaylor.com/:splat"
   status = 301
   force = true
