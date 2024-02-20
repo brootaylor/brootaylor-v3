@@ -8,11 +8,11 @@ lead:
   - Whether you're starting fresh or improving an existing one, I'm here to assist you in establishing a lasting and meaningful online presence.
   - Think I could help with your next project? <a href="/contact">Get in touch</a>.
 
-# Social image details - (Is used by channels like Facebook, Twitter, LinkedIn etc.)
-# ###################################################################################
+# Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
+# ############################################################################################
 socialImage:
   url: "/assets/images/projects/hugo-and-cat/ecarx/ecarx_01--thumbnail.jpg"
-  alt: "A screenshot of ECARX's homepage."
+  alt: "A screenshot of ECARX's homepage"
 
 bodyClass: "projects-home"
 

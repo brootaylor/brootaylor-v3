@@ -76,7 +76,7 @@
 	<meta property="og:site_name" content="{{ site.name }}">
 	<meta property="og:title" content="{{ pageTitle }}">
 	<meta property="og:image" content="{{ rootUrl }}{% if socialImageUrl %}{{ socialImageUrl }}{% else %}{{ metaImage }}{% endif %}">
-	<meta property="og:image:alt" content="{% if socialImageAlt %}{{ socialImageAlt }}{% else %}{{ metaImageAlt }}{% endif %}">
+	<meta property="og:image:alt" content="{% if socialImageAlt %}{{ socialImageAlt }}{% else %}{{ metaImageAlt }}{% endif %}.">
 	<meta property="og:description" content="{{ metaDescription }}">
 	<meta property="og:url" content="{{ rootUrl }}{{ page.url | pretty }}">
 {% endif %}
@@ -90,7 +90,7 @@
 	<meta name="twitter:site" content="{{ site.twitter }}">
 	<meta name="twitter:title" content="{{ pageTitle }}">
 	<meta name="twitter:image" content="{{ rootUrl }}{% if socialImageUrl %}{{ socialImageUrl }}{% else %}{{ metaImage }}{% endif %}">
-	<meta name="twitter:image:alt"  content="{% if socialImageAlt %}{{ socialImageAlt }}{% else %}{{ metaImageAlt }}{% endif %}">
+	<meta name="twitter:image:alt"  content="{% if socialImageAlt %}{{ socialImageAlt }}{% else %}{{ metaImageAlt }}{% endif %}.">
 	<meta name="twitter:description" content="{{ metaDescription }}">
 	<meta name="twitter:url" property="og:url" content="{{ rootUrl }}{{ page.url | pretty }}">
 {% endif %}

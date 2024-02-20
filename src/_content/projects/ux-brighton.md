@@ -6,6 +6,12 @@ summary: Working with UX Brighton to enhance and optimise their user interface, 
 lead:
   - Working with UX Brighton to enhance and optimise their user interface, overall website experience, developer experience, content management workflow, search and <abbr title="Search Engine Optimisation.">SEO</abbr>.
 
+# Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
+# ############################################################################################
+socialImage:
+  url: "/assets/images/projects/ux-brighton/uxbrighton_01--thumbnail.jpg"
+  alt: "A screenshot of UX Brighton's homepage"
+
 project:
   year: 2022 &mdash; Present
   role: Frontend Web Development

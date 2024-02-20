@@ -6,6 +6,12 @@ summary: Collaborated with Hugo & Cat on a web project for ECARX, a leading auto
 lead:
   - Collaborated with Hugo & Cat on a web project for ECARX, a leading automotive technology company.
 
+# Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
+# ############################################################################################
+socialImage:
+  url: "/assets/images/projects/hugo-and-cat/ecarx/ecarx_01--thumbnail.jpg"
+  alt: "A screenshot of ECARX's homepage"
+
 project:
   year: 2023
   role: Senior Frontend Web Developer

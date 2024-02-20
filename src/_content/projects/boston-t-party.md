@@ -6,6 +6,12 @@ summary: A fast and friendly customer informational website for Boston T Party's
 lead:
   - A fast and friendly customer informational <abbr title="Progressive Web App.">PWA</abbr> website for Boston T Party's accommodation and venue hire business in South Africa.
 
+# Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
+# ############################################################################################
+socialImage:
+  url: "/assets/images/projects/boston-t-party/bostontparty_01--thumbnail.jpg"
+  alt: "A screenshot of Boston T Party's homepage"
+
 project:
   year: 2022
   role: Frontend Web Design & Development

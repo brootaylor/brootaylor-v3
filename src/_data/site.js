@@ -1,4 +1,4 @@
-const { DateTime } = require('luxon')
+const { DateTime } = require('luxon');
 
 module.exports = {
   name: 'Bruce Taylor',
@@ -7,7 +7,7 @@ module.exports = {
   metaDescription: 'Bruce Taylor',
   metaImage: '/assets/images/common/logo-social.png',
   metaImageAlt: 'Site logo for Bruce Taylor.',
-  logoAlt: 'Site logo for Bruce Taylor.',
+  logoAlt: 'Site logo for Bruce Taylor',
   lang: 'en-gb',
   start_url: '/',
   display: 'standalone',

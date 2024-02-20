@@ -6,6 +6,12 @@ summary: Developed a versatile frontend starter kit in collaboration with Euromo
 lead:
   - Developed a versatile frontend starter kit in collaboration with Euromoney's team of designers, backend developers, and testers.
 
+# Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
+# ############################################################################################
+socialImage:
+  url: "/assets/images/projects/euromoney/fastmarkets_01--thumbnail.jpg"
+  alt: "A screenshot of Fastmarkets' homepage"
+
 project:
   year: 2018
   role: Frontend Web Developer
@@ -18,7 +24,7 @@ image:
   # The projects landing list page uses the `srcWebp` and `srcJpg` values
   srcWebp: "/assets/images/projects/euromoney/fastmarkets_01--thumbnail.webp"
   srcJpg: "/assets/images/projects/euromoney/fastmarkets_01--thumbnail.jpg"
-  alt: "A screenshot of ECARX's Fastmarkets' homepage"
+  alt: "A screenshot of Fastmarkets' homepage"
   width: 650
   height: 464
   # Should the image thumbnail on the list page lazy load?

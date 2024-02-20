@@ -6,6 +6,12 @@ summary: Developed & enhanced a CMS driven corporate communication website for V
 lead:
   - Developed & enhanced a <abbr title="Content Management System.">CMS</abbr> driven <abbr title="Multi Page Application.">MPA</abbr> corporate communication website for Varo, a client of Brunswick Group.
 
+# Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
+# ############################################################################################
+socialImage:
+  url: "/assets/images/projects/brunswick-group/varo/varo_01--thumbnail.jpg"
+  alt: "A screenshot of Varo's homepage"
+
 project:
   year: 2023
   role: Frontend Web Developer
