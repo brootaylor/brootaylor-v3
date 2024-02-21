@@ -1,5 +1,5 @@
 ---
-title: "Accessibility statement."
+title: "Accessibility statement"
 # Populates the `meta description` for a page
 summary: "This website is committed to providing a usable experience for anyone visiting it, regardless of technology or ability."
 bodyClass: "accessibility"

@@ -44,19 +44,19 @@
       padding: 0.5em 1rem 0.5em 0;
 
       // Only the last 2 list items in this list
-      &:nth-last-child(-n+2) {
+      &:nth-last-child(-n+3) {
         font-size: 0.9rem;
       }
 
       // All list items except the last 2
-      &:not(:nth-last-child(-n+2)) {
+      &:not(:nth-last-child(-n+3)) {
         a {
           display: inline-flex;
           box-shadow: none;
         }
       }
 
-      &:nth-last-child(2) {
+      &:nth-last-child(3) {
         @include min-width($breakpoint-small) {
           margin-left: 3em;
         }

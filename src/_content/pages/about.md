@@ -91,7 +91,7 @@ I've also set up a machine-readable [<code>ai.txt</code> file](https://brootaylo
 
 More information about the technology used to make this website is available in this [<code>humans.txt</code> file](https://brootaylor.com/humans.txt).
 
-It's probably worth mentioning that I don't use any tracking technologies &mdash; (*home-grown or third-party*) &mdash; to collect information about what you read or click on this website.
+It's probably worth mentioning that [I don't use any tracking technologies](/privacy#analytics-%26-tracking) &mdash; (*home-grown or third-party*) &mdash; to collect information about what you read or click on this website.
 
 <small><em>The last production build was on: {{ site.dateTimeNow }} GMT</em></small>
 
