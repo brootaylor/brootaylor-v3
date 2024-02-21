@@ -13,7 +13,7 @@ socialImage:
   alt: "A screenshot of Boston T Party's homepage"
 
 project:
-  year: 2022 &mdash; Present
+  year: 2022 &mdash; Ongoing
   role: Frontend Web Design & Development
   technologies: HTML5, CSS, SCSS, JavaScript, Service Worker, PWA manifest, Eleventy, Nunjucks, Jest, Rollup.js, Node.js, GitHub, Netlify, Photoshop.
   websiteLabel: bostontparty.co.za

@@ -13,7 +13,7 @@ socialImage:
   alt: "A screenshot of UX Brighton's homepage"
 
 project:
-  year: 2022 &mdash; Present
+  year: 2022 &mdash; Ongoing
   role: Frontend Web Development
   technologies: HTML5, CSS, SCSS, JavaScript (ES6), jQuery, Jekyll, Liquid, JSON, GitHub, GitHub Pages, Node.js, Retool, Swagger, Netlify, Netlify CMS, Google Analytics, Figma, Photoshop.
   websiteLabel: uxbri.org
