@@ -43,18 +43,16 @@ module.exports = {
       external: true,
     },
     {
+      label: 'Flickr',
+      url: 'https://www.flickr.com/photos/60226997@N06/',
+      icon: 'flickr',
+      external: true,
+    },
+    {
       label: 'RSS',
       url: '/feed.xml',
       icon: 'rss',
       document: true,
     },
-    {
-      label: 'Twit...“X”',
-      url: '/writing/2023-09-07/goodbye-twitter-or-whatever-you-are-called-these-days',
-      external: true,
-      delete: {
-        label: 'I think this is my final goodbye to Twitter.',
-      },
-    },
   ],
-}
+};
