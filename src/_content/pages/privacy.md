@@ -58,3 +58,7 @@ Users are advised to use social media platforms wisely and communicate / engage 
 This website and its owners through their social media platform accounts may share web links to relevant web pages. By default some social media platforms shorten lengthy url's *[web addresses] (this is an example: http://bit.ly/19AHUKX)*.
 
 Users are advised to take caution and good judgement before clicking any shortened url's published on social media platforms by this website and its owners. Despite the best efforts to ensure only genuine url's are published, many social media platforms are prone to spam and hacking and therefore this website and its owners cannot be held liable for any damages or implications caused by visiting any shortened links.
+
+---
+
+If you have any questions or concerns related to your privacy and use of data by this website and its owners, [please send an email](/contact) or call on *+44 7832 215335*.
