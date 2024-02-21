@@ -24,6 +24,6 @@ Here's the video as well if you just wanna watch it here...
 
 <div class="video">
 	<div class="video--inner">
-		<iframe src="https://www.youtube-nocookie.com/embed/Nn0kBdwGa78?si=YnEhbrRHNeRfXVcu&amp;controls=0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+		<iframe src="https://www.youtube-nocookie.com/embed/Nn0kBdwGa78?si=YnEhbrRHNeRfXVcu&amp;controls=0" title="YouTube video player." allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
 	</div>
 </div>
