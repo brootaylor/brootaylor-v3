@@ -61,4 +61,6 @@ Users are advised to take caution and good judgement before clicking any shorten
 
 ---
 
-If you have any questions or concerns related to your privacy and use of data by this website and its owners, [please send an email](/contact) or call on *+44 7832 215335*.
+## Any concerns?
+
+If you have any questions or concerns related to your privacy and use of data by this website and its owners, please [email me](/contact) or call on *+44 7832 215335*.
