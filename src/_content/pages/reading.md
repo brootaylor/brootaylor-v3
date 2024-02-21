@@ -8,6 +8,8 @@ lead:
 
 bodyClass: "reading"
 
+tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
+
 date: 2024-02-05T14:12:00
 ---
 
