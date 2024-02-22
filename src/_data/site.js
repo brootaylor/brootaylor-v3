@@ -6,7 +6,7 @@ module.exports = {
   metaTitle: 'Bruce Taylor • Frontend Web Developer & UI Engineer based in Crawley, West Sussex, UK',
   metaDescription: 'Bruce Taylor',
   metaImage: '/assets/images/common/logo-social.png',
-  metaImageAlt: 'Site logo for Bruce Taylor.',
+  metaImageAlt: 'Site logo for Bruce Taylor',
   logoAlt: 'Site logo for Bruce Taylor',
   lang: 'en-gb',
   start_url: '/',
