@@ -6,8 +6,8 @@ summary: Migration of the Carphone Warehouse website content to a more advanced 
 lead:
   - Migration of the Carphone Warehouse website content to a more advanced in-house content management platform.
 
-# Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
-# ############################################################################################
+# Social image details - (Is used by content sharing channels like Facebook, Twitter, WhatsApp, LinkedIn, RSS readers etc.)
+# ##########################################################################################################################
 socialImage:
   url: "/assets/images/projects/currys/carphone-warehouse_01--thumbnail.jpg"
   alt: "A screenshot of Carphone Warehouse's website"

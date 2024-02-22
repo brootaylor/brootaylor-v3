@@ -6,8 +6,8 @@ summary: Charanga Music needed a front-end boilerplate / component library to he
 lead:
   - Charanga Music needed a front-end boilerplate / component library to help with future projects.
 
-# Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
-# ############################################################################################
+# Social image details - (Is used by content sharing channels like Facebook, Twitter, WhatsApp, LinkedIn, RSS readers etc.)
+# ##########################################################################################################################
 socialImage:
   url: "/assets/images/projects/charanga-music/charanga-music_01--thumbnail.jpg"
   alt: "A screenshot of Charanga's homepage"

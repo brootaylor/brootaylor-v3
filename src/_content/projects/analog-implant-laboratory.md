@@ -6,8 +6,8 @@ summary: Analog Implant Laboratory skillfully combines technology, art, and natu
 lead:
   - Analog Implant Laboratory skillfully combines technology, art, and nature in their work.
 
-# Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
-# ############################################################################################
+# Social image details - (Is used by content sharing channels like Facebook, Twitter, WhatsApp, LinkedIn, RSS readers etc.)
+# ##########################################################################################################################
 socialImage:
   url: "/assets/images/projects/analog-implant-laboratory/analog-implant-laboratory_01--thumbnail.jpg"
   alt: "A screenshot of Analog Implant Laboratory's homepage"

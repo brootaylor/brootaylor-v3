@@ -6,8 +6,8 @@ summary: A microsite to support the release of Naspers PLC's annual financial in
 lead:
   - A microsite to support the release of Naspers PLC's annual financial information.
 
-# Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
-# ############################################################################################
+# Social image details - (Is used by content sharing channels like Facebook, Twitter, WhatsApp, LinkedIn, RSS readers etc.)
+# ##########################################################################################################################
 socialImage:
   url: "/assets/images/projects/brunswick-group/naspers/naspers_01--thumbnail.jpg"
   alt: "A screenshot of Naspers 2022 Annual Report homepage"

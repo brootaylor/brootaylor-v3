@@ -6,8 +6,8 @@ summary: Developed a versatile frontend starter kit in collaboration with Euromo
 lead:
   - Developed a versatile frontend starter kit in collaboration with Euromoney's team of designers, backend developers, and testers.
 
-# Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
-# ############################################################################################
+# Social image details - (Is used by content sharing channels like Facebook, Twitter, WhatsApp, LinkedIn, RSS readers etc.)
+# ##########################################################################################################################
 socialImage:
   url: "/assets/images/projects/euromoney/fastmarkets_01--thumbnail.jpg"
   alt: "A screenshot of Fastmarkets' homepage"
