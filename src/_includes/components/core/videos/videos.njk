@@ -9,7 +9,7 @@
 			</video>
 		{% elif content.data.video.thirdParty %}
 		{# 3rd party video (ie. Youtube or Vimeo) #}
-			<iframe src="//{% if data.video.thirdParty.youtube.src %}www.youtube.com/embed/{{ data.video.thirdParty.youtube.src }}{% elif content.data.video.thirdParty.vimeo.src %}player.vimeo.com/video/{{ content.data.video.thirdParty.vimeo.src }}{% endif %}&amp;controls=0" title="Video player." allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+			<iframe src="//{% if data.video.thirdParty.youtube.src %}www.youtube.com/embed/{{ data.video.thirdParty.youtube.src }}{% elif content.data.video.thirdParty.vimeo.src %}player.vimeo.com/video/{{ content.data.video.thirdParty.vimeo.src }}{% endif %}" title="Video player." allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
 		{% endif %}
 	</div>
 </div>
