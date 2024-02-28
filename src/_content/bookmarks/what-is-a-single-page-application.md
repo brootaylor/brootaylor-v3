@@ -4,7 +4,7 @@ summary: Heydon Pickering giving a quick explainer about single-page application
 bookmarkExternal: https://heydonworks.com/article/what-is-a-single-page-application/
 bookmarkLabel: heydonworks.com
 bookmarkAuthor: Heydon Pickering
-date: 2024-02-28T11:07:04.180Z
+date: 2024-02-28T12:34:04.180Z
 updated: ""
 location:
   locality: Crawley
