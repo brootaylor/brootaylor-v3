@@ -54,7 +54,7 @@ This streamlined their ability to swiftly develop and deploy future web offering
 ---
 
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
-{%- call blockquote('Paul Davison, Head Of Design, Charanga Music') -%}
+{%- call blockquote('Paul Davison, Head Of Design', 'https://charanga.com/', 'Charanga Music') -%}
   We got Bruce in to to help us develop a front-end boilerplate / component library as we were inundated with projects and needed a safe pair of hands that could help us achieve quality results with minimal supervision.
 
   Bruce delivered a high-quality framework that ticks all of the boxes for us. And to top it all he’s a great guy to work with, highly professional, he gets on well with everyone and really cares about his work. I would not hesitate to hire Bruce again.

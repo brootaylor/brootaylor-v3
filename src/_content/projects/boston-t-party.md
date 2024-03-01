@@ -48,7 +48,7 @@ Ease of use, access, performance, and resilience were particularly crucial consi
 
 ---
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
-{%- call blockquote('Sue Brighton, Owner, Boston T Party, South Africa') -%}
+{%- call blockquote('Sue Brighton, Owner, <a href="https://bostontparty.co.za/" rel="external">Boston T Party</a> <em>(South Africa)</em>') -%}
   We started our small hospitality business in 2009, with little or no direction on how to create and manage a website. Bruce came to the rescue by providing a user-friendly and informative site – numerous guests have commented as to the ease in which they were able to navigate the Boston T Party website.
 
   Bruce has provided constant updates, always suggesting new and innovative ways to improve the design or content of the site in line with the ever changing needs of our guests/travellers and technology.
