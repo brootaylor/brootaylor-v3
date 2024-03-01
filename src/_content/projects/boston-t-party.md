@@ -32,7 +32,7 @@ image:
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2024-02-21T11:49:27.631Z
+date: 2024-03-01T12:15:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -49,8 +49,10 @@ Ease of use, access, performance, and resilience were particularly crucial consi
 ---
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
 {%- call blockquote('Sue Brighton, Owner, Boston T Party, South Africa') -%}
-  We started our small hospitality business in 2009, with little or no direction on how to create and manage a website. Bruce came to the rescue by providing a user-friendly and informative site – numerous guests have commented as to the ease in which they were able to navigate the Boston T Party website.<br><br>
-  Bruce has provided constant updates, always suggesting new and innovative ways to improve the design or content of the site in line with the ever changing needs of our guests/travellers and technology.<br><br>
+  We started our small hospitality business in 2009, with little or no direction on how to create and manage a website. Bruce came to the rescue by providing a user-friendly and informative site – numerous guests have commented as to the ease in which they were able to navigate the Boston T Party website.
+
+  Bruce has provided constant updates, always suggesting new and innovative ways to improve the design or content of the site in line with the ever changing needs of our guests/travellers and technology.
+
   Any issues are dealt with timeously, with great attention to detail. We are extremely happy to continue to work with Bruce and engage with his professional and friendly service.
 {%- endcall %}
 

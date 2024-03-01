@@ -23,7 +23,7 @@ pagination:
   size: 15
   alias: projects
 
-date: 2024-02-19T13:24:27.631Z
+date: 2024-03-01T11:57:27.631Z
 ---
 
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
@@ -150,12 +150,30 @@ date: 2024-02-19T13:24:27.631Z
   <ul role="list" class="auto-grid | no-list">
     <li>
     {%- call blockquote('Stephen Scott, Chief Digital Officer', 'https://www.iagloyalty.com', 'IAG Loyalty') -%}
-      Bruce is a true digital native. Starting in the industry back as far as Boo.com and continually striving to push the boundaries of front end code design. He takes it upon himself to continually keep up to date with the latest trends and to apply that to his work to the benefit of whoever he is working for. I have no hesitation in recommending Bruce for any role in which pushing your digital boundaries is at the core of your agenda.
+      Bruce is a true digital native. Starting in the industry back as far as Boo.com and continually striving to push the boundaries of front end code design. He takes it upon himself to continually keep up to date with the latest trends and to apply that to his work to the benefit of whoever he is working for.
+
+      I have no hesitation in recommending Bruce for any role in which pushing your digital boundaries is at the core of your agenda.
     {%- endcall %}
     </li>
     <li>
     {%- call blockquote('Paul Davison, Head Of Design', 'https://charanga.com', 'Charanga Music') -%}
-      We got Bruce in to to help us develop a front-end boilerplate / component library as we were inundated with projects and needed a safe pair of hands that could help us achieve quality results with minimal supervision. Bruce delivered a high-quality framework that ticks all of the boxes for us. And to top it all he’s a great guy to work with, highly professional, he gets on well with everyone and really cares about his work. I would not hesitate to hire Bruce again.
+      We got Bruce in to to help us develop a front-end boilerplate / component library as we were inundated with projects and needed a safe pair of hands that could help us achieve quality results with minimal supervision.
+
+      Bruce delivered a high-quality framework that ticks all of the boxes for us. And to top it all he’s a great guy to work with, highly professional, he gets on well with everyone and really cares about his work. I would not hesitate to hire Bruce again.
+    {%- endcall %}
+    </li>
+    <li>
+    {%- call blockquote('Nicola Chrome, Senior Media and Content Marketing Manager, <a href="https://www.avios.com/en-GB" rel="external">Avios</a>. <em>(Currently, "Founder" of Relocate Down Under)</em>') -%}
+      I worked with Bruce for many years at Avios, both within the same team and across projects. Bruce was incredibly knowledgeable in website design and development, always came up with great solutions, delivered to a high standard with great attention to detail, and was very easy to work with.
+
+      He was also able to communicate his technical knowledge in a straightforward way to someone who was not from a technical background. I would highly recommend Bruce to any organisation.
+    {%- endcall %}
+    </li>
+    <li>
+    {%- call blockquote('Roger Mathews, Head of System Development and Administration, <a href="https://www.macmillan.org.uk/" rel="external">Macmillan Cancer Support</a>. <em>(Currently, "Chief Technology Officer" at The Institute of Cancer Research)</em>') -%}
+      Bruce is great addition to any team, a great personality who requires minimal management and produces accurate and attractive output. He keeps up to date with the latest techniques and is happy to share those skills with others.
+
+      I wouldn't hesitate in giving Bruce another opportunity when one arises.
     {%- endcall %}
     </li>
   </ul>

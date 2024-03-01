@@ -40,7 +40,7 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2024-02-20T11:16:27.631Z
+date: 2024-03-01T12:15:27.631Z
 
 priority: 1
 ---
@@ -55,5 +55,7 @@ I'd [love to hear from you](/contact) if you think I may be able to help out wit
 
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
 {%- call blockquote('Stephen Scott, Chief Digital Officer', 'https://www.iagloyalty.com', 'IAG Loyalty') -%}
-  Bruce is a true digital native. Starting in the industry back as far as Boo.com and continually striving to push the boundaries of front end code design. He takes it upon himself to continually keep up to date with the latest trends and to apply that to his work to the benefit of whoever he is working for. I have no hesitation in recommending Bruce for any role in which pushing your digital boundaries is at the core of your agenda.
+  Bruce is a true digital native. Starting in the industry back as far as Boo.com and continually striving to push the boundaries of front end code design. He takes it upon himself to continually keep up to date with the latest trends and to apply that to his work to the benefit of whoever he is working for.
+
+  I have no hesitation in recommending Bruce for any role in which pushing your digital boundaries is at the core of your agenda.
 {%- endcall %}

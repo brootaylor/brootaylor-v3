@@ -5,8 +5,10 @@
 	REF: https://adonisjs.com/docs/3.2/templating#_callcaller
 #}
 {% macro blockquote(author, citHref, citLabel) -%}
-	<blockquote>
-		<p>{{ caller() }}</p>
-		<footer>&mdash; {{ author }}{% if citHref %}, <cite><a href="{{ citHref }}">{{ citLabel }}</a></cite>{% endif %}</footer>
-	</blockquote>
+  <blockquote>
+    {%- for paragraph in caller().split('\n\n') -%}
+      <p>{{ paragraph }}</p>
+    {%- endfor -%}
+    <footer>&mdash; {{ author | safe }}{% if citHref %}, <cite><a href="{{ citHref }}">{{ citLabel }}</a></cite>{% endif %}</footer>
+  </blockquote>
 {%- endmacro %}
