@@ -17,7 +17,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-02-17T23:09:27.631Z
+date: 2024-03-04T17:39:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
@@ -27,7 +27,7 @@ date: 2024-02-17T23:09:27.631Z
   "My mum looking at a beautiful view of the Giants Castle mountain from the Giants Castle Camp's main dining room balcony",
   "2000",
   "1125",
-  'Giants Castle. <abbr title="Kwazulu Natal.">KZN</abbr>, South Africa',
+  'My mum looking towards Giants Castle. <abbr title="Kwazulu Natal.">KZN</abbr>, South Africa',
   false,
   "shadow",
   "lazy")
