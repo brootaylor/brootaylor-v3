@@ -1,7 +1,11 @@
 ---
 title: "Notes"
 # Populates the `meta description` for a page
-summary: "Quick notes, thoughts and ramblings."
+summary: "Quick notes, quotes, thoughts and ramblings."
+# Populates the opening / `lead` text on a page
+lead:
+  - "Quick notes, quotes, thoughts and ramblings."
+
 bodyClass: "notes-home"
 
 permalink: "{% if pagination.pageNumber > 0 %}/notes/{{ pagination.pageNumber + 1 }}/index.html{% else %}/notes.html{% endif %}"
@@ -11,7 +15,7 @@ pagination:
   size: 15
   alias: notes
 
-date: 2023-06-08T17:37:00
+date: 2024-03-05T16:59:00
 ---
 
 {# List of note posts #}
