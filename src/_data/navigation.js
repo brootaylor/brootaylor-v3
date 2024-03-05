@@ -43,6 +43,13 @@ module.exports = {
       external: true,
     },
     {
+      label: 'Mastodon',
+      url: 'https://mastodon.social/@brootaylor',
+      icon: 'mastodon',
+      external: true,
+      verified: true,
+    },
+    {
       label: 'Flickr',
       url: 'https://www.flickr.com/photos/60226997@N06/',
       icon: 'flickr',

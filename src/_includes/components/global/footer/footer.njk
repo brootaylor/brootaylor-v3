@@ -16,7 +16,7 @@
 					<li>
 						<a href="{{ navitem.url }}"
 							{% if navitem.delete %} title="{{ navitem.delete.label }}"{% endif %}
-							{% if navitem.external %} rel="external"{% endif %}
+							{% if navitem.external %} rel="external{% if navitem.verified %} me{% endif %}"{% endif %}
 							{% if (page.url | pretty) == navitem.url %} aria-describedby="current-page" class="current"{% endif %}>
 							{% if navitem.icon %}
 								<span class="visually-hidden">{{ navitem.label }}</span>
@@ -26,6 +26,7 @@
 							{# This (below) could be optimised at some stage... #}
 							{% if navitem.icon == "github" %}{% include "components/core/icons/svg_inline/icon--github.njk" %}{% endif %}
 							{% if navitem.icon == "linkedin" %}{% include "components/core/icons/svg_inline/icon--linkedin.njk" %}{% endif %}
+							{% if navitem.icon == "mastodon" %}{% include "components/core/icons/svg_inline/icon--mastodon.njk" %}{% endif %}
 							{% if navitem.icon == "flickr" %}{% include "components/core/icons/svg_inline/icon--flickr.njk" %}{% endif %}
 							{% if navitem.icon == "rss" %}{% include "components/core/icons/svg_inline/icon--rss.njk" %}{% endif %}
 						</a>
