@@ -63,8 +63,18 @@
         }
       }
 
+      &:nth-last-child(2) {
+        @include max-width(392px) {
+          margin-block-start: 1rem;
+        }
+      }
+
       &:last-child {
         margin-inline-end: 0;
+
+          @include max-width(440px) {
+            margin-block-start: 1rem;
+          }
       }
     }
 
