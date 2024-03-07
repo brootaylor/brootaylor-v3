@@ -1,0 +1,64 @@
+{
+  "blogs": [
+    {
+      "name": "Jeremy Keith",
+      "url": "https://adactio.com/",
+      "description": "Jeremy is a web developer, author and speaker living and working in Brighton, England."
+    },
+    {
+      "name": "Ben Myers",
+      "url": "https://benmyers.dev/",
+      "description": "Ben is a web developer near Dallas, Texas. Known for his commitment to web accessibility, intentional inclusiveness, and unforgivable puns."
+    },
+    {
+      "name": "Sara Soueidan",
+      "url": "https://www.sarasoueidan.com/",
+      "description": "Sara is an independent inclusive design engineer, author, speaker, and trainer based in Lebanon."
+    },
+    {
+      "name": "Paul Robert Lloyd",
+      "url": "https://paulrobertlloyd.com/",
+      "description": "Paul is an independent designer, writer and occasional speaker based in Brighton, England."
+    },
+    {
+      "name": "Ethan Marcotte",
+      "url": "https://ethanmarcotte.com/",
+      "description": "Ethan is a web designer, writer, and speaker. Famously known for coining the term \"<em>Responsive Web Design</em>\"."
+    },
+    {
+      "name": "Go Make Things",
+      "url": "https://gomakethings.com/",
+      "description": "Sometimes known as the \"<em>Vanilla JS Guy</em>\", Chris help's people build a simpler, faster web."
+    },
+    {
+      "name": "Robin Rendle",
+      "url": "https://robinrendle.com/",
+      "description": "Robin is a designer and writer from the UK but now living in San Francisco."
+    },
+    {
+      "name": "Stephanie Eckles",
+      "url": "https://thinkdobecreate.com/",
+      "description": "Stephanie is the author of <em>ModernCSS.dev</em> which provides modern solutions to old CSS problems as in-depth tutorials."
+    },
+    {
+      "name": "Chris Coyier",
+      "url": "https://chriscoyier.net/",
+      "description": "Chris is a web designer and developer and his career arc is about helping you get better at those things."
+    },
+    {
+      "name": "Kevin Powell",
+      "url": "https://www.kevinpowell.co/",
+      "description": "Kevin is a CSS Evangelist. He loves CSS, and wants to help new front-end devs enjoy learning it, and help seasoned vets see how great it really is."
+    },
+    {
+      "name": "Léonie Watson",
+      "url": "https://tink.uk/",
+      "description": "Léonie is a Director at TetraLogical, a member of the W3C Advisory Board, and co-chair of the W3C Web Platform Working Group."
+    },
+    {
+      "name": "Zach Leatherman",
+      "url": "https://www.zachleat.com/",
+      "description": "Zach is the creator and maintainer of <em>11ty</em>, an award-winning open source site generator."
+    }
+  ]
+}

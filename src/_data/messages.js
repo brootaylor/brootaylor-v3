@@ -9,4 +9,4 @@ module.exports = {
     modifier: 'message--alert',
     // message: "Oops! We've got a problem here.",
   },
-}
+};

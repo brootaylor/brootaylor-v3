@@ -1,0 +1,63 @@
+/*********************************************
+ * Blogroll landing page rules
+ *********************************************/
+
+@use '../abstracts' as *;
+
+.blogroll-home {
+
+  .card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100%;
+    margin-block-end: 0;
+    background: var(--grey-light);
+    border: 1px solid var(--grey-mid);
+    box-shadow: -4px 4px 0px 1px rgb($grey-dark, 0.2);
+
+    .card__header {
+      small {
+        @include font-size(14px);
+        font-style: italic;
+      }
+    }
+
+    .card__content {
+      padding: 1em;
+      border-width: 0 1px 1px;
+    }
+
+    &__title {
+      font-size: convert-to-rem(24px);
+
+      img {
+        display: inline;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 20%;
+        margin-block-end: -0.325rem;
+        margin-inline-end: 0.25rem;
+      }
+
+      a {
+        // Getting the `a` to cover everyting relative to its parent element (which is the `card`)
+        &:before {
+          content: '';
+          z-index: 2;
+          position: absolute;
+          inset: 0;
+        }
+      }
+    }
+
+    &__body {
+      margin-top: 0.5em;
+      padding-top: 1em;
+      box-shadow: inset 0 1px var(--grey-mid);
+
+      p {
+        @include font-size(14px);
+      }
+    }
+  }
+}

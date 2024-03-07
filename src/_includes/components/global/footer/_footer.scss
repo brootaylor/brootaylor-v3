@@ -20,12 +20,18 @@
 
   small {
     font-size: 0.90rem;
+    text-wrap: pretty;
     padding: 0.5rem 0;
 
-      @include min-width($breakpoint-small) {
-        flex: 1 1 55%;
-        max-width: 55%;
+      @include min-width($breakpoint-medium) {
+        flex: 1 1 45%;
+        max-width: 45%;
         margin-inline-end: 1rem;
+      }
+
+      @include min-width($breakpoint-large) {
+        flex-basis: 35%;
+        max-width: 35%;
       }
   }
 
@@ -44,35 +50,45 @@
       padding: 0.5em 0 0.5em 0;
       margin-inline-end: 1rem;
 
-      // Only the last 2 list items in this list
-      &:nth-last-child(-n+3) {
+      // Only the last 4 list items in this list
+      &:nth-last-child(-n+4) {
         font-size: 0.9rem;
       }
 
-      // All list items except the last 2
-      &:not(:nth-last-child(-n+3)) {
+      // All list items except the last 4
+      &:not(:nth-last-child(-n+4)) {
         a {
           display: inline-flex;
           box-shadow: none;
         }
       }
 
-      &:nth-last-child(3) {
+      // Only the 4th list item from the end
+      &:nth-last-child(4) {
         @include min-width($breakpoint-small) {
           margin-left: 3em;
         }
       }
 
-      &:nth-last-child(2) {
-        @include max-width(392px) {
+      // Only the 3rd list item from the end
+      &:nth-last-child(3) {
+        @include max-width(358px) {
           margin-block-start: 1rem;
         }
       }
 
+      // Only the 2nd list item from the end
+      &:nth-last-child(2) {
+        @include max-width(461px) {
+          margin-block-start: 1rem;
+        }
+      }
+
+      // Only the last list item
       &:last-child {
         margin-inline-end: 0;
 
-          @include max-width(440px) {
+          @include max-width(554px) {
             margin-block-start: 1rem;
           }
       }
