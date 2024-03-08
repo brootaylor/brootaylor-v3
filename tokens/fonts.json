@@ -1,5 +1,5 @@
 {
-  "base": "\"ui-sans-serif, system-ui\"",
+  "base": "\"ui-sans-serif, system-ui, sans-serif\"",
   "secondary": "\"ui-serif, Georgia\"",
   "code": "\"ui-monospace, 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace\""
 }
