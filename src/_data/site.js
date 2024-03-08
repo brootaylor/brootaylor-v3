@@ -43,4 +43,4 @@ module.exports = {
     thumbnail: 'https://brootaylor.com/assets/images/common/broo_2019.jpg',
     email: 'brootaylor@gmail.com',
   },
-}
+};
