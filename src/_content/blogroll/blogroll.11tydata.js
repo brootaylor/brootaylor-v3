@@ -7,19 +7,22 @@ module.exports = {
   priority: '1',
   hidden: 'false',
   eleventyComputed: {
+    // This is a computed data property that takes the raw blog data and adds a cleansed URL and a favicon to the object
     blogData: function ({ blogs }) {
-      return Promise.all(
-        blogs.map((rawBlogInfo) => {
-          const encodedUri = encodeURIComponent(rawBlogInfo.url);
-          const favicon = `https://v1.indieweb-avatar.11ty.dev/${encodedUri}/`;
+      return blogs.map((rawBlogInfo) => {
+        const encodedUri = encodeURIComponent(rawBlogInfo.url);
+        // This is a hack to get the favicon from the blog's URL
+        const favicon = `https://v1.indieweb-avatar.11ty.dev/${encodedUri}/`;
 
-          return {
-            ...rawBlogInfo,
-            cleansedUrl: normalizeUrl(rawBlogInfo.url, { stripProtocol: true }),
-            favicon,
-          };
-        }),
-      );
+        return {
+          // Spread the rawBlogInfo object
+          ...rawBlogInfo,
+          // Add the cleansed URL to the object
+          cleansedUrl: normalizeUrl(rawBlogInfo.url, { stripProtocol: true }),
+          // Add the favicon to the object
+          favicon,
+        };
+      });
     },
   },
 };

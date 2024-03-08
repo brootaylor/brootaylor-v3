@@ -28,7 +28,7 @@
     {
       "name": "Go Make Things",
       "url": "https://gomakethings.com/",
-      "description": "Sometimes known as the \"<em>Vanilla JS Guy</em>\", Chris help's people build a simpler, faster web."
+      "description": "Sometimes known as the \"<em>Vanilla JS Guy</em>\", Chris Ferdinandi helps people build a simpler, faster web."
     },
     {
       "name": "Robin Rendle",
@@ -46,6 +46,11 @@
       "description": "Chris is a web designer and developer and his career arc is about helping you get better at those things."
     },
     {
+      "name": "Trys Mudford",
+      "url": "https://www.trysmudford.com/",
+      "description": "Trys is a web developer. He's created tools like <em>Utopia</em> &mdash; (Fluid Responsive Design)."
+    },
+    {
       "name": "Kevin Powell",
       "url": "https://www.kevinpowell.co/",
       "description": "Kevin is a CSS Evangelist. He loves CSS, and wants to help new front-end devs enjoy learning it, and help seasoned vets see how great it really is."
@@ -59,6 +64,66 @@
       "name": "Zach Leatherman",
       "url": "https://www.zachleat.com/",
       "description": "Zach is the creator and maintainer of <em>11ty</em>, an award-winning open source site generator."
+    },
+    {
+      "name": "Heydon Pickering",
+      "url": "https://heydonworks.com/",
+      "description": "Heydon is a designer, writer, and public speaker. He is the author of <em>Inclusive Components</em>."
+    },
+    {
+      "name": "Remy Sharp",
+      "url": "https://remysharp.com/",
+      "description": "Remy is a developer, author, speaker, and founder of <em>Left Logic</em>."
+    },
+    {
+      "name": "Salma Alam-Naylor",
+      "url": "https://whitep4nth3r.com/",
+      "description": "Salma is a live streamer, software engineer, and developer educator."
+    },
+    {
+      "name": "Andy Bell",
+      "url": "https://andy-bell.co.uk/",
+      "description": "Andy is a designer, front-end developer and the founder of <em>Set Studio</em>."
+    },
+    {
+      "name": "Manuel Matuzović",
+      "url": "https://www.matuzo.at/",
+      "description": "Manuel is a front-end developer from Vienna, Austria."
+    },
+    {
+      "name": "Miriam Eric Suzanne",
+      "url": "https://www.miriamsuzanne.com/",
+      "description": "Miriam is an author, artist, developer, and open web advocate."
+    },
+    {
+      "name": "Rachel Smith",
+      "url": "https://rachsmith.com/",
+      "description": "Rachel is a developer building software for <em>CodePen</em>."
+    },
+    {
+      "name": "Bruce Lawson",
+      "url": "https://brucelawson.co.uk/",
+      "description": "Bruce is web developer with a firm belief that the web is a revolutionary communication mechanism and should be available to all."
+    },
+    {
+      "name": "Jen Kramer",
+      "url": "https://jen4web.substack.com/",
+      "description": "Jen is an award-winning instructor who teaches HTML, CSS, and coding for a living."
+    },
+    {
+      "name": "Scott Jehl",
+      "url": "https://scottjehl.com/",
+      "description": "Scott is a designer, developer, and author of <em>Responsible Responsive Design</em>."
+    },
+    {
+      "name": "Jim Nielsen",
+      "url": "https://blog.jim-nielsen.com/",
+      "description": "Jim is a designer, engineer and writer. At the intersection of design & code on the web"
+    },
+    {
+      "name": "Chris Heilmann",
+      "url": "https://christianheilmann.com/",
+      "description": "Chris is an engineer who worked for Microsoft/Mozilla/Yahoo on browsers, developer tools and anything JavaScript related. AI/ML enthusiast, writer and trainer."
     }
   ]
 }

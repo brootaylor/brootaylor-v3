@@ -28,7 +28,11 @@
     }
 
     &__title {
-      font-size: convert-to-rem(24px);
+      font-size: convert-to-rem(20px);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      column-gap: 0.35em;
 
       img {
         display: inline;
@@ -36,7 +40,6 @@
         width: 1.5rem;
         border-radius: 20%;
         margin-block-end: -0.325rem;
-        margin-inline-end: 0.25rem;
       }
 
       a {
