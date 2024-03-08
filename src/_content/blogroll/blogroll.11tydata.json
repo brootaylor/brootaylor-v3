@@ -3,7 +3,12 @@
     {
       "name": "Jeremy Keith",
       "url": "https://adactio.com/",
-      "description": "Jeremy is a web developer, author and speaker living and working in Brighton, England."
+      "description": "Jeremy is a web developer, author and speaker. He's from Ireland originally but now lives in Brighton, England working with Clearleft, a design transformation consultancy."
+    },
+    {
+      "name": "Rachel Andrew",
+      "url": "https://rachelandrew.co.uk/",
+      "description": "Rachel is a web developer and technical writer and editor. Works for Google on the Chrome team as a staff technical writer and content lead for web.dev and developer.chrome.com."
     },
     {
       "name": "Ben Myers",
@@ -119,6 +124,16 @@
       "name": "Jim Nielsen",
       "url": "https://blog.jim-nielsen.com/",
       "description": "Jim is a designer, engineer and writer. At the intersection of design & code on the web"
+    },
+    {
+      "name": "Brad Frost",
+      "url": "https://bradfrost.com/",
+      "description": "Brad is a design system consultant, web designer, speaker, writer, and musician located in beautiful Pittsburgh, PA."
+    },
+    {
+      "name": "Jina Anne",
+      "url": "https://www.jina.me/",
+      "description": "Jina is a design systems advocate living in the East Bay of the San Francisco Bay Area. A designer who codes and “no-codes”."
     },
     {
       "name": "Chris Heilmann",

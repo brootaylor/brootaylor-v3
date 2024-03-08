@@ -21,7 +21,7 @@ date: 2024-03-07T18:00:27.631Z
         <header class="card__header">
           <h2 class="card__title">
             <img alt="" src="{{ blog.favicon }}" width="16" height="16" loading="lazy" decoding="async">
-            <a href="{{ blog.url }}">
+            <a href="{{ blog.url }}" rel="external">
               {{- blog.name -}}
             </a>
           </h2>
