@@ -47,8 +47,9 @@ Possible features / enhancements for the future:
 3.  [IndieWeb](https://indieweb.org/) & [Webmention](https://indieweb.org/Webmention)
 4.  Make better use of utility classes
 5.  Tags / categories
-6.  Add a Blogroll
-7.  ~~Pagination~~ ✔️
+6.  Search
+7.  ~~Add a Blogroll~~ ✔️
+8.  ~~Pagination~~ ✔️
 
 ---
 

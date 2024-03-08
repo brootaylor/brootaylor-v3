@@ -2,15 +2,15 @@
  * 'Foo' module
  */
 
-export default function() {
+export default function () {
   // Grouping the console logging
-  console.group('Foo Group')
+  console.group('Foo Group');
 
   const helloFoo = () => {
-    console.log('Hello from Foo.')
-  }
+    console.log('Hello from Foo.');
+  };
 
-  console.groupEnd()
+  console.groupEnd();
 
-  return helloFoo()
+  return helloFoo();
 }

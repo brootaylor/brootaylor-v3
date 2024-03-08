@@ -6,7 +6,7 @@ summary: "A list of blogs and newsletters I visit and reference regularly."
 lead:
   - A list of blogs and newsletters I visit and reference regularly.
 
-bodyClass: "blogroll-home"
+bodyClass: "blogroll"
 
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 

@@ -1,5 +1,5 @@
 module.exports = {
-  tags: "featured",
+  tags: 'featured',
   permalink: false,
-  hidden: true
-}
+  hidden: true,
+};

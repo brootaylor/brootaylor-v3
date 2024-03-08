@@ -2,10 +2,6 @@ const normalizeUrl = require('normalize-url');
 
 module.exports = {
   layout: 'layouts/blogroll.njk',
-  permalink: '{{ page.fileSlug }}.html',
-  changefreq: 'weekly',
-  priority: '1',
-  hidden: 'false',
   eleventyComputed: {
     // This is a computed data property that takes the raw blog data and adds a cleansed URL and a favicon to the object
     blogData: function ({ blogs }) {
