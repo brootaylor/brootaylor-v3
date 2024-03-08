@@ -5,7 +5,7 @@ summary: "I help individuals, businesses, and non-profit organisations craft use
 # Populates the opening / `lead` text on a page
 lead:
   - I help individuals, businesses, and non-profit organisations craft <strong>user-friendly</strong>, <strong>responsive</strong>, <strong>accessible</strong>, and <strong>resilient websites</strong>.
-  - Whether you're starting fresh or improving an existing one, I'm here to assist you in establishing a lasting and meaningful online presence.
+  - Over the past two decades, I've contributed to projects across various industries including e-commerce, travel and tourism, hospitality, healthcare and medical, digital marketing, education, and charities.
   - Think I could help with your next project? <a href="/contact">Get in touch</a>.
 
 # Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
@@ -23,7 +23,7 @@ pagination:
   size: 15
   alias: projects
 
-date: 2024-03-01T11:57:27.631Z
+date: 2024-03-08T20:32:27.631Z
 ---
 
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}

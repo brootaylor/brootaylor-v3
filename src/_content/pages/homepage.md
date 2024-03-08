@@ -6,23 +6,22 @@ summary: "Bruce is a Web Developer based in Crawley, West Sussex. Specialising i
 
 # Populates the opening / `lead` text on a page
 lead:
-  - Whether you're an individual, business or non-profit organisation needing a website built from scratch or looking to update, enhance, or optimise your current one, I specialise in crafting <strong>user-friendly</strong>, <strong>responsive</strong>, <strong>accessible</strong>, and <strong>resilient websites</strong>.
+  - I help individuals, businesses, and non-profit organisations craft <strong>user-friendly</strong>, <strong>responsive</strong>, <strong>accessible</strong>, and <strong>resilient websites</strong>.
 
 # Page-specific metadata content added to the `<head>`
 head: "
   <style>
-    .profile {
-        max-width: 300px;
+    .lead p:first-child {
+      font-size: 1.5rem;
+      font-size: clamp(1.5rem, 2.5vw, 1.875rem);
     }
 
-    .lead a {
-      text-wrap: nowrap;
+    .call-out {
+      max-width: 80ch;
     }
 
-    @media screen and (min-width: 48rem) {
-      .profile {
-        max-width: 250px;
-      }
+    .homepage blockquote {
+      margin-top: 2em;
     }
   </style>
 "
@@ -40,16 +39,15 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2024-03-01T12:15:27.631Z
+date: 2024-03-08T20:32:27.631Z
 
 priority: 1
 ---
 
-Over the past two decades, [I've contributed to projects](/projects) across various industries including e-commerce, travel and tourism, hospitality, healthcare and medical, digital marketing, education, and charities.
-
-I'd [love to hear from you](/contact) if you think I may be able to help out with your next project &mdash; or if you'd just like to connect. 👋 {.call-out}
-
----
+<div class="call-out | flow">
+  <p>Whether you're <em><strong>starting fresh</strong></em> or <em><strong>improving an existing one</strong></em>, I'm here to assist you in establishing a lasting and meaningful online presence.</p>
+  <p>I'd <a href="/contact">love to hear from you</a> if you think I may be able to help out with your next project &mdash; or if you'd just like to connect. 👋</p>
+</div>
 
 <h2 id="testimonial" tabindex="-1" class="visually-hidden">Testimonial <a class="header-anchor" href="#testimonial">#</a></h2>
 
