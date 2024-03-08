@@ -1,10 +1,10 @@
 ---
 title: "Blogroll"
 # Populates the `meta description` for a page
-summary: "A list of blogs and newsletters I visit and reference regularly."
+summary: "A list of blogs and newsletters I visit and reference fairly regularly."
 # Populates the opening / `lead` text on a page
 lead:
-  - A list of blogs and newsletters I visit and reference regularly.
+  - A list of blogs and newsletters I visit and reference fairly regularly.
 
 bodyClass: "blogroll"
 
