@@ -1,6 +1,6 @@
 ---
 layout: "layouts/homepage.njk"
-title: Hi, I'm Bruce.
+title: Hi, <a href="/about">I'm Bruce</a>.
 # Populates the `meta description` for a page
 summary: "Bruce is a Web Developer based in Crawley, West Sussex. Specialising in crafting user-friendly, responsive, and resilient websites for individuals, businesses, and non-profit organisations. Build from scratch or update your site for a lasting online presence."
 
