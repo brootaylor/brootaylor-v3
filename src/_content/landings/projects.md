@@ -4,7 +4,6 @@ title: "Projects"
 summary: "I help individuals, businesses, and non-profit organisations craft user-friendly, responsive, accessible, and resilient websites. Whether you're starting fresh or improving an existing one, I'm here to assist you in establishing a lasting and meaningful online presence."
 # Populates the opening / `lead` text on a page
 lead:
-  - I help individuals, businesses, and non-profit organisations craft <strong>user-friendly</strong>, <strong>responsive</strong>, <strong>accessible</strong>, and <strong>resilient websites</strong>.
   - Over the past two decades, I've contributed to projects across various industries including e-commerce, travel and tourism, hospitality, healthcare and medical, digital marketing, education, and charities.
   - Think I could help with your next project? <a href="/contact">Get in touch</a>.
 
