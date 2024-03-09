@@ -144,6 +144,11 @@
       "name": "Chris Heilmann",
       "url": "https://christianheilmann.com/",
       "description": "Chris is an engineer who worked for Microsoft/Mozilla/Yahoo on browsers, developer tools and anything JavaScript related. AI/ML enthusiast, writer and trainer."
+    },
+    {
+      "name": "Dave Rupert",
+      "url": "https://daverupert.com",
+      "description": "Dave is the co-founder of Luro, lead developer at Paravel, and co-host of ShopTalk."
     }
   ]
 }
