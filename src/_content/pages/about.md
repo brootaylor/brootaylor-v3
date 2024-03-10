@@ -16,6 +16,7 @@ head: "
 
     .profile {
         max-width: 300px;
+        width: auto;
     }
   </style>
 "
