@@ -18,7 +18,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-03-04T17:39:27.631Z
+date: 2024-03-09T00:12:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}

@@ -1,11 +1,21 @@
 ---
 title: "Projects"
 # Populates the `meta description` for a page
-summary: "I help individuals, businesses, and non-profit organisations craft user-friendly, responsive, accessible, and resilient websites. Whether you're starting fresh or improving an existing one, I'm here to assist you in establishing a lasting and meaningful online presence."
+summary: "I specialise in helping individuals, businesses, and non-profit organisations craft user-friendly, responsive, accessible, and resilient websites. Whether you're starting fresh or improving an existing one, I'm here to assist you in establishing a lasting and meaningful online presence."
 # Populates the opening / `lead` text on a page
 lead:
-  - Over the past two decades, I've contributed to projects across various industries including e-commerce, travel and tourism, hospitality, healthcare and medical, digital marketing, education, and charities.
-  - Think I could help with your next project? <a href="/contact">Get in touch</a>.
+  - Over the past two decades, I've had the privilege of contributing to projects across various industries.
+  - Highlights include working with <a href="https://www.avios.com/en-GB" rel="external">Avios</a> and <a href="https://www.iagloyalty.com/" rel="external">IAG Loyalty</a> in travel and loyalty, <a href="https://www.macmillan.org.uk/" rel="external">Macmillan Cancer Support</a>, and <a href="https://www.fastmarkets.com/" rel="external">Euromoney's Fastmarkets</a> in commodity market information.
+  - Think I could help with your next project? <strong><a href="/contact">Get in touch</a></strong>.
+
+# Page-specific metadata content added to the `<head>`
+head: "
+  <style>
+    .lead a {
+      text-wrap: nowrap;
+    }
+  </style>
+"
 
 # Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
 # ############################################################################################
@@ -22,13 +32,13 @@ pagination:
   size: 15
   alias: projects
 
-date: 2024-03-08T20:32:27.631Z
+date: 2024-03-09T00:12:27.631Z
 ---
 
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
 
-<section aria-labelledby="projects-select" class="companies | flow">
-  <h2 id="projects-select" tabindex="-1">Selected projects <a class="header-anchor" href="#projects-select">#</a></h2>
+<section aria-labelledby="projects-featured" class="companies | flow">
+  <h2 id="projects-featured" tabindex="-1">Featured projects <a class="header-anchor" href="#projects-featured">#</a></h2>
   {# List of project pages #}
   <ul role="list" class="projects__list | auto-grid | no-list">
   {% for project in projects -%}
