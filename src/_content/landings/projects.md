@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 # Populates the `meta description` for a page
-summary: "I specialise in helping individuals, businesses, and non-profit organisations craft user-friendly, responsive, accessible, and resilient websites. Whether you're starting fresh or improving an existing one, I'm here to assist you in establishing a lasting and meaningful online presence."
+summary: "I specialise in helping individuals, businesses, and non-profit organisations craft performant, user-friendly, responsive, accessible, and resilient websites. Whether you're starting fresh or improving an existing one, I'm here to assist you in establishing a lasting and meaningful online presence."
 # Populates the opening / `lead` text on a page
 lead:
   - Over the past two decades, I've had the privilege of contributing to projects across various industries.
