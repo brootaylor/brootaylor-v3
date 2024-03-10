@@ -28,6 +28,8 @@ a {
   article & {
     // External link
     &[rel~="external"] {
+      white-space: nowrap;
+
       &::after {
         background: url(/assets/icons/icon_external.svg) no-repeat;
         content: "";
