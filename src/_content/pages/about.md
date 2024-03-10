@@ -5,7 +5,7 @@ summary: "I'm originally from South Africa and grew up on a dairy farm in a very
 # Populates the opening / `lead` text on a page
 lead:
   - I'm originally from South Africa and grew up on a dairy farm in a very <a href="https://youtu.be/bGQbM3QfA5w" rel="external">beautiful part of the country</a>.
-  - I now live in West Sussex, England with my family and <a href="/projects">build websites</a> for a living.
+  - I now live in West Sussex, England with my family.
 
 # Page-specific metadata content added to the `<head>`
 head: "
@@ -13,23 +13,24 @@ head: "
     .lead a {
       text-wrap: nowrap;
     }
+
+    .profile {
+        max-width: 300px;
+    }
   </style>
 "
 
 bodyClass: "about"
 
-date: 2024-03-09T00:12:27.631Z
+date: 2024-03-09T01:17:27.631Z
 ---
-
-{% from "components/core/images/images.njk" import imageFigure %}
-
-{{ imageFigure(
-  "/assets/images/pages/about/giants_castle_2022.webp",
-  "My mum looking at a beautiful view of the Giants Castle mountain from the Giants Castle Camp's main dining room balcony",
-  "2000",
-  "1125",
-  'My mum looking towards Giants Castle. <abbr title="Kwazulu Natal.">KZN</abbr>, South Africa',
-  false,
+{% from "components/core/images/images.njk" import imageNormal %}
+{{ imageNormal(
+  "/assets/images/pages/home/broo_profile_home.jpg",
+  "Profile headshot of myself, Bruce Taylor",
+  "767",
+  "767",
+  "img-right | profile",
   "shadow",
   "lazy")
 }}
@@ -38,9 +39,9 @@ Before ever touching a computer, my life revolved around *‘teasing’* cows on
 
 ---
 
-## What I do now
+## What I do
 
-I build websites and have been doing so for around two decades.
+I [build websites](/projects) and have been doing so for around two decades.
 
 I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}". The somewhat broad and *fuzzy* intersection between design and back-end engineering. I thrive in roles that ***strike a balance between user and developer experiences***, empowering teams to write great code that aligns with their needs and preferences while ensuring a positive user experience.
 
@@ -62,13 +63,25 @@ I try my best to build web solutions that are [resilient](https://resilientwebde
 
 ## Hobbies & other interests
 
-I enjoy [taking photos](/photos) and [reading](/reading) whenever I can and am a [fairly decent drummer](/photos/2022-03-29/photo_202203292358). However, now that I've [sold my drumkit](/photos/2022-04-06/photo_202204062304), I am considering picking up the bass guitar. 🤔
+I enjoy [taking photos](/photos), [reading](/reading) and am a [fairly decent drummer](/photos/2022-03-29/photo_202203292358). However, now that I've [sold my drumkit](/photos/2022-04-06/photo_202204062304), I am considering picking up the bass guitar. 🤔
 
-Fly fishing for trout is something I grew up doing and continue to do. I head to the beautiful [Lakedown Trout Fishery](https://www.lakedowntroutfishery.com/){rel=external} as often as I can. A gorgeous and tranquil spot away from all the noise.
+Fly fishing for trout is something I grew up doing and continue to do. I head to the beautiful [Lakedown Trout Fishery](https://www.lakedowntroutfishery.com/){rel=external} now and then. A gorgeous and tranquil spot away from all the noise.
 
 I absolutely adore aircraft and hope that one day I'll be able to either get my PPL or GPL.
 
 I write now and then &ndash; and have [written a few posts](/writing), [jotted down some notes](/notes), and [bookmarked links to articles](/bookmarks) I've enjoyed and found interesting. Hopefully some of them resonate with you.
+
+{% from "components/core/images/images.njk" import imageFigure %}
+{{ imageFigure(
+  "/assets/images/pages/about/giants_castle_2022.webp",
+  "My mum looking at a beautiful view of the Giants Castle mountain from the Giants Castle Camp's main dining room balcony",
+  "2000",
+  "1125",
+  'My mum looking towards Giants Castle. <abbr title="Kwazulu Natal.">KZN</abbr>, South Africa. Near to where I grew up',
+  false,
+  "shadow",
+  "lazy")
+}}
 
 ---
 
