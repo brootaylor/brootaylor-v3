@@ -17,7 +17,7 @@
 						<a href="{{ navitem.url }}"
 							{% if navitem.delete %} title="{{ navitem.delete.label }}"{% endif %}
 							{% if navitem.external %} rel="external{% if navitem.verified %} me{% endif %}"{% endif %}
-							{% if (page.url | pretty) == navitem.url %} aria-describedby="current-page" class="current"{% endif %}>
+							{% if (page.url | pretty) == navitem.url %} aria-current="page"{% endif %}>
 							{% if navitem.icon %}
 								<span class="visually-hidden">{{ navitem.label }}</span>
 								{% else %}
@@ -35,13 +35,13 @@
 				{% if loop.last %}
 					{# These (below) are static list items and don't belong to the loop (above)...  #}
 					<li>
-						<a href="/blogroll">Blogroll</a>
+						<a href="/blogroll" {% if (page.url | pretty) == '/blogroll' %} aria-current="page"{% endif %}>Blogroll</a>
 					</li>
 					<li>
-						<a href="/privacy">Privacy</a>
+						<a href="/privacy" {% if (page.url | pretty) == '/privacy' %} aria-current="page"{% endif %}>Privacy</a>
 					</li>
 					<li>
-						<a href="/accessibility">Accessibility</a>
+						<a href="/accessibility" {% if (page.url | pretty) == '/accessibility' %} aria-current="page"{% endif %}>Accessibility</a>
 					</li>
 					<li>
 						{# Back to the top link / anchor #}
