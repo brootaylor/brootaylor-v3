@@ -13,15 +13,17 @@ head: "
   <style>
     h1 {
       font-weight: 400;
+      max-width: 23ch;
     }
 
     h1 strong {
       font-weight: 900;
     }
 
-    .lead p:first-child {
+    .lead p {
       font-size: 1.5rem;
       font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+      text-wrap: balance;
     }
 
     .call-out {
@@ -47,7 +49,7 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2024-03-09T00:12:27.631Z
+date: 2024-03-11T13:33:27.631Z
 
 priority: 1
 ---

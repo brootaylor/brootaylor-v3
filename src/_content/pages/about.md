@@ -23,7 +23,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-03-09T01:17:27.631Z
+date: 2024-03-11T13:33:27.631Z
 ---
 {% from "components/core/images/images.njk" import imageNormal %}
 {{ imageNormal(

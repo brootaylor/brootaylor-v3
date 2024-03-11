@@ -32,12 +32,12 @@ pagination:
   size: 15
   alias: projects
 
-date: 2024-03-09T00:12:27.631Z
+date: 2024-03-11T13:33:27.631Z
 ---
 
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
 
-<section aria-labelledby="projects-featured" class="companies | flow">
+<section aria-labelledby="projects-featured" class="projects-featured | flow">
   <h2 id="projects-featured" tabindex="-1">Featured projects <a class="header-anchor" href="#projects-featured">#</a></h2>
   {# List of project pages #}
   <ul role="list" class="projects__list | auto-grid | no-list">
@@ -81,7 +81,7 @@ date: 2024-03-09T00:12:27.631Z
 
 ---
 
-<section aria-labelledby="projects-other" class="companies | flow">
+<section aria-labelledby="projects-other" class="projects-other | flow">
   <h2 id="projects-other" tabindex="-1">I have also worked with <a class="header-anchor" href="#projects-other">#</a></h2>
   <ul role="list" class="auto-grid | no-list">
     <li>
@@ -154,8 +154,8 @@ date: 2024-03-09T00:12:27.631Z
 
 ---
 
-<section aria-labelledby="testimonials" class="testimonials | flow">
-  <h2 id="testimonials" tabindex="-1">Nice things people have said <a class="header-anchor" href="#testimonials">#</a></h2>
+<section aria-labelledby="projects-testimonials" class="projects-testimonials | flow">
+  <h2 id="projects-testimonials" tabindex="-1">Nice things people have said <a class="header-anchor" href="#projects-testimonials">#</a></h2>
   <ul role="list" class="auto-grid | no-list">
     <li>
     {%- call blockquote('Stephen Scott, Chief Digital Officer', 'https://www.iagloyalty.com', 'IAG Loyalty') -%}

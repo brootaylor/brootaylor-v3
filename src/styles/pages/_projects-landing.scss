@@ -12,36 +12,6 @@
     }
   }
 
-  .companies {
-    @supports (display: grid) {
-      .auto-grid {
-        grid-gap: 2em;
-
-        @include min-width($breakpoint-small) {
-          --auto-grid-min-size: 17rem;
-        }
-
-        @include min-width($breakpoint-medium) {
-          --auto-grid-min-size: 20rem;
-        }
-      }
-    }
-  }
-
-  .testimonials {
-    margin-block-start: 3em;
-
-    @supports (display: grid) {
-      .auto-grid {
-        grid-gap: 2em;
-
-        @include min-width($breakpoint-small) {
-          --auto-grid-min-size: 23rem;
-        }
-      }
-    }
-  }
-
   .card {
     display: grid;
     grid-template-rows: auto 1fr;
@@ -57,16 +27,6 @@
       .card__content {
         padding: 1em;
         border-width: 0 1px 1px;
-      }
-    }
-
-    img {
-      transition: transform 0.5s ease-in-out;
-    }
-
-    &:hover {
-      img {
-        transform: scale(1.1);
       }
     }
 
@@ -115,6 +75,55 @@
       font-size: 80%;
       text-decoration: none;
       box-shadow: none;
+    }
+  }
+}
+
+.projects-featured,
+.projects-other {
+  @supports (display: grid) {
+    .auto-grid {
+      grid-gap: 2em;
+
+      @include min-width($breakpoint-small) {
+        --auto-grid-min-size: 17rem;
+      }
+
+      @include min-width($breakpoint-medium) {
+        --auto-grid-min-size: 20rem;
+      }
+    }
+  }
+}
+
+.projects-featured {
+  .card {
+    transition: box-shadow 0.3s ease-in-out;
+
+    img {
+      transition: transform 0.5s ease-in-out;
+    }
+
+    &:hover {
+      box-shadow: -6px 6px 0px 1px rgb($grey-dark, 0.4);
+
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.projects-testimonials {
+  margin-block-start: 3em;
+
+  @supports (display: grid) {
+    .auto-grid {
+      grid-gap: 2em;
+
+      @include min-width($breakpoint-small) {
+        --auto-grid-min-size: 23rem;
+      }
     }
   }
 }

@@ -14,6 +14,11 @@
     background: var(--grey-light);
     border: 1px solid var(--grey-mid);
     box-shadow: -4px 4px 0px 1px rgb($grey-dark, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: -6px 6px 0px 1px rgb($grey-dark, 0.4);
+    }
 
     .card__header {
       small {
