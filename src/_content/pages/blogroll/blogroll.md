@@ -14,7 +14,8 @@ date: 2024-03-11T16:38:27.631Z
 ---
 
 <ul role="list" class="blogroll__list | auto-grid | no-list">
-{% for blog in blogData -%}
+{% set shuffled_blogs = blogData | shuffle %}
+{% for blog in shuffled_blogs -%}
   <li>
     <article class="card card--stacked">
       <div class="card__content">

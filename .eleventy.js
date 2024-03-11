@@ -11,13 +11,14 @@ const pluginNavigation = require('@11ty/eleventy-navigation')
 
 // Import (libraries)
 const markdown = require('./lib/libraries/markdown.js')
-const markdownItAnchor = require('markdown-it-anchor');
+const markdownItAnchor = require('markdown-it-anchor')
 
 // Import (filters)
 const prettyUrl = require('./lib/utils/filters/pretty-url.js')
 const dateOnly = require('./lib/utils/filters/dateOnly.js')
 const dateTime = require('./lib/utils/filters/dateTime.js')
 const dateTimeReadable = require('./lib/utils/filters/dateTimeReadable.js')
+const shuffleArray = require('./lib/utils/filters/shuffle-array.js')
 
 // Import (transforms)
 const htmlMinify = require('./lib/utils/transforms/minify-html.js')
@@ -64,6 +65,7 @@ module.exports = function (eleventy) {
   eleventy.addFilter('dateOnly', dateOnly) // Generates numerial date (eg. 2020-02-22)
   eleventy.addFilter('dateTime', dateTime) // Generates numerical date and time (eg. 2020-02-22T09:50:00.000Z)
   eleventy.addFilter('dateTimeReadable', dateTimeReadable) // Generates readable date and time (eg. 22 February 2020, 9:50 am)
+  eleventy.addFilter('shuffle', shuffleArray) // Shuffles an array of items (eg. [1, 2, 3, 4, 5] => [3, 1, 5, 2, 4])
 
   // Transforms
   eleventy.addTransform('minify-html', htmlMinify)
@@ -71,7 +73,7 @@ module.exports = function (eleventy) {
   // Shortcodes
   eleventy.addShortcode('year', () => `${new Date().getFullYear()}`)
   eleventy.addNunjucksAsyncShortcode('photo', photoGallery);
-  eleventy.addNunjucksAsyncShortcode('thumbnail', projectThumbnails);
+  eleventy.addNunjucksAsyncShortcode('thumbnail', projectThumbnails)
 
   // Collections
   eleventy.addCollection('pageProjects', pageProjects)
