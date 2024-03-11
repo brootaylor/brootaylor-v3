@@ -149,6 +149,16 @@
       "name": "Dave Rupert",
       "url": "https://daverupert.com",
       "description": "Dave is the co-founder of Luro, lead developer at Paravel, and co-host of ShopTalk."
+    },
+    {
+      "name": "Stephanie Stimac",
+      "url": "https://blog.stephaniestimac.com/",
+      "description": "Stephanie is a designer and a product manager. She writes about the web, design, product management and little bits of life."
+    },
+    {
+      "name": "Eric A. Meyer",
+      "url": "https://meyerweb.com/",
+      "description": "Eric has been working with the web since late 1993 and is an internationally recognised expert on the subjects of HTML, CSS, and web standards."
     }
   ]
 }
