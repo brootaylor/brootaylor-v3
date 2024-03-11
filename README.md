@@ -48,8 +48,9 @@ Possible features / enhancements for the future:
 4.  Make better use of utility classes
 5.  Tags / categories
 6.  Search
-7.  ~~Add a Blogroll~~ ✔️
-8.  ~~Pagination~~ ✔️
+7.  ~~Daily build `CronJob` (Netlify build hook trigger)~~
+8.  ~~Add a Blogroll~~ ✔️
+9.  ~~Pagination~~ ✔️
 
 ---
 
