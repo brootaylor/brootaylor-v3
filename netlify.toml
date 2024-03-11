@@ -72,6 +72,7 @@
   [headers.values]
     Content-Security-Policy = "script-src 'self' 'unsafe-inline' 'unsafe-eval' *.netlify.com unpkg.com; style-src 'self' 'unsafe-inline'; object-src 'self' 'unsafe-inline'; img-src 'self' 'unsafe-inline' *.cloudfront.net *.ytimg.com *.indieweb-avatar.11ty.dev"
     Referrer-Policy = "no-referrer, strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), interest-cohort=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "SAMEORIGIN"
