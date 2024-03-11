@@ -17,6 +17,12 @@
           font-size: clamp(#{convert-to-rem(20px)}, 5vw, #{convert-to-rem(28px)});
         }
       }
+
+      em,
+      i {
+        font-size: 70%;
+        font-weight: 400;
+      }
     }
 
     // Bookmarks original post URL
