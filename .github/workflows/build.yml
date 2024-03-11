@@ -1,4 +1,4 @@
-name: Trigger Daily Netlify Build
+name: Trigger Netlify Daily Build
 
 on:
   schedule:
@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Trigger Daily Netlify Build
+    - name: Trigger Netlify Daily Build
       run: |
         curl -X POST -d {} https://api.netlify.com/build_hooks/${{ secrets.NETLIFY_DAILY_BUILD }}
