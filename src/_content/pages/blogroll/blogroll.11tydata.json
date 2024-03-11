@@ -159,6 +159,16 @@
       "name": "Eric A. Meyer",
       "url": "https://meyerweb.com/",
       "description": "Eric has been working with the web since late 1993 and is an internationally recognised expert on the subjects of HTML, CSS, and web standards."
+    },
+    {
+      "name": "Amy Hupe",
+      "url": "https://amyhupe.co.uk/",
+      "description": "Amy is a content design and design systems consultant, making the case for simplicity and inclusion in the face of complexity."
+    },
+    {
+      "name": "Max Böck",
+      "url": "https://mxb.dev/",
+      "description": "Max is a front-end web developer and designer based in Vienna, Austria. He focusses on creating engaging, accessible & performant interfaces for humans."
     }
   ]
 }
