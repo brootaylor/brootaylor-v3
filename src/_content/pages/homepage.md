@@ -6,7 +6,7 @@ summary: "Bruce is a Web Developer based in Crawley, West Sussex. Specialising i
 
 # Populates the opening / `lead` text on a page
 lead:
-  - I specialise in helping individuals, businesses, and non-profit organisations craft <strong>performant</strong>, <strong>user-friendly</strong>, <strong>responsive</strong>, <strong>accessible</strong>, and <strong>resilient websites</strong>.
+  - I specialise in helping individuals and businesses craft <strong>performant</strong>, <strong>user-friendly</strong>, <strong>responsive</strong>, <strong>accessible</strong>, and <strong>resilient websites</strong>.
 
 # Page-specific metadata content added to the `<head>`
 head: "
