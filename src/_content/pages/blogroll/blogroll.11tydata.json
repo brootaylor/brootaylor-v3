@@ -169,6 +169,11 @@
       "name": "Max Böck",
       "url": "https://mxb.dev/",
       "description": "Max is a front-end web developer and designer based in Vienna, Austria. He focusses on creating engaging, accessible & performant interfaces for humans."
+    },
+    {
+      "name": "Jason Lengstorf",
+      "url": "https://jason.energy",
+      "description": "Jason is a principal developer experience engineer at Netlify and the host of Learn With Jason."
     }
   ]
 }
