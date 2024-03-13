@@ -3,7 +3,7 @@ title: 'The "Climate Crisis": What to Make of It?'
 summary: In these times of being constantly overwhelmed by the deluge of information, I'm finding it trickier than ever to discern the true motivations and intentions behind what is presented as fact, with one such topic being the "climate crisis."
 lead: In these times of being constantly overwhelmed by the deluge of information, I'm finding it trickier than ever to discern the true motivations and intentions behind what is presented as fact, with one such topic being the "<strong>climate crisis</strong>."
 date: 2023-05-31T12:28:37.952Z
-updated: 2024-01-08T20:23:37.952Z
+updated: 2024-03-13T12:56:37.952Z
 location:
   locality: Crawley
   country_name: UK
@@ -48,12 +48,13 @@ This post is not about me coming up with any answers per se. It’s more about j
 
 ## What I've been reading & watching on this topic
 
-I certainly don't claim to have any answers, but I've learnt a lot from these books, articles, videos and podcasts. They've challenged me, moved me, and helped me make some sense of the current events.
+I certainly don't claim to have any of the answers &mdash; but I've learnt a lot from these books, articles, videos and podcasts. They've challenged me, moved me, informed me, and helped me make some *'sense'* of things.
 
 * [Overshoot: The Ecological Basis of Revolutionary Change](https://www.goodreads.com/en/book/show/319810.Overshoot) &mdash; *William R. Catton*
 * [Overshoot: Where We Stand Now](https://howtosavetheworld.ca/2021/09/21/overshoot-where-we-stand-now-guest-post-by-michael-dowd/) &mdash; *Michael Dowd*
 * [The Earth Is Telling Us We Must Rethink Our Growth Society](https://thetyee.ca/Analysis/2020/04/06/The-Earth-Is-Telling-Us-We-Must-Rethink-Our-Growth-Society/) &mdash; *William E. Rees*
 * [Scholars' Oath to the Future](http://iflas.blogspot.com/2022/11/scholars-oath-to-future.html) &mdash; *University of Cumbria*
+* [Is it time for climatologists to apologise to activists? An open letter from international scholars](https://iflas.blogspot.com/2023/10/apologize.html) &mdash; *University of Cumbria*
 * [Al Bartlett discusses population growth, climate change, energy, and consumption](https://youtu.be/F8ZJCtL6bPs) &mdash; *Al Bartlett video interview*
 * [Planet Critical](https://www.planetcritical.com/) &mdash; *Rachel Donald*
 * [Abrupt Climate Change from Arctic to Antarctic: Facts, Opinions, and Analysis](https://paulbeckwith.net/) &mdash; *Paul Beckwith*
@@ -64,5 +65,7 @@ I certainly don't claim to have any answers, but I've learnt a lot from these bo
 * [Living with GRAC/E (Getting Real About Collapse/Extinction)](https://chickenfoot.substack.com/) &mdash; *Karen Perry*
 * [Treading Thin Air](https://www.lrb.co.uk/the-paper/v45/n17/geoff-mann/treading-thin-air) &mdash; *Geoff Mann*
 * [Climate Uncensored](https://climateuncensored.com/) &mdash; *Kevin Anderson & Dan Calverley*
+* [The Dollar and Climate](https://www.phenomenalworld.org/analysis/the-dollar-and-climate/) &mdash; *Daniel Driscoll*
+* [The Coming Sunsetting of the Climate Issue](https://braveneweurope.com/wolfgang-knorr-the-coming-sunsetting-of-the-climate-issue) — *Wolfgang Knorr ("Brave New Europe")*
 * [An Inconvenient Apocalypse: Environmental Collapse, Climate Crisis, and the Fate of Humanity](https://robertwjensen.org/books/an-inconvenient-apocalypse/) &mdash; *Wes Jackson & Robert Jensen*
 * [Breaking Together — a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/) &mdash; *Jem Bendell*
