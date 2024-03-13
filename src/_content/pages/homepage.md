@@ -71,7 +71,7 @@ priority: 1
   '<blockquote>
     <p>I worked with Bruce for many years at Avios, both within the same team and across projects. Bruce was incredibly knowledgeable in website design and development, always came up with great solutions, delivered to a high standard with great attention to detail, and was very easy to work with.</p>
     <p>He was also able to communicate his technical knowledge in a straightforward way to someone who was not from a technical background. I would highly recommend Bruce to any organisation.</p>
-    <footer>— Nicola Chrome, Senior Media and Content Marketing Manager, <a href="https://www.avios.com/en-GB" rel="external">Avios</a>. <em>(Currently, "Founder" of Relocate Down Under)</em></footer>
+    <footer>— Nicola Chrome, Senior Media and Content Marketing Manager, <a href="https://www.avios.com/en-GB" rel="external">Avios</a>. <em>(Currently, "Founder" of <a href="https://www.relocatedownunder.com/" rel="external">Relocate Down Under</a>)</em></footer>
   </blockquote>',
   '<blockquote>
     <p>We got Bruce in to to help us develop a front-end boilerplate / component library as we were inundated with projects and needed a safe pair of hands that could help us achieve quality results with minimal supervision.</p>
@@ -81,7 +81,7 @@ priority: 1
   '<blockquote>
     <p>Bruce is a great addition to any team, a great personality who requires minimal management and produces accurate and attractive output. He keeps up to date with the latest techniques and is happy to share those skills with others.</p>
     <p>I wouldn’t hesitate in giving Bruce another opportunity when one arises.</p>
-    <footer>— Roger Mathews, Head of System Development and Administration, <a href="https://www.macmillan.org.uk/" rel="external">Macmillan Cancer Support</a>. <em>(Currently, "Chief Technology Officer" at The Institute of Cancer Research)</em></footer>
+    <footer>— Roger Mathews, Head of System Development and Administration, <a href="https://www.macmillan.org.uk/" rel="external">Macmillan Cancer Support</a>. <em>(Currently, "Chief Technology Officer" at <a href="https://www.icr.ac.uk/" rel="external">The Institute of Cancer Research</a>)</em></footer>
   </blockquote>'
 ] %}
 
