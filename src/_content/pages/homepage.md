@@ -60,6 +60,8 @@ priority: 1
 </div>
 
 <h2 id="testimonial" tabindex="-1" class="visually-hidden">Testimonial <a class="header-anchor" href="#testimonial">#</a></h2>
+
+{# Randomly select a testimonial... #}
 {% set testimonials = [
   '<blockquote>
     <p>Bruce is a true digital native. Starting in the industry back as far as Boo.com and continually striving to push the boundaries of front end code design. He takes it upon himself to continually keep up to date with the latest trends and to apply that to his work to the benefit of whoever he is working for.</p>
