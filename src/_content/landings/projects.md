@@ -180,7 +180,7 @@ date: 2024-03-11T13:33:27.631Z
     </li>
     <li>
     {%- call blockquote('Roger Mathews, Head of System Development and Administration, <a href="https://www.macmillan.org.uk/" rel="external">Macmillan Cancer Support</a>. <em>(Currently, "Chief Technology Officer" at The Institute of Cancer Research)</em>') -%}
-      Bruce is great addition to any team, a great personality who requires minimal management and produces accurate and attractive output. He keeps up to date with the latest techniques and is happy to share those skills with others.
+      Bruce is a great addition to any team, a great personality who requires minimal management and produces accurate and attractive output. He keeps up to date with the latest techniques and is happy to share those skills with others.
 
       I wouldn't hesitate in giving Bruce another opportunity when one arises.
     {%- endcall %}

@@ -79,7 +79,7 @@ priority: 1
     <footer>— Paul Davison, Head Of Design, <cite><a href="https://charanga.com" rel="external">Charanga Music</a></cite></footer>
   </blockquote>',
   '<blockquote>
-    <p>Bruce is great addition to any team, a great personality who requires minimal management and produces accurate and attractive output. He keeps up to date with the latest techniques and is happy to share those skills with others.</p>
+    <p>Bruce is a great addition to any team, a great personality who requires minimal management and produces accurate and attractive output. He keeps up to date with the latest techniques and is happy to share those skills with others.</p>
     <p>I wouldn’t hesitate in giving Bruce another opportunity when one arises.</p>
     <footer>— Roger Mathews, Head of System Development and Administration, <a href="https://www.macmillan.org.uk/" rel="external">Macmillan Cancer Support</a>. <em>(Currently, "Chief Technology Officer" at The Institute of Cancer Research)</em></footer>
   </blockquote>'
