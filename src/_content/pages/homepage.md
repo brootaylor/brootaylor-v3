@@ -24,6 +24,7 @@ head: "
     .lead p {
       font-size: 1.5rem;
       font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+      font-weight: 200;
       text-wrap: balance;
     }
 

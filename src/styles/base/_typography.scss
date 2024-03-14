@@ -232,7 +232,7 @@ article {
   p {
     // Fallback for older browsers
     font-size: convert-to-rem(20px);
-    font-weight: 200;
+    font-weight: 300;
     max-width: 55ch;
 
     // Browsers supporting `clamp()`
