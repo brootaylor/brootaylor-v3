@@ -45,6 +45,7 @@
         width: 1.5rem;
         border-radius: 20%;
         margin-block-end: -0.325rem;
+        background-color: var(--white); // Making sure there's a background colour in case the image is missing
       }
 
       a {
