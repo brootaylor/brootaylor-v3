@@ -6,12 +6,14 @@
 
 .bookmarks {
   h1 {
+    line-height: 1;
     margin-top: calc(var(--flow-space) / 2);
 
     em,
     i {
       font-size: 70%;
       font-weight: 400;
+      white-space: nowrap;
     }
   }
 }
