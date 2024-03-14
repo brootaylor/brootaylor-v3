@@ -27,6 +27,8 @@ a {
 
   // In the context of an article...
   article & {
+    font-weight: 500;
+
     // External link
     &[rel~="external"] {
       white-space: nowrap;
