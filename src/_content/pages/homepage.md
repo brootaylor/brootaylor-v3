@@ -12,11 +12,12 @@ lead:
 head: "
   <style>
     h1 {
-      font-weight: 400;
+      font-weight: 200;
       max-width: 23ch;
     }
 
-    h1 strong {
+    h1 strong,
+    h1 a {
       font-weight: 900;
     }
 
@@ -49,14 +50,14 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2024-03-13T13:40:27.631Z
+date: 2024-03-14T18:15:27.631Z
 
 priority: 1
 ---
 
 <div class="call-out | flow">
   <p>Whether you're <em><strong>starting fresh</strong></em> or <em><strong>improving an existing one</strong></em>, I'm here to assist you in establishing a lasting and meaningful online presence.</p>
-  <p>I'd <a href="/contact">love to hear from you</a> if you think I may be able to help out with your next project &mdash; or if you'd just like to connect. 👋</p>
+  <p><a href="/contact">Please get in touch</a> if you think I may be able to help out with your next project &mdash; or if you'd just like to connect. 👋</p>
 </div>
 
 <h2 id="testimonial" tabindex="-1" class="visually-hidden">Testimonial <a class="header-anchor" href="#testimonial">#</a></h2>

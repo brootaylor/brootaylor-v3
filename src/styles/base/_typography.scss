@@ -13,7 +13,7 @@ html {
   // This is more 'accessible' (in terms of a user increasing their browser's font-size).
   // By contrast, setting this as a 'px' value prevents this ability.
   font-size: var(--font-size-base-percent);
-	font-weight: normal;
+	font-weight: 300;
   font-style: normal;
   color: var(--font-colour-base);
   letter-spacing: -0.03em;
@@ -232,6 +232,7 @@ article {
   p {
     // Fallback for older browsers
     font-size: convert-to-rem(20px);
+    font-weight: 200;
     max-width: 55ch;
 
     // Browsers supporting `clamp()`
@@ -246,6 +247,10 @@ article {
       background-color: var(--grey-light);
       margin: 2.5em 0 !important;
     }
+  }
+
+  a {
+    font-weight: 500;
   }
 }
 

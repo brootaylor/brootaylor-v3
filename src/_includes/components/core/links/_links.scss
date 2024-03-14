@@ -9,6 +9,7 @@ a {
   &,
   &:active,
   &:visited {
+      font-weight: 400;
       color: inherit;
       text-decoration: none;
       transition: 0.3s;
@@ -52,5 +53,13 @@ a {
   // If a link's in a list within an article, but the list item doesn't have a class...
   article li:not([class]) & {
     line-height: 1.8;
+  }
+
+  // If a link's in a heading element...
+  h1 &,
+  h2 &,
+  h3 &,
+  h4 & {
+    font-weight: inherit;
   }
 }
