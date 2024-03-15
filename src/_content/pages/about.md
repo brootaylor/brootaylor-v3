@@ -1,7 +1,7 @@
 ---
 title: "About"
 # Populates the `meta description` for a page
-summary: "I'm originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. I now live in West Sussex, England with my family and build websites for a living."
+summary: "Bruce is originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. I now live in West Sussex, England with my family and build websites for a living."
 # Populates the opening / `lead` text on a page
 lead:
   - I'm originally from South Africa and grew up on a dairy farm in a very <a href="https://youtu.be/bGQbM3QfA5w" rel="external">beautiful part of the country</a>.
@@ -10,10 +10,6 @@ lead:
 # Page-specific metadata content added to the `<head>`
 head: "
   <style>
-    .lead a {
-      text-wrap: nowrap;
-    }
-
     .profile {
         max-width: 300px;
         width: auto;
@@ -23,8 +19,9 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-03-11T13:33:27.631Z
+date: 2024-03-15T12:01:27.631Z
 ---
+
 {% from "components/core/images/images.njk" import imageNormal %}
 {{ imageNormal(
   "/assets/images/pages/home/broo_profile_home.jpg",

@@ -231,13 +231,13 @@ article {
   // For the <p> element in a `lead` element
   p {
     // Fallback for older browsers
-    font-size: convert-to-rem(20px);
-    font-weight: 300;
+    font-size: convert-to-rem(24px);
+    text-wrap: balance;
     max-width: 55ch;
 
     // Browsers supporting `clamp()`
-    @supports (font-size: clamp(20px, 2.5vw, 26px)) {
-      font-size: clamp(#{convert-to-rem(20px)}, 2.5vw, #{convert-to-rem(26px)});
+    @supports (font-size: clamp(24px, 2.5vw, 30px)) {
+      font-size: clamp(#{convert-to-rem(24px)}, 2.5vw, #{convert-to-rem(30px)});
     }
 
     // An <hr> that's a sibling of the `lead` element

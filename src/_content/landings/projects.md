@@ -7,15 +7,6 @@ lead:
   - Over the past two decades, I've had the privilege of contributing to projects across various industries.
   - Think I could help with your next project? <a href="/contact">Get in touch</a>.
 
-# Page-specific metadata content added to the `<head>`
-head: "
-  <style>
-    .lead a {
-      text-wrap: nowrap;
-    }
-  </style>
-"
-
 # Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
 # ############################################################################################
 socialImage:
@@ -31,10 +22,8 @@ pagination:
   size: 15
   alias: projects
 
-date: 2024-03-14T18:11:27.631Z
+date: 2024-03-15T12:01:27.631Z
 ---
-
-{% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
 
 <section aria-labelledby="projects-featured" class="projects-featured | flow">
   <h2 id="projects-featured" tabindex="-1">Featured projects <a class="header-anchor" href="#projects-featured">#</a></h2>
@@ -153,6 +142,8 @@ date: 2024-03-14T18:11:27.631Z
 
 ---
 
+{% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
+
 <section aria-labelledby="projects-testimonials" class="projects-testimonials | flow">
   <h2 id="projects-testimonials" tabindex="-1">Nice things people have said <a class="header-anchor" href="#projects-testimonials">#</a></h2>
   <ul role="list" class="auto-grid | no-list">
@@ -191,4 +182,4 @@ date: 2024-03-14T18:11:27.631Z
 
 <h2 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h2>
 
-**Need a copy of my CV for some reason?** You're welcome to [download a copy here](/BruceTaylorCV). { .call-out }
+Need a copy of my CV for some reason? You're welcome to [download a copy](/BruceTaylorCV). { .call-out }
