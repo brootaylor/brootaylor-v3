@@ -14,12 +14,6 @@ head: "
         max-width: 300px;
         width: auto;
     }
-
-    @media screen and (min-width: 48rem) {
-      .profile {
-        max-width: 250px;
-      }
-    }
   </style>
 "
 
