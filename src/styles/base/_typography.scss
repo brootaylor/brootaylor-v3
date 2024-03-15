@@ -89,6 +89,18 @@ h3 {
   }
 }
 
+h4 {
+  // Fallback for older browsers
+  font-size: convert-to-rem(18px);
+  font-weight: 700;
+  font-style: italic;
+
+  // Browsers supporting `clamp()`
+  @supports (font-size: clamp(18px, 3vw, 22px)) {
+    font-size: clamp(#{convert-to-rem(18px)}, 3vw, #{convert-to-rem(22px)});
+  }
+}
+
 p,
 ul:not(.navigation__list, .auto-grid), // Not the primary navigation list or grid list element
 ol:not(.auto-grid), // Not the grid list element
@@ -233,7 +245,6 @@ article {
     // Fallback for older browsers
     font-size: convert-to-rem(24px);
     text-wrap: balance;
-    max-width: 50ch;
 
     // Browsers supporting `clamp()`
     @supports (font-size: clamp(24px, 2.5vw, 30px)) {

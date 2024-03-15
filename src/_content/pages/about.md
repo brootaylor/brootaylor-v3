@@ -25,7 +25,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-03-15T12:01:27.631Z
+date: 2024-03-15T19:47:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageNormal %}
@@ -45,21 +45,61 @@ Before ever touching a computer, my life revolved around *‘teasing’* cows on
 
 ## The work I do
 
-I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}". The somewhat broad and *fuzzy* intersection between design and back-end engineering. I thrive in roles that ***strike a balance between user and developer experiences***, empowering teams to write great code that aligns with their needs and preferences while ensuring a positive user experience.
+I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}". The somewhat broad and *fuzzy* intersection between design and back-end engineering. From time to time, you'll also find me tinkering around in the “*back-of-the-front-end*”.
 
-Here's where to view some of the **[projects I've worked on](/projects)**. {.call-out}
+I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented people and have learned a lot from them.
 
-I'm quite good at picking up new skills and programming languages, as well as problem solving. My skill set is fairly diverse, encompassing HTML, CSS, JavaScript, responsive & device-agnostic web design, themeable design system configuration, Progressive Web Apps (*PWAs*), Static Site Generation (*SSG*), web performance optimisation, and web accessibility.
+### My skill set
 
-From time to time, you’ll also find me with my hands in the “*back-of-the-front-end*” utilising  Node.js, configuring an API, optimising a JavaScript bundler, as well as streamlining build and deployment processes to help improve frontend development efficiency.
+Here are some of the skills I've picked up over the 20 years I've been building websites:
+
+<div class="auto-grid">
+  <div class="grid-item">
+    <div class="call-out">
+      <h4>"Front-of-the-front-end":</h4>
+      <ul>
+        <li>HTML</li>
+        <li>CSS / SCSS</li>
+        <li>JavaScript <small><em>(ES5 & ES6+)</em></small></li>
+        <li>Responsive & Device-agnostic Web Design</li>
+        <li>CSS Architecture / Component-based Frontend Architecture</li>
+        <li><abbr title="Static Site Generators.">SSGs</abbr> & Web frameworks <small><em>(11ty, Jekyll, Astro, Svelte, Vue)</em></small></li>
+        <li>Templating languages & Libraries <small><em>(Nunjucks, Liquid, Handlebars, jQuery, Bootstrap, GSAP)</em></small></li>
+        <li>Themeable Design System Configuration</li>
+        <li>Web Performance Optimisation</li>
+        <li>Web Accessibility</li>
+        <li>Cross Browser Compatibility</li>
+        <li><abbr title="Progressive Web Apps.">PWAs</abbr></li>
+        <li><abbr title="Search Engine Optimisation.">SEO</abbr></li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid-item">
+    <div class="call-out">
+      <h4>"Back-of-the-front-end":</h4>
+      <ul>
+        <li>Node.js</li>
+        <li>Data Source / <abbr title="Application Programming Interface.">API</abbr> Configuration</li>
+        <li><abbr title="Content Management System.">CMS</abbr> Configuration and Integration</li>
+        <li>JavaScript Bundlers & Deployment Tooling <small><em>(Vite, Rollup.js, Webpack, Netlify, Azure DevOps)</em></small></li>
+        <li>Version Control <small><em>(GitHub, GitLab, Bitbucket)</em></small></li>
+        <li>Continuous Integration <em>(CI)</em> & Continuous Deployment <em>(CD)</em></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+### My approach
+
+I thrive in roles that ***strike a balance between user and developer experiences***, empowering teams to write great code that aligns with their needs and preferences while ensuring a positive user experience.
 
 I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/){rel=external}, [usable](https://trentwalton.com/2014/03/10/device-agnostic/){rel=external} and as future-friendly as possible. For this reason I *prefer* a vanilla approach and tend to be fairly tech-agnostic. Choosing the *right* tool for the job seems to be a better approach than using a framework for the sake of it.
 
 ---
 
-## Webby stuff I'm enjoying
+## Web dev stuff I'm enjoying
 
-[Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [Svelte](https://svelte.dev/), [Preact](https://preactjs.com/), [Vite](https://vitejs.dev/), [Netlify](https://www.netlify.com/), [Netlify CMS](https://www.netlifycms.org/), [Fractal](https://fractal.build/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation using [GreenSock](https://greensock.com/), and [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) are proving really enjoyable to work with and have restored some of the magic of building websites again.
+[Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [Svelte](https://svelte.dev/), [Vite](https://vitejs.dev/), [Netlify](https://www.netlify.com/), [Decap CMS](https://decapcms.org/), [Fractal](https://fractal.build/), [Storybook](https://storybook.js.org/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation using [GreenSock](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), and [Utopia](https://utopia.fyi/) are proving really enjoyable to work with and have restored some of the magic of building websites again.
 
 ---
 
@@ -111,6 +151,10 @@ It's probably worth mentioning that [I don't use any tracking technologies](/pri
 
 <small><em>The last production build was on: {{ site.dateTimeNow }} GMT</em></small>
 
+*[PWAs]: Progressive Web Apps.
+*[SSGs]: Static Site Generators.
+*[SEO]: Search Engine Optimisation.
+*[CMS]: Content Management System.
 *[API]: Application Programming Interface.
 *[PPL]: Private Pilot Licence.
 *[GPL]: Glider Pilot Licence.
