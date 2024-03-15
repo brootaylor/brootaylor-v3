@@ -33,15 +33,19 @@ date: 2024-03-15T19:47:27.631Z
   "lazy")
 }}
 
-Before ever touching a computer, my life revolved around *‘teasing’* cows on a dairy farm, off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, training as a chef, and aspiring to be a pilot.
+Before ever touching a computer at the end of the 90's, my life revolved around *‘teasing’* cows &mdash; *(on our dairy farm)*. Off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, training as a chef, and aspiring to be a pilot.
+
+*Maaan*, that all feels like a lifetime ago...
 
 ---
 
-## The work I do
+## What I do now
 
-I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}". The somewhat broad and *fuzzy* intersection between design and back-end engineering. From time to time, you'll also find me tinkering around in the “*back-of-the-front-end*”.
+I'm a Frontend Web Developer and UI Engineer.
 
-I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented people and have learned a lot from them.
+I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}" &mdash; the somewhat broad and *fuzzy* intersection between design and back-end engineering. From time to time, you'll also find me tinkering around in the “*back-of-the-front-end*”.
+
+I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented, kind and supportive people, and much of the success I've enjoyed during <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
 
 ### My skill set
 
@@ -143,7 +147,18 @@ More information about the technology used to make this website is available in 
 
 It's probably worth mentioning that [I don't use any tracking technologies](/privacy#analytics-%26-tracking) &mdash; (*home-grown or third-party*) &mdash; to collect information about what you read or click on this website.
 
+
+---
+
 <small><em>The last production build was on: {{ site.dateTimeNow }} GMT</em></small>
+
+<div role="doc-endnotes">
+  <ol>
+    <li id="fn:career" role="doc-endnote">
+      <small>When I say "<em>my career</em>", it isn't something I planned or aimed at. Retrospectively, much of it has been right-place right-time kinda stuff. <a href="#fnref:career" role="doc-backlink">↩</a></small>
+    </li>
+  </ol>
+</div>
 
 *[PWAs]: Progressive Web Apps.
 *[SSGs]: Static Site Generators.
