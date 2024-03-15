@@ -5,7 +5,7 @@ summary: "Bruce is originally from South Africa and grew up on a dairy farm in a
 # Populates the opening / `lead` text on a page
 lead:
   - I'm originally from South Africa and grew up on a dairy farm in a very <a href="https://youtu.be/bGQbM3QfA5w" rel="external">beautiful part of the country</a>.
-  - I now live in West Sussex, England with my family.
+  - I now live in West Sussex, England with my family and <a href="/projects">build websites</a> for a living.
 
 # Page-specific metadata content added to the `<head>`
 head: "
@@ -13,6 +13,12 @@ head: "
     .profile {
         max-width: 300px;
         width: auto;
+    }
+
+    @media screen and (min-width: 48rem) {
+      .profile {
+        max-width: 250px;
+      }
     }
   </style>
 "
@@ -37,9 +43,7 @@ Before ever touching a computer, my life revolved around *‘teasing’* cows on
 
 ---
 
-## What I do
-
-I [build websites](/projects) and have been doing so for around two decades.
+## The work I do
 
 I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}". The somewhat broad and *fuzzy* intersection between design and back-end engineering. I thrive in roles that ***strike a balance between user and developer experiences***, empowering teams to write great code that aligns with their needs and preferences while ensuring a positive user experience.
 

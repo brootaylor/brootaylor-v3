@@ -233,7 +233,7 @@ article {
     // Fallback for older browsers
     font-size: convert-to-rem(24px);
     text-wrap: balance;
-    max-width: 55ch;
+    max-width: 50ch;
 
     // Browsers supporting `clamp()`
     @supports (font-size: clamp(24px, 2.5vw, 30px)) {
