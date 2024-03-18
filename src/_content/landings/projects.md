@@ -76,6 +76,20 @@ date: 2024-03-15T12:01:27.631Z
       <article class="card card--stacked">
         <div class="card__content">
           <header class="card__header">
+            <h3 class="card__title">Avios <a href="#fn:avios" class="footnote" rel="footnote"><sup>*</sup></a></h3>
+            <span class="date-time">Year: 2004 - 2015 <small>(permanent)</small></span>
+          </header>
+          <footer class="card__footer | flow">
+            <p>Visit them at <a href="https://www.avios.com/en-GB" rel="external">www.avios.com</a></p>
+            <p id="fn:avios"><sup>*</sup> Formerly a subsidiary of British Airways and also known as <a href="https://en.wikipedia.org/wiki/Air_Miles#Air_Miles_United_Kingdom" rel="external">Airmiles</a>. Avios is now the loyalty currency run by <a href="https://iagloyalty.com" rel="external">IAG Loyalty</a>.</p>
+          </footer>
+        </div>
+      </article>
+    </li>
+    <li>
+      <article class="card card--stacked">
+        <div class="card__content">
+          <header class="card__header">
             <h3 class="card__title">IAG Loyalty</h3>
             <span class="date-time">Year: 2018 &ndash; 2021 <small>(contract)</small></span>
           </header>
@@ -94,19 +108,6 @@ date: 2024-03-15T12:01:27.631Z
           </header>
           <footer class="card__footer">
             <p>Visit them at <a href="https://www.macmillan.org.uk/" rel="external">www.macmillan.org.uk</a></p>
-          </footer>
-        </div>
-      </article>
-    </li>
-    <li>
-      <article class="card card--stacked">
-        <div class="card__content">
-          <header class="card__header">
-            <h3 class="card__title">Avios <a href="#fn:avios" class="footnote" rel="footnote"><sup>*</sup></a></h3>
-            <span class="date-time">Year: 2004 - 2015 <small>(permanent)</small></span>
-          </header>
-          <footer id="fn:avios" class="card__footer">
-            <p><sup>*</sup> Formerly a subsidiary of British Airways and also known as <a href="https://en.wikipedia.org/wiki/Air_Miles#Air_Miles_United_Kingdom" rel="external">Airmiles</a>. Avios is now the loyalty currency run by <a href="https://iagloyalty.com" rel="external">IAG Loyalty</a>.</p>
           </footer>
         </div>
       </article>
