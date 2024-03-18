@@ -12,10 +12,12 @@
 		} %}
 		{# Checking if a custom message is provided #}
 		{% if messageType.message %}
-				<p>{{ messageType.message }}</p>
-				{% if messageType.ctaUrl %}
-						<span><a href="{{ messageType.ctaUrl }}">{{ messageType.ctaLabel }}</a>.</span>
-				{% endif %}
+				<p>
+					{{- messageType.message }}
+					{%- if messageType.ctaUrl -%}
+						<a href="{{ messageType.ctaUrl }}">{{ messageType.ctaLabel }}</a>.
+					{%- endif -%}
+				</p>
 		{# Otherwise... #}
 		{% else %}
 				{# Get the latest post from the 'post' collection #}
