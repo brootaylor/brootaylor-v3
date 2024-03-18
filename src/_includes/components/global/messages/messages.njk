@@ -13,7 +13,7 @@
 		{# Checking if a custom message is provided #}
 		{% if messageType.message %}
 				<p>
-					{{- messageType.message }}
+					{{- messageType.message -}}
 					{%- if messageType.ctaUrl -%}
 						<a href="{{ messageType.ctaUrl }}">{{ messageType.ctaLabel }}</a>.
 					{%- endif -%}
