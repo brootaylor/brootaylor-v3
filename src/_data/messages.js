@@ -1,9 +1,9 @@
 module.exports = {
   info: {
     modifier: 'message--info',
-    message: 'Interested in potentially working with me on your next project?',
+    message: 'I am currently on the lookout for a new opportunity. If you think I might make a good addition to your team,',
     ctaUrl: '/contact',
-    ctaLabel: 'Please get in touch',
+    ctaLabel: 'please get in touch',
   },
   alert: {
     modifier: 'message--alert',

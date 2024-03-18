@@ -9,10 +9,7 @@
   background: var(--message-background);
   color: var(--message-text);
   text-wrap: balance;
-  text-align: center;
-  // position: sticky;
-  // top: 0;
-  padding: 1em;
+  padding-block: 1em;
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   border: 1px solid var(--grey-dark);
   border-width: 1px 0 2px 0;
@@ -32,11 +29,26 @@
     }
 
     @include min-width($breakpoint-large) {
-      // top: 3.8rem;
       margin-top: -4rem;
       margin-left: -0.75rem;
       margin-right: -0.75rem;
     }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 0.5ch;
+  }
+
+  p {
+    font-size: 1rem;
+    max-width: inherit;
+  }
+
+  a {
+    font-weight: 500;
+  }
 
   // 'Info' type message
   &--info {
