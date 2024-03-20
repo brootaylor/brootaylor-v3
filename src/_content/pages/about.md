@@ -5,7 +5,7 @@ summary: "Bruce is originally from South Africa and grew up on a dairy farm in a
 # Populates the opening / `lead` text on a page
 lead:
   - I'm originally from South Africa and grew up on a dairy farm in a very <a href="https://youtu.be/bGQbM3QfA5w" rel="external">beautiful part of the country</a>.
-  - I now live in West Sussex, England with my family and <a href="/projects">build websites</a> for a living.
+  - I now live in West Sussex, England with <a href="/photos/2022-03-30/photo_202203300012">my family</a> and <a href="/projects">build websites</a> for a living.
 
 # Page-specific metadata content added to the `<head>`
 head: "
@@ -19,7 +19,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-03-15T19:47:27.631Z
+date: 2024-03-20T21:24:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageNormal %}
@@ -51,40 +51,25 @@ I'm quite good at picking up new skills and programming languages, as well as pr
 
 Here are some of the skills I've picked up over the 20 years I've been building websites:
 
-<div class="auto-grid">
-  <div class="grid-item">
-    <div class="call-out">
-      <h4>"Front-of-the-front-end":</h4>
-      <ul>
-        <li>HTML</li>
-        <li>CSS / SCSS</li>
-        <li>JavaScript <small><em>(ES5 & ES6+)</em></small></li>
-        <li>Responsive & Device-agnostic Web Design</li>
-        <li>CSS Architecture / Component-based Frontend Architecture</li>
-        <li><abbr title="Static Site Generators.">SSGs</abbr> & Web frameworks <small><em>(11ty, Jekyll, Astro, Svelte, Vue)</em></small></li>
-        <li>Templating languages & Libraries <small><em>(Nunjucks, Liquid, Handlebars, jQuery, Bootstrap, GSAP)</em></small></li>
-        <li>Themeable Design System Configuration</li>
-        <li>Web Performance Optimisation</li>
-        <li>Web Accessibility</li>
-        <li>Cross Browser Compatibility</li>
-        <li><abbr title="Progressive Web Apps.">PWAs</abbr></li>
-        <li><abbr title="Search Engine Optimisation.">SEO</abbr></li>
-      </ul>
-    </div>
-  </div>
-  <div class="grid-item">
-    <div class="call-out">
-      <h4>"Back-of-the-front-end":</h4>
-      <ul>
-        <li>Node.js</li>
-        <li>Data Source / <abbr title="Application Programming Interface.">API</abbr> Configuration</li>
-        <li><abbr title="Content Management System.">CMS</abbr> Configuration and Integration</li>
-        <li>JavaScript Bundlers & Deployment Tooling <small><em>(Vite, Rollup.js, Webpack, Netlify, Azure DevOps)</em></small></li>
-        <li>Version Control <small><em>(GitHub, GitLab, Bitbucket)</em></small></li>
-        <li>Continuous Integration <em>(CI)</em> & Continuous Deployment <em>(CD)</em></li>
-      </ul>
-    </div>
-  </div>
+<div class="call-out">
+  <ul>
+    <li>HTML</li>
+    <li>CSS / SCSS</li>
+    <li>JavaScript <small><em>(ES5 & ES6+)</em></small></li>
+    <li>Responsive, Device-agnostic, and Progressively Enhanced Web Development</li>
+    <li>CSS Architecture / Component-based Frontend Architecture</li>
+    <li>Static Site Generators <em>(SSGs)</em> & Web frameworks <small><em>(11ty, Jekyll, Astro, Svelte, Vue)</em></small></li>
+    <li>Templating languages & Libraries <small><em>(Nunjucks, Liquid, Handlebars, jQuery, Bootstrap, GSAP)</em></small></li>
+    <li>Themeable Design System Configuration</li>
+    <li>Web Performance Optimisation</li>
+    <li>Web Accessibility</li>
+    <li>Cross Browser Compatibility</li>
+    <li>Data Source / <abbr title="Application Programming Interface.">API</abbr> Configuration</li>
+    <li><abbr title="Content Management System.">CMS</abbr> Configuration and Integration</li>
+    <li>JavaScript Bundlers & Deployment Tooling <small><em>(Node.js,Vite, Rollup.js, Webpack, Netlify, Azure DevOps)</em></small></li>
+    <li>Version Control <small><em>(GitHub, GitLab, Bitbucket)</em></small></li>
+    <li>Continuous Integration <em>(CI)</em> & Continuous Deployment <em>(CD)</em></li>
+  </ul>
 </div>
 
 ### My approach
@@ -103,7 +88,7 @@ I try my best to build web solutions that are [resilient](https://resilientwebde
 
 ## Hobbies & other interests
 
-I enjoy [taking photos](/photos), [reading](/reading) and am a [fairly decent drummer](/photos/2022-03-29/photo_202203292358). However, now that I've [sold my drumkit](/photos/2022-04-06/photo_202204062304), I am considering picking up the bass guitar. 🤔
+I enjoy [taking photos](/photos), [reading](/reading) and am a [fairly decent drummer](/photos/2022-03-29/photo_202203292358). But, I ended up having to [sell my drumkit](/photos/2022-04-06/photo_202204062304) recently for various reasons. I miss playing *big* time and hope I'll get a chance to play again in the future... 🤞
 
 Fly fishing for trout is something I grew up doing and continue to do. I head to the beautiful [Lakedown Trout Fishery](https://www.lakedowntroutfishery.com/){rel=external} now and then. A gorgeous and tranquil spot away from all the noise.
 

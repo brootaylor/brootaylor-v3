@@ -1,10 +1,10 @@
 ---
 title: "Bookmarks"
 # Populates the `meta description` for a page
-summary: "Links to articles, websites, videos and various online resources &mdash; technical and non-technical. Quite a few of them offer perspectives I appreciate."
+summary: "Links to articles, websites and videos I've enjoyed and found interesting &mdash; (technical and non-technical). As well as a bunch of web tools and resources."
 # Populates the opening / `lead` text on a page
 lead:
-  - "Links to articles, websites, videos and various online resources &mdash; technical and non-technical. Quite a few of them offer perspectives I appreciate."
+  - "Links to articles, websites and videos I've enjoyed and found interesting &mdash; <em>(technical and non-technical)</em>. As well as a bunch of web tools and resources."
 
 bodyClass: "bookmarks-home"
 
@@ -15,7 +15,7 @@ pagination:
   size: 15
   alias: bookmarks
 
-date: 2024-03-15T12:22:00
+date: 2024-03-20T21:01:00
 ---
 
 {# List of bookmark posts #}

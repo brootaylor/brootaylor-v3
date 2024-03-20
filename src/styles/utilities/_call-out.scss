@@ -11,6 +11,12 @@
   box-shadow: 0 10px 0 -5px var(--green-custom), 0 20px 0 -10px var(--orange-custom);
   margin-block-start: 1em;
 
+  ul,
+  ol {
+    padding-inline: inherit;
+    margin: 0;
+  }
+
   a {
     font-weight: 700;
   }
