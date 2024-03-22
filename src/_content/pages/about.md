@@ -53,13 +53,11 @@ Here are some of the skills I've picked up over the 20 years I've been building 
 
 <div class="call-out">
   <ul>
-    <li>HTML</li>
-    <li>CSS / SCSS</li>
-    <li>JavaScript <small><em>(ES5 & ES6+)</em></small></li>
-    <li>Responsive, Device-agnostic, and Progressively Enhanced Web Development</li>
-    <li>CSS Architecture / Component-based Frontend Architecture</li>
+    <li>HTML, CSS, SCSS, LESS,JavaScript <small><em>(ES5 & ES6+)</em></small></li>
     <li>Static Site Generators <em>(SSGs)</em> & Web frameworks <small><em>(11ty, Jekyll, Astro, Svelte, Vue)</em></small></li>
     <li>Templating languages & Libraries <small><em>(Nunjucks, Liquid, Handlebars, jQuery, Bootstrap, GSAP)</em></small></li>
+    <li>Responsive, Device-agnostic, and Progressively Enhanced Web Development</li>
+    <li>CSS Architecture / Component-based Frontend Architecture</li>
     <li>Themeable Design System Configuration</li>
     <li>Web Performance Optimisation</li>
     <li>Web Accessibility</li>
