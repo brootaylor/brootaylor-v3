@@ -19,7 +19,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-03-20T21:24:27.631Z
+date: 2024-03-22T14:51:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageNormal %}
@@ -65,7 +65,7 @@ Here are some of the skills I've picked up over the 20 years I've been building 
     <li>Web Accessibility</li>
     <li>Cross Browser Compatibility</li>
     <li>Data Source / <abbr title="Application Programming Interface.">API</abbr> Configuration</li>
-    <li><abbr title="Content Management System.">CMS</abbr> Configuration and Integration</li>
+    <li><abbr title="Content Management System.">CMS</abbr> Configuration and Integration <small><em>(WordPress, Decap CMS)</em></small></li>
     <li>JavaScript Bundlers & Deployment Tooling <small><em>(Node.js,Vite, Rollup.js, Webpack, Netlify, Azure DevOps)</em></small></li>
     <li>Version Control <small><em>(GitHub, GitLab, Bitbucket)</em></small></li>
     <li>Continuous Integration <em>(CI)</em> & Continuous Deployment <em>(CD)</em></li>
