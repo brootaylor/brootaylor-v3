@@ -57,7 +57,9 @@ I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/fr
 
 I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented, kind and supportive people, and much of the success I've enjoyed during <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
 
-### My skill set
+---
+
+## My skill set
 
 Here are some of the skills I've picked up over the 20 years I've been building websites:
 
@@ -80,7 +82,7 @@ Here are some of the skills I've picked up over the 20 years I've been building 
   </ul>
 </div>
 
-### My approach
+## My preferred approach
 
 I thrive in roles that ***strike a balance between user and developer experiences***, empowering teams to write great code that aligns with their needs and preferences while ensuring a positive user experience.
 
