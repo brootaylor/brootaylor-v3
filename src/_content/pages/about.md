@@ -14,12 +14,22 @@ head: "
         max-width: 300px;
         width: auto;
     }
+
+    .full-bleed {
+      max-width: 100vw;
+
+      ul {
+        columns: 2 300px;
+        column-gap: 2.5em;
+        max-width: inherit;
+      }
+    }
   </style>
 "
 
 bodyClass: "about"
 
-date: 2024-03-22T14:51:27.631Z
+date: 2024-03-25T11:05:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageNormal %}
@@ -51,7 +61,7 @@ I'm quite good at picking up new skills and programming languages, as well as pr
 
 Here are some of the skills I've picked up over the 20 years I've been building websites:
 
-<div class="call-out">
+<div class="call-out | full-bleed">
   <ul>
     <li>HTML, CSS, SCSS, LESS, JavaScript <small><em>(ES5 & ES6+)</em></small></li>
     <li>Static Site Generators <em>(SSGs)</em> & Web frameworks <small><em>(11ty, Jekyll, Astro, Svelte, Vue)</em></small></li>
