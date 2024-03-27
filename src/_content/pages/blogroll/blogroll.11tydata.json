@@ -209,6 +209,16 @@
       "name": "Adrian Roselli",
       "url": "https://adrianroselli.com/",
       "description": "Adrian is a Consultant, Writer, Speaker."
+    },
+    {
+      "name": "Alex Russell",
+      "url": "https://infrequently.org/",
+      "description": "Alex is a Microsoft Partner PM on the Edge team and <em>Blink API OWNER</em>. It's his professional mission to build a web that works for everyone."
+    },
+    {
+      "name": "Ana Rodrigues",
+      "url": "https://ohhelloana.blog/",
+      "description": "Ana is a frontend developer living in London."
     }
   ]
 }
