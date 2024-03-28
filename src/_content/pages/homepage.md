@@ -2,7 +2,7 @@
 layout: "layouts/homepage.njk"
 title: <strong>Hi, <a href="/about">I'm Bruce</a></strong>. I'm a frontend web developer and ui engineer.
 # Populates the `meta description` for a page
-summary: "Bruce is a Frontend Web Developer & UI Engineer based in Crawley, West Sussex. Specialising in crafting performant, user-friendly, responsive, accessible, and resilient websites for individuals and businesses. Build from scratch or update your site for a lasting online presence."
+summary: "Bruce is a Frontend Web Developer & UI Engineer based in Crawley, West Sussex. Specialising in crafting performant, user-friendly, responsive, accessible, and resilient websites for individuals and businesses. Build from scratch or enhance your existing website for a lasting online presence."
 
 # Populates the opening / `lead` text on a page
 lead:
@@ -44,13 +44,13 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2024-03-15T12:01:27.631Z
+date: 2024-03-28T11:33:27.631Z
 
 priority: 1
 ---
 
 <div class="call-out | flow">
-  <p>Whether you're <em><strong>starting fresh</strong></em> or <em><strong>improving an existing one</strong></em>, I'm here to assist you in establishing a lasting and meaningful online presence.</p>
+  <p>Whether you're <em><strong>starting fresh</strong></em> or <em><strong>enhancing an existing one</strong></em>, I'm here to help you establish a lasting and meaningful online presence.</p>
   <p><a href="/contact">Please get in touch</a> if you think I may be able to help out with your next project &mdash; or if you'd just like to connect. 👋</p>
 </div>
 
