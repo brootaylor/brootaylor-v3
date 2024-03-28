@@ -29,7 +29,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-03-25T11:05:27.631Z
+date: 2024-03-28T17:50:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageNormal %}
@@ -49,7 +49,7 @@ Before ever touching a computer at the end of the 90's, my life revolved around 
 
 ---
 
-## What I do now
+## What I do
 
 I'm a Frontend Web Developer and UI Engineer.
 
@@ -57,11 +57,13 @@ I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/fr
 
 I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented, kind and supportive people, and much of the success I've enjoyed during <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
 
+More specifically, here's [what I'm up to now](/now).
+
 ---
 
 ## My skill set
 
-Here are some of the skills I've picked up over the 20 years I've been building websites:
+Some of the skills I've picked up over the 20 years I've been building websites:
 
 <div class="call-out | full-bleed">
   <ul>
@@ -87,12 +89,6 @@ Here are some of the skills I've picked up over the 20 years I've been building 
 I thrive in roles that ***strike a balance between user and developer experiences***, empowering teams to write great code that aligns with their needs and preferences while ensuring a positive user experience.
 
 I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/){rel=external}, [usable](https://trentwalton.com/2014/03/10/device-agnostic/){rel=external} and as future-friendly as possible. For this reason I *prefer* a vanilla approach and tend to be fairly tech-agnostic. Choosing the *right* tool for the job seems to be a better approach than using a framework for the sake of it.
-
----
-
-## Web dev stuff I'm enjoying
-
-[Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [Svelte](https://svelte.dev/), [Vite](https://vitejs.dev/), [Netlify](https://www.netlify.com/), [Decap CMS](https://decapcms.org/), [Fractal](https://fractal.build/), [Storybook](https://storybook.js.org/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation using [GreenSock](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), and [Utopia](https://utopia.fyi/) are proving really enjoyable to work with and have restored some of the magic of building websites again.
 
 ---
 
