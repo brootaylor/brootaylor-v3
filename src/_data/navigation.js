@@ -35,12 +35,14 @@ module.exports = {
       url: 'https://github.com/brootaylor',
       icon: 'github',
       external: true,
+      verified: true,
     },
     {
       label: 'LinkedIn',
       url: 'https://www.linkedin.com/in/brootaylor',
       icon: 'linkedin',
       external: true,
+      verified: true,
     },
     {
       label: 'Mastodon',
