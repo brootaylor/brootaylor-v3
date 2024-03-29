@@ -11,7 +11,7 @@ bodyClass: "now"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 dateShow: true # Show the date in the header for this page
-date: 2024-03-29T13:57:27.631Z
+date: 2024-03-29T14:32:27.631Z
 
 location:
   locality: Crawley
@@ -67,3 +67,7 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 This is most definitely something I need to work on. I've always had hobbies like [drumming](/photos/2016-11-22/photo_201611222058) and [photography](/photos) over the years but, for some reason, since the Covid *'blip'* I've got myself in a bit of a hole that I'm struggling to get out of.
 
 Hopefully now that Spring's *just* about here, I'll get my camera out and enjoy the outdoors a bit more. 🙂
+
+---
+
+<small>*(This page exists because I came across [someone who had a 'now' page](https://nownownow.com/). I liked the idea so much that I decided to create my own.)*</small>
