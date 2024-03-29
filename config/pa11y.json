@@ -3,13 +3,18 @@
     "standard": "WCAG2AA"
   },
   "urls": [
-      "http://brootaylor.com/",
-      "http://brootaylor.com/about",
-      "http://brootaylor.com/work",
-      "http://brootaylor.com/writing",
-      "http://brootaylor.com/notes",
-      "http://brootaylor.com/bookmarks",
-      "http://brootaylor.com/contact",
-      "https://brootaylor.com/accessibility"
+      "https://brootaylor.com/",
+      "https://brootaylor.com/about",
+      "https://brootaylor.com/now",
+      "https://brootaylor.com/reading",
+      "https://brootaylor.com/projects",
+      "https://brootaylor.com/writing",
+      "https://brootaylor.com/notes",
+      "https://brootaylor.com/bookmarks",
+      "https://brootaylor.com/photos",
+      "https://brootaylor.com/blogroll",
+      "https://brootaylor.com/contact",
+      "https://brootaylor.com/accessibility",
+      "https://brootaylor.com/privacy"
   ]
 }
