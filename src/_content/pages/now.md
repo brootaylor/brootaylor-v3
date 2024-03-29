@@ -11,7 +11,7 @@ bodyClass: "now"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 dateShow: true # Show the date in the header for this page
-date: 2024-03-29T14:32:27.631Z
+date: 2024-03-29T15:56:27.631Z
 
 location:
   locality: Crawley
@@ -59,6 +59,7 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 
 * Brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)*' &mdash; like how to tie a bunch of [useful knots](https://youtu.be/kA48yzKYp3Q) and [fire building techniques](https://youtu.be/7v4twfXG2uY) - in [all weather conditions](https://youtu.be/QiYlEyvDbco) as well.
 * Trying out some local [implementations of Shopify](https://youtu.be/WY9q2PVd2q4).
+* Getting up to speed with [PHP in 2024](https://stitcher.io/blog/php-in-2024).
 
 ---
 
