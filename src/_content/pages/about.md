@@ -34,13 +34,13 @@ date: 2024-03-28T17:50:27.631Z
 
 {% from "components/core/images/images.njk" import imageNormal %}
 {{ imageNormal(
-  "/assets/images/pages/home/broo_profile_home.jpg",
-  "Profile headshot of myself, Bruce Taylor",
-  "767",
-  "767",
-  "img-right | profile",
-  "shadow",
-  "lazy")
+  src = "/assets/images/pages/home/broo_profile_home.jpg",
+  alt = "Profile headshot of myself, Bruce Taylor",
+  width = "767",
+  height = "767",
+  position = "img-right | profile",
+  shadow = true,
+  lazyLoad = "lazy")
 }}
 
 Before ever touching a computer at the end of the 90's, my life revolved around *‘teasing’* cows &mdash; *(on our dairy farm)*. Off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, training as a chef, and aspiring to be a pilot.
