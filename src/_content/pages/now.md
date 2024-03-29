@@ -11,7 +11,7 @@ bodyClass: "now"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 dateShow: true # Show the date in the header for this page
-date: 2024-03-29T15:56:27.631Z
+date: 2024-03-29T23:25:27.631Z
 
 location:
   locality: Crawley
@@ -40,7 +40,7 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 
 ## Listening
 
-* [Iran and U.S. Wage a Shadow War Behind Gaza Conflict](https://open.spotify.com/episode/1LX5IG1NzLQFsPrlIK7BN7?si=317e5c1d8a004b9b) &mdash; *The Intercept, Spotify podcast*
+* [The Seeds Of Love](https://open.spotify.com/album/7DDzJCnzLdq6MhuRQlqx39?si=ydC1JvyOQGKRJ0jAIrokTQ) &mdash; *Tears For Fears, Spotify music*
 * [Carving Canyons](https://open.spotify.com/album/1Zm0ejBiODh0THwGjkuv8m?si=0OU4FG1tRxShWO1D1ifmqA) &mdash; *Lissie, Spotify music*
 * [City of God](https://open.spotify.com/album/6lmCotcDwtqlZskmdwBBau?si=t66Ve_aRSwOeyJCNbJA1nA) &mdash; *Leeland, Spotify music*
 * [Take Me Back To Eden](https://open.spotify.com/album/1gjugH97doz3HktiEjx2vY?si=YKYifnuXSE23ytZ8Awg4-Q) &mdash; *Sleep Token, Spotify music*
