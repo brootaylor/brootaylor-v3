@@ -11,7 +11,7 @@ bodyClass: "now"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 dateShow: true # Show the date in the header for this page
-date: 2024-03-28T17:50:27.631Z
+date: 2024-03-29T13:57:27.631Z
 
 location:
   locality: Crawley
@@ -22,9 +22,9 @@ eleventyExcludeFromCollections: false
 
 ## Work
 
-I'm giving most of my time as a **Frontend Engineer** to [Admiral Group Plc](https://www.admiralgroup.co.uk/) at the moment.
+Right now, I'm working as a **Frontend Engineer** for [Admiral Group Plc](https://www.admiralgroup.co.uk/).
 
-Aside from that, I'm working on a bunch of personal code projects using technologies like [Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [Svelte](https://svelte.dev/), [Vite](https://vitejs.dev/), [Netlify](https://www.netlify.com/), [Decap CMS](https://decapcms.org/), [Fractal](https://fractal.build/), [Storybook](https://storybook.js.org/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GreenSock](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [IndieKit](https://getindiekit.com/) and [Utopia](https://utopia.fyi/).
+Aside from that, I'm tinkering around on a bunch of personal code projects using technologies like [Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [Svelte](https://svelte.dev/), [Vite](https://vitejs.dev/), [Netlify](https://www.netlify.com/), [Decap CMS](https://decapcms.org/), [Fractal](https://fractal.build/), [Storybook](https://storybook.js.org/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GreenSock](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [IndieKit](https://getindiekit.com/) and [Utopia](https://utopia.fyi/).
 
 ---
 
@@ -40,7 +40,7 @@ Aside from that, I'm working on a bunch of personal code projects using technolo
 
 ## Listening
 
-* [The Origins of Hell On Earth | Carl Safina](https://www.planetcritical.com/p/the-origins-of-hell-on-earth) &mdash; *Rachel Donald, "Planet: Critical" podcast*
+* [Iran and U.S. Wage a Shadow War Behind Gaza Conflict](https://open.spotify.com/episode/1LX5IG1NzLQFsPrlIK7BN7?si=317e5c1d8a004b9b) &mdash; *The Intercept, Spotify podcast*
 * [Carving Canyons](https://open.spotify.com/album/1Zm0ejBiODh0THwGjkuv8m?si=0OU4FG1tRxShWO1D1ifmqA) &mdash; *Lissie, Spotify music*
 * [City of God](https://open.spotify.com/album/6lmCotcDwtqlZskmdwBBau?si=t66Ve_aRSwOeyJCNbJA1nA) &mdash; *Leeland, Spotify music*
 * [Take Me Back To Eden](https://open.spotify.com/album/1gjugH97doz3HktiEjx2vY?si=YKYifnuXSE23ytZ8Awg4-Q) &mdash; *Sleep Token, Spotify music*
@@ -57,7 +57,8 @@ Aside from that, I'm working on a bunch of personal code projects using technolo
 
 ## Learning
 
-Some '*life-skills*' like how to tie a bunch of useful knots &mdash; and making a fire in all weather conditions.
+* Brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)*' &mdash; like how to tie a bunch of [useful knots](https://youtu.be/kA48yzKYp3Q) and [fire building techniques](https://youtu.be/7v4twfXG2uY) - in [all weather conditions](https://youtu.be/QiYlEyvDbco) as well.
+* Trying out some local [implementations of Shopify](https://youtu.be/WY9q2PVd2q4).
 
 ---
 
