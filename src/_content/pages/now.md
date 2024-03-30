@@ -11,7 +11,7 @@ bodyClass: "now"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 dateShow: true # Show the date in the header for this page
-date: 2024-03-29T23:25:27.631Z
+date: 2024-03-30T11:36:27.631Z
 
 location:
   locality: Crawley
@@ -40,10 +40,10 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 
 ## Listening
 
-* **The Seeds Of Love** &mdash; *Tears For Fears, Spotify music*
-* **Carving Canyons** &mdash; *Lissie, Spotify music*
-* **City of God** &mdash; *Leeland, Spotify music*
-* **Take Me Back To Eden** &mdash; *Sleep Token, Spotify music*
+* **The Seeds Of Love** &mdash; *Tears For Fears*
+* **Carving Canyons** &mdash; *Lissie*
+* **City of God** &mdash; *Leeland*
+* **Take Me Back To Eden** &mdash; *Sleep Token*
 
 ---
 
@@ -51,7 +51,7 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 
 * [Into the Ice](https://www.bbc.co.uk/iplayer/episode/m001d7j2/into-the-ice) &mdash; *BBC iPlayer*
 * [The Gentleman](https://www.imdb.com/title/tt13210838/) &mdash; *Netflix*
-* [Westworld](https://www.imdb.com/title/tt0475784/) &mdash; *Sky*
+* [Westworld](https://www.imdb.com/title/tt0475784/) &mdash; *Sky Atlantic*
 
 ---
 
