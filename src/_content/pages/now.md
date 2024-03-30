@@ -40,10 +40,10 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 
 ## Listening
 
-* [The Seeds Of Love](https://open.spotify.com/album/7DDzJCnzLdq6MhuRQlqx39?si=ydC1JvyOQGKRJ0jAIrokTQ) &mdash; *Tears For Fears, Spotify music*
-* [Carving Canyons](https://open.spotify.com/album/1Zm0ejBiODh0THwGjkuv8m?si=0OU4FG1tRxShWO1D1ifmqA) &mdash; *Lissie, Spotify music*
-* [City of God](https://open.spotify.com/album/6lmCotcDwtqlZskmdwBBau?si=t66Ve_aRSwOeyJCNbJA1nA) &mdash; *Leeland, Spotify music*
-* [Take Me Back To Eden](https://open.spotify.com/album/1gjugH97doz3HktiEjx2vY?si=YKYifnuXSE23ytZ8Awg4-Q) &mdash; *Sleep Token, Spotify music*
+* **The Seeds Of Love** &mdash; *Tears For Fears, Spotify music*
+* **Carving Canyons** &mdash; *Lissie, Spotify music*
+* **City of God** &mdash; *Leeland, Spotify music*
+* **Take Me Back To Eden** &mdash; *Sleep Token, Spotify music*
 
 ---
 
