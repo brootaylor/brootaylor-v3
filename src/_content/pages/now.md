@@ -11,7 +11,7 @@ bodyClass: "now"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 dateShow: true # Show the date in the header for this page
-date: 2024-03-30T11:36:27.631Z
+date: 2024-03-30T11:54:27.631Z
 
 location:
   locality: Crawley
@@ -34,7 +34,8 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 
 * [The Reborn King: The Dragon's Blade](https://www.michaelrmiller.co.uk/therebornking) &mdash; *(book 1 of 3)*, *Michael R. Miller*
 * [Capitalism Is Dead – Long Live Capital](https://crookedtimber.org/2024/03/25/capitalism-is-dead-long-live-capital/) &mdash; *Miriam Ronzoni, "Crooked Timber"*
-* [Breaking Together &mdash; a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/), *Jem Bendell*
+* [Breaking Together &mdash; a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/) &mdash; *Jem Bendell*
+* [What an Owl Taught Me About Life](https://time.com/6320590/owls-nature-carl-safina/) &mdash; *Carl Safina*
 
 ---
 
