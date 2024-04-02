@@ -1,6 +1,6 @@
 ---
 layout: "layouts/homepage.njk"
-title: <strong>Hi, <a href="/about">I'm Bruce</a></strong>. I'm a frontend web developer and ui engineer.
+title: <strong>Hi,</strong> <a href="/about">I'm Bruce</a>. I'm a frontend web developer and ui engineer.
 # Populates the `meta description` for a page
 summary: "Bruce is a Frontend Web Developer & UI Engineer based in Crawley, West Sussex. Specialising in crafting performant, user-friendly, responsive, accessible, and resilient websites for individuals and businesses. Build from scratch or enhance your existing website for a lasting online presence."
 
@@ -14,11 +14,13 @@ head: "
     h1 {
       font-weight: 200;
       max-width: 23ch;
-    }
 
-    h1 strong,
-    h1 a {
-      font-weight: 900;
+      strong,
+      a,
+      a:hover,
+      a:active {
+        font-weight: 900;
+      }
     }
 
     .call-out {
