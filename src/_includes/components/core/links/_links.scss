@@ -44,8 +44,12 @@ a {
       }
 
       // On hover...
-      &:hover::after {
-          opacity: 1;
+      &:hover {
+        font-weight: 500;
+
+        &::after {
+            opacity: 1;
+        }
       }
     }
   }
@@ -55,9 +59,19 @@ a {
     line-height: 1.8;
   }
 
+  // If a link's in a list within an article and has a class `footnote`...
   article li & {
     &.footnote {
       line-height: 1;
+    }
+  }
+
+  // If an external link's in an article's lead element...
+  article .lead & {
+    font-weight: 600;
+
+    &[rel~="external"] {
+      font-weight: 600;
     }
   }
 
