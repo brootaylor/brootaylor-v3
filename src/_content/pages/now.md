@@ -11,7 +11,7 @@ bodyClass: "now"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 dateShow: true # Show the date in the header for this page
-date: 2024-03-29T23:25:27.631Z
+date: 2024-03-30T11:54:27.631Z
 
 location:
   locality: Crawley
@@ -34,16 +34,17 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 
 * [The Reborn King: The Dragon's Blade](https://www.michaelrmiller.co.uk/therebornking) &mdash; *(book 1 of 3)*, *Michael R. Miller*
 * [Capitalism Is Dead – Long Live Capital](https://crookedtimber.org/2024/03/25/capitalism-is-dead-long-live-capital/) &mdash; *Miriam Ronzoni, "Crooked Timber"*
-* [Breaking Together &mdash; a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/), *Jem Bendell*
+* [Breaking Together &mdash; a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/) &mdash; *Jem Bendell*
+* [What an Owl Taught Me About Life](https://time.com/6320590/owls-nature-carl-safina/) &mdash; *Carl Safina*
 
 ---
 
 ## Listening
 
-* [The Seeds Of Love](https://open.spotify.com/album/7DDzJCnzLdq6MhuRQlqx39?si=ydC1JvyOQGKRJ0jAIrokTQ) &mdash; *Tears For Fears, Spotify music*
-* [Carving Canyons](https://open.spotify.com/album/1Zm0ejBiODh0THwGjkuv8m?si=0OU4FG1tRxShWO1D1ifmqA) &mdash; *Lissie, Spotify music*
-* [City of God](https://open.spotify.com/album/6lmCotcDwtqlZskmdwBBau?si=t66Ve_aRSwOeyJCNbJA1nA) &mdash; *Leeland, Spotify music*
-* [Take Me Back To Eden](https://open.spotify.com/album/1gjugH97doz3HktiEjx2vY?si=YKYifnuXSE23ytZ8Awg4-Q) &mdash; *Sleep Token, Spotify music*
+* **The Seeds Of Love** &mdash; *Tears For Fears*
+* **Carving Canyons** &mdash; *Lissie*
+* **City of God** &mdash; *Leeland*
+* **Take Me Back To Eden** &mdash; *Sleep Token*
 
 ---
 
@@ -51,7 +52,7 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 
 * [Into the Ice](https://www.bbc.co.uk/iplayer/episode/m001d7j2/into-the-ice) &mdash; *BBC iPlayer*
 * [The Gentleman](https://www.imdb.com/title/tt13210838/) &mdash; *Netflix*
-* [Westworld](https://www.imdb.com/title/tt0475784/) &mdash; *Sky*
+* [Westworld](https://www.imdb.com/title/tt0475784/) &mdash; *Sky Atlantic*
 
 ---
 
