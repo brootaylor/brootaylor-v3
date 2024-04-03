@@ -11,7 +11,7 @@ bodyClass: "now"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 dateShow: true # Show the date in the header for this page
-date: 2024-03-30T11:54:27.631Z
+date: 2024-04-04T22:49:27.631Z
 
 location:
   locality: Crawley
@@ -22,7 +22,7 @@ eleventyExcludeFromCollections: false
 
 ## Work
 
-Right now, I'm working as a **Frontend Engineer** for [Admiral Group Plc](https://www.admiralgroup.co.uk/).
+Right now, I'm working as a **Frontend Web Developer** for [Admiral Group Plc](https://www.admiralgroup.co.uk/).
 
 Aside from that, I'm tinkering around on a bunch of personal code projects using technologies like [Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [Svelte](https://svelte.dev/), [Vite](https://vitejs.dev/), [Netlify](https://www.netlify.com/), [Decap CMS](https://decapcms.org/), [Fractal](https://fractal.build/), [Storybook](https://storybook.js.org/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GreenSock](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [IndieKit](https://getindiekit.com/) and [Utopia](https://utopia.fyi/).
 
@@ -50,8 +50,6 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 
 ## Watching
 
-* [Into the Ice](https://www.bbc.co.uk/iplayer/episode/m001d7j2/into-the-ice) &mdash; *BBC iPlayer*
-* [The Gentleman](https://www.imdb.com/title/tt13210838/) &mdash; *Netflix*
 * [Westworld](https://www.imdb.com/title/tt0475784/) &mdash; *Sky Atlantic*
 
 ---
