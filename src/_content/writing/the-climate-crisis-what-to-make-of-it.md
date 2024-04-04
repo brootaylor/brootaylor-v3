@@ -3,7 +3,7 @@ title: 'The "Climate Crisis": What to Make of It?'
 summary: In these times of being constantly overwhelmed by the deluge of information, I'm finding it trickier than ever to discern the true motivations and intentions behind what is presented as fact, with one such topic being the "climate crisis."
 lead: In these times of being constantly overwhelmed by the deluge of information, I'm finding it trickier than ever to discern the true motivations and intentions behind what is presented as fact, with one such topic being the "<strong>climate crisis</strong>."
 date: 2023-05-31T12:28:37.952Z
-updated: 2024-03-13T12:56:37.952Z
+updated: 2024-04-04T12:42:37.952Z
 location:
   locality: Crawley
   country_name: UK
@@ -52,6 +52,7 @@ I certainly don't claim to have any of the answers &mdash; but I've learnt a lot
 
 * [Overshoot: The Ecological Basis of Revolutionary Change](https://www.goodreads.com/en/book/show/319810.Overshoot) &mdash; *William R. Catton*
 * [Overshoot: Where We Stand Now](https://howtosavetheworld.ca/2021/09/21/overshoot-where-we-stand-now-guest-post-by-michael-dowd/) &mdash; *Michael Dowd*
+* [Ecology as Theology: Decline as Grace](https://youtu.be/SQYrkhAuJH0) &mdash; *Michael Dowd*
 * [The Earth Is Telling Us We Must Rethink Our Growth Society](https://thetyee.ca/Analysis/2020/04/06/The-Earth-Is-Telling-Us-We-Must-Rethink-Our-Growth-Society/) &mdash; *William E. Rees*
 * [Scholars' Oath to the Future](http://iflas.blogspot.com/2022/11/scholars-oath-to-future.html) &mdash; *University of Cumbria*
 * [Is it time for climatologists to apologise to activists? An open letter from international scholars](https://iflas.blogspot.com/2023/10/apologize.html) &mdash; *University of Cumbria*

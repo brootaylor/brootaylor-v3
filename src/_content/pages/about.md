@@ -5,7 +5,7 @@ summary: "Bruce is originally from South Africa and grew up on a dairy farm in a
 # Populates the opening / `lead` text on a page
 lead:
   - I'm originally from South Africa and grew up on a dairy farm in a very <a href="https://youtu.be/bGQbM3QfA5w" rel="external">beautiful part of the country</a>.
-  - I now live in West Sussex, England with <a href="/photos/2022-03-30/photo_202203300012">my family</a> and <a href="/projects">build websites</a> for a living.
+  - I now live in West Sussex, England with <a href="/photos/2022-03-30/photo_202203300012">my family</a> and <a href="/projects">build websites</a> for a living. More specifically, here's <a href="/now">what I'm up to now</a>.
 
 # Page-specific metadata content added to the `<head>`
 head: "
@@ -29,7 +29,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-03-28T17:50:27.631Z
+date: 2024-04-04T14:04:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageNormal %}
@@ -51,13 +51,28 @@ Before ever touching a computer at the end of the 90's, my life revolved around 
 
 ## What I do
 
-I'm a Frontend Web Developer and UI Engineer.
+I morph between being a **Frontend Web Developer** / **UI Engineer** / **Design Engineer** these days. But I do *miss* calling myself a [Web Designer & Developer](https://www.ellyloel.com/blog/front-end-development-s-identity-crisis/) as that still makes sense to me.
 
 I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}" &mdash; the somewhat broad and *fuzzy* intersection between design and back-end engineering. From time to time, you'll also find me tinkering around in the “*back-of-the-front-end*”.
 
 I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented, kind and supportive people, and much of the success I've enjoyed during <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
 
-More specifically, here's [what I'm up to now](/now).
+I wouldn't call myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/)" per se, regardless of what some previous roles may imply. I know how to do full-stack development, not because I necessarily wanted to, but because I had to.
+
+{% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
+{%- call blockquote('Heydon Pickering', 'https://medium.com/@Heydon/reluctant-gatekeeping-the-problem-with-full-stack-e9ad836570f6', 'Reluctant Gatekeeping: The Problem With Full Stack') -%}
+  HTML, CSS, JavaScript, Python, C#, and SQL may all be code, but they’re really quite different kinds of code and are suited to different kinds of people.
+
+  [...] I recently worked with an organization where there were dozens of Full Stack Developers and no Frontend Developers. We had a website to build and nobody understood Flexbox, except me. Of course I was happy to help, but I had to learn React on the job to put the work in place. Fortunately I picked it up quite quickly, but the next CSS expert may not have done. The value you want from a CSS expert is their CSS, not their JavaScript, so it’s absurd to make JavaScript a requirement.
+{%- endcall %}
+
+---
+
+## My preferred approach
+
+I thrive in roles that ***strike a balance between user and developer experiences***, empowering teams to write great code that aligns with their needs and preferences while ensuring a positive user experience.
+
+I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/){rel=external}, [usable](https://trentwalton.com/2014/03/10/device-agnostic/){rel=external} and as future-friendly as possible. For this reason I *prefer* a vanilla approach and tend to be fairly tech-agnostic. Choosing the *right* tool for the job seems to be a better approach than using a framework for the sake of it.
 
 ---
 
@@ -70,6 +85,7 @@ Some of the skills I've picked up over the 20 years I've been building websites:
     <li>HTML, CSS, SCSS, LESS, JavaScript <small><em>(ES5 & ES6+)</em></small></li>
     <li>Static Site Generators <em>(SSGs)</em> & Web frameworks <small><em>(11ty, Jekyll, Astro, Svelte, Vue)</em></small></li>
     <li>Templating languages & Libraries <small><em>(Nunjucks, Liquid, Handlebars, jQuery, Bootstrap, GSAP)</em></small></li>
+    <li>Design tools & UI component library builders <small><em>(Photoshop, Figma, Zeplin, Fractal, Storybook)</em></small></li>
     <li>Responsive, Device-agnostic, and Progressively Enhanced Web Development</li>
     <li>CSS Architecture / Component-based Frontend Architecture</li>
     <li>Themeable Design System Configuration</li>
@@ -78,17 +94,12 @@ Some of the skills I've picked up over the 20 years I've been building websites:
     <li>Cross Browser Compatibility</li>
     <li>Data Source / <abbr title="Application Programming Interface.">API</abbr> Configuration</li>
     <li><abbr title="Content Management System.">CMS</abbr> Configuration and Integration <small><em>(WordPress, Decap CMS)</em></small></li>
-    <li>JavaScript Bundlers & Deployment Tooling <small><em>(Node.js, Vite, Rollup.js, Webpack, Netlify, Azure DevOps)</em></small></li>
+    <li>JavaScript Bundlers & Deployment Tooling <small><em>(Vite, Rollup.js, Webpack, Netlify, Azure DevOps)</em></small></li>
+    <li>Back-end & <em>"back-of-the-frontend"</em> <small><em>(PHP, Node.js)</em></small></li>
     <li>Version Control <small><em>(GitHub, GitLab, Bitbucket)</em></small></li>
     <li>Continuous Integration <em>(CI)</em> & Continuous Deployment <em>(CD)</em></li>
   </ul>
 </div>
-
-## My preferred approach
-
-I thrive in roles that ***strike a balance between user and developer experiences***, empowering teams to write great code that aligns with their needs and preferences while ensuring a positive user experience.
-
-I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/){rel=external}, [usable](https://trentwalton.com/2014/03/10/device-agnostic/){rel=external} and as future-friendly as possible. For this reason I *prefer* a vanilla approach and tend to be fairly tech-agnostic. Choosing the *right* tool for the job seems to be a better approach than using a framework for the sake of it.
 
 ---
 

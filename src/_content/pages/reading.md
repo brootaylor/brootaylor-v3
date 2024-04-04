@@ -10,7 +10,15 @@ bodyClass: "reading"
 
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
-date: 2024-02-05T14:12:00
+dateShow: true # Show the date in the header for this page
+date: 2022-10-22T13:17:27.631Z
+updated: 2024-04-04T12:53:37.952Z
+
+location:
+  locality: Crawley
+  country_name: UK
+
+eleventyExcludeFromCollections: false
 ---
 
 Because I've never kept a list of my reads, I've ended up creating a bit of a challenge for myself that's for sure. Trying to recall books I've read and enjoyed feels like a bit of a daunting task but I'm keen to at least make a stab at it.
@@ -25,7 +33,6 @@ Books on the go at the moment.
 
 * [The Reborn King: The Dragon's Blade](https://www.michaelrmiller.co.uk/therebornking) &mdash; *(book 1 of 3)*, *Michael R. Miller*
 * [Breaking Together &mdash; a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/), *Jem Bendell*
-* [An Inconvenient Apocalypse: Environmental Collapse, Climate Crisis, and the Fate of Humanity](https://robertwjensen.org/books/an-inconvenient-apocalypse/) &mdash; *Wes Jackson*, *Robert Jensen*
 * [Overshoot: The Ecological Basis of Revolutionary Change](https://www.goodreads.com/en/book/show/319810.Overshoot), *William R. Catton*
 
 ---
