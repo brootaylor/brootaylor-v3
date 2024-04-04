@@ -1,17 +1,18 @@
 ---
-title: "Now"
+title: "What I'm doing now"
 # Populates the `meta description` for a page
 summary: "What I'm working on, reading, listening to, watching, learning, and some hobbies I'm enjoying at the moment."
 # Populates the opening / `lead` text on a page
 lead:
-  - What I'm working on, reading, listening to, watching, learning &mdash; and some hobbies I'm enjoying at the moment.
+  - <em>(This page exists because I came across <a href="https://nownownow.com/">someone who had a 'now' page</a>. I liked the idea so much that I decided to create my own.)</em>
 
 bodyClass: "now"
 
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 dateShow: true # Show the date in the header for this page
-date: 2024-04-03T22:49:27.631Z
+date: 2024-03-29T16:10:27.631Z
+updated: 2024-04-04T12:30:37.952Z
 
 location:
   locality: Crawley
@@ -41,16 +42,16 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 
 ## Listening
 
-* **The Seeds Of Love** &mdash; *Tears For Fears*
+* **Songs from the Shelf** &mdash; *Nik Kershaw*
 * **Carving Canyons** &mdash; *Lissie*
 * **City of God** &mdash; *Leeland*
-* **Take Me Back To Eden** &mdash; *Sleep Token*
+* [Global Oil Depletion](https://www.planetcritical.com/p/global-oil-depletion) &mdash; *Rachel Donald & Alister Hamilton, "Planet: Critical"*
 
 ---
 
 ## Watching
 
-* [Westworld](https://www.imdb.com/title/tt0475784/) &mdash; *Sky Atlantic*
+* [Westworld](https://www.imdb.com/title/tt0475784/) &mdash; *TV Series*
 
 ---
 
@@ -67,7 +68,3 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 This is most definitely something I need to work on. I've always had hobbies like [drumming](/photos/2016-11-22/photo_201611222058) and [photography](/photos) over the years but, for some reason, since the Covid *'blip'* I've got myself in a bit of a hole that I'm struggling to get out of.
 
 Hopefully now that Spring's *just* about here, I'll get my camera out and enjoy the outdoors a bit more. 🙂
-
----
-
-<small>*(This page exists because I came across [someone who had a 'now' page](https://nownownow.com/). I liked the idea so much that I decided to create my own.)*</small>
