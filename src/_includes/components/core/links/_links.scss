@@ -9,7 +9,7 @@ a {
   &,
   &:active,
   &:visited {
-      font-weight: 400;
+      font-weight: 500;
       color: inherit;
       text-decoration: none;
       transition: 0.3s;
@@ -27,8 +27,6 @@ a {
 
   // In the context of an article...
   article & {
-    font-weight: 500;
-
     // External link
     &[rel~="external"] {
       &::after {
@@ -41,12 +39,11 @@ a {
         margin-right: 0.125em;
         vertical-align: baseline;
         opacity: 0.4;
+        transition: opacity 0.3s ease-in-out;
       }
 
       // On hover...
       &:hover {
-        font-weight: 500;
-
         &::after {
             opacity: 1;
         }
