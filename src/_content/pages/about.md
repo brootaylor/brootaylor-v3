@@ -23,13 +23,17 @@ head: "
         column-gap: 2.5em;
         max-width: inherit;
       }
+
+      p {
+        max-width: inherit;
+      }
     }
   </style>
 "
 
 bodyClass: "about"
 
-date: 2024-04-04T14:04:27.631Z
+date: 2024-04-04T14:31:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageNormal %}
@@ -80,7 +84,7 @@ I try my best to build web solutions that are [resilient](https://resilientwebde
 
 Some of the skills I've picked up over the 20 years I've been building websites:
 
-<div class="call-out | full-bleed">
+<div class="call-out | full-bleed | flow">
   <ul>
     <li>HTML, CSS, SCSS, LESS, JavaScript <small><em>(ES5 & ES6+)</em></small></li>
     <li>Static Site Generators <em>(SSGs)</em> & Web frameworks <small><em>(11ty, Jekyll, Astro, Svelte, Vue)</em></small></li>
@@ -99,6 +103,8 @@ Some of the skills I've picked up over the 20 years I've been building websites:
     <li>Version Control <small><em>(GitHub, GitLab, Bitbucket)</em></small></li>
     <li>Continuous Integration <em>(CI)</em> & Continuous Deployment <em>(CD)</em></li>
   </ul>
+  <h3 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h3>
+  <p><small><em>(Need to see a copy of my CV for some reason? You're welcome to <a href="/BruceTaylorCV">download a copy</a>.)</em></small></p>
 </div>
 
 ---
