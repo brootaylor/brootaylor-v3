@@ -4,7 +4,7 @@ title: "What I'm doing now"
 summary: "What I'm working on, reading, listening to, watching, learning, and some hobbies I'm enjoying at the moment."
 # Populates the opening / `lead` text on a page
 lead:
-  - <em>(This page exists because I came across <a href="https://nownownow.com/">someone who had a 'now' page</a>. I liked the idea so much that I decided to create my own.)</em>
+  - This page exists because I came across <a href="https://nownownow.com/">someone who had a 'now' page</a>. I liked the idea so much that I decided to create my own.
 
 bodyClass: "now"
 
