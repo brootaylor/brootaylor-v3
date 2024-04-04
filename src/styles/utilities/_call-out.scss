@@ -18,7 +18,11 @@
   }
 
   a {
-    font-weight: 700;
+    &,
+    &:active,
+    &:hover {
+      font-weight: 700;
+    }
   }
 }
 
