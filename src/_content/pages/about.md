@@ -51,13 +51,13 @@ Before ever touching a computer at the end of the 90's, my life revolved around 
 
 ## What I do
 
-I morph between being a **Frontend Web Developer** / **UI Engineer** / **Design Engineer** these days. But I do *miss* calling myself a [Web Designer & Developer](https://www.ellyloel.com/blog/front-end-development-s-identity-crisis/) as that still makes sense to me.
+I morph between being a **Frontend Web Developer** / **UI Engineer** / **Design Engineer** these days. But I do *miss* calling myself a [Web Designer & Developer](https://www.ellyloel.com/blog/front-end-development-s-identity-crisis/){rel=external} as that still makes sense to me.
 
 I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}" &mdash; the somewhat broad and *fuzzy* intersection between design and back-end engineering. From time to time, you'll also find me tinkering around in the “*back-of-the-front-end*”.
 
 I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented, kind and supportive people, and much of the success I've enjoyed during <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
 
-I wouldn't call myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/)" per se, regardless of what some previous roles may imply. I know how to do full-stack development, not because I necessarily wanted to, but because I had to.
+I wouldn't call myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" per se, regardless of what some of my previous roles may imply. I know how to do full-stack development, not because I necessarily wanted to, but because I had to.
 
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
 {%- call blockquote('Heydon Pickering', 'https://medium.com/@Heydon/reluctant-gatekeeping-the-problem-with-full-stack-e9ad836570f6', 'Reluctant Gatekeeping: The Problem With Full Stack') -%}
