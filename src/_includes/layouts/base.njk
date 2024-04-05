@@ -48,7 +48,7 @@
 		{% include "components/global/header/header.njk" %}
 
 		{# Main content #}
-		<main role="main" id="main">
+		<main role="main" id="main" tabindex="-1">
 
 			{# Check if `siteMessage` is true in `_data/site.js` and that the `bodyClass` equals 'homepage'... #}
 			{% if site.siteMessage and bodyClass == 'homepage' %}
