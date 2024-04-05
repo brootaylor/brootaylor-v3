@@ -5,7 +5,7 @@ summary: "Bruce is originally from South Africa and grew up on a dairy farm in a
 # Populates the opening / `lead` text on a page
 lead:
   - I'm originally from South Africa and grew up on a dairy farm in a very <a href="https://youtu.be/bGQbM3QfA5w" rel="external">beautiful part of the country</a>.
-  - I now live in West Sussex, England with <a href="/photos/2022-03-30/photo_202203300012">my family</a> and <a href="/projects">build websites</a> for a living. More specifically, here's <a href="/now">what I'm up to now</a>.
+  - I now live in West Sussex, England with <a href="/photos/2022-03-30/photo_202203300012">my family</a> and <a href="/projects">build websites</a> for a living.
 
 # Page-specific metadata content added to the `<head>`
 head: "
@@ -33,29 +33,22 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-04-04T14:31:27.631Z
+date: 2024-04-05T13:10:27.631Z
 ---
 
-{% from "components/core/images/images.njk" import imageNormal %}
-{{ imageNormal(
-  src = "/assets/images/pages/home/broo_profile_home.jpg",
-  alt = "Profile headshot of myself, Bruce Taylor",
-  width = "767",
-  height = "767",
-  position = "img-right | profile",
-  shadow = true,
-  lazyLoad = "lazy")
-}}
+<img src="/assets/images/pages/about/broo_profile_about.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
 
 Before ever touching a computer at the end of the 90's, my life revolved around *‘teasing’* cows &mdash; *(on our dairy farm)*. Off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, training as a chef, and aspiring to be a pilot.
 
 *Maaan*, that all feels like a lifetime ago...
 
+More specifically, here's [what I'm up to now](/now).
+
 ---
 
 ## What I do
 
-I morph between being a **Frontend Web Developer** / **UI Engineer** / **Design Engineer** these days. But I do *miss* calling myself a [Web Designer & Developer](https://www.ellyloel.com/blog/front-end-development-s-identity-crisis/){rel=external} as that still makes sense to me.
+I morph between being called a **Frontend Web Developer** / **Frontend Engineer** / **UI Engineer** / **Design Engineer** these days. But I do *miss* calling myself a [Web Designer & Developer](https://www.ellyloel.com/blog/front-end-development-s-identity-crisis/){rel=external} as that still makes sense to me.
 
 I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}" &mdash; the somewhat broad and *fuzzy* intersection between design and back-end engineering. From time to time, you'll also find me tinkering around in the “*back-of-the-front-end*”.
 
