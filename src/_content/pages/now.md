@@ -12,7 +12,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2024-04-05T13:28:37.952Z
+updated: 2024-04-08T13:10:37.952Z
 
 location:
   locality: Crawley
@@ -31,7 +31,7 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 
 ## Reading
 
-*I always try to include a dose of fantasy in my current read list. Mostly to help 'balance' and process the other [reads](/reading) I've got on the go.* 😬 {.call-out}
+I usually have a few books & articles on the go and switch to whichever suits my fancy at the time.
 
 * [The Reborn King: The Dragon's Blade](https://www.michaelrmiller.co.uk/therebornking) &mdash; *(book 1 of 3)*, *Michael R. Miller*
 * [Capitalism Is Dead – Long Live Capital](https://crookedtimber.org/2024/03/25/capitalism-is-dead-long-live-capital/) &mdash; *Miriam Ronzoni, "Crooked Timber"*
@@ -43,16 +43,20 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 
 ## Listening
 
+Usually a mix of music, audiobooks, and podcasts.
+
 * **Songs from the Shelf** &mdash; *Nik Kershaw*
 * **Carving Canyons** &mdash; *Lissie*
 * **City of God** &mdash; *Leeland*
-* [Global Oil Depletion](https://www.planetcritical.com/p/global-oil-depletion) &mdash; *Rachel Donald & Alister Hamilton, "Planet: Critical"*
+* [Soul Boom: Why We Need a Spiritual Revolution](https://open.spotify.com/show/0FAngrGVoxWD23qQCWgpFz?si=a51c0e4e16d3439e) &mdash; *Rainn Wilson (Audiobook)*
 
 ---
 
 ## Watching
 
-* [Ecology as Theology: Decline as Grace](https://youtu.be/SQYrkhAuJH0) &mdash; *Michael Dowd*
+Either TV shows or movies. *And/or* videos I find partcularlyinteresting.
+
+* [Ecology as Theology: Decline as Grace](https://youtu.be/SQYrkhAuJH0) &mdash; *Michael Dowd (Video)*
 * [Westworld](https://www.imdb.com/title/tt0475784/) &mdash; *TV Series*
 
 ---
@@ -60,7 +64,6 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 ## Learning
 
 * Brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)*' &mdash; like how to tie a bunch of [useful knots](https://youtu.be/kA48yzKYp3Q) and [fire building techniques](https://youtu.be/7v4twfXG2uY) - in [all weather conditions](https://youtu.be/QiYlEyvDbco) as well.
-* Trying out some local [implementations of Shopify](https://youtu.be/WY9q2PVd2q4).
 * Getting up to speed with [PHP in 2024](https://stitcher.io/blog/php-in-2024).
 
 ---
