@@ -3,7 +3,7 @@ title: 'The "Climate Crisis": What to Make of It?'
 summary: In these times of being constantly overwhelmed by the deluge of information, I'm finding it trickier than ever to discern the true motivations and intentions behind what is presented as fact, with one such topic being the "climate crisis."
 lead: In these times of being constantly overwhelmed by the deluge of information, I'm finding it trickier than ever to discern the true motivations and intentions behind what is presented as fact, with one such topic being the "<strong>climate crisis</strong>."
 date: 2023-05-31T12:28:37.952Z
-updated: 2024-04-08T18:00:37.952Z
+updated: 2024-04-09T18:29:37.952Z
 location:
   locality: Crawley
   country_name: UK
