@@ -3,7 +3,7 @@ title: 'The "Climate Crisis": What to Make of It?'
 summary: In these times of being constantly overwhelmed by the deluge of information, I'm finding it trickier than ever to discern the true motivations and intentions behind what is presented as fact, with one such topic being the "climate crisis."
 lead: In these times of being constantly overwhelmed by the deluge of information, I'm finding it trickier than ever to discern the true motivations and intentions behind what is presented as fact, with one such topic being the "<strong>climate crisis</strong>."
 date: 2023-05-31T12:28:37.952Z
-updated: 2024-04-04T12:42:37.952Z
+updated: 2024-04-08T18:00:37.952Z
 location:
   locality: Crawley
   country_name: UK
@@ -57,7 +57,7 @@ I certainly don't claim to have any of the answers &mdash; but I've learnt a lot
 * [Scholars' Oath to the Future](http://iflas.blogspot.com/2022/11/scholars-oath-to-future.html) &mdash; *University of Cumbria*
 * [Is it time for climatologists to apologise to activists? An open letter from international scholars](https://iflas.blogspot.com/2023/10/apologize.html) &mdash; *University of Cumbria*
 * [Al Bartlett discusses population growth, climate change, energy, and consumption](https://youtu.be/F8ZJCtL6bPs) &mdash; *Al Bartlett video interview*
-* [Planet Critical](https://www.planetcritical.com/) &mdash; *Rachel Donald*
+* [The Oil Crash Is Coming Sooner Than We Think](https://www.planetcritical.com/p/the-oil-crash-is-coming-sooner-than) &mdash; *Rachel Donald, "Planet Critical"*
 * [Abrupt Climate Change from Arctic to Antarctic: Facts, Opinions, and Analysis](https://paulbeckwith.net/) &mdash; *Paul Beckwith*
 * [Faster than Forecast: the story ice tells about abrupt climate change](https://www.sila.cool/book-faster-than-forecast/) — *Jason Box*
 * [What’s going on with the Greenland ice sheet? It’s losing ice faster than forecast and now irreversibly committed to at least 10 inches of sea level rise](https://theconversation.com/whats-going-on-with-the-greenland-ice-sheet-its-losing-ice-faster-than-forecast-and-now-irreversibly-committed-to-at-least-10-inches-of-sea-level-rise-185590) &mdash; *Alun Hubbard*
