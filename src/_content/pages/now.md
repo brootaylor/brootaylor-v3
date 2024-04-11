@@ -23,7 +23,7 @@ eleventyExcludeFromCollections: false
 
 ## Work
 
-Right now, I'm working as a **Frontend Web Developer** for [Admiral Group Plc](https://www.admiralgroup.co.uk/).
+Right now, I'm working as a **Frontend Engineer** for [Admiral Group Plc](https://www.admiralgroup.co.uk/).
 
 Aside from that, I'm tinkering around on a bunch of personal code projects using technologies like [Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [Svelte](https://svelte.dev/), [Vite](https://vitejs.dev/), [Netlify](https://www.netlify.com/), [Decap CMS](https://decapcms.org/), [Fractal](https://fractal.build/), [Storybook](https://storybook.js.org/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GreenSock](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [IndieKit](https://getindiekit.com/) and [Utopia](https://utopia.fyi/).
 
