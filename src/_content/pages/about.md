@@ -36,7 +36,7 @@ bodyClass: "about"
 date: 2024-04-11T11:21:27.631Z
 ---
 
-<img src="/.netlify/images?url=/assets/images/pages/about/broo_profile_about.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
+<img src="/assets/images/pages/about/broo_profile_about.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
 
 Before ever touching a computer at the end of the 90's, my life revolved around *‘teasing’* cows &mdash; *(on our dairy farm)*. Off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, training as a chef, and aspiring to be a pilot.
 
@@ -114,7 +114,7 @@ I write now and then &ndash; and have [written a few posts](/writing), [jotted d
 
 {% from "components/core/images/images.njk" import imageFigure %}
 {{ imageFigure(
-  "/.netlify/images?url=/assets/images/pages/about/giants_castle_2022.webp",
+  "/assets/images/pages/about/giants_castle_2022.webp",
   "My mum looking at a beautiful view of the Giants Castle mountain from the Giants Castle Camp's main dining room balcony",
   "2000",
   "1125",
