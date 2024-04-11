@@ -8,8 +8,6 @@ lead:
 
 bodyClass: "now"
 
-tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
-
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
 updated: 2024-04-11T11:21:27.631Z
