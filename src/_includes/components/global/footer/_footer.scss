@@ -62,14 +62,6 @@
           box-shadow: none;
         }
       }
-
-      // Only the 4th list item from the end
-      &:nth-last-child(4) {
-        @include min-width($breakpoint-small) {
-          margin-left: 3em;
-        }
-      }
-
     }
 
     a {
