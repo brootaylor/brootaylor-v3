@@ -43,12 +43,12 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      gap: 1em;
     }
 
     li {
       line-height: 0;
       padding: 0.5em 0 0.5em 0;
-      margin-inline-end: 1rem;
 
       // Only the last 4 list items in this list
       &:nth-last-child(-n+4) {
@@ -70,28 +70,6 @@
         }
       }
 
-      // Only the 3rd list item from the end
-      &:nth-last-child(3) {
-        @include max-width(358px) {
-          margin-block-start: 1rem;
-        }
-      }
-
-      // Only the 2nd list item from the end
-      &:nth-last-child(2) {
-        @include max-width(461px) {
-          margin-block-start: 1rem;
-        }
-      }
-
-      // Only the last list item
-      &:last-child {
-        margin-inline-end: 0;
-
-          @include max-width(554px) {
-            margin-block-start: 1rem;
-          }
-      }
     }
 
     a {
