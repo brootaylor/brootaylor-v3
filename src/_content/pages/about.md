@@ -114,7 +114,7 @@ I write now and then &ndash; and have [written a few posts](/writing), [jotted d
 
 {% from "components/core/images/images.njk" import imageFigure %}
 {{ imageFigure(
-  "/assets/images/pages/about/giants_castle_2022.webp",
+  "/.netlify/images?url=/assets/images/pages/about/giants_castle_2022.webp",
   "My mum looking at a beautiful view of the Giants Castle mountain from the Giants Castle Camp's main dining room balcony",
   "2000",
   "1125",
