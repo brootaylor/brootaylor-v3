@@ -12,7 +12,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2024-04-08T13:10:37.952Z
+updated: 2024-04-11T11:21:27.631Z
 
 location:
   locality: Crawley
@@ -43,7 +43,7 @@ I usually have a few books & articles on the go and switch to whichever suits my
 
 ## Listening
 
-Usually a mix of music, audiobooks, and podcasts.
+A mix of music, audiobooks, and podcasts.
 
 * **Songs from the Shelf** &mdash; *Nik Kershaw*
 * **Carving Canyons** &mdash; *Lissie*
@@ -54,7 +54,7 @@ Usually a mix of music, audiobooks, and podcasts.
 
 ## Watching
 
-Either TV shows or movies. *And/or* videos I find partcularlyinteresting.
+Either TV shows or movies. *And/or* videos I find particularly interesting.
 
 * [Ecology as Theology: Decline as Grace](https://youtu.be/SQYrkhAuJH0) &mdash; *Michael Dowd (Video)*
 * [Westworld](https://www.imdb.com/title/tt0475784/) &mdash; *TV Series*
@@ -64,7 +64,6 @@ Either TV shows or movies. *And/or* videos I find partcularlyinteresting.
 ## Learning
 
 * Brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)*' &mdash; like how to tie a bunch of [useful knots](https://youtu.be/kA48yzKYp3Q) and [fire building techniques](https://youtu.be/7v4twfXG2uY) - in [all weather conditions](https://youtu.be/QiYlEyvDbco) as well.
-* Getting up to speed with [PHP in 2024](https://stitcher.io/blog/php-in-2024).
 
 ---
 

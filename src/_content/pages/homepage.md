@@ -7,6 +7,7 @@ summary: "Bruce is a Frontend Web Developer & UI Engineer based in Crawley, West
 # Populates the opening / `lead` text on a page
 lead:
   - I specialise in helping individuals and businesses craft <strong>performant</strong>, <strong>user-friendly</strong>, <strong>responsive</strong>, <strong>accessible</strong>, and <strong>resilient websites</strong>.
+  - You can read about what I’m up to <a href="/now">now</a>, or explore the <a href="/projects">projects</a> I've worked on recently.
 
 # Page-specific metadata content added to the `<head>`
 head: "
@@ -23,12 +24,20 @@ head: "
       }
     }
 
+    .lead {
+      p {
+        text-wrap: pretty;
+      }
+    }
+
     .call-out {
       max-width: 80ch;
     }
 
-    .homepage blockquote {
-      margin-top: 2em;
+    .homepage {
+      blockquote {
+        margin-top: 2em;
+      }
     }
   </style>
 "
@@ -46,7 +55,7 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2024-03-28T11:33:27.631Z
+date: 2024-04-11T11:21:27.631Z
 
 priority: 1
 ---

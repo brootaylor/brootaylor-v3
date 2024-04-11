@@ -1,32 +1,44 @@
 module.exports = {
   mainnav: [
     {
-      label: 'Projects',
-      url: '/projects',
+      label: 'About',
+      url: '/about',
+      position: 2,
+    },
+    {
+      label: 'Now',
+      url: '/now',
+      position: 3,
     },
     {
       label: 'Bookmarks',
       url: '/bookmarks',
+      position: 4,
     },
     {
       label: 'Writing',
       url: '/writing',
+      position: 5,
     },
     {
       label: 'Notes',
       url: '/notes',
+      position: 6,
     },
     {
       label: 'Photos',
       url: '/photos',
+      position: 7,
     },
     {
-      label: 'About',
-      url: '/about',
+      label: 'Projects',
+      url: '/projects',
+      position: 8,
     },
     {
       label: 'Contact',
       url: '/contact',
+      position: 9,
     },
   ],
   footernav: [

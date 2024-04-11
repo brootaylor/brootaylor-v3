@@ -244,6 +244,7 @@ article {
   p {
     // Fallback for older browsers
     font-size: convert-to-rem(24px);
+    font-weight: 200;
     text-wrap: balance;
 
     // Browsers supporting `clamp()`
@@ -258,6 +259,10 @@ article {
       background-color: var(--grey-light);
       margin: 2.5em 0 !important;
     }
+  }
+
+  strong {
+    font-weight: 600;
   }
 }
 

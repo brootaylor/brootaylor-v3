@@ -33,7 +33,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-04-08T10:56:27.631Z
+date: 2024-04-11T11:21:27.631Z
 ---
 
 <img src="/assets/images/pages/about/broo_profile_about.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
@@ -90,8 +90,8 @@ Some of the skills I've picked up over the 20 years I've been building websites:
     <li>Web Accessibility</li>
     <li>Cross Browser Compatibility</li>
     <li>Data Source / <abbr title="Application Programming Interface.">API</abbr> Configuration</li>
-    <li><abbr title="Content Management System.">CMS</abbr> Configuration and Integration <small><em>(WordPress, Decap CMS)</em></small></li>
-    <li>JavaScript Bundlers & Deployment Tooling <small><em>(Vite, Rollup.js, Webpack, Netlify, Azure DevOps)</em></small></li>
+    <li><abbr title="Content Management System.">CMS</abbr> Configuration and Integration <small><em>(WordPress, Drupal, Decap CMS)</em></small></li>
+    <li>JavaScript Bundlers & Deployment Tooling <small><em>(Vite, Rollup.js, Webpack, Netlify, Docker, Azure DevOps)</em></small></li>
     <li>Back-end & <em>"back-of-the-frontend"</em> <small><em>(PHP, Node.js)</em></small></li>
     <li>Version Control <small><em>(GitHub, GitLab, Bitbucket)</em></small></li>
     <li>Continuous Integration <em>(CI)</em> & Continuous Deployment <em>(CD)</em></li>
