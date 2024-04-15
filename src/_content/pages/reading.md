@@ -12,7 +12,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 dateShow: true # Show the date in the header for this page
 date: 2022-10-22T13:17:27.631Z
-updated: 2024-04-04T12:53:37.952Z
+updated: 2024-04-15T12:31:37.952Z
 
 location:
   locality: Crawley
@@ -39,6 +39,7 @@ Books on the go at the moment.
 
 ## Next reads&hellip; *maybe*
 
+* [Resisting AI: An Anti-fascist Approach to Artificial Intelligence](https://bristoluniversitypress.co.uk/resisting-ai) &mdash; *Dan McQuillan*
 * [Veiled Intentions: The Dragon's Blade](https://www.michaelrmiller.co.uk/veiledintentions) &mdash; *(book 2 of 3)*, *Michael R. Miller*
 * [The Last Guardian: The Dragon's Blade](https://www.michaelrmiller.co.uk/thelastguardian) &mdash; *(book 3 of 3)*, *Michael R. Miller*
 * [The Huntress: A Dragon's Blade Story](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
