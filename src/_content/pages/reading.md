@@ -12,7 +12,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 dateShow: true # Show the date in the header for this page
 date: 2022-10-22T13:17:27.631Z
-updated: 2024-04-15T12:31:37.952Z
+updated: 2024-04-18T13:02:27.631Z
 
 location:
   locality: Crawley
@@ -31,7 +31,8 @@ Books on the go at the moment.
 
 *I always try to include a dose of fantasy in my current read list. Mostly to help 'balance' and process the other reads I've got on the go.* 😬 {.call-out}
 
-* [The Reborn King: The Dragon's Blade](https://www.michaelrmiller.co.uk/therebornking) &mdash; *(book 1 of 3)*, *Michael R. Miller*
+* [Veiled Intentions: The Dragon's Blade](https://www.michaelrmiller.co.uk/veiledintentions) &mdash; *(book 2 of 3)*, *Michael R. Miller*
+* [How to Live](https://sive.rs/h) &mdash; *Derek Sivers*
 * [Breaking Together &mdash; a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/), *Jem Bendell*
 * [Overshoot: The Ecological Basis of Revolutionary Change](https://www.goodreads.com/en/book/show/319810.Overshoot), *William R. Catton*
 
@@ -40,7 +41,6 @@ Books on the go at the moment.
 ## Next reads&hellip; *maybe*
 
 * [Resisting AI: An Anti-fascist Approach to Artificial Intelligence](https://bristoluniversitypress.co.uk/resisting-ai) &mdash; *Dan McQuillan*
-* [Veiled Intentions: The Dragon's Blade](https://www.michaelrmiller.co.uk/veiledintentions) &mdash; *(book 2 of 3)*, *Michael R. Miller*
 * [The Last Guardian: The Dragon's Blade](https://www.michaelrmiller.co.uk/thelastguardian) &mdash; *(book 3 of 3)*, *Michael R. Miller*
 * [The Huntress: A Dragon's Blade Story](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
 * [A Time of Dragons](https://www.philipcquaintrell.com/atimeofdragons) &mdash; *(book 2 of&hellip; when it's released)*, *Philip C. Quaintrell*
@@ -51,6 +51,7 @@ Books on the go at the moment.
 * [The Sun Eater Series](https://www.goodreads.com/series/231285-the-sun-eater) &mdash; *(5 primary books)*, *Christopher Ruocchio*
 * [The Terran Cycle](https://www.philipcquaintrell.com/books) &mdash; *(4 books)*, *Philip C. Quaintrell*
 * [Green Lights](https://greenlights.com/), *Matthew McConaughey*
+* [Useful Not True](https://sive.rs/u) &mdash; *Derek Sivers*
 
 ---
 
@@ -60,6 +61,7 @@ Selection of books I've read. But more importantly, enjoyed and would therefore 
 
 *I'll be adding to this section as and when I remember any books I've read &mdash; cause it certainly is a little lean at the moment.* {.call-out}
 
+* [The Reborn King: The Dragon's Blade](https://www.michaelrmiller.co.uk/therebornking) &mdash; *(book 1 of 3)*, *Michael R. Miller*
 * [Last Stand of the Stone Fist](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
 * [Ascendant, Songs of Chaos](https://www.michaelrmiller.co.uk/ascendent) &mdash; *(book 1 of...)*, *Michael R. Miller*
 * [Unbound, Songs of Chaos](https://www.michaelrmiller.co.uk/unbound) &mdash; *(book 2 of...)*, *Michael R. Miller*

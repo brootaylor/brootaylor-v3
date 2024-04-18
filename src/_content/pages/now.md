@@ -10,7 +10,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2024-04-11T11:21:27.631Z
+updated: 2024-04-18T13:02:27.631Z
 
 location:
   locality: Crawley
@@ -21,7 +21,7 @@ eleventyExcludeFromCollections: false
 
 ## Work
 
-Right now, I'm working as a **Frontend Engineer** for [Admiral Group Plc](https://www.admiralgroup.co.uk/).
+Right now, I'm working as a ***'Fullstack'* Frontend Engineer** for [Admiral Group Plc](https://www.admiralgroup.co.uk/).
 
 Aside from that, I'm tinkering around on a bunch of personal code projects using technologies like [Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [Svelte](https://svelte.dev/), [Vite](https://vitejs.dev/), [Netlify](https://www.netlify.com/), [Decap CMS](https://decapcms.org/), [Fractal](https://fractal.build/), [Storybook](https://storybook.js.org/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GreenSock](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [IndieKit](https://getindiekit.com/) and [Utopia](https://utopia.fyi/).
 
@@ -31,8 +31,10 @@ Aside from that, I'm tinkering around on a bunch of personal code projects using
 
 I usually have a few books & articles on the go and switch to whichever suits my fancy at the time.
 
+*I always try to include a dose of fantasy in my current [read list](/reading). Mostly to help 'balance' and process the other reads I've got on the go.* 😬 {.call-out}
+
 * [The Reborn King: The Dragon's Blade](https://www.michaelrmiller.co.uk/therebornking) &mdash; *(book 1 of 3)*, *Michael R. Miller*
-* [Capitalism Is Dead – Long Live Capital](https://crookedtimber.org/2024/03/25/capitalism-is-dead-long-live-capital/) &mdash; *Miriam Ronzoni, "Crooked Timber"*
+* [How to Live](https://sive.rs/h) &mdash; *Derek Sivers*
 * [Breaking Together &mdash; a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/) &mdash; *Jem Bendell*
 * [Keeping your job at the end of the world (as we know it)](https://jembendell.com/2024/04/03/keeping-your-job-at-the-end-of-the-world-as-we-know-it/) &mdash; *Jem Bendell*
 * [What an Owl Taught Me About Life](https://time.com/6320590/owls-nature-carl-safina/) &mdash; *Carl Safina*
@@ -74,5 +76,5 @@ Hopefully now that Spring's *just* about here, I'll get my camera out and enjoy 
 ---
 
 <footer>
-  <em>(This page exists because I came across <a href="https://nownownow.com/">someone who had a 'now' page</a>. I liked the idea so much that I decided to create my own.)</em>
+  <em>(This page exists because I came across <a href="https://nownownow.com/">someone who had a 'now' page</a> inspired by <a href="https://sivers.org/now">Derek Sivers</a>. I liked the idea so much that I decided to create my own.)</em>
 </footer>
