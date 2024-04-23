@@ -12,7 +12,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 dateShow: true # Show the date in the header for this page
 date: 2022-10-22T13:17:27.631Z
-updated: 2024-04-18T13:02:27.631Z
+updated: 2024-04-24T00:30:27.631Z
 
 location:
   locality: Crawley
@@ -41,6 +41,7 @@ Books on the go at the moment.
 ## Next reads&hellip; *maybe*
 
 * [Resisting AI: An Anti-fascist Approach to Artificial Intelligence](https://bristoluniversitypress.co.uk/resisting-ai) &mdash; *Dan McQuillan*
+* [COPOUT: How governments have failed the people on climate](https://genn.cc/copout-nick-breeze/) &mdash; *Nick Breeze*
 * [The Last Guardian: The Dragon's Blade](https://www.michaelrmiller.co.uk/thelastguardian) &mdash; *(book 3 of 3)*, *Michael R. Miller*
 * [The Huntress: A Dragon's Blade Story](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
 * [A Time of Dragons](https://www.philipcquaintrell.com/atimeofdragons) &mdash; *(book 2 of&hellip; when it's released)*, *Philip C. Quaintrell*
