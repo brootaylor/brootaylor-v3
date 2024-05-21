@@ -3,7 +3,7 @@ title: 'The "Climate Crisis": What to Make of It?'
 summary: In these times of being constantly overwhelmed by the deluge of information, I'm finding it trickier than ever to discern the true motivations and intentions behind what is presented as fact, with one such topic being the "climate crisis."
 lead: In these times of being constantly overwhelmed by the deluge of information, I'm finding it trickier than ever to discern the true motivations and intentions behind what is presented as fact, with one such topic being the "<strong>climate crisis</strong>."
 date: 2023-05-31T12:28:37.952Z
-updated: 2024-04-09T18:29:37.952Z
+updated: 2024-05-21T23:43:37.952Z
 location:
   locality: Crawley
   country_name: UK
@@ -55,6 +55,7 @@ I certainly don't claim to have any of the answers &mdash; but I've learnt a lot
 * [Ecology as Theology: Decline as Grace](https://youtu.be/SQYrkhAuJH0) &mdash; *Michael Dowd*
 * [The Earth Is Telling Us We Must Rethink Our Growth Society](https://thetyee.ca/Analysis/2020/04/06/The-Earth-Is-Telling-Us-We-Must-Rethink-Our-Growth-Society/) &mdash; *William E. Rees*
 * [Scholars' Oath to the Future](http://iflas.blogspot.com/2022/11/scholars-oath-to-future.html) &mdash; *University of Cumbria*
+* [Comments on Global Warming Acceleration, Sulfur Emissions, Observations](https://www.columbia.edu/~jeh1/mailings/2024/MayEmail.2024.05.16.pdf) &mdash; *James Hansen*
 * [Is it time for climatologists to apologise to activists? An open letter from international scholars](https://iflas.blogspot.com/2023/10/apologize.html) &mdash; *University of Cumbria*
 * [Al Bartlett discusses population growth, climate change, energy, and consumption](https://youtu.be/F8ZJCtL6bPs) &mdash; *Al Bartlett video interview*
 * [The Oil Crash Is Coming Sooner Than We Think](https://www.planetcritical.com/p/the-oil-crash-is-coming-sooner-than) &mdash; *Rachel Donald, "Planet Critical"*
