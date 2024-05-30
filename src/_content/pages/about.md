@@ -33,7 +33,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-04-11T11:21:27.631Z
+date: 2024-05-29T23:44:27.631Z
 ---
 
 <img src="/assets/images/pages/about/broo_profile_about.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
@@ -42,7 +42,7 @@ Before ever touching a computer at the end of the 90's, my life revolved around 
 
 *Maaan*, that all feels like a lifetime ago...
 
-More specifically, here's [what I'm up to now](/now).
+If you're really really really *really* interested, here's [a bit more about me](/about/me).
 
 ---
 
@@ -54,7 +54,7 @@ I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/fr
 
 I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented, kind and supportive people, and much of the success I've enjoyed during <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
 
-I wouldn't call myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" per se, regardless of what some of my previous roles may imply. I know how to do full-stack development, not because I necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I had to <sup>2</sup></a></span>.
+I wouldn't call myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" per se, regardless of what some of my previous roles may indicate. I know how to do full-stack development, not because I necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I had to <sup>2</sup></a></span>.
 
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
 {%- call blockquote('Heydon Pickering', 'https://medium.com/@Heydon/reluctant-gatekeeping-the-problem-with-full-stack-e9ad836570f6', 'Reluctant Gatekeeping: The Problem With Full Stack') -%}
@@ -99,30 +99,6 @@ Some of the skills I've picked up over the 20 years I've been building websites:
   <h3 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h3>
   <p><small><em>(Need to see a copy of my CV for some reason? You're welcome to <a href="/BruceTaylorCV">download a copy</a>.)</em></small></p>
 </div>
-
----
-
-## Hobbies & other interests
-
-I enjoy [taking photos](/photos), [reading](/reading) and am a [fairly decent drummer](/photos/2022-03-29/photo_202203292358). But, I ended up having to [sell my drumkit](/photos/2022-04-06/photo_202204062304) recently for various reasons. I miss playing *big* time and hope I'll get a chance to play again in the future... 🤞
-
-Fly fishing for trout is something I grew up doing and continue to do. I head to the beautiful [Lakedown Trout Fishery](https://www.lakedowntroutfishery.com/){rel=external} now and then. A gorgeous and tranquil spot away from all the noise.
-
-I absolutely adore aircraft and hope that one day I'll be able to either get my PPL or GPL.
-
-I write now and then &ndash; and have [written a few posts](/writing), [jotted down some notes](/notes), and [bookmarked links to articles](/bookmarks) I've enjoyed and found interesting. Hopefully some of them resonate with you.
-
-{% from "components/core/images/images.njk" import imageFigure %}
-{{ imageFigure(
-  "/assets/images/pages/about/giants_castle_2022.webp",
-  "My mum looking at a beautiful view of the Giants Castle mountain from the Giants Castle Camp's main dining room balcony",
-  "2000",
-  "1125",
-  'My mum looking towards Giants Castle. <abbr title="Kwazulu Natal.">KZN</abbr>, South Africa. Near to where I grew up',
-  false,
-  "shadow",
-  "lazy")
-}}
 
 ---
 
