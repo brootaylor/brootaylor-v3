@@ -20,7 +20,7 @@ location:
   locality: Crawley
   country_name: UK
 
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 ---
 
 ## The years so far
