@@ -33,7 +33,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-05-29T23:44:27.631Z
+date: 2024-05-30T21:38:27.631Z
 ---
 
 <img src="/assets/images/pages/about/broo_profile_about.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
@@ -42,7 +42,7 @@ Before ever touching a computer at the end of the 90's, my life revolved around 
 
 *Maaan*, that all feels like a lifetime ago...
 
-If you're really really really *really* interested, here's [a bit more about me](/about/me).
+If you're *really* interested, here's [a bit more about me](/about/me).
 
 ---
 

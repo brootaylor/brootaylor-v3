@@ -4,7 +4,7 @@ title: "Me"
 summary: "Bruce is originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. I now live in West Sussex, England with my family and build websites for a living."
 # Populates the opening / `lead` text on a page
 lead:
-  - This page is purely about me. I guess it's a mini autobiography of sorts that I'll add to whenever I think of something.
+  - This page is kinda like a mini autobiography (<em>of sorts</em>) that I plan to add to whenever I think of something.
 
 bodyClass: "me"
 
@@ -12,13 +12,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-dateShow: true # Show the date in the header for this page
-date: 2024-05-29T23:44:27.631Z
-# updated: 2024-05-08T17:53:27.631Z
-
-location:
-  locality: Crawley
-  country_name: UK
+date: 2024-05-30T21:38:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
