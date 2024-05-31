@@ -59,6 +59,7 @@ I certainly don't claim to have any of the answers &mdash; but I've learnt a lot
 * [Is it time for climatologists to apologise to activists? An open letter from international scholars](https://iflas.blogspot.com/2023/10/apologize.html) &mdash; *University of Cumbria*
 * [Al Bartlett discusses population growth, climate change, energy, and consumption](https://youtu.be/F8ZJCtL6bPs) &mdash; *Al Bartlett video interview*
 * [The Oil Crash Is Coming Sooner Than We Think](https://www.planetcritical.com/p/the-oil-crash-is-coming-sooner-than) &mdash; *Rachel Donald, "Planet Critical"*
+* [Telling the Truth About Our Future](https://www.artberman.com/blog/telling-the-truth-about-our-future/) &mdash; *Art Berman*
 * [Abrupt Climate Change from Arctic to Antarctic: Facts, Opinions, and Analysis](https://paulbeckwith.net/) &mdash; *Paul Beckwith*
 * [Faster than Forecast: the story ice tells about abrupt climate change](https://www.sila.cool/book-faster-than-forecast/) — *Jason Box*
 * [What’s going on with the Greenland ice sheet? It’s losing ice faster than forecast and now irreversibly committed to at least 10 inches of sea level rise](https://theconversation.com/whats-going-on-with-the-greenland-ice-sheet-its-losing-ice-faster-than-forecast-and-now-irreversibly-committed-to-at-least-10-inches-of-sea-level-rise-185590) &mdash; *Alun Hubbard*
