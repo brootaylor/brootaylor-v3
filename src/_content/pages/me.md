@@ -32,7 +32,7 @@ eleventyExcludeFromCollections: false
   <li><strong>1995:</strong> Got married. Moved to the UK to help start a church. First year of marriage flat-shared in East Sheen, London.</li>
   <li><strong>1996:</strong> My wife and I moved to Chiswick, London.</li>
   <li><strong>1997:</strong> Bought our first property in Kew Gardens, London.</li>
-  <li><strong>1999:</strong> Worked for <a href="https://en.wikipedia.org/wiki/Boo.com">Boo.com </a>during Dotcom boom.</li>
+  <li><strong>1999:</strong> Worked for <a href="https://en.wikipedia.org/wiki/Boo.com">Boo.com</a> as a content manager during the dotcom boom.</li>
   <li><strong>2000:</strong> <a href="https://archive.nytimes.com/www.nytimes.com/library/tech/00/12/biztech/technology/13sork.html">Dotcom crash</a>. Made redundant from Boo.com. Travelled Europe with my wife.</li>
   <li><strong>2001:</strong> Started teaching myself web design and development.</li>
   <li><strong>2002:</strong> First child was born.</li>
@@ -52,11 +52,11 @@ eleventyExcludeFromCollections: false
 
 ## Hobbies & other interests
 
-I enjoy [taking photos](/photos), [reading](/reading) and am a [fairly decent drummer](/photos/2022-03-29/photo_202203292358). But, I ended up having to [sell my drumkit](/photos/2022-04-06/photo_202204062304) recently for various reasons. I miss playing *big* time and hope I'll get a chance to play again in the future... 🤞
+I enjoy [taking photos](/photos), [reading](/reading) and am a [fairly decent drummer](/photos/2016-11-22/photo_201611222058). But, I ended up having to [sell my drumkit](/photos/2022-04-06/photo_202204062304) recently for various reasons. I miss playing *big* time and hope I'll get a chance to play again in the future... 🤞
 
 Fly fishing for trout is something I grew up doing and continue to do. I head to the beautiful [Lakedown Trout Fishery](https://www.lakedowntroutfishery.com/){rel=external} now and then. A gorgeous and tranquil spot away from all the noise.
 
-I absolutely adore aircraft and hope that one day I'll be able to either get my PPL or GPL.
+I absolutely [adore aircraft](/photos/2022-03-30/photo_202203301354) and hope that one day I'll be able to either get my PPL or GPL.
 
 I write now and then &ndash; and have [written a few posts](/writing), [jotted down some notes](/notes), and [bookmarked links to articles](/bookmarks) I've enjoyed and found interesting. Hopefully some of them resonate with you.
 
