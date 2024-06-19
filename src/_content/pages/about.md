@@ -33,7 +33,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-05-30T21:38:27.631Z
+date: 2024-06-20T00:51:27.631Z
 ---
 
 <img src="/assets/images/pages/about/broo_profile_about.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
@@ -48,7 +48,7 @@ If you're *really* interested, here's [a bit more about me](/about/me).
 
 ## What I do
 
-I morph between being called a **Frontend Web Developer** / **Frontend Engineer** / **UI Engineer** / **Design Engineer** these days. But I do *miss* calling myself a **Web Designer & Developer** as that still makes sense to me.
+I morph between being called a **Frontend Web Developer** / **Frontend Engineer** / **UI Engineer** / **Design Engineer** these days. But I do miss calling myself a *Web Designer & Developer* as that still makes sense to me.
 
 I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}" &mdash; the somewhat broad and *fuzzy* intersection between design and back-end engineering. From time to time, you'll also find me tinkering around in the “*back-of-the-front-end*”. {.call-out}
 
@@ -90,7 +90,7 @@ Some of the skills I've picked up over the 20 years I've been building websites:
     <li>Web Accessibility</li>
     <li>Cross Browser Compatibility</li>
     <li>Data Source / <abbr title="Application Programming Interface.">API</abbr> Configuration</li>
-    <li><abbr title="Content Management System.">CMS</abbr> Configuration and Integration <small><em>(WordPress, Drupal, Decap CMS)</em></small></li>
+    <li><abbr title="Content Management System.">CMS</abbr> Configuration and Integration <small><em>(WordPress, Decap CMS)</em></small></li>
     <li>JavaScript Bundlers & Deployment Tooling <small><em>(Vite, Rollup.js, Webpack, Netlify, Docker, Azure DevOps)</em></small></li>
     <li>Back-end & <em>"back-of-the-frontend"</em> <small><em>(PHP, Node.js)</em></small></li>
     <li>Version Control <small><em>(GitHub, GitLab, Bitbucket)</em></small></li>
