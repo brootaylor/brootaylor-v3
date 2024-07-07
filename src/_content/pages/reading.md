@@ -12,7 +12,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 dateShow: true # Show the date in the header for this page
 date: 2022-10-22T13:17:27.631Z
-updated: 2024-04-24T00:30:27.631Z
+updated: 2024-07-07T21:48:27.631Z
 
 location:
   locality: Crawley
@@ -44,7 +44,7 @@ Books on the go at the moment.
 * [COPOUT: How governments have failed the people on climate](https://genn.cc/copout-nick-breeze/) &mdash; *Nick Breeze*
 * [The Last Guardian: The Dragon's Blade](https://www.michaelrmiller.co.uk/thelastguardian) &mdash; *(book 3 of 3)*, *Michael R. Miller*
 * [The Huntress: A Dragon's Blade Story](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
-* [A Time of Dragons](https://www.philipcquaintrell.com/atimeofdragons) &mdash; *(book 2 of&hellip; when it's released)*, *Philip C. Quaintrell*
+* [In The Shadow of Kings: A Time of Dragons](https://www.philipcquaintrell.com/intheshadowofkings) &mdash; *(book 2 of...)*, *Philip C. Quaintrell*
 * [The Mountain in the Sea](https://www.goodreads.com/en/book/show/59808603), *Ray Nayler*
 * [The Bound and the Broken Series](https://www.goodreads.com/series/309359-the-bound-and-the-broken) &mdash; *(5 books)*, *Ryan Cahill*
 * [Do I Stay Christian?](https://read.macmillan.com/lp/do-i-stay-christian/), *Brian McLaren*
@@ -67,7 +67,7 @@ Selection of books I've read. But more importantly, enjoyed and would therefore 
 * [Ascendant, Songs of Chaos](https://www.michaelrmiller.co.uk/ascendent) &mdash; *(book 1 of...)*, *Michael R. Miller*
 * [Unbound, Songs of Chaos](https://www.michaelrmiller.co.uk/unbound) &mdash; *(book 2 of...)*, *Michael R. Miller*
 * [Defiant, Songs of Chaos](https://www.michaelrmiller.co.uk/defiant) &mdash; *(book 3 of...)*, *Michael R. Miller*
-* [A Time of Dragons](https://www.philipcquaintrell.com/atimeofdragons) &mdash; *(book 1 of...)*, *Philip C. Quaintrell*
+* [Once There Were Hereos: A Time of Dragons](https://www.philipcquaintrell.com/oncetherewereheroes) &mdash; *(book 1 of...)*, *Philip C. Quaintrell*
 * [The Ranger Archives](https://www.philipcquaintrell.com/the-ranger-archives) &mdash; *(3 books)*, *Philip C. Quaintrell*
 * [Opening Men's Eyes](https://www.goodreads.com/book/show/10105541-opening-men-s-eyes), *Michael Cardo*
 * [The Echoes Saga](https://www.philipcquaintrell.com/theechoessaga) &mdash; *(9 books)*, *Philip C. Quaintrell*
