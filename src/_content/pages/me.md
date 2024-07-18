@@ -13,7 +13,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-date: 2024-06-27T23:41:27.631Z
+date: 2024-07-18T18:23:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -48,12 +48,12 @@ eleventyExcludeFromCollections: false
   <li><strong>2021:</strong> Second child finished school.</li>
   <li><strong>2022:</strong> Turned 50.</li>
   <li><strong>2023:</strong> Sold my drumkit to <a href="https://x.com/gangof4official/status/1746823767135789527">Hugo Burnham</a>, drummer for the <a href="https://www.facebook.com/gangoffour">Gang Of Four</a> band.</li>
-  <li><strong>2024:</strong> Trying to figure out where to go with this <em>'career thing'</em>&hellip;</li>
+  <li><strong>2024:</strong> Trying to figure out where to go with this <em>'career thing'</em>&hellip; and <a href="/now#reflecting">what to make of the world</a>.</li>
 </ol>
 
 ---
 
-## Hobbies & other interests
+## Other stuff about me
 
 I enjoy [taking photos](/photos), [reading](/reading) and am a [fairly decent drummer](/photos/2016-11-22/photo_201611222058). But, I ended up having to [sell my drumkit](/photos/2022-04-06/photo_202204062304) recently for various reasons. I miss playing *big* time and hope I'll get a chance to play again in the future... 🤞
 
@@ -64,6 +64,8 @@ Fly fishing for trout is something I grew up doing and continue to do. I head to
 I absolutely [adore aircraft](/photos/2022-03-30/photo_202203301354) and hope that one day I'll be able to either get my PPL or GPL.
 
 I write now and then &ndash; and have [written a few posts](/writing), [jotted down some notes](/notes), and [bookmarked links to articles](/bookmarks) I've enjoyed and found interesting. Hopefully some of them resonate with you.
+
+The picture below is my favourite place in the whole world.
 
 {% from "components/core/images/images.njk" import imageFigure %}
 {{ imageFigure(

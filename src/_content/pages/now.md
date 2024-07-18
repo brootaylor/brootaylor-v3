@@ -1,16 +1,16 @@
 ---
 title: "What I'm doing now"
 # Populates the `meta description` for a page
-summary: "Work stuff, what I'm reading, watching, learning, and some hobbies I'm enjoying at the moment."
+summary: "Work stuff, what I'm reading, watching, learning, and reflecting on."
 # Populates the opening / `lead` text on a page
 lead:
-  - Work stuff, what I'm reading, watching, learning, and some hobbies I'm enjoying &mdash; or at least trying to get back into.
+  - Work stuff, what I'm reading, watching, learning, and reflecting on.
 
 bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2024-06-27T23:41:27.631Z
+updated: 2024-07-18T18:23:27.631Z
 
 location:
   locality: Crawley
@@ -23,17 +23,15 @@ eleventyExcludeFromCollections: false
 
 Right now, I'm working on a contract basis as a **Frontend Engineer** for [Admiral Group Plc](https://www.admiralgroup.co.uk/).
 
+*This role is wrapping up soon, so I'll be available from the start of September. If there's something you think I may be able to help you with, [please reach out](/contact). I'd love to chat and see if we might be a good fit.* {.call-out}
+
 ---
 
 ## Reading
 
-I usually have a few books & articles on the go and switch to whichever suits my fancy at the time.
-
-*I always try to include a dose of fantasy in my current [reading list](/reading). Mostly to help 'balance' and process the other reads I've got on the go.* 😬 {.call-out}
+I usually have a few books on the go and switch to whichever suits my fancy at the time. Right now I'm reading&hellip;
 
 * [Veiled Intentions: The Dragon's Blade](https://www.michaelrmiller.co.uk/veiledintentions) &mdash; *(book 2 of 3)*, *Michael R. Miller*
-* [How to Live](https://sive.rs/h) &mdash; *Derek Sivers*
-* [Breaking Together &mdash; a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/) &mdash; *Jem Bendell*
 
 ---
 
@@ -50,11 +48,13 @@ I usually have a few books & articles on the go and switch to whichever suits my
 
 ---
 
-## Hobbies
+## Reflecting
 
-This is most definitely something I need to work on. I've always had hobbies like [drumming](/photos/2016-11-22/photo_201611222058) and [photography](/photos) but, for some reason, since the Covid *'blip'* I've got myself in a bit of a hole that I'm struggling to get out of.
+I think a lot about the effects of "[Overshoot](https://howtosavetheworld.ca/2021/09/21/overshoot-where-we-stand-now-guest-post-by-michael-dowd/)" &mdash; (one of these being "*climate* change") &mdash; and am trying my best to process what I've been researching for the past few years. I most certainly am in the midst of a 'dance' with grief, anger, guilt, confusion, fear, numbness, acceptance, and fleeting moments of&hellip; peace.
 
-Hopefully now that warmer weather is *just* about here, I'll get my camera out and enjoy the outdoors a bit more. 🙂
+[I wrote a post](/writing/2023-05-31/the-climate-crisis-what-to-make-of-it) just over a year ago to at least begin recording my thoughts &mdash; as well as the sources I've been referencing.
+
+
 
 ---
 
