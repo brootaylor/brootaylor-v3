@@ -11,18 +11,18 @@ module.exports = {
       position: 3,
     },
     {
+      label: 'Notes',
+      url: '/notes',
+      position: 4,
+    },
+    {
       label: 'Bookmarks',
       url: '/bookmarks',
-      position: 4,
+      position: 5,
     },
     {
       label: 'Writing',
       url: '/writing',
-      position: 5,
-    },
-    {
-      label: 'Notes',
-      url: '/notes',
       position: 6,
     },
     {
