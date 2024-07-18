@@ -10,11 +10,11 @@
 }
 
 .video--inner {
+  position: relative;
 	@include responsive-ratio(16,9,true); // 16:9
-	position: relative;
 
-		& > iframe,
-		& > video {
+		> iframe,
+		> video {
 				position: absolute;
 				top: 0;
 				left: 0;
