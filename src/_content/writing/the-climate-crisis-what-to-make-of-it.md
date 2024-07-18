@@ -3,7 +3,7 @@ title: 'The "Climate Crisis": What to Make of It?'
 summary: In these times of being constantly overwhelmed by the deluge of information, I'm finding it trickier than ever to discern the true motivations and intentions behind what is presented as fact, with one such topic being the "climate crisis."
 lead: In these times of being constantly overwhelmed by the deluge of information, I'm finding it trickier than ever to discern the true motivations and intentions behind what is presented as fact, with one such topic being the "<strong>climate crisis</strong>."
 date: 2023-05-31T12:28:37.952Z
-updated: 2024-05-31T19:03:37.952Z
+updated: 2024-07-18T15:22:37.952Z
 location:
   locality: Crawley
   country_name: UK
@@ -72,3 +72,4 @@ I certainly don't claim to have any of the answers &mdash; but I've learnt a lot
 * [The Coming Sunsetting of the Climate Issue](https://braveneweurope.com/wolfgang-knorr-the-coming-sunsetting-of-the-climate-issue) — *Wolfgang Knorr ("Brave New Europe")*
 * [An Inconvenient Apocalypse: Environmental Collapse, Climate Crisis, and the Fate of Humanity](https://robertwjensen.org/books/an-inconvenient-apocalypse/) &mdash; *Wes Jackson & Robert Jensen*
 * [Breaking Together — a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/) &mdash; *Jem Bendell*
+* [The Wide Boundary Impacts of AI](https://youtu.be/1NFuddEAi5s) &mdash; *Nate Hagens & Daniel Schmachtenberger*
