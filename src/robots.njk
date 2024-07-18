@@ -22,6 +22,7 @@ Disallow: /
 {%- if site.aiCrawl == false -%}
 # Dark Visitors AI agent list
 # https://darkvisitors.com
+{#- Loops through global `_data` file called `bots.json` #}
 {% for bot in bots %}
 User-agent: {{ bot }}
 Disallow: /
