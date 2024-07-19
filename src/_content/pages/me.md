@@ -4,8 +4,8 @@ title: "Me"
 summary: "Bruce is originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. I now live in West Sussex, England with my family and build websites for a living."
 # Populates the opening / `lead` text on a page
 lead:
-  - This page is kinda like a mini autobiography (<em>of sorts</em>).
-  - My plan is to keep it up to date, and to add to it whenever I think of something that's interesting to me or that I'd like to share.
+  - This page is <em>kinda</em> like a mini autobiography.
+  - I'm planning to keep it up to date and to add to it whenever I think of something that's possibly a worthwhile marker.
 
 bodyClass: "me"
 
@@ -13,7 +13,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-date: 2024-07-18T18:23:27.631Z
+date: 2024-07-19T13:55:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -74,7 +74,7 @@ The picture below is my favourite place in the whole world.
   "My mum looking at a beautiful view of the Giants Castle mountain from the Giants Castle Camp's main dining room balcony",
   "2000",
   "1125",
-  'My mum looking towards Giants Castle. <abbr title="Kwazulu Natal.">KZN</abbr>, South Africa. Near to where I grew up',
+  'My mum looking towards <a href="https://youtu.be/bGQbM3QfA5w" rel="external">Giants Castle</a>. <abbr title="Kwazulu Natal.">KZN</abbr>, South Africa. Near to where I grew up',
   false,
   "shadow",
   "lazy")
