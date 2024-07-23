@@ -31,7 +31,7 @@ module.exports = {
   analyticsUrchin: '', // Analytics urchin uses this value
   scriptsVendor: false, // If using vendor (ie. 3rd party) scripts
   scriptsMain: true, // If using any `main` scripts on the site (eg. carousel, objectfit polyfill etc.)
-  scriptsServiceworker: true, // If using a service worker
+  scriptsServiceworker: false, // If using a service worker
   dateTimeNow: DateTime.local().toFormat('dd LLLL yyyy @ t'),
   timeCurrent: DateTime.local().diff(DateTime.local(1982, 5, 25)).milliseconds,
   siteMessage: false, // A message 'bar' appears on the pages
