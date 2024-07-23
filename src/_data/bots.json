@@ -20,9 +20,11 @@
     "GPTBot",
     "ImagesiftBot",
     "magpie-crawler",
+    "Meta-ExternalAgent",
     "omgili",
     "Omgilibot",
     "peer39_crawler",
     "PerplexityBot",
+    "Timpibot",
     "YouBot"
 ]
