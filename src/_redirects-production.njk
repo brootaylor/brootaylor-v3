@@ -27,6 +27,6 @@ eleventyExcludeFromCollections: true
 # Send them to a `403` forbidden page
 {#- Loops through global `_data` file called `bots.json` #}
 {% for bot in bots %}
-User-Agent={{ bot }}		/error/403		403!
+/*  /error/403  403 User-Agent={{ bot }}
 {% endfor %}
 {%- endif -%}
