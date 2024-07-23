@@ -129,3 +129,10 @@
 # ========================================================================
 # NOTE: Using `_redirects-production.njk` file - (compiles to `_redirects`) - to handle page level redirects cause doesn't seem to work properly in this .toml config file for some reason.
 # ========================================================================
+
+[[redirects]]
+  from = "/*"
+  to = "/error/403"
+  status = 403
+  force = true
+  condition = { User-Agent = "ChatGPT" }
