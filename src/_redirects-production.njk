@@ -20,3 +20,13 @@ eleventyExcludeFromCollections: true
 # Files eg. CV
 /BruceTaylorCV																/assets/docs/cv/BruceTaylorCV.pdf								200!
 /BruceTaylorCV.pdf														/assets/docs/cv/BruceTaylorCV.pdf								200!
+
+{% if site.aiCrawl == false -%}
+# Dark Visitors AI agent list
+# https://darkvisitors.com
+# Send them to a `403` forbidden page
+{#- Loops through global `_data` file called `bots.json` #}
+{% for bot in bots %}
+User-Agent={{ bot }}		/error/403		403!
+{% endfor %}
+{%- endif -%}
