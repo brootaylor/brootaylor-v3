@@ -264,6 +264,21 @@
       "name": "Sara Joy",
       "url": "https://sarajoy.dev/",
       "description": "Sara's a techy, creative person with a front end development 'Schwerpunkt' <em>(her words)</em>."
+    },
+    {
+      "name": "Ed Zitron",
+      "url": "https://www.wheresyoured.at/",
+      "description": "Ed writes about stuff that interests him &mdash; issues in society, primarily those surrounding tech, but occasionally moves into other areas and more personal pieces depending on his mood."
+    },
+    {
+      "name": "Molly White",
+      "url": "https://www.mollywhite.net/",
+      "description": "Molly is a crypto researcher & critic, software engineer, and wikipedian."
+    },
+    {
+      "name": "Richard Rutter",
+      "url": "https://clagnut.com/",
+      "description": "Richard is a designer, author and speaker living by the sea in Brighton, UK. He's also the co-founder of Clearleft, a digital design consultancy."
     }
   ]
 }
