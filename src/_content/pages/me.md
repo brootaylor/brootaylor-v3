@@ -54,9 +54,13 @@ eleventyExcludeFromCollections: false
 
 ---
 
+Before ever touching a computer at the end of the 90's, my life revolved around *‘teasing’* cows &mdash; *(on our dairy farm)*. Off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, training as a chef, and aspiring to be a pilot. {.call-out}
+
+---
+
 ## Other stuff about me
 
-I enjoy [taking photos](/photos), [reading](/reading) and am a [fairly decent drummer](/photos/2016-11-22/photo_201611222058). But, I ended up having to [sell my drumkit](/photos/2022-04-06/photo_202204062304) recently for various reasons. I miss playing *big* time and hope I'll get a chance to play again in the future... 🤞
+I enjoy [taking photos](/photos), [reading](/reading) and am a [fairly decent drummer](/photos/2016-11-22/photo_201611222058). But, I ended up having to [sell my drumkit](/photos/2022-04-06/photo_202204062304) recently for various reasons. I miss playing  and hope I'll get a chance to play again in the future... 🤞
 
 I love cooking from scratch and am especially good at a bunch of one-pan dishes. I like the flow of cooking this way &mdash; and it keeps things less complicated. If there's an open fire involved that's even better! One of my favourites at the moment is a [sausage &amp; squash chilli](https://www.jamieoliver.com/recipes/sausage-recipes/sausage-squash-chilli/).
 

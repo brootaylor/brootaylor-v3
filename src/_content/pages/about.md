@@ -6,6 +6,7 @@ summary: "Bruce is originally from South Africa and grew up on a dairy farm in a
 lead:
   - I'm originally from South Africa and grew up on a dairy farm in a very <a href="https://youtu.be/bGQbM3QfA5w" rel="external">beautiful part of the country</a>.
   - I now live in West Sussex, England with <a href="/photos/2022-03-30/photo_202203300012">my family</a> and <a href="/projects">build websites</a> for a living.
+  - Here's <a href="/about/me">a bit more about me</a>.
 
 # Page-specific metadata content added to the `<head>`
 head: "
@@ -33,16 +34,10 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-07-19T09:35:27.631Z
+date: 2024-08-05T23:56:27.631Z
 ---
 
 <img src="/assets/images/pages/about/broo_profile_about_bw.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
-
-Before ever touching a computer at the end of the 90's, my life revolved around *‘teasing’* cows &mdash; *(on our dairy farm)*. Off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, training as a chef, and aspiring to be a pilot.
-
-Here's [a bit more about me](/about/me).
-
----
 
 ## What I do
 
