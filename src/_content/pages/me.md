@@ -4,8 +4,8 @@ title: "Me"
 summary: "Bruce is originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. I now live in West Sussex, England with my family and build websites for a living."
 # Populates the opening / `lead` text on a page
 lead:
-  - This page is <em>kinda</em> like a mini autobiography.
-  - I'm planning to keep it up to date and to add to it whenever I think of something that's possibly a worthwhile marker.
+  - This page is <em>kinda</em> like a mini autobiography. Somewhere to put down some markers while I try figure out where else to go with it.
+  - I plan to add to it whenever I think of something that's possibly a worthwhile reminder of my life so far.
 
 bodyClass: "me"
 
@@ -13,22 +13,22 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-date: 2024-07-19T13:55:27.631Z
+date: 2024-08-05T21:17:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
 
-## The years so far
+## The years so far&hellip;
 
 <ol class="no-list | flow">
-  <li><strong>1972:</strong> Born in Pietermaritzburg, South Africa. Named Anthony Rogers by my birth mother.</li>
-  <li><strong>1973:</strong> Adopted. Name changed to Bruce Wedgwood Taylor. Raised on a dairy farm in Mooi River, South Africa &mdash; near to the beautiful <a href="https://youtu.be/bGQbM3QfA5w">Drakensberg</a>.</li>
+  <li><strong>1972:</strong> Born in Pietermaritzburg, South Africa. Named Anthony Rogers by my birth mother &mdash; (Fay Kathleen Rogers).</li>
+  <li><strong>1973:</strong> Adopted by Mathew Wedgwood Taylor and Ann Treleaven Taylor. Name changed to Bruce Wedgwood Taylor. Raised on a dairy farm in Mooi River, South Africa &mdash; near to the beautiful <a href="https://youtu.be/bGQbM3QfA5w">Drakensberg</a>.</li>
   <li><strong>1980:</strong> My adoptive parents told me I was adopted.</li>
   <li><strong>1983:</strong> Went to boarding school at <a href="https://kingsschool.co.za/">Kings School</a>, Nottingham Road, South Africa.</li>
-  <li><strong>1986:</strong> Started high school, Estcourt, South Africa.</li>
+  <li><strong>1986:</strong> Started high (senior) school, Estcourt, South Africa.</li>
   <li><strong>1990:</strong> Won light weight division body building competition in Northern Natal, South Africa.</li>
-  <li><strong>1991:</strong> Finished high school.</li>
-  <li><strong>1992:</strong> Enrolled at Durban Technikon to study Catering Management. Part time studied as a personal trainer. Started playing drums and bought first drumkit (Pearl Maple) that belonged to Mark Temperato. Made friends for life and met my wife-to-be. Turned 20.</li>
+  <li><strong>1991:</strong> Finished high (senior) school.</li>
+  <li><strong>1992:</strong> Enrolled at Durban Technikon to study Catering Management. Part time studied as a personal trainer. Started playing drums and bought first drumkit (Pearl Maple) that had originally belonged to Mark Temperato. Made friends for life and met my wife-to-be. Turned 20.</li>
   <li><strong>1993:</strong> Beginning of a 20 year stint of playing drums for various evangelical church bands.</li>
   <li><strong>1994:</strong> Graduated from Durban Technikon (South Africa) as a Catering Manager & Chef. Completed work placement at (then) top restaurant, "The Colony", in Durban.</li>
   <li><strong>1995:</strong> Got married. Moved to the UK to help start a church. First year of marriage flat-shared in East Sheen, London.</li>
@@ -42,7 +42,7 @@ eleventyExcludeFromCollections: false
   <li><strong>2004:</strong> Sold first property and moved to Horley, West Sussex. Second child was born. Started working at <a href="https://en.wikipedia.org/wiki/Air_Miles#Air_Miles_United_Kingdom">Airmiles UK</a> as a web designer & developer.</li>
   <li><strong>2008:</strong> Third child was born.</li>
   <li><strong>2012:</strong> My father passed away. Turned 40.</li>
-  <li><strong>2015:</strong> Finished working at Airmiles. Started freelancing / contracting as a frontend web developer.</li>
+  <li><strong>2015:</strong> Finished working at Airmiles. Left the church structure I and my wife had given over 20 years of our lives to. Started search for my biological mother. Started freelancing / contracting as a frontend web developer.</li>
   <li><strong>2018:</strong> Sold second property and moved to Crawley, West Sussex.</li>
   <li><strong>2019:</strong> Rough year. First child finished school.</li>
   <li><strong>2020:</strong> <em>You know what happened...</em></li>
