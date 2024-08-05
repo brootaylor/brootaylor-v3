@@ -4,8 +4,8 @@ title: "Me"
 summary: "Bruce is originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. I now live in West Sussex, England with my family and build websites for a living."
 # Populates the opening / `lead` text on a page
 lead:
-  - This page is <em>kinda</em> like a mini autobiography. Somewhere to put down some markers while I try figure out where else to go with it.
-  - I plan to add to it whenever I think of something that's possibly a worthwhile reminder of my life so far.
+  - This page is <em>kinda</em> like a mini autobiography &mdash; a starter for ten. Somewhere to put down some markers while I try figure out where else to go with it.
+  - I plan to add bits and bobs whenever I think of something that's possibly a worthwhile reminder of my life so far.
 
 bodyClass: "me"
 
@@ -13,7 +13,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-date: 2024-08-05T21:17:27.631Z
+date: 2024-08-05T23:56:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -21,9 +21,9 @@ eleventyExcludeFromCollections: false
 ## The years so far&hellip;
 
 <ol class="no-list | flow">
-  <li><strong>1972:</strong> Born in Pietermaritzburg, South Africa. Named Anthony Rogers by my birth mother &mdash; (Fay Kathleen Rogers).</li>
+  <li><strong>1972:</strong> Born in Pietermaritzburg, South Africa. Named Anthony Rogers by my <span id="fnref:mother-bio" rel="doc-noteref"><a href="#fn:mother-bio" rel="footnote">biological mother <sup>1</sup></a></span>.</li>
   <li><strong>1973:</strong> Adopted by Mathew Wedgwood Taylor and Ann Treleaven Taylor. Name changed to Bruce Wedgwood Taylor. Raised on a dairy farm in Mooi River, South Africa &mdash; near to the beautiful <a href="https://youtu.be/bGQbM3QfA5w">Drakensberg</a>.</li>
-  <li><strong>1980:</strong> My adoptive parents told me I was adopted.</li>
+  <li><strong>1980:</strong> My <span id="fnref:adopted" rel="doc-noteref"><a href="#fn:adopted" rel="footnote">adoptive parents <sup>2</sup></a></span> told me I was adopted.</li>
   <li><strong>1983:</strong> Went to boarding school at <a href="https://kingsschool.co.za/">Kings School</a>, Nottingham Road, South Africa.</li>
   <li><strong>1986:</strong> Started high (senior) school, Estcourt, South Africa.</li>
   <li><strong>1990:</strong> Won light weight division body building competition in Northern Natal, South Africa.</li>
@@ -42,10 +42,10 @@ eleventyExcludeFromCollections: false
   <li><strong>2004:</strong> Sold first property and moved to Horley, West Sussex. Second child was born. Started working at <a href="https://en.wikipedia.org/wiki/Air_Miles#Air_Miles_United_Kingdom">Airmiles UK</a> as a web designer & developer.</li>
   <li><strong>2008:</strong> Third child was born.</li>
   <li><strong>2012:</strong> My father passed away. Turned 40.</li>
-  <li><strong>2015:</strong> Finished working at Airmiles. Left the church structure I and my wife had given over 20 years of our lives to. Started search for my biological mother. Started freelancing / contracting as a frontend web developer.</li>
+  <li><strong>2015:</strong> Finished working at Airmiles. Left the church structure I and my wife had given over 20 years of our lives to. <span id="fnref:mother-search" rel="doc-noteref"><a href="#fn:mother-search" rel="footnote">Started search for my biological mother <sup>3</sup></a></span>. Started freelancing / contracting as a frontend web developer.</li>
   <li><strong>2018:</strong> Sold second property and moved to Crawley, West Sussex.</li>
   <li><strong>2019:</strong> Rough year. First child finished school.</li>
-  <li><strong>2020:</strong> <em>You know what happened...</em></li>
+  <li><strong>2020:</strong> <em>You know what happened&hellip;</em></li>
   <li><strong>2021:</strong> Second child finished school.</li>
   <li><strong>2022:</strong> Turned 50.</li>
   <li><strong>2023:</strong> Sold my drumkit to <a href="https://x.com/gangof4official/status/1746823767135789527">Hugo Burnham</a>, drummer for the <a href="https://www.facebook.com/gangoffour">Gang Of Four</a> band.</li>
@@ -79,6 +79,22 @@ The picture below is my favourite place in the whole world.
   "shadow",
   "lazy")
 }}
+
+---
+
+<div role="doc-endnotes">
+  <ol>
+    <li id="fn:mother-bio" role="doc-endnote">
+      <small>My birth mother's name was/is Fay Kathleen Rogers. Her birthday is 23 November 1947. She grew up in Port Shepstone, Kwazulu Natal, South Africa. <a href="#fnref:mother-bio" role="doc-backlink">↩</a></small>
+    </li>
+    <li id="fn:adopted" role="doc-endnote">
+      <small>My adoptive parents (Mathew and Ann) are wonderful, salt of the earth people. I truly am blessed to have had them as my mum and dad. My dad passed away in November 2012 and I miss him immensely. <a href="#fnref:adopted" role="doc-backlink">↩</a></small>
+    </li>
+    <li id="fn:mother-search" role="doc-endnote">
+      <small>I've never been able to find my biological mother. <a href="#fnref:mother-search" role="doc-backlink">↩</a></small>
+    </li>
+  </ol>
+</div>
 
 *[PPL]: Private Pilots Licence.
 *[GPL]: Glider Pilot Licence.
