@@ -48,13 +48,13 @@ I'm quite good at picking up new skills and programming languages, as well as pr
 
 I wouldn't call myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" per se, regardless of what some of my previous roles may indicate. I know how to do full-stack development, not because I necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've had to <sup>2</sup></a></span>.
 
-Here's a longer read on [who I am personally](/about/me).
+Here's a bit of a longer read on [who I am personally](/about/me).
 
 ---
 
-## My skill set
+## My technical skill set
 
-Some of the skills I've picked up over the 20 years I've been building websites:
+Some of the technical skills I've picked up over the 20 years I've been building websites:
 
 <div class="full-bleed | flow">
   <ul>
