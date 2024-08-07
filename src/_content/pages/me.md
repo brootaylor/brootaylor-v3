@@ -13,7 +13,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-date: 2024-08-07T15:19:27.631Z
+date: 2024-08-07T17:44:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -23,7 +23,9 @@ eleventyExcludeFromCollections: false
 <ol class="no-list | flow">
   <li><strong>1972:</strong> Born in Pietermaritzburg, South Africa. Named Anthony Rogers by my <span id="fnref:mother-bio" rel="doc-noteref"><a href="#fn:mother-bio" rel="footnote">biological mother <sup>1</sup></a></span>.</li>
   <li><strong>1973:</strong> Adopted by Mathew Wedgwood Taylor and Ann Treleaven Taylor. Name changed to Bruce Wedgwood Taylor. Raised on a dairy farm in Mooi River, South Africa &mdash; near to the beautiful <a href="https://youtu.be/bGQbM3QfA5w">Drakensberg</a>.</li>
+  <li><strong>1975:</strong> Learnt to ride a horse. My father was a polo player.</li>
   <li><strong>1980:</strong> My <span id="fnref:adopted" rel="doc-noteref"><a href="#fn:adopted" rel="footnote">adoptive parents <sup>2</sup></a></span> first told me I was adopted.</li>
+  <li><strong>1982:</strong> Learnt to drive a pick-up truck and off-road bike on the farm. Stopped riding horses as preferred motorbikes. <em>(I also fell off horses way too much for my liking)</em>.</li>
   <li><strong>1983:</strong> Went to a fantastic boarding school at <a href="https://kingsschool.co.za/">Kings School</a>, Nottingham Road, South Africa.</li>
   <li><strong>1986:</strong> Started high (senior) school, Estcourt, South Africa.</li>
   <li><strong>1990:</strong> Won light weight division body building competition in Northern Natal, South Africa.</li>

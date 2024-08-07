@@ -33,12 +33,12 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-08-07T15:19:27.631Z
+date: 2024-08-07T17:44:27.631Z
 ---
 
 <img src="/assets/images/pages/about/broo_profile_about_bw.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
 
-## What I do
+## The work I do
 
 I morph between being called a **Frontend Web Developer** / **Frontend Engineer** / **UI Engineer** / **Design Engineer** these days. However, I do miss calling myself a *Web Designer & Developer*. Maybe I'm just showing how long I've worked in the world of the web, but that still makes sense to me.
 
@@ -46,9 +46,9 @@ I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/fr
 
 I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented, kind and supportive people, and much of the success I've enjoyed during <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
 
-I wouldn't call myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" per se, regardless of what some of my previous roles may indicate. I know how to do full-stack development, not because I necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've had to <sup>2</sup></a></span>.
+### Am I a full-stack developer?
 
-Here's a bit of a longer read on [who I am personally](/about/me).
+I wouldn't call myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" per se, regardless of what some of my previous roles may indicate. I do know how to do full-stack development, not because I necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've had to <sup>2</sup></a></span>.
 
 ---
 
@@ -79,6 +79,12 @@ Some of the technical skills I've picked up over the 20 years I've been building
   <h3 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h3>
   <p><small><em>(Need to see a copy of my CV for some reason? You're welcome to <a href="/BruceTaylorCV">download a copy</a>.)</em></small></p>
 </div>
+
+---
+
+## A little more about me
+
+If you're interested, here's a bit of a longer read on [who I am personally](/about/me).
 
 ---
 
