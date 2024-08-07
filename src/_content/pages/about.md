@@ -40,7 +40,7 @@ date: 2024-08-07T15:19:27.631Z
 
 ## What I do
 
-I morph between being called a **Frontend Web Developer** / **Frontend Engineer** / **UI Engineer** / **Design Engineer** these days. But I do miss calling myself a *Web Designer & Developer* as that still makes sense to me.
+I morph between being called a **Frontend Web Developer** / **Frontend Engineer** / **UI Engineer** / **Design Engineer** these days. However, I do miss calling myself a *Web Designer & Developer*. Maybe I'm just showing how long I've worked in the world of the web, but that still makes sense to me.
 
 I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}" &mdash; the somewhat broad and *fuzzy* intersection between design and back-end engineering. From time to time, you'll also find me tinkering around in the “*back-of-the-front-end*”.
 
