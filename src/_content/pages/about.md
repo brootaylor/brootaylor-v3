@@ -6,7 +6,6 @@ summary: "Bruce is originally from South Africa and grew up on a dairy farm in a
 lead:
   - I'm originally from South Africa and grew up on a dairy farm in a very <a href="https://youtu.be/bGQbM3QfA5w" rel="external">beautiful part of the country</a>.
   - I now live in West Sussex, England with <a href="/photos/2022-03-30/photo_202203300012">my family</a> and <a href="/projects">build websites</a> for a living.
-  - Here's <a href="/about/me">a bit more about me</a>.
 
 # Page-specific metadata content added to the `<head>`
 head: "
@@ -34,7 +33,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-08-05T23:56:27.631Z
+date: 2024-08-07T15:19:27.631Z
 ---
 
 <img src="/assets/images/pages/about/broo_profile_about_bw.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
@@ -43,26 +42,13 @@ date: 2024-08-05T23:56:27.631Z
 
 I morph between being called a **Frontend Web Developer** / **Frontend Engineer** / **UI Engineer** / **Design Engineer** these days. But I do miss calling myself a *Web Designer & Developer* as that still makes sense to me.
 
-I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}" &mdash; the somewhat broad and *fuzzy* intersection between design and back-end engineering. From time to time, you'll also find me tinkering around in the “*back-of-the-front-end*”. {.call-out}
+I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}" &mdash; the somewhat broad and *fuzzy* intersection between design and back-end engineering. From time to time, you'll also find me tinkering around in the “*back-of-the-front-end*”.
 
 I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented, kind and supportive people, and much of the success I've enjoyed during <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
 
-I wouldn't call myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" per se, regardless of what some of my previous roles may indicate. I know how to do full-stack development, not because I necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I had to <sup>2</sup></a></span>.
+I wouldn't call myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" per se, regardless of what some of my previous roles may indicate. I know how to do full-stack development, not because I necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've had to <sup>2</sup></a></span>.
 
-{% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
-{%- call blockquote('Heydon Pickering', 'https://medium.com/@Heydon/reluctant-gatekeeping-the-problem-with-full-stack-e9ad836570f6', 'Reluctant Gatekeeping: The Problem With Full Stack') -%}
-  HTML, CSS, JavaScript, Python, C#, and SQL may all be code, but they’re really quite different kinds of code and are suited to different kinds of people.
-
-  [...] I recently worked with an organization where there were dozens of Full Stack Developers and no Frontend Developers. We had a website to build and nobody understood Flexbox, except me. Of course I was happy to help, but I had to learn React on the job to put the work in place. Fortunately I picked it up quite quickly, but the next CSS expert may not have done. The value you want from a CSS expert is their CSS, not their JavaScript, so it’s absurd to make JavaScript a requirement.
-{%- endcall %}
-
----
-
-## My preferred approach
-
-I thrive in roles that ***strike a balance between user and developer experiences***, empowering teams to write great code that aligns with their needs and preferences while ensuring a positive user experience.
-
-I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/){rel=external}, [usable](https://trentwalton.com/2014/03/10/device-agnostic/){rel=external} and as future-friendly as possible. For this reason I *prefer* a vanilla approach and tend to be fairly tech-agnostic. Choosing the *right* tool for the job seems to be a better approach than using a framework for the sake of it.
+Here's a longer read on [who I am personally](/about/me).
 
 ---
 
@@ -70,7 +56,7 @@ I try my best to build web solutions that are [resilient](https://resilientwebde
 
 Some of the skills I've picked up over the 20 years I've been building websites:
 
-<div class="call-out | full-bleed | flow">
+<div class="full-bleed | flow">
   <ul>
     <li>HTML, CSS, SCSS, LESS, JavaScript <small><em>(ES5 & ES6+)</em></small></li>
     <li>Static Site Generators <em>(SSGs)</em> & Web frameworks <small><em>(11ty, Jekyll, Astro, Svelte, Vue)</em></small></li>
@@ -88,6 +74,7 @@ Some of the skills I've picked up over the 20 years I've been building websites:
     <li>Back-end & <em>"back-of-the-frontend"</em> <small><em>(PHP, Twig, Node.js)</em></small></li>
     <li>Version Control <small><em>(GitHub, GitLab, Bitbucket)</em></small></li>
     <li>Continuous Integration <em>(CI)</em> & Continuous Deployment <em>(CD)</em></li>
+    <li>Analytics <small><em>(Google Analytics, Google Tag Manager)</em></small></li>
   </ul>
   <h3 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h3>
   <p><small><em>(Need to see a copy of my CV for some reason? You're welcome to <a href="/BruceTaylorCV">download a copy</a>.)</em></small></p>
@@ -120,8 +107,6 @@ It's probably worth mentioning that [I don't use any tracking technologies](/pri
 
 ---
 
-<small><em>The last production build was on: {{ site.dateTimeNow }} GMT</em></small>
-
 <div role="doc-endnotes">
   <ol>
     <li id="fn:career" role="doc-endnote">
@@ -132,6 +117,8 @@ It's probably worth mentioning that [I don't use any tracking technologies](/pri
     </li>
   </ol>
 </div>
+
+<small><em>The last production build was on: {{ site.dateTimeNow }} GMT</em></small>
 
 *[PWAs]: Progressive Web Apps.
 *[SSGs]: Static Site Generators.

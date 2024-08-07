@@ -13,7 +13,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-date: 2024-08-05T23:56:27.631Z
+date: 2024-08-07T15:19:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -23,13 +23,13 @@ eleventyExcludeFromCollections: false
 <ol class="no-list | flow">
   <li><strong>1972:</strong> Born in Pietermaritzburg, South Africa. Named Anthony Rogers by my <span id="fnref:mother-bio" rel="doc-noteref"><a href="#fn:mother-bio" rel="footnote">biological mother <sup>1</sup></a></span>.</li>
   <li><strong>1973:</strong> Adopted by Mathew Wedgwood Taylor and Ann Treleaven Taylor. Name changed to Bruce Wedgwood Taylor. Raised on a dairy farm in Mooi River, South Africa &mdash; near to the beautiful <a href="https://youtu.be/bGQbM3QfA5w">Drakensberg</a>.</li>
-  <li><strong>1980:</strong> My <span id="fnref:adopted" rel="doc-noteref"><a href="#fn:adopted" rel="footnote">adoptive parents <sup>2</sup></a></span> told me I was adopted.</li>
-  <li><strong>1983:</strong> Went to boarding school at <a href="https://kingsschool.co.za/">Kings School</a>, Nottingham Road, South Africa.</li>
+  <li><strong>1980:</strong> My <span id="fnref:adopted" rel="doc-noteref"><a href="#fn:adopted" rel="footnote">adoptive parents <sup>2</sup></a></span> first told me I was adopted.</li>
+  <li><strong>1983:</strong> Went to a fantastic boarding school at <a href="https://kingsschool.co.za/">Kings School</a>, Nottingham Road, South Africa.</li>
   <li><strong>1986:</strong> Started high (senior) school, Estcourt, South Africa.</li>
   <li><strong>1990:</strong> Won light weight division body building competition in Northern Natal, South Africa.</li>
   <li><strong>1991:</strong> Finished high (senior) school.</li>
   <li><strong>1992:</strong> Enrolled at Durban Technikon to study Catering Management. Part time studied as a personal trainer. Started playing drums and bought first drumkit (Pearl Maple) that had originally belonged to Mark Temperato. Made friends for life and met my wife-to-be. Turned 20.</li>
-  <li><strong>1993:</strong> Beginning of a 20 year stint of playing drums for various evangelical church bands.</li>
+  <li><strong>1993:</strong> Began playing drums.</li>
   <li><strong>1994:</strong> Graduated from Durban Technikon (South Africa) as a Catering Manager & Chef. Completed work placement at (then) top restaurant, "The Colony", in Durban.</li>
   <li><strong>1995:</strong> Got married. Moved to the UK to help start a church. First year of marriage flat-shared in East Sheen, London.</li>
   <li><strong>1996:</strong> My wife and I moved to Chiswick, London.</li>
@@ -99,6 +99,8 @@ The picture below is my favourite place in the whole world.
     </li>
   </ol>
 </div>
+
+<small><em>The last production build was on: {{ site.dateTimeNow }} GMT</em></small>
 
 *[PPL]: Private Pilots Licence.
 *[GPL]: Glider Pilot Licence.
