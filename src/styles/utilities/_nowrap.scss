@@ -1,0 +1,13 @@
+/// "Nowrap" utility class placeholder.
+///
+/// Use the `.nowrap` class on any text to prevent text wrapping
+
+%nowrap {
+  text-wrap: nowrap;
+}
+
+// Nowrap utility class
+// Using the `%nowrap` placeholder
+.nowrap {
+  @extend %nowrap;
+}
