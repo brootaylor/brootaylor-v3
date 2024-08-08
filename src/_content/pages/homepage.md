@@ -1,6 +1,6 @@
 ---
 layout: "layouts/homepage.njk"
-title: <strong>Hi,</strong> <a href="/about">I'm Bruce</a>. I'm a frontend web developer and ui engineer.
+title: <strong>Hi,</strong> <a href="/about">I'm Bruce</a> &mdash; a frontend web developer and ui engineer.
 # Populates the `meta description` for a page
 summary: "Bruce is a Frontend Web Developer & UI Engineer based in Crawley, West Sussex. Specialising in crafting performant, user-friendly, responsive, accessible, and resilient websites for individuals and businesses. Build from scratch or enhance your existing website for a lasting online presence."
 
@@ -50,7 +50,7 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2024-08-07T17:52:27.631Z
+date: 2024-08-08T09:19:27.631Z
 
 priority: 1
 ---
