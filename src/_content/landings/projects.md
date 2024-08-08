@@ -183,4 +183,4 @@ date: 2024-04-04T14:21:27.631Z
 
 <h2 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h2>
 
-Need to see a copy of my CV for some reason? You're welcome to [download a copy](/BruceTaylorCV). { .call-out }
+Need to see a copy of my CV for some reason? You're welcome to <span class="nowrap">[download a copy](/BruceTaylorCV)</span>. { .call-out }

@@ -15,18 +15,14 @@ head: "
         width: auto;
     }
 
-    .full-bleed {
-      max-width: 100vw;
+    .full-bleed ul {
+      columns: 2 300px;
+      column-gap: 2.5em;
+      max-width: inherit;
+    }
 
-      ul {
-        columns: 2 300px;
-        column-gap: 2.5em;
-        max-width: inherit;
-      }
-
-      p {
-        max-width: inherit;
-      }
+    .full-bleed p {
+      max-width: inherit;
     }
   </style>
 "
