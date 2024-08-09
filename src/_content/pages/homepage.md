@@ -1,8 +1,8 @@
 ---
 layout: "layouts/homepage.njk"
-title: <strong>Hi,</strong> <a href="/about">I'm Bruce</a> &mdash; <span class="sub-text"><span class="nowrap">a frontend</span> web developer and ui engineer based in Crawley, England.</span>
+title: <strong>Hi,</strong> <a href="/about">I'm Bruce</a> &mdash; <span class="sub-text"><span class="nowrap">a frontend</span> web developer and ui engineer based in Crawley, West Sussex, UK.</span>
 # Populates the `meta description` for a page
-summary: "Bruce is a Frontend Web Developer & UI Engineer based in Crawley, West Sussex. Specialising in crafting performant, user-friendly, responsive, accessible, and resilient websites for individuals and businesses. Build from scratch or enhance your existing website for a lasting online presence."
+summary: "Bruce is a Frontend Web Developer & UI Engineer based in Crawley, West Sussex, UK. Specialising in crafting performant, user-friendly, responsive, accessible, and resilient websites for individuals and businesses. Build from scratch or enhance your existing website for a lasting online presence."
 
 # Populates the opening / `lead` text on a page
 lead:
@@ -54,7 +54,7 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2024-08-08T09:19:27.631Z
+date: 2024-08-09T14:19:27.631Z
 
 priority: 1
 ---
