@@ -30,12 +30,11 @@ eleventyExcludeFromCollections: false
   <li><strong>1986:</strong> Started high (senior) school, Estcourt, South Africa.</li>
   <li><strong>1990:</strong> Won light weight division body building competition in Northern Natal, South Africa.</li>
   <li><strong>1991:</strong> Finished high (senior) school.</li>
-  <li><strong>1992:</strong> Enrolled at Durban Technikon to study Catering Management. Part time studied as a personal trainer. Started playing drums and bought first drumkit (Pearl Maple) that had originally belonged to Mark Temperato. Made friends for life and met my wife-to-be. Turned 20.</li>
-  <li><strong>1993:</strong> Began playing drums.</li>
+  <li><strong>1992:</strong> Enrolled at Durban Technikon to study Catering Management. Part time studied as a personal trainer. Started playing drums and bought first drumkit (Pearl Maple) that had originally belonged to Mark Temperato. Made some friends for life and met my wife-to-be. Turned 20.</li>
   <li><strong>1994:</strong> Graduated from Durban Technikon (South Africa) as a Catering Manager & Chef. Completed work placement at (then) top restaurant, "The Colony", in Durban.</li>
   <li><strong>1995:</strong> Got married. Moved to the UK to help start a church. First year of marriage flat-shared in East Sheen, London.</li>
   <li><strong>1996:</strong> My wife and I moved to Chiswick, London.</li>
-  <li><strong>1997:</strong> Bought our first property in Kew Gardens, London.</li>
+  <li><strong>1997:</strong> Bought our first property in Kew Gardens, London. Backpacking trip through Turkey.</li>
   <li><strong>1999:</strong> Worked for <a href="https://en.wikipedia.org/wiki/Boo.com">Boo.com</a> as a content manager during the dotcom boom.</li>
   <li><strong>2000:</strong> <a href="https://archive.nytimes.com/www.nytimes.com/library/tech/00/12/biztech/technology/13sork.html">Dotcom crash</a>. Made redundant from Boo.com. Travelled Europe with my wife.</li>
   <li><strong>2001:</strong> Started teaching myself web design and development.</li>
