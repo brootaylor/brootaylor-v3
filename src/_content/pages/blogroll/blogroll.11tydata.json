@@ -279,6 +279,21 @@
       "name": "Richard Rutter",
       "url": "https://clagnut.com/",
       "description": "Richard is a designer, author and speaker living by the sea in Brighton, UK. He's also the co-founder of Clearleft, a digital design consultancy."
+    },
+    {
+      "name": "Cassidy Williams",
+      "url": "https://cassidoo.co",
+      "description": "Cassidy is a startup advisor and investor, developer experience expert, open source-er, and meme-maker on the internet."
+    },
+    {
+      "name": "Email is good",
+      "url": "https://email-is-good.com",
+      "description": "A blog (by Chris Coyier) ostensibly about email productivity."
+    },
+    {
+      "name": "Una Kravets",
+      "url": "https://una.im",
+      "description": "Una leads the UI & Tooling Developer Relations Team at Google Chrome."
     }
   ]
 }
