@@ -44,7 +44,7 @@ I'm quite good at picking up new skills and programming languages, as well as pr
 
 ### Am I a full-stack developer?
 
-I wouldn't call myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" per se, regardless of what some of my previous roles may indicate. I do know how to do full-stack development, not because I've necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've had to <sup>2</sup></a></span>.
+I've resisted calling myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" &mdash; regardless of what some of my previous roles may indicate. I do know how to do full-stack development, not because I've necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've had to <sup>2</sup></a></span>.
 
 ---
 
