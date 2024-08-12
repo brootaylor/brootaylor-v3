@@ -1,7 +1,7 @@
 ---
 title: "About"
 # Populates the `meta description` for a page
-summary: "Bruce is originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. I now live in Crawley, England with my family and build websites for a living."
+summary: "Bruce is originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. He now lives in Crawley, England with his family and builds websites for a living."
 # Populates the opening / `lead` text on a page
 lead:
   - I'm originally from South Africa and grew up on a dairy farm in a very <a href="https://youtu.be/bGQbM3QfA5w" rel="external">beautiful part of the country</a>.
