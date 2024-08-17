@@ -3,7 +3,7 @@ const { DateTime } = require('luxon');
 module.exports = {
   name: 'Bruce Taylor',
   short_name: 'BWT',
-  metaTitle: 'Bruce Taylor • Frontend Web Developer & UI Engineer based in Crawley, West Sussex, UK',
+  metaTitle: 'Bruce Taylor • Frontend Web Developer & UI Engineer based in Crawley, England',
   metaDescription: 'Bruce Taylor',
   metaImage: '/assets/images/common/broo-social-square-600.jpg',
   metaImageAlt: 'Profile picture of Bruce Taylor',

@@ -1,11 +1,11 @@
 ---
 title: "About"
 # Populates the `meta description` for a page
-summary: "Bruce is originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. I now live in Crawley, West Sussex, UK with my family and build websites for a living."
+summary: "Bruce is originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. He now lives in Crawley, England with his family and builds websites for a living."
 # Populates the opening / `lead` text on a page
 lead:
   - I'm originally from South Africa and grew up on a dairy farm in a very <a href="https://youtu.be/bGQbM3QfA5w" rel="external">beautiful part of the country</a>.
-  - I now live in Crawley, West Sussex, UK with <a href="/photos/2022-03-30/photo_202203300012">my family</a> and <a href="/projects">build websites</a> for a living.
+  - I now live in Crawley, England with <a href="/photos/2022-03-30/photo_202203300012">my family</a> and <a href="/projects">build websites</a> for a living.
 
 # Page-specific metadata content added to the `<head>`
 head: "
@@ -36,7 +36,7 @@ date: 2024-08-09T14:19:27.631Z
 
 ## The work I do
 
-I morph between being called a **Frontend Web Developer** / **Frontend Engineer** / **UI Engineer** / **Design Engineer** these days. However, I do miss calling myself a *Web Designer & Developer*. Maybe I'm just showing how long I've worked in the world of the web, but that still makes sense to me.
+I morph between being called either a **Frontend Web Developer**, **Frontend Engineer**, **UI Engineer** or **Design Engineer** these days. Oh how I miss calling myself a *Web Designer & Developer*. Maybe I'm just showing how long I've worked in the world of the web, but that still makes sense to me.
 
 I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}" &mdash; the somewhat broad and *fuzzy* intersection between design and back-end engineering. From time to time, you'll also find me tinkering around in the “*back-of-the-front-end*”.
 
@@ -44,7 +44,7 @@ I'm quite good at picking up new skills and programming languages, as well as pr
 
 ### Am I a full-stack developer?
 
-I wouldn't call myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" per se, regardless of what some of my previous roles may indicate. I do know how to do full-stack development, not because I've necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've had to <sup>2</sup></a></span>.
+I've resisted calling myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" &mdash; regardless of what some of my previous roles may indicate. I do know how to do full-stack development, not because I've necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've had to <sup>2</sup></a></span>.
 
 ---
 
