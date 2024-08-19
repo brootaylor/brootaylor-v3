@@ -29,14 +29,14 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-08-09T14:19:27.631Z
+date: 2024-08-19T23:13:27.631Z
 ---
 
 <img src="/assets/images/pages/about/broo_profile_about_bw.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
 
 ## The work I do
 
-I morph between being called either a **Frontend Web Developer**, **Frontend Engineer**, **UI Engineer** or **Design Engineer** these days. Oh how I miss calling myself a *Web Designer & Developer*. Maybe I'm just showing how long I've worked in the world of the web, but that still makes sense to me.
+Nowadays I'm referred to as either a **Frontend Web Developer**, **Frontend Engineer**, **UI Engineer** or **Design Engineer**. Maybe I'm just showing how long I've worked in the world of the web, but I miss just being called  a *Web Designer & Developer*. That still makes sense to me.
 
 I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}" &mdash; the somewhat broad and *fuzzy* intersection between design and back-end engineering. From time to time, you'll also find me tinkering around in the “*back-of-the-front-end*”.
 
@@ -44,7 +44,7 @@ I'm quite good at picking up new skills and programming languages, as well as pr
 
 ### Am I a full-stack developer?
 
-I've resisted calling myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" &mdash; regardless of what some of my previous roles may indicate. I do know how to do full-stack development, not because I've necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've had to <sup>2</sup></a></span>.
+I've resisted calling myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" &mdash; regardless of what some of my roles may indicate. I do know how to do full-stack development, not because I've necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've had to <sup>2</sup></a></span>.
 
 ---
 
