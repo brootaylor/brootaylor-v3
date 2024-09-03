@@ -30,7 +30,7 @@ date: 2024-08-11T23:45:27.631Z
           <small><em>{{ blog.cleansedUrl }}</em></small>
         </header>
         {%- if blog.description %}
-          <div class="card__body">
+        <div class="card__body">
           <p>{{ blog.description | safe }}</p>
         </div>
         {%- endif %}
