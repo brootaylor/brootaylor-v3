@@ -77,11 +77,11 @@
     "normalize-url": "^6.1.0",
     "npm-run-all": "^4.1.5",
     "object-fit-images": "^3.2.4",
-    "postcss": "^8.4.41",
+    "postcss": "^8.4.44",
     "postcss-cli": "^11.0.0",
     "postcss-preset-env": "^10.0.2",
     "rimraf": "^6.0.1",
-    "rollup": "^4.21.1",
+    "rollup": "^4.21.2",
     "sass": "^1.77.8",
     "slugify": "^1.6.6"
   },
