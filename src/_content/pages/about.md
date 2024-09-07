@@ -44,7 +44,7 @@ I'm quite good at picking up new skills and programming languages, as well as pr
 
 ### Am I a full-stack developer?
 
-I've resisted calling myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" &mdash; regardless of what some of my roles may indicate. I do know how to do full-stack development, not because I've necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've had to <sup>2</sup></a></span>.
+I've resisted calling myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/){rel=external}" &mdash; regardless of what some of my roles and experience may indicate. I do know how to do full-stack development, not because I've necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've had to <sup>2</sup></a></span>.
 
 ---
 
@@ -52,7 +52,7 @@ I've resisted calling myself a "[full-stack developer](https://bradfrost.com/blo
 
 Some of the technical skills I've picked up over the 20 years I've been building websites:
 
-<div class="full-bleed | flow">
+<div class="full-bleed | call-out | flow">
   <ul>
     <li>HTML, CSS, SCSS, LESS, JavaScript <small><em>(ES5 & ES6+)</em></small></li>
     <li>Static Site Generators <em>(SSGs)</em> & Web frameworks <small><em>(11ty, Jekyll, Astro, Svelte, Vue)</em></small></li>
