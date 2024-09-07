@@ -85,4 +85,21 @@ a {
       font-weight: inherit;
     }
   }
+
+  // If a link has a `doc-noteref` attribute...
+  [rel*="doc-noteref"] & {
+    &:hover,
+    &:focus {
+      sup {
+        color: var(--white);
+        background-color: var(--grey-dark);
+      }
+    }
+
+    &:focus {
+      sup {
+        outline: 2px solid var(--black);
+      }
+    }
+  }
 }

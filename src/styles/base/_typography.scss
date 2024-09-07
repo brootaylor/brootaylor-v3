@@ -147,6 +147,25 @@ abbr {
   }
 }
 
+// Superscript
+sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+
+  // If a superscript has a parent element with a `doc-noteref` attribute...
+  [rel*="doc-noteref"] & {
+    background-color: var(--grey-mid);
+    padding: 0.125em 0.35em;
+    border-radius: 0.25em;
+    transition: background-color 0.2s ease-in-out,
+                color 0.2s ease-in-out,
+                border-color 0.2s ease-in-out;
+  }
+}
+
 // Code formatting
 // @TODO: Move this code into its own SCSS partail & component
 

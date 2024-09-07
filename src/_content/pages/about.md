@@ -29,16 +29,16 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-08-19T23:13:27.631Z
+date: 2024-09-07T20:30:27.631Z
 ---
 
 <img src="/assets/images/pages/about/broo_profile_about_bw.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
 
 ## The work I do
 
-Nowadays I'm referred to as either a **Frontend Web Developer**, **Frontend Engineer**, **UI Engineer** or **Design Engineer**. Maybe I'm just showing how long I've worked in the world of the web, but I miss just being called  a *Web Designer & Developer*. That still makes sense to me.
+I’m a front-end web developer, ui engineer/designer and generalist &mdash; *meaning I also do some back-end, visual design, and devops if needs be*.
 
-I specialise in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}" &mdash; the somewhat broad and *fuzzy* intersection between design and back-end engineering. From time to time, you'll also find me tinkering around in the “*back-of-the-front-end*”.
+All things impacting the user experience on the web matters to me. This is where I'm most comfortable and where I've ended up specialising. Which is why you'll mostly find me tinkering around in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel=external}" &mdash; the somewhat broad and *fuzzy* intersection between design and back-end engineering.
 
 I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented, kind and supportive people over the years, and much of the success I've enjoyed during <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
 
@@ -115,7 +115,7 @@ It's probably worth mentioning that [I don't use any tracking technologies](/pri
       <small>When I say "<em>my career</em>", it isn't something I planned or aimed at. Retrospectively, much of it has been <em>right-place-right-time</em> kinda stuff &mdash; and fortunate enough to have been around some talented, kind and supportive people. <a href="#fnref:career" role="doc-backlink">↩</a></small>
     </li>
     <li id="fn:fullstack" role="doc-endnote">
-      <small>I resonate with <a href="https://www.ellyloel.com/blog/front-end-development-s-identity-crisis/" rel="external">Elly Loel's sentiment on this</a>. <a href="#fnref:fullstack" role="doc-backlink">↩</a></small>
+      <small>I resonate with <a href="https://www.ellyloel.com/blog/front-end-development-s-identity-crisis/#:~:text=I%20know%20how%20to%20do%20full%2Dstack%20development%2C%20not%20because%20I%20wanted%20to%20but%20because%20I%20had%20to.%20My%20title%20was%20%E2%80%9Cdeveloper%E2%80%9D%2C%20as%20was%20everyone%20else%E2%80%99s.%20According%20to%20our%20titles%20there%20were%20no%20front%2Dend%20or%20back%2Dend%20developers.%20We%20had%20to%20do%20it%20all." rel="external">Elly Loel's sentiment on this</a>. <a href="#fnref:fullstack" role="doc-backlink">↩</a></small>
     </li>
   </ol>
 </div>
