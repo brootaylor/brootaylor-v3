@@ -13,7 +13,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-date: 2024-08-07T17:44:27.631Z
+date: 2024-09-07T21:43:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -29,7 +29,7 @@ eleventyExcludeFromCollections: false
   <li><strong>1983:</strong> Went to a fantastic boarding school at <a href="https://kingsschool.co.za/">Kings School</a>, Nottingham Road, South Africa.</li>
   <li><strong>1986:</strong> Started high (senior) school, Estcourt, South Africa.</li>
   <li><strong>1990:</strong> Won light weight division body building competition in Northern Natal, South Africa.</li>
-  <li><strong>1991:</strong> Finished high (senior) school.</li>
+  <li><strong>1991:</strong> Captained the hockey and squash 1st teams. Finished high (senior) school.</li>
   <li><strong>1992:</strong> Enrolled at Durban Technikon to study Catering Management. Part time studied as a personal trainer. Started playing drums and bought first drumkit (Pearl Maple) that had originally belonged to Mark Temperato. Made some friends for life and met my wife-to-be. Turned 20.</li>
   <li><strong>1994:</strong> Graduated from Durban Technikon (South Africa) as a Catering Manager & Chef. Completed work placement at (then) top restaurant, "The Colony", in Durban.</li>
   <li><strong>1995:</strong> Got married. Moved to the UK to help start a church. First year of marriage flat-shared in East Sheen, London.</li>

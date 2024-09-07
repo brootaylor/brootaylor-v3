@@ -10,7 +10,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2024-08-05T23:56:27.631Z
+updated: 2024-09-07T21:43:27.631Z
 
 location:
   locality: Crawley
@@ -35,7 +35,7 @@ I usually have a few books on the go and switch to whichever suits my fancy at t
 
 ## Watching
 
-* [The Tattooist of Auschwitz](https://www.imdb.com/title/tt9022422/) &mdash; *TV Series*
+* [The Lord of the Rings: The Rings of Power](https://www.imdb.com/title/tt7631058/) &mdash; *TV Series*
 
 ---
 
