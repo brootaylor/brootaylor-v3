@@ -157,12 +157,13 @@ sup {
 
   // If a superscript has a parent element with a `doc-noteref` attribute...
   [rel*="doc-noteref"] & {
+    color: inherit;
     background-color: var(--grey-mid);
     padding: 0.125em 0.35em;
     border-radius: 0.25em;
-    transition: background-color 0.2s ease-in-out,
-                color 0.2s ease-in-out,
-                border-color 0.2s ease-in-out;
+    transition: background-color 0.3s,
+                color 0.3s,
+                border-color 0.3s;
   }
 }
 

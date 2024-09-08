@@ -48,7 +48,7 @@ I usually have a few books on the go and switch to whichever suits my fancy at t
 
 ## Reflecting
 
-I think a lot about the effects of "[Overshoot](https://howtosavetheworld.ca/2021/09/21/overshoot-where-we-stand-now-guest-post-by-michael-dowd/)" &mdash; (one of these being "*climate* change") &mdash; and am trying my best to process what I've been researching for the past few years. I most certainly am in the midst of a 'dance' with grief, anger, guilt, confusion, fear, numbness, acceptance, and fleeting moments of&hellip; peace.
+I think a lot about some of the effects of "[Overshoot](https://howtosavetheworld.ca/2021/09/21/overshoot-where-we-stand-now-guest-post-by-michael-dowd/)" &mdash; (for example, "*climate change*" and "*societal breakdown/collapse*") &mdash; and am trying my best to process what I've been researching for the past few years. I most certainly am in the midst of a 'dance' with grief, anger, guilt, confusion, fear, numbness, acceptance, and fleeting moments of&hellip; peace.
 
 [I wrote a post](/writing/2023-05-31/the-climate-crisis-what-to-make-of-it) just over a year ago to at least begin recording my thoughts &mdash; as well as the sources I've been referencing.
 
@@ -57,5 +57,5 @@ I think a lot about the effects of "[Overshoot](https://howtosavetheworld.ca/202
 ---
 
 <footer>
-  <em>(This page exists because I came across <a href="https://nownownow.com/">someone who had a 'now' page</a> inspired by <a href="https://sivers.org/now">Derek Sivers</a>. I liked the idea so much that I decided to create my own.)</em>
+  <em>(This page exists because I came across someone who had a <a href="https://nownownow.com/about">'now' page</a> &mdash; inspired by <a href="https://sivers.org/now">Derek Sivers</a>. I liked the idea so much that I created my own.)</em>
 </footer>

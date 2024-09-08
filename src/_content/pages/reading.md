@@ -12,7 +12,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 dateShow: true # Show the date in the header for this page
 date: 2022-10-22T13:17:27.631Z
-updated: 2024-07-18T18:23:27.631Z
+updated: 2024-09-08T02:00:27.631Z
 
 location:
   locality: Crawley
@@ -32,7 +32,6 @@ Books on the go at the moment.
 *I always try to include a dose of fantasy in my current read list. Mostly to help 'balance' and process the other reads I've got on the go.* 😬 {.call-out}
 
 * [Veiled Intentions: The Dragon's Blade](https://www.michaelrmiller.co.uk/veiledintentions) &mdash; *(book 2 of 3)*, *Michael R. Miller*
-* [How to Live](https://sive.rs/h) &mdash; *Derek Sivers*
 * [Breaking Together &mdash; a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/), *Jem Bendell*
 * [Overshoot: The Ecological Basis of Revolutionary Change](https://www.goodreads.com/en/book/show/319810.Overshoot), *William R. Catton*
 
@@ -45,6 +44,7 @@ Books on the go at the moment.
 * [The Last Guardian: The Dragon's Blade](https://www.michaelrmiller.co.uk/thelastguardian) &mdash; *(book 3 of 3)*, *Michael R. Miller*
 * [The Huntress: A Dragon's Blade Story](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
 * [In The Shadow of Kings: A Time of Dragons](https://www.philipcquaintrell.com/intheshadowofkings) &mdash; *(book 2 of...)*, *Philip C. Quaintrell*
+* [Leviathan: An Asher & Avandriell Story](https://www.philipcquaintrell.com/leviathan) &mdash; *(Novella)*, *Philip C. Quaintrell*
 * Reckoning, Songs of Chaos &mdash; *(book 4 of...)*, *Michael R. Miller*
 * [The Mountain in the Sea](https://www.goodreads.com/en/book/show/59808603), *Ray Nayler*
 * [The Bound and the Broken Series](https://www.goodreads.com/series/309359-the-bound-and-the-broken) &mdash; *(5 books)*, *Ryan Cahill*
@@ -53,6 +53,7 @@ Books on the go at the moment.
 * [The Sun Eater Series](https://www.goodreads.com/series/231285-the-sun-eater) &mdash; *(5 primary books)*, *Christopher Ruocchio*
 * [The Terran Cycle](https://www.philipcquaintrell.com/books) &mdash; *(4 books)*, *Philip C. Quaintrell*
 * [Green Lights](https://greenlights.com/), *Matthew McConaughey*
+* [How to Live](https://sive.rs/h) &mdash; *Derek Sivers*
 * [Useful Not True](https://sive.rs/u) &mdash; *Derek Sivers*
 
 ---
