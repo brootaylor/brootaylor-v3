@@ -23,11 +23,20 @@ eleventyExcludeFromCollections: true
 		"sizes": "196x196",
 		"type": "image/png",
 		"purpose": "any maskable"
+	},
+	{
+		"src": "{{ site.icon_maskable_512 }}",
+		"sizes": "512x512",
+		"type": "image/png",
+		"purpose": "maskable"
 	}
 	],
 	"id": "{{ site.start_url }}",
 	"start_url": "{{ site.start_url }}",
 	"display": "{{ site.display }}",
 	"theme_color": "{{ site.theme_color_android }}",
-	"background_color": "{{ site.background_color_android }}"
+	"background_color": "{{ site.background_color_android }}",
+	"description": "{{ site.author.description }}",
+	"orientation": "any",
+	"categories": ["blog", "portfolio", "personal"]
 }

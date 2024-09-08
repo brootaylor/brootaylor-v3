@@ -23,7 +23,8 @@ module.exports = {
   icon: '/assets/ico/apple-touch-icon.png',
   icon_192: '/assets/ico/android-chrome-192x192.png',
   icon_512: '/assets/ico/android-chrome-512x512.png',
-  icon_maskable_196: '/assets/ico/android-chrome-maskable-196x196.png', // Maskable icon for Android devices (https://web.dev/maskable-icon-audit/)
+  icon_maskable_196: '/assets/ico/android-chrome-maskable-196x196.png', // Maskable icon for Android devices (https://web.dev/maskable-icon-audit/),
+  icon_maskable_512: '/assets/ico/android-chrome-maskable-512x512.png', // Maskable icon for Android devices (https://web.dev/maskable-icon-audit/)
   icon_mstile: '/assets/ico/mstile-150x150.png',
   twitter: '@brootaylor', // Twitter handle
   robotsCrawl: true, // Allow search engine robots to crawl site
@@ -39,6 +40,7 @@ module.exports = {
   author: {
     name: 'Bruce Taylor',
     job: 'Frontend Web Developer & UI Engineer',
+    description: 'Bruce is a frontend web developer and UI engineer based in Crawley, England. This is his blog and portfolio site.',
     url: 'https://brootaylor.com',
     thumbnail: 'https://brootaylor.com/assets/images/common/broo-social-square-600.jpg',
     email: 'brootaylor@gmail.com',
