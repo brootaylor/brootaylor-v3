@@ -11,103 +11,123 @@ eleventyExcludeFromCollections: true
  * Last generated: {{ site.dateTimeNow }}
  */
 
+// Define cache names and version information
 const siteName = '{{ pkg.name }}';
 const siteVersion = 'v{{ pkg.version }}';
 const siteDeployTime = '{{ site.timeCurrent }}';
 const cacheName = siteName + '_' + siteVersion + '.' + siteDeployTime;
 
+// Set cache limits and timeout
 const maxPages = 50; // Maximum number of pages to cache
 const maxImages = 100; // Maximum number of images to cache
 const timeout = 3000; // Number of milliseconds before timing out
 
+// Define specific cache names for different types of content
 const staticCacheName = 'static@' + cacheName;
 const pagesCacheName = 'pages@' + cacheName;
 const imagesCacheName = 'images@' + cacheName;
 const cacheList = [
-	staticCacheName,
-	pagesCacheName,
-	imagesCacheName
+    staticCacheName,
+    pagesCacheName,
+    imagesCacheName
 ];
 
+// Define the offline page URL
 const offlinePage = '/offline';
 
+// Define pages to be available offline
+// This list is populated dynamically based on your site structure
 const offlinePages = [
 {#- Loops through all `post` tagged posts -#}
 {%- set allPosts = collections.post | reverse -%}
 {#- Returns a maximum of 5 `post` tagged posts. -#}
 {% for item in allPosts.slice(0, 5) %}
-	'{{ item.url | pretty }}',
+    '{{ item.url | pretty }}',
 {%- endfor %}
 {#- Loops through the `mainnav` object in `_data/navigation.js` -#}
 {%- for item in navigation.mainnav %}
-	{#- Doesn't show a URL if marked as `document` or `external` -#}
-  {%- if (item.document !== true) and (item.external !== true) %}
-	'{{ item.url }}',
-	{%- endif -%}
+    {#- Doesn't show a URL if marked as `document` or `external` -#}
+    {%- if (item.document !== true) and (item.external !== true) %}
+    '{{ item.url }}',
+    {%- endif -%}
 {%- endfor -%}
 {#- Loops through the `footernav` object in `_data/navigation.js` -#}
 {% for item in navigation.footernav %}
-	{#- Doesn't show a URL if marked as `document` or `external` -#}
-  {%- if (item.document !== true) and (item.external !== true) %}
-	'{{ item.url }}',
-	{%- endif -%}
+    {#- Doesn't show a URL if marked as `document` or `external` -#}
+    {%- if (item.document !== true) and (item.external !== true) %}
+    '{{ item.url }}',
+    {%- endif -%}
 {%- endfor %}
 {#- Loops through all `page` tagged pages -#}
 {%- set allPages = collections.page -%}
 {#- Returns `page` tagged pages. -#}
 {% for item in allPages | reverse %}
-	'{{ item.url | pretty }}',
+    '{{ item.url | pretty }}',
 {%- endfor %}
-  '{{ site.start_url }}'
+    '{{ site.start_url }}'
 ];
 
+// Define non-mandatory static assets
+// These assets are cached but won't block service worker installation if they fail to cache
 const staticNonMandatory = [
-	'/assets/images/common/logo.png'
+    '/assets/images/common/logo-social.png'
 ];
 
+// Define mandatory static assets
+// These assets must be cached for the service worker to complete installation
 const staticMandatory = [
-	'/styles/main.css?version={{ pkg.version }}.{{ site.timeCurrent }}',
-	offlinePage
+    '/styles/main.css?version={{ pkg.version }}.{{ site.timeCurrent }}',
+    offlinePage
 ];
 
+/**
+ * Updates the static cache with mandatory and non-mandatory items
+ * @returns {Promise} A promise that resolves when caching is complete
+ */
 function updateStaticCache() {
     return caches.open(staticCacheName)
-    .then( staticCache => {
+    .then(staticCache => {
         // These items won't block the installation of the Service Worker
         staticCache.addAll(
-					offlinePages,
-					staticNonMandatory
+            offlinePages,
+            staticNonMandatory
         );
         // These items MUST be cached for the Service Worker to complete installation
         return staticCache.addAll(
-					staticMandatory
+            staticMandatory
         );
     });
 }
 
-// Cache the page(s) that initiate the service worker
+/**
+ * Caches the pages that initiate the service worker
+ * @returns {Promise} A promise that resolves when client pages are cached
+ */
 function cacheClients() {
     const pages = [];
     return clients.matchAll({
         includeUncontrolled: true
     })
-    .then( allClients => {
+    .then(allClients => {
         for (const client of allClients) {
             pages.push(client.url);
         }
     })
-    .then ( () => {
+    .then(() => {
         caches.open(pagesCacheName)
-        .then( pagesCache => {
+        .then(pagesCache => {
             return pagesCache.addAll(pages);
         });
     })
 }
 
-// Remove caches whose name is no longer valid
+/**
+ * Removes caches whose name is no longer valid
+ * @returns {Promise} A promise that resolves when old caches are cleared
+ */
 function clearOldCaches() {
     return caches.keys()
-    .then( keys => {
+    .then(keys => {
         return Promise.all(keys
             .filter(key => !cacheList.includes(key))
             .map(key => caches.delete(key))
@@ -115,64 +135,90 @@ function clearOldCaches() {
     });
 }
 
+/**
+ * Trims the cache to the specified maximum number of items
+ * @param {string} cacheName - The name of the cache to trim
+ * @param {number} maxItems - The maximum number of items to keep in the cache
+ */
 function trimCache(cacheName, maxItems) {
     caches.open(cacheName)
-    .then( cache => {
+    .then(cache => {
         cache.keys()
         .then(keys => {
-            if (keys.length > maxItems) {
-                cache.delete(keys[0])
-                .then( () => {
-                    trimCache(cacheName, maxItems)
-                });
-            }
+            if (keys.length <= maxItems) return; // Early return if no trimming is needed
+            cache.delete(keys[0])
+            .then(() => {
+                trimCache(cacheName, maxItems)
+            });
         });
     });
 }
 
-addEventListener('install', event => {
-    event.waitUntil(
-        updateStaticCache()
-        .then( () => {
-            cacheClients()
-        })
-        .then( () => {
-          return skipWaiting();
-        })
-    );
-});
-
-addEventListener('activate', event => {
-    event.waitUntil(
-        clearOldCaches()
-        .then( () => {
-            return clients.claim();
-        })
-    );
-});
-
-if (registration.navigationPreload) {
-    addEventListener('activate', event => {
-        event.waitUntil(
-            registration.navigationPreload.enable()
-        );
+/**
+ * Adds a request/response pair to the specified cache and trims if necessary
+ * @param {string} cacheName - The name of the cache to add to
+ * @param {Request} request - The request object
+ * @param {Response} response - The response object
+ */
+function addToCache(cacheName, request, response) {
+    caches.open(cacheName)
+    .then(cache => {
+        cache.put(request, response);
+        trimCache(cacheName, cacheName === imagesCacheName ? maxImages : maxPages);
     });
 }
 
-self.addEventListener('message', event => {
-    if (event.data.command == 'trimCaches') {
-        trimCache(pagesCacheName, maxPages);
-        trimCache(imagesCacheName, maxImages);
-    }
+// Flag to track if the install failure message has been shown
+let isInstallFailureMessageShown = false;
+
+// Service Worker install event
+addEventListener('install', event => {
+    event.waitUntil(
+        updateStaticCache()
+        .then(() => {
+            return cacheClients()
+        })
+        .then(() => {
+            return self.skipWaiting();
+        })
+        .catch(error => {
+            console.error('Service Worker installation failed:', error);
+            // Show user-friendly message on installation failure
+            if (!isInstallFailureMessageShown) {
+                self.clients.matchAll().then(clients => {
+                    clients.forEach(client => {
+                        client.postMessage({
+                            type: 'INSTALL_FAILED',
+                            message: 'We\'re having trouble setting up offline functionality. Some features may not work offline.'
+                        });
+                    });
+                });
+                isInstallFailureMessageShown = true;
+            }
+            throw error; // Rethrow to prevent installation
+        })
+    );
 });
 
+// Service Worker activate event
+addEventListener('activate', event => {
+    event.waitUntil(
+        clearOldCaches()
+        .then(() => {
+            // Enable navigation preload if available
+            if (self.registration.navigationPreload) {
+                return self.registration.navigationPreload.enable();
+            }
+        })
+        .then(() => {
+            return self.clients.claim();
+        })
+    );
+});
+
+// Fetch event listener
 addEventListener('fetch', event => {
     const request = event.request;
-
-    // Ignore requests to some directories
-    {#- if (request.url.includes('/cms')) {
-        return;
-    } -#}
 
     // Ignore non-GET requests
     if (request.method !== 'GET') {
@@ -184,50 +230,40 @@ addEventListener('fetch', event => {
     // For HTML requests, try the network first, fall back to the cache, finally the offline page
     if (request.headers.get('Accept').includes('text/html')) {
         event.respondWith(
-            new Promise( resolveWithResponse => {
-
-                const timer = setTimeout( () => {
+            new Promise(resolveWithResponse => {
+                const timer = setTimeout(() => {
                     // Time out: CACHE
                     retrieveFromCache
-                    .then( responseFromCache => {
+                    .then(responseFromCache => {
                         if (responseFromCache) {
                             resolveWithResponse(responseFromCache);
                         }
                     })
                 }, timeout);
 
-                const retrieveFromFetch = event.preloadResponse || fetch(request);
-
-                retrieveFromFetch
-                .then( responseFromFetch => {
+                fetch(request)
+                .then(responseFromFetch => {
                     // NETWORK
                     clearTimeout(timer);
                     const copy = responseFromFetch.clone();
-                    // Stash a copy of this page in the pages cache
                     try {
-                        event.waitUntil(
-                            caches.open(pagesCacheName)
-                            .then( pagesCache => {
-                                return pagesCache.put(request, copy);
-                            })
-                        );
+                        addToCache(pagesCacheName, request, copy);
                     } catch (error) {
                         console.error(error);
                     }
                     resolveWithResponse(responseFromFetch);
                 })
-                .catch( fetchError => {
+                .catch(fetchError => {
                     clearTimeout(timer);
                     console.error(fetchError);
                     // CACHE or FALLBACK
                     caches.match(request)
-                    .then( responseFromCache => {
+                    .then(responseFromCache => {
                         resolveWithResponse(
                             responseFromCache || caches.match(offlinePage)
                         );
                     });
                 });
-
             })
         )
         return;
@@ -239,28 +275,23 @@ addEventListener('fetch', event => {
         .then(responseFromCache => {
             // CACHE
             return responseFromCache || fetch(request)
-            .then( responseFromFetch => {
+            .then(responseFromFetch => {
                 // NETWORK
                 // If the request is for an image, stash a copy of this image in the images cache
                 if (request.url.match(/\.(jpe?g|webp|png|gif|svg|mapbox)/)) {
                     const copy = responseFromFetch.clone();
                     try {
-                        event.waitUntil(
-                            caches.open(imagesCacheName)
-                            .then( imagesCache => {
-                                return imagesCache.put(request, copy);
-                            })
-                        );
+                        addToCache(imagesCacheName, request, copy);
                     } catch (error) {
                         console.error(error);
                     }
                 }
                 return responseFromFetch;
             })
-            .catch( fetchError => {
+            .catch(fetchError => {
                 console.error(fetchError);
                 // FALLBACK
-                // show an offline placeholder
+                // show an offline placeholder for images
                 if (request.url.match(/\.(jpe?g|webp|png|gif|svg|mapbox)/)) {
                     return new Response('<svg role="img" aria-labelledby="offline-title" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><title id="offline-title">Offline</title><g fill="none" fill-rule="evenodd"><path fill="#3e5156" d="M0 0h400v300H0z"/><text fill="#d5dee0" font-family="Helvetica Neue,Arial,Helvetica,sans-serif" font-size="72" font-weight="bold"><tspan x="93" y="172">Offline</tspan></text></g></svg>', {headers: {'Content-Type': 'image/svg+xml', 'Cache-Control': 'no-store'}});
                 }
