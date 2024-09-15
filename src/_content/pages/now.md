@@ -10,7 +10,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2024-09-07T21:43:27.631Z
+updated: 2024-09-15T11:44:27.631Z
 
 location:
   locality: Crawley
@@ -21,7 +21,7 @@ eleventyExcludeFromCollections: false
 
 ## Work
 
-Right now, I'm working on a contract basis as a **Frontend Engineer** for [Admiral Group Plc](https://www.admiralgroup.co.uk/).
+Right now, I'm working on a contract basis as a **Frontend Engineer** for [Admiral Group Plc](https://www.admiralgroup.co.uk/) on their customer facing websites.
 
 ---
 
@@ -41,7 +41,7 @@ I usually have a few books on the go and switch to whichever suits my fancy at t
 
 ## Learning
 
-* Tinkering around on a bunch of personal code projects using technologies like [Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [Vite](https://vitejs.dev/), [Netlify](https://www.netlify.com/), [Decap CMS](https://decapcms.org/), [Fractal](https://fractal.build/), [Storybook](https://storybook.js.org/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GreenSock](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [IndieKit](https://getindiekit.com/) and [Utopia](https://utopia.fyi/).
+* Tinkering around on a bunch of personal code projects using technologies like [Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GreenSock](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [IndieKit](https://getindiekit.com/) and [Utopia](https://utopia.fyi/).
 * Brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)*' &mdash; like how to tie a bunch of [useful knots](https://youtu.be/kA48yzKYp3Q) and [fire building techniques](https://youtu.be/7v4twfXG2uY) - in [all weather conditions](https://youtu.be/QiYlEyvDbco) as well.
 
 ---
