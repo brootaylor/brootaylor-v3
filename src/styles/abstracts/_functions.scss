@@ -4,6 +4,7 @@
 
 @use 'config' as *;
 @use 'sass:math';
+@use "sass:color";
 
 
 /// Native `url(..)` function wrapper.
@@ -64,7 +65,8 @@
 ///     color: rgb(23, 56, 84);
 ///   }
 @function rgb-format($color) {
-  @return unquote('rgb(#{red($color)}, #{green($color)}, #{blue($color)})');
+  @return unquote('rgb(#{color.channel($color, "red")}, #{color.channel($color, "green")}, #{color.channel($color, "blue")})');
+
 }
 
 /// Returns number value without a unit (strips the unit).

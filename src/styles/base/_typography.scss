@@ -3,6 +3,7 @@
  ******************************************/
 
 @use '../abstracts' as *;
+@use "sass:color";
 
 
 html {
@@ -185,7 +186,7 @@ pre {
   }
 
   .token {
-    color: lighten(#f3bb69, 10%);
+    color: color.adjust(#f3bb69, $lightness: 10%);
   }
 
   .comment {
@@ -197,7 +198,7 @@ pre {
   }
 
   .function {
-    color: darken(#f3bb69, 20%);
+    color: color.adjust(#f3bb69, $lightness: -20%);
   }
 
   .parameter {
