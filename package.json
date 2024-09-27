@@ -81,7 +81,7 @@
     "postcss-cli": "^11.0.0",
     "postcss-preset-env": "^10.0.5",
     "rimraf": "^6.0.1",
-    "rollup": "^4.22.4",
+    "rollup": "^4.22.5",
     "sass": "^1.79.3",
     "slugify": "^1.6.6"
   },
