@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   layout: 'layouts/notes.njk',
   eleventyComputed: {
     title: "Note: {{ date | dateTimeReadable('dd LLLL yyyy @ t') }}",

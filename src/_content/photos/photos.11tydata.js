@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   layout: 'layouts/photos.njk',
   eleventyComputed: {
     title: "Photo: {{ date | dateTimeReadable('dd LLLL yyyy @ t') }}",

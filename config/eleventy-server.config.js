@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   // Default values are shown:
 
   // Whether the live reload snippet is used

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   layout: 'layouts/bookmarks.njk',
   bodyClass: 'blog bookmarks',
   tags: ['post', 'bookmarks'],

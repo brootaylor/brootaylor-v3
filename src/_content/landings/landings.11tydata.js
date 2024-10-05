@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   layout: 'layouts/landings.njk',
   permalink: '{{ page.fileSlug }}.html',
   changefreq: 'weekly',

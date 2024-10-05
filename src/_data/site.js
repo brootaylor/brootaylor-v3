@@ -1,6 +1,6 @@
-const { DateTime } = require('luxon');
+import { DateTime } from 'luxon';
 
-module.exports = {
+export default {
   name: 'Bruce Taylor',
   short_name: 'BWT',
   metaTitle: 'Bruce Taylor • Frontend Web Developer & UI Engineer based in Crawley, England',

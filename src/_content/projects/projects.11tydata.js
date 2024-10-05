@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   layout: 'layouts/projects.njk',
   bodyClass: 'projects',
   tags: ['projects'],

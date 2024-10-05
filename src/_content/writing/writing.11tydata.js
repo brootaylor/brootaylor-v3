@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   layout: 'layouts/writing.njk',
   bodyClass: 'blog writing',
   tags: ['post', 'writing'],

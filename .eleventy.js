@@ -1,40 +1,42 @@
 // Environment config
-require('dotenv').config()
+import { config } from 'dotenv';
+config();
 
 // Local server (Eleventy Dev Server)
-const eleventyServer = require('./config/eleventy-server.config.js')
+import eleventyServer from './config/eleventy-server.config.js'
 
 // Import (plugins)
-const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
-const pluginRss = require('@11ty/eleventy-plugin-rss')
-const pluginNavigation = require('@11ty/eleventy-navigation')
+import pluginSyntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
+
+import pluginRss from '@11ty/eleventy-plugin-rss'
+import pluginNavigation from '@11ty/eleventy-navigation'
 
 // Import (libraries)
-const markdown = require('./lib/libraries/markdown.js')
-const markdownItAnchor = require('markdown-it-anchor')
+import { markdown } from './lib/libraries/markdown.js'
+import markdownItAnchor from 'markdown-it-anchor'
 
 // Import (filters)
-const prettyUrl = require('./lib/utils/filters/pretty-url.js')
-const dateOnly = require('./lib/utils/filters/dateOnly.js')
-const dateTime = require('./lib/utils/filters/dateTime.js')
-const dateTimeReadable = require('./lib/utils/filters/dateTimeReadable.js')
-const shuffleArray = require('./lib/utils/filters/shuffle-array.js')
+import { prettyUrl } from './lib/utils/filters/pretty-url.js'
+import { dateOnly } from './lib/utils/filters/dateOnly.js'
+import { dateTime } from './lib/utils/filters/dateTime.js'
+import { dateTimeReadable } from './lib/utils/filters/dateTimeReadable.js'
+import { shuffleArray } from './lib/utils/filters/shuffle-array.js'
 
 // Import (transforms)
-const htmlMinify = require('./lib/utils/transforms/minify-html.js')
+import { minifyHtml } from './lib/utils/transforms/minify-html.js'
 
 // Import (shortcodes)
-const photoGallery = require('./lib/shortcodes/photoGallery.js')
-const projectThumbnails = require('./lib/shortcodes/projectThumbnails.js')
+import { photoGallery } from './lib/shortcodes/photoGallery.js'
+import { projectThumbnails } from './lib/shortcodes/projectThumbnails.js'
 
 // Import (collections)
-const pageProjects = require('./lib/collections/pageProjects.js')
-const postWriting = require('./lib/collections/postWriting.js')
-const postNotes = require('./lib/collections/postNotes.js')
-const postBookmarks = require('./lib/collections/postBookmarks.js')
-const postPhotos = require('./lib/collections/postPhotos.js')
+import { pageProjects } from './lib/collections/pageProjects.js'
+import { postWriting } from './lib/collections/postWriting.js'
+import { postNotes } from './lib/collections/postNotes.js'
+import { postBookmarks } from './lib/collections/postBookmarks.js'
+import { postPhotos } from './lib/collections/postPhotos.js'
 
-module.exports = function (eleventy) {
+export default function (eleventy) {
   // Eleventy Dev Server
   eleventy.setServerOptions(eleventyServer)
 
@@ -68,7 +70,7 @@ module.exports = function (eleventy) {
   eleventy.addFilter('shuffle', shuffleArray) // Shuffles an array of items (eg. [1, 2, 3, 4, 5] => [3, 1, 5, 2, 4])
 
   // Transforms
-  eleventy.addTransform('minify-html', htmlMinify)
+  eleventy.addTransform('minifyHtml', minifyHtml)
 
   // Shortcodes
   eleventy.addShortcode('year', () => `${new Date().getFullYear()}`)

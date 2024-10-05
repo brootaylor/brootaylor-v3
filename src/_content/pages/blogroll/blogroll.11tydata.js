@@ -1,6 +1,6 @@
-const normalizeUrl = require('normalize-url');
+import normalizeUrl from 'normalize-url';
 
-module.exports = {
+export default {
   layout: 'layouts/blogroll.njk',
   eleventyComputed: {
     // This is a computed data property that takes the raw blog data and adds a cleansed URL and a favicon to the object
