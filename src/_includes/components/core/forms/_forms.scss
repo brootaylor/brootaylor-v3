@@ -22,6 +22,8 @@
   input,
   select,
   textarea {
+    color: inherit;
+
     &:focus {
       background-color: var(--grey-light);
       border-color: var(--grey-dark);
