@@ -10,7 +10,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2024-09-15T11:44:27.631Z
+updated: 2024-10-18T23:39:27.631Z
 
 location:
   locality: Crawley
@@ -35,7 +35,7 @@ I usually have a few books on the go and switch to whichever suits my fancy at t
 
 ## Watching
 
-* [The Lord of the Rings: The Rings of Power](https://www.imdb.com/title/tt7631058/) &mdash; *TV Series*
+* [The Lincoln Lawyer](https://www.imdb.com/title/tt13833978/) &mdash; *TV Series*
 
 ---
 
