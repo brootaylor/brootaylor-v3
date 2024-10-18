@@ -4,7 +4,8 @@
 
 @use 'config' as *;
 @use 'sass:math';
-@use "sass:color";
+@use 'sass:color';
+@use 'sass:string';
 
 
 /// Native `url(..)` function wrapper.
@@ -65,7 +66,7 @@
 ///     color: rgb(23, 56, 84);
 ///   }
 @function rgb-format($color) {
-  @return unquote('rgb(#{color.channel($color, "red")}, #{color.channel($color, "green")}, #{color.channel($color, "blue")})');
+  @return string.unquote('rgb(#{color.channel($color, "red")}, #{color.channel($color, "green")}, #{color.channel($color, "blue")})');
 
 }
 

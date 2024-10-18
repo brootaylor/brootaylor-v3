@@ -4,6 +4,7 @@
 
 @use '../abstracts/config' as *;
 @use '../abstracts/functions' as *;
+@use 'sass:string';
 
 
 /// Custom CSS Properties set on the `:root`
@@ -12,8 +13,8 @@
 
 :root {
   /* Fonts */
-  --font-family-base: #{unquote(#{$font-family-base})};
-  --font-family-secondary: #{unquote(#{$font-family-secondary})};
+  --font-family-base: #{string.unquote(#{$font-family-base})};
+  --font-family-secondary: #{string.unquote(#{$font-family-secondary})};
   --font-size-base-percent: 100%;
   --font-colour-base: #{rgb-format($font-colour-base)};
   --line-height-base: #{$line-height-base};
