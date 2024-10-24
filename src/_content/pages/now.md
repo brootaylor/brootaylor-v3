@@ -1,16 +1,16 @@
 ---
 title: "What I'm doing now"
 # Populates the `meta description` for a page
-summary: "Work stuff, what I'm reading, watching, learning, and reflecting on."
+summary: "Work related stuff, what I'm reading, listening to, watching, learning, and reflecting on."
 # Populates the opening / `lead` text on a page
 lead:
-  - Work stuff, what I'm reading, watching, learning, and reflecting on.
+  - Work related stuff, what I'm reading, listening to, watching, learning, and reflecting on.
 
 bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2024-10-18T23:39:27.631Z
+updated: 2024-10-24T20:08:27.631Z
 
 location:
   locality: Crawley
@@ -33,9 +33,18 @@ I usually have a few books on the go and switch to whichever suits my fancy at t
 
 ---
 
+## Listening
+
+* [The Duran](https://open.spotify.com/show/5DgkWsC3YjoyGBV03CFWnk?si=c62004134bbf40ed) &mdash; *Podcast*
+* [Planet: Critical](https://open.spotify.com/show/5zGRjKWThT6H18isBlVEY8?si=82195fb522014341) &mdash; *Podcast*
+* [Lex Fridman](https://open.spotify.com/show/2MAi0BvDc6GTFvKFPXnkCL?si=cd92a945226b4603) &mdash; *Podcast*
+* [The Great Simplification with Nate Hagens](https://open.spotify.com/show/0ZFJIjuJwh3XeMqrguiXNR?si=21485f0d963344fe) &mdash; *Podcast*
+
+---
+
 ## Watching
 
-* [The Lincoln Lawyer](https://www.imdb.com/title/tt13833978/) &mdash; *TV Series*
+* [Ancient Apocalypse](https://www.imdb.com/title/tt22807484/) &mdash; *TV Series*
 
 ---
 
