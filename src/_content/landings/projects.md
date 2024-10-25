@@ -22,7 +22,7 @@ pagination:
   size: 15
   alias: projects
 
-date: 2024-04-04T14:21:27.631Z
+date: 2024-10-16T18:21:27.631Z
 ---
 
 <section aria-labelledby="projects-featured" class="projects-featured | flow">
@@ -80,8 +80,8 @@ date: 2024-04-04T14:21:27.631Z
             <span class="date-time">Year: 2004 - 2015 <small>(permanent)</small></span>
           </header>
           <footer class="card__footer | flow">
-            <p>Visit them at <a href="https://www.avios.com/en-GB" rel="external">www.avios.com</a></p>
-            <p id="fn:avios"><sup>*</sup> Formerly a subsidiary of British Airways and also known as <a href="https://en.wikipedia.org/wiki/Air_Miles#Air_Miles_United_Kingdom" rel="external">Airmiles</a>. Avios is now the loyalty currency run by <a href="https://iagloyalty.com" rel="external">IAG Loyalty</a>.</p>
+            <p>Visit them at <a href="https://www.avios.com/en-GB">www.avios.com</a></p>
+            <p id="fn:avios"><sup>*</sup> Formerly a subsidiary of British Airways and also known as <a href="https://en.wikipedia.org/wiki/Air_Miles#Air_Miles_United_Kingdom">Airmiles</a>. Avios is now the loyalty currency run by <a href="https://iagloyalty.com">IAG Loyalty</a>.</p>
           </footer>
         </div>
       </article>
@@ -94,7 +94,7 @@ date: 2024-04-04T14:21:27.631Z
             <span class="date-time">Year: 2018 &ndash; 2021 <small>(contract)</small></span>
           </header>
           <footer class="card__footer">
-            <p>Visit them at <a href="https://www.iagloyalty.com/" rel="external">www.iagloyalty.com</a></p>
+            <p>Visit them at <a href="https://www.iagloyalty.com/">www.iagloyalty.com</a></p>
           </footer>
         </div>
       </article>
@@ -107,7 +107,7 @@ date: 2024-04-04T14:21:27.631Z
             <span class="date-time">Year: 2015 <small>(contract)</small></span>
           </header>
           <footer class="card__footer">
-            <p>Visit them at <a href="https://www.macmillan.org.uk/" rel="external">www.macmillan.org.uk</a></p>
+            <p>Visit them at <a href="https://www.macmillan.org.uk/">www.macmillan.org.uk</a></p>
           </footer>
         </div>
       </article>
@@ -120,7 +120,7 @@ date: 2024-04-04T14:21:27.631Z
             <span class="date-time">Year: 2016 <small>(contract)</small></span>
           </header>
           <footer id="fn:time-inc" class="card__footer">
-            <p><sup>*</sup> Since I last worked with them, they've now been taken over by <a href="https://www.futureplc.com/" rel="external">Future plc</a>.</p>
+            <p><sup>*</sup> Since I last worked with them, they've now been taken over by <a href="https://www.futureplc.com/">Future plc</a>.</p>
           </footer>
         </div>
       </article>
@@ -133,7 +133,7 @@ date: 2024-04-04T14:21:27.631Z
             <span class="date-time">Year: 2016 <small>(contract)</small></span>
           </header>
           <footer id="fn:pegasus" class="card__footer">
-            <p><sup>*</sup> Since I last worked with them, they've become <a href="https://www.inizioevoke.com/" rel="external">Inizio Evoke</a>.</p>
+            <p><sup>*</sup> Since I last worked with them, they've become <a href="https://www.inizioevoke.com/">Inizio Evoke</a>.</p>
           </footer>
         </div>
       </article>
@@ -163,14 +163,14 @@ date: 2024-04-04T14:21:27.631Z
     {%- endcall %}
     </li>
     <li>
-    {%- call blockquote('Nicola Chrome, Senior Media and Content Marketing Manager, <a href="https://www.avios.com/en-GB" rel="external">Avios</a>. <em>(Currently, "Founder" of <a href="https://www.relocatedownunder.com/" rel="external">Relocate Down Under</a>)</em>') -%}
+    {%- call blockquote('Nicola Chrome, Senior Media and Content Marketing Manager, <a href="https://www.avios.com/en-GB">Avios</a>. <em>(Currently, "Founder" of <a href="https://www.relocatedownunder.com/">Relocate Down Under</a>)</em>') -%}
       I worked with Bruce for many years at Avios, both within the same team and across projects. Bruce was incredibly knowledgeable in website design and development, always came up with great solutions, delivered to a high standard with great attention to detail, and was very easy to work with.
 
       He was also able to communicate his technical knowledge in a straightforward way to someone who was not from a technical background. I would highly recommend Bruce to any organisation.
     {%- endcall %}
     </li>
     <li>
-    {%- call blockquote('Roger Mathews, Head of System Development and Administration, <a href="https://www.macmillan.org.uk/" rel="external">Macmillan Cancer Support</a>. <em>(Currently, "Chief Technology Officer" at <a href="https://www.icr.ac.uk/" rel="external">The Institute of Cancer Research</a>)</em>') -%}
+    {%- call blockquote('Roger Mathews, Head of System Development and Administration, <a href="https://www.macmillan.org.uk/">Macmillan Cancer Support</a>. <em>(Currently, "Chief Technology Officer" at <a href="https://www.icr.ac.uk/">The Institute of Cancer Research</a>)</em>') -%}
       Bruce is a great addition to any team, a great personality who requires minimal management and produces accurate and attractive output. He keeps up to date with the latest techniques and is happy to share those skills with others.
 
       I wouldn't hesitate in giving Bruce another opportunity when one arises.
