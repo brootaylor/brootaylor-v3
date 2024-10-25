@@ -61,7 +61,7 @@ priority: 1
 
 I thrive in roles that ***strike a balance between user and developer experiences***, empowering teams to write great code that aligns with their needs and preferences while ensuring a positive user experience.
 
-I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/){rel=external}, [usable](https://trentwalton.com/2014/03/10/device-agnostic/){rel=external} and as future-friendly as possible. For this reason I *prefer* a vanilla approach and tend to be fairly tech-agnostic.
+I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/), [usable](https://trentwalton.com/2014/03/10/device-agnostic/) and as future-friendly as possible. For this reason I *prefer* a vanilla approach and tend to be fairly tech-agnostic.
 
 <div class="call-out | flow">
   <p>Whether you're <em><strong>starting fresh</strong></em> or <em><strong>enhancing an existing one</strong></em>, I'm here to help you establish a lasting and meaningful online presence.</p>

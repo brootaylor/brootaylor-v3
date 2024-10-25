@@ -31,7 +31,7 @@ date: 2024-09-03T17:40:00
         </a>
       </h2>
       <time datetime="{{ bookmark.date | dateTime }}">{{ bookmark.date | dateTimeReadable("d LLLL y, ") }}{{ bookmark.date | dateTimeReadable("t") | lower }}</time>
-      <div class="bookmarks__original"><span class="visually-hidden">Original source can be viewed at</span> <i aria-hidden="true">&rarr;</i> <a href="{{ bookmark.data.bookmarkExternal }}" rel="external" title="Link to the original source.">{{ bookmark.data.bookmarkLabel }}</a></div>
+      <div class="bookmarks__original"><span class="visually-hidden">Original source can be viewed at</span> <i aria-hidden="true">&rarr;</i> <a href="{{ bookmark.data.bookmarkExternal }}" title="Link to the original source.">{{ bookmark.data.bookmarkLabel }}</a></div>
     </article>
   </li>
 {% endfor -%}

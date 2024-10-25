@@ -23,7 +23,7 @@ date: 2024-10-24T12:29:27.631Z
         <header class="card__header">
           <h2 class="card__title">
             <img alt="" src="{{ blog.favicon }}" width="16" height="16" loading="lazy" decoding="async">
-            <a href="{{ blog.url }}" rel="external">
+            <a href="{{ blog.url }}">
               {{- blog.name -}}
             </a>
           </h2>
