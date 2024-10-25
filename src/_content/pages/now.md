@@ -44,6 +44,7 @@ I've been listening to a lot of podcasts lately. Here are a few of my current fa
 * [The Great Simplification with Nate Hagens](https://open.spotify.com/show/0ZFJIjuJwh3XeMqrguiXNR?si=21485f0d963344fe) &mdash; *Podcast*
 * [The Tucker Carlson Show](https://open.spotify.com/show/5L2ON33kXa2b7laBpCAgOI?si=57a7d5076ed84767) &mdash; *Podcast*
 * [The Joe Rogan Experience](https://open.spotify.com/show/4rOoJ6Egrf8K2IrywzwOMk?si=88ef8bd8716a40f7) &mdash; *Podcast*
+* [The Diary Of A CEO with Steven Bartlett](https://open.spotify.com/show/7iQXmUT7XGuZSzAMjoNWlX?si=3106d80cea79480b) &mdash; *Podcast*
 
 ---
 
