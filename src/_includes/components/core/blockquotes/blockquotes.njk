@@ -9,6 +9,6 @@
     {%- for paragraph in caller().split('\n\n') -%}
       <p>{{ paragraph | safe }}</p>
     {%- endfor -%}
-    <footer>&mdash; {{ author | safe }}{% if citHref %}, <cite><a href="{{ citHref }}" rel="external">{{ citLabel }}</a></cite>{% endif %}</footer>
+    <footer>&mdash; {{ author | safe }}{% if citHref %}, <cite><a href="{{ citHref }}">{{ citLabel }}</a></cite>{% endif %}</footer>
   </blockquote>
 {%- endmacro %}

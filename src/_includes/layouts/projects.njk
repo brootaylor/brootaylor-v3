@@ -52,7 +52,7 @@
 				<dd>{{ project.technologies | safe }}</dd>
 				{% if project.websiteUrl %}
 					<dt>Website URL:</dt>
-					<dd><a href="{{ project.websiteUrl }}" rel="external">{{ project.websiteLabel | safe }}</a></dd>
+					<dd><a href="{{ project.websiteUrl }}">{{ project.websiteLabel | safe }}</a></dd>
 				{% endif %}
 			</dl>
 		</footer>

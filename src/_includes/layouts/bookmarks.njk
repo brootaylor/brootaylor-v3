@@ -22,7 +22,7 @@
 					<i aria-hidden="true">&nbsp;&#183;&nbsp;</i><em> <b>Updated: </b></em><time datetime="{{ updated | dateTime }}">{{ updated | dateTimeReadable("d LLLL y, ") }}{{ updated | dateTimeReadable("t") | lower }}</time>
 				{% endif %}
 			</small>
-			<div><em>Original source link:</em> <a href="{{ bookmarkExternal }}" rel="external" title="Link to the original source.">{{ bookmarkLabel }}</a></div>
+			<div><em>Original source link:</em> <a href="{{ bookmarkExternal }}" title="Link to the original source.">{{ bookmarkLabel }}</a></div>
 			{# This `title` comes from the front matter in the relevant `.md` file - within the `pages` directory #}
 			{% if title %}
 				<h1>
@@ -47,7 +47,7 @@
 		{# This content comes from the markdown in the relevant `.md` file - within the `pages` directory #}
 		{{ content | safe }}
 
-		<a href="{{ bookmarkExternal }}" rel="external" class="button button--primary | mt-xxlg">View link</a>
+		<a href="{{ bookmarkExternal }}" class="button button--primary | mt-xxlg">View link</a>
 
 		<hr>
 

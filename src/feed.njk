@@ -30,7 +30,7 @@ eleventyExcludeFromCollections: true
 			<id>{{ absolutePostUrl }}</id>
 			<content type="html" xml:base="{{ absolutePostUrl }}"><![CDATA[
 				{%- if post.data.bookmarkExternal -%}
-					Original source can be viewed at: <a href="{{ post.data.bookmarkExternal }}" rel="external">{{ post.data.bookmarkLabel }}</a>
+					Original source can be viewed at: <a href="{{ post.data.bookmarkExternal }}">{{ post.data.bookmarkLabel }}</a>
 				{%- endif -%}
 				{%- if post.data.lead -%}
 					<p>{{ post.data.lead | safe }}</p>
