@@ -12,7 +12,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 dateShow: true # Show the date in the header for this page
 date: 2022-10-22T13:17:27.631Z
-updated: 2024-09-08T02:00:27.631Z
+updated: 2024-10-25T21:29:27.631Z
 
 location:
   locality: Crawley
@@ -46,6 +46,7 @@ Books on the go at the moment.
 * [In The Shadow of Kings: A Time of Dragons](https://www.philipcquaintrell.com/intheshadowofkings) &mdash; *(book 2 of...)*, *Philip C. Quaintrell*
 * [Leviathan: An Asher & Avandriell Story](https://www.philipcquaintrell.com/leviathan) &mdash; *(Novella)*, *Philip C. Quaintrell*
 * Reckoning, Songs of Chaos &mdash; *(book 4 of...)*, *Michael R. Miller*
+* [King’s Dark Tidings Series: Knight of Shadows](https://kelkade.com/books/) &mdash; *(book 6 of...)*, *Kel Kade*
 * [The Mountain in the Sea](https://www.goodreads.com/en/book/show/59808603), *Ray Nayler*
 * [The Bound and the Broken Series](https://www.goodreads.com/series/309359-the-bound-and-the-broken) &mdash; *(5 books)*, *Ryan Cahill*
 * [Do I Stay Christian?](https://read.macmillan.com/lp/do-i-stay-christian/), *Brian McLaren*
