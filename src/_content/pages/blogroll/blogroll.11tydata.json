@@ -304,6 +304,11 @@
       "name": "Zell Liew",
       "url": "https://zellwk.com",
       "description": "Zell is a web developer and teacher. Courses like <em>Learn JavaScript</em> have been incredibly helpful and popular for years."
+    },
+    {
+      "name": "Nicholas Carr",
+      "url": "https://www.newcartographies.com/",
+      "description": "Nicholas is a technology writer and blogger. On his blog, he explores the fraught intersection of technology and culture."
     }
   ]
 }
