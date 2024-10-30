@@ -1,10 +1,10 @@
 ---
 title: UX Brighton
 # Populates the `meta description` for a page as well as the project landing page project-specific summary
-summary: Working with UX Brighton to enhance and optimise their user interface, overall website experience, developer experience, content management workflow, search and SEO.
+summary: Worked with UX Brighton to enhance and optimise their user interface, overall website experience, developer experience, content management workflow, search and SEO.
 # Populates the opening / `lead` text on a page
 lead:
-  - Working with UX Brighton to enhance and optimise their user interface, overall website experience, developer experience, content management workflow, search and <abbr title="Search Engine Optimisation.">SEO</abbr>.
+  - Worked with UX Brighton to enhance and optimise their user interface, overall website experience, developer experience, content management workflow, search and <abbr title="Search Engine Optimisation.">SEO</abbr>.
 
 # Social image details - (Is used by content sharing channels like Facebook, Twitter, WhatsApp, LinkedIn, RSS readers etc.)
 # ##########################################################################################################################
@@ -13,7 +13,7 @@ socialImage:
   alt: "A screenshot of UX Brighton's homepage"
 
 project:
-  year: 2022 &mdash; Ongoing
+  year: 2022 &mdash; 2024
   role: Frontend Web Development
   technologies: HTML5, CSS, SCSS, JavaScript (ES6), jQuery, Jekyll, Liquid, JSON, GitHub, GitHub Pages, Node.js, Retool, Swagger, Netlify, Netlify CMS, Google Analytics, Figma, Photoshop.
   websiteLabel: uxbri.org
@@ -32,7 +32,7 @@ image:
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2024-02-17T23:09:27.631Z
+date: 2024-10-30T11:53:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -46,7 +46,7 @@ eleventyExcludeFromCollections: false
 
 UX Brighton is a static website. It's built using the Jekyll SSG and deployed using Netlify. It uses a Netlify CMS configuration to manage the content.
 
-We rebuilt the [UX Brighton job board](https://uxbri.org/jobs){rel=external} so it renders as a MPA rather than a SPA. This allows for far richer indexing by search engines. Every job post and event page also dynamically includes valid structured schema data at build time, generates a new `sitemap.xml` file, and automatically notifies Google of these changes.
+We rebuilt the [UX Brighton job board](https://uxbri.org/jobs) so it renders as a MPA rather than a SPA. This allows for far richer indexing by search engines. Every job post and event page also dynamically includes valid structured schema data at build time, generates a new `sitemap.xml` file, and automatically notifies Google of these changes.
 
 <ol role="list" class="auto-grid | no-list">
   <li>
