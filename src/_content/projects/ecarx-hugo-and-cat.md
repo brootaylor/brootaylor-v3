@@ -44,9 +44,9 @@ eleventyExcludeFromCollections: false
   <img src="/assets/images/projects/hugo-and-cat/ecarx/ecarx-news--sml-screen_01.webp" width="1068" height="726" alt="A screenshot of ECARX's news page on a desktop monitor." loading="lazy" decoding="async">
 </picture>
 
-I had the opportunity to work on the frontend development for ECARX's new website with a team of developers from [Hugo & Cat](https://www.hugoandcat.com/){rel=external}. The website, based on Umbraco, incorporated a Storybook component library for the site build.
+I had the opportunity to work on the frontend development for ECARX's new website with a team of developers from [Hugo & Cat](https://www.hugoandcat.com/). The website, based on Umbraco, incorporated a Storybook component library for the site build.
 
-Using [GSAP](https://gsap.com/){rel=external}, I implemented various animations, contributing to a dynamic and visually appealing user interface.
+Using [GSAP](https://gsap.com/), I implemented various animations, contributing to a dynamic and visually appealing user interface.
 
 <ol role="list" class="auto-grid | no-list">
   <li>
