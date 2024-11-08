@@ -1,11 +1,11 @@
 ---
 title: "About"
 # Populates the `meta description` for a page
-summary: "Bruce is originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. He now lives in Crawley, England with his family and builds websites for a living."
+summary: "Bruce is originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. He now lives in England with his family and builds websites for a living."
 # Populates the opening / `lead` text on a page
 lead:
   - I'm originally from South Africa and grew up on a dairy farm in a very <a href="https://youtu.be/bGQbM3QfA5w">beautiful part of the country</a>.
-  - I now live in Crawley, England with <a href="/photos/2022-03-30/photo_202203300012">my family</a> and <a href="/projects">build websites</a> for a living.
+  - I now live in England with <a href="/photos/2022-03-30/photo_202203300012">my family</a> and <a href="/projects">build websites</a> for a living.
 
 # Page-specific metadata content added to the `<head>`
 head: "
@@ -29,7 +29,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-09-07T20:30:27.631Z
+date: 2024-11-08T15:31:27.631Z
 ---
 
 <img src="/assets/images/pages/about/broo_profile_about_bw.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
