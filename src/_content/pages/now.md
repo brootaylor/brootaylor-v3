@@ -10,7 +10,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2024-10-25T19:55:27.631Z
+updated: 2024-11-12T23:27:27.631Z
 
 location:
   locality: Crawley
@@ -52,7 +52,7 @@ I've been listening to a lot of podcasts lately. Here are a few of my current fa
 
 It's seems to be a bit of a challenge to find something worth watching on TV these days. Here's what I'm enjoying watching at the moment&hellip;
 
-* [Ancient Apocalypse](https://www.imdb.com/title/tt22807484/) &mdash; *TV Series*
+* [The Day of the Jackal](https://www.imdb.com/title/tt24053860/) &mdash; *TV Series*
 
 ---
 
