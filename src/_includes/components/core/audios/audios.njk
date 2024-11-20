@@ -1,0 +1,45 @@
+<div class="audio">
+	{# Fallback for non-JavaScript users #}
+  <p>
+    Listen on <a href="https://open.spotify.com/track/{TRACK_ID}" target="_blank" rel="noopener">Spotify</a>.
+  </p>
+	{# This could be injected dynamically if using a progressive enhancement method #}
+	<iframe src="https://open.spotify.com/embed/track/41FNZsY7w7KaTQ2bjxdR6w?utm_source=generator&theme=0" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+</div>
+
+
+{# Possibly implement a progressive enhanced solution somewhere alomng the lines of the following #}
+<script>
+	/**
+		* Progressive Enhancement Script for Spotify Embed
+		* Ensures the embed iframe is only added if the browser supports necessary features.
+		*/
+
+	// Wait for the DOM to be fully loaded
+	document.addEventListener("DOMContentLoaded", () => {
+		// Select the container for the Spotify player
+		const spotifyPlayerContainer = document.querySelector(".spotify-player");
+
+		// Spotify Embed URL
+		const spotifyEmbedUrl = "https://open.spotify.com/embed/track/{TRACK_ID}?utm_source=generator";
+
+		// Check if the container exists and if the browser supports iframe elements
+		if (spotifyPlayerContainer && 'HTMLIFrameElement' in window) {
+			// Create the iframe element
+			const spotifyIframe = document.createElement("iframe");
+
+			// Set iframe attributes
+			spotifyIframe.src = spotifyEmbedUrl;                       // Spotify embed URL
+			spotifyIframe.width = "300";                               // Fixed width (overridden by CSS for responsiveness)
+			spotifyIframe.height = "80";                               // Height for the player
+			spotifyIframe.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"; // Permissions
+			spotifyIframe.allowFullscreen = true;                      // Enable fullscreen support (if relevant)
+
+			// Remove fallback content
+			spotifyPlayerContainer.innerHTML = "";
+
+			// Append the iframe to the container
+			spotifyPlayerContainer.appendChild(spotifyIframe);
+		}
+	});
+</script>

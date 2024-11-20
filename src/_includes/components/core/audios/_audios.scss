@@ -1,0 +1,19 @@
+/**********************************************************
+ * Audios placeholder
+ **********************************************************/
+
+@use '../../../../styles/abstracts' as *;
+
+.audio {
+  width: 100%;
+  max-width: 50ch;
+  height: 80px;
+
+  // Something like a Spotify embed
+  iframe {
+    border: none;
+    border-radius: 5px;
+    width: inherit;
+    height: inherit;
+  }
+}
