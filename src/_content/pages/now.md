@@ -10,7 +10,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2024-11-12T23:27:27.631Z
+updated: 2024-11-28T18:40:27.631Z
 
 location:
   locality: Crawley
@@ -50,9 +50,13 @@ I've been listening to a lot of podcasts lately. Here are a few of my current fa
 
 ## Watching
 
-It's seems to be a bit of a challenge to find something worth watching on TV these days. Here's what I'm enjoying watching at the moment&hellip;
+It's seems to be a bit of a challenge to find something worth watching on TV these days. These are on the go at the moment&hellip;
 
 * [The Day of the Jackal](https://www.imdb.com/title/tt24053860/) &mdash; *TV Series*
+* [Marco Polo](https://www.imdb.com/title/tt2189461/) &mdash; *TV Series*
+* [Dune: Prophecy](https://www.imdb.com/title/tt10466872/) &mdash; *TV Series*
+* [Yellowstone](https://www.imdb.com/title/tt4236770/) &mdash; *TV Series*
+* [Lioness](https://www.imdb.com/title/tt13111078/) &mdash; *TV Series*
 
 ---
 
@@ -68,6 +72,14 @@ It's seems to be a bit of a challenge to find something worth watching on TV the
 I think a lot about some of the effects of "[Overshoot](https://howtosavetheworld.ca/2021/09/21/overshoot-where-we-stand-now-guest-post-by-michael-dowd/)" &mdash; (for example, "*climate change*" and "*societal breakdown/collapse*") &mdash; and am trying my best to process what I've been researching for the past few years. I most certainly am in the midst of a 'dance' with grief, anger, guilt, confusion, fear, numbness, acceptance, and fleeting moments of&hellip; peace.
 
 [I wrote a post](/writing/2023-05-31/the-climate-crisis-what-to-make-of-it) just over a year ago to at least begin recording my thoughts &mdash; as well as the sources I've been referencing.
+
+I'm also concerned about (and paying attention to) the [geopolitical events playing out in our world](https://theduran.com/orwells-warning-the-insidious-nature-of-political-language-the-cargo-cult-of-woke-christian-parenti-doublespeak-doublethink-history-has-stopped-party-is-always-right/) at the moment. I'm not a '*doomster*' per se but I am a realist, and prefer not to put my head in the sand if I can help it.
+
+It irritated me as a kid when my dad often used to say...
+
+> Observe... observe... observe.
+
+I get it now.
 
 ---
 
