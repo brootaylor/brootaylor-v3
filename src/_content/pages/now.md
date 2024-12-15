@@ -10,7 +10,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2024-11-28T18:40:27.631Z
+updated: 2024-12-15T00:39:27.631Z
 
 location:
   locality: Crawley
@@ -52,7 +52,7 @@ I've been listening to a lot of podcasts lately. Here are a few of my current fa
 
 It's seems to be a bit of a challenge to find something worth watching on TV these days. These are on the go at the moment&hellip;
 
-* [The Day of the Jackal](https://www.imdb.com/title/tt24053860/) &mdash; *TV Series*
+* [Landman](https://www.imdb.com/title/tt14186672/) &mdash; *TV Series*
 * [Marco Polo](https://www.imdb.com/title/tt2189461/) &mdash; *TV Series*
 * [Dune: Prophecy](https://www.imdb.com/title/tt10466872/) &mdash; *TV Series*
 * [Yellowstone](https://www.imdb.com/title/tt4236770/) &mdash; *TV Series*
