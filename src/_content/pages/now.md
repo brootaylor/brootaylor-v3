@@ -10,7 +10,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2024-12-27T15:56:27.631Z
+updated: 2024-12-30T11:42:27.631Z
 
 location:
   locality: Crawley
@@ -36,7 +36,7 @@ I usually have a few books on the go and switch to whichever suits my fancy at t
 
 ## Listening
 
-I've been listening to a lot of podcasts lately. Here are a few of my current favourites&hellip;
+I've been listening to a few podcasts lately. These are the ones I find myself bouncing between&hellip;
 
 * [The Duran](https://open.spotify.com/show/5DgkWsC3YjoyGBV03CFWnk?si=c62004134bbf40ed) &mdash; *Podcast*
 * [Planet: Critical](https://open.spotify.com/show/5zGRjKWThT6H18isBlVEY8?si=82195fb522014341) &mdash; *Podcast*
@@ -44,19 +44,16 @@ I've been listening to a lot of podcasts lately. Here are a few of my current fa
 * [The Great Simplification with Nate Hagens](https://open.spotify.com/show/0ZFJIjuJwh3XeMqrguiXNR?si=21485f0d963344fe) &mdash; *Podcast*
 * [The Tucker Carlson Show](https://open.spotify.com/show/5L2ON33kXa2b7laBpCAgOI?si=57a7d5076ed84767) &mdash; *Podcast*
 * [The Joe Rogan Experience](https://open.spotify.com/show/4rOoJ6Egrf8K2IrywzwOMk?si=88ef8bd8716a40f7) &mdash; *Podcast*
-* [The Diary Of A CEO with Steven Bartlett](https://open.spotify.com/show/7iQXmUT7XGuZSzAMjoNWlX?si=3106d80cea79480b) &mdash; *Podcast*
 
 ---
 
 ## Watching
 
-It's seems to be a bit of a challenge to find something worth watching on TV these days. These are on the go at the moment&hellip;
+It's a bit of a challenge finding something worth watching on TV these days. I'm enjoying these shows at the moment&hellip;
 
 * [Landman](https://www.imdb.com/title/tt14186672/) &mdash; *TV Series*
 * [Marco Polo](https://www.imdb.com/title/tt2189461/) &mdash; *TV Series*
 * [Dune: Prophecy](https://www.imdb.com/title/tt10466872/) &mdash; *TV Series*
-* [Cross](https://www.imdb.com/title/tt11794812/) &mdash; *TV Series*
-* [The Penguin](https://www.imdb.com/title/tt15435876/) &mdash; *TV Series*
 * [The Agency](https://www.imdb.com/title/tt26656917/) &mdash; *TV Series*
 
 ---
@@ -65,6 +62,12 @@ It's seems to be a bit of a challenge to find something worth watching on TV the
 
 * Tinkering around on a bunch of personal code projects using technologies like [Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GreenSock](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [IndieKit](https://getindiekit.com/) and [Utopia](https://utopia.fyi/).
 * Brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)*' &mdash; like how to tie a bunch of [useful knots](https://youtu.be/kA48yzKYp3Q) and [fire building techniques](https://youtu.be/7v4twfXG2uY) - in [all weather conditions](https://youtu.be/QiYlEyvDbco) as well.
+
+---
+
+## Plans
+
+My family and and I are hoping to get back to South Africa sometime in 2025. I still have family who live out there and it's been far too long since we've seen them.
 
 ---
 
