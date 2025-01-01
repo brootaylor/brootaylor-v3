@@ -1,5 +1,5 @@
-import { Config } from "@netlify/edge-functions";
-import agents from "../../src/_data/bots.json" with { type: "json" };
+import { Config } from '@netlify/edge-functions';
+import agents from '../../src/_data/bots.json' with { type: 'json' };
 
 export default async (request: Request) => {
   const ua = request.headers.get('user-agent') || '';
