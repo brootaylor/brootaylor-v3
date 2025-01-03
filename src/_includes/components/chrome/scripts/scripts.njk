@@ -30,6 +30,24 @@
 {% endif %}
 
 {#
+	This script creates an invisible honeypot link to detect bots.
+	If the site.botHoneypot flag is set, the script will add a hidden link to the /honeypot path, which can be used to identify and log bot activity.
+#}
+{% if site.botHoneypot %}
+	<script>
+		(() => {
+			document.addEventListener('DOMContentLoaded', () => {
+				const honeypotLink = document.createElement('a');
+				honeypotLink.href = '/honeypot';
+				honeypotLink.style.display = 'none'; // Make it invisible
+				honeypotLink.textContent = 'Honeypot';
+				document.body.appendChild(honeypotLink);
+			});
+		})();
+	</script>
+{% endif %}
+
+{#
 	Service workers
 	*******************
 	Only render this code snippet if `scriptsServiceworker` is `true` in `_data/site.js`
@@ -48,21 +66,5 @@
 				});
 			}
 		}
-	</script>
-{% endif %}
-
-{#
-	This script creates an invisible honeypot link to detect bots.
-	If the site.botHoneypot flag is set, the script will add a hidden link to the /honeypot path, which can be used to identify and log bot activity.
-#}
-{% if site.botHoneypot %}
-	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-				const honeypotLink = document.createElement('a');
-				honeypotLink.href = '/honeypot';
-				honeypotLink.style.display = 'none'; // Make it invisible
-				honeypotLink.textContent = 'Honeypot';
-				document.body.appendChild(honeypotLink);
-		});
 	</script>
 {% endif %}
