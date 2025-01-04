@@ -108,6 +108,7 @@ export default async (request) => {
   isBot = agents.some(agent => ua.toLowerCase().includes(agent.toLowerCase()));
 
   if (isBot) {
+    console.log(`[Edge Function] Bot detected: ${isBot}`);
     console.log(`[Edge Function] Blocked bot: ${ua}`);
     return respondWith403();
   }
