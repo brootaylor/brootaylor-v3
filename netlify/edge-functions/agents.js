@@ -49,7 +49,7 @@ export default async (request) => {
   if (url.pathname.includes(honeypotPath)) {
     console.log(`[Edge Function] Honeypot triggered by: ${request.headers.get('user-agent')}`);
     return new Response(await fetch(ERROR_403_URL).then(res => res.text()), {
-      status: 403,
+      status: 403, // 403 Forbidden
       headers: {
         'Content-Type': 'text/html',
       },
@@ -79,7 +79,7 @@ export default async (request) => {
   // If the requester is identified as a bot, return a 401 Unauthorized response
   if (isBot) {
     return new Response(await fetch(ERROR_403_URL).then(res => res.text()), {
-      status: 401,
+      status: 403, // 403 Forbidden
       headers: {
         'Content-Type': 'text/html',
       },
