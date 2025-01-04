@@ -30,7 +30,7 @@ const exemptFileTypes = [
 // Define a list of suspicious paths to block. Typically Wordpress-related paths and common bot paths.
 const suspiciousPaths = [
   '/install.php', '/xmlrpc.php', '/wp-includes/', '/wlwmanifest.xml', '/wp-admin/',
-  '/wp-content/', '/wordpress/', '/bypass.php', '/avaa.php', '/alfa-rex2.php'
+  '/wp-content/', '/wordpress/', '/wp-login.php', '/bypass.php', '/avaa.php', '/alfa-rex2.php'
 ];
 
 // Define the honeypot path (a page or endpoint only visible to bots)
