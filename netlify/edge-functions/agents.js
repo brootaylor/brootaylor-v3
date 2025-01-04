@@ -1,5 +1,5 @@
 /*
- * This Edge function performs (known) bot detection and error page handling.
+ * This Edge function performs (known) bot detection, suspicious path blocking, and error page handling.
  */
 
 // Load environment variables in local development
@@ -15,83 +15,108 @@ const BASE_URL = LOCAL_ENV
   ? 'http://localhost:8888'
   : 'https://brootaylor.com';
 
+// Define the URLs for the custom error pages
+const ERROR_403_URL = `${BASE_URL}/error/403.html`;
+const ERROR_404_URL = `${BASE_URL}/error/404.html`;
+
 // Import the list of known bot user-agents from a JSON file
 import agents from '../../src/_data/bots.json' assert { type: 'json' };
 
-// Define a list of file extensions to exempt from bot detection
-const exemptFileTypes = ['.mjs', '.js', '.css', '.jpg', '.jpeg', '.png', '.gif', '.svg', '.webp', '.ico'];
+// Define the list of file extensions to exempt from bot detection
+const exemptFileTypes = [
+  '.mjs', '.js', '.css', '.jpg', '.jpeg', '.png', '.gif', '.svg', '.webp', '.ico'
+];
+
+// Define a list of suspicious paths to block. Typically Wordpress-related paths and common bot paths.
+const suspiciousPaths = [
+  '/install.php', '/xmlrpc.php', '/wp-includes/', '/wlwmanifest.xml', '/wp-admin/',
+  '/wp-content/', '/wordpress/', '/bypass.php', '/avaa.php', '/alfa-rex2.php'
+];
 
 // Define the honeypot path (a page or endpoint only visible to bots)
 const honeypotPath = '/honeypot';
 
-// Define the URLs for the custom error pages
-const ERROR_403_URL = `${BASE_URL}/error/403.html`;
+/**
+ * Helper function to generate a 403 response with a custom error page.
+ * @returns {Response} - 403 Forbidden response with a custom error page.
+ */
+const respondWith403 = async () => {
+  const errorPage = await fetch(ERROR_403_URL).then(res => res.text());
+  return new Response(errorPage, {
+    status: 403,
+    headers: { 'Content-Type': 'text/html' },
+  });
+};
 
 /**
- * Main function that handles incoming requests and applies bot detection and error page logic.
+ * Helper function to generate a 404 response with a custom error page.
+ * @returns {Response} - 404 Not Found response with a custom error page.
+ */
+const respondWith404 = async () => {
+  const errorPage = await fetch(ERROR_404_URL).then(res => res.text());
+  return new Response(errorPage, {
+    status: 404,
+    headers: { 'Content-Type': 'text/html' },
+  });
+};
+
+/**
+ * Main function that handles incoming requests and applies bot detection, suspicious path blocking, and error page logic.
  * @param {Request} request - The incoming request object.
  * @returns {Response} - The response object, either allowing the request or blocking it.
  */
 export default async (request) => {
-  // Get the request URL
+  // Get the request URL and User-Agent header
   const url = new URL(request.url);
+  const ua = request.headers.get('user-agent') || '';
 
   // Extract the file extension from the URL path
   const fileExtension = url.pathname.slice(url.pathname.lastIndexOf('.'));
 
-  // Check if the request is for a file type we want to exempt
+  // Log the request information for debugging
+  console.log(`[Edge Function] User agent: ${ua}`);
+  console.log(`[Edge Function] Request URL: ${request.url}`);
+
+  // Exempt specific file types from bot detection
   if (exemptFileTypes.includes(fileExtension)) {
     console.log(`[Edge Function] Exempting request for: ${url.pathname}`);
     return;
   }
 
-  // Check if the request is targeting the honeypot page
-  if (url.pathname.includes(honeypotPath)) {
-    console.log(`[Edge Function] Honeypot triggered by: ${request.headers.get('user-agent')}`);
-    return new Response(await fetch(ERROR_403_URL).then(res => res.text()), {
-      status: 403, // 403 Forbidden
-      headers: {
-        'Content-Type': 'text/html',
-      },
-    });
+  // Block requests to suspicious paths
+  if (suspiciousPaths.some(path => url.pathname.includes(path))) {
+    console.log(`[Edge Function] Blocked suspicious path: ${url.pathname}`);
+    return respondWith404();
   }
 
-  // Retrieve the User-Agent header from the incoming request
-  const ua = request.headers.get('user-agent') || '';
-  console.log(`[Edge Function] User agent: ${ua}`); // Log the User-Agent for debugging
+  // Block requests to the honeypot path
+  if (url.pathname.includes(honeypotPath)) {
+    console.log(`[Edge Function] Honeypot triggered by: ${ua}`);
+    return respondWith403();
+  }
 
-  // Log the requested URL for context
-  console.log(`[Edge Function] Request URL: ${request.url}`);
+  // Block requests with empty User-Agent headers
+  if (!ua) {
+    console.log(`[Edge Function] Blocked empty User-Agent for: ${url.pathname}`);
+    return respondWith404();
+  }
 
-  // Check if the User-Agent matches any known bot user-agent in the list
+  // Initialise the bot flag
   let isBot = false;
 
-  agents.forEach(agent => {
-    if (ua.toLowerCase().includes(agent.toLowerCase())) {
-      isBot = true;
-      return;
-    }
-  });
+  // Check if the User-Agent matches any known bot user-agent in the list
+  isBot = agents.some(agent => ua.toLowerCase().includes(agent.toLowerCase()));
 
-  // Log the result of the bot detection
-  console.log(`[Edge Function] Bot detected: ${isBot}`);
-
-  // If the requester is identified as a bot, return a 401 Unauthorized response
   if (isBot) {
-    return new Response(await fetch(ERROR_403_URL).then(res => res.text()), {
-      status: 403, // 403 Forbidden
-      headers: {
-        'Content-Type': 'text/html',
-      },
-    });
+    console.log(`[Edge Function] Blocked bot: ${ua}`);
+    return respondWith403();
   }
 
-  // Otherwise, continue with the request as normal
+  // Allow the request if no issues detected
   return;
 };
 
-// The configuration for this edge function
-// `path: "/*"` applies the function to all requests on the site
+// This config object sets the Edge function to run on all paths (wildcard)
 export const config = {
   path: '/*',
 };
