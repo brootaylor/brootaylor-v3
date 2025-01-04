@@ -30,8 +30,9 @@
 {% endif %}
 
 {#
-	This script creates an invisible honeypot link to detect bots.
-	If the site.botHoneypot flag is set, the script will add a hidden link to the /honeypot path, which can be used to identify and log bot activity.
+	Honeypot link
+	****************
+	If the site.botHoneypot flag is set to `true`, the script will add a hidden link to the /honeypot path (page), which can be used to identify and log bot activity.
 #}
 {% if site.botHoneypot %}
 	<!-- Honeypot trap for scraper bots... -->
