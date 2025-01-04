@@ -20,7 +20,7 @@ const ERROR_403_URL = `${BASE_URL}/error/403.html`;
 const ERROR_404_URL = `${BASE_URL}/error/404.html`;
 
 // Import the list of known bot user-agents from a JSON file
-import agents from '../../src/_data/bots.json' assert { type: 'json' };
+import agents from '../../src/_data/agents.json' assert { type: 'json' };
 
 // Define the list of file extensions to exempt from bot detection
 const exemptFileTypes = [
