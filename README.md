@@ -72,6 +72,9 @@ brootaylor.com
 │   ├── shortcodes                 # Eleventy shortcodes
 │   ├── utils                      # Eleventy utility templates (ie. filters, transforms etc.)
 │
+├── netlify
+│   ├── edge-functions             # Netlify Edge functions
+│
 ├── src
 │   ├── _content                   # Content (Markdown)
 │   ├── _data                      # Global website data (eg. site, messages, navigation & contactform)
