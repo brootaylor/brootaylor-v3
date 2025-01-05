@@ -51,7 +51,7 @@ It's worth bearing in mind my 'stack' is Eleventy, Netlify and GitHub. The princ
 
 Here's the code it's made up of:
 
-1. [`agents.json`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_data/agents.json) &mdash; Data file that lists the bots I want to block.
+1. [`agents.json`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_data/agents.json) &mdash; Data file that lists the bots I want to block. [Dark Visitors](https://darkvisitors.com/agents.json) is a great resource for listing the agents.
 2. [`agents.js`](https://github.com/brootaylor/brootaylor-v3/blob/main/netlify/edge-functions/agents.js) &mdash; Server-side edge function that's triggered on every request to my site. It reads the `agents.json` file and checks the user-agent of the incoming request. Among some other things this script does, if the user-agent matches one of the bots in the list, it returns a `403` status code.
 3. [`robots.njk`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/robots.njk) &mdash; Nunjucks template that reads the `agents.json` file and generates the `robots.txt` file.
 4. **Honeypot link** &mdash; A hidden link that's added dynamically to my site using a little inline JavaScript. It's a link that's *(hopefully)* mostly only visible to naughty bots / dodgy agents. If the link is clicked, they're redirected to a `403` page.
