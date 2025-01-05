@@ -1,7 +1,8 @@
 ---
 title: The Real Gospel please oh please
 summary: Religious moralistic behaviour modification stinks. It keeps us from encountering the True Gospel.
-lead: Religious moralistic behaviour modification stinks. It keeps us from encountering the True Gospel. I for one am questioning whether I ever really encountered this True Gospel or was I just caught up in a feel-good club &mdash; (which I liked very much by the way) &mdash; but had no real effect in exposing my very real need for a saviour.
+lead:
+  - Religious moralistic behaviour modification stinks. It keeps us from encountering the True Gospel. I for one am questioning whether I ever really encountered this True Gospel or was I just caught up in a feel-good club &mdash; (which I liked very much by the way) &mdash; but had no real effect in exposing my very real need for a saviour.
 date: 2015-03-11T21:43:58.155Z
 updated: ""
 location:

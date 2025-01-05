@@ -1,7 +1,8 @@
 ---
 title: Pursuer or pursued?
 summary: Everything we see with our eyes was first conceived in the spiritual. The Ancient of Ancients, the Cosmic Christ is so beyond you and I or any single human being.
-lead: A friend told me he’s reading a book on heaven. Covering things like, what do we really know about heaven? What does scripture say about it? Surely, if we are to be going somewhere, we want to know what it is like. Where is it? What is our new home going to be like? Is there just one or multiple heavens?
+lead:
+  - A friend told me he’s reading a book on heaven. Covering things like, what do we really know about heaven? What does scripture say about it? Surely, if we are to be going somewhere, we want to know what it is like. Where is it? What is our new home going to be like? Is there just one or multiple heavens?
 date: 2015-04-30T21:15:34.972Z
 updated: ""
 location:

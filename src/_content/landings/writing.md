@@ -25,10 +25,12 @@ date: 2024-03-05T16:59:00
       <h2><a href="{{ writing.url }}">{{ writing.data.title | safe }}</a></h2>
       <time datetime="{{ writing.date | dateTime }}">{{ writing.date | dateTimeReadable("d LLLL y, ") }}{{ writing.date | dateTimeReadable("t") | lower }}</time>
       {%- if writing.data.lead -%}
-        <p>{{ writing.data.lead | safe }}</p>
-      {% else %}
+        {% for paragraph in writing.data.lead %}
+					<p>{{ paragraph | safe }}</p>
+				{%- endfor %}
+      {%- else%}
         <p>{{ writing.data.summary | safe }}</p>
-      {%- endif -%}
+      {%- endif %}
     </article>
   </li>
 {% endfor -%}
