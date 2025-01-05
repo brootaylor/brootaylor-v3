@@ -168,7 +168,7 @@ And this is just a *select list* of bots I've attempted to block. If you'd like 
 
 Well, it seems it doesn't make a blind bit of difference. Dennis Schubert [posted about it](https://pod.geraspora.de/posts/17342163) a few days ago showing that... "They also don’t give a single flying fuck about `robots.txt`, because why should they."
 
-I'm also reminded of what [Jeremy Keith wrote](https://adactio.com/links/20380) at the time...
+I'm also reminded of what [Jeremy Keith wrote](https://adactio.com/links/20380)...
 
 > Now that the horse has bolted—and ransacked the web—you can shut the barn door.
 
