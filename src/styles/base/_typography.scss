@@ -148,6 +148,14 @@ abbr {
   }
 }
 
+// Details element styling
+details {
+  max-width: 60ch;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  border: 1px solid;
+}
+
 // Superscript
 sup {
   font-size: 0.75em;
