@@ -106,7 +106,6 @@ export default async (request) => {
   }
 
   // Allow the request if no issues detected
-  console.log(`[Edge Function] Bot detected: ${isBot}`);
   return;
 };
 
