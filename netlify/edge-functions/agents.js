@@ -4,7 +4,11 @@
 
 // Load environment variables in local development
 if (typeof process !== 'undefined' && process.env.LOCAL_ENV === 'true') {
-  await import('dotenv/config');
+  try {
+    await import('dotenv/config');
+  } catch (err) {
+    console.error('Failed to load dotenv:', err);
+  }
 }
 
 // Use a fallback for environment variables if `process.env` is undefined
@@ -15,9 +19,8 @@ const BASE_URL = LOCAL_ENV
   ? 'http://localhost:8888'
   : 'https://brootaylor.com';
 
-// Define the URLs for the custom error pages
+// Define the URL for the custom 403 error page
 const ERROR_403_URL = `${BASE_URL}/error/403.html`;
-const ERROR_404_URL = `${BASE_URL}/error/404.html`;
 
 // Import the list of known bot user-agents from a JSON file
 import agents from '../../src/_data/agents.json' assert { type: 'json' };
@@ -30,7 +33,8 @@ const exemptFileTypes = [
 // Define a list of suspicious paths to block. Typically Wordpress-related paths and common bot paths.
 const suspiciousPaths = [
   '/install.php', '/xmlrpc.php', '/wp-includes', '/wlwmanifest.xml', '/wp-admin',
-  '/wp-content', '/wordpress', '/wp-login.php', '/bypass.php', '/avaa.php', '/alfa-rex2.php'
+  '/wp-content', '/wordpress', '/wp-login.php', '/bypass.php', '/avaa.php', '/alfa-rex2.php',
+  '/.env', '/.env.local', '/.env.production', '/.env.development', '/.env.staging'
 ];
 
 // Define the honeypot path (a page or endpoint only visible to bots)
@@ -44,18 +48,6 @@ const respondWith403 = async () => {
   const errorPage = await fetch(ERROR_403_URL).then(res => res.text());
   return new Response(errorPage, {
     status: 403,
-    headers: { 'Content-Type': 'text/html' },
-  });
-};
-
-/**
- * Helper function to generate a 404 response with a custom error page.
- * @returns {Response} - 404 Not Found response with a custom error page.
- */
-const respondWith404 = async () => {
-  const errorPage = await fetch(ERROR_404_URL).then(res => res.text());
-  return new Response(errorPage, {
-    status: 404,
     headers: { 'Content-Type': 'text/html' },
   });
 };
@@ -86,7 +78,7 @@ export default async (request) => {
   // Block requests to suspicious paths
   if (suspiciousPaths.some(path => url.pathname.includes(path))) {
     console.log(`[Edge Function] Blocked suspicious path: ${url.pathname}`);
-    return respondWith404();
+    return respondWith403();
   }
 
   // Block requests to the honeypot path
@@ -98,7 +90,7 @@ export default async (request) => {
   // Block requests with empty User-Agent headers
   if (!ua) {
     console.log(`[Edge Function] Blocked empty User-Agent for: ${url.pathname}`);
-    return respondWith404();
+    return respondWith403();
   }
 
   // Initialise the bot flag
