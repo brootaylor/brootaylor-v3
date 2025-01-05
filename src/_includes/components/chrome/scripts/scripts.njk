@@ -45,7 +45,7 @@
 				honeypotLink.classList.add('hidden');
 				honeypotLink.setAttribute('aria-hidden', 'true'); // Ensure screen readers ignore it
 				honeypotLink.tabIndex = -1; // Prevent it from being focusable via keyboard navigation
-				honeypotLink.setAttribute('rel', 'nofollow'); // Prevent search engines from following the link
+				honeypotLink.rel = 'nofollow'; // Prevent search engines from following the link
 				document.body.appendChild(honeypotLink);
 			});
 		})();
