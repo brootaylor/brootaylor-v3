@@ -5,7 +5,7 @@ summary: Ai Bot Judo.
 lead:
   - I wrote a post a few days ago about <a href="/writing/2025-01-01/robots-txt">my robots.txt file</a> &mdash; and how I thought I was being clever by disallowing OpenAI from indexing my personal website.
   - And how not-so-clever <em>(and naive)</em> of me it had turned out to be.
-date: 2025-01-05T18:33:36.671Z
+date: 2025-01-05T19:23:36.671Z
 updated: ''
 location:
   locality: Crawley
@@ -16,12 +16,13 @@ category:
   - bots
   - tech
   - web
+  - judo
   - honeypot
   - content
   - copyright
   - robots
   - ethics
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 ---
 
 ***A little preamble...***
@@ -48,16 +49,16 @@ So here it is...
 
 It's worth bearing in mind my 'stack' is Eleventy, Netlify and GitHub. The principles however should be applicable in most cases.
 
-Here's what it's made up of:
+Here's the code it's made up of:
 
 1. [`agents.json`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_data/agents.json) &mdash; Data file that lists the bots I want to block.
-2. [`agents.js`](https://github.com/brootaylor/brootaylor-v3/blob/main/netlify/edge-functions/agents.js) &mdash; Server-side edge function that's triggered on every request to my site. It reads the `agents.json` file and checks the user-agent of the incoming request. Amongst some other things it does &mdash; if the user-agent matches one of the bots in the list, it returns a `403` status code.
+2. [`agents.js`](https://github.com/brootaylor/brootaylor-v3/blob/main/netlify/edge-functions/agents.js) &mdash; Server-side edge function that's triggered on every request to my site. It reads the `agents.json` file and checks the user-agent of the incoming request. Among some other things this script does, if the user-agent matches one of the bots in the list, it returns a `403` status code.
 3. [`robots.njk`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/robots.njk) &mdash; Nunjucks template that reads the `agents.json` file and generates the `robots.txt` file.
-4. **Honeypot link** &mdash; A hidden link that's added dynamically to my site using a little JavaScript. It's a link that's *(hopefully)* mostly only visible to naughty bots / dodgy agents. If the link is clicked, they're redirected to a `403` page.
+4. **Honeypot link** &mdash; A hidden link that's added dynamically to my site using a little inline JavaScript. It's a link that's *(hopefully)* mostly only visible to naughty bots / dodgy agents. If the link is clicked, they're redirected to a `403` page.
 
-This hidden 'honeypot' link is a little bit of a gamble and I'm not sure how effective it'll be. But it's a fun little experiment and I'm curious to see if it has any effect.
+The hidden 'honeypot' link is a little bit of a gamble and I'm not sure how effective it'll be. But it's a fun little experiment and I'm curious to see if it has any effect.
 
-This is what my inline JS generates:
+This is what the inline JS generates in the DOM, just before the closing `</body>` tag:
 
 ```html
 <a href="/honeypot" class="hidden" aria-hidden="true" tabindex="-1" rel="nofollow">Honeypot be this way</a>
@@ -91,6 +92,6 @@ If you're interested in the script snippet that generates this link, here it is:
 
 It does feel crazy to have to go to these lengths to try and protect my content. But it's been interesting as well as a bit of fun giving it a go &mdash; and kinda feels more like a game of cat and mouse.
 
-By the way, you're more than welcome to use any of the code I've shared here.
+By the way, you're more than welcome to use any of the code I've shared here and linked to.
 
 For the time being, here's a middle finger up to the bots and their hubris-infested creators. 🖕
