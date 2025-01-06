@@ -30,7 +30,7 @@
   [context.production.environment]
     GIT_LFS_ENABLED = "true"
     NODE_ENV = "production"
-    NODE_VERSION = "20"
+    NODE_VERSION = "22"
     TZ = "Europe/London"
 
 
