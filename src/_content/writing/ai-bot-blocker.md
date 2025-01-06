@@ -1,12 +1,12 @@
 ---
-title: Ai Bot Judo
-summary: Ai Bot Judo.
+title: Ai Bot Blocker
+summary: Ai Bot Blocker.
 # Populates the opening / `lead` text on a page
 lead:
   - I wrote a post a few days ago about <a href="/writing/2025-01-01/robots-txt">my robots.txt file</a> &mdash; and how I thought I was being clever by disallowing OpenAI from indexing my personal website.
   - And how not-so-clever <em>(and naive)</em> of me it had turned out to be.
 date: 2025-01-05T19:23:36.671Z
-updated: ''
+updated: 2025-01-06T00:07:36.671Z
 location:
   locality: Crawley
   country_name: UK
