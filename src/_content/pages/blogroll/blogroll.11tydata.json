@@ -309,6 +309,11 @@
       "name": "Nicholas Carr",
       "url": "https://www.newcartographies.com/",
       "description": "Nicholas is a technology writer and blogger. On his blog, he explores the fraught intersection of technology and culture."
+    },
+    {
+      "name": "Simon Willison",
+      "url": "https://simonwillison.net/",
+      "description": "Simon is a co-creator of the Django Web Framework, and has been blogging about web development and programming since 2002."
     }
   ]
 }
