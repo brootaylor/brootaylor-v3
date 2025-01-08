@@ -57,6 +57,13 @@ export default {
       verified: true,
     },
     {
+      label: 'Bluesky',
+      url: 'https://bsky.app/profile/brootaylor.bsky.social',
+      icon: 'bluesky',
+      external: true,
+      verified: true,
+    },
+    {
       label: 'Mastodon',
       url: 'https://mastodon.social/@brootaylor',
       icon: 'mastodon',
