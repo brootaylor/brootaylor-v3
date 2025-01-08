@@ -1,12 +1,12 @@
 ---
-title: Ai Bot Blocker
-summary: Ai Bot Blocker.
+title: '"Ai" Bot Blocker'
+summary: '"Ai" Bot Blocker. A little bit of fun and a middle finger up to the bots and their hubris-infested creators.'
 # Populates the opening / `lead` text on a page
 lead:
   - I wrote a post a few days ago about <a href="/writing/2025-01-01/robots-txt">my robots.txt file</a> &mdash; and how I thought I was being clever by disallowing OpenAI from indexing my personal website.
   - And how not-so-clever <em>(and naive)</em> of me it had turned out to be.
 date: 2025-01-05T19:23:36.671Z
-updated: 2025-01-06T00:07:36.671Z
+updated: 2025-01-07T22:07:36.671Z
 location:
   locality: Crawley
   country_name: UK
@@ -51,7 +51,7 @@ It's worth bearing in mind my 'stack' is Eleventy, Netlify and GitHub. The princ
 
 Here's the code it's made up of:
 
-1. [`agents.json`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_data/agents.json) &mdash; Data file that lists the bots I want to block. [Dark Visitors](https://darkvisitors.com/agents.json) is a great resource for listing the agents.
+1. [`agents.json`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_data/agents.json) &mdash; Data file *(static for the time being)* that lists the bots I want to block. [Dark Visitors](https://darkvisitors.com/agents.json) is a great resource for listing the agents.
 2. [`agents.js`](https://github.com/brootaylor/brootaylor-v3/blob/main/netlify/edge-functions/agents.js) &mdash; Server-side edge function that's triggered on every request to my site. It reads the `agents.json` file and checks the user-agent of the incoming request. Among some other things this script does, if the user-agent matches one of the bots in the list, it returns a `403` status code.
 3. [`robots.njk`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/robots.njk) &mdash; Nunjucks template that reads the `agents.json` file and generates the `robots.txt` file.
 4. **Honeypot link** &mdash; A hidden link that's added dynamically to my site using a little inline JavaScript. It's a link that's *(hopefully)* mostly only visible to naughty bots / dodgy agents. If the link is clicked, they're redirected to a `403` page.
@@ -90,8 +90,6 @@ If you're interested in the script snippet that generates this link, here it is:
 
 ## Final thoughts
 
-It does feel crazy to have to go to these lengths to try and protect my content. But it's been interesting as well as a bit of fun giving it a go &mdash; and kinda feels more like a game of cat and mouse.
-
-By the way, you're more than welcome to use any of the code I've shared here and linked to.
+It does feel crazy to have to go to these lengths to try and protect my content. But it's been interesting as well as a bit of fun giving it a go &mdash; and kinda feels more like a game of cat and mouse. I'll be keeping an eye on the logs in Netlify to see if it has any effect.
 
 For the time being, here's a middle finger up to the bots and their hubris-infested creators. 🖕
