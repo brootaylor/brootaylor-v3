@@ -58,7 +58,7 @@ export default {
     },
     {
       label: 'Bluesky',
-      url: 'https://bsky.app/profile/brootaylor.bsky.social',
+      url: 'https://bsky.app/profile/brootaylor.com',
       icon: 'bluesky',
       external: true,
       verified: true,
