@@ -1,16 +1,18 @@
 ---
 title: "What I'm doing now"
 # Populates the `meta description` for a page
-summary: "Work related stuff, what I'm reading, listening to, watching, learning, and reflecting on."
+summary: "This is a place to log stuff I've got on the go at the moment. Work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on."
 # Populates the opening / `lead` text on a page
 lead:
-  - Work related stuff, what I'm reading, listening to, watching, learning, and reflecting on.
+  - This is a place to log stuff I've got on the go at the moment.
+  - Work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on.
+  - <a href="https://nownownow.com/about">Now pages</a> are quite common these days. Maybe make one for yourself!
 
 bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-01-06T00:49:27.631Z
+updated: 2025-01-12T18:37:27.631Z
 
 location:
   locality: Crawley
@@ -25,6 +27,13 @@ Right now, I'm working on a contract basis as a **Frontend Engineer** for [Admir
 
 ---
 
+## Learning
+
+* Tinkering around on a bunch of personal code projects using technologies like [Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GreenSock](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [IndieKit](https://getindiekit.com/) and [Utopia](https://utopia.fyi/).
+* Brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)*' &mdash; like how to tie a bunch of [useful knots](https://youtu.be/kA48yzKYp3Q) and [fire building techniques](https://youtu.be/7v4twfXG2uY) - in [all weather conditions](https://youtu.be/QiYlEyvDbco) as well.
+
+---
+
 ## Reading
 
 I usually have a few books on the go and switch to whichever suits my fancy at the time. Right now I'm reading&hellip;
@@ -36,7 +45,7 @@ I usually have a few books on the go and switch to whichever suits my fancy at t
 
 ## Listening
 
-I've been listening to a few podcasts lately. These are the ones I find myself bouncing between&hellip;
+I've been listening to a few podcasts lately. While I don't listen to all their episodes &mdash; *(or agree with everything they say for that matter)* &mdash; these are the ones I find myself listening to the most. There are some gems in there if you're prepared to look for them and keep an open mind.
 
 * [The Duran](https://open.spotify.com/show/5DgkWsC3YjoyGBV03CFWnk?si=c62004134bbf40ed) &mdash; *Podcast*
 * [Planet: Critical](https://open.spotify.com/show/5zGRjKWThT6H18isBlVEY8?si=82195fb522014341) &mdash; *Podcast*
@@ -44,6 +53,7 @@ I've been listening to a few podcasts lately. These are the ones I find myself b
 * [The Great Simplification with Nate Hagens](https://open.spotify.com/show/0ZFJIjuJwh3XeMqrguiXNR?si=21485f0d963344fe) &mdash; *Podcast*
 * [The Tucker Carlson Show](https://open.spotify.com/show/5L2ON33kXa2b7laBpCAgOI?si=57a7d5076ed84767) &mdash; *Podcast*
 * [The Joe Rogan Experience](https://open.spotify.com/show/4rOoJ6Egrf8K2IrywzwOMk?si=88ef8bd8716a40f7) &mdash; *Podcast*
+* [Syntax - Web Development](https://open.spotify.com/show/4kYCRYJ3yK5DQbP5tbfZby?si=d8355dd847824464) &mdash; *Podcast*
 
 ---
 
@@ -51,18 +61,10 @@ I've been listening to a few podcasts lately. These are the ones I find myself b
 
 It's a bit of a challenge finding something worth watching on TV these days. I'm enjoying these shows at the moment&hellip;
 
-* [Lockerbie](https://www.imdb.com/title/tt31029686/) &mdash; *TV Series*
+* [American Primeval](https://www.imdb.com/title/tt24069848/) &mdash; *TV Mini Series*
 * [Landman](https://www.imdb.com/title/tt14186672/) &mdash; *TV Series*
 * [Marco Polo](https://www.imdb.com/title/tt2189461/) &mdash; *TV Series*
-* [Dune: Prophecy](https://www.imdb.com/title/tt10466872/) &mdash; *TV Series*
 * [The Agency](https://www.imdb.com/title/tt26656917/) &mdash; *TV Series*
-
----
-
-## Learning
-
-* Tinkering around on a bunch of personal code projects using technologies like [Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GreenSock](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [IndieKit](https://getindiekit.com/) and [Utopia](https://utopia.fyi/).
-* Brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)*' &mdash; like how to tie a bunch of [useful knots](https://youtu.be/kA48yzKYp3Q) and [fire building techniques](https://youtu.be/7v4twfXG2uY) - in [all weather conditions](https://youtu.be/QiYlEyvDbco) as well.
 
 ---
 

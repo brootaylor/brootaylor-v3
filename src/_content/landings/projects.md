@@ -4,8 +4,8 @@ title: "Projects"
 summary: "I specialise in helping individuals, businesses, and non-profit organisations craft performant, user-friendly, responsive, accessible, and resilient websites. Whether you're starting fresh or improving an existing one, I'm here to assist you in establishing a lasting and meaningful online presence."
 # Populates the opening / `lead` text on a page
 lead:
-  - Over the past two decades, I've had the privilege of contributing to projects across various industries.
-  - Think I could help with your next project? <a href="/contact">Get in touch</a>.
+  - Over the past two decades, I've had the privilege of working with some fantastic people and organisations. Here are a few of the projects I've been involved with.
+  - Think I could help with your next project? Please <a href="/contact">get in touch</a>.
 
 # Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
 # ############################################################################################
@@ -22,7 +22,7 @@ pagination:
   size: 15
   alias: projects
 
-date: 2024-10-16T18:21:27.631Z
+date: 2025-01-12T18:41:27.631Z
 ---
 
 <section aria-labelledby="projects-featured" class="projects-featured | flow">

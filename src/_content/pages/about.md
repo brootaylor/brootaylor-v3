@@ -29,22 +29,22 @@ head: "
 
 bodyClass: "about"
 
-date: 2024-11-08T15:31:27.631Z
+date: 2025-01-12T18:09:27.631Z
 ---
 
 <img src="/assets/images/pages/about/broo_profile_about_bw.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
 
 ## The work I do
 
-I’m a front-end web developer, ui engineer/designer and generalist &mdash; *meaning I also do some back-end, visual design, and devops if needs be*.
+I’m a front-end web developer, ui engineer/designer and generalist &mdash; *meaning I also do some visual design, back-end, and devops if needs be*.
 
 All things impacting the user experience on the web matters to me. This is where I'm most comfortable and where I've ended up specialising. Which is why you'll mostly find me tinkering around in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/)" &mdash; the somewhat broad and *fuzzy* intersection between design and back-end engineering.
 
 I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented, kind and supportive people over the years, and much of the success I've enjoyed during <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
 
-### Am I a full-stack developer?
+### Am I a "[full-stack] developer"?
 
-I've resisted calling myself a "[full-stack developer](https://bradfrost.com/blog/post/full-stack-developers/)" &mdash; regardless of what some of my roles and experience may indicate. I do know how to do full-stack development, not because I've necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've had to <sup>2</sup></a></span>.
+I've resisted calling myself a "[[full-stack] developer](https://bradfrost.com/blog/post/full-stack-developers/)" &mdash; regardless of what some of my roles and experience may indicate. I do know how to do full-stack development, not because I've necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've had to <sup>2</sup></a></span>.
 
 ---
 

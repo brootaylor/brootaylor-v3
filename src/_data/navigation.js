@@ -26,19 +26,24 @@ export default {
       position: 6,
     },
     {
+      label: 'Reading',
+      url: '/reading',
+      position: 7,
+    },
+    {
       label: 'Photos',
       url: '/photos',
-      position: 7,
+      position: 8,
     },
     {
       label: 'Projects',
       url: '/projects',
-      position: 8,
+      position: 9,
     },
     {
       label: 'Contact',
       url: '/contact',
-      position: 9,
+      position: 10,
     },
   ],
   footernav: [
