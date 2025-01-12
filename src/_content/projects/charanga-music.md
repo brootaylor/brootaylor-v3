@@ -16,7 +16,7 @@ project:
   year: 2016
   role: Frontend Web Developer
   technologies: HTML5, CSS, SCSS, JavaScript, jQuery, Grunt, Git, Bitbucket
-  order: 9
+  order: 10
 
 # Image component rules / properties for projects list page
 # #######################################################
@@ -32,7 +32,7 @@ image:
 
 date: 2024-03-01T12:15:27.631Z
 
-eleventyExcludeFromCollections: false
+eleventyExcludeFromCollections: true
 ---
 
 {% from "components/core/images/images.njk" import imageNormal %}

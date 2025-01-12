@@ -79,6 +79,13 @@ date: 2025-01-12T18:41:27.631Z
             <h3 class="card__title">Avios <a href="#fn:avios" class="footnote" rel="footnote"><sup>*</sup></a></h3>
             <span class="date-time">Year: 2004 - 2015 <small>(permanent)</small></span>
           </header>
+          <div class="card__body">
+            <ul class="flow">
+              <li>Built ecommerce frontend solutions for Airmiles and Avios, mentoring front-end developers and collaborating with back-end teams (Spring application and Oracle-based CMS) to ensure accurate, standards-compliant implementation.</li>
+              <li>Led the adoption of web standards and accessibility, delivering stable, inclusive websites and personalized digital experiences.</li>
+              <li>An Agile workflow, collaborating with stakeholders, UX designers, developers, and testers to deliver engaging digital solutions.</li>
+            </ul>
+          </div>
           <footer class="card__footer | flow">
             <p>Visit them at <a href="https://www.avios.com/en-GB">www.avios.com</a></p>
             <p id="fn:avios"><sup>*</sup> Formerly a subsidiary of British Airways and also known as <a href="https://en.wikipedia.org/wiki/Air_Miles#Air_Miles_United_Kingdom">Airmiles</a>. Avios is now the loyalty currency run by <a href="https://iagloyalty.com">IAG Loyalty</a>.</p>
@@ -93,21 +100,15 @@ date: 2025-01-12T18:41:27.631Z
             <h3 class="card__title">IAG Loyalty</h3>
             <span class="date-time">Year: 2018 &ndash; 2021 <small>(contract)</small></span>
           </header>
+          <div class="card__body">
+            <ul class="flow">
+              <li>Developed high performance <abbr title="Progressive Web Application.">PWA</abbr> B2B websites for them.</li>
+              <li>Played a key role in exploring, strategising, and implementing a scalable <abbr title="Software as a Service.">SaaS</abbr> micro-frontend setup that prioritised reusable, themeable, and customisable components.</li>
+              <li>Created a custom JSON-based themeable design system (tokens) configuration to help scale design and UI across web offerings & applications.</li>
+            </ul>
+          </div>
           <footer class="card__footer">
             <p>Visit them at <a href="https://www.iagloyalty.com/">www.iagloyalty.com</a></p>
-          </footer>
-        </div>
-      </article>
-    </li>
-    <li>
-      <article class="card card--stacked">
-        <div class="card__content">
-          <header class="card__header">
-            <h3 class="card__title">Macmillan Cancer Support</h3>
-            <span class="date-time">Year: 2015 <small>(contract)</small></span>
-          </header>
-          <footer class="card__footer">
-            <p>Visit them at <a href="https://www.macmillan.org.uk/">www.macmillan.org.uk</a></p>
           </footer>
         </div>
       </article>
@@ -119,6 +120,12 @@ date: 2025-01-12T18:41:27.631Z
             <h3 class="card__title">Time Inc. UK <a href="#fn:time-inc" class="footnote" rel="footnote"><sup>*</sup></a></h3>
             <span class="date-time">Year: 2016 <small>(contract)</small></span>
           </header>
+          <div class="card__body">
+            <ul class="flow">
+              <li>Collaborated with the incumbent team to develop a dynamic, adaptable WordPress Multisite solution supporting customizable themes.</li>
+              <li>Enabled rapid website creation and deployment for renowned brands, including <strong>Marie Claire</strong>, <strong>Homes & Gardens</strong>, <strong>Country Life</strong>, and <strong>Decanter</strong>.</li>
+            </ul>
+          </div>
           <footer id="fn:time-inc" class="card__footer">
             <p><sup>*</sup> Since I last worked with them, they've now been taken over by <a href="https://www.futureplc.com/">Future plc</a>.</p>
           </footer>
@@ -132,8 +139,52 @@ date: 2025-01-12T18:41:27.631Z
             <h3 class="card__title">Pegasus <a href="#fn:pegasus" class="footnote" rel="footnote"><sup>*</sup></a></h3>
             <span class="date-time">Year: 2016 <small>(contract)</small></span>
           </header>
+          <div class="card__body">
+            <ul class="flow">
+              <li>Developed & enhanced brochure websites for Pegasus' healthcare clients.</li>
+              <li>Client projects at the time where for <strong>Cetraben</strong>, <strong>Rapid White</strong> and <strong>Movelat</strong>.</li>
+            </ul>
+          </div>
           <footer id="fn:pegasus" class="card__footer">
             <p><sup>*</sup> Since I last worked with them, they've become <a href="https://www.inizioevoke.com/">Inizio Evoke</a>.</p>
+          </footer>
+        </div>
+      </article>
+    </li>
+    <li>
+      <article class="card card--stacked">
+        <div class="card__content">
+          <header class="card__header">
+            <h3 class="card__title">Charanga Music</h3>
+            <span class="date-time">Year: 2016 <small>(freelance)</small></span>
+          </header>
+          <div class="card__body">
+            <ul class="flow">
+              <li>Worked with Charanga Music to craft a versatile front-end boilerplate / component library, ensuring reusability, extensibility, responsiveness, and accessibility.</li>
+              <li>Streamlined their ability to swiftly develop and deploy future web offerings, maintaining top-notch front-end standards throughout the process.</li>
+            </ul>
+          </div>
+          <footer class="card__footer">
+            <p>Visit them at <a href="https://charanga.com/">charanga.com</a></p>
+          </footer>
+        </div>
+      </article>
+    </li>
+    <li>
+      <article class="card card--stacked">
+        <div class="card__content">
+          <header class="card__header">
+            <h3 class="card__title">Macmillan Cancer Support</h3>
+            <span class="date-time">Year: 2015 <small>(contract)</small></span>
+          </header>
+          <div class="card__body">
+            <ul class="flow">
+              <li>Worked with Macmillan's core website application team on frontend solutions for their brand identity and business proposition.</li>
+              <li>Actively engaged in internal Hackathon days, contributing, and presenting innovative ideas.</li>
+            </ul>
+          </div>
+          <footer class="card__footer">
+            <p>Visit them at <a href="https://www.macmillan.org.uk/">www.macmillan.org.uk</a></p>
           </footer>
         </div>
       </article>
