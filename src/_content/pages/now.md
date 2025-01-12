@@ -29,7 +29,7 @@ Right now, I'm working on a contract basis as a **Frontend Engineer** for [Admir
 
 ## Learning
 
-* Tinkering around on a bunch of personal code projects using technologies like [Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GreenSock](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [IndieKit](https://getindiekit.com/) and [Utopia](https://utopia.fyi/).
+* Tinkering around on a bunch of personal code projects using technologies like [Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GSAP](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [IndieKit](https://getindiekit.com/) and [Utopia](https://utopia.fyi/).
 * Brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)*' &mdash; like how to tie a bunch of [useful knots](https://youtu.be/kA48yzKYp3Q) and [fire building techniques](https://youtu.be/7v4twfXG2uY) - in [all weather conditions](https://youtu.be/QiYlEyvDbco) as well.
 
 ---
@@ -93,3 +93,6 @@ I get it now.
 <footer>
   <em>(This page exists because I came across someone who had a <a href="https://nownownow.com/about">'now' page</a> &mdash; inspired by <a href="https://sivers.org/now">Derek Sivers</a>. I liked the idea so much that I created my own.)</em>
 </footer>
+
+*[GSAP]: Greensock animation library.
+*[SVG]: Scalable Vector Graphics.
