@@ -1,5 +1,5 @@
 /*
- * This Edge function performs (known) bot detection, suspicious path blocking, and error page handling.
+ * This Edge function performs (known) bot detection, and error page handling.
  */
 
 // Load environment variables in local development
@@ -28,13 +28,6 @@ import agents from '../../src/_data/agents.json' assert { type: 'json' };
 // Define the list of file extensions to exempt from bot detection
 const exemptFileTypes = [
   '.mjs', '.js', '.css', '.jpg', '.jpeg', '.png', '.gif', '.svg', '.webp', '.ico'
-];
-
-// Define a list of suspicious paths to block. Typically Wordpress-related paths and common bot paths.
-const suspiciousPaths = [
-  '/install.php', '/xmlrpc.php', '/wp-includes', '/wlwmanifest.xml', '/wp-admin',
-  '/wp-content', '/wordpress', '/wp-login.php', '/bypass.php', '/avaa.php', '/alfa-rex2.php',
-  '/.env', '/.env.local', '/.env.production', '/.env.development', '/.env.staging'
 ];
 
 // Define the honeypot path (a page or endpoint only visible to bots)
@@ -73,12 +66,6 @@ export default async (request) => {
   if (exemptFileTypes.includes(fileExtension)) {
     console.log(`[Edge Function] Exempting request for: ${url.pathname}`);
     return;
-  }
-
-  // Block requests to suspicious paths
-  if (suspiciousPaths.some(path => url.pathname.includes(path))) {
-    console.log(`[Edge Function] Blocked suspicious path: ${url.pathname}`);
-    return respondWith403();
   }
 
   // Block requests to the honeypot path
