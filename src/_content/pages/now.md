@@ -45,7 +45,7 @@ I usually have a few books on the go and switch to whichever suits my fancy at t
 
 ## Listening
 
-I've been listening to a few podcasts lately. While I don't listen to all their episodes &mdash; *(or agree with everything they say for that matter)* &mdash; these are the ones I find myself listening to the most. There are some gems in there if you're prepared to look for them and keep an open mind.
+I've been listening to a few podcasts lately. While I don't necessarily agree with everything that's said, these are the ones I find myself listening to the most. There are some gems in there if you're prepared to look for them and keep an open mind.
 
 * [The Duran](https://open.spotify.com/show/5DgkWsC3YjoyGBV03CFWnk?si=c62004134bbf40ed) &mdash; *Podcast*
 * [Planet: Critical](https://open.spotify.com/show/5zGRjKWThT6H18isBlVEY8?si=82195fb522014341) &mdash; *Podcast*
