@@ -314,6 +314,11 @@
       "name": "Simon Willison",
       "url": "https://simonwillison.net/",
       "description": "Simon is a co-creator of the Django Web Framework, and has been blogging about web development and programming since 2002."
+    },
+    {
+      "name": "Elly Loel",
+      "url": "https://www.ellyloel.com/",
+      "description": "Elly is a web designer / front-end developer and accessibility & design system specialist."
     }
   ]
 }
