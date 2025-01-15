@@ -12,7 +12,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-01-12T18:37:27.631Z
+updated: 2025-01-15T18:33:27.631Z
 
 location:
   locality: Crawley
@@ -43,7 +43,15 @@ I usually have a few books on the go and switch to whichever suits my fancy at t
 
 ---
 
-## Listening
+## Listening <span class="visually-hidden">to this</span> <i aria-hidden="true">&rarr;</i> *Music*
+
+I have a wide taste in music and listen to a lot of different genres &mdash; from classical to metal. I'm a sucker for a strong melody though which is why I often find myself listening to country.
+
+At the moment Coldplay's latest album "[Moon Music](https://open.spotify.com/album/5SGtrmYbIo0Dsg4kJ4qjM6?si=nJEEnWzcQfOq14pHhqh6nw)" is on repeat. This album seems to be touching something deep within me. In particular the opening song, "[Moon Music](https://open.spotify.com/track/41FNZsY7w7KaTQ2bjxdR6w?si=750832d87c5b49d7)". I can't seem to hold back the tears every time I listen to it.
+
+---
+
+## Listening <span class="visually-hidden">to these</span> <i aria-hidden="true">&rarr;</i> *Podcasts*
 
 I've been listening to a few podcasts lately. While I don't necessarily agree with everything that's said, these are the ones I find myself listening to the most. There are some gems in there if you're prepared to look for them and keep an open mind.
 
@@ -59,12 +67,13 @@ I've been listening to a few podcasts lately. While I don't necessarily agree wi
 
 ## Watching
 
-It's a bit of a challenge finding something worth watching on TV these days. I'm enjoying these shows at the moment&hellip;
+Seems to be a bit of a challenge finding something worth watching on TV these days. There's a fair amount of *'slop'* out there these days that's for sure. That, or I'm way too picky.
 
-* [American Primeval](https://www.imdb.com/title/tt24069848/) &mdash; *TV Mini Series*
-* [Landman](https://www.imdb.com/title/tt14186672/) &mdash; *TV Series*
-* [Marco Polo](https://www.imdb.com/title/tt2189461/) &mdash; *TV Series*
-* [The Agency](https://www.imdb.com/title/tt26656917/) &mdash; *TV Series*
+Saying that, I watched the [American Primeval](https://www.imdb.com/title/tt24069848/) mini series recently and thought it was put together well. It's gritty, brutal and raw &mdash; which I can I only imagine how it maust have been during the birth of the American West.
+
+I'm also watching [Landman](https://www.imdb.com/title/tt14186672/) at the moment. It's a bit slow at times but I'm enjoying the acting and am intrigued enough to keep watching.
+
+Then there are a few shows I started watching but ended up getting bored or frustrated with the plot and stopped watching. Oh well... 1st world *problems* eh!
 
 ---
 
