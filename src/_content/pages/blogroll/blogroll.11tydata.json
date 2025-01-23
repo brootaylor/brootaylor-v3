@@ -324,6 +324,16 @@
       "name": "Henry Desroches",
       "url": "https://henry.codes/",
       "description": "Henry is a front-of-the-front-end developer && design engineer && creative technologist && UX engineer && web developer from Denver, Colorado."
+    },
+    {
+      "name": "Hidde de Vries",
+      "url": "https://hidde.blog",
+      "description": "Hidde is a freelance front-end, accessibility and design systems specialist. Previously, he worked for organisations including the Dutch government, W3C (WAI), Sanity.io and Mozilla."
+    },
+    {
+      "name": "Jay Hoffmann",
+      "url": "https://jayhoffmann.com",
+      "description": "Jay is the Director of Web Development, Reaktiv. But really he's a web history geek @ thehistoryoftheweb.com"
     }
   ]
 }
