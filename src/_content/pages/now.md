@@ -1,18 +1,18 @@
 ---
 title: "What I'm doing now"
 # Populates the `meta description` for a page
-summary: "This is a place to log stuff I've got on the go at the moment. Work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on."
+summary: "This is a place to log what I've got on the go at the moment. Work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on."
 # Populates the opening / `lead` text on a page
 lead:
-  - This is a place to log stuff I've got on the go at the moment.
+  - This is a place to log what I've got on the go at the moment.
   - Work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on.
-  - <a href="https://nownownow.com/about">Now pages</a> are quite common these days. Maybe make one for yourself!
+  - <a href="https://nownownow.com/about">Now pages</a> are quite common these days. If you haven't already, maybe make one for yourself!
 
 bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-01-15T18:33:27.631Z
+updated: 2025-01-23T23:41:27.631Z
 
 location:
   locality: Crawley
@@ -69,7 +69,7 @@ I've been listening to a few podcasts lately. While I don't necessarily agree wi
 
 Seems to be a bit of a challenge finding something worth watching on TV these days. There's a fair amount of *'slop'* out there these days that's for sure. That, or I'm way too picky.
 
-Saying that, I watched the [American Primeval](https://www.imdb.com/title/tt24069848/) mini series recently and thought it was put together well. It's gritty, brutal and raw &mdash; which I can I only imagine how it maust have been during the birth of the American West.
+Saying that, I watched the [American Primeval](https://www.imdb.com/title/tt24069848/) mini series recently and thought it was put together well. It's gritty, brutal and raw &mdash; which I can only imagine how it must have been during the birth of the American West.
 
 I'm also watching [Landman](https://www.imdb.com/title/tt14186672/) at the moment. It's a bit slow at times but I'm enjoying the acting and am intrigued enough to keep watching.
 
