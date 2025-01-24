@@ -59,7 +59,6 @@ I've been listening to a few podcasts lately. While I don't necessarily agree wi
 * [Planet: Critical](https://open.spotify.com/show/5zGRjKWThT6H18isBlVEY8?si=82195fb522014341) &mdash; *Podcast*
 * [Lex Fridman](https://open.spotify.com/show/2MAi0BvDc6GTFvKFPXnkCL?si=cd92a945226b4603) &mdash; *Podcast*
 * [The Great Simplification with Nate Hagens](https://open.spotify.com/show/0ZFJIjuJwh3XeMqrguiXNR?si=21485f0d963344fe) &mdash; *Podcast*
-* [The Tucker Carlson Show](https://open.spotify.com/show/5L2ON33kXa2b7laBpCAgOI?si=57a7d5076ed84767) &mdash; *Podcast*
 * [The Joe Rogan Experience](https://open.spotify.com/show/4rOoJ6Egrf8K2IrywzwOMk?si=88ef8bd8716a40f7) &mdash; *Podcast*
 * [Syntax - Web Development](https://open.spotify.com/show/4kYCRYJ3yK5DQbP5tbfZby?si=d8355dd847824464) &mdash; *Podcast*
 
