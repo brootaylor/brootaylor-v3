@@ -12,7 +12,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 dateShow: true # Show the date in the header for this page
 date: 2022-10-22T13:17:27.631Z
-updated: 2025-01-12T18:43:27.631Z
+updated: 2025-01-25T15:08:27.631Z
 
 location:
   locality: Crawley
@@ -31,9 +31,8 @@ Books on the go at the moment.
 
 *I always try to include a dose of fantasy in my current read list. Mostly to help 'balance' and process the other reads I've got on the go.* 😬 {.call-out}
 
-* [Veiled Intentions: The Dragon's Blade](https://www.michaelrmiller.co.uk/veiledintentions) &mdash; *(book 2 of 3)*, *Michael R. Miller*
+* [The Last Guardian: The Dragon's Blade](https://www.michaelrmiller.co.uk/thelastguardian) &mdash; *(book 3 of 3)*, *Michael R. Miller*
 * [Breaking Together &mdash; a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/), *Jem Bendell*
-* [Overshoot: The Ecological Basis of Revolutionary Change](https://www.goodreads.com/en/book/show/319810.Overshoot), *William R. Catton*
 
 ---
 
@@ -41,7 +40,6 @@ Books on the go at the moment.
 
 * [Resisting AI: An Anti-fascist Approach to Artificial Intelligence](https://bristoluniversitypress.co.uk/resisting-ai) &mdash; *Dan McQuillan*
 * [COPOUT: How governments have failed the people on climate](https://genn.cc/copout-nick-breeze/) &mdash; *Nick Breeze*
-* [The Last Guardian: The Dragon's Blade](https://www.michaelrmiller.co.uk/thelastguardian) &mdash; *(book 3 of 3)*, *Michael R. Miller*
 * [The Huntress: A Dragon's Blade Story](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
 * [In The Shadow of Kings: A Time of Dragons](https://www.philipcquaintrell.com/intheshadowofkings) &mdash; *(book 2 of...)*, *Philip C. Quaintrell*
 * [Leviathan: An Asher & Avandriell Story](https://www.philipcquaintrell.com/leviathan) &mdash; *(Novella)*, *Philip C. Quaintrell*
@@ -66,6 +64,7 @@ Selection of books I've read. But more importantly, enjoyed and would therefore 
 *I'll be adding to this section as and when I remember any books I've read &mdash; cause it certainly is a little lean at the moment.* {.call-out}
 
 * [The Reborn King: The Dragon's Blade](https://www.michaelrmiller.co.uk/therebornking) &mdash; *(book 1 of 3)*, *Michael R. Miller*
+* [Veiled Intentions: The Dragon's Blade](https://www.michaelrmiller.co.uk/veiledintentions) &mdash; *(book 2 of 3)*, *Michael R. Miller*
 * [Last Stand of the Stone Fist](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
 * [Ascendant, Songs of Chaos](https://www.michaelrmiller.co.uk/ascendent) &mdash; *(book 1 of...)*, *Michael R. Miller*
 * [Unbound, Songs of Chaos](https://www.michaelrmiller.co.uk/unbound) &mdash; *(book 2 of...)*, *Michael R. Miller*

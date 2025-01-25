@@ -12,7 +12,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-01-23T23:41:27.631Z
+updated: 2025-01-25T15:13:27.631Z
 
 location:
   locality: Crawley
@@ -38,7 +38,7 @@ Right now, I'm working on a contract basis as a **Frontend Engineer** for [Admir
 
 I usually have a few books on the go and switch to whichever suits my fancy at the time. Right now I'm reading&hellip;
 
-* [Veiled Intentions: The Dragon's Blade](https://www.michaelrmiller.co.uk/veiledintentions) &mdash; *(book 2 of 3)*, *Michael R. Miller*
+* [The Last Guardian: The Dragon's Blade](https://www.michaelrmiller.co.uk/thelastguardian) &mdash; *(book 3 of 3)*, *Michael R. Miller*
 * [Breaking Together &mdash; a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/), *Jem Bendell*
 
 ---
