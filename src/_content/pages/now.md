@@ -12,7 +12,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-01-25T15:13:27.631Z
+updated: 2025-02-03T16:35:27.631Z
 
 location:
   locality: Crawley
@@ -29,7 +29,8 @@ Right now, I'm working on a contract basis as a **Frontend Engineer** for [Admir
 
 ## Learning
 
-* Tinkering around on a bunch of personal code projects using technologies like [Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GSAP](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [IndieKit](https://getindiekit.com/) and [Utopia](https://utopia.fyi/).
+* Tinkering around on a bunch of personal web development projects using technologies like [Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GSAP](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [IndieKit](https://getindiekit.com/) and [Utopia](https://utopia.fyi/).
+* Also kicked off some learning of [Python](https://developers.google.com/edu/python).
 * Brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)*' &mdash; like how to tie a bunch of [useful knots](https://youtu.be/kA48yzKYp3Q) and [fire building techniques](https://youtu.be/7v4twfXG2uY) - in [all weather conditions](https://youtu.be/QiYlEyvDbco) as well.
 
 ---
@@ -53,14 +54,14 @@ At the moment Coldplay's latest album "[Moon Music](https://open.spotify.com/alb
 
 ## Listening <span class="visually-hidden">to these</span> <i aria-hidden="true">&rarr;</i> *Podcasts*
 
-I've been listening to a few podcasts lately. While I don't necessarily agree with everything that's said, these are the ones I find myself listening to the most. There are some gems in there if you're prepared to look for them and keep an open mind.
+I've been listening to a few podcasts lately. While I don't necessarily agree with everything that's said in many of the episodes I've listened to &mdash; here are the ones I find myself listening to the most. There are some gems in there if you're prepared to look for them and keep an open mind.
 
-* [The Duran](https://open.spotify.com/show/5DgkWsC3YjoyGBV03CFWnk?si=c62004134bbf40ed) &mdash; *Podcast*
-* [Planet: Critical](https://open.spotify.com/show/5zGRjKWThT6H18isBlVEY8?si=82195fb522014341) &mdash; *Podcast*
-* [Lex Fridman](https://open.spotify.com/show/2MAi0BvDc6GTFvKFPXnkCL?si=cd92a945226b4603) &mdash; *Podcast*
-* [The Great Simplification with Nate Hagens](https://open.spotify.com/show/0ZFJIjuJwh3XeMqrguiXNR?si=21485f0d963344fe) &mdash; *Podcast*
-* [The Joe Rogan Experience](https://open.spotify.com/show/4rOoJ6Egrf8K2IrywzwOMk?si=88ef8bd8716a40f7) &mdash; *Podcast*
-* [Syntax - Web Development](https://open.spotify.com/show/4kYCRYJ3yK5DQbP5tbfZby?si=d8355dd847824464) &mdash; *Podcast*
+* [The Duran](https://open.spotify.com/show/5DgkWsC3YjoyGBV03CFWnk?si=c62004134bbf40ed) &mdash; *Geopolitical analysis & interviews.*
+* [Planet: Critical](https://open.spotify.com/show/5zGRjKWThT6H18isBlVEY8?si=82195fb522014341) &mdash; *Investigative journalism and interviews on why the world is in crisis.*
+* [Lex Fridman](https://open.spotify.com/show/2MAi0BvDc6GTFvKFPXnkCL?si=cd92a945226b4603) &mdash; *Conversations about science, technology, history, philosophy and the nature of intelligence, consciousness, love, and power.*
+* [The Great Simplification with Nate Hagens](https://open.spotify.com/show/0ZFJIjuJwh3XeMqrguiXNR?si=21485f0d963344fe) &mdash; *Exploring how energy, the environment, economics, human behavior, and systems science underpin the human predicament.*
+* [The Joe Rogan Experience](https://open.spotify.com/show/4rOoJ6Egrf8K2IrywzwOMk?si=88ef8bd8716a40f7) &mdash; *Long form in-depth conversations with comedians, celebrities, scientists, and philosophers.*
+* [Syntax - Web Development](https://open.spotify.com/show/4kYCRYJ3yK5DQbP5tbfZby?si=d8355dd847824464) &mdash; *Podcast about Web Development.*
 
 ---
 
