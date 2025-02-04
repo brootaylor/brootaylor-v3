@@ -12,7 +12,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-02-04T09:58:27.631Z
+updated: 2025-02-04T15:32:27.631Z
 
 location:
   locality: Crawley
@@ -82,6 +82,8 @@ Then there are a few shows I started watching but ended up getting bored or frus
 ## Plans
 
 My family and and I are hoping to get back to South Africa sometime in 2025. I still have family who live out there and it's been far too long since we've seen them.
+
+I'm hoping to get back into drumming this year. I miss it desperately and it's been far too long since I've played. There's a fab music studio nearby called [The Hive Rooms](https://www.thehiverooms.com) that I reckon I'll be checking out soon.
 
 ---
 
