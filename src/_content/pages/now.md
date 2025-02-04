@@ -12,7 +12,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-02-03T16:35:27.631Z
+updated: 2025-02-04T09:58:27.631Z
 
 location:
   locality: Crawley
@@ -54,7 +54,9 @@ At the moment Coldplay's latest album "[Moon Music](https://open.spotify.com/alb
 
 ## Listening <span class="visually-hidden">to these</span> <i aria-hidden="true">&rarr;</i> *Podcasts*
 
-I've been listening to a few podcasts lately. While I don't necessarily agree with everything that's said in many of the episodes I've listened to &mdash; here are the ones I find myself listening to the most. There are some gems in there if you're prepared to look for them and keep an open mind.
+I've been listening to a few podcasts lately. I've listed the ones I find myself returning to the most at the moment.
+
+While I don't necessarily agree with everything that's said in many of the episodes I've listened to &mdash; there are some gems if you're prepared to look for them and keep an open mind.
 
 * [The Duran](https://open.spotify.com/show/5DgkWsC3YjoyGBV03CFWnk?si=c62004134bbf40ed) &mdash; *Geopolitical analysis & interviews.*
 * [Planet: Critical](https://open.spotify.com/show/5zGRjKWThT6H18isBlVEY8?si=82195fb522014341) &mdash; *Investigative journalism and interviews on why the world is in crisis.*
