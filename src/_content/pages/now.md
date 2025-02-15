@@ -12,10 +12,10 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-02-04T15:32:27.631Z
+updated: 2025-02-15T15:24:27.631Z
 
 location:
-  locality: Crawley
+  locality: Home
   country_name: UK
 
 eleventyExcludeFromCollections: false
@@ -29,9 +29,17 @@ Right now, I'm working on a contract basis as a **Frontend Engineer** for [Admir
 
 ## Learning
 
-* Tinkering around on a bunch of personal web development projects using technologies like [Eleventy](https://www.11ty.io/), [Astro](https://astro.build/), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GSAP](https://greensock.com/), [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [IndieKit](https://getindiekit.com/) and [Utopia](https://utopia.fyi/).
-* Also kicked off some learning of [Python](https://developers.google.com/edu/python).
-* Brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)*' &mdash; like how to tie a bunch of [useful knots](https://youtu.be/kA48yzKYp3Q) and [fire building techniques](https://youtu.be/7v4twfXG2uY) - in [all weather conditions](https://youtu.be/QiYlEyvDbco) as well.
+Tinkering around on a bunch of personal web development projects using technologies like...
+
+* [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+* [Eleventy](https://www.11ty.io/)
+* [Astro](https://astro.build/)
+* [IndieKit](https://getindiekit.com/)
+* [Utopia](https://utopia.fyi/)
+* [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GSAP](https://greensock.com/)
+* [Python](https://developers.google.com/edu/python)
+
+Also brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)*' &mdash; like how to tie a bunch of [useful knots](https://youtu.be/kA48yzKYp3Q) and [fire building techniques](https://youtu.be/7v4twfXG2uY) - in [all weather conditions](https://youtu.be/QiYlEyvDbco) as well.
 
 ---
 
@@ -39,7 +47,7 @@ Right now, I'm working on a contract basis as a **Frontend Engineer** for [Admir
 
 I usually have a few books on the go and switch to whichever suits my fancy at the time. Right now I'm reading&hellip;
 
-* [The Last Guardian: The Dragon's Blade](https://www.michaelrmiller.co.uk/thelastguardian) &mdash; *(book 3 of 3)*, *Michael R. Miller*
+* [The Huntress: A Dragon's Blade Story](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
 * [Breaking Together &mdash; a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/), *Jem Bendell*
 
 ---
@@ -69,11 +77,7 @@ While I don't necessarily agree with everything that's said in many of the episo
 
 ## Watching
 
-Seems to be a bit of a challenge finding something worth watching on TV these days. There's a fair amount of *'slop'* out there these days that's for sure. That, or I'm way too picky.
-
-Saying that, I watched the [American Primeval](https://www.imdb.com/title/tt24069848/) mini series recently and thought it was put together well. It's gritty, brutal and raw &mdash; which I can only imagine how it must have been during the birth of the American West.
-
-I'm also watching [Landman](https://www.imdb.com/title/tt14186672/) at the moment. It's a bit slow at times but I'm enjoying the acting and am intrigued enough to keep watching.
+Seems to be a bit of a challenge finding something worth watching on TV these days. There's a fair amount of *'slop'* out there that's for sure. That, or I'm way too picky.
 
 Then there are a few shows I started watching but ended up getting bored or frustrated with the plot and stopped watching. Oh well... 1st world *problems* eh!
 
