@@ -6,13 +6,13 @@ summary: "This is a place to log what I've got on the go at the moment. Work rel
 lead:
   - This is a place to log what I've got on the go at the moment.
   - Work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on.
-  - <a href="https://nownownow.com/about">Now pages</a> are quite common these days. If you haven't already, maybe make one for yourself!
+  - <a href="https://nownownow.com/about">Now pages</a> are quite common these days. If you haven't already, maybe consider making one for yourself.
 
 bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-02-15T15:24:27.631Z
+updated: 2025-02-15T16:51:27.631Z
 
 location:
   locality: Home
@@ -45,7 +45,7 @@ Also brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)
 
 ## Reading
 
-I usually have a few books on the go and switch to whichever suits my fancy at the time. Right now I'm reading&hellip;
+I usually have a few books on the go and switch to whichever suits my fancy at the time. These are the one's I'm reading at the moment&hellip;
 
 * [The Huntress: A Dragon's Blade Story](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
 * [Breaking Together &mdash; a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/), *Jem Bendell*
