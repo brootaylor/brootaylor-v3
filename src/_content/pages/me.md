@@ -13,7 +13,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-date: 2024-09-07T21:43:27.631Z
+date: 2025-03-04T07:32:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -51,6 +51,7 @@ eleventyExcludeFromCollections: false
   <li><strong>2022:</strong> Turned 50.</li>
   <li><strong>2023:</strong> Sold my drumkit to <a href="https://x.com/gangof4official/status/1746823767135789527">Hugo Burnham</a>, drummer for the <a href="https://www.facebook.com/gangoffour">Gang Of Four</a> band.</li>
   <li><strong>2024:</strong> Trying to figure out where to go with this <em>'career thing'</em>&hellip; and <a href="/now#reflecting">what to make of the world</a>.</li>
+  <li><strong>2025:</strong> Married to a wonderful woman for 30 years.</li>
 </ol>
 
 ---
