@@ -68,6 +68,13 @@ export default {
       external: true,
       verified: true,
     },
+    // {
+    //   label: 'X',
+    //   url: 'https://x.com/brootaylor',
+    //   icon: 'x',
+    //   external: true,
+    //   verified: true,
+    // },
     {
       label: 'Mastodon',
       url: 'https://mastodon.social/@brootaylor',
