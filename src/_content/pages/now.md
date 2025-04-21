@@ -12,7 +12,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-02-15T16:51:27.631Z
+updated: 2025-04-21T12:16:27.631Z
 
 location:
   locality: Home
@@ -81,11 +81,13 @@ Seems to be a bit of a challenge finding something worth watching on TV these da
 
 Then there are a few shows I started watching but ended up getting bored or frustrated with the plot and stopped watching. Oh well... 1st world *problems* eh!
 
+Saying that, I did come across the [MobLand](https://www.imdb.com/title/tt31510819/) series recently by Guy Ritchie and have been enjoying it. Also noticed that the second season of [The Last of Us](https://www.imdb.com/title/tt3581920/) is out now. The first season was fab so fingers-crossed the second season is a goodie as well.
+
 ---
 
 ## Plans
 
-My family and and I are hoping to get back to South Africa sometime in 2025. I still have family who live out there and it's been far too long since we've seen them.
+My family and I are heading back to South Africa this year for a few weeks. I still have family who live out there and it's been far too long since we've seen them.
 
 I'm hoping to get back into drumming this year. I miss it desperately and it's been far too long since I've played. There's a fab music studio nearby called [The Hive Rooms](https://www.thehiverooms.com) that I reckon I'll be checking out soon.
 
