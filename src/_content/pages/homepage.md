@@ -54,7 +54,7 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2024-11-08T15:31:27.631Z
+date: 2025-04-23T18:39:27.631Z
 
 priority: 1
 ---
@@ -64,6 +64,6 @@ I thrive in roles that ***strike a balance between user and developer experience
 I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/), [usable](https://trentwalton.com/2014/03/10/device-agnostic/) and as future-friendly as possible. For this reason I *prefer* a vanilla approach and tend to be fairly tech-agnostic.
 
 <div class="call-out | flow">
-  <p>Whether you're <em><strong>starting fresh</strong></em> or <em><strong>enhancing an existing one</strong></em>, I'm here to help you establish a lasting and meaningful online presence.</p>
+  <p>Whether you're <em><strong>starting a website from fresh</strong></em> or <em><strong>enhancing an existing one</strong></em>, I'm here to help you establish a lasting and meaningful online presence.</p>
   <p><a href="/contact">Please get in touch</a> if you think I may be able to help out with your next project &mdash; or if you'd just like to connect. 👋</p>
 </div>

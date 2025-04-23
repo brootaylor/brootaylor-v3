@@ -29,7 +29,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2025-01-12T18:09:27.631Z
+date: 2025-04-23T18:39:27.631Z
 ---
 
 <img src="/assets/images/pages/about/broo_profile_about_bw.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
@@ -50,7 +50,7 @@ I've resisted calling myself a "[[full-stack] developer](https://bradfrost.com/b
 
 ## My technical skill set
 
-Some of the technical skills I've picked up over the 20 years I've been building websites:
+Some of the technical skills I've picked up over the 21 years I've been building websites:
 
 <div class="full-bleed | call-out | flow">
   <ul>

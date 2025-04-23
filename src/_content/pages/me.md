@@ -13,7 +13,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-date: 2025-03-04T07:32:27.631Z
+date: 2025-04-23T18:39:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -94,7 +94,7 @@ The picture below is my favourite place in the whole world.
       <small>My birth mother's name was/is Fay Kathleen Rogers. Her birthday is 23 November 1947. She grew up in Port Shepstone, Kwazulu Natal, South Africa. <a href="#fnref:mother-bio" role="doc-backlink">↩</a></small>
     </li>
     <li id="fn:adopted" role="doc-endnote">
-      <small>My adoptive parents (Mathew and Ann) are wonderful, salt of the earth people. I truly am blessed to have had them as my mum and dad. My dad passed away in November 2012 and I miss him immensely. <a href="#fnref:adopted" role="doc-backlink">↩</a></small>
+      <small>My adoptive parents (Mathew and Ann) are wonderful, salt of the earth people. I truly am blessed to have had them as my mum and dad. My dad (Mathew) passed away in November 2012 and I miss him immensely. <a href="#fnref:adopted" role="doc-backlink">↩</a></small>
     </li>
     <li id="fn:mother-search" role="doc-endnote">
       <small>I've never been able to find my biological mother. <a href="#fnref:mother-search" role="doc-backlink">↩</a></small>
