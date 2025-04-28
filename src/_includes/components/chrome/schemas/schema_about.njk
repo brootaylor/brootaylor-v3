@@ -38,9 +38,9 @@
 		}
 	},
 	"sameAs": [
-		"https://www.linkedin.com/in/brootaylor",
-		"https://twitter.com/brootaylor",
-		"https://github.com/brootaylor"
+		{% for url in site.socialMedia -%}
+		"{{ url }}"{% if not loop.last %},{% endif%}
+		{% endfor -%}
 	]
 }
 </script>

@@ -38,6 +38,13 @@ export default {
   timeCurrent: DateTime.local().diff(DateTime.local(1982, 5, 25)).milliseconds,
   siteMessage: false, // A message 'bar' appears on the pages
   siteTheme: 'theme-default', // Eg. if wanting to theme site to support Ukraine `theme-ukraine`
+  socialMedia: [
+    'https://www.linkedin.com/in/brootaylor',
+    'https://bsky.app/profile/brootaylor.com',
+    'https://mastodon.social/@brootaylor',
+    'https://twitter.com/brootaylor',
+    'https://github.com/brootaylor'
+  ],
   author: {
     name: 'Bruce Taylor',
     job: 'Frontend Web Developer & UI Engineer',
