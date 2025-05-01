@@ -4,7 +4,7 @@ summary: In these times of being constantly overwhelmed by the deluge of informa
 lead:
   - In these times of being constantly overwhelmed by the deluge of information, I'm finding it trickier than ever to discern the true motivations and intentions behind what is presented as fact, with one such topic being the "<strong>climate crisis</strong>."
 date: 2023-05-31T12:28:37.952Z
-updated: 2024-07-18T15:22:37.952Z
+updated: 2025-05-01T22:06:37.952Z
 location:
   locality: Crawley
   country_name: UK
@@ -60,6 +60,7 @@ I certainly don't claim to have any of the answers &mdash; but I've learnt a lot
 * [Is it time for climatologists to apologise to activists? An open letter from international scholars](https://iflas.blogspot.com/2023/10/apologize.html) &mdash; *University of Cumbria*
 * [Al Bartlett discusses population growth, climate change, energy, and consumption](https://youtu.be/F8ZJCtL6bPs) &mdash; *Al Bartlett video interview*
 * [The Oil Crash Is Coming Sooner Than We Think](https://www.planetcritical.com/p/the-oil-crash-is-coming-sooner-than) &mdash; *Rachel Donald, "Planet Critical"*
+* [Resource Scarcity and Eco-Fascism](https://www.planetcritical.com/p/antonio-turiel) &mdash; *Rachel Donald & Antonio Turiel, "Planet Critical"*
 * [Telling the Truth About Our Future](https://www.artberman.com/blog/telling-the-truth-about-our-future/) &mdash; *Art Berman*
 * [Abrupt Climate Change from Arctic to Antarctic: Facts, Opinions, and Analysis](https://paulbeckwith.net/) &mdash; *Paul Beckwith*
 * [Faster than Forecast: the story ice tells about abrupt climate change](https://www.sila.cool/book-faster-than-forecast/) — *Jason Box*
