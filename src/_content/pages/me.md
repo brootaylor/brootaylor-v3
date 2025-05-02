@@ -13,7 +13,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-date: 2025-04-23T18:39:27.631Z
+date: 2025-05-02T16:34:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -54,11 +54,7 @@ eleventyExcludeFromCollections: false
   <li><strong>2025:</strong> Married to a wonderful woman for 30 years.</li>
 </ol>
 
----
-
 Before ever touching a computer at the end of the 90's, my life revolved around *‘teasing’* cows &mdash; *(on our dairy farm)*. Off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, training as a chef, and aspiring to be a pilot. {.call-out}
-
----
 
 ## Other stuff about me
 
@@ -71,6 +67,8 @@ Fly fishing for trout is something I grew up doing and continue to do. I head to
 I absolutely [adore aircraft](/photos/2022-03-30/photo_202203301354) and hope that one day I'll be able to either get my PPL or GPL.
 
 I write now and then &ndash; and have [written a few posts](/writing), [jotted down some notes](/notes), and [bookmarked links to articles](/bookmarks) I've enjoyed and found interesting. Hopefully some of them resonate with you.
+
+---
 
 The picture below is my favourite place in the whole world.
 
@@ -94,7 +92,7 @@ The picture below is my favourite place in the whole world.
       <small>My birth mother's name was/is Fay Kathleen Rogers. Her birthday is 23 November 1947. She grew up in Port Shepstone, Kwazulu Natal, South Africa. <a href="#fnref:mother-bio" role="doc-backlink">↩</a></small>
     </li>
     <li id="fn:adopted" role="doc-endnote">
-      <small>My adoptive parents (Mathew and Ann) are wonderful, salt of the earth people. I truly am blessed to have had them as my mum and dad. My dad (Mathew) passed away in November 2012 and I miss him immensely. <a href="#fnref:adopted" role="doc-backlink">↩</a></small>
+      <small>My adoptive parents (Mathew and Ann) are wonderful, salt of the earth people. <em>'Angels'</em> to me. I truly am blessed to have had them as my mum and dad. My dad (Mathew) passed away in November 2012 and I miss him immensely. <a href="#fnref:adopted" role="doc-backlink">↩</a></small>
     </li>
     <li id="fn:mother-search" role="doc-endnote">
       <small>I've never been able to find my biological mother. <a href="#fnref:mother-search" role="doc-backlink">↩</a></small>
