@@ -29,7 +29,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2025-04-23T18:39:27.631Z
+date: 2025-05-09T19:08:27.631Z
 ---
 
 <img src="/assets/images/pages/about/broo_profile_about_bw.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
@@ -96,15 +96,23 @@ If you have any issues, questions or spot any spelling mistakes(!), I'd apprecia
 
 I've also written about my decision to [redesign & develop my website in the open](/writing/2022-02-22/redesigning-in-the-open) which has both been fun and scary. Not least because I'm a bit of a perfectionist and doing it this way has helped wean me off the need to have things completely polished before showing them.
 
-### Crawlers & tracking
+### &ldquo;Ai&rdquo; crawlers and tracking
 
-Even though it's more than likely [too late & doesn't work anyway](https://blog.jim-nielsen.com/2023/robots-txt/), I've attempted to opt `brootaylor.com` out of its content being used to train AI models. Known web crawlers used for training AI models are disallowed in my [<code>robots.txt</code> file](https://brootaylor.com/robots.txt).
+Even though it's more than likely [too late & doesn't work anyway](https://blog.jim-nielsen.com/2023/robots-txt/), I attempted to opt `brootaylor.com` out of its content being used to train AI models. By disallowing known web crawlers used for training AI models in my [<code>robots.txt</code> file](https://brootaylor.com/robots.txt).
 
-I've also set up a machine-readable [<code>ai.txt</code> file](https://brootaylor.com/ai.txt), using [Spawning.ai's proposed format](https://site.spawning.ai/spawning-ai-txt). There's no real evidence that it has any traction in the land-of-the-web *yet* &mdash; but I thought why not.
+I wrote a bit about this initial approach to [opting out of "Ai" crawlers](/writing/2025-01-01/robots-txt) &mdash; but soon realised this wasn't going to work in the slightest. So I decided to try a different approach by [*attempting*] to make it trickier for them to scrape my content.
 
-More information about the technology used to make this website is available in this [<code>humans.txt</code> file](https://brootaylor.com/humans.txt).
+[I wrote about this](/writing/2025-01-05/ai-bot-blocker) and you're welcome to nick the code and use it on your website if you think it'll work for you.
+
+This all really does feel like a game of whack-a-mole though.
+
+I also added an ["Ai" *'manifesto'* page](/ai) in an attempt to put a stake in the ground &mdash; *(for my website anyhow)* &mdash; and to let folks know that nothing published on this website and on my blog was written by an "Ai".
 
 It's probably worth mentioning that [I don't use any tracking technologies](/privacy#analytics-%26-tracking) &mdash; (*home-grown or third-party*) &mdash; to collect information about what you read or click on this website.
+
+---
+
+More information about the technology used to make this website is available in this [<code>humans.txt</code> file](https://brootaylor.com/humans.txt).
 
 
 ---
