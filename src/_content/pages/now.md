@@ -12,7 +12,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-04-21T12:16:27.631Z
+updated: 2025-05-09T19:47:27.631Z
 
 location:
   locality: Home
@@ -56,7 +56,7 @@ I usually have a few books on the go and switch to whichever suits my fancy at t
 
 I have a wide taste in music and listen to a lot of different genres &mdash; from classical to metal. I'm a sucker for a strong melody though which is why I often find myself listening to country.
 
-At the moment Coldplay's latest album "[Moon Music](https://open.spotify.com/album/5SGtrmYbIo0Dsg4kJ4qjM6?si=nJEEnWzcQfOq14pHhqh6nw)" is on repeat. This album seems to be touching something deep within me. In particular the opening song, "[Moon Music](https://open.spotify.com/track/41FNZsY7w7KaTQ2bjxdR6w?si=750832d87c5b49d7)". I can't seem to hold back the tears every time I listen to it.
+Sleep Token's new album, "[Even in Arcadia](https://open.spotify.com/album/1lS7FeRcSUuIGqyg99UGpj?si=NTCUWee_SwW_yjOaVr5zNg)" dropped today &mdash; *09/05/2025* &mdash; and I'm already hooked. Absolutely gorgeous.
 
 ---
 
@@ -70,8 +70,9 @@ While I don't necessarily agree with everything that's said in many of the episo
 * [Planet: Critical](https://open.spotify.com/show/5zGRjKWThT6H18isBlVEY8?si=82195fb522014341) &mdash; *Investigative journalism and interviews on why the world is in crisis.*
 * [Lex Fridman](https://open.spotify.com/show/2MAi0BvDc6GTFvKFPXnkCL?si=cd92a945226b4603) &mdash; *Conversations about science, technology, history, philosophy and the nature of intelligence, consciousness, love, and power.*
 * [The Great Simplification with Nate Hagens](https://open.spotify.com/show/0ZFJIjuJwh3XeMqrguiXNR?si=21485f0d963344fe) &mdash; *Exploring how energy, the environment, economics, human behavior, and systems science underpin the human predicament.*
-* [The Joe Rogan Experience](https://open.spotify.com/show/4rOoJ6Egrf8K2IrywzwOMk?si=88ef8bd8716a40f7) &mdash; *Long form in-depth conversations with comedians, celebrities, scientists, and philosophers.*
+* [Your Undivided Attention](https://open.spotify.com/show/4KI3PtZaWJbAWK89vgttoU?si=e899d621ff1d4d9c) &mdash; *Understanding how new technologies are shaping the way we live, work, and think.*
 * [Syntax - Web Development](https://open.spotify.com/show/4kYCRYJ3yK5DQbP5tbfZby?si=d8355dd847824464) &mdash; *Podcast about Web Development.*
+* [Front-End Fire](https://open.spotify.com/show/4kYCRYJ3yK5DQbP5tbfZby?si=d8355dd847824464) &mdash; *Podcast on the latest and greatest in the front-end world.*
 
 ---
 
