@@ -11,7 +11,7 @@ bodyClass: "ai"
 
 dateShow: true # Show the date in the header for this page
 date: 2025-05-09T19:08:27.631Z
-updated: 2025-05-09T19:08:27.631Z
+updated: 2025-05-09T19:29:27.631Z
 
 location:
   locality: Home
@@ -20,7 +20,7 @@ location:
 eleventyExcludeFromCollections: false
 ---
 
-Not that I have anything against "Ai" (aka LLMs) per se &mdash; but I'm not overly enamoured with the idea of using them to write content for my website or blog. I prefer to write everything myself.
+Not that I'm against "Ai", *(aka LLMs)*, per se. Heck, I've used a few of them to do research and found these tools helpful. But I'm not overly enamoured with the idea of using them to write content for my website or blog. I prefer to write everything myself.
 
 I'm also a bit annoyed that "Ai" bots have been gobbling up the internet's content *(my website included)* to train their models. I don't think it's fair that they can do this without asking for permission first.
 
