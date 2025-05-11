@@ -13,7 +13,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-date: 2025-05-02T16:34:27.631Z
+date: 2025-05-11T23:04:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -23,14 +23,14 @@ eleventyExcludeFromCollections: false
 <ol class="no-list | flow">
   <li><strong>1972:</strong> Born in Pietermaritzburg, South Africa. Named Anthony Rogers by my <span id="fnref:mother-bio" rel="doc-noteref"><a href="#fn:mother-bio" rel="footnote">biological mother <sup>1</sup></a></span>.</li>
   <li><strong>1973:</strong> Adopted by Mathew Wedgwood Taylor and Ann Treleaven Taylor. Name changed to Bruce Wedgwood Taylor. Raised on a dairy farm in Mooi River, South Africa &mdash; near to the beautiful <a href="https://youtu.be/bGQbM3QfA5w">Drakensberg</a>.</li>
-  <li><strong>1975:</strong> Learnt to ride a horse. My father was a polo player.</li>
+  <li><strong>1975:</strong> Learnt to ride a horse at the age of 3. My father was a polo player.</li>
   <li><strong>1980:</strong> My <span id="fnref:adopted" rel="doc-noteref"><a href="#fn:adopted" rel="footnote">adoptive parents <sup>2</sup></a></span> first told me I was adopted.</li>
-  <li><strong>1982:</strong> Learnt to drive a pick-up truck and off-road bike on the farm. Stopped riding horses as preferred motorbikes. <em>(I also fell off horses way too much for my liking)</em>.</li>
-  <li><strong>1983:</strong> Went to a fantastic boarding school at <a href="https://kingsschool.co.za/">Kings School</a>, Nottingham Road, South Africa.</li>
+  <li><strong>1982:</strong> At the age of 10, learnt to drive a pick-up truck and off-road bike on the farm. Stopped riding horses as preferred motorbikes. <em>(I also fell off horses way too much for my liking)</em>.</li>
+  <li><strong>1983:</strong> Went to a fantastic boarding school called <a href="https://kingsschool.co.za/">Kings School</a>, in Nottingham Road, South Africa.</li>
   <li><strong>1986:</strong> Started high (senior) school, Estcourt, South Africa.</li>
   <li><strong>1990:</strong> Won light weight division body building competition in Northern Natal, South Africa.</li>
   <li><strong>1991:</strong> Captained the hockey and squash 1st teams. Finished high (senior) school.</li>
-  <li><strong>1992:</strong> Enrolled at Durban Technikon to study Catering Management. Part time studied as a personal trainer. Started playing drums and bought first drumkit (Pearl Maple) that had originally belonged to Mark Temperato. Made some friends for life and met my wife-to-be. Turned 20.</li>
+  <li><strong>1992:</strong> Enrolled at Durban Technikon to study Catering Management. Also studied as a personal trainer part time. Started playing drums and bought first drumkit (Pearl Maple) that had originally belonged to Mark Temperato. Made some friends for life and met my wife-to-be. Turned 20.</li>
   <li><strong>1994:</strong> Graduated from Durban Technikon (South Africa) as a Catering Manager & Chef. Completed work placement at (then) top restaurant, "The Colony", in Durban.</li>
   <li><strong>1995:</strong> Got married. Moved to the UK to help start a church. First year of marriage flat-shared in East Sheen, London.</li>
   <li><strong>1996:</strong> My wife and I moved to Chiswick, London.</li>
@@ -54,7 +54,7 @@ eleventyExcludeFromCollections: false
   <li><strong>2025:</strong> Married to a wonderful woman for 30 years.</li>
 </ol>
 
-Before ever touching a computer at the end of the 90's, my life revolved around *‘teasing’* cows &mdash; *(on our dairy farm)*. Off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, training as a chef, and aspiring to be a pilot. {.call-out}
+---
 
 ## Other stuff about me
 
@@ -67,6 +67,8 @@ Fly fishing for trout is something I grew up doing and continue to do. I head to
 I absolutely [adore aircraft](/photos/2022-03-30/photo_202203301354) and hope that one day I'll be able to either get my PPL or GPL.
 
 I write now and then &ndash; and have [written a few posts](/writing), [jotted down some notes](/notes), and [bookmarked links to articles](/bookmarks) I've enjoyed and found interesting. Hopefully some of them resonate with you.
+
+Before ever touching a computer at the end of the 90's, my life revolved around *‘teasing’* cows &mdash; *(on our dairy farm)*. Off-road motorbiking, hiking and wild camping in the mountains, stargazing, canoeing, fishing, photography, drumming, playing a bunch of team and individual sports, training as a chef, and aspiring to be a pilot. {.call-out}
 
 ---
 

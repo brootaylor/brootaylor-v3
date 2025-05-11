@@ -6,6 +6,7 @@ summary: "Bruce is originally from South Africa and grew up on a dairy farm in a
 lead:
   - I'm originally from South Africa and grew up on a dairy farm in a very <a href="https://youtu.be/bGQbM3QfA5w">beautiful part of the country</a>.
   - I now live in England with <a href="/photos/2022-03-30/photo_202203300012">my family</a> and <a href="/projects">build websites</a> for a living.
+  - If you're interested, here's a <a href="/about/me">bit more about me</a>.
 
 # Page-specific metadata content added to the `<head>`
 head: "
@@ -29,7 +30,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2025-05-09T19:08:27.631Z
+date: 2025-05-11T23:04:27.631Z
 ---
 
 <img src="/assets/images/pages/about/broo_profile_about_bw.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
@@ -44,13 +45,13 @@ I'm quite good at picking up new skills and programming languages, as well as pr
 
 ### Am I a "[full-stack] developer"?
 
-I've resisted calling myself a "[[full-stack] developer](https://bradfrost.com/blog/post/full-stack-developers/)" &mdash; regardless of what some of my roles and experience may indicate. I do know how to do full-stack development, not because I've necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've had to <sup>2</sup></a></span>.
+I've resisted calling myself a "[[full-stack] developer](https://bradfrost.com/blog/post/full-stack-developers/)" &mdash; regardless of what some of my roles and experience may indicate. I do know how to do full-stack development, not because I've always necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've often *'had'* to <sup>2</sup></a></span>.
 
 ---
 
 ## My technical skill set
 
-Some of the technical skills I've picked up over the 21 years I've been building websites:
+Some of the technical skills I've picked up over the 20+ years I've been building websites:
 
 <div class="full-bleed | call-out | flow">
   <ul>
@@ -65,24 +66,16 @@ Some of the technical skills I've picked up over the 21 years I've been building
     <li>Web Accessibility</li>
     <li>Cross Browser Compatibility</li>
     <li>Data Source / <abbr title="Application Programming Interface.">API</abbr> Configuration</li>
-    <li><abbr title="Content Management System.">CMS</abbr> Configuration and Integration <small><em>(WordPress, Decap CMS)</em></small></li>
+    <li><abbr title="Content Management System.">CMS</abbr> Configuration and Integration <small><em>(WordPress, Decap CMS, Umbraco)</em></small></li>
     <li>JavaScript Bundlers & Deployment Tooling <small><em>(Vite, Rollup.js, Webpack, Netlify, Docker, Azure DevOps)</em></small></li>
-    <li>Back-end & <em>"back-of-the-frontend"</em> <small><em>(PHP, Twig, Node.js)</em></small></li>
+    <li>Back-end & <em>"back-of-the-frontend"</em> <small><em>(PHP, Twig, MySQL, Node.js)</em></small></li>
     <li>Version Control <small><em>(GitHub, GitLab, Bitbucket)</em></small></li>
     <li>Continuous Integration <em>(CI)</em> & Continuous Deployment <em>(CD)</em></li>
-    <li>Analytics <small><em>(Google Analytics, Google Tag Manager)</em></small></li>
+    <li>Analytics <small><em>(Google Analytics, Google Tag Manager, Adobe Analytics)</em></small></li>
   </ul>
   <h3 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h3>
   <p><small><em>(Need to see a copy of my CV for some reason? You're welcome to <a href="/BruceTaylorCV">download a copy</a>.)</em></small></p>
 </div>
-
----
-
-## A little more about me
-
-If you're interested, here's a bit of a longer read on [who I am personally](/about/me).
-
----
 
 ## About this website
 
