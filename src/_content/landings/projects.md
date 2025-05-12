@@ -155,25 +155,6 @@ date: 2025-05-12T19:51:27.631Z
       <article class="card card--stacked">
         <div class="card__content">
           <header class="card__header">
-            <h3 class="card__title">Charanga Music</h3>
-            <span class="date-time">Year: 2016 <small>(freelance)</small></span>
-          </header>
-          <div class="card__body">
-            <ul class="flow">
-              <li>Worked with Charanga Music to craft a versatile front-end boilerplate / component library, ensuring reusability, extensibility, responsiveness, and accessibility.</li>
-              <li>Streamlined their ability to swiftly develop and deploy future web offerings, maintaining top-notch front-end standards throughout the process.</li>
-            </ul>
-          </div>
-          <footer class="card__footer">
-            <p>Visit them at <a href="https://charanga.com/">charanga.com</a></p>
-          </footer>
-        </div>
-      </article>
-    </li>
-    <li>
-      <article class="card card--stacked">
-        <div class="card__content">
-          <header class="card__header">
             <h3 class="card__title">Macmillan Cancer Support</h3>
             <span class="date-time">Year: 2015 <small>(contract)</small></span>
           </header>
