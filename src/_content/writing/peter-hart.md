@@ -4,7 +4,7 @@ summary: Today I lost a very dear friend. Pete's his name. Peter Hart.
 lead:
   - Today I lost a very dear friend and I'm still reeling in disbelief. Pete's his name. <strong><em>Peter Hart</em></strong>.
 date: 2020-05-12T21:16:00
-updated: 2024-05-12T13:57:00.000Z
+updated: 2025-05-12T13:51:00
 location:
   locality: Crawley
   country_name: UK
@@ -42,6 +42,6 @@ There is so much that I could (and want to) write about Pete but my emotions are
 
 But, for now. In this moment. I want to [remember this beautiful man](https://www.bbc.co.uk/news/uk-england-surrey-53097511).
 
-Goodbye dear dear Pete. Rest easy my friend&hellip; and happy birthday.
+Goodbye dear dear Pete. Rest easy my friend&hellip; and happy 52<sup>nd</sup> birthday.
 
 I'm going to miss you terribly. 😘
