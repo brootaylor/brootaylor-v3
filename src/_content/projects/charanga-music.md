@@ -30,9 +30,9 @@ image:
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2024-03-01T12:15:27.631Z
+date: 2025-05-12T19:51:27.631Z
 
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 ---
 
 {% from "components/core/images/images.njk" import imageNormal %}

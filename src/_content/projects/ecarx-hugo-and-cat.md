@@ -1,10 +1,10 @@
 ---
 title: ECARX / Hugo & Cat
 # Populates the `meta description` for a page as well as the project landing page project-specific summary
-summary: Collaborated with Hugo & Cat on a web project for ECARX, a leading automotive technology company.
+summary: Collaborated with Hugo & Cat to build a high-performance Umbraco website for ECARX, featuring advanced animation, interactivity, and a Storybook-powered component system.
 # Populates the opening / `lead` text on a page
 lead:
-  - Collaborated with Hugo & Cat on a web project for ECARX, a leading automotive technology company.
+  - Collaborated with Hugo & Cat to build a high-performance Umbraco website for ECARX, featuring advanced animation, interactivity, and a Storybook-powered component system.
 
 # Social image details - (Is used by content sharing channels like Facebook, Twitter, WhatsApp, LinkedIn, RSS readers etc.)
 # ##########################################################################################################################
@@ -18,7 +18,7 @@ project:
   technologies: HTML5, CSS, SCSS, JavaScript (ES6), GSAP, Handlebars, Storybook, Webpack, Gulp, Cypress, Umbraco, .NET Razor Views, Azure DevOps, Figma
   websiteLabel: www.ecarxgroup.com
   websiteUrl: https://www.ecarxgroup.com/
-  order: 1
+  order: 2
 
 # Image component rules / properties for projects list page
 # #######################################################
@@ -32,7 +32,7 @@ image:
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2024-02-17T23:09:27.631Z
+date: 2025-05-12T19:51:27.631Z
 
 eleventyExcludeFromCollections: false
 ---

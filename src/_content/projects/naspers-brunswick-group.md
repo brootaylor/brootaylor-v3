@@ -1,10 +1,10 @@
 ---
 title: Naspers / Brunswick Group
 # Populates the `meta description` for a page as well as the project landing page project-specific summary
-summary: A microsite to support the release of Naspers PLC's annual financial information.
+summary: Constructed a CMS driven SPA microsite to support the release of Naspers PLC's 2022 annual financial information.
 # Populates the opening / `lead` text on a page
 lead:
-  - A microsite to support the release of Naspers PLC's annual financial information.
+  - Constructed a <abbr title="Content Management System.">CMS</abbr> driven <abbr title="Single Page Application.">SPA</abbr> microsite to support the release of Naspers PLC's 2022 annual financial information.
 
 # Social image details - (Is used by content sharing channels like Facebook, Twitter, WhatsApp, LinkedIn, RSS readers etc.)
 # ##########################################################################################################################
@@ -16,7 +16,7 @@ project:
   year: 2022
   role: Frontend Web Developer
   technologies: HTML5, CSS, SCSS, JavaScript (ES6), Vue.JS, GSAP, Bootstrap 5, Webpack, Bitbucket, WordPress <em>(Headless CMS Config & Advanced Custom Fields)</em>, Photoshop, Figma, JIRA, Confluence.
-  order: 5
+  order: 6
 
 # Image component rules / properties for projects list page
 # #######################################################
@@ -30,7 +30,7 @@ image:
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2024-02-17T23:09:27.631Z
+date: 2025-05-12T19:51:27.631Z
 
 eleventyExcludeFromCollections: false
 ---

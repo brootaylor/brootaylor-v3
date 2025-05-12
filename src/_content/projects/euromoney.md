@@ -16,7 +16,7 @@ project:
   year: 2018
   role: Frontend Web Developer
   technologies: HTML5, CSS, SCSS, JavaScript, jQuery, Handlebars, Grunt, Photoshop, Zeplin, Fractal, Bitbucket, .NET Razor Views, Sitecore, JIRA, Confluence
-  order: 7
+  order: 8
 
 # Image component rules / properties for projects list page
 # #######################################################
@@ -30,7 +30,7 @@ image:
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2024-02-17T23:09:27.631Z
+date: 2025-05-12T19:51:27.631Z
 
 eleventyExcludeFromCollections: false
 ---

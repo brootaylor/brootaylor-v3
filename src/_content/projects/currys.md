@@ -1,10 +1,10 @@
 ---
 title: Currys
 # Populates the `meta description` for a page as well as the project landing page project-specific summary
-summary: Migration of the Carphone Warehouse website content to a more advanced in-house content management platform.
+summary: Contracted by Currys to migrate the Carphone Warehouse website content to a more advanced in-house content management platform.
 # Populates the opening / `lead` text on a page
 lead:
-  - Migration of the Carphone Warehouse website content to a more advanced in-house content management platform.
+  - Contracted by Currys to migrate the Carphone Warehouse website content to a more advanced in-house content management platform.
 
 # Social image details - (Is used by content sharing channels like Facebook, Twitter, WhatsApp, LinkedIn, RSS readers etc.)
 # ##########################################################################################################################
@@ -16,7 +16,7 @@ project:
   year: 2022
   role: Frontend Web Developer
   technologies: HTML5, CSS, SCSS, JavaScript, jQuery, PHP, Twig, Docker, GitLab, Photoshop, JIRA, Confluence.
-  order: 4
+  order: 5
 
 # Image component rules / properties for projects list page
 # #######################################################
@@ -30,7 +30,7 @@ image:
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2024-02-17T23:09:27.631Z
+date: 2025-05-12T19:51:27.631Z
 
 eleventyExcludeFromCollections: false
 ---

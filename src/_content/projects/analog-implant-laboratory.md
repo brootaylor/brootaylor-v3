@@ -18,7 +18,7 @@ project:
   technologies: HTML5, CSS, SCSS, JavaScript, jQuery, PHP, Grunt, Photoshop, Bitbucket
   websiteLabel: analog-lab.co.uk
   websiteUrl: http://analog-lab.co.uk/
-  order: 8
+  order: 9
 
 # Image component rules / properties for projects list page
 # #######################################################
@@ -32,7 +32,7 @@ image:
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2024-02-17T23:09:27.631Z
+date: 2025-05-12T19:51:27.631Z
 
 eleventyExcludeFromCollections: false
 ---

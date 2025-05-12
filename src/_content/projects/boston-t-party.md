@@ -1,10 +1,10 @@
 ---
 title: Boston T Party
 # Populates the `meta description` for a page as well as the project landing page project-specific summary
-summary: A fast and friendly customer informational website for Boston T Party's hospitality in South Africa.
+summary: Designed and built a fast and friendly customer informational website for Boston T Party's hospitality in South Africa.
 # Populates the opening / `lead` text on a page
 lead:
-  - A fast and friendly customer informational <abbr title="Progressive Web App.">PWA</abbr> website for Boston T Party's hospitality business in South Africa.
+  - Designed and built a fast and friendly customer informational <abbr title="Progressive Web App.">PWA</abbr> website for Boston T Party's hospitality business in South Africa.
 
 # Social image details - (Is used by content sharing channels like Facebook, Twitter, WhatsApp, LinkedIn, RSS readers etc.)
 # ##########################################################################################################################
@@ -18,7 +18,7 @@ project:
   technologies: HTML5, CSS, SCSS, JavaScript, Service Worker, PWA manifest, Eleventy, Nunjucks, Jest, Rollup.js, Node.js, GitHub, Netlify, Photoshop.
   websiteLabel: bostontparty.co.za
   websiteUrl: https://bostontparty.co.za/
-  order: 6
+  order: 7
 
 # Image component rules / properties for projects list page
 # #######################################################
@@ -32,7 +32,7 @@ image:
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2024-03-01T12:15:27.631Z
+date: 2025-05-12T19:51:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
