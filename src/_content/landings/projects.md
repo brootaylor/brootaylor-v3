@@ -4,7 +4,7 @@ title: "Projects"
 summary: "I specialise in helping individuals, businesses, and non-profit organisations craft performant, user-friendly, responsive, accessible, and resilient websites. Whether you're starting fresh or improving an existing one, I'm here to assist you in establishing a lasting and meaningful online presence."
 # Populates the opening / `lead` text on a page
 lead:
-  - Over the past two decades, I've had the privilege of working with some fantastic people and organisations. Here are a few of the projects I've been involved with.
+  - Over the years, I've had the privilege of working with some fantastic people and organisations. Here are a few of the projects I've been involved with.
   - Think I could help with your next project? Please <a href="/contact">get in touch</a>.
 
 # Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
@@ -22,7 +22,7 @@ pagination:
   size: 15
   alias: projects
 
-date: 2025-01-12T18:41:27.631Z
+date: 2025-05-12T19:51:27.631Z
 ---
 
 <section aria-labelledby="projects-featured" class="projects-featured | flow">
@@ -81,9 +81,9 @@ date: 2025-01-12T18:41:27.631Z
           </header>
           <div class="card__body">
             <ul class="flow">
-              <li>Built ecommerce frontend solutions for Airmiles and Avios, mentoring front-end developers and collaborating with back-end teams (Spring application and Oracle-based CMS) to ensure accurate, standards-compliant implementation.</li>
-              <li>Led the adoption of web standards and accessibility, delivering stable, inclusive websites and personalized digital experiences.</li>
-              <li>An Agile workflow, collaborating with stakeholders, UX designers, developers, and testers to deliver engaging digital solutions.</li>
+              <li>Built ecommerce frontend solutions for Airmiles and Avios, mentored front-end developers and collaborated with back-end teams (Spring application and Oracle-based <abbr title="Content Management System.">CMS</abbr>) to ensure accurate, standards-compliant implementation.</li>
+              <li>Led the adoption of web standards and accessibility, delivering stable, inclusive websites and personalised digital experiences.</li>
+              <li>Worked in an Agile workflow, collaborated with stakeholders, UX designers, developers, and testers to deliver engaging digital solutions.</li>
             </ul>
           </div>
           <footer class="card__footer | flow">
@@ -102,9 +102,9 @@ date: 2025-01-12T18:41:27.631Z
           </header>
           <div class="card__body">
             <ul class="flow">
-              <li>Developed high performance <abbr title="Progressive Web Application.">PWA</abbr> B2B websites for them.</li>
+              <li>Developed high performance <abbr title="Progressive Web Application.">PWA</abbr> <abbr title="Business-to-business.">B2B</abbr> websites for them.</li>
               <li>Played a key role in exploring, strategising, and implementing a scalable <abbr title="Software as a Service.">SaaS</abbr> micro-frontend setup that prioritised reusable, themeable, and customisable components.</li>
-              <li>Created a custom JSON-based themeable design system (tokens) configuration to help scale design and UI across web offerings & applications.</li>
+              <li>Developed a custom, JSON-based, themeable design token system to scale design and UI consistently across web platforms and applications in a technology-agnostic way.</li>
             </ul>
           </div>
           <footer class="card__footer">
