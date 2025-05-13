@@ -30,10 +30,20 @@ head: "
 
 bodyClass: "about"
 
-date: 2025-05-11T23:04:27.631Z
+date: 2025-05-13T15:04:27.631Z
 ---
 
-<img src="/assets/images/pages/about/broo_profile_about.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
+{% from "components/core/images/images.njk" import imageFigure %}
+{{ imageFigure(
+  "/assets/images/pages/about/broo_profile_about.jpg",
+  "Profile headshot of myself, Bruce Taylor",
+  "800",
+  "1000",
+  "Tis me 👋",
+  "img-normal | img-right | profile",
+  "shadow",
+  "lazy")
+}}
 
 ## The work I do
 
