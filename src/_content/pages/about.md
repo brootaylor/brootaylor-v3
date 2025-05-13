@@ -33,7 +33,7 @@ bodyClass: "about"
 date: 2025-05-11T23:04:27.631Z
 ---
 
-<img src="/assets/images/pages/about/broo_profile_about_bw.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
+<img src="/assets/images/pages/about/broo_profile_about.jpg" alt="Profile headshot of myself, Bruce Taylor." width="800" height="1000" class="img-normal | img-right | profile | shadow" loading="lazy" decoding="async">
 
 ## The work I do
 
