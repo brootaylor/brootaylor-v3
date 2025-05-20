@@ -339,6 +339,16 @@
       "name": "Ashlee M Boyer",
       "url": "https://ashleemboyer.com/",
       "description": "Ashlee is an accessibility, disability, & software engineering consultant."
+    },
+    {
+      "name": "Mayank",
+      "url": "https://mayank.co",
+      "description": "Mayank is a design engineer who likes building for the web using <em>radical</em> <s>new</s> technologies such as HTML, CSS, and (just the right amount of) JavaScript."
+    },
+    {
+      "name": "Keith J. Grant",
+      "url": "https://keithjgrant.com/",
+      "description": "Keith is a principal software engineer at Red Hat. Loves fiddling with CSS and building things on the web. He's also the author of the highly-rated book <strong>CSS in Depth</strong>, a practical guide to modern CSS for web developers."
     }
   ]
 }
