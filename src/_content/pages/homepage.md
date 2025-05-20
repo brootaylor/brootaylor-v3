@@ -54,12 +54,12 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2025-04-28T13:39:27.631Z
+date: 2025-05-20T09:19:27.631Z
 
 priority: 1
 ---
 
-I particularly enjoy roles that ***strike a balance between user and developer experiences*** &mdash; empowering teams to write great code that aligns with their needs and preferences, while ensuring a positive user experience.
+I particularly enjoy roles and projects that ***strike a balance between user and developer experiences*** &mdash; empowering teams to write great code that aligns with their needs and preferences, while ensuring a positive user experience.
 
 I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/), [usable](https://trentwalton.com/2014/03/10/device-agnostic/) and as future-friendly as possible. For this reason I prefer a vanilla approach and tend to be fairly tech-agnostic.
 

@@ -64,23 +64,23 @@
     &:last-child {
       a {
         padding: 0 0.5em;
-        background-color: var(--grey-mid02);
+        color: var(--white);
+        background-color: var(--green-custom);
         border: 2px solid transparent;
         border-radius: 4px;
         text-decoration: none;
-        transition: background-color 0.25s ease-in-out,
-                    border 0.25s ease-in-out;
+        transition: background-color 0.25s ease-in-out;
 
         // Button `:hover` state
         &:hover {
-          border-block-end-color: var(--green-custom);
+          background-color: var(--green-custom-dark);
         }
 
         // Button `:active` and `:focus` states
         &:active,
         &:focus,
         &[aria-current="page"] {
-          border-block-end-color: var(--green-custom);
+          background-color: var(--green-custom-dark);
         }
       }
     }
