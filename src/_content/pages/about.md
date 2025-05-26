@@ -30,7 +30,7 @@ head: "
 
 bodyClass: "about"
 
-date: 2025-05-13T15:04:27.631Z
+date: 2025-05-26T14:51:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
@@ -51,11 +51,15 @@ I’m a front-end web developer, ui engineer/designer and generalist &mdash; *me
 
 All things impacting the user experience on the web matters to me. This is where I'm most comfortable and where I've ended up specialising. Which is why you'll mostly find me tinkering around in the "[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/)" &mdash; the somewhat broad and *fuzzy* intersection between design and back-end engineering.
 
-I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented, kind and supportive people over the years, and much of the success I've enjoyed during <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
+### Working with design systems
+
+I’ve had some experience creating frontend solutions to support design systems &mdash; making sure components are consistent, scalable, and don’t tie developers to any one tech stack. It’s something I really enjoy working on and would like to do more of.  I think a good design system should be a stable foundation &mdash; flexible and tech-agnostic enough to stay relevant and useful, even as technologies come and go.
 
 ### Am I a "[full-stack] developer"?
 
 I've resisted calling myself a "[[full-stack] developer](https://bradfrost.com/blog/post/full-stack-developers/)" &mdash; regardless of what some of my roles and experience may indicate. I do know how to do full-stack development, not because I've always necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've often *'had'* to <sup>2</sup></a></span>.
+
+I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented, kind and supportive people over the years, and much of the success I've enjoyed during <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
 
 ---
 
