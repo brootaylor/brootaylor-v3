@@ -16,6 +16,11 @@ head: "
         width: auto;
     }
 
+    /* Custom element */
+    my-tech-skill-set {
+      display: block;
+    }
+
     .full-bleed ul {
       columns: 2 300px;
       column-gap: 2.5em;
@@ -25,8 +30,21 @@ head: "
     .full-bleed p {
       max-width: inherit;
     }
-  </style>
-"
+  </style>"
+
+# Page-specific JS added just before the closing `</body>`
+foot: "
+  <script type=\"module\">
+    class MyTechSkillSet extends HTMLElement {
+      constructor() {
+        super();
+      }
+      connectedCallback() {
+        console.log(`The ${this.nodeName.toLowerCase()} web component has been created just for fun. Just cause I wanted to call it that. So there! 😄`);
+      }
+    }
+    customElements.define('my-tech-skill-set', MyTechSkillSet);
+  </script>"
 
 bodyClass: "about"
 
@@ -67,7 +85,7 @@ I'm quite good at picking up new skills and programming languages, as well as pr
 
 Some of the technical skills I've picked up over the 20+ years I've been building websites:
 
-<div class="full-bleed | call-out | flow">
+<my-tech-skill-set class="full-bleed | call-out | flow">
   <ul>
     <li>HTML, CSS, SCSS, LESS, JavaScript <small><em>(ES5 & ES6+)</em></small></li>
     <li>Static Site Generators <em>(SSGs)</em> & Web frameworks <small><em>(11ty, Jekyll, Astro, Svelte, Vue)</em></small></li>
@@ -89,7 +107,7 @@ Some of the technical skills I've picked up over the 20+ years I've been buildin
   </ul>
   <h3 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h3>
   <p><small><em>(Need to see a copy of my CV for some reason? You're welcome to <a href="/BruceTaylorCV">download a copy</a>.)</em></small></p>
-</div>
+</my-tech-skill-set>
 
 ## About this website
 

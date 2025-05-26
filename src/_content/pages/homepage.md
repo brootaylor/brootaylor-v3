@@ -38,8 +38,7 @@ head: "
         margin-top: 2em;
       }
     }
-  </style>
-"
+  </style>"
 
 # Page-specific JS added just before the closing `</body>`
 # foot: "
@@ -47,8 +46,7 @@ head: "
 #     (function () {
 #       console.log('This is the homepage');
 #     })()
-#   </script>
-# "
+#   </script>"
 
 bodyClass: "homepage"
 
