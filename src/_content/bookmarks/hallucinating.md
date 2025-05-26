@@ -18,7 +18,7 @@ category:
 eleventyExcludeFromCollections: false
 ---
 
-For those of us that may have sipped a little too much of the "Ai" cool-aid, I like how Ethan challenges the semantics of how we're using the word "hallucination" &mdash; and brings a much needed nudge back to reality.
+For those of us that may have sipped a little too much of the "Ai" cool-aid, Ethan challenges the semantics of how we're using the word "hallucination" &mdash; and brings a much needed nudge back to reality.
 
 > If you read about the current crop of “artificial intelligence” tools, you’ll eventually come across the word “hallucinate.” It’s used as a shorthand for any instance where the software just, like, makes stuff up: An error, a mistake, a factual misstep — a lie.
 >
