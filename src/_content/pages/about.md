@@ -48,7 +48,7 @@ foot: "
 
 bodyClass: "about"
 
-date: 2025-05-26T14:51:27.631Z
+date: 2025-05-28T13:19:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
@@ -87,23 +87,19 @@ Some of the technical skills I've picked up over the 20+ years I've been buildin
 
 <my-tech-skill-set class="full-bleed | call-out | flow">
   <ul>
-    <li>HTML, CSS, SCSS, LESS, JavaScript <small><em>(ES5 & ES6+)</em></small></li>
-    <li>Static Site Generators <em>(SSGs)</em> & Web frameworks <small><em>(11ty, Jekyll, Astro, Svelte, Vue)</em></small></li>
-    <li>Templating languages & Libraries <small><em>(Nunjucks, Liquid, Handlebars, jQuery, Bootstrap, GSAP)</em></small></li>
-    <li>Design tools & UI component library builders <small><em>(Photoshop, Figma, Zeplin, Fractal, Storybook)</em></small></li>
-    <li>Responsive, Device-agnostic, and Progressively Enhanced Web Development</li>
-    <li>CSS Architecture / Component-based Frontend Architecture</li>
-    <li>Themeable Design System Configuration</li>
-    <li>Web Performance Optimisation</li>
-    <li>Web Accessibility</li>
-    <li>Cross Browser Compatibility</li>
-    <li>Data Source / <abbr title="Application Programming Interface.">API</abbr> Configuration</li>
-    <li><abbr title="Content Management System.">CMS</abbr> Configuration and Integration <small><em>(WordPress, Decap CMS, Umbraco)</em></small></li>
-    <li>JavaScript Bundlers & Deployment Tooling <small><em>(Vite, Rollup.js, Webpack, Netlify, Docker, Azure DevOps)</em></small></li>
-    <li>Back-end & <em>"back-of-the-frontend"</em> <small><em>(PHP, Twig, MySQL, Node.js)</em></small></li>
-    <li>Version Control <small><em>(GitHub, GitLab, Bitbucket)</em></small></li>
-    <li>Continuous Integration <em>(CI)</em> & Continuous Deployment <em>(CD)</em></li>
-    <li>Analytics <small><em>(Google Analytics, Google Tag Manager, Adobe Analytics)</em></small></li>
+    <li><strong>Core Frontend</strong>: HTML, CSS <small><em>(SCSS & LESS)</em></small>, JavaScript <small><em>(ES5 & ES6+)</em></small></li>
+    <li><strong>Frameworks & Static Site Generators</strong>: 11ty, Astro, Jekyll, Svelte, Vue</li>
+    <li><strong>Templating & Libraries</strong>: Nunjucks, Liquid, Handlebars, jQuery, Bootstrap, Foundation, GSAP</li>
+    <li><strong>Build & Workflow</strong>: Vite, Rollup.js, Webpack, Gulp, PostCSS, Babel, Jest, Cypress</li>
+    <li><strong>Version Control & DevOps</strong>: Git, Bitbucket, Monorepos, Netlify, Docker, Azure DevOps</li>
+    <li><abbr title="Content Management System."><strong>CMS</strong></abbr>: WordPress, Drupal, Umbraco, Decap CMS, Contentful</li>
+    <li><strong>Back-end &</strong> <abbr title="Application Programming Interface."><strong>API</strong></abbr>: PHP, Twig, MySQL, Node.js, Data Source / <abbr title="Application Programming Interface.">API</abbr> Configuration</li>
+    <li><strong>Component Libraries & Design Systems</strong>: Fractal, Storybook, Design Tokens, Design System Configuration</li>
+    <li><strong>Dev & Design Tools</strong>: VS Code, Cursor, Postman, iTerm, Photoshop, Figma, Zeplin</li>
+    <li><strong>Frontend Architecture & Standards</strong>: Tech-agnostic component-based Frontend Architecture, CSS Architecture</li>
+    <li><strong>Best Practices</strong>: Responsive Design, Progressive Enhancement, <abbr title="Progressive Web Apps.">PWA</abbr>, Accessibility / A11y, Cross-Browser Compatibility Testing, Web Components, Service Workers</li>
+    <li><abbr title="Search Engine Optimisation."><strong>SEO</strong></abbr><strong>, Performance & Compliance</strong>: Technical & Content-based <abbr title="Search Engine Optimisation.">SEO</abbr>, Performance optimisation, Lighthouse Auditing, Cookie Consent Management <small><em>(Civic, TrustArc)</em></small>, <abbr title="General Data Protection Regulation.">GDPR</abbr> Setup</li>
+    <li><strong>Analytics</strong>: Google Analytics, Google Tag Manager, Adobe Analytics</li>
   </ul>
   <h3 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h3>
   <p><small><em>(Need to see a copy of my CV for some reason? You're welcome to <a href="/BruceTaylorCV">download a copy</a>.)</em></small></p>
