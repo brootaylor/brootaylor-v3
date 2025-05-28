@@ -12,7 +12,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-05-11T23:23:27.631Z
+updated: 2025-05-28T13:38:27.631Z
 
 location:
   locality: Home
@@ -25,7 +25,7 @@ eleventyExcludeFromCollections: false
 
 Right now, I'm working on a contract basis as a **Frontend Engineer** for [Admiral Group Plc](https://www.admiralgroup.co.uk/) on their customer facing websites.
 
-This contract finshes at the end of June 2025. I'm hoping to find something a bit more permanent after that. {.call-out}
+This contract finshes at the end of October 2025. I'm hoping to find something a bit more permanent after that. {.call-out}
 
 ---
 
