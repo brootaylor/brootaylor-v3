@@ -1,12 +1,12 @@
 ---
 layout: "layouts/homepage.njk"
-title: <strong>Hi,</strong> <a href="/about">I'm Bruce</a> &mdash; <span class="sub-text"><span class="nowrap">a frontend</span> web developer and ui engineer based in England.</span>
+title: <strong>Hi,</strong> <a href="/about">I'm Bruce</a> &mdash; <span class="sub-text"><span class="nowrap">a frontend</span> web developer, UI engineer, drummer, and wannabe pilot living in the South of England.</span>
 # Populates the `meta description` for a page
 summary: "Bruce is a Frontend Web Developer & UI Engineer based in England. Specialising in crafting performant, user-friendly, responsive, accessible, and resilient websites for individuals and businesses. Build from scratch or enhance your existing website for a lasting online presence."
 
 # Populates the opening / `lead` text on a page
 lead:
-  - I specialise in helping individuals and businesses craft performant, user-friendly, responsive, accessible, and resilient websites.
+  - I spend most of my days helping people craft performant, user-friendly, responsive, accessible, and resilient websites.
   - Here's what I’m up to <a href="/now">now</a>, and some of the <a href="/projects">projects</a> I've worked on recently.
 
 # Page-specific metadata content added to the `<head>`
@@ -52,7 +52,7 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2025-05-20T09:19:27.631Z
+date: 2025-05-28T13:34:27.631Z
 
 priority: 1
 ---
