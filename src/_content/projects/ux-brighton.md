@@ -15,7 +15,7 @@ socialImage:
 project:
   year: 2022 &mdash; 2024
   role: Frontend Web Development
-  technologies: HTML5, CSS, SCSS, JavaScript (ES6), jQuery, Jekyll, Liquid, JSON, GitHub, GitHub Pages, Node.js, Retool, Swagger, Netlify, Netlify CMS, Google Analytics, Google Tag Manager (GTM), Figma, Photoshop.
+  technologies: HTML5, CSS, SCSS, JavaScript <em>(ES5 & ES6+)</em>, jQuery, Jekyll, Liquid, JSON, GitHub, GitHub Pages, Node.js, Retool, Swagger, Netlify, Netlify CMS, Google Analytics, Google Tag Manager <em>(GTM)</em>, Figma, Photoshop.
   websiteLabel: uxbri.org
   websiteUrl: https://uxbri.org/
   order: 3

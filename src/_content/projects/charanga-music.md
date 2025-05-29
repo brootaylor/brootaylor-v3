@@ -15,7 +15,7 @@ socialImage:
 project:
   year: 2016
   role: Frontend Web Developer
-  technologies: HTML5, CSS, SCSS, JavaScript, jQuery, Grunt, Git, Bitbucket
+  technologies: HTML5, CSS, SCSS, JavaScript <em>(ES5 & ES6+)</em>, jQuery, Grunt, Git, Bitbucket
   order: 10
 
 # Image component rules / properties for projects list page

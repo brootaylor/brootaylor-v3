@@ -15,7 +15,7 @@ socialImage:
 project:
   year: 2023
   role: Senior Frontend Web Developer
-  technologies: HTML5, CSS, SCSS, JavaScript (ES6), GSAP, Handlebars, Storybook, Webpack, Gulp, Cypress, Umbraco, .NET Razor Views, Azure DevOps, Figma
+  technologies: HTML5, CSS, SCSS, JavaScript <em>(ES5 & ES6+)</em>, GSAP, Handlebars, Storybook, Webpack, Gulp, Cypress, Umbraco, .NET Razor Views, Azure DevOps, Figma
   websiteLabel: www.ecarxgroup.com
   websiteUrl: https://www.ecarxgroup.com/
   order: 2

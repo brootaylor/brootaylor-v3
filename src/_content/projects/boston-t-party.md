@@ -15,7 +15,7 @@ socialImage:
 project:
   year: 2022 &mdash; Ongoing
   role: Frontend Web Design & Development
-  technologies: HTML5, CSS, SCSS, JavaScript, Service Worker, PWA manifest, Eleventy, Nunjucks, Jest, Rollup.js, Node.js, GitHub, Netlify, Photoshop.
+  technologies: HTML5, CSS, SCSS, JavaScript <em>(ES5 & ES6+)</em>, Service Worker, PWA manifest, Eleventy, Nunjucks, Jest, Rollup.js, Node.js, GitHub, Netlify, Photoshop.
   websiteLabel: bostontparty.co.za
   websiteUrl: https://bostontparty.co.za/
   order: 7

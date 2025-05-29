@@ -4,7 +4,7 @@ title: "Projects"
 summary: "I specialise in helping individuals, businesses, and non-profit organisations craft performant, user-friendly, responsive, accessible, and resilient websites. Whether you're starting fresh or improving an existing one, I'm here to assist you in establishing a lasting and meaningful online presence."
 # Populates the opening / `lead` text on a page
 lead:
-  - Over the years, I've had the privilege of working with some fantastic people and organisations. Here are a few of the projects I've been involved with.
+  - Over the years, I've had the privilege of working with some fantastic people and organisations. Here are a few of the projects I've been involved in.
   - Think I could help with your next project? Please <a href="/contact">get in touch</a>.
 
 # Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)

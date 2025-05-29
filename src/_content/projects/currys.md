@@ -15,7 +15,7 @@ socialImage:
 project:
   year: 2022
   role: Frontend Web Developer
-  technologies: HTML5, CSS, SCSS, JavaScript, jQuery, PHP, Twig, Docker, GitLab, Photoshop, JIRA, Confluence.
+  technologies: HTML5, CSS, SCSS, JavaScript <em>(ES5 & ES6+)</em>, jQuery, PHP, Twig, Docker, GitLab, Photoshop, JIRA, Confluence.
   order: 5
 
 # Image component rules / properties for projects list page

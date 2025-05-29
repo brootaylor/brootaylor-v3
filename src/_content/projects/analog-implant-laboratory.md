@@ -15,7 +15,7 @@ socialImage:
 project:
   year: 2017
   role: Frontend Web Design & Development
-  technologies: HTML5, CSS, SCSS, JavaScript, jQuery, PHP, Grunt, Photoshop, Bitbucket
+  technologies: HTML5, CSS, SCSS, JavaScript <em>(ES5 & ES6+)</em>, jQuery, PHP, Grunt, Photoshop, Bitbucket
   websiteLabel: analog-lab.co.uk
   websiteUrl: http://analog-lab.co.uk/
   order: 9

@@ -15,7 +15,7 @@ socialImage:
 project:
   year: 2023
   role: Frontend Web Developer
-  technologies: HTML5, CSS, SCSS, JavaScript (ES6), jQuery, Bootstrap 5, Bitbucket, Umbraco, Photoshop, Figma, JIRA, Confluence.
+  technologies: HTML5, CSS, SCSS, JavaScript <em>(ES5 & ES6+)</em>, jQuery, Bootstrap 5, Bitbucket, Umbraco, Photoshop, Figma, JIRA, Confluence.
   websiteLabel: www.varoenergy.com
   websiteUrl: https://www.varoenergy.com/
   order: 4
