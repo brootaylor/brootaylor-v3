@@ -8,6 +8,7 @@
   --header-text: var(--black);
   --header-background: var(--grey-mid);
 
+  position: relative; // Mostly so the contact button can be positioned relative to this element on small to medium screens.
   display: flex;
   flex-direction: column;
   justify-content: space-between;

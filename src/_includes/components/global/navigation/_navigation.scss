@@ -48,6 +48,7 @@
       display: inline-flex;
       align-items: center;
 
+      // Add a separator between items
       &:not(:last-child) {
         &::after {
           content: '\00B7';
@@ -57,11 +58,27 @@
           padding: 0 0.3em 0 0.5em;
         }
       }
+
+      // Hide the last separator on small to medium screens
+      &:nth-last-child(2) {
+        @include max-width($breakpoint-large) {
+          &::after {
+            display: none;
+          }
+        }
+      }
     }
   }
 
   &__item {
     &:last-child {
+      // Position the contact button on small to medium screens
+      @include max-width($breakpoint-large) {
+        position: absolute;
+        top: 0.75rem;
+        right: 1rem;
+      }
+
       a {
         padding: 0 0.5em;
         color: var(--white);
