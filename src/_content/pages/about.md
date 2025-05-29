@@ -48,7 +48,7 @@ foot: "
 
 bodyClass: "about"
 
-date: 2025-05-28T13:19:27.631Z
+date: 2025-05-29T17:21:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
@@ -71,7 +71,7 @@ All things impacting the user experience on the web matters to me. This is where
 
 ### Working with design systems
 
-I’ve had some experience creating frontend solutions to support design systems &mdash; making sure components are consistent, scalable, and don’t tie developers to any one tech stack. It’s something I really enjoy working on and would like to do more of.  I think a good design system should be a stable foundation &mdash; flexible and tech-agnostic enough to stay relevant and useful, even as technologies come and go.
+I’ve had some experience creating frontend solutions to support design systems & design token architecture &mdash; making sure components are consistent, scalable, and themeable &mdash; and don’t tie developers to any one tech stack. It’s something I really enjoy working on and would like to do more of.  I think a good design system should be a stable foundation &mdash; flexible and tech-agnostic enough to stay relevant and useful, even as technologies come and go.
 
 ### Am I a "[full-stack] developer"?
 
