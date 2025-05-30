@@ -40,7 +40,7 @@ eleventyExcludeFromCollections: false
   <img src="/assets/images/projects/admiral/admiral-homepage--sml-screen_01.webp" width="1068" height="726" alt="A screenshot of Admiral's homepage on a desktop monitor." loading="lazy" decoding="async">
 </picture>
 
-I currently have the privilege of working with a fantastic team that are responsible for all the customer-facing marketing websites for Admiral Group Plc. &mdash; including [Admiral](https://www.admiral.com), [Diamond](https://www.diamond.co.uk), [Bell](https://www.bell.co.uk), [Gladiator](https://www.gladiator.co.uk), [Elephant](https://www.elephant.co.uk), [Ford Insure](https://www.fordinsure.co.uk), and [More Than](https://www.morethan.com).
+I currently have the privilege of working with a fantastic team responsible for all the customer-facing marketing websites for Admiral Group Plc. &mdash; including [Admiral](https://www.admiral.com), [Diamond](https://www.diamond.co.uk), [Bell](https://www.bell.co.uk), [Gladiator](https://www.gladiator.co.uk), [Elephant](https://www.elephant.co.uk), [Ford Insure](https://www.fordinsure.co.uk), and [More Than](https://www.morethan.com).
 
 ---
 
