@@ -75,12 +75,12 @@
       // Position the contact button on small to medium screens
       @include max-width($breakpoint-large) {
         position: absolute;
-        top: 0.75rem;
+        top: 0.6rem;
         right: 1rem;
       }
 
       a {
-        padding: 0 0.5em;
+        padding: 0.4em 0.75em;
         color: var(--white);
         background-color: var(--green-custom);
         border: 2px solid transparent;
