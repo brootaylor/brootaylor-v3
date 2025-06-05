@@ -1,10 +1,10 @@
 ---
 title: "Projects"
 # Populates the `meta description` for a page
-summary: "I specialise in helping individuals, businesses, and non-profit organisations craft performant, user-friendly, responsive, accessible, and resilient websites. Whether you're starting fresh or improving an existing one, I'm here to assist you in establishing a lasting and meaningful online presence."
+summary: "I specialise in helping people craft performant, user-friendly, responsive, accessible, and resilient websites. Whether you're starting fresh or improving an existing one, I'm here to assist you in establishing a lasting and meaningful online presence."
 # Populates the opening / `lead` text on a page
 lead:
-  - Over the years, I've had the privilege of working with some fantastic people and organisations. Here are a few of the projects I've been involved in.
+  - Over the years, I've had the privilege of working with some fantastic people. Here are a few of the projects I've helped out with.
   - Think I could help with your next project? Please <a href="/contact">get in touch</a>.
 
 # Social image details - (Is used by channels like Facebook, Twitter, WhatsApp, LinkedIn etc.)
@@ -22,7 +22,7 @@ pagination:
   size: 15
   alias: projects
 
-date: 2025-05-12T19:51:27.631Z
+date: 2025-06-05T21:54:27.631Z
 ---
 
 <section aria-labelledby="projects-featured" class="projects-featured | flow">

@@ -1,11 +1,11 @@
 ---
 title: "About"
 # Populates the `meta description` for a page
-summary: "Bruce is originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. He now lives in England with his family and builds websites for a living."
+summary: "Bruce is originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. He now lives in the south east of England with his family and builds websites for a living."
 # Populates the opening / `lead` text on a page
 lead:
   - I'm originally from South Africa and grew up on a dairy farm in a very <a href="https://youtu.be/bGQbM3QfA5w">beautiful part of the country</a>.
-  - I now live in England with <a href="/photos/2022-03-30/photo_202203300012">my family</a> and <a href="/projects">build websites</a> for a living.
+  - I now live in the south east of England with <a href="/photos/2022-03-30/photo_202203300012">my family</a> and <a href="/projects">build websites</a> for a living.
   - If you're interested, here's a <a href="/about/me">bit more about me</a>.
 
 # Page-specific metadata content added to the `<head>`
@@ -48,7 +48,7 @@ foot: "
 
 bodyClass: "about"
 
-date: 2025-05-29T17:21:27.631Z
+date: 2025-06-05T21:54:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
