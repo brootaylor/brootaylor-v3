@@ -75,7 +75,7 @@
       // Position the contact button on small to medium screens
       @include max-width($breakpoint-large) {
         position: absolute;
-        top: 0.75rem;
+        top: 1rem;
         right: 1rem;
       }
 
