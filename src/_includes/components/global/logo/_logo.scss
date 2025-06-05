@@ -8,7 +8,7 @@
   display: block;
   font-size: 1.2rem;
   font-weight: 700;
-  padding: 1.2rem 1rem;
+  padding: 1rem;
   background-color: var(--grey-dark);
   white-space: nowrap;
 
@@ -18,11 +18,14 @@
     }
 
   a {
-    display: block;
     font-weight: inherit;
     color: var(--white);
     text-decoration-color: transparent;
     box-shadow: none;
+
+      @include min-width($breakpoint-large) {
+        display: block;
+      }
 
     &:active,
     &:focus,
