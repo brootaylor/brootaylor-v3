@@ -30,7 +30,7 @@ image:
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2025-05-12T19:51:27.631Z
+date: 2025-06-12T11:04:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -48,8 +48,8 @@ Some of my key contributions *(so far)* include:
 
 <ul class="flow">
   <li><strong>Enhanced customer support</strong> by implementing a new Genesys Web Messenger solution across multiple sites, boosting user engagement and response efficiency.</li>
-  <li><strong>Reduced technical debt</strong> and improved data accuracy by streamlining and standardising Google Tag Manager (GTM) configurations across the web estate.</li>
-  <li><strong>Strengthened <abbr title="General Data Protection Regulation.">GDPR</abbr> compliance</strong> through the group-wide integration of Civic Cookie Control (<abbr title="Consent Managment Platform.">CMP</abbr>), supporting user privacy and data governance.</li>
+  <li><strong>Reduced technical debt</strong> and improved data maintainability and accuracy by auditing, streamlining and standardising Google Tag Manager (GTM) configurations across the Admiral web estate.</li>
+  <li><strong>Strengthened <abbr title="General Data Protection Regulation.">GDPR</abbr> compliance</strong> through the group-wide integration of Cookie Consent Management <em>(Civic & TrustArc)</em>, supporting user privacy and data governance.</li>
   <li><strong>Upskilled team</strong> by leading technical walkthroughs and knowledge-sharing sessions on <abbr title="Google Tag Manager.">GTM</abbr> and Genesys integrations, increasing team autonomy and technical confidence.</li>
 </ul>
 
