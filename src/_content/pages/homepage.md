@@ -32,12 +32,6 @@ head: "
       max-width: 80ch;
       margin-block-start: 3em;
     }
-
-    .homepage {
-      blockquote {
-        margin-top: 2em;
-      }
-    }
   </style>"
 
 # Page-specific JS added just before the closing `</body>`
@@ -52,7 +46,7 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2025-06-05T21:54:27.631Z
+date: 2025-07-23T12:40:27.631Z
 
 priority: 1
 ---
