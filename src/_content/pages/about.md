@@ -82,7 +82,7 @@ I'm quite good at picking up new skills and programming languages, as well as pr
 ### My technical skill set
 
 <details>
-  <summary>Some technical skills I've picked up over the last 20+ years I've been building for the web&hellip;</summary>
+  <summary>Some technical skills I've picked up over the last 20+ years building for the web&hellip;</summary>
   <my-tech-skill-set class="full-bleed | call-out | flow">
     <ul>
       <li><strong>Core Frontend</strong>: HTML, CSS <small><em>(SCSS & LESS)</em></small>, JavaScript <small><em>(ES5 & ES6+)</em></small></li>
