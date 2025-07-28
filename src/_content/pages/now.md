@@ -12,7 +12,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-06-02T12:35:27.631Z
+updated: 2025-07-28T18:03:27.631Z
 
 location:
   locality: Home
@@ -25,7 +25,7 @@ eleventyExcludeFromCollections: false
 
 Right now, I'm working on a contract basis as a **Frontend Engineer** for [Admiral Group Plc](/projects/admiral) on their customer facing websites.
 
-This contract finshes at the **end of October 2025**. I'm hoping to find something a bit more permanent after that. {.call-out}
+My current contract finsshes at the **end of October 2025**. I'm hoping to find something a bit more permanent after that. {.call-out}
 
 ---
 
@@ -58,7 +58,9 @@ I usually have a few books on the go and switch to whichever suits my fancy at t
 
 I have a wide taste in music and listen to a lot of different genres &mdash; from classical to metal. I'm a sucker for a strong melody though which is why I often find myself listening to country.
 
-Sleep Token's new album, "[Even in Arcadia](https://open.spotify.com/album/1lS7FeRcSUuIGqyg99UGpj?si=NTCUWee_SwW_yjOaVr5zNg)" dropped today &mdash; *09/05/2025* &mdash; and I'm already hooked. Absolutely gorgeous.
+Sleep Token's new album, "[Even in Arcadia](https://open.spotify.com/album/1lS7FeRcSUuIGqyg99UGpj?si=NTCUWee_SwW_yjOaVr5zNg)", dropped a few months ago and I'm still totally hooked. Absolutely gorgeous production.
+
+Charles Kelley's new album, "[Songs For A New Moon](https://open.spotify.com/album/0phabaUgbo3UiTmX78Tqcx?si=cOIrJW8JS3SL-dF7BpwaSg)", puts a smile on my face everytime I listen to it. Melody-tastic country music at its finest.
 
 ---
 
@@ -84,13 +86,15 @@ Seems to be a bit of a challenge finding something worth watching on TV these da
 
 Then there are a few shows I started watching but ended up getting bored or frustrated with the plot and stopped watching. Oh well... 1st world *problems* eh!
 
-Saying that, I did come across the [MobLand](https://www.imdb.com/title/tt31510819/) series recently by Guy Ritchie and have been enjoying it. Also noticed that the second season of [The Last of Us](https://www.imdb.com/title/tt3581920/) is out now. The first season was fab so fingers-crossed the second season is a goodie as well.
+Just finished the 3<sup>rd</sup> season of [Squid Game](https://www.imdb.com/title/tt10919420/). Still not sure what to make of the ending. 🤔
+
+I've just begun the 5<sup>th</sup> *(and final)* season of [The Chosen](https://www.imdb.com/title/tt5622316/).
 
 ---
 
 ## Plans
 
-My family and I are heading back to South Africa this year for a few weeks. I still have family who live out there and it's been far too long since we've seen them.
+My family and I finally got back to South Africa again in July *(for 3 weeks)* and it turned out to be a special time seeing dear family and friends again after so long.
 
 I'm hoping to get back into drumming this year. I miss it desperately and it's been far too long since I've played. There's a fab music studio nearby called [The Hive Rooms](https://www.thehiverooms.com) that I reckon I'll be checking out soon.
 
