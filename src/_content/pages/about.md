@@ -79,8 +79,6 @@ I've resisted calling myself a "[[full-stack] developer](https://bradfrost.com/b
 
 I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented, kind and supportive people over the years, and much of the success I've enjoyed during <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
 
-### My technical skill set
-
 <details>
   <summary>Some technical skills I've picked up over the last 20+ years building for the web&hellip;</summary>
   <my-tech-skill-set class="full-bleed | call-out | flow">
