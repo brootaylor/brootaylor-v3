@@ -48,7 +48,7 @@ foot: "
 
 bodyClass: "about"
 
-date: 2025-06-05T21:54:27.631Z
+date: 2025-07-28T11:05:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
@@ -79,31 +79,32 @@ I've resisted calling myself a "[[full-stack] developer](https://bradfrost.com/b
 
 I'm quite good at picking up new skills and programming languages, as well as problem solving. I've been fortunate enough to work with some really talented, kind and supportive people over the years, and much of the success I've enjoyed during <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
 
+### My technical skill set
+
+<details>
+  <summary>Some technical skills I've picked up over the last 20+ years I've been building for the web&hellip;</summary>
+  <my-tech-skill-set class="full-bleed | call-out | flow">
+    <ul>
+      <li><strong>Core Frontend</strong>: HTML, CSS <small><em>(SCSS & LESS)</em></small>, JavaScript <small><em>(ES5 & ES6+)</em></small></li>
+      <li><strong>Frameworks & Static Site Generators</strong>: 11ty, Astro, Jekyll, Svelte, Vue</li>
+      <li><strong>Templating & Libraries</strong>: Nunjucks, Liquid, Handlebars, jQuery, Bootstrap, Foundation, GSAP</li>
+      <li><strong>Build & Workflow</strong>: Vite, Rollup.js, Webpack, Gulp, PostCSS, Babel, Jest, Cypress</li>
+      <li><strong>Version Control & DevOps</strong>: Git, Bitbucket, Monorepos, Netlify, Docker, Azure DevOps</li>
+      <li><abbr title="Content Management System."><strong>CMS</strong></abbr>: WordPress, Drupal, Umbraco, Decap CMS, Contentful</li>
+      <li><strong>Back-end &</strong> <abbr title="Application Programming Interface."><strong>API</strong></abbr>: PHP, Twig, MySQL, Node.js, Data Source / <abbr title="Application Programming Interface.">API</abbr> Configuration</li>
+      <li><strong>Component Libraries & Design Systems</strong>: Fractal, Storybook, Design Tokens, Design System Configuration</li>
+      <li><strong>Dev & Design Tools</strong>: VS Code, Cursor, Postman, iTerm, Photoshop, Figma, Zeplin</li>
+      <li><strong>Frontend Architecture & Standards</strong>: Tech-agnostic component-based Frontend Architecture, CSS Architecture</li>
+      <li><strong>Best Practices</strong>: Responsive Design, Progressive Enhancement, <abbr title="Progressive Web Apps.">PWA</abbr>, Accessibility / A11y, Cross-Browser Compatibility Testing, Web Components, Service Workers</li>
+      <li><abbr title="Search Engine Optimisation."><strong>SEO</strong></abbr><strong>, Performance & Compliance</strong>: Technical & Content-based <abbr title="Search Engine Optimisation.">SEO</abbr>, Performance optimisation, Lighthouse Auditing, Cookie Consent Management <small><em>(Civic, TrustArc)</em></small>, <abbr title="General Data Protection Regulation.">GDPR</abbr> Setup</li>
+      <li><strong>Analytics</strong>: Google Analytics, Google Tag Manager, Adobe Analytics</li>
+    </ul>
+    <h3 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h3>
+    <p><small><em>(Need to see a copy of my CV for some reason? You're welcome to <a href="/BruceTaylorCV">download a copy</a>.)</em></small></p>
+  </my-tech-skill-set>
+</details>
+
 ---
-
-## My technical skill set
-
-Some of the technical skills I've picked up over the 20+ years I've been building websites:
-
-<my-tech-skill-set class="full-bleed | call-out | flow">
-  <ul>
-    <li><strong>Core Frontend</strong>: HTML, CSS <small><em>(SCSS & LESS)</em></small>, JavaScript <small><em>(ES5 & ES6+)</em></small></li>
-    <li><strong>Frameworks & Static Site Generators</strong>: 11ty, Astro, Jekyll, Svelte, Vue</li>
-    <li><strong>Templating & Libraries</strong>: Nunjucks, Liquid, Handlebars, jQuery, Bootstrap, Foundation, GSAP</li>
-    <li><strong>Build & Workflow</strong>: Vite, Rollup.js, Webpack, Gulp, PostCSS, Babel, Jest, Cypress</li>
-    <li><strong>Version Control & DevOps</strong>: Git, Bitbucket, Monorepos, Netlify, Docker, Azure DevOps</li>
-    <li><abbr title="Content Management System."><strong>CMS</strong></abbr>: WordPress, Drupal, Umbraco, Decap CMS, Contentful</li>
-    <li><strong>Back-end &</strong> <abbr title="Application Programming Interface."><strong>API</strong></abbr>: PHP, Twig, MySQL, Node.js, Data Source / <abbr title="Application Programming Interface.">API</abbr> Configuration</li>
-    <li><strong>Component Libraries & Design Systems</strong>: Fractal, Storybook, Design Tokens, Design System Configuration</li>
-    <li><strong>Dev & Design Tools</strong>: VS Code, Cursor, Postman, iTerm, Photoshop, Figma, Zeplin</li>
-    <li><strong>Frontend Architecture & Standards</strong>: Tech-agnostic component-based Frontend Architecture, CSS Architecture</li>
-    <li><strong>Best Practices</strong>: Responsive Design, Progressive Enhancement, <abbr title="Progressive Web Apps.">PWA</abbr>, Accessibility / A11y, Cross-Browser Compatibility Testing, Web Components, Service Workers</li>
-    <li><abbr title="Search Engine Optimisation."><strong>SEO</strong></abbr><strong>, Performance & Compliance</strong>: Technical & Content-based <abbr title="Search Engine Optimisation.">SEO</abbr>, Performance optimisation, Lighthouse Auditing, Cookie Consent Management <small><em>(Civic, TrustArc)</em></small>, <abbr title="General Data Protection Regulation.">GDPR</abbr> Setup</li>
-    <li><strong>Analytics</strong>: Google Analytics, Google Tag Manager, Adobe Analytics</li>
-  </ul>
-  <h3 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h3>
-  <p><small><em>(Need to see a copy of my CV for some reason? You're welcome to <a href="/BruceTaylorCV">download a copy</a>.)</em></small></p>
-</my-tech-skill-set>
 
 ## About this website
 

@@ -150,10 +150,16 @@ abbr {
 
 // Details element styling
 details {
-  max-width: 60ch;
-  padding: 0.5em;
-  border-radius: 0.25em;
-  border: 1px solid;
+  summary {
+    font-weight: 700;
+    cursor: pointer;
+
+    &::marker {
+      // color: var(--grey-dark);
+      font-size: 1.2em;
+      margin-right: 0.5em;
+    }
+  }
 }
 
 // Superscript
