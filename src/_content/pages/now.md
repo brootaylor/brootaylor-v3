@@ -1,18 +1,17 @@
 ---
 title: "What I'm doing now"
 # Populates the `meta description` for a page
-summary: "This is a place to log what I've got on the go at the moment. Work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on."
+summary: "A place to log what I've got on the go right now&hellip;ish. It could be about anything really. At the moment it's about work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on."
 # Populates the opening / `lead` text on a page
 lead:
-  - This is a place to log what I've got on the go at the moment.
-  - Work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on.
-  - <a href="https://nownownow.com/about">Now pages</a> are quite common these days. If you haven't already, maybe consider making one for yourself.
+  - A place to log what I've got on the go right now&hellip;ish.
+  - It could be about anything really. At the moment it's about work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on.
 
 bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-07-28T18:03:27.631Z
+updated: 2025-08-25T12:39:27.631Z
 
 location:
   locality: Home
@@ -23,9 +22,9 @@ eleventyExcludeFromCollections: false
 
 ## Work
 
-Right now, I'm working on a contract basis as a **Frontend Engineer** for [Admiral Group Plc](/projects/admiral) on their customer facing websites.
+I'm working, on a contract basis, as a **Frontend Engineer** for [Admiral Group Plc](/projects/admiral) on their [customer facing websites](/projects/admiral). It honestly has turned out to be a fab experience working with a great team of people. Some of them I would call good friends now.
 
-My current contract finsshes at the **end of October 2025**. I'm hoping to find something a bit more permanent after that. {.call-out}
+This contract is due to finish at the **end of December 2025**. I'm considering finding something a bit more '*permanent*' after that. {.call-out}
 
 ---
 
@@ -34,7 +33,6 @@ My current contract finsshes at the **end of October 2025**. I'm hoping to find 
 Tinkering around on a bunch of personal web development projects using technologies like...
 
 * [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
-* [Eleventy](https://www.11ty.io/)
 * [Astro](https://astro.build/)
 * [IndieKit](https://getindiekit.com/)
 * [Utopia](https://utopia.fyi/)
@@ -87,8 +85,6 @@ Seems to be a bit of a challenge finding something worth watching on TV these da
 Then there are a few shows I started watching but ended up getting bored or frustrated with the plot and stopped watching. Oh well... 1st world *problems* eh!
 
 Just finished the 3<sup>rd</sup> season of [Squid Game](https://www.imdb.com/title/tt10919420/). Still not sure what to make of the ending. 🤔
-
-I've just begun the 5<sup>th</sup> *(and final)* season of [The Chosen](https://www.imdb.com/title/tt5622316/).
 
 ---
 
