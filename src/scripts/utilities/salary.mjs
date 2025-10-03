@@ -10,8 +10,8 @@ const annualSalary = () => {
     currency: 'GBP',    // Set the currency to British Pounds (GBP)
   }).format(
     // Calculate the salary value
-    ((Math.PI * `1${'0'.repeat(5)}`) / 4.18879) | 0  // Formula to get £75,000
-    // The formula uses Math.PI multiplied by 100000, divided by 4.18879 (calculated to achieve £75,000)
+    ((Math.PI * `1${'0'.repeat(5)}`) / 3.69595) | 0  // Formula to get £85,000
+    // The formula uses Math.PI multiplied by 100000, divided by 3.69595 (calculated to achieve £85,000)
     // The '| 0' truncates the result to an integer, removing any decimals
   );
 
