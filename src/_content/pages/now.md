@@ -1,17 +1,17 @@
 ---
 title: "What I'm doing now"
 # Populates the `meta description` for a page
-summary: "A place to log what I've got on the go right now&hellip;ish. It could be about anything really. At the moment it's about work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on."
+summary: "A place to log what I've got on the go right now&hellip;ish. It could be about anything really. Like work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on."
 # Populates the opening / `lead` text on a page
 lead:
-  - A place to log what I've got on the go right now&hellip;ish.
-  - It could be about anything really. At the moment it's about work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on.
+  - It's autumn here in the south east of the UK. The day's are getting shorter and the cold, wind and rain is setting in.
+  - I'm already missing the warmth of the sun but there is something to be said <em>(sometimes)</em> about cosy evenings by a fire with a good book or movie.
 
 bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-08-25T12:39:27.631Z
+updated: 2025-10-21T19:02:27.631Z
 
 location:
   locality: Home
@@ -22,7 +22,7 @@ eleventyExcludeFromCollections: false
 
 ## Work
 
-I'm working, on a contract basis, as a **Frontend Engineer** for [Admiral Group Plc](/projects/admiral) on their [customer facing websites](/projects/admiral). It honestly has turned out to be a fab experience working with a great team of people. Some of them I would call good friends now.
+I'm still working, on a contract basis, as a **Frontend Engineer** for [Admiral Group Plc](/projects/admiral) on their [customer facing websites](/projects/admiral). It's turned out to be a fab experience working with a great team of people. Some of them I would call good friends now.
 
 This contract is due to finish at the **end of December 2025**. I'm considering finding something a bit more '*permanent*' after that. {.call-out}
 
@@ -30,16 +30,17 @@ This contract is due to finish at the **end of December 2025**. I'm considering 
 
 ## Learning
 
-Tinkering around on a bunch of personal web development projects using technologies like...
+Trying to create space to give these my attention...
 
-* [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
-* [Astro](https://astro.build/)
-* [IndieKit](https://getindiekit.com/)
-* [Utopia](https://utopia.fyi/)
-* [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) animation with [GSAP](https://greensock.com/)
-* [Python](https://developers.google.com/edu/python)
+* [JavaScript for Everyone](https://piccalil.li/javascript-for-everyone) <i aria-hidden="true">&rarr;</i> *I've been writing JavaScript for years but when Matt Marquis writes about something I'm there*.
+* [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) <i aria-hidden="true">&rarr;</i> *Currently working through Scott Jehl's "[Web Components Demystified](https://scottjehl.com/learn/webcomponentsdemystified/)" course*.
+* [Astro](https://astro.build/) <i aria-hidden="true">&rarr;</i> *I'm liking this web framework and that it's focussed on reducing the JavaScript overhead and complexity compared to other frameworks*.
 
 Also brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)*' &mdash; like how to tie a bunch of [useful knots](https://youtu.be/kA48yzKYp3Q) and [fire building techniques](https://youtu.be/7v4twfXG2uY) - in [all weather conditions](https://youtu.be/QiYlEyvDbco) as well.
+
+Growing my own chillies as well. My sons and I are suckers for a bit of the 'ol burn. 🌶️
+
+Oh yes, I wrote some code &mdash; ["Ai" Bot Blocker](/writing/2025-01-05/ai-bot-blocker) &mdash; a few months ago to trick the naughty "Ai" bots from scraping the content on my site. Not sure how successful it's been but it was a fun little project nonetheless.
 
 ---
 
@@ -75,16 +76,6 @@ While I don't necessarily agree with everything that's said in many of the episo
 * [Your Undivided Attention](https://open.spotify.com/show/4KI3PtZaWJbAWK89vgttoU?si=e899d621ff1d4d9c) &mdash; *Understanding how new technologies are shaping the way we live, work, and think.*
 * [Syntax - Web Development](https://open.spotify.com/show/4kYCRYJ3yK5DQbP5tbfZby?si=d8355dd847824464) &mdash; *Podcast about Web Development.*
 * [Front-End Fire](https://open.spotify.com/show/4kYCRYJ3yK5DQbP5tbfZby?si=d8355dd847824464) &mdash; *Podcast on the latest and greatest in the front-end world.*
-
----
-
-## Watching
-
-Seems to be a bit of a challenge finding something worth watching on TV these days. There's a fair amount of *'slop'* out there that's for sure. That, or I'm way too picky.
-
-Then there are a few shows I started watching but ended up getting bored or frustrated with the plot and stopped watching. Oh well... 1st world *problems* eh!
-
-Just finished the 3<sup>rd</sup> season of [Squid Game](https://www.imdb.com/title/tt10919420/). Still not sure what to make of the ending. 🤔
 
 ---
 

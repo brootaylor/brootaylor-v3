@@ -101,14 +101,43 @@ brootaylor.com
 ├── .eslintignore                  # JS folders / files eslint needs to ignore
 ├── .eslintrc                      # JS linting configuration
 ├── .gitignore                     # Files not tracked by Git
+├── .known-bad.locklist            # List of package@version entries blocked by the lockfile scan
 ├── .markdownlint.json             # Markdownlint configuration
 ├── .nvmrc                         # Sets (and installs if necessary) the version of Node needed for this project
 ├── LICENCE                        # Repo licence (MIT)
 ├── netlify.toml                   # Netlify configuration (server)
 ├── package.json                   # Node.js package manifest
 ├── package-lock.json              # Node.js package lock
-└── README.md                      # This file (Instructions and repo information)
+├── README.md                      # This file (Instructions and repo information)
+└── scan-locks.mjs                 # NPM-only lockfile scanner (runs in prebuild)
 ```
+
+---
+
+## Supply chain guardrails
+
+This repo blocks known compromised npm package versions at install/build time.
+
+* **Lockfile scan** — `npm run scan:locks` checks npm lockfiles against `.known-bad.locklist`.
+  - Runs automatically in **prebuild** and before **netlify-build**.
+  - If any match is found, the build **fails fast** and nothing is deployed.
+* **Known-bad list** — edit `.known-bad.locklist` to add `package@version` lines when new incidents are announced.
+  - You can also create a developer-only `.known-bad.locklist.local` (gitignored) for temporary entries.
+* **Overrides 'fuse'** — `package.json#overrides` pins safe versions so compromised versions can’t re-enter via transitive deps.
+  - We use a **nested override** for `json-to-scss` so its Chalk/ANSI stack stays on CJS-only versions without affecting the rest of the tree.issues.
+
+### How to block a new compromised version
+
+1. Add the `package@x.y.z` to `.known-bad.locklist`.
+2. If needed, add/adjust a safe pin under `overrides` in `package.json` (or use a nested override for a single tool).
+3. Clean reinstall:
+
+   ```bash
+   rm -rf node_modules package-lock.json
+   npm i
+   ```
+
+4. Re-run the build. The prebuild scan will fail if anything suspicious remains.
 
 ---
 
