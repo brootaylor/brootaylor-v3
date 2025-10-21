@@ -125,9 +125,9 @@
       "chalk": "4.1.2",
       "ansi-styles": "4.3.0",
       "supports-color": "7.2.0",
+      "string-width": "4.2.3",
       "strip-ansi": "6.0.1",
-      "ansi-regex": "5.0.1",
-      "string-width": "4.2.3"
+      "ansi-regex": "5.0.1"
     }
   },
   "engines": {
