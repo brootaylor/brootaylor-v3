@@ -23,7 +23,7 @@ const BASE_URL = LOCAL_ENV
 const ERROR_403_URL = `${BASE_URL}/error/403.html`;
 
 // Import the list of known bot user-agents from a JSON file
-import agents from '../../src/_data/agents.json' assert { type: 'json' };
+import agents from '../../src/_data/agents.json' with { type: 'json' };
 
 // Define the list of file extensions to exempt from bot detection
 const exemptFileTypes = [
@@ -55,8 +55,9 @@ export default async (request) => {
   const url = new URL(request.url);
   const ua = request.headers.get('user-agent') || '';
 
-  // Extract the file extension from the URL path
-  const fileExtension = url.pathname.slice(url.pathname.lastIndexOf('.'));
+  // Extract the file extension safely (handles paths with no dot)
+  const dot = url.pathname.lastIndexOf('.');
+  const fileExtension = dot !== -1 ? url.pathname.slice(dot) : '';
 
   // Log the request information for debugging
   console.log(`[Edge Function] User agent: ${ua}`);
