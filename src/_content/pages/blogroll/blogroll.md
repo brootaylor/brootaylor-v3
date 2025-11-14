@@ -1,16 +1,16 @@
 ---
 title: "Blogroll"
 # Populates the `meta description` for a page
-summary: "A list of blogs and newsletters I visit and reference fairly regularly."
+summary: "A list of blogs, newsletters and great content I've come across over the years and enjoy visiting whenever I get the chance."
 # Populates the opening / `lead` text on a page
 lead:
-  - A list of blogs and newsletters I visit and reference fairly regularly.
+  - A list of blogs, newsletters and great content I've come across over the years and enjoy visiting whenever I get the chance.
 
 bodyClass: "blogroll"
 
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
-date: 2025-05-20T16:03:04.180Z
+date: 2025-11-14T09:45:04.180Z
 ---
 
 <ul role="list" class="blogroll__list | auto-grid | no-list">

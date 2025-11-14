@@ -349,6 +349,21 @@
       "name": "Keith J. Grant",
       "url": "https://keithjgrant.com/",
       "description": "Keith is a principal software engineer at Red Hat. Loves fiddling with CSS and building things on the web. He's also the author of the highly-rated book <strong>CSS in Depth</strong>, a practical guide to modern CSS for web developers."
+    },
+    {
+      "name": "Piccalilli",
+      "url": "https://piccalil.li/",
+      "description": "The folk at Piccalilli have decades of elite industry experience and create high quality, approachable and transferable content."
+    },
+    {
+      "name": "James Gilyead",
+      "url": "https://www.hustlersquad.net/",
+      "description": "James is a visual designer specialising in web design, typography and layout. He strives to make digital products and services straightforward for real people in the real world."
+    },
+    {
+      "name": "Ryan Mulligan",
+      "url": "https://ryanmulligan.dev/",
+      "description": "Ryan describes himself as a passenger through space and time, front-end web builder & bittersweet songs enthusiast."
     }
   ]
 }

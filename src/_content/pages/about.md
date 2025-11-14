@@ -48,7 +48,7 @@ foot: "
 
 bodyClass: "about"
 
-date: 2025-07-28T11:05:27.631Z
+date: 2025-11-14T10:10:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
@@ -98,7 +98,7 @@ I'm quite good at picking up new skills and programming languages, as well as pr
       <li><strong>Analytics</strong>: Google Analytics, Google Tag Manager, Adobe Analytics</li>
     </ul>
     <h3 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h3>
-    <p><small><em>(Need to see a copy of my CV for some reason? You're welcome to <a href="/BruceTaylorCV">download a copy</a>.)</em></small></p>
+    <p><small><em>(Need to see my CV for some reason? You're welcome to <a href="/BruceTaylorCV">download a copy</a>.)</em></small></p>
   </my-tech-skill-set>
 </details>
 
