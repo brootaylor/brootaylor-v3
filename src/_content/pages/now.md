@@ -11,7 +11,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-10-21T19:02:27.631Z
+updated: 2025-11-15T16:23:27.631Z
 
 location:
   locality: Home
@@ -48,8 +48,8 @@ Oh yes, I wrote some code &mdash; ["Ai" Bot Blocker](/writing/2025-01-05/ai-bot-
 
 I usually have a few books on the go and switch to whichever suits my fancy at the time. These are the one's I'm reading at the moment&hellip;
 
+* [The Song of Albion](https://www.stephenlawhead.com/the-song-of-albion), *Stephen Lawhead*
 * [The Huntress: A Dragon's Blade Story](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
-* [Breaking Together &mdash; a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/), *Jem Bendell*
 
 ---
 
@@ -74,6 +74,8 @@ While I don't necessarily agree with everything that's said in many of the episo
 * [Lex Fridman](https://open.spotify.com/show/2MAi0BvDc6GTFvKFPXnkCL?si=cd92a945226b4603) &mdash; *Conversations about science, technology, history, philosophy and the nature of intelligence, consciousness, love, and power.*
 * [The Great Simplification with Nate Hagens](https://open.spotify.com/show/0ZFJIjuJwh3XeMqrguiXNR?si=21485f0d963344fe) &mdash; *Exploring how energy, the environment, economics, human behavior, and systems science underpin the human predicament.*
 * [Your Undivided Attention](https://open.spotify.com/show/4KI3PtZaWJbAWK89vgttoU?si=e899d621ff1d4d9c) &mdash; *Understanding how new technologies are shaping the way we live, work, and think.*
+* [Within Reason](https://open.spotify.com/show/16wUbvDT95dxzpG2KEhakK?si=13d6ad02f68043a6) &mdash; *A philosophy podcast by Alex J O'Connor that sometimes flirts with other disciplines.*
+* [StarTalk Radio](https://open.spotify.com/show/1mNsuXfG95Lf76YQeVMuo1?si=56284fd7d1094146) &mdash; *A podcast by Neil deGrasse Tyson where science, pop culture, and comedy collide.*
 * [Syntax - Web Development](https://open.spotify.com/show/4kYCRYJ3yK5DQbP5tbfZby?si=d8355dd847824464) &mdash; *Podcast about Web Development.*
 * [Front-End Fire](https://open.spotify.com/show/4kYCRYJ3yK5DQbP5tbfZby?si=d8355dd847824464) &mdash; *Podcast on the latest and greatest in the front-end world.*
 
