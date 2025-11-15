@@ -13,6 +13,7 @@ dist
 _tokens.scss
 audits/**/*brootaylor*.*
 *.zip
+deno.lock
 
 # Local Netlify folder
 .netlify

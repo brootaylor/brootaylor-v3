@@ -42,7 +42,8 @@
     "postbuild": "npm run postcss",
     "prenetlify-build": "npm run scan:locks && echo 'Scanning lockfiles for vulnerabilities first'",
     "netlify-build": "ntl build",
-    "netlify-dev": "ntl dev --debug",
+    "netlify-dev": "ntl dev",
+    "netlify-dev:debug": "ntl dev --debug",
     "netlify-dev:live": "ntl dev --live",
     "netlify-cms:local": "npx netlify-cms-proxy-server",
     "netlify-deploy:draft": "ntl deploy",
@@ -65,7 +66,7 @@
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-terser": "^0.4.4",
-    "autoprefixer": "^10.4.21",
+    "autoprefixer": "^10.4.22",
     "cross-env": "^10.1.0",
     "date-fns": "^4.1.0",
     "dotenv": "^17.2.3",
@@ -85,7 +86,7 @@
     "postcss-preset-env": "^10.4.0",
     "rimraf": "^6.1.0",
     "rollup": "4.52.5",
-    "sass": "^1.93.3",
+    "sass": "^1.94.0",
     "slugify": "^1.6.6"
   },
   "devDependencies": {
@@ -97,7 +98,7 @@
     "jest": "^30.2.0",
     "markdownlint-cli": "^0.45.0",
     "minami": "^1.2.3",
-    "netlify-cli": "^23.10.0",
+    "netlify-cli": "^23.11.0",
     "onchange": "^7.1.0",
     "prettier": "^3.6.2"
   },
