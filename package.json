@@ -23,8 +23,15 @@
   },
   "scripts": {
     "scan:locks": "node scan-locks.mjs",
+    "scan:locks:json": "node scan-locks.mjs --json",
+    "scan:locks:explain": "node scan-locks.mjs --explain",
+    "scan:locks:ci": "node scan-locks.mjs --json --explain",
+    "scan:locks:summary": "node scan-locks.mjs --json | node -e \"let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{try{const j=JSON.parse(d);console.log(j.summary||'No summary');process.exit(j.ok?0:1);}catch(e){console.error('Invalid JSON from scan');process.exit(1);}})\"",
+    "scan:locks:review-check": "node check-locklist-review.mjs",
+
     "clean": "rimraf dist && mkdir dist",
-    "prebuild": "npm run scan:locks && npm run clean && echo 'Scanning lockfiles for vulnerabilities & getting rid of old stuff first 🔥'",
+    "prebuild": "npm run scan:locks && npm run audit:npm && npm run clean && echo 'Scanning lockfiles + npm audit & getting rid of old stuff first 🔥'",
+
     "lint:markdown": "markdownlint src/**/*.md",
     "postcss": "postcss --map --no-map -r dist/styles/*.css --config config/postcss.config.js",
     "sass:tokens": "rimraf src/styles/tokens/*.scss && json-to-scss 'tokens/*.json' 'src/styles/tokens/_tokens.scss'",
@@ -40,7 +47,8 @@
     "build": "run-s build:styles build:scripts build:files",
     "deploy:build": "cross-env NODE_ENV=production npm run build",
     "postbuild": "npm run postcss",
-    "prenetlify-build": "npm run scan:locks && echo 'Scanning lockfiles for vulnerabilities first'",
+
+    "prenetlify-build": "npm run scan:locks:review-check && npm run scan:locks:ci && echo '✅ Netlify prebuild: lockfile scan passed'",
     "netlify-build": "ntl build",
     "netlify-dev": "ntl dev",
     "netlify-dev:debug": "ntl dev --debug",
@@ -48,12 +56,14 @@
     "netlify-cms:local": "npx netlify-cms-proxy-server",
     "netlify-deploy:draft": "ntl deploy",
     "netlify-deploy:production": "ntl deploy --prod",
+
     "audit:browser-support": "npx browserslist && echo '🔆 Modify .browserslistrc if and when browser support changes. 🔆'",
     "audit:accessibility": "npx pa11y-ci --config ./config/pa11y.json > ./audits/accessibility_report/brootaylor-accessibility-results.md",
     "audit:performance": "lighthouse https://brootaylor.com --budget-path=config/performance-budget.json --output-path=./audits/lighthouse_report/brootaylor-performance-results.html --view",
     "audit:vulnerabilities": "npx is-website-vulnerable https://brootaylor.com",
     "audit:npm-local": "ncu",
     "audit:npm-global": "ncu -g",
+    "audit:npm": "npm audit --audit-level=high || true",
     "debug": "DEBUG=* npx eleventy"
   },
   "dependencies": {
