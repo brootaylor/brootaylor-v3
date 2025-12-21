@@ -5,7 +5,7 @@
 #   - package@version#sha512-... (block exact artifact)
 # Blank lines and comments are ignored.
 #
-# LAST-REVIEWED: 2025-12-20
+# LAST-REVIEWED: 2025-12-21
 # REVIEW-NOTE: Update this date whenever you edit entries based on new incident intel.
 
 
@@ -66,6 +66,23 @@ duckdb@1.3.3
 prebid.js@10.9.2
 prebid@10.9.1
 prebid-universal-creative@1.17.3
+
+
+# --- ESLint / Prettier ecosystem compromise (Jul 2025) ---
+# WHY: Known malicious npm releases affecting the eslint-prettier toolchain.
+# TAGS: supply-chain, postinstall, eslint, prettier
+# REF: incident-2025-eslint-prettier
+eslint-config-prettier@8.10.1
+eslint-config-prettier@9.1.1
+eslint-config-prettier@10.1.6
+eslint-config-prettier@10.1.7
+
+eslint-plugin-prettier@4.2.2
+eslint-plugin-prettier@4.2.3
+
+synckit@0.11.9
+@pkgr/core@0.2.8
+napi-postinstall@0.3.1
 
 
 # --- "is" package compromise (reported malicious range) ---

@@ -69,14 +69,14 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-img": "^6.0.4",
-    "@11ty/eleventy-navigation": "^1.0.4",
+    "@11ty/eleventy-navigation": "^1.0.5",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "@rollup/plugin-commonjs": "^29.0.0",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-terser": "^0.4.4",
-    "autoprefixer": "^10.4.22",
+    "autoprefixer": "^10.4.23",
     "cross-env": "^10.1.0",
     "date-fns": "^4.1.0",
     "dotenv": "^17.2.3",
@@ -93,24 +93,24 @@
     "object-fit-images": "^3.2.4",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
-    "postcss-preset-env": "^10.4.0",
+    "postcss-preset-env": "^10.5.0",
     "rimraf": "^6.1.2",
-    "rollup": "4.52.5",
-    "sass": "^1.94.1",
+    "rollup": "4.54.0",
+    "sass": "^1.97.1",
     "slugify": "^1.6.6"
   },
   "devDependencies": {
-    "eslint": "^9.39.1",
+    "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-html": "^8.1.3",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prettier": "^5.5.4",
     "jest": "^30.2.0",
-    "markdownlint-cli": "^0.46.0",
+    "markdownlint-cli": "^0.47.0",
     "minami": "^1.2.3",
-    "netlify-cli": "^23.11.1",
+    "netlify-cli": "^23.13.0",
     "onchange": "^7.1.0",
-    "prettier": "^3.6.2"
+    "prettier": "^3.7.4"
   },
   "overrides": {
     "ansi-styles": "^6.2.3",
@@ -138,7 +138,7 @@
       "strip-ansi": "6.0.1",
       "ansi-regex": "5.0.1"
     },
-    "rollup": "4.52.5"
+    "rollup": "4.54.0"
   },
   "engines": {
     "node": "^22.0.0"
