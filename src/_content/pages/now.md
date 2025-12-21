@@ -11,7 +11,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-11-15T16:23:27.631Z
+updated: 2025-12-21T15:36:27.631Z
 
 location:
   locality: Home
@@ -22,9 +22,7 @@ eleventyExcludeFromCollections: false
 
 ## Work
 
-I'm still working, on a contract basis, as a **Frontend Engineer** for [Admiral Group Plc](/projects/admiral) on their [customer facing websites](/projects/admiral). It's turned out to be a fab experience working with a great team of people. Some of them I would call good friends now.
-
-This contract is due to finish at the **end of December 2025**. I'm considering finding something a bit more '*permanent*' after that. {.call-out}
+I'm still working, on a contract basis, as a **Frontend Engineer** for [Admiral Group Plc](/projects/admiral) on their [customer facing websites](/projects/admiral). It's turned out to be a fab experience working with a great team of people. Some of them I would now call good friends.
 
 ---
 
