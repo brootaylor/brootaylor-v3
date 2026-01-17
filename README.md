@@ -77,7 +77,7 @@ brootaylor.com
 │
 ├── src
 │   ├── _content                   # Content (Markdown)
-│   ├── _data                      # Global website data (eg. site, messages, navigation & contactform)
+│   ├── _data                      # Global website data (eg. site, messages, navigation, contactform, ai_agents etc.)
 │   ├── _includes                  # Layout templates, partials & components (Nunjucks, JS & SCSS)
 │   ├── admin                      # Netlify CMS config files
 │   ├── assets                     # Assets (ie. Static files like Fonts, Images, Video, Favicons)
@@ -104,6 +104,7 @@ brootaylor.com
 ├── .known-bad.locklist            # List of package@version entries blocked by the lockfile scan
 ├── .markdownlint.json             # Markdownlint configuration
 ├── .nvmrc                         # Sets (and installs if necessary) the version of Node needed for this project
+├── check-locklist-review.mjs      # Runs check on locklist to determine age of entries
 ├── LICENCE                        # Repo licence (MIT)
 ├── netlify.toml                   # Netlify configuration (server)
 ├── package.json                   # Node.js package manifest
