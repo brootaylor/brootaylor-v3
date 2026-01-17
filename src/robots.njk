@@ -20,10 +20,9 @@ Disallow: /
 {%- endif -%}
 
 {%- if site.aiCrawl == false -%}
-# Dark Visitors AI agent list
-# https://darkvisitors.com
-{#- Loops through global `_data` file called `agents.json` #}
-{% for agent in agents %}
+# AI training / answer synthesis agents
+{#- Loops through global `_data` file called `ai_agents.json` #}
+{% for agent in ai_agents %}
 User-agent: {{ agent }}
 Disallow: /
 {% endfor %}

@@ -23,7 +23,7 @@ It's deployed by and hosted with [Netlify](https://www.netlify.com/).
 * ↩️ [Redirects](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_redirects) for local `netlify dev`
 * 🌍 [Customisable global data](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_data/site.js)
 * 🎨 Page-specific art direction. `head` and `foot` metadata fields enable things like styles, fonts, SVGs & JS
-* 🗡 [Edge function](https://github.com/brootaylor/brootaylor-v3/blob/main/netlify/edge-functions/agents.js) to perform *(known)* Ai bot detection, suspicious path blocking, and applicable error page handling
+* 🗡 [Edge function](https://github.com/brootaylor/brootaylor-v3/blob/main/netlify/edge-functions/aiAgents.js) to perform *(known)* Ai bot detection, suspicious path blocking, and applicable error page handling
 * Dynamically generated...
   * [`serviceworker.js`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/serviceworker.njk)
   * [`manifest.json`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/manifest.njk)
