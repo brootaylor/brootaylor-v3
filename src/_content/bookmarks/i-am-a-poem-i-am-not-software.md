@@ -1,6 +1,6 @@
 ---
 title: I am a poem I am not software
-summary: I am a poem I am not software  .
+summary: I am a poem I am not software.
 bookmarkExternal: https://robinrendle.com/notes/i-am-a-poem-i-am-not-software/
 bookmarkLabel: robinrendle.com
 bookmarkAuthor: Robin Rendle
