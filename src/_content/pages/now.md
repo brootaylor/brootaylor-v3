@@ -11,7 +11,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2025-12-21T15:36:27.631Z
+updated: 2026-01-21T17:14:27.631Z
 
 location:
   locality: Home
@@ -22,7 +22,7 @@ eleventyExcludeFromCollections: false
 
 ## Work
 
-I'm still working, on a contract basis, as a **Frontend Engineer** for [Admiral Group Plc](/projects/admiral) on their [customer facing websites](/projects/admiral). It's turned out to be a fab experience working with a great team of people. Some of them I would now call good friends.
+I'm still working, on a contract basis, as a **Frontend Engineer** for [Admiral Group Plc](/projects/admiral) on their customer facing websites. It's turned out to be a fab experience working with a great team of people. Some of them I would now call good friends.
 
 ---
 
