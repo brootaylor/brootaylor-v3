@@ -4,7 +4,7 @@ title: "What I'm doing now"
 summary: "A place to log what I've got on the go right now&hellip;ish. It could be about anything really. Like work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on."
 # Populates the opening / `lead` text on a page
 lead:
-  - It's winter here in the south east of the UK. The day's are short and the cold, wind and rain is a daily feature.
+  - It's winter here in the UK. The day's are short and the cold, wind and rain is a daily feature.
   - I'm missing the warmth of the sun but there is something to be said <em>(sometimes)</em> about cosy evenings by a fire with a good book or movie.
 
 bodyClass: "now"
