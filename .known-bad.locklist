@@ -5,8 +5,8 @@
 #   - package@version#sha512-... (block exact artifact)
 # Blank lines and comments are ignored.
 #
-# LAST-REVIEWED: 2026-01-16
-# REVIEW-NOTE: Update this date whenever you edit entries based on new incident intel.
+# LAST-REVIEWED: 2026-01-21
+# REVIEW-NOTE: Verified no overlap after Rollup 4.55.3 upgrade
 
 
 # --- Core wave (Sep 8–10, 2025) ---
