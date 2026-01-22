@@ -48,7 +48,7 @@ foot: "
 
 bodyClass: "about"
 
-date: 2026-01-21T16:36:27.631Z
+date: 2026-01-22T11:57:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
@@ -68,6 +68,8 @@ date: 2026-01-21T16:36:27.631Z
 I’m a front-end web developer, UI engineer/designer, and generalist &mdash; *meaning I also do some visual design, back-end, and DevOps work when needed*.
 
 Anything that impacts the user experience on the web matters to me. This is where I’m most comfortable and where I’ve naturally ended up specialising. As a result, you’ll mostly find me tinkering around in the “[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/)” &mdash; the somewhat broad and slightly *fuzzy* intersection between design and back-end engineering.
+
+In short, I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/), [usable](https://trentwalton.com/2014/03/10/device-agnostic/) and as future-friendly as possible.
 
 ### Working with design systems
 

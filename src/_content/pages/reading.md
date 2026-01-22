@@ -10,7 +10,7 @@ bodyClass: "reading"
 
 dateShow: true # Show the date in the header for this page
 date: 2022-10-22T13:17:27.631Z
-updated: 2025-02-15T15:44:27.631Z
+updated: 2026-01-22T12:00:27.631Z
 
 location:
   locality: Home
@@ -21,14 +21,16 @@ eleventyExcludeFromCollections: false
 
 Because I've never kept a list of my reads, I've ended up creating a bit of a challenge for myself that's for sure. Trying to recall books I've read (*and enjoyed*) feels like a bit of a daunting task but I'm keen to at least make a stab at it.
 
+So here goes...
+
 ---
 
 ## Current reads
 
 Books on the go at the moment.
 
+* [The Song of Albion](https://www.stephenlawhead.com/the-song-of-albion), *Stephen Lawhead*
 * [The Huntress: A Dragon's Blade Story](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
-* [Breaking Together &mdash; a freedom-loving response to collapse](https://jembendell.com/2023/04/08/breaking-together-a-freedom-loving-response-to-collapse/), *Jem Bendell*
 
 *I always try to include a dose of fantasy in my current read list. Mostly to help 'balance' and process the other reads I've got on the go.* 😬 {.call-out}
 
