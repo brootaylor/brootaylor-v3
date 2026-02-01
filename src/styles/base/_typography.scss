@@ -118,13 +118,29 @@ details {
   }
 }
 
+// Strong importance text
 strong {
+  font-weight: 700;
+}
+
+// Bold text without the semantic meaning of `<strong>`
+b {
   font-weight: 700;
 }
 
 // Often use this HTML element for icons...
 i {
   font-style: normal;
+}
+
+// Inserted text styling
+ins {
+  text-decoration: none;
+}
+
+// Deleted text styling
+del {
+  text-decoration: line-through;
 }
 
 // Abbreviation "abbr" styling
