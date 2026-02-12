@@ -84,7 +84,7 @@
     "json-to-scss": "^1.6.2",
     "lodash": "^4.17.23",
     "luxon": "^3.7.2",
-    "markdown-it": "^14.1.0",
+    "markdown-it": "^14.1.1",
     "markdown-it-abbr": "^2.0.0",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-attrs": "^4.3.1",
