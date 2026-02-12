@@ -21,7 +21,7 @@ eleventyExcludeFromCollections: false
 ## The years so far&hellip;
 
 <ol class="no-list | flow">
-  <li><strong>1972:</strong> Born in Pietermaritzburg, South Africa. Named Anthony Rogers by my <span id="fnref:mother-bio" rel="doc-noteref"><a href="#fn:mother-bio" rel="footnote">biological mother <sup>1</sup></a></span>.</li>
+  <li><strong>1972:</strong> Born in Pietermaritzburg, South Africa. Named Anthony Rogers by my <span id="fnref:mother-bio" rel="doc-noteref"><a href="#fn:mother-bio" rel="footnote">biological mother <sup>1</sup></a></span>. The world population was around 3.9 billion.</li>
   <li><strong>1973:</strong> Adopted by Mathew Wedgwood Taylor and Ann Treleaven Taylor. Name changed to Bruce Wedgwood Taylor. Raised on a dairy farm in Mooi River, South Africa &mdash; near to the beautiful <a href="https://youtu.be/bGQbM3QfA5w">Drakensberg</a>.</li>
   <li><strong>1975:</strong> Learnt to ride a horse at the age of 3. My father was a polo player.</li>
   <li><strong>1980:</strong> My <span id="fnref:adopted" rel="doc-noteref"><a href="#fn:adopted" rel="footnote">adoptive parents <sup>2</sup></a></span> first told me I was adopted.</li>
@@ -38,7 +38,7 @@ eleventyExcludeFromCollections: false
   <li><strong>1999:</strong> Worked for <a href="https://en.wikipedia.org/wiki/Boo.com">Boo.com</a> as a content manager during the dotcom boom.</li>
   <li><strong>2000:</strong> <a href="https://archive.nytimes.com/www.nytimes.com/library/tech/00/12/biztech/technology/13sork.html">Dotcom crash</a>. Made redundant from Boo.com. Travelled Europe with my wife.</li>
   <li><strong>2001:</strong> Started teaching myself web design and development.</li>
-  <li><strong>2002:</strong> First child was born. Turned 30.</li>
+  <li><strong>2002:</strong> First child was born. Turned 30. The world population was around 6.3 billion.</li>
   <li><strong>2003:</strong> First attempt at freelancing as a web designer. Built first public website for a client, called "<a href="https://web.archive.org/web/20040226155008/http://www.doctor-dan.com/index.html">Doctor Dan</a>". The <a href="http://news.bbc.co.uk/1/hi/health/3124130.stm">BBC wrote an article</a> about them.</li>
   <li><strong>2004:</strong> Moved to Horley, West Sussex. Second child was born. Started working at <a href="https://en.wikipedia.org/wiki/Air_Miles#Air_Miles_United_Kingdom">Airmiles UK</a> as a web designer & developer.</li>
   <li><strong>2008:</strong> Third child was born.</li>
@@ -48,7 +48,7 @@ eleventyExcludeFromCollections: false
   <li><strong>2019:</strong> It was a rough year. First child finished school.</li>
   <li><strong>2020:</strong> <em>You know what happened&hellip;</em></li>
   <li><strong>2021:</strong> Second child finished school.</li>
-  <li><strong>2022:</strong> Turned 50.</li>
+  <li><strong>2022:</strong> Turned 50. The world population was around 8 billion.</li>
   <li><strong>2023:</strong> Sold my drumkit to <a href="https://x.com/gangof4official/status/1746823767135789527">Hugo Burnham</a>, drummer for the <a href="https://www.facebook.com/gangoffour">Gang Of Four</a> band.</li>
   <li><strong>2024:</strong> Trying to figure out where to go with this <em>'career thing'</em>&hellip; and <a href="/now#reflecting">what to make of the world</a>.</li>
   <li><strong>2025:</strong> Married to a wonderful woman for 30 years.</li>
