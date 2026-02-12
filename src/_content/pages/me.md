@@ -13,7 +13,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-date: 2025-05-11T23:04:27.631Z
+date: 2026-02-12T12:08:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -40,18 +40,19 @@ eleventyExcludeFromCollections: false
   <li><strong>2001:</strong> Started teaching myself web design and development.</li>
   <li><strong>2002:</strong> First child was born. Turned 30.</li>
   <li><strong>2003:</strong> First attempt at freelancing as a web designer. Built first public website for a client, called "<a href="https://web.archive.org/web/20040226155008/http://www.doctor-dan.com/index.html">Doctor Dan</a>". The <a href="http://news.bbc.co.uk/1/hi/health/3124130.stm">BBC wrote an article</a> about them.</li>
-  <li><strong>2004:</strong> Sold first property and moved to Horley, West Sussex. Second child was born. Started working at <a href="https://en.wikipedia.org/wiki/Air_Miles#Air_Miles_United_Kingdom">Airmiles UK</a> as a web designer & developer.</li>
+  <li><strong>2004:</strong> Moved to Horley, West Sussex. Second child was born. Started working at <a href="https://en.wikipedia.org/wiki/Air_Miles#Air_Miles_United_Kingdom">Airmiles UK</a> as a web designer & developer.</li>
   <li><strong>2008:</strong> Third child was born.</li>
-  <li><strong>2012:</strong> My father passed away. Turned 40.</li>
+  <li><strong>2012:</strong> <a href="/photos/2012-11-15/photo_201211150915">My father</a> passed away. Turned 40.</li>
   <li><strong>2015:</strong> Finished working at Airmiles. Left the church structure I and my wife had given over 20 years of our lives to. <span id="fnref:mother-search" rel="doc-noteref"><a href="#fn:mother-search" rel="footnote">Started search for my biological mother <sup>3</sup></a></span>. Started freelancing / contracting as a frontend web developer.</li>
-  <li><strong>2018:</strong> Sold second property and moved to Crawley, West Sussex.</li>
-  <li><strong>2019:</strong> Rough year. First child finished school.</li>
+  <li><strong>2018:</strong> Moved to Crawley, West Sussex.</li>
+  <li><strong>2019:</strong> It was a rough year. First child finished school.</li>
   <li><strong>2020:</strong> <em>You know what happened&hellip;</em></li>
   <li><strong>2021:</strong> Second child finished school.</li>
   <li><strong>2022:</strong> Turned 50.</li>
   <li><strong>2023:</strong> Sold my drumkit to <a href="https://x.com/gangof4official/status/1746823767135789527">Hugo Burnham</a>, drummer for the <a href="https://www.facebook.com/gangoffour">Gang Of Four</a> band.</li>
   <li><strong>2024:</strong> Trying to figure out where to go with this <em>'career thing'</em>&hellip; and <a href="/now#reflecting">what to make of the world</a>.</li>
   <li><strong>2025:</strong> Married to a wonderful woman for 30 years.</li>
+  <li><strong>2026:</strong> &hellip;</li>
 </ol>
 
 ---
