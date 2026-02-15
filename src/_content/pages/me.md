@@ -22,6 +22,8 @@ head: "
     .timeline time {
       font-size: inherit;
       font-weight: 700;
+      text-transform: uppercase;
+      flex-shrink: 0;
     }
 
     .timeline footer,
