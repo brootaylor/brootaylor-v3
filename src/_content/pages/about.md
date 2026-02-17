@@ -77,7 +77,7 @@ I’m fairly quick at picking up new skills and programming languages, and I enj
 
 I mostly resist calling myself a "[[full-stack] developer](https://bradfrost.com/blog/post/full-stack-developers/)" &mdash; regardless of what some of my roles and experience may indicate.
 
-However I do know how to do full-stack development, not because I've always necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've often *'had'* to <sup>2</sup></a></span>.
+However I do know how to do full-stack development. Not because I've always necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've often *'had'* to <sup>2</sup></a></span>.
 
 Chris Coyier's article "[The Great Divide Was Indeed Divisive](https://chriscoyier.net/2023/01/12/the-great-divide-was-indeed-divisive/)" resonates with me when trying to make sense of all this job labelling malarkey.
 
