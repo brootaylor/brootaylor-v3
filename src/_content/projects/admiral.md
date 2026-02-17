@@ -14,7 +14,7 @@ socialImage:
 
 project:
   year: 2024 &mdash; Ongoing
-  role: Frontend Engineer
+  role: Full Stack Engineer
   technologies: HTML5, CSS, SCSS, JavaScript <em>(ES5 & ES6+)</em>, jQuery, PHP, Twig, Drupal, SQL, Gulp, Docker, GitLab, Azure DevOps, Google Tag Manager <em>(GTM)</em>, Figma, Genesys Web Messenger, Cookie Consent Management <em>(Civic, TrustArc)</em>.
   order: 1
 
@@ -30,7 +30,7 @@ image:
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2025-06-12T11:04:27.631Z
+date: 2026-02-19T17:40:27.631Z
 
 eleventyExcludeFromCollections: false
 ---

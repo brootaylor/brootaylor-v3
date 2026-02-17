@@ -11,7 +11,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2026-02-19T12:50:27.631Z
+updated: 2026-02-19T17:39:27.631Z
 
 location:
   locality: Home
@@ -22,7 +22,7 @@ eleventyExcludeFromCollections: false
 
 ## Work
 
-I'm working, on a contract basis, as a "[full-stack](/about#am-i-a-“%5Bfull-stack%5D-developer”%3F) **frontend engineer**" for [Admiral Group Plc](/projects/admiral) on their customer facing websites. It's turned out to be a fab experience working with a great team of people. Some of them I would now call good friends.
+I'm working, on a contract basis, as a "[Full Stack](/about#am-i-a-“%5Bfull-stack%5D-developer”%3F) **Engineer**" for [Admiral Group Plc](/projects/admiral) on their customer facing websites. It's turned out to be a fab experience working with a great team of people. Some of them I would now call good friends.
 
 ---
 
