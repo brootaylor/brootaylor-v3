@@ -4,8 +4,8 @@
 	NOTE: A call makes it easier to pass a lot of markup to your macros. A macro can access the passed content as `caller`.
 	REF: https://adonisjs.com/docs/3.2/templating#_callcaller
 #}
-{% macro blockquote(author, citHref, citLabel) -%}
-  <blockquote>
+{% macro blockquote(author, citHref, citLabel, style) -%}
+  <blockquote{% if style %} class="{{ style }}"{% endif %}>
     {%- for paragraph in caller().split('\n\n') -%}
       <p>{{ paragraph | safe }}</p>
     {%- endfor -%}

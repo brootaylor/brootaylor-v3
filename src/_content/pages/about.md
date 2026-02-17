@@ -48,7 +48,7 @@ foot: "
 
 bodyClass: "about"
 
-date: 2026-01-22T11:57:27.631Z
+date: 2026-02-19T13:56:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
@@ -65,21 +65,32 @@ date: 2026-01-22T11:57:27.631Z
 
 ## The work I do
 
-I’m a front-end web developer, UI engineer/designer, and generalist &mdash; *meaning I also do some visual design, back-end, and DevOps work when needed*.
+I’m a "[full-stack](/about#am-i-a-“%5Bfull-stack%5D-developer”%3F)" web developer, ui engineer/designer, and generalist &mdash; *meaning I also do some visual design, back-end, and devops work when needed*.
 
 Anything that impacts the user experience on the web matters to me. This is where I’m most comfortable and where I’ve naturally ended up specialising. As a result, you’ll mostly find me tinkering around in the “[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/)” &mdash; the somewhat broad and slightly *fuzzy* intersection between design and back-end engineering.
 
 In short, I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/), [usable](https://trentwalton.com/2014/03/10/device-agnostic/) and as future-friendly as possible.
 
-### Working with design systems
-
-I have experience creating frontend solutions that support design systems and design token architecture, ensuring components are consistent, scalable, and themeable &mdash; without tying developers to any single tech stack. It’s work I really enjoy and would like to do more of. To me, a good design system should be a stable foundation: flexible and tech-agnostic enough to remain useful as technologies come and go.
+I’m fairly quick at picking up new skills and programming languages, and I enjoy problem solving. I’ve been fortunate to work with some really talented, kind, and supportive people over the years, and much of the success I’ve enjoyed in <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
 
 ### Am I a "[full-stack] developer"?
 
-I've resisted calling myself a "[[full-stack] developer](https://bradfrost.com/blog/post/full-stack-developers/)" &mdash; regardless of what some of my roles and experience may indicate. I do know how to do full-stack development, not because I've always necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've often *'had'* to <sup>2</sup></a></span>.
+I mostly resist calling myself a "[[full-stack] developer](https://bradfrost.com/blog/post/full-stack-developers/)" &mdash; regardless of what some of my roles and experience may indicate.
 
-I’m fairly quick at picking up new skills and programming languages, and I enjoy problem solving. I’ve been fortunate to work with some really talented, kind, and supportive people over the years, and much of the success I’ve enjoyed in <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
+However I do know how to do full-stack development, not because I've always necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've often *'had'* to <sup>2</sup></a></span>.
+
+Chris Coyier's article "[The Great Divide Was Indeed Divisive](https://chriscoyier.net/2023/01/12/the-great-divide-was-indeed-divisive/)" resonates with me when trying to make sense of all this job labelling malarkey.
+
+{% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
+{%- call blockquote(author='Chris Coyier', style='call-out') -%}
+  Since there is too much for any web developer to know, what is the most graceful and professionally acceptable way of not knowing things?
+
+  Whatever the answer is, it’s definitely not “ignore, shit on, and downplay the things you don’t know and gatekeep the things you do.”
+{%- endcall %}
+
+### Working with design systems
+
+I have experience creating frontend solutions that support design systems and design token architecture, ensuring components are consistent, scalable, and themeable &mdash; without tying developers to any single tech stack. It’s work I really enjoy and would like to do more of. To me, a good design system should be a stable foundation: flexible and tech-agnostic enough to remain useful as technologies come and go.
 
 <details class="full-bleed">
   <summary>Some technical skills I've picked up over the last 20+ years building for the web&hellip;</summary>
