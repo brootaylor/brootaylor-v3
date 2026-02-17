@@ -3,6 +3,7 @@
 /// Use the `.call-out` class on any element to hide it from everything (that includes assistive technologies)
 
 %call-out {
+  display: inline-block;
   font-weight: 400;
   background: var(--grey-light);
   padding: 1em;

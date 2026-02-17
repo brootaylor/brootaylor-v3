@@ -22,7 +22,7 @@ eleventyExcludeFromCollections: false
 
 ## Work
 
-I'm working, on a contract basis, as a "[Full Stack](/about#am-i-a-“%5Bfull-stack%5D-developer”%3F) **Engineer**" for [Admiral Group Plc](/projects/admiral) on their customer facing websites. It's turned out to be a fab experience working with a great team of people. Some of them I would now call good friends.
+I'm working, on a contract basis, as a "[**Full Stack**](/about#am-i-a-“%5Bfull-stack%5D-developer”%3F) **Engineer**" for [Admiral Group Plc](/projects/admiral) on their customer facing websites. It's turned out to be a fab experience working with a great team of people. Some of them I would now call good friends.
 
 ---
 
