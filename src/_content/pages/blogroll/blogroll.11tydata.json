@@ -374,6 +374,11 @@
       "name": "Sarah Drasner",
       "url": "https://sarah.dev/",
       "description": "Sarah Drasner is an award-winning Speaker, and Sr. Director of Engineering at Google. She is a Frontend Master, and has written two books (so far). She likes cheese."
+    },
+    {
+      "name": "Sophie Koonin",
+      "url": "https://localghost.dev/",
+      "description": "Sophie builds fun things out of HTML, CSS and JavaScript, writes blog posts about tech, mental health and things she loves, and gives conference talks on things she's passionate about."
     }
   ]
 }
