@@ -84,9 +84,9 @@ While I don't necessarily agree with everything that's said in many of the episo
 
 ## Plans
 
-My family and I are hoping to make a trip to Italy this year. Maybe base ourselves in the north for a few days around the [lakes](https://discovernorthernitaly.com/lakes-in-northern-italy/) and then somewhere central near to Rome.
+My family and I are planning a trip to Italy this year. Maybe base ourselves in the north for a few days around the [lakes](https://discovernorthernitaly.com/lakes-in-northern-italy/) and then somewhere central near to Rome.
 
-I'm hoping to get back into drumming this year. I miss it desperately and it's been far too long since I've played. My daughter's expressed an interest in learning so this may be my way of getting back into it. There's a fab music studio nearby called [The Hive Rooms](https://www.thehiverooms.com) that I reckon I'll be checking out soon.
+I'm also hoping to get back into drumming this year. I miss it desperately and it's been far too long since I've played. My daughter's expressed an interest in learning so this may be my way of getting back into it.
 
 ---
 
