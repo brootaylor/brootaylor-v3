@@ -47,10 +47,10 @@ I currently have the privilege of working with a fantastic team responsible for 
 Some of my key contributions *(so far)* include:
 
 <ul class="flow">
-  <li><strong>Enhanced customer support</strong> by implementing a new Genesys Web Messenger solution across multiple sites, boosting user engagement and response efficiency.</li>
+  <li><strong>Enhanced customer support</strong> by implementing a new Web Messenger <em>(Genesys)</em> solution across multiple sites, boosting user engagement and response efficiency.</li>
   <li><strong>Reduced technical debt</strong> and improved data maintainability and accuracy by auditing, streamlining and standardising Google Tag Manager (GTM) configurations across the Admiral web estate.</li>
   <li><strong>Strengthened <abbr title="General Data Protection Regulation.">GDPR</abbr> compliance</strong> through the group-wide integration of Cookie Consent Management <em>(Civic & TrustArc)</em>, supporting user privacy and data governance.</li>
-  <li><strong>Upskilled team</strong> by leading technical walkthroughs and knowledge-sharing sessions on <abbr title="Google Tag Manager.">GTM</abbr> and Genesys integrations, increasing team autonomy and technical confidence.</li>
+  <li><strong>Upskilled team</strong> by leading technical walkthroughs and knowledge-sharing sessions on <abbr title="Google Tag Manager.">GTM</abbr>, Genesys Web Messenger and Cookie Consent Manager integrations, increasing team autonomy and technical confidence.</li>
 </ul>
 
 *[CMP]: Consent Managment Platform.
