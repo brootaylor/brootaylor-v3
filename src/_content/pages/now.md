@@ -11,7 +11,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2026-01-21T19:07:27.631Z
+updated: 2026-02-19T12:50:27.631Z
 
 location:
   locality: Home
@@ -22,7 +22,14 @@ eleventyExcludeFromCollections: false
 
 ## Work
 
-I'm still working, on a contract basis, as a **Frontend Engineer** for [Admiral Group Plc](/projects/admiral) on their customer facing websites. It's turned out to be a fab experience working with a great team of people. Some of them I would now call good friends.
+I'm working, on a contract basis, as a **"[Full-stack](/about#am-i-a-“%5Bfull-stack%5D-developer”%3F)" Frontend Engineer** for [Admiral Group Plc](/projects/admiral) on their customer facing websites. It's turned out to be a fab experience working with a great team of people. Some of them I would now call good friends.
+
+---
+
+## Code
+
+* I wrote some code &mdash; ["Ai" Bot Blocker](/writing/2025-01-05/ai-bot-blocker) &mdash; a few months ago to trick the naughty "Ai" bots from scraping the content on my site. Not sure how successful it's been but it was a fun little project nonetheless.
+* Began a little [playground project](https://github.com/brootaylor/brootaylor-astro-v1) using Astro as the web framework. Been fun tinkering with it.
 
 ---
 
@@ -35,10 +42,6 @@ Trying to create space to give these my attention...
 * [Astro](https://astro.build/) <i aria-hidden="true">&rarr;</i> *I'm liking this web framework and that it's focussed on reducing the JavaScript overhead and complexity compared to other frameworks*.
 
 Also brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)*' &mdash; like how to tie a bunch of [useful knots](https://youtu.be/kA48yzKYp3Q) and [fire building techniques](https://youtu.be/7v4twfXG2uY) - in [all weather conditions](https://youtu.be/QiYlEyvDbco) as well.
-
-Growing my own chillies as well. My sons and I are suckers for a bit of the 'ol burn. 🌶️
-
-Oh yes, I wrote some code &mdash; ["Ai" Bot Blocker](/writing/2025-01-05/ai-bot-blocker) &mdash; a few months ago to trick the naughty "Ai" bots from scraping the content on my site. Not sure how successful it's been but it was a fun little project nonetheless.
 
 ---
 
@@ -81,9 +84,9 @@ While I don't necessarily agree with everything that's said in many of the episo
 
 ## Plans
 
-My family and I finally got back to South Africa again in July *(for 3 weeks)* and it turned out to be a special time seeing dear family and friends again after so long.
+My family and I are hoping to make a trip to Italy this year. Maybe base ourselves in the north for a few days around the [lakes](https://discovernorthernitaly.com/lakes-in-northern-italy/) and then somewhere central near to Rome.
 
-I'm hoping to get back into drumming this year. I miss it desperately and it's been far too long since I've played. There's a fab music studio nearby called [The Hive Rooms](https://www.thehiverooms.com) that I reckon I'll be checking out soon.
+I'm hoping to get back into drumming this year. I miss it desperately and it's been far too long since I've played. My daughter's expressed an interest in learning so this may be my way of getting back into it. There's a fab music studio nearby called [The Hive Rooms](https://www.thehiverooms.com) that I reckon I'll be checking out soon.
 
 ---
 
@@ -100,6 +103,12 @@ It irritated me as a kid when my dad often used to say...
 > Observe... observe... observe.
 
 I get it now.
+
+---
+
+## Random
+
+I'm growing my own chillies. My sons and I are suckers for a bit of the 'ol burn. 🌶️
 
 ---
 
