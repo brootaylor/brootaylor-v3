@@ -48,7 +48,7 @@ foot: "
 
 bodyClass: "about"
 
-date: 2026-02-19T13:56:27.631Z
+date: 2026-02-17T13:56:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}

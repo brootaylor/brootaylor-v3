@@ -30,7 +30,7 @@ image:
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2026-02-19T17:40:27.631Z
+date: 2026-02-17T17:40:27.631Z
 
 eleventyExcludeFromCollections: false
 ---

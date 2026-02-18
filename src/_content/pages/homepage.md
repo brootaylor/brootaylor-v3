@@ -46,7 +46,7 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2026-02-19T14:02:27.631Z
+date: 2026-02-17T14:02:27.631Z
 
 priority: 1
 ---
