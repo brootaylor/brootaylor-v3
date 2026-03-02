@@ -76,7 +76,7 @@
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-terser": "^0.4.4",
-    "autoprefixer": "^10.4.24",
+    "autoprefixer": "^10.4.27",
     "cross-env": "^10.1.0",
     "date-fns": "^4.1.0",
     "dotenv": "^17.3.1",
@@ -108,7 +108,7 @@
     "jest": "^30.2.0",
     "markdownlint-cli": "^0.47.0",
     "minami": "^1.2.3",
-    "netlify-cli": "^24.0.0",
+    "netlify-cli": "^24.0.1",
     "onchange": "^7.1.0",
     "prettier": "^3.8.1"
   },
