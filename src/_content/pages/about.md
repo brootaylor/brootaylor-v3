@@ -48,7 +48,7 @@ foot: "
 
 bodyClass: "about"
 
-date: 2026-02-17T13:56:27.631Z
+date: 2026-03-12T18:56:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
@@ -100,7 +100,7 @@ I have experience creating frontend solutions that support design systems and de
       <li><strong>Frameworks & Static Site Generators</strong>: 11ty, Astro, Jekyll, Svelte, Vue</li>
       <li><strong>Templating & Libraries</strong>: Nunjucks, Liquid, Handlebars, jQuery, Bootstrap, Foundation, GSAP</li>
       <li><strong>Build & Workflow</strong>: Vite, Rollup.js, Webpack, Gulp, PostCSS, Babel, Jest, Cypress</li>
-      <li><strong>Version Control & DevOps</strong>: Git, Bitbucket, Monorepos, Netlify, Docker, Azure DevOps</li>
+      <li><strong>Version Control & DevOps</strong>: Git, Bitbucket, Monorepos, Netlify, Docker, Azure DevOps Services, Azure Kubernetes Services</li>
       <li><abbr title="Content Management System."><strong>CMS</strong></abbr>: WordPress, Drupal, Umbraco, Decap CMS, Contentful</li>
       <li><strong>Back-end &</strong> <abbr title="Application Programming Interface."><strong>API</strong></abbr>: PHP, Twig, MySQL, Node.js, Data Source / <abbr title="Application Programming Interface.">API</abbr> Configuration</li>
       <li><strong>Component Libraries & Design Systems</strong>: Fractal, Storybook, Design Tokens, Design System Configuration</li>
