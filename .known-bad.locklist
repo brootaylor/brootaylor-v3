@@ -5,8 +5,8 @@
 #   - package@version#sha512-... (block exact artifact)
 # Blank lines and comments are ignored.
 #
-# LAST-REVIEWED: 2026-02-07
-# REVIEW-NOTE: Post-upgrade audit. No vulnerable versions detected; no additions required.
+# LAST-REVIEWED: 2026-03-13
+# REVIEW-NOTE: Routine ecosystem review. No new confirmed malicious releases affecting tracked families.
 
 
 # --- Core wave (Sep 8–10, 2025) ---
