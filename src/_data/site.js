@@ -3,7 +3,7 @@ import { DateTime } from 'luxon';
 export default {
   name: 'Bruce Taylor',
   short_name: 'BWT',
-  metaTitle: 'Bruce Taylor • Frontend Web Developer & UI Engineer',
+  metaTitle: 'Bruce Taylor • Web Developer & UI Engineer',
   metaDescription: 'Bruce Taylor',
   metaImage: '/assets/images/common/broo-social-square-600.jpg',
   metaImageAlt: 'Profile picture of Bruce Taylor',
@@ -47,8 +47,8 @@ export default {
   ],
   author: {
     name: 'Bruce Taylor',
-    job: 'Frontend Web Developer & UI Engineer',
-    description: 'Bruce is a frontend web developer and UI engineer based in England. This is his blog and portfolio site.',
+    job: 'Web Developer & UI Engineer',
+    description: 'Bruce is a web developer and UI engineer based in England. This is his blog and portfolio site.',
     url: 'https://brootaylor.com',
     thumbnail: 'https://brootaylor.com/assets/images/common/broo-social-square-600.jpg',
     email: 'brootaylor@gmail.com',
