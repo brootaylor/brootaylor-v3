@@ -4,14 +4,14 @@ title: "What I'm doing now"
 summary: "A place to log what I've got on the go right now&hellip;ish. It could be about anything really. Like work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on."
 # Populates the opening / `lead` text on a page
 lead:
-  - It's winter here in the UK. The day's are short and the cold, wind and rain is a daily feature.
-  - I'm missing the warmth of the sun but there is something to be said <em>(sometimes)</em> about cosy evenings by a fire with a good book or movie.
+  - It's the beginning of spring here in the UK.
+  - The day's are getting a bit longer and the weather is improving. Even had a few chances to sip my morning coffee in the garden feeling the sun on my face. 😎
 
 bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2026-02-17T17:39:27.631Z
+updated: 2026-03-16T12:32:27.631Z
 
 location:
   locality: Home
@@ -49,6 +49,7 @@ Also brushing up on some of my '*[survival skills](https://youtu.be/BFheNvvJGoQ)
 
 I usually have a few books on the go and switch to whichever suits my fancy at the time. These are the one's I'm reading at the moment&hellip;
 
+* [The Outsider](https://www.penguin.co.uk/books/182322/the-outsider-by-camus-albert/9780241458853), *Albert Camus*
 * [The Song of Albion](https://www.stephenlawhead.com/the-song-of-albion), *Stephen Lawhead*
 * [The Huntress: A Dragon's Blade Story](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
 

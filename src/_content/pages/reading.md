@@ -10,7 +10,7 @@ bodyClass: "reading"
 
 dateShow: true # Show the date in the header for this page
 date: 2022-10-22T13:17:27.631Z
-updated: 2026-01-22T12:00:27.631Z
+updated: 2026-03-16T12:30:27.631Z
 
 location:
   locality: Home
@@ -29,6 +29,7 @@ So here goes...
 
 Books on the go at the moment.
 
+* [The Outsider](https://www.penguin.co.uk/books/182322/the-outsider-by-camus-albert/9780241458853), *Albert Camus*
 * [The Song of Albion](https://www.stephenlawhead.com/the-song-of-albion), *Stephen Lawhead*
 * [The Huntress: A Dragon's Blade Story](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
 
