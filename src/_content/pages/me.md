@@ -5,7 +5,7 @@ summary: "Bruce is originally from South Africa and grew up on a dairy farm in a
 # Populates the opening / `lead` text on a page
 lead:
   - This page is <em>kinda</em> like a mini autobiography &mdash; a starter for ten. Somewhere to put down some markers while I try figure out where else to go with it.
-  - While it's a nice reference for me to look back on, this is also for my kids. If this website is still around that is&hellip;!
+  - While it's a nice reference for me to look back on, this is also for my kids. If this website is still around in the future that is&hellip;!
   - I plan to add bits and bobs whenever I think of something that's possibly a worthwhile reminder of my life so far.
 
 bodyClass: "me"
