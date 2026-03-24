@@ -37,7 +37,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-date: 2026-03-24T10:28:27.631Z
+date: 2026-03-24T16:06:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -116,11 +116,11 @@ The picture below is my favourite place in the whole world.
 
 <div role="doc-endnotes">
   <ol>
-    <li id="fn:father-tree" role="doc-endnote">
-      <small>My father is descended from the <a href="https://en.wikipedia.org/wiki/Wedgwood">Wedgwood</a> family. <a href="#fnref:father-tree" role="doc-backlink">↩</a></small>
-    </li>
     <li id="fn:mother-bio" role="doc-endnote">
       <small>My birth mother's name was/is Fay Kathleen Rogers. Her birthday is 23 November 1947. She grew up in Port Shepstone, Kwazulu Natal, South Africa. <a href="#fnref:mother-bio" role="doc-backlink">↩</a></small>
+    </li>
+    <li id="fn:father-tree" role="doc-endnote">
+      <small>My adoptive father is descended from the <a href="https://en.wikipedia.org/wiki/Wedgwood">Wedgwood</a> family. <a href="#fnref:father-tree" role="doc-backlink">↩</a></small>
     </li>
     <li id="fn:adopted" role="doc-endnote">
       <small>My adoptive parents (Mathew and Ann) are wonderful, salt of the earth people. <em>'Angels'</em> to me. I truly am blessed to have had them as my mum and dad. My dad (Mathew) passed away in November 2012 and I miss him immensely. <a href="#fnref:adopted" role="doc-backlink">↩</a></small>
