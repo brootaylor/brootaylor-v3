@@ -1,7 +1,7 @@
 ---
 title: "Me"
 # Populates the `meta description` for a page
-summary: "Bruce is originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. I now live in West Sussex, England with my family and build websites for a living."
+summary: "Bruce is originally from South Africa and grew up on a dairy farm in a very beautiful part of the country. He now lives in West Sussex, England with his family and builds websites for a living."
 # Populates the opening / `lead` text on a page
 lead:
   - This page is <em>kinda</em> like a mini autobiography &mdash; a starter for ten. Somewhere to put down some markers while I try figure out where else to go with it.
