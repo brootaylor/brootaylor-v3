@@ -37,7 +37,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-date: 2026-02-15T16:50:27.631Z
+date: 2026-03-24T10:28:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -47,7 +47,8 @@ eleventyExcludeFromCollections: false
 <ol class="timeline | no-list | flow">
   <li><time datetime="1972">1972: </time><div class="flow"><p>Born in Pietermaritzburg, South Africa. Named Anthony Rogers by my <span id="fnref:mother-bio" rel="doc-noteref"><a href="#fn:mother-bio" rel="footnote">biological mother <sup>1</sup></a></span>.</p> <footer><b>World population</b> = 3.9 billion.</footer></div></li>
   <li><time datetime="1973">1973: </time><div>Adopted by Mathew <span id="fnref:father-tree" rel="doc-noteref"><a href="#fn:father-tree" rel="footnote">Wedgwood <sup>2</sup></a></span> Taylor and Ann Treleaven Taylor. Name changed to Bruce Wedgwood Taylor. Raised on a <a href="https://maps.app.goo.gl/dz9u1gNgpSiQ1mU8A" rel="external">dairy farm called "Brownstones"</a>, in Mooi River, South Africa &mdash; near to the beautiful <a href="https://youtu.be/bGQbM3QfA5w" rel="external">Drakensberg</a>.</div></li>
-  <li><time datetime="1975">1975: </time><div>Learnt to ride a horse at the age of 3. My father was a polo player.</div></li>
+  <li><time datetime="1974">1974: </time><div>My sister, Sue, was born.</div></li>
+  <li><time datetime="1978">1978: </time><div>First learnt to ride a horse. I think I was about 5 years old. My father was a polo player.</div></li>
   <li><time datetime="1980">1980: </time><div>My <span id="fnref:adopted" rel="doc-noteref"><a href="#fn:adopted" rel="footnote">adoptive parents <sup>3</sup></a></span> first told me I was adopted.</div></li>
   <li><time datetime="1982">1982: </time><div class="flow"><p>At the age of 10, learnt to drive a pick-up truck &mdash; <em>"bakkie"</em> &mdash; and off-road motorbike on the farm. Stopped riding horses as preferred motorbikes. <em>(I also fell off horses way too much for my liking)</em>.</p> <footer><b>World population</b> = 4.6 billion.</footer></div></li>
   <li><time datetime="1983">1983: </time><div>Went to a fantastic boarding school called <a href="https://kingsschool.co.za/" rel="external">Kings School</a>, in Nottingham Road, South Africa.</div></li>
