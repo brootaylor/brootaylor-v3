@@ -1,6 +1,7 @@
 # Directories to ignore
 **/node_modules/**
 .vscode
+.cache
 dist
 /docs
 /psd

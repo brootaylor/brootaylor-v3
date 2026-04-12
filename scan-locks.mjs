@@ -252,13 +252,15 @@ for (const lockPath of walk(ROOT)) {
     scanNpmLock(lock, lockPath);
   } catch (e) {
     const errMsg = `Error scanning ${rel(lockPath)}: ${e.message}`;
-    const summary = 'Lockfile scan error (unable to parse one or more lockfiles)';
-    if (AS_JSON) {
-      printJson({ ok: false, error: errMsg, summary });
-    } else {
-      console.error(errMsg);
-      netlifySummaryLine(summary);
-    }
+    // Add to hits to ensure the process exits 1 later
+    // Step 5 will handle the logging and JSON output organically.
+    hits.push({
+      lockPath: rel(lockPath),
+      key: 'UNPARSEABLE_LOCKFILE',
+      path: '.',
+      reason: 'json-parse-error',
+      why: [errMsg]
+    });
   }
 }
 
