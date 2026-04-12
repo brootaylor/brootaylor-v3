@@ -1,9 +1,21 @@
-# Keep one entry per line:
+# Canonical shared denylist.
+# NOTE: The .local variant currently mirrors this file intentionally.
+# ===========================================================================
+
+# Supported entry formats (one per line):
 #   - package@version
-#   - package@*  (block any version)
-#   - package    (block any version)
+#   - package@*                 (block any version)
+#   - package                   (block any version)
 #   - package@version#sha512-... (block exact artifact)
-# Blank lines and comments are ignored.
+#
+# Parsing rules:
+#   - blank lines reset comment context
+#   - comments are ignored by the scanner
+#   - nearby WHY/REF/TAGS/POLICY comments may be shown in --explain output
+#
+# Review metadata:
+#   - update LAST-REVIEWED whenever you review or materially change this file
+#   - REVIEW-NOTE is optional and meant for quick human context
 #
 # LAST-REVIEWED: 2026-04-02
 # REVIEW-NOTE: Added Axios compromised versions (maintainer account compromise).
