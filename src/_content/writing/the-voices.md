@@ -38,7 +38,7 @@ Bony
 The doubt  
 Ooh the self doubt  
 Like a sting  
-No, more like an ache  
+No... more like an ache  
 A deep ache  
 In my bones  
 Morning's buoyancy  
@@ -59,7 +59,7 @@ Like a tightening noose
 "Your wife finds you boring"  
 "Your sons tolerate you"  
 "Do you even know what you believe!?!"  
-"Cheer up. You can't always be so intense"
+"Cheer up! You can't always be so intense"
 
 This thick fog  
 This icy mist  
