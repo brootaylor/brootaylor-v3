@@ -4,14 +4,14 @@ title: "What I'm doing now"
 summary: "A place to log what I've got on the go right now&hellip;ish. It could be about anything really. Like work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on."
 # Populates the opening / `lead` text on a page
 lead:
-  - It's the beginning of spring here in the UK.
-  - The day's are getting a bit longer and the weather is improving. Even had a few chances to sip my morning coffee in the garden feeling the sun on my face. 😎
+  - It's Spring here in the UK!
+  - The day's are longer and the weather is improving. Nothing like starting the day sipping my morning coffee in the garden feeling the sun on my face. 😎
 
 bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2026-03-16T12:32:27.631Z
+updated: 2026-05-09T12:54:27.631Z
 
 location:
   locality: Home
@@ -87,7 +87,7 @@ While I don't necessarily agree with everything that's said in many of the episo
 
 My family and I are planning a trip to Italy this year. Maybe base ourselves in the north for a few days around the [lakes](https://discovernorthernitaly.com/lakes-in-northern-italy/) and then somewhere central near to Rome.
 
-I'm also hoping to get back into drumming this year. I miss it desperately and it's been far too long since I've played. My daughter's expressed an interest in learning so this may be my way of getting back into it.
+I'm also hoping to get back into drumming this year. I miss it desperately and it's been far too long since I've played. My daughter's expressed an interest in learning so this may be my way of getting back into it by teaching her.
 
 ---
 
