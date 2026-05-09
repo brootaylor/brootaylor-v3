@@ -102,10 +102,10 @@
     "eslint-plugin-html": "^8.1.4",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prettier": "^5.5.5",
-    "jest": "^30.3.0",
+    "jest": "^30.4.2",
     "markdownlint-cli": "^0.48.0",
     "minami": "^1.2.3",
-    "netlify-cli": "^26.0.1",
+    "netlify-cli": "^24.11.3",
     "onchange": "^7.1.0",
     "prettier": "^3.8.3"
   },
