@@ -11,7 +11,7 @@ export default {
   lang: 'en-gb',
   start_url: '/',
   display: 'standalone',
-  rootUrl: process.env.URL || '',
+  rootUrl: process.env.LOCAL_ENV_URL || '',
   environment: process.env.NODE_ENV,
   logo: '/assets/images/common/logo.png',
   theme_color_android: '#212227',
@@ -27,6 +27,7 @@ export default {
   icon_maskable_512: '/assets/ico/android-chrome-maskable-512x512.png', // Maskable icon for Android devices (https://web.dev/maskable-icon-audit/)
   icon_mstile: '/assets/ico/mstile-150x150.png',
   twitter: '@brootaylor', // Twitter handle
+  webmentions: 'https://webmention.io/brootaylor.com/webmentions', // Webmention.io endpoint for this site
   robotsCrawl: true, // Allow search engine robots to crawl site
   aiCrawl: false, // Allow AI robots to crawl site and train AI models
   botHoneypot: true, // Honeypot hidden link added to DOM to catch bots

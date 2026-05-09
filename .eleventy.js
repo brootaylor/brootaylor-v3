@@ -7,7 +7,6 @@ import eleventyServer from './config/eleventy-server.config.js'
 
 // Import (plugins)
 import pluginSyntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
-
 import pluginRss from '@11ty/eleventy-plugin-rss'
 import pluginNavigation from '@11ty/eleventy-navigation'
 
