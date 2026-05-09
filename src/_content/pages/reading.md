@@ -10,7 +10,7 @@ bodyClass: "reading"
 
 dateShow: true # Show the date in the header for this page
 date: 2022-10-22T13:17:27.631Z
-updated: 2026-03-16T12:30:27.631Z
+updated: 2026-05-09T12:38:27.631Z
 
 location:
   locality: Home
@@ -39,12 +39,13 @@ Books on the go at the moment.
 
 ## Next reads&hellip; *maybe*
 
-* [Resisting AI: An Anti-fascist Approach to Artificial Intelligence](https://bristoluniversitypress.co.uk/resisting-ai), *Dan McQuillan*
-* [COPOUT: How governments have failed the people on climate](https://genn.cc/copout-nick-breeze/), *Nick Breeze*
 * [In The Shadow of Kings: A Time of Dragons](https://www.philipcquaintrell.com/intheshadowofkings) &mdash; *(book 2 of...)*, *Philip C. Quaintrell*
+* The Last Ballad Of Hope: A Time of Dragons &mdash; *(book 3 of...)*, *Philip C. Quaintrell*
+* [Tides Of Blood And War](https://www.philipcquaintrell.com/copy-of-the-last-ballad-of-hope) &mdash; *(book 4 of...)*, *Philip C. Quaintrell*
 * [Leviathan: An Asher & Avandriell Story](https://www.philipcquaintrell.com/leviathan) &mdash; *(Novella)*, *Philip C. Quaintrell*
-* Reckoning, Songs of Chaos &mdash; *(book 4 of...)*, *Michael R. Miller*
+* [Reckoning, Songs of Chaos](https://www.michaelrmiller.co.uk/reckoning) &mdash; *(book 4 of...)*, *Michael R. Miller*
 * [King’s Dark Tidings Series: Knight of Shadows](https://kelkade.com/books/) &mdash; *(book 6 of...)*, *Kel Kade*
+* [King’s Dark Tidings Series: Ritual of Ruin](https://kelkade.com/books/) &mdash; *(book 7 of...)*, *Kel Kade*
 * [The Mountain in the Sea](https://www.goodreads.com/en/book/show/59808603), *Ray Nayler*
 * [The Bound and the Broken Series](https://www.goodreads.com/series/309359-the-bound-and-the-broken) &mdash; *(5 books)*, *Ryan Cahill*
 * [Do I Stay Christian?](https://read.macmillan.com/lp/do-i-stay-christian/), *Brian McLaren*
