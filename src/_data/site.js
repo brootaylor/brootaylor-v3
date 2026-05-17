@@ -1,4 +1,5 @@
 import { DateTime } from 'luxon';
+const isLocal = process.env.LOCAL_ENV === 'true'; // Check if running in local environment (https://www.11ty.dev/docs/data-global-scope/#environment-variables)
 
 export default {
   name: 'Bruce Taylor',
@@ -11,7 +12,7 @@ export default {
   lang: 'en-gb',
   start_url: '/',
   display: 'standalone',
-  rootUrl: process.env.LOCAL_ENV_URL || '',
+  rootUrl: isLocal ? process.env.LOCAL_ENV_URL : (process.env.URL || ''),
   environment: process.env.NODE_ENV,
   logo: '/assets/images/common/logo.png',
   theme_color_android: '#212227',
