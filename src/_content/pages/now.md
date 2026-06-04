@@ -4,14 +4,14 @@ title: "What I'm doing now"
 summary: "A place to log what I've got on the go right now&hellip;ish. It could be about anything really. Like work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on."
 # Populates the opening / `lead` text on a page
 lead:
-  - It's Spring here in the UK!
-  - The day's are longer and the weather is improving. Nothing like starting the day sipping my morning coffee in the garden feeling the sun on my face. 😎
+  - It's summer here in the UK!
+  - The day's are longer and it's been sunny and warm. Nothing like starting the day sipping my morning coffee in the garden feeling the sun on my face. 😎
 
 bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2026-05-09T12:54:27.631Z
+updated: 2026-06-04T11:08:27.631Z
 
 location:
   locality: Home
@@ -28,8 +28,7 @@ I'm working, on a contract basis, as a "[**Full Stack**](/about#am-i-a-“%5Bful
 
 ## Code
 
-* I wrote some code &mdash; ["Ai" Bot Blocker](/writing/2025-01-05/ai-bot-blocker) &mdash; a few months ago to trick the naughty "Ai" bots from scraping the content on my site. Not sure how successful it's been but it was a fun little project nonetheless.
-* Began a little [playground project](https://github.com/brootaylor/brootaylor-astro-v1) using Astro as the web framework. Been fun tinkering with it.
+In my own time, I'm working on a new personal project. It's mostly to help me explore and process the use of Ai agents in my workflow these days. The very *succinct* name for this project is [Tech-Agnostic Spec-First Development Scaffold](https://github.com/brootaylor/tech-agnostic-spec-first-dev-scaffold). It's intended to be a starter template to help build web projects from the ground up. It's spec-first/spec-driven, tech-agnostic, and works whether you build by hand, use an Ai coding agent, or both.
 
 ---
 
@@ -58,10 +57,6 @@ I usually have a few books on the go and switch to whichever suits my fancy at t
 ## Listening <span class="visually-hidden">to this</span> <i aria-hidden="true">&rarr;</i> *Music*
 
 I have a wide taste in music and listen to a lot of different genres &mdash; from classical to metal. I'm a sucker for a strong melody though which is why I often find myself listening to country.
-
-Sleep Token's new album, "[Even in Arcadia](https://open.spotify.com/album/1lS7FeRcSUuIGqyg99UGpj?si=NTCUWee_SwW_yjOaVr5zNg)", dropped a few months ago and I'm still totally hooked. Absolutely gorgeous production.
-
-Charles Kelley's new album, "[Songs For A New Moon](https://open.spotify.com/album/0phabaUgbo3UiTmX78Tqcx?si=cOIrJW8JS3SL-dF7BpwaSg)", puts a smile on my face everytime I listen to it. Melody-tastic country music at its finest.
 
 ---
 
