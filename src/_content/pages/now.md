@@ -5,7 +5,7 @@ summary: "A place to log what I've got on the go right now&hellip;ish. It could 
 # Populates the opening / `lead` text on a page
 lead:
   - It's been a pretty warm summer in the UK so far. Long days with gorgeous sunshine and blue skies.
-  - Such a dry and hot spell isn't something we're used to here and the houses certainly aren't built for it &mdash; but I'm trying my best not to complain cause once the cold and dark days finally roll again, well&hellip;
+  - Such a dry and hot spell isn't something we're used to here and the houses certainly aren't built for it &mdash; but I'm trying my best not to complain cause once the cold and dark days finally roll in again, well&hellip;
 
 bodyClass: "now"
 
