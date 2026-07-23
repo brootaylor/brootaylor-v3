@@ -4,14 +4,14 @@ title: "What I'm doing now"
 summary: "A place to log what I've got on the go right now&hellip;ish. It could be about anything really. Like work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on."
 # Populates the opening / `lead` text on a page
 lead:
-  - It's summer here in the UK!
-  - The day's are longer and it's been sunny and warm. Nothing like starting the day sipping my morning coffee in the garden feeling the sun on my face. 😎
+  - It's been a pretty warm summer in the UK so far. Long days with gorgeous sunshine and blue skies.
+  - Such a dry and hot spell isn't something we're used to here and the houses certainly aren't built for it &mdash; but I'm trying my best not to complain cause once the cold and dark days finally roll again, well&hellip;
 
 bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2026-06-04T11:08:27.631Z
+updated: 2026-07-23T09:08:27.631Z
 
 location:
   locality: Home
@@ -22,13 +22,13 @@ eleventyExcludeFromCollections: false
 
 ## Work
 
-I'm working, on a contract basis, as a "[**Full Stack**](/about#am-i-a-“%5Bfull-stack%5D-developer”%3F) **Engineer**" for [Admiral Group Plc](/projects/admiral) on their customer facing websites. It's turned out to be a fab experience working with a great team of people. Some of them I would now call good friends.
+I'm still working, on a contract basis, as a "[**Full Stack**](/about#am-i-a-“%5Bfull-stack%5D-developer”%3F) **Engineer**" for [Admiral Group Plc](/projects/admiral) on their customer facing websites. What was initially a 3 month contract *(started in April 2024)* has been extended a few times. Certainly been grateful for the continuity.
 
 ---
 
 ## Code
 
-In my own time, I'm working on a new personal project. It's mostly to help me explore and process the use of Ai agents in my workflow these days. The very *succinct* name for this project is [Tech-Agnostic Spec-First Development Scaffold](https://github.com/brootaylor/tech-agnostic-spec-first-dev-scaffold). It's intended to be a starter template to help build web projects from the ground up. It's spec-first/spec-driven, tech-agnostic, and works whether you build by hand, use an Ai coding agent, or both.
+In my own time, I'm working on a new personal project. It's mostly to help me explore and process the use of Ai agents in my workflow these days. The very *succinct* name for this project is [Tech-Agnostic Spec-First Development Scaffold](https://github.com/brootaylor/tech-agnostic-spec-first-dev-scaffold). It's intended to be a starter template to help build web projects from the ground up. It's spec-first/spec-driven, tech-agnostic, and works whether you build by hand, use an "Ai" coding agent, or both.
 
 ---
 
@@ -72,7 +72,6 @@ While I don't necessarily agree with everything that's said in many of the episo
 * [The Great Simplification with Nate Hagens](https://open.spotify.com/show/0ZFJIjuJwh3XeMqrguiXNR?si=21485f0d963344fe) &mdash; *Exploring how energy, the environment, economics, human behavior, and systems science underpin the human predicament.*
 * [Your Undivided Attention](https://open.spotify.com/show/4KI3PtZaWJbAWK89vgttoU?si=e899d621ff1d4d9c) &mdash; *Understanding how new technologies are shaping the way we live, work, and think.*
 * [Within Reason](https://open.spotify.com/show/16wUbvDT95dxzpG2KEhakK?si=13d6ad02f68043a6) &mdash; *Philosophy podcast by Alex J O'Connor that sometimes flirts with other disciplines.*
-* [StarTalk Radio](https://open.spotify.com/show/1mNsuXfG95Lf76YQeVMuo1?si=56284fd7d1094146) &mdash; *Podcast by Neil deGrasse Tyson where science, pop culture, and comedy collide.*
 * [Syntax - Web Development](https://open.spotify.com/show/4kYCRYJ3yK5DQbP5tbfZby?si=d8355dd847824464) &mdash; *Podcast about Web Development.*
 * [Front-End Fire](https://open.spotify.com/show/4kYCRYJ3yK5DQbP5tbfZby?si=d8355dd847824464) &mdash; *Podcast on the latest and greatest in the front-end world.*
 
@@ -80,7 +79,7 @@ While I don't necessarily agree with everything that's said in many of the episo
 
 ## Plans
 
-My family and I are planning a trip to Italy this year. Maybe base ourselves in the north for a few days around the [lakes](https://discovernorthernitaly.com/lakes-in-northern-italy/) and then somewhere central near to Rome.
+My family and I are heading off for a few days to Italy. Startong with a few days in Milan and Lake Como. Then hopping on the [Bernina Express](https://www.berninarailway.com/) to St. Moritz in Switzerland for a few more days. Then back to Milan for one more night before flying home.
 
 I'm also hoping to get back into drumming this year. I miss it desperately and it's been far too long since I've played. My daughter's expressed an interest in learning so this may be my way of getting back into it by teaching her.
 
