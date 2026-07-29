@@ -15,7 +15,7 @@ socialImage:
 project:
   year: 2024 &mdash; Ongoing
   role: Full Stack Engineer
-  technologies: HTML5, CSS, SCSS, JavaScript <em>(ES5 & ES6+)</em>, jQuery, PHP, Twig, Drupal, SQL, Gulp, Docker, GitLab, GitHub, Azure DevOps Services, Azure Kubernetes Services, Google Tag Manager <em>(GTM)</em>, Figma, Genesys Web Messenger, Cookie Consent Management <em>(Civic, TrustArc)</em>.
+  technologies: HTML5, CSS, SCSS, JavaScript <em>(ES5 & ES6+)</em>, jQuery, PHP, Twig, Drupal, SQL, Gulp, Vite, Docker, GitLab, GitHub, Azure DevOps Services, Azure Kubernetes Services, Google Tag Manager <em>(GTM)</em>, Figma, Genesys Web Messenger, Cookie Consent Management <em>(Civic, TrustArc)</em>, Claude Code, CoPilot.
   order: 1
 
 # Image component rules / properties for projects list page
