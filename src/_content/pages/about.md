@@ -48,7 +48,7 @@ foot: "
 
 bodyClass: "about"
 
-date: 2026-03-12T18:56:27.631Z
+date: 2026-08-02T13:43:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
@@ -93,7 +93,7 @@ Chris Coyier's article "[The Great Divide Was Indeed Divisive](https://chriscoyi
 I have experience creating frontend solutions that support design systems and design token architecture, ensuring components are consistent, scalable, and themeable &mdash; without tying developers to any single tech stack. It’s work I really enjoy and would like to do more of. To me, a good design system should be a stable foundation: flexible and tech-agnostic enough to remain useful as technologies come and go.
 
 <details class="full-bleed">
-  <summary>Some technical skills I've picked up over the last 20+ years building for the web&hellip;</summary>
+  <summary>Technical skills picked up over the last 20+ years building for the web&hellip;</summary>
   <my-tech-skill-set class="full-bleed | call-out | flow">
     <ul>
       <li><strong>Core Frontend</strong>: HTML, CSS <small><em>(SCSS & LESS)</em></small>, JavaScript <small><em>(ES5 & ES6+)</em></small></li>
@@ -104,11 +104,11 @@ I have experience creating frontend solutions that support design systems and de
       <li><abbr title="Content Management System."><strong>CMS</strong></abbr>: WordPress, Drupal, Umbraco, Decap CMS, Contentful</li>
       <li><strong>Back-end &</strong> <abbr title="Application Programming Interface."><strong>API</strong></abbr>: PHP, Twig, MySQL, Node.js, Data Source / <abbr title="Application Programming Interface.">API</abbr> Configuration</li>
       <li><strong>Component Libraries & Design Systems</strong>: Fractal, Storybook, Design Tokens, Design System Configuration</li>
-      <li><strong>Dev & Design Tools</strong>: VS Code, Cursor, Postman, iTerm, Photoshop, Figma, Zeplin</li>
+      <li><strong>Dev & Design Tools</strong>: VS Code, Cursor, Claude Code, Codex, CoPilot, Postman, iTerm, Photoshop, Figma, Zeplin</li>
       <li><strong>Frontend Architecture & Standards</strong>: Tech-agnostic component-based Frontend Architecture, CSS Architecture</li>
       <li><strong>Best Practices</strong>: Responsive Design, Progressive Enhancement, <abbr title="Progressive Web Apps.">PWA</abbr>, Accessibility / A11y, Cross-Browser Compatibility Testing, Web Components, Service Workers</li>
       <li><abbr title="Search Engine Optimisation."><strong>SEO</strong></abbr><strong>, Performance & Compliance</strong>: Technical & Content-based <abbr title="Search Engine Optimisation.">SEO</abbr>, Performance optimisation, Lighthouse Auditing, Cookie Consent Management <small><em>(Civic, TrustArc)</em></small>, <abbr title="General Data Protection Regulation.">GDPR</abbr> Setup</li>
-      <li><strong>Analytics</strong>: Google Analytics, Google Tag Manager, Adobe Analytics</li>
+      <li><strong>Analytics</strong>: Google Analytics, Google Tag Manager, Adobe Launch Tags</li>
     </ul>
     <h3 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h3>
     <p><small><em>(Need to see my CV for some reason? You're welcome to <a href="/BruceTaylorCV">download a copy</a>.)</em></small></p>

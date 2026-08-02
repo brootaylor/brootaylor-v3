@@ -15,7 +15,7 @@ socialImage:
 project:
   year: 2024 &mdash; Ongoing
   role: Full Stack Engineer
-  technologies: HTML5, CSS, SCSS, JavaScript <em>(ES5 & ES6+)</em>, jQuery, PHP, Twig, Drupal, SQL, Gulp, Vite, Docker, GitLab, GitHub, Azure DevOps Services, Azure Kubernetes Services, Google Tag Manager <em>(GTM)</em>, Figma, Genesys Web Messenger, Cookie Consent Management <em>(Civic, TrustArc)</em>, Claude Code, CoPilot.
+  technologies: HTML5, CSS, SCSS, JavaScript <em>(ES5 & ES6+)</em>, jQuery, PHP, Twig, Drupal, SQL, Gulp, Vite, Docker, GitLab, GitHub, Azure DevOps Services, Azure Kubernetes Services, Claude Code, CoPilot, Google Tag Manager <em>(GTM)</em>, Adobe Launch Tags, Figma, Genesys Web Messenger, Cookie Consent Management <em>(Civic, TrustArc)</em>.
   order: 1
 
 # Image component rules / properties for projects list page
@@ -30,7 +30,7 @@ image:
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2026-03-12T18:56:27.631Z
+date: 2026-08-02T13:44:27.631Z
 
 eleventyExcludeFromCollections: false
 ---
