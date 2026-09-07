@@ -48,7 +48,7 @@ foot: "
 
 bodyClass: "about"
 
-date: 2026-08-02T13:43:27.631Z
+date: 2026-09-07T10:16:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
@@ -65,7 +65,7 @@ date: 2026-08-02T13:43:27.631Z
 
 ## The work I do
 
-I’m a "[full-stack](/about#am-i-a-“%5Bfull-stack%5D-developer”%3F)" web developer, ui engineer/designer, and generalist &mdash; *meaning I also do some visual design, back-end, and devops work when needed*.
+I’m a "[full-stack](/about#am-i-a-“%5Bfull-stack%5D-developer”%3F)" web developer and UI engineer/designer at heart, though I can turn my hand to visual design, back-end, and devops work when a project calls for it.
 
 Anything that impacts the user experience on the web matters to me. This is where I’m most comfortable and where I’ve naturally ended up specialising. As a result, you’ll mostly find me tinkering around in the “[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/)” &mdash; the somewhat broad and slightly *fuzzy* intersection between design and back-end engineering.
 
