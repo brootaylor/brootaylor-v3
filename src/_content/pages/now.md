@@ -4,14 +4,14 @@ title: "What I'm doing now"
 summary: "A place to log what I've got on the go right now&hellip;ish. It could be about anything really. Like work related stuff, what I'm reading, listening to, watching, learning, planning, and reflecting on."
 # Populates the opening / `lead` text on a page
 lead:
-  - It's been a pretty warm summer in the UK so far. Long days with gorgeous sunshine and blue skies.
-  - Such a dry and hot spell isn't something we're used to here and the houses certainly aren't built for it &mdash; but I'm trying my best not to complain cause once the cold and dark days finally roll in again, well&hellip;
+  - It always seems to go by so quickly. Spring and Summer I mean.
+  - Every year as the weather starts to warm up, I tell myself that I should savour it and enjoy every moment. Except, it's so easy to get caught up in the day to day and before you know it, the seasons have changed again.
 
 bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2026-07-23T09:08:27.631Z
+updated: 2026-09-07T10:28:27.631Z
 
 location:
   locality: Home
@@ -23,6 +23,8 @@ eleventyExcludeFromCollections: false
 ## Work
 
 I'm still working, on a contract basis, as a "[**Full Stack**](/about#am-i-a-“%5Bfull-stack%5D-developer”%3F) **Engineer**" for [Admiral Group Plc](/projects/admiral) on their customer facing websites. What was initially a 3 month contract *(started in April 2024)* has been extended a few times. Certainly been grateful for the continuity.
+
+It looks like my contract is due to end just before Christmas 2026. I'll be actively looking for new opportunities *(contract or perm)* that start in the new year.  {.call-out}
 
 ---
 
