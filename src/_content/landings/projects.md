@@ -22,7 +22,7 @@ pagination:
   size: 15
   alias: projects
 
-date: 2025-06-05T21:54:27.631Z
+date: 2025-09-08T09:10:27.631Z
 ---
 
 <section aria-labelledby="projects-featured" class="projects-featured | flow">
@@ -77,7 +77,7 @@ date: 2025-06-05T21:54:27.631Z
         <div class="card__content">
           <header class="card__header">
             <h3 class="card__title">Avios <a href="#fn:avios" class="footnote" rel="footnote"><sup>*</sup></a></h3>
-            <span class="date-time">Year: 2004 - 2015 <small>(permanent)</small></span>
+            <span class="date-time">Year: 2004 &ndash; 2015 <small>(permanent)</small></span>
           </header>
           <div class="card__body">
             <ul class="flow">
@@ -166,6 +166,62 @@ date: 2025-06-05T21:54:27.631Z
           </div>
           <footer class="card__footer">
             <p>Visit them at <a href="https://www.macmillan.org.uk/">www.macmillan.org.uk</a></p>
+          </footer>
+        </div>
+      </article>
+    </li>
+  </ul>
+</section>
+
+---
+
+<section aria-labelledby="projects-open-source" class="projects-open-source | flow">
+  <h2 id="projects-open-source" tabindex="-1">Open source <a class="header-anchor" href="#projects-open-source">#</a></h2>
+  <ul role="list" class="auto-grid | no-list">
+    <li>
+      <article class="card card--stacked">
+        <div class="card__content">
+          <header class="card__header">
+            <h3 class="card__title">brootaylor-v3</h3>
+            <span class="date-time">Ongoing <small>(personal)</small></span>
+          </header>
+          <div class="card__body">
+            <p>The codebase powering this very site, built with Eleventy — you're welcome to take a look around.</p>
+          </div>
+          <footer class="card__footer">
+            <p>Visit the repo at <a href="https://github.com/brootaylor/brootaylor-v3">github.com/brootaylor/brootaylor-v3</a></p>
+          </footer>
+        </div>
+      </article>
+    </li>
+    <li>
+      <article class="card card--stacked">
+        <div class="card__content">
+          <header class="card__header">
+            <h3 class="card__title">Tech-Agnostic Spec-First Development Scaffold</h3>
+            <span class="date-time">Year: 2026 &ndash; Ongoing <small>(personal)</small></span>
+          </header>
+          <div class="card__body">
+            <p>A starter template for building web projects — tech-agnostic, spec-first, and works whether you build by hand, use an "Ai" agent, or both.</p>
+          </div>
+          <footer class="card__footer">
+            <p>Visit the repo at <a href="https://github.com/brootaylor/tech-agnostic-spec-first-dev-scaffold">github.com/brootaylor/tech-agnostic-spec-first-dev-scaffold</a></p>
+          </footer>
+        </div>
+      </article>
+    </li>
+    <li>
+      <article class="card card--stacked">
+        <div class="card__content">
+          <header class="card__header">
+            <h3 class="card__title">brootaylor-astro-v1 <em>(Experimental)</em></h3>
+            <span class="date-time">Year: 2026 &ndash; Ongoing <small>(personal)</small></span>
+          </header>
+          <div class="card__body">
+            <p>A playground for testing web development ideas, techniques, and features using the Astro framework.</p>
+          </div>
+          <footer class="card__footer">
+            <p>Visit the repo at <a href="https://github.com/brootaylor/brootaylor-astro-v1">github.com/brootaylor/brootaylor-astro-v1</a></p>
           </footer>
         </div>
       </article>
