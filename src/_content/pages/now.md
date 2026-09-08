@@ -11,7 +11,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2026-09-07T10:28:27.631Z
+updated: 2026-09-08T12:03:27.631Z
 
 location:
   locality: Home
@@ -30,7 +30,13 @@ It looks like my contract is due to end just before Christmas 2026. I'll be acti
 
 ## Code
 
-In my own time, I'm working on a new personal project. It's mostly to help me explore and process the use of Ai agents in my workflow these days. The very *succinct* name for this project is [Tech-Agnostic Spec-First Development Scaffold](https://github.com/brootaylor/tech-agnostic-spec-first-dev-scaffold). It's intended to be a starter template to help build web projects from the ground up. It's spec-first/spec-driven, tech-agnostic, and works whether you build by hand, use an "Ai" coding agent, or both.
+In my own time, I'm working on a new personal project. It's mostly to help me explore and process the use of "Ai" agents in my workflow these days.
+
+The very succinct name *(ahem!)* for this project is [Tech-Agnostic Spec-First Development Scaffold](https://github.com/brootaylor/tech-agnostic-spec-first-dev-scaffold). It's intended to be a starter template to help build web projects from the ground up. It's spec-first/spec-driven, tech-agnostic, and works whether you build by hand, use an "Ai" coding agent, or both.
+
+This site itself is also very much a project in progress. ["brootaylor-v3" is the codebase](https://github.com/brootaylor/brootaylor-v3) behind it, and I use it both as a space to keep applying and experimenting with modern web development practices, and as a home for my [Notes](/notes), [Bookmarks](/bookmarks), and [Writing](/writing).
+
+Alongside that, ["brootaylor-astro-v1" is my experimental playground](https://github.com/brootaylor/brootaylor-astro-v1) for web development ideas, techniques, and features — using [Astro](https://astro.build/) as the foundation. It's where a fair bit of my current Astro learning actually plays out.
 
 ---
 
