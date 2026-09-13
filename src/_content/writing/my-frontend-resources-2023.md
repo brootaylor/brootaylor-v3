@@ -6,7 +6,7 @@ lead:
   - The last time I shared a post on my <a
     href="/writing/2019-03-15/my-frontend-resources-2019">list of frontend
     resources</a> was back in 2019. I think it's about time I posted an update
-    &mdash; seeing that's it's 2023 after all.
+    &mdash; seeing that it's 2023 after all!
 date: 2023-02-12T17:36:00
 updated: 2023-02-16T15:03:25
 location:
@@ -17,6 +17,7 @@ category:
   - technology
   - reminder
 ---
+
 As mentioned the last time I posted a article of this nature; I'm indebted to the people listed here and am immensely grateful that they've given so generously of their skills, experience and time. I'm a better developer because of them.
 
 This list certainly isn't exhaustive. It's a snapshot - *(beginning of 2023)* - for myself. Hopefully there's something here that you'll find useful as well.

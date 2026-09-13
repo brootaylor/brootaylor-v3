@@ -12,7 +12,6 @@ import pluginNavigation from '@11ty/eleventy-navigation'
 
 // Import (libraries)
 import { markdown } from './lib/libraries/markdown.js'
-import markdownItAnchor from 'markdown-it-anchor'
 
 // Import (filters)
 import { prettyUrl } from './lib/utils/filters/pretty-url.js'
@@ -46,20 +45,6 @@ export default function (eleventy) {
 
   // Libraries
   eleventy.setLibrary('md', markdown)
-
-  // Customise Markdown library settings:
-	eleventy.amendLibrary('md', mdLib => {
-		mdLib.use(markdownItAnchor, {
-			permalink: markdownItAnchor.permalink.ariaHidden({
-				placement: 'after',
-				class: 'header-anchor',
-				symbol: '#',
-				ariaHidden: false,
-			}),
-			level: [2,3,4],
-			slugify: eleventy.getFilter('slugify')
-		});
-	});
 
   // Add some utility filters
   eleventy.addFilter('pretty', prettyUrl)
