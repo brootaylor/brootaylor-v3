@@ -30,6 +30,7 @@
     "scan:locks:review-check": "node check-locklist-review.mjs",
     "clean": "rimraf dist && mkdir dist",
     "prebuild": "npm run scan:locks && npm run audit:npm && npm run clean && echo 'Scanning lockfiles + npm audit & getting rid of old stuff first 🔥'",
+    "lint:scripts": "eslint .",
     "lint:markdown": "markdownlint src/**/*.md",
     "postcss": "postcss --map --no-map -r dist/styles/*.css --config config/postcss.config.js",
     "sass:tokens": "rimraf src/styles/tokens/*.scss && json-to-scss 'tokens/*.json' 'src/styles/tokens/_tokens.scss'",
@@ -98,11 +99,11 @@
     "slugify": "^1.6.9"
   },
   "devDependencies": {
-    "eslint": "^9.39.2",
+    "eslint": "^10.10.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-html": "^8.2.0",
-    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-import-x": "^4.17.1",
     "eslint-plugin-prettier": "^5.5.6",
+    "globals": "^17.12.0",
     "jest": "^30.5.1",
     "markdownlint-cli": "^0.49.1",
     "minami": "^1.2.3",

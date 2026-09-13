@@ -98,13 +98,12 @@ brootaylor.com
 ├── .editorconfig                  # Text editor configuration
 ├── .eleventy.js                   # Eleventy configuration
 ├── .eleventyignore                # Directories / files eleventy needs to ignore when building
-├── .eslintignore                  # JS folders / files eslint needs to ignore
-├── .eslintrc                      # JS linting configuration
 ├── .gitignore                     # Files not tracked by Git
 ├── .known-bad.locklist            # List of package@version entries blocked by the lockfile scan
 ├── .markdownlint.json             # Markdownlint configuration
 ├── .nvmrc                         # Sets (and installs if necessary) the version of Node needed for this project
 ├── check-locklist-review.mjs      # Runs check on locklist to determine age of entries
+├── eslint.config.js               # JS linting configuration
 ├── LICENCE                        # Repo licence (MIT)
 ├── netlify.toml                   # Netlify configuration (server)
 ├── package.json                   # Node.js package manifest
