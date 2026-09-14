@@ -29,7 +29,7 @@
     "scan:locks:summary": "node scan-locks.mjs --json | node -e \"let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{try{const j=JSON.parse(d);console.log(j.summary||'No summary');process.exit(j.ok?0:1);}catch(e){console.error('Invalid JSON from scan');process.exit(1);}})\"",
     "scan:locks:review-check": "node check-locklist-review.mjs",
     "clean": "rimraf dist && mkdir dist",
-    "prebuild": "npm run scan:locks && npm run audit:npm && npm run clean && echo 'Scanning lockfiles + npm audit & getting rid of old stuff first 🔥'",
+    "prebuild": "npm run scan:locks && npm run scan:locks:review-check && npm run audit:npm && npm run clean && echo 'Scanning lockfiles + npm audit & getting rid of old stuff first 🔥'",
     "lint:scripts": "eslint .",
     "lint:markdown": "markdownlint src/**/*.md",
     "postcss": "postcss --map --no-map -r dist/styles/*.css --config config/postcss.config.js",
@@ -52,8 +52,8 @@
     "netlify-dev:debug": "ntl dev --debug",
     "netlify-dev:live": "ntl dev --live",
     "netlify-cms:local": "npx netlify-cms-proxy-server",
-    "netlify-deploy:draft": "ntl deploy",
-    "netlify-deploy:production": "ntl deploy --prod",
+    "netlify-deploy:draft": "ntl deploy --build",
+    "netlify-deploy:production": "ntl deploy --prod --build",
     "audit:browser-support": "npx browserslist && echo '🔆 Modify .browserslistrc if and when browser support changes. 🔆'",
     "audit:accessibility": "npx pa11y-ci --config ./config/pa11y.json > ./audits/accessibility_report/brootaylor-accessibility-results.md",
     "audit:performance": "lighthouse https://brootaylor.com --budget-path=config/performance-budget.json --output-path=./audits/lighthouse_report/brootaylor-performance-results.html --view",
@@ -140,7 +140,13 @@
       "chalk": "^5.6.2"
     },
     "brace-expansion": "^5.0.9",
-    "sharp": "^0.35.3"
+    "sharp": "^0.35.3",
+    "keyv": "5.6.0",
+    "cacheable": "2.5.0",
+    "flat-cache": "6.1.23",
+    "file-entry-cache": "11.1.5",
+    "@cacheable/utils": "2.5.0",
+    "@cacheable/memory": "2.2.0"
   },
   "engines": {
     "node": "^24.18.1"

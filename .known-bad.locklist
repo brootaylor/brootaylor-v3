@@ -1,5 +1,9 @@
 # Canonical shared denylist.
-# NOTE: The .local variant currently mirrors this file intentionally.
+# NOTE: `.known-bad.locklist.local` is gitignored and never committed. It's a
+# machine-local place to add your own denylist entries without touching this
+# shared file (e.g. to react to a fresh incident before it's reviewed and
+# merged here). It is loaded in addition to this file and does not need to
+# match it — a fresh clone of this repo will not have a .local file at all.
 # ===========================================================================
 
 # Supported entry formats (one per line):
@@ -17,8 +21,12 @@
 #   - update LAST-REVIEWED whenever you review or materially change this file
 #   - REVIEW-NOTE is optional and meant for quick human context
 #
-# LAST-REVIEWED: 2026-05-07
-# REVIEW-NOTE: Audited strip-ansi and ansi-regex against live dependency tree; no bad versions present. No new entries added.
+# LAST-REVIEWED: 2026-09-14
+# REVIEW-NOTE: Full audit against live dependency tree; no active matches found. Added the
+# Aug 2026 keyv/cacheable worm entries below since this repo's own tree (via ESLint's
+# flat-cache chain) was one release behind the compromised versions. Checked the Jun/Jul
+# 2026 node-gyp, @redhat-cloud-services, and AsyncAPI incidents against the lockfile;
+# none of those packages are present in this repo.
 
 
 # --- Core wave (Sep 8–10, 2025) ---
@@ -119,3 +127,19 @@ got-fetch@5.1.12
 # TAGS: supply-chain, quarantine, tripwire
 # REF: incident-2025-is-package
 is@*
+
+
+# --- Keyv / Cacheable ecosystem compromise (Aug 4, 2026) ---
+# WHY: Maintainer GitHub account compromised; malicious preinstall hook (Shai-Hulud-lineage
+# worm) stole credentials and self-propagated. Reaches this repo transitively via
+# eslint -> file-entry-cache -> flat-cache -> keyv (dev dependency chain).
+# TAGS: supply-chain, worm, maintainer-compromise, preinstall
+# REF: incident-2026-keyv-cacheable
+keyv@6.0.0
+cacheable@2.5.1
+flat-cache@6.1.24
+file-entry-cache@11.1.6
+cacheable-request@13.0.20
+cache-manager@7.2.10
+@cacheable/utils@2.5.1
+@cacheable/memory@2.2.1

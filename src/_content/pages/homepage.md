@@ -1,6 +1,6 @@
 ---
 layout: "layouts/homepage.njk"
-title: <strong>Hi,</strong> <a href="/about">I'm Bruce</a> &mdash; <span class="sub-text"><span class="nowrap">Web developer</span> / UI engineer, drummer, and wannabe pilot living in the south east of England.</span>
+title: <strong>Hi,</strong> <a href="/about">I'm Bruce</a> &mdash; <span class="sub-text"><span class="nowrap">web developer</span> / ui engineer, drummer, and wannabe pilot living in the south east of England.</span>
 # Populates the `meta description` for a page
 summary: "Bruce is a Web Developer & UI Engineer based in the south east of England. Specialising in crafting performant, user-friendly, responsive, accessible, and resilient websites. Build from scratch or enhance your existing website for a lasting online presence."
 
