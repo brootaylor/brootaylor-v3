@@ -31,6 +31,8 @@ It's deployed by and hosted with [Netlify](https://www.netlify.com/).
   * [`robots.txt`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/robots.njk)
   * [`ai.txt`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/ai.njk)
   * [`feed.xml`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/feed.njk)
+  * [`bluesky-auth`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/bluesky-auth.njk)
+  * [`google-site-verification`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/google-site-verification.njk)
 * [JAMstack](https://jamstack.org/) methodology
 * [Eleventy](https://www.11ty.io/) (SSG)
 * [Netlify](https://www.netlify.com/)
@@ -59,12 +61,16 @@ Possible features / enhancements for the future:
 
 ```bash
 brootaylor.com
+├── .github
+│   ├── workflows
+│   │   ├── build.yml              # Scheduled workflow that triggers a Netlify build hook (daily build cron)
+│
 ├── config
 │   ├── eleventy-server.config.js  # Eleventy Dev Server configuration
 │   ├── pa11y.json                 # Accessibility config
 │   ├── performance-budget.json    # Lighthouse performance budget
 │   ├── postcss.config.js          # PostCSS converts modern CSS into something most browsers can understand
-│   ├── rollup.config.js           # Rollup JS bundling configuration
+│   ├── rollup.config.mjs          # Rollup JS bundling configuration
 │
 ├── lib
 │   ├── collections                # Eleventy collections
@@ -73,7 +79,7 @@ brootaylor.com
 │   ├── utils                      # Eleventy utility templates (ie. filters, transforms etc.)
 │
 ├── netlify
-│   ├── edge-functions             # Netlify Edge functions
+│   ├── edge-functions             # Netlify Edge functions (run on Deno, not Node — see deno.lock)
 │
 ├── src
 │   ├── _content                   # Content (Markdown)
@@ -98,13 +104,17 @@ brootaylor.com
 ├── .editorconfig                  # Text editor configuration
 ├── .eleventy.js                   # Eleventy configuration
 ├── .eleventyignore                # Directories / files eleventy needs to ignore when building
+├── .env.example                   # Template for local .env config — copy to .env and adjust
 ├── .gitignore                     # Files not tracked by Git
 ├── .known-bad.locklist            # List of package@version entries blocked by the lockfile scan
 ├── .markdownlint.json             # Markdownlint configuration
 ├── .nvmrc                         # Sets (and installs if necessary) the version of Node needed for this project
+├── .prettierrc                    # Prettier formatting config (enforced via eslint-plugin-prettier)
+├── .prettierignore                # Files Prettier/ESLint should skip formatting
 ├── check-locklist-review.mjs      # Runs check on locklist to determine age of entries
+├── deno.lock                      # Lockfile for the Deno-based Netlify Edge Function
 ├── eslint.config.js               # JS linting configuration
-├── LICENCE                        # Repo licence (MIT)
+├── LICENSE                        # Repo licence (MIT)
 ├── netlify.toml                   # Netlify configuration (server)
 ├── package.json                   # Node.js package manifest
 ├── package-lock.json              # Node.js package lock
@@ -154,6 +164,9 @@ cd brootaylor-v3
 
 # Install dependencies
 npm install
+
+# Copy the example env file, then adjust URL / AUDIT_URL for your context
+cp .env.example .env
 ```
 
 ## Netlify CI & CD setup
@@ -210,10 +223,10 @@ netlify unlink
 
 ```bash
 # Deploy to Netlify ("Draft"):
-npm run deploy-draft
+npm run netlify-deploy:draft
 
 # then ("Production")...
-npm run deploy-production
+npm run netlify-deploy:production
 ```
 
 The changes will deploy to the live Netlify instance.
