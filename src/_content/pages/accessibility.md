@@ -11,13 +11,13 @@ date: 2023-07-25T19:06:00
 changefreq: "yearly"
 ---
 
-This website is committed to providing a usable experience for anyone visiting it, regardless of technology or ability. It strives to meet the level AA standards outlined in the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/). This guide helps to explain how to make web content easier to use for disabled people.
+This website is committed to providing a usable experience for anyone visiting it, regardless of technology or ability. It strives to meet the level AA standards outlined in the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/){rel="external"}. This guide helps to explain how to make web content easier to use for disabled people.
 
 ---
 
 ## Accessibility features
 
-The code powering this website is [standards-compliant HTML, CSS, and JavaScript](https://www.w3.org/standards/).
+The code powering this website is [standards-compliant HTML, CSS, and JavaScript](https://www.w3.org/standards/){rel="external"}.
 
 The pages are structured with semantic elements like `header`, `nav`, `main` and `footer`. Hopefully this will help you move around more quickly. Heading `h1` elements mark the main content area of each page, and each page’s structure should follow a logical heading order from there.
 
@@ -33,7 +33,7 @@ There are no `javascript:` pseudo-links. All links can be followed in any browse
 
 ## Testing
 
-This website has been tested on modern browsers, with occasional checks in older devices or browsers to make sure it’s usable. I frequently test my work with the [VoiceOver](https://www.apple.com/accessibility/vision/) screen reader as well as the built in screenreader for [Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/accessibility-features-in-microsoft-edge-4c696192-338e-9465-b2cd-bd9b698ad19a). I occasionally run accessibility audits in [aXe](https://www.deque.com/axe/) and [WAVE](https://wave.webaim.org/).
+This website has been tested on modern browsers, with occasional checks in older devices or browsers to make sure it’s usable. I frequently test my work with the [VoiceOver](https://www.apple.com/accessibility/vision/){rel="external"} screen reader as well as the built in screenreader for [Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/accessibility-features-in-microsoft-edge-4c696192-338e-9465-b2cd-bd9b698ad19a){rel="external"}. I occasionally run accessibility audits in [aXe](https://www.deque.com/axe/){rel="external"} and [WAVE](https://wave.webaim.org/){rel="external"}.
 
 ---
 
@@ -45,4 +45,4 @@ Sometimes I embed media in my posts, like audio or video. Some of these posts ma
 
 ## Send me feedback
 
-I do care about accessibility but am still learning new things about it most days. If there are any issues with this site's accessibility please let me know by submitting a [GitHub issue](https://github.com/brootaylor/brootaylor-v2/issues), or by [emailing me directly](/contact). I will try to remedy the problem as quickly as time allows. I honestly would welcome your feedback or suggestions.
+I do care about accessibility but am still learning new things about it most days. If there are any issues with this site's accessibility please let me know by submitting a [GitHub issue](https://github.com/brootaylor/brootaylor-v2/issues){rel="external"}, or by [emailing me directly](/contact). I will try to remedy the problem as quickly as time allows. I honestly would welcome your feedback or suggestions.

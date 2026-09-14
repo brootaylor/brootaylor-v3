@@ -29,9 +29,9 @@ So here goes...
 
 Books on the go at the moment.
 
-* [The Outsider](https://www.penguin.co.uk/books/182322/the-outsider-by-camus-albert/9780241458853), *Albert Camus*
-* [The Song of Albion](https://www.stephenlawhead.com/the-song-of-albion), *Stephen Lawhead*
-* [The Huntress: A Dragon's Blade Story](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
+* [The Outsider](https://www.penguin.co.uk/books/182322/the-outsider-by-camus-albert/9780241458853){rel="external"}, *Albert Camus*
+* [The Song of Albion](https://www.stephenlawhead.com/the-song-of-albion){rel="external"}, *Stephen Lawhead*
+* [The Huntress: A Dragon's Blade Story](https://www.michaelrmiller.co.uk/novellas){rel="external"} &mdash; *(Novella)*, *Michael R. Miller*
 
 *I always try to include a dose of fantasy in my current read list. Mostly to help 'balance' and process the other reads I've got on the go.* 😬 {.call-out}
 
@@ -39,22 +39,22 @@ Books on the go at the moment.
 
 ## Next reads&hellip; *maybe*
 
-* [In The Shadow of Kings: A Time of Dragons](https://www.philipcquaintrell.com/intheshadowofkings) &mdash; *(book 2 of...)*, *Philip C. Quaintrell*
+* [In The Shadow of Kings: A Time of Dragons](https://www.philipcquaintrell.com/intheshadowofkings){rel="external"} &mdash; *(book 2 of...)*, *Philip C. Quaintrell*
 * The Last Ballad Of Hope: A Time of Dragons &mdash; *(book 3 of...)*, *Philip C. Quaintrell*
-* [Tides Of Blood And War](https://www.philipcquaintrell.com/copy-of-the-last-ballad-of-hope) &mdash; *(book 4 of...)*, *Philip C. Quaintrell*
-* [Leviathan: An Asher & Avandriell Story](https://www.philipcquaintrell.com/leviathan) &mdash; *(Novella)*, *Philip C. Quaintrell*
-* [Reckoning, Songs of Chaos](https://www.michaelrmiller.co.uk/reckoning) &mdash; *(book 4 of...)*, *Michael R. Miller*
-* [King’s Dark Tidings Series: Knight of Shadows](https://kelkade.com/books/) &mdash; *(book 6 of...)*, *Kel Kade*
-* [King’s Dark Tidings Series: Ritual of Ruin](https://kelkade.com/books/) &mdash; *(book 7 of...)*, *Kel Kade*
-* [The Mountain in the Sea](https://www.goodreads.com/en/book/show/59808603), *Ray Nayler*
-* [The Bound and the Broken Series](https://www.goodreads.com/series/309359-the-bound-and-the-broken) &mdash; *(5 books)*, *Ryan Cahill*
-* [Do I Stay Christian?](https://read.macmillan.com/lp/do-i-stay-christian/), *Brian McLaren*
-* [Rivenworld Series](https://www.goodreads.com/series/308162-rivenworld) &mdash; *(3 books)*, *M.L. Spencer*
-* [The Sun Eater Series](https://www.goodreads.com/series/231285-the-sun-eater) &mdash; *(5 primary books)*, *Christopher Ruocchio*
-* [The Terran Cycle](https://www.philipcquaintrell.com/books) &mdash; *(4 books)*, *Philip C. Quaintrell*
-* [Green Lights](https://greenlights.com/), *Matthew McConaughey*
-* [How to Live](https://sive.rs/h), *Derek Sivers*
-* [Useful Not True](https://sive.rs/u), *Derek Sivers*
+* [Tides Of Blood And War](https://www.philipcquaintrell.com/copy-of-the-last-ballad-of-hope){rel="external"} &mdash; *(book 4 of...)*, *Philip C. Quaintrell*
+* [Leviathan: An Asher & Avandriell Story](https://www.philipcquaintrell.com/leviathan){rel="external"} &mdash; *(Novella)*, *Philip C. Quaintrell*
+* [Reckoning, Songs of Chaos](https://www.michaelrmiller.co.uk/reckoning){rel="external"} &mdash; *(book 4 of...)*, *Michael R. Miller*
+* [King’s Dark Tidings Series: Knight of Shadows](https://kelkade.com/books/){rel="external"} &mdash; *(book 6 of...)*, *Kel Kade*
+* [King’s Dark Tidings Series: Ritual of Ruin](https://kelkade.com/books/){rel="external"} &mdash; *(book 7 of...)*, *Kel Kade*
+* [The Mountain in the Sea](https://www.goodreads.com/en/book/show/59808603){rel="external"}, *Ray Nayler*
+* [The Bound and the Broken Series](https://www.goodreads.com/series/309359-the-bound-and-the-broken){rel="external"} &mdash; *(5 books)*, *Ryan Cahill*
+* [Do I Stay Christian?](https://read.macmillan.com/lp/do-i-stay-christian/){rel="external"}, *Brian McLaren*
+* [Rivenworld Series](https://www.goodreads.com/series/308162-rivenworld){rel="external"} &mdash; *(3 books)*, *M.L. Spencer*
+* [The Sun Eater Series](https://www.goodreads.com/series/231285-the-sun-eater){rel="external"} &mdash; *(5 primary books)*, *Christopher Ruocchio*
+* [The Terran Cycle](https://www.philipcquaintrell.com/books){rel="external"} &mdash; *(4 books)*, *Philip C. Quaintrell*
+* [Green Lights](https://greenlights.com/){rel="external"}, *Matthew McConaughey*
+* [How to Live](https://sive.rs/h){rel="external"}, *Derek Sivers*
+* [Useful Not True](https://sive.rs/u){rel="external"}, *Derek Sivers*
 
 ---
 
@@ -62,29 +62,29 @@ Books on the go at the moment.
 
 Selection of books / series of books I've read over the past few years. But more importantly, enjoyed and would therefore like to recommend.
 
-* [The Reborn King: The Dragon's Blade](https://www.michaelrmiller.co.uk/therebornking) &mdash; *(book 1 of 3)*, *Michael R. Miller*
-* [Veiled Intentions: The Dragon's Blade](https://www.michaelrmiller.co.uk/veiledintentions) &mdash; *(book 2 of 3)*, *Michael R. Miller*
-* [The Last Guardian: The Dragon's Blade](https://www.michaelrmiller.co.uk/thelastguardian) &mdash; *(book 3 of 3)*, *Michael R. Miller*
-* [Last Stand of the Stone Fist](https://www.michaelrmiller.co.uk/novellas) &mdash; *(Novella)*, *Michael R. Miller*
-* [Ascendant, Songs of Chaos](https://www.michaelrmiller.co.uk/ascendent) &mdash; *(book 1 of...)*, *Michael R. Miller*
-* [Unbound, Songs of Chaos](https://www.michaelrmiller.co.uk/unbound) &mdash; *(book 2 of...)*, *Michael R. Miller*
-* [Defiant, Songs of Chaos](https://www.michaelrmiller.co.uk/defiant) &mdash; *(book 3 of...)*, *Michael R. Miller*
-* [Once There Were Hereos: A Time of Dragons](https://www.philipcquaintrell.com/oncetherewereheroes) &mdash; *(book 1 of...)*, *Philip C. Quaintrell*
-* [The Ranger Archives](https://www.philipcquaintrell.com/the-ranger-archives) &mdash; *(3 books)*, *Philip C. Quaintrell*
-* [Opening Men's Eyes](https://www.goodreads.com/book/show/10105541-opening-men-s-eyes), *Michael Cardo*
-* [The Echoes Saga](https://www.philipcquaintrell.com/theechoessaga) &mdash; *(9 books)*, *Philip C. Quaintrell*
-* [Responsible JavaScript](https://abookapart.com/products/responsible-javascript), *Jeremy Wagner*
-* [Bitten By a Camel: Leaving Church, Finding God](https://www.goodreads.com/en/book/show/34763102-bitten-by-a-camel), *Kent Dobson*
-* [The Universal Christ](https://universalchrist.cac.org/), *Richard Rohr*
+* [The Reborn King: The Dragon's Blade](https://www.michaelrmiller.co.uk/therebornking){rel="external"} &mdash; *(book 1 of 3)*, *Michael R. Miller*
+* [Veiled Intentions: The Dragon's Blade](https://www.michaelrmiller.co.uk/veiledintentions){rel="external"} &mdash; *(book 2 of 3)*, *Michael R. Miller*
+* [The Last Guardian: The Dragon's Blade](https://www.michaelrmiller.co.uk/thelastguardian){rel="external"} &mdash; *(book 3 of 3)*, *Michael R. Miller*
+* [Last Stand of the Stone Fist](https://www.michaelrmiller.co.uk/novellas){rel="external"} &mdash; *(Novella)*, *Michael R. Miller*
+* [Ascendant, Songs of Chaos](https://www.michaelrmiller.co.uk/ascendent){rel="external"} &mdash; *(book 1 of...)*, *Michael R. Miller*
+* [Unbound, Songs of Chaos](https://www.michaelrmiller.co.uk/unbound){rel="external"} &mdash; *(book 2 of...)*, *Michael R. Miller*
+* [Defiant, Songs of Chaos](https://www.michaelrmiller.co.uk/defiant){rel="external"} &mdash; *(book 3 of...)*, *Michael R. Miller*
+* [Once There Were Hereos: A Time of Dragons](https://www.philipcquaintrell.com/oncetherewereheroes){rel="external"} &mdash; *(book 1 of...)*, *Philip C. Quaintrell*
+* [The Ranger Archives](https://www.philipcquaintrell.com/the-ranger-archives){rel="external"} &mdash; *(3 books)*, *Philip C. Quaintrell*
+* [Opening Men's Eyes](https://www.goodreads.com/book/show/10105541-opening-men-s-eyes){rel="external"}, *Michael Cardo*
+* [The Echoes Saga](https://www.philipcquaintrell.com/theechoessaga){rel="external"} &mdash; *(9 books)*, *Philip C. Quaintrell*
+* [Responsible JavaScript](https://abookapart.com/products/responsible-javascript){rel="external"}, *Jeremy Wagner*
+* [Bitten By a Camel: Leaving Church, Finding God](https://www.goodreads.com/en/book/show/34763102-bitten-by-a-camel){rel="external"}, *Kent Dobson*
+* [The Universal Christ](https://universalchrist.cac.org/){rel="external"}, *Richard Rohr*
 * [King’s Dark Tidings Series](https://kelkade.com/books/) &mdash; *(5 books)*, *Kel Kade*
-* [Falling Upward: A Spirituality for the Two Halves of Life ](https://www.goodreads.com/en/book/show/9963483-falling-upward), *Richard Rohr*
-* [Future Ethics](https://nownext.studio/future-ethics), *Cennydd Bowles*
-* [Going Offline](https://abookapart.com/products/going-offline), *Jeremy Keith*
-* [Progressive Web Apps](https://abookapart.com/products/progressive-web-apps), *Jason Grigsby*
-* [Love Wins](https://robbell.com/book/love-wins/), *Rob Bell*
-* [Everything Is Spiritual: Who We Are and What We're Doing Here](https://robbell.com/book/everything-is-spiritual/), *Rob Bell*
-* [The Song of Albion](https://www.stephenlawhead.com/the-song-of-albion), *Stephen Lawhead*
-* [Into Thin Air](https://www.jonkrakauer.com/books/into-thin-air-tr), *Jon Krakauer*
-* [Confessions of a Funeral Director](https://www.calebwilde.com/book/), *Caleb Wilde*
+* [Falling Upward: A Spirituality for the Two Halves of Life ](https://www.goodreads.com/en/book/show/9963483-falling-upward){rel="external"}, *Richard Rohr*
+* [Future Ethics](https://nownext.studio/future-ethics){rel="external"}, *Cennydd Bowles*
+* [Going Offline](https://abookapart.com/products/going-offline){rel="external"}, *Jeremy Keith*
+* [Progressive Web Apps](https://abookapart.com/products/progressive-web-apps){rel="external"}, *Jason Grigsby*
+* [Love Wins](https://robbell.com/book/love-wins/){rel="external"}, *Rob Bell*
+* [Everything Is Spiritual: Who We Are and What We're Doing Here](https://robbell.com/book/everything-is-spiritual/){rel="external"}, *Rob Bell*
+* [The Song of Albion](https://www.stephenlawhead.com/the-song-of-albion){rel="external"}, *Stephen Lawhead*
+* [Into Thin Air](https://www.jonkrakauer.com/books/into-thin-air-tr){rel="external"}, *Jon Krakauer*
+* [Confessions of a Funeral Director](https://www.calebwilde.com/book/){rel="external"}, *Caleb Wilde*
 
 *I'll be adding to this section as and when I remember any books I've read &mdash; cause it certainly is a little lean at the moment.* {.call-out}

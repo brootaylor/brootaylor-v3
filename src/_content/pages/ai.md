@@ -24,7 +24,7 @@ Not that I'm against "Ai", *(aka LLMs)*, per se. Heck, I've used a few of them t
 
 I'm also a bit annoyed that "Ai" bots have been gobbling up the internet's content *(my website included)* to train their models. I don't think it's fair that they can do this without asking for permission first.
 
-Like [Jeremy Keith said](https://adactio.com/links/20380):
+Like [Jeremy Keith said](https://adactio.com/links/20380){rel="external"}:
 
 > Now that the horse has bolted—and ransacked the web—you can shut the barn door.
 
@@ -35,7 +35,7 @@ You can read more about [what I've implemented on my website](/writing/2025-01-0
 ---
 
 <footer>
-  <em>The idea for this page was sparked off by Damola Morenikeji's <a href="https://www.bydamo.la/p/ai-manifesto">Ai 'manifesto' page</a>. Why not take a look and see if it resonates with you.</em>
+  <em>The idea for this page was sparked off by Damola Morenikeji's <a href="https://www.bydamo.la/p/ai-manifesto" rel="external">Ai 'manifesto' page</a>. Why not take a look and see if it resonates with you.</em>
 </footer>
 
 *[LLMs]: Large Language Models.

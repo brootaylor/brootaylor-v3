@@ -86,9 +86,9 @@ eleventyExcludeFromCollections: false
 
 I enjoy [taking photos](/photos), [reading](/reading) and am a [fairly decent drummer](/photos/2016-11-22/photo_201611222058). But, I ended up having to [sell my drumkit](/photos/2022-04-06/photo_202204062304) recently for various reasons. I miss playing  and hope I'll get a chance to play again in the future... 🤞
 
-I love cooking from scratch and am especially good at a bunch of one-pan dishes. I like the flow of cooking this way &mdash; and it keeps things less complicated. If there's an open fire involved that's even better! One of my favourites at the moment is a [sausage &amp; squash chilli](https://www.jamieoliver.com/recipes/sausage-recipes/sausage-squash-chilli/).
+I love cooking from scratch and am especially good at a bunch of one-pan dishes. I like the flow of cooking this way &mdash; and it keeps things less complicated. If there's an open fire involved that's even better! One of my favourites at the moment is a [sausage &amp; squash chilli](https://www.jamieoliver.com/recipes/sausage-recipes/sausage-squash-chilli/){rel="external"}.
 
-Fly fishing for trout is something I grew up doing and continue to do. I head to the beautiful [Lakedown Trout Fishery](https://www.lakedowntroutfishery.com/) now and then. A gorgeous and tranquil spot away from all the noise.
+Fly fishing for trout is something I grew up doing and continue to do. I head to the beautiful [Lakedown Trout Fishery](https://www.lakedowntroutfishery.com/){rel="external"} now and then. A gorgeous and tranquil spot away from all the noise.
 
 I absolutely [adore aircraft](/photos/2022-03-30/photo_202203301354) and hope that one day I'll be able to either get my PPL or GPL.
 
@@ -106,7 +106,7 @@ The picture below is my favourite place in the whole world.
   "My mum looking at a beautiful view of the Giants Castle mountain from the Giants Castle Camp's main dining room balcony",
   "2000",
   "1125",
-  'My mum looking towards <a href="https://youtu.be/bGQbM3QfA5w">Giants Castle</a>. <abbr title="Kwazulu Natal.">KZN</abbr>, South Africa. Near to where I grew up',
+  'My mum looking towards <a href="https://youtu.be/bGQbM3QfA5w" rel="external">Giants Castle</a>. <abbr title="Kwazulu Natal.">KZN</abbr>, South Africa. Near to where I grew up',
   false,
   "shadow",
   "lazy")
@@ -120,7 +120,7 @@ The picture below is my favourite place in the whole world.
       <small>My birth mother's name was/is Fay Kathleen Rogers. Her birthday is 23 November 1947. She grew up in Port Shepstone, Kwazulu Natal, South Africa. <a href="#fnref:mother-bio" role="doc-backlink">↩</a></small>
     </li>
     <li id="fn:father-tree" role="doc-endnote">
-      <small>My adoptive father is descended from the <a href="https://en.wikipedia.org/wiki/Wedgwood">Wedgwood</a> family. <a href="#fnref:father-tree" role="doc-backlink">↩</a></small>
+      <small>My adoptive father is descended from the <a href="https://en.wikipedia.org/wiki/Wedgwood" rel="external">Wedgwood</a> family. <a href="#fnref:father-tree" role="doc-backlink">↩</a></small>
     </li>
     <li id="fn:adopted" role="doc-endnote">
       <small>My adoptive parents (Mathew and Ann) are wonderful, salt of the earth people. <em>'Angels'</em> to me. I truly am blessed to have had them as my mum and dad. My dad (Mathew) passed away in November 2012 and I miss him immensely. <a href="#fnref:adopted" role="doc-backlink">↩</a></small>
