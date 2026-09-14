@@ -46,14 +46,14 @@ bodyClass: "homepage"
 
 permalink: "/index.html"
 
-date: 2026-09-08T11:26:27.631Z
+date: 2026-09-14T08:26:27.631Z
 
 priority: 1
 ---
 
 I particularly enjoy roles and projects that ***strike a balance between user and developer experiences*** &mdash; empowering teams to write great code that aligns with their needs and preferences, while ensuring a positive user experience.
 
-I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/), [usable](https://trentwalton.com/2014/03/10/device-agnostic/) and as future-friendly as possible. For this reason I prefer a vanilla approach and tend to be fairly tech-agnostic.
+I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/){rel="external"}, [usable](https://trentwalton.com/2014/03/10/device-agnostic/){rel="external"} and as future-friendly as possible. For this reason I prefer a vanilla approach and tend to be fairly tech-agnostic.
 
 <div class="call-out | flow">
   <p>Whether you're <em><strong>starting a website from fresh</strong></em> or <em><strong>enhancing an existing one</strong></em>, I'd love to help you establish a lasting and meaningful online presence.</p>
