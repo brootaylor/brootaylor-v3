@@ -22,7 +22,7 @@ pagination:
   size: 15
   alias: projects
 
-date: 2025-09-08T09:10:27.631Z
+date: 2025-09-16T08:10:27.631Z
 ---
 
 <section aria-labelledby="projects-featured" class="projects-featured | flow">
@@ -236,6 +236,13 @@ date: 2025-09-08T09:10:27.631Z
 <section aria-labelledby="projects-testimonials" class="projects-testimonials | flow">
   <h2 id="projects-testimonials" tabindex="-1">Nice things people have said <a class="header-anchor" href="#projects-testimonials">#</a></h2>
   <ul role="list" class="auto-grid | no-list">
+    <li>
+    {%- call blockquote('Chris Hawkins, Staff Engineer', 'https://www.admiralgroup.co.uk/', 'Admiral Group Plc') -%}
+      Beyond his technical capability, Bruce became a highly trusted partner to Product, Delivery, Engineering, and Marketing stakeholders. He built strong relationships across the organisation and was frequently relied upon to provide clarity, challenge assumptions constructively, and help teams navigate complex technical and business problems. His ability to communicate effectively with both technical and non-technical audiences meant he was often the person people turned to when they needed confidence that a piece of work would be delivered successfully.
+
+      I would have no hesitation in recommending Bruce for future opportunities. Any organisation would benefit significantly from his technical capability, adaptability, leadership, and collaborative approach. He is an outstanding engineer and consultant, and I am confident he will continue to make a substantial impact wherever he chooses to work next.
+    {%- endcall %}
+    </li>
     <li>
     {%- call blockquote('Stephen Scott, Chief Digital Officer', 'https://www.iagloyalty.com', 'IAG Loyalty') -%}
       Bruce is a true digital native. Starting in the industry back as far as Boo.com and continually striving to push the boundaries of front end code design. He takes it upon himself to continually keep up to date with the latest trends and to apply that to his work to the benefit of whoever he is working for.
