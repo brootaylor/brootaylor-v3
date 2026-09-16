@@ -51,7 +51,6 @@
     "netlify-dev": "ntl dev",
     "netlify-dev:debug": "ntl dev --debug",
     "netlify-dev:live": "ntl dev --live",
-    "netlify-cms:local": "npx netlify-cms-proxy-server",
     "netlify-deploy:draft": "ntl deploy --build",
     "netlify-deploy:production": "ntl deploy --prod --build",
     "audit:browser-support": "npx browserslist && echo '🔆 Modify .browserslistrc if and when browser support changes. 🔆'",

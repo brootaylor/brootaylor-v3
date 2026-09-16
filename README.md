@@ -41,7 +41,6 @@ It's deployed by and hosted with [Netlify](https://www.netlify.com/).
 * [Eleventy](https://www.11ty.io/) (SSG)
 * [Netlify](https://www.netlify.com/)
 * 📧 [Netlify contact form](https://docs.netlify.com/forms/setup/)
-* ✍️ [Netlify CMS setup](https://www.netlifycms.org/)
 
 ---
 
@@ -89,7 +88,6 @@ brootaylor.com
 │   ├── _content                   # Content (Markdown)
 │   ├── _data                      # Global website data (eg. site, messages, navigation, contactform, ai_agents etc.)
 │   ├── _includes                  # Layout templates, partials & components (Nunjucks, JS & SCSS)
-│   ├── admin                      # Netlify CMS config files
 │   ├── assets                     # Assets (ie. Static files like Fonts, Images, Video, Favicons)
 │   ├── scripts                    # JavaScript (Global)
 │   ├── styles                     # SCSS (Global)
