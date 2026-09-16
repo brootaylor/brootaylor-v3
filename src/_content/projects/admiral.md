@@ -15,7 +15,7 @@ socialImage:
 project:
   year: 2024 &mdash; Ongoing
   role: Full Stack Engineer
-  technologies: HTML5, CSS, SCSS, JavaScript <em>(ES5 & ES6+)</em>, jQuery, PHP, Twig, Drupal, SQL, Gulp, Vite, Docker, GitLab, GitHub, Azure DevOps Services, Azure Kubernetes Services, Claude Code, CoPilot, Google Tag Manager <em>(GTM)</em>, Adobe Launch Tags, Figma, Genesys Web Messenger, Cookie Consent Management <em>(Civic, TrustArc)</em>.
+  technologies: HTML5, CSS, SCSS, JavaScript <em>(ES5 & ES6+)</em>, jQuery, PHP, Twig, Drupal, SQL, Gulp, Vite, Docker, GitLab, GitHub, Azure DevOps Services, Azure Kubernetes Services, NGINX, Istio, Claude Code, CoPilot, Google Tag Manager <em>(GTM)</em>, Adobe Launch Tags, Figma, Genesys Web Messenger, Cookie Consent Management <em>(Civic, TrustArc)</em>.
   order: 1
 
 # Image component rules / properties for projects list page
@@ -30,7 +30,7 @@ image:
   # Should the image thumbnail on the list page lazy load?
   lazyLoad: true
 
-date: 2026-08-02T13:44:27.631Z
+date: 2026-09-16T08:03:44.631Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -47,9 +47,10 @@ I currently have the privilege of working with a fantastic team responsible for 
 Some of my key contributions *(so far)* include:
 
 <ul class="flow">
-  <li><strong>Enhanced customer support</strong> by implementing a new Web Messenger <em>(Genesys)</em> solution across multiple sites, boosting user engagement and response efficiency.</li>
-  <li><strong>Reduced technical debt</strong> and improved data maintainability and accuracy by auditing, streamlining and standardising Google Tag Manager (GTM) configurations across the Admiral web estate.</li>
-  <li><strong>Strengthened <abbr title="General Data Protection Regulation.">GDPR</abbr> compliance</strong> through the group-wide integration of Cookie Consent Management <em>(Civic & TrustArc)</em>, supporting user privacy and data governance.</li>
+  <li><strong>Enhanced customer support</strong> by leading technical discovery and implementation of a new Web Messenger <em>(Genesys)</em> solution across several previously siloed applications, leveraging digital tagging and analytics capabilities to provide insight and direction.</li>
+  <li><strong>Reduced technical debt</strong> and improved data maintainability and accuracy by leading the audit, consolidation, and optimisation of Google Tag Manager (GTM) configurations across the Group's web estate.</li>
+  <li><strong>Strengthened <abbr title="General Data Protection Regulation.">GDPR</abbr> compliance</strong> by supporting the Group-wide consent and cookie transformation programme, embedding Cookie Consent Management <em>(Civic & TrustArc)</em> across multiple business units and applications.</li>
+  <li><strong>Modernised critical platform infrastructure</strong> by taking ownership of the NGINX to Istio migration programme, supporting the wider engineering transformation objectives.</li>
   <li><strong>Upskilled team</strong> by leading technical walkthroughs and knowledge-sharing sessions on <abbr title="Google Tag Manager.">GTM</abbr>, Genesys Web Messenger and Cookie Consent Manager integrations, increasing team autonomy and technical confidence.</li>
 </ul>
 
