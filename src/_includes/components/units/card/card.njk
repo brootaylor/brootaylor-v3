@@ -8,11 +8,11 @@
 	{# Only render this visual element if there's either an image or video #}
 	{% if component.data.hasImage %}
 		<div class="card__visual">
-			{% include "components/images/images.njk" %}
+			{% include "components/core/images/images.njk" %}
 		</div>
 	{% elif component.data.hasVideo %}
 		<div class="card__visual">
-			{% include "components/videos/videos.njk" %}
+			{% include "components/core/videos/videos.njk" %}
 		</div>
 	{% endif %}
 

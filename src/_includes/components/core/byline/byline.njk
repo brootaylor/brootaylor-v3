@@ -1,0 +1,23 @@
+{#
+	Byline
+	====================
+	Renders the "Published <date> ⁘ Written in <location>" line shared by the
+	writing, notes and bookmarks layouts, with an optional "Updated <date>" suffix.
+
+	@param date      Required. ISO date string from front matter (eg. `date`).
+	@param location  Required. Front-matter object with `.locality` and `.country_name`.
+	@param updated   Optional. ISO date string from front matter (eg. `updated`).
+	                 When present, an "Updated: <date>" suffix is appended.
+#}
+{% macro byline(date, location, updated) %}
+	<small>
+		{#- Published date. Visually-hidden label gives assistive tech context that the visible icon/spacing doesn't convey. -#}
+		<span class="visually-hidden">Published: </span><time datetime="{{ date | dateTime }}">{{ date | dateTimeReadable("d LLLL y, ") }}{{ date | dateTimeReadable("t") | lower }}</time>
+		{#- Decorative separator (aria-hidden) + location, with its own visually-hidden label. -#}
+		<i aria-hidden="true">&nbsp;&#8275;&nbsp;</i> <span class="visually-hidden">Written in </span>{{ location.locality }}, {{ location.country_name }}
+		{#- Optional "Updated" suffix - only rendered when front matter supplies an `updated` date. -#}
+		{% if updated %}
+			<i aria-hidden="true">&nbsp;&#183;&nbsp;</i><em> <b>Updated: </b></em><time datetime="{{ updated | dateTime }}">{{ updated | dateTimeReadable("d LLLL y, ") }}{{ updated | dateTimeReadable("t") | lower }}</time>
+		{% endif %}
+	</small>
+{% endmacro %}

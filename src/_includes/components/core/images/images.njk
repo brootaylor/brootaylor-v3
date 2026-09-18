@@ -16,7 +16,7 @@
 							{{ content.data.image.multiSrc.x_large }} 1200w,
 							{{ content.data.image.multiSrc.xx_large }} 2000w"
 			sizes="(min-width: 20em) 100vw"
-			alt="{{ content.data.image.alt }}."
+			alt="{{ content.data.image.alt | imageAlt }}"
 			width="{{ content.data.image.width }}"
 			height="{{ content.data.image.height }}"
 			{%- if content.data.image.objectFit %}
@@ -29,7 +29,7 @@
 	{% else %}
 	{# Single image generated... #}
 	<img src="{{ content.data.image.src }}"
-		alt="{{ content.data.image.alt }}."
+		alt="{{ content.data.image.alt | imageAlt }}"
 		width="{{ content.data.image.width }}"
 		height="{{ content.data.image.height }}"
 		{%- if content.data.image.objectFit %}
@@ -54,7 +54,7 @@
 							{{ content.data.image.multiSrc.x_large }} 1200w,
 							{{ content.data.image.multiSrc.xx_large }} 2000w"
 			sizes="(min-width: 20em) 100vw"
-			alt="{{ content.data.image.alt }}."
+			alt="{{ content.data.image.alt | imageAlt }}"
 			width="{{ content.data.image.width }}"
 			height="{{ content.data.image.height }}"
 			{%- if content.data.image.objectFit %}
@@ -67,7 +67,7 @@
 	{% else %}
 	{# Single image generated... #}
 	<img src="{{ content.data.image.src }}"
-		alt="{{ content.data.image.alt }}."
+		alt="{{ content.data.image.alt | imageAlt }}"
 		width="{{ content.data.image.width }}"
 		height="{{ content.data.image.height }}"
 		{%- if content.data.image.objectFit %}
@@ -89,7 +89,7 @@
 {# `imageNormal`: Normal inline image #}
 {% macro imageNormal(src, alt, width, height, position, shadow, lazyLoad) %}
 <img src="{{ src }}"
-	alt="{{ alt }}."
+	alt="{{ alt | imageAlt }}"
 	width="{{ width }}"
 	height="{{ height }}"
 	class="img-normal{% if position %} | {{ position }}{% endif %}{% if objFit %} | obj-fit{% endif %}{% if shadow %} | shadow{% endif %}"
@@ -106,7 +106,7 @@
 					{{ src }} 512w,
 					{{ src }} 1024w"
 	sizes="(min-width: 20em) 100vw"
-	alt="{{ alt }}."
+	alt="{{ alt | imageAlt }}"
 	width="{{ width }}"
 	height="{{ height }}"
 	class="img-normal{% if position %} | {{ position }}{% endif %}{% if shadow %} | shadow{% endif %}"
@@ -122,7 +122,7 @@
 	srcset="{{ src }},
 					{{ src2 }} 1.5x,
 					{{ src3 }} 2x"
-	alt="{{ alt }}."
+	alt="{{ alt | imageAlt }}"
 	width="{{ width }}"
 	height="{{ height }}"
 	class="img-normal{% if position %} | {{ position }}{% endif %}{% if shadow %} | shadow{% endif %}"
@@ -137,7 +137,7 @@
 <picture>
   <source srcset="{{ src2 }}" media="(min-width: {{ screenSizeSwitch }})">
   <img src="{{ src1 }}"
-		alt="{{ alt }}."
+		alt="{{ alt | imageAlt }}"
 		class="img-normal{% if position %} | {{ position }}{% endif %}{% if shadow %} | shadow{% endif %}"
 		{%- if lazyLoad == 'lazy' %}
 			loading="lazy"
@@ -150,7 +150,7 @@
 {% macro imageFigure(src, alt, width, height, caption, position, shadow, lazyLoad) %}
 <figure{% if position %} class="{{ position }}"{% endif %}>
 	<img src="{{ src }}"
-		alt="{{ alt }}."
+		alt="{{ alt | imageAlt }}"
 		width="{{ width }}"
 		height="{{ height }}"
 		{%- if shadow %}class="shadow"{% endif %}
@@ -173,7 +173,7 @@
 							{{ src_Xlarge }} 1200w,
 							{{ src_XXlarge }} 2000w"
 			sizes="(min-width: 20em) 100vw"
-			alt="{{ alt }}."
+			alt="{{ alt | imageAlt }}"
 			width="{{ width }}"
 			height="{{ height }}"
 			{%- if shadow %}class="shadow"{% endif %}

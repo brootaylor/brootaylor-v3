@@ -20,17 +20,14 @@
 							{% if (page.url | pretty) == navitem.url %} aria-current="page"{% endif %}>
 							{% if navitem.icon %}
 								<span class="visually-hidden">{{ navitem.label }}</span>
-								{% else %}
+								{#- The "x" data value doesn't have a matching icon--x.njk file (still named
+								   icon--twitter.njk from before the rebrand) - map it explicitly so this
+								   dynamic include doesn't break if/when that nav item is re-enabled. -#}
+								{% set iconFile = "twitter" if navitem.icon == "x" else navitem.icon %}
+								{% include "components/core/icons/svg_inline/icon--" + iconFile + ".njk" %}
+							{% else %}
 								{{ navitem.label }}
 							{% endif %}
-							{# This (below) could be optimised at some stage... #}
-							{% if navitem.icon == "github" %}{% include "components/core/icons/svg_inline/icon--github.njk" %}{% endif %}
-							{% if navitem.icon == "linkedin" %}{% include "components/core/icons/svg_inline/icon--linkedin.njk" %}{% endif %}
-							{% if navitem.icon == "bluesky" %}{% include "components/core/icons/svg_inline/icon--bluesky.njk" %}{% endif %}
-							{% if navitem.icon == "mastodon" %}{% include "components/core/icons/svg_inline/icon--mastodon.njk" %}{% endif %}
-							{% if navitem.icon == "x" %}{% include "components/core/icons/svg_inline/icon--twitter.njk" %}{% endif %}
-							{% if navitem.icon == "flickr" %}{% include "components/core/icons/svg_inline/icon--flickr.njk" %}{% endif %}
-							{% if navitem.icon == "rss" %}{% include "components/core/icons/svg_inline/icon--rss.njk" %}{% endif %}
 						</a>
 					</li>
 				{# Looping through list items ends here #}
