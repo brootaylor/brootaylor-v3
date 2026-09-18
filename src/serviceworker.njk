@@ -259,6 +259,21 @@ addEventListener('fetch', event => {
     // For HTML requests, try the network first, fall back to the cache, finally the offline page
     if (request.headers.get('Accept')?.includes('text/html')) {
         const retrieveFromCache = caches.match(request);
+
+        // Reuse the navigation preload fetch the browser already started (see the
+        // `activate` listener) instead of issuing a second one; it resolves to
+        // `undefined` if the browser opted not to preload this navigation.
+        const preloadResponse = event.preloadResponse
+            ? event.preloadResponse.catch(preloadError => {
+                console.error(preloadError);
+                return undefined;
+            })
+            : Promise.resolve(undefined);
+
+        const networkResponse = preloadResponse.then(responseFromPreload => {
+            return responseFromPreload || fetch(request);
+        });
+
         event.respondWith(
             new Promise(resolveWithResponse => {
                 const timer = setTimeout(() => {
@@ -271,7 +286,7 @@ addEventListener('fetch', event => {
                     })
                 }, timeout);
 
-                fetch(request)
+                networkResponse
                 .then(responseFromFetch => {
                     // NETWORK
                     clearTimeout(timer);
