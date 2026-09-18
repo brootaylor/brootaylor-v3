@@ -1,0 +1,49 @@
+name: CI
+
+# Runs on every pull request (to catch problems before merge) and on every
+# push to main (to catch anything merged without going through a PR, eg.
+# direct pushes or merge commits).
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          # Keep this in lockstep with the local dev/Netlify Node version
+          # instead of hardcoding it here twice.
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+
+      # `npm ci` (not `npm install`) so CI installs exactly what's in
+      # package-lock.json and fails if the lockfile is out of sync.
+      - name: Install dependencies
+        run: npm ci
+
+      # ESLint (with the Prettier plugin) covers all .js/.mjs source files.
+      - name: Lint scripts
+        run: npm run lint:scripts
+
+      # markdownlint covers the Markdown content under src/.
+      - name: Lint markdown
+        run: npm run lint:markdown
+
+      # Belt-and-braces Prettier check, scoped to js/mjs to match what
+      # lint:scripts already covers - Markdown/SCSS aren't Prettier-formatted
+      # project-wide yet, so checking them here would fail on unrelated files.
+      - name: Check formatting
+        run: npm run format:check
+
+      # Full production build (styles, scripts, then Eleventy) - catches
+      # build-breaking errors (bad templates, missing data, etc.) before merge.
+      - name: Build
+        run: npm run build

@@ -80,7 +80,7 @@ const now = new Date();
 const todayUtcMs = Date.UTC(
   now.getUTCFullYear(),
   now.getUTCMonth(),
-  now.getUTCDate()
+  now.getUTCDate(),
 );
 
 const ageDays = Math.floor((todayUtcMs - reviewedMs) / 86400000);
@@ -88,7 +88,7 @@ const ageDays = Math.floor((todayUtcMs - reviewedMs) / 86400000);
 // A future review date is probably a typo and should be surfaced clearly.
 if (ageDays < 0) {
   console.warn(
-    `⚠️  LAST-REVIEWED in ${FILE} is in the future (${dateStr}). Please correct it.`
+    `⚠️  LAST-REVIEWED in ${FILE} is in the future (${dateStr}). Please correct it.`,
   );
   process.exit(0);
 }
@@ -96,7 +96,7 @@ if (ageDays < 0) {
 if (ageDays > MAX_DAYS) {
   console.warn(
     `NETLIFY NOTICE: Locklist review is stale (${ageDays} days old).\n` +
-    `Please review and update LAST-REVIEWED in ${FILE}.`
+      `Please review and update LAST-REVIEWED in ${FILE}.`,
   );
 } else {
   console.log(`ℹ️  Locklist review OK (${ageDays} days old).`);

@@ -12,7 +12,7 @@ export default {
   lang: 'en-gb',
   start_url: '/',
   display: 'standalone',
-  rootUrl: isLocal ? process.env.LOCAL_ENV_URL : (process.env.URL || ''),
+  rootUrl: isLocal ? process.env.LOCAL_ENV_URL : process.env.URL || '',
   environment: process.env.NODE_ENV,
   logo: '/assets/images/common/logo.png',
   theme_color_android: '#212227',
@@ -45,14 +45,16 @@ export default {
     'https://bsky.app/profile/brootaylor.com',
     'https://mastodon.social/@brootaylor',
     'https://twitter.com/brootaylor',
-    'https://github.com/brootaylor'
+    'https://github.com/brootaylor',
   ],
   author: {
     name: 'Bruce Taylor',
     job: 'Web Developer & UI Engineer',
-    description: 'Bruce is a web developer and UI engineer based in England. This is his blog and portfolio site.',
+    description:
+      'Bruce is a web developer and UI engineer based in England. This is his blog and portfolio site.',
     url: 'https://brootaylor.com',
-    thumbnail: 'https://brootaylor.com/assets/images/common/broo-social-square-600.jpg',
+    thumbnail:
+      'https://brootaylor.com/assets/images/common/broo-social-square-600.jpg',
     email: 'brootaylor@gmail.com',
   },
 };

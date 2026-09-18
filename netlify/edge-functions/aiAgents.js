@@ -18,9 +18,7 @@ const LOCAL_ENV =
   (typeof process !== 'undefined' && process.env.LOCAL_ENV === 'true') || false;
 
 // Determine the base URL for local and production environments
-const BASE_URL = LOCAL_ENV
-  ? 'http://localhost:8888'
-  : 'https://brootaylor.com';
+const BASE_URL = LOCAL_ENV ? 'http://localhost:8888' : 'https://brootaylor.com';
 
 // Define the URL for the custom 403 error page
 const ERROR_403_URL = `${BASE_URL}/error/403.html`;
@@ -41,7 +39,7 @@ const exemptFileTypes = [
   '.gif',
   '.svg',
   '.webp',
-  '.ico'
+  '.ico',
 ];
 
 // Define the honeypot path (optional)
@@ -55,14 +53,14 @@ const honeypotPath = '/honeypot';
  * @returns {Response} - 403 Forbidden response with a custom error page.
  */
 const respondWith403 = async () => {
-  const errorPage = await fetch(ERROR_403_URL).then(res => res.text());
+  const errorPage = await fetch(ERROR_403_URL).then((res) => res.text());
 
   return new Response(errorPage, {
     status: 403,
     headers: {
       'Content-Type': 'text/html',
       // Additional policy signal indicating AI usage is not permitted
-      'X-Robots-Tag': 'noai, noimageai'
+      'X-Robots-Tag': 'noai, noimageai',
     },
   });
 };
@@ -100,8 +98,8 @@ export default async (request) => {
 
   // Check whether the User-Agent matches any known AI crawler
   const uaLower = ua.toLowerCase();
-  const isAiAgent = aiAgents.some(agent =>
-    uaLower.includes(String(agent).toLowerCase())
+  const isAiAgent = aiAgents.some((agent) =>
+    uaLower.includes(String(agent).toLowerCase()),
   );
 
   // Block known AI training / answer synthesis crawlers

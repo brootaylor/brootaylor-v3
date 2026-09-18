@@ -185,7 +185,9 @@ function parseKnownBadEntry(entry) {
 
     const parsedLeft = parseKnownBadEntry(left);
     if (!parsedLeft || parsedLeft.kind !== 'exact') {
-      throw new Error(`integrity entry must be "name@version#integrity": "${trimmed}"`);
+      throw new Error(
+        `integrity entry must be "name@version#integrity": "${trimmed}"`,
+      );
     }
 
     return {
@@ -387,9 +389,14 @@ function scanNpmLock(lock, lockPath, addHit) {
       // We do not treat the application/package being built as a dependency hit.
       if (pkgPath === '') continue;
 
-      const name = typeof meta?.name === 'string' ? meta.name : nameFromPackagePath(pkgPath);
-      const version = typeof meta?.version === 'string' ? meta.version : undefined;
-      const integrity = typeof meta?.integrity === 'string' ? meta.integrity : undefined;
+      const name =
+        typeof meta?.name === 'string'
+          ? meta.name
+          : nameFromPackagePath(pkgPath);
+      const version =
+        typeof meta?.version === 'string' ? meta.version : undefined;
+      const integrity =
+        typeof meta?.integrity === 'string' ? meta.integrity : undefined;
 
       if (!name) continue;
 
@@ -411,8 +418,10 @@ function scanNpmLock(lock, lockPath, addHit) {
     if (!deps || typeof deps !== 'object') return;
 
     for (const [name, meta] of Object.entries(deps)) {
-      const version = typeof meta?.version === 'string' ? meta.version : undefined;
-      const integrity = typeof meta?.integrity === 'string' ? meta.integrity : undefined;
+      const version =
+        typeof meta?.version === 'string' ? meta.version : undefined;
+      const integrity =
+        typeof meta?.integrity === 'string' ? meta.integrity : undefined;
 
       const hit = isKnownBad(name, version, integrity);
       if (hit) {
@@ -488,9 +497,16 @@ function main() {
   ) {
     const summary = 'No known-bad entries configured (nothing to scan)';
     if (AS_JSON) {
-      printJson({ ok: true, reason: 'no-known-bad-entries', summary, hits: [] });
+      printJson({
+        ok: true,
+        reason: 'no-known-bad-entries',
+        summary,
+        hits: [],
+      });
     } else {
-      console.log('ℹ️  No known-bad entries found (.known-bad.locklist empty or missing). Nothing to check.');
+      console.log(
+        'ℹ️  No known-bad entries found (.known-bad.locklist empty or missing). Nothing to check.',
+      );
       netlifySummaryLine(summary);
     }
     process.exit(0);
@@ -523,11 +539,14 @@ function main() {
   }
 
   if (lockfiles.length === 0) {
-    const summary = 'No npm lockfiles found (package-lock.json / npm-shrinkwrap.json)';
+    const summary =
+      'No npm lockfiles found (package-lock.json / npm-shrinkwrap.json)';
     if (AS_JSON) {
       printJson({ ok: true, reason: 'no-lockfiles-found', summary, hits: [] });
     } else {
-      console.log('ℹ️  No npm lockfiles found (package-lock.json / npm-shrinkwrap.json).');
+      console.log(
+        'ℹ️  No npm lockfiles found (package-lock.json / npm-shrinkwrap.json).',
+      );
       netlifySummaryLine(summary);
     }
     process.exit(0);
@@ -555,7 +574,9 @@ function main() {
     } else {
       console.log('⚠️  Suspicious lockfile matches:');
       for (const h of hits) {
-        console.log(` - ${h.key}  in ${h.lockPath}  (${h.path})  [${h.reason}]`);
+        console.log(
+          ` - ${h.key}  in ${h.lockPath}  (${h.path})  [${h.reason}]`,
+        );
         if (EXPLAIN && h.why) {
           for (const line of h.why) {
             console.log(`     ${line}`);
