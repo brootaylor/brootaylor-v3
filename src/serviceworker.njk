@@ -2,6 +2,9 @@
 permalink: '/serviceworker.js'
 eleventyExcludeFromCollections: true
 ---
+{#- This file is a Nunjucks template that Eleventy renders to `/serviceworker.js`.
+    `eleventyExcludeFromCollections: true` keeps it out of Eleventy's page/post
+    collections since it's the site's Service Worker script, not a real page. -#}
 
 /*
  * {{ pkg.name }}
@@ -10,7 +13,10 @@ eleventyExcludeFromCollections: true
  * Copyright (c) {% year %} {{ pkg.author.name }}. Licensed {{ pkg.license }}
  * Last generated: {{ site.dateTimeNow }}
  */
-
+{# `pkg.version` and `site.timeCurrent` are injected at build time. Baking the
+   deploy timestamp into `cacheName` means every deploy gets a brand new set
+   of caches, so `clearOldCaches()` (see below) sweeps away the previous
+   deploy's caches on `activate`. #}
 // Define cache names and version information
 const siteName = '{{ pkg.name }}';
 const siteVersion = 'v{{ pkg.version }}';
@@ -34,7 +40,11 @@ const cacheList = [
 
 // Define the offline page URL
 const offlinePage = '/offline';
-
+{# Builds the list of URLs to pre-cache for offline use: the 5 most recent
+   posts, internal main/footer nav links (excluding ones flagged `document`
+   or `external`), all `page`-tagged pages, and the site's start_url. The
+   `pretty` filter (lib/utils/filters/pretty-url.js) strips `(index).html`
+   so cached URLs match the real permalinks the site actually serves. #}
 // Define pages to be available offline
 // This list is populated dynamically based on your site structure
 const offlinePages = [
@@ -72,7 +82,9 @@ const offlinePages = [
 const staticNonMandatory = [
     '/assets/images/common/logo-social.png'
 ];
-
+{# `main.css`'s `?version=` query string is the same build-time cache-busting
+   pattern as `cacheName` above — it matches the versioned URL the site
+   actually serves, so this SW always fetches/caches the current CSS. #}
 // Define mandatory static assets
 // These assets must be cached for the service worker to complete installation
 const staticMandatory = [
@@ -88,10 +100,10 @@ function updateStaticCache() {
     return caches.open(staticCacheName)
     .then(staticCache => {
         // These items won't block the installation of the Service Worker
-        staticCache.addAll(
-            offlinePages,
-            staticNonMandatory
-        );
+        staticCache.addAll([...offlinePages, ...staticNonMandatory])
+        .catch(error => {
+            console.error('Failed to cache non-mandatory assets:', error);
+        });
         // These items MUST be cached for the Service Worker to complete installation
         return staticCache.addAll(
             staticMandatory
@@ -114,9 +126,12 @@ function cacheClients() {
         }
     })
     .then(() => {
-        caches.open(pagesCacheName)
+        return caches.open(pagesCacheName)
         .then(pagesCache => {
             return pagesCache.addAll(pages);
+        })
+        .catch(error => {
+            console.error('Failed to cache client pages:', error);
         });
     })
 }
@@ -141,15 +156,17 @@ function clearOldCaches() {
  * @param {number} maxItems - The maximum number of items to keep in the cache
  */
 function trimCache(cacheName, maxItems) {
-    caches.open(cacheName)
+    return caches.open(cacheName)
     .then(cache => {
-        cache.keys()
+        return cache.keys()
         .then(keys => {
-            if (keys.length <= maxItems) return; // Early return if no trimming is needed
-            cache.delete(keys[0])
-            .then(() => {
-                trimCache(cacheName, maxItems)
-            });
+            const excess = keys.length - maxItems;
+            if (excess <= 0) return; // Early return if no trimming is needed
+            // cache.keys() returns items in insertion order, so the oldest
+            // `excess` entries are at the start of the array
+            return Promise.all(
+                keys.slice(0, excess).map(key => cache.delete(key))
+            );
         });
     });
 }
@@ -216,6 +233,20 @@ addEventListener('activate', event => {
     );
 });
 
+// Service Worker message event
+addEventListener('message', event => {
+    if (event.data && event.data.command === 'trimCaches') {
+        event.waitUntil(
+            Promise.all([
+                trimCache(pagesCacheName, maxPages),
+                trimCache(imagesCacheName, maxImages)
+            ]).catch(error => {
+                console.error('Failed to trim caches:', error);
+            })
+        );
+    }
+});
+
 // Fetch event listener
 addEventListener('fetch', event => {
     const request = event.request;
@@ -225,10 +256,9 @@ addEventListener('fetch', event => {
         return;
     }
 
-    const retrieveFromCache = caches.match(request);
-
     // For HTML requests, try the network first, fall back to the cache, finally the offline page
-    if (request.headers.get('Accept').includes('text/html')) {
+    if (request.headers.get('Accept')?.includes('text/html')) {
+        const retrieveFromCache = caches.match(request);
         event.respondWith(
             new Promise(resolveWithResponse => {
                 const timer = setTimeout(() => {
@@ -278,7 +308,7 @@ addEventListener('fetch', event => {
             .then(responseFromFetch => {
                 // NETWORK
                 // If the request is for an image, stash a copy of this image in the images cache
-                if (request.url.match(/\.(jpe?g|webp|png|gif|svg|mapbox)/)) {
+                if (request.url.match(/\.(jpe?g|webp|avif|png|gif|svg)/)) {
                     const copy = responseFromFetch.clone();
                     try {
                         addToCache(imagesCacheName, request, copy);
@@ -292,9 +322,15 @@ addEventListener('fetch', event => {
                 console.error(fetchError);
                 // FALLBACK
                 // show an offline placeholder for images
-                if (request.url.match(/\.(jpe?g|webp|png|gif|svg|mapbox)/)) {
+                if (request.url.match(/\.(jpe?g|webp|avif|png|gif|svg)/)) {
                     return new Response('<svg role="img" aria-labelledby="offline-title" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><title id="offline-title">Offline</title><g fill="none" fill-rule="evenodd"><path fill="#3e5156" d="M0 0h400v300H0z"/><text fill="#d5dee0" font-family="Helvetica Neue,Arial,Helvetica,sans-serif" font-size="72" font-weight="bold"><tspan x="93" y="172">Offline</tspan></text></g></svg>', {headers: {'Content-Type': 'image/svg+xml', 'Cache-Control': 'no-store'}});
                 }
+                // No offline fallback for non-image assets (CSS, JS, fonts, etc.) —
+                // `Response.error()` gives `respondWith()` a proper "network error"
+                // Response so the browser treats this as an ordinary failed request,
+                // instead of `undefined` (which `respondWith()` cannot use and
+                // throws "Failed to convert value to 'Response'" for).
+                return Response.error();
             });
         })
     );
