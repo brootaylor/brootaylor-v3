@@ -48,7 +48,7 @@ foot: "
 
 bodyClass: "about"
 
-date: 2026-09-18T12:12:27.631Z
+date: 2026-09-19T13:27:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
@@ -69,9 +69,11 @@ I’m a web developer and UI engineer at heart, though I can turn my hand to vis
 
 Anything that impacts the user experience on the web matters to me. This is where I’m most comfortable and where I’ve naturally ended up specialising. As a result, you’ll mostly find me tinkering around in the “[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel="external"}” &mdash; the somewhat broad and slightly *fuzzy* intersection between design and back-end engineering.
 
+I have experience creating frontend solutions that support design systems and design token architecture, ensuring components are consistent, scalable, and themeable &mdash; without tying developers to any single tech stack. It’s work I really enjoy and would like to do more of. To me, a good design system should be a stable foundation: flexible and tech-agnostic enough to remain useful as technologies come and go.
+
 In short, I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/){rel="external"}, [usable](https://trentwalton.com/2014/03/10/device-agnostic/){rel="external"} and as future-friendly as possible.
 
-I’m fairly quick at picking up new skills and programming languages, and I enjoy problem solving. I’ve been fortunate to work with some really talented, kind, and supportive people over the years, and much of the success I’ve enjoyed in <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them.
+I’m fairly quick at picking up new skills and programming languages, and I enjoy problem solving. I’ve been fortunate to work with some really talented, kind, and supportive people over the years, and much of the success I’ve enjoyed in <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them. You can read some of the [nice things they've said](/projects#projects-testimonials) too.
 
 ### Am I a "[full-stack] developer"?
 
@@ -88,9 +90,7 @@ Chris Coyier's article "[The Great Divide Was Indeed Divisive](https://chriscoyi
   Whatever the answer is, it’s definitely not “ignore, shit on, and downplay the things you don’t know and gatekeep the things you do.”
 {%- endcall %}
 
-### Working with design systems
-
-I have experience creating frontend solutions that support design systems and design token architecture, ensuring components are consistent, scalable, and themeable &mdash; without tying developers to any single tech stack. It’s work I really enjoy and would like to do more of. To me, a good design system should be a stable foundation: flexible and tech-agnostic enough to remain useful as technologies come and go.
+### Skills & toolbox
 
 <details class="full-bleed">
   <summary>Technical skills picked up over the last 20+ years building for the web&hellip;</summary>
@@ -119,34 +119,15 @@ I have experience creating frontend solutions that support design systems and de
 
 ## About this website
 
-This website has been the home of my personal blog for a fair few years. Everything written here represents my opinions and perspectives on various things. It *doesn't* reflect or represent the views of anyone I work for or with.
+This site has been home to my personal blog for a fair few years. Everything written here reflects my own opinions and perspectives &mdash; it *doesn't* represent the views of anyone I work for or with.
 
-I also use it as a platform for experimenting with newer frontend web technologies & techniques &mdash; so there's every chance it may look a little 'wonky' now and then. Please forgive me if something doesn't look quite right or work properly on your screen at the moment.
+I also use it to experiment with newer frontend techniques, so expect the odd rough edge now and then. I wrote about my decision to [redesign & develop it in the open](/writing/2022-02-22/redesigning-in-the-open), which has been equal parts fun and scary for a recovering perfectionist.
 
 I resonate with Ethan when he says, [let a website be a worry stone](https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/){rel="external"}. {.call-out}
 
-If you have any issues, questions or spot any spelling mistakes(!), I'd appreciate it if you could let me know by submitting a [GitHub issue](https://github.com/brootaylor/brootaylor-v3/issues){rel="external"}, or by [emailing me directly](/contact).
+If you spot an issue, a question, or a typo(!), I'd appreciate it if you could let me know by submitting a [GitHub issue](https://github.com/brootaylor/brootaylor-v3/issues){rel="external"}, or by [emailing me directly](/contact).
 
-I've also written about my decision to [redesign & develop my website in the open](/writing/2022-02-22/redesigning-in-the-open) which has both been fun and scary. Not least because I'm a bit of a perfectionist and doing it this way has helped wean me off the need to have things completely polished before showing them.
-
-### &ldquo;Ai&rdquo; crawlers and tracking
-
-Even though it's more than likely [too late & doesn't work anyway](https://blog.jim-nielsen.com/2023/robots-txt/){rel="external"}, I attempted to opt `brootaylor.com` out of its content being used to train AI models. By disallowing known web crawlers used for training AI models in my [<code>robots.txt</code> file](https://brootaylor.com/robots.txt).
-
-I wrote a bit about this initial approach to [opting out of "Ai" crawlers](/writing/2025-01-01/robots-txt) &mdash; but soon realised this wasn't going to work in the slightest. So I decided to try a different approach by [*attempting*] to make it trickier for them to scrape my content.
-
-[I wrote about this](/writing/2025-01-05/ai-bot-blocker) and you're welcome to nick the code and use it on your website if you think it'll work for you.
-
-This all really does feel like a game of whack-a-mole though.
-
-I also added an ["Ai" *'manifesto'* page](/ai) in an attempt to put a stake in the ground &mdash; *(for my website anyhow)* &mdash; and to let folks know that nothing published on this website and on my blog was written by an "Ai".
-
-It's probably worth mentioning that [I don't use any tracking technologies](/privacy#analytics-%26-tracking) &mdash; (*home-grown or third-party*) &mdash; to collect information about what you read or click on this website.
-
----
-
-More information about the technology used to make this website is available in this [<code>humans.txt</code> file](https://brootaylor.com/humans.txt).
-
+I don't use any tracking technologies on this site &mdash; more on that [in my privacy policy](/privacy#analytics-%26-tracking). I've also had a go at [opting AI training crawlers out](/ai) of this site. If you're curious about the tech stack this website is built with, take a look at its [<code>humans.txt</code> file](/humans.txt).
 
 ---
 
