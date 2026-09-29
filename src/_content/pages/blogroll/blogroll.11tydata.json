@@ -379,6 +379,16 @@
       "name": "Sophie Koonin",
       "url": "https://localghost.dev/",
       "description": "Sophie builds fun things out of HTML, CSS and JavaScript, writes blog posts about tech, mental health and things she loves, and gives conference talks on things she's passionate about."
+    },
+    {
+      "name": "Cyd Stumpel",
+      "url": "https://cydstumpel.nl/",
+      "description": "Cyd is a creative developer & teacher from Amsterdam, the Netherlands."
+    },
+    {
+      "name": "Niels Leenheer",
+      "url": "https://nielsleenheer.com/",
+      "description": "Niels is a Dutch web developer and speaker with a passion for web standards and open source. He created HTML5test and WhichBrowser and sits on the Fronteers Conference committee."
     }
   ]
 }
