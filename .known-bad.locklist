@@ -21,12 +21,12 @@
 #   - update LAST-REVIEWED whenever you review or materially change this file
 #   - REVIEW-NOTE is optional and meant for quick human context
 #
-# LAST-REVIEWED: 2026-09-14
-# REVIEW-NOTE: Full audit against live dependency tree; no active matches found. Added the
-# Aug 2026 keyv/cacheable worm entries below since this repo's own tree (via ESLint's
-# flat-cache chain) was one release behind the compromised versions. Checked the Jun/Jul
-# 2026 node-gyp, @redhat-cloud-services, and AsyncAPI incidents against the lockfile;
-# none of those packages are present in this repo.
+# LAST-REVIEWED: 2026-09-29
+# REVIEW-NOTE: Re-audited live dependency tree after the Sep 29 ncu bump; no active matches.
+# Added the Sep 23, 2026 MemTensor/sckit worm and May 2026 node-ipc entries. Completed the
+# keyv/cacheable block from CSA advisory AD-2026-009 (@cacheable/node-cache, @cacheable/net,
+# ecto). Checked the Jun 2026 IronWorm incident (asteroiddao web3 packages, e.g. weavedb-*);
+# not present and unrelated to this stack, so not listed.
 
 
 # --- Core wave (Sep 8–10, 2025) ---
@@ -143,3 +143,26 @@ cacheable-request@13.0.20
 cache-manager@7.2.10
 @cacheable/utils@2.5.1
 @cacheable/memory@2.2.1
+@cacheable/node-cache@3.1.2
+@cacheable/net@2.1.1
+ecto@5.0.1
+
+
+# --- node-ipc compromise (May 14, 2026) ---
+# WHY: Three malicious releases published simultaneously; obfuscated credential stealer
+# exfiltrating via HTTPS and DNS TXT queries.
+# TAGS: supply-chain, stealer, maintainer-compromise
+# REF: incident-2026-node-ipc
+node-ipc@9.1.6
+node-ipc@9.2.3
+node-ipc@12.0.1
+
+
+# --- MemTensor / sckit worm (Sep 23, 2026) ---
+# WHY: Publish token stolen from the project's GitHub Actions release pipeline; Go implant
+# (sckit) harvests npm/PyPI/Hugging Face tokens and self-propagates. 0.1.22/0.1.24 are clean.
+# TAGS: supply-chain, worm, ci-token-theft
+# REF: incident-2026-memtensor-sckit
+@memtensor/memos-cloud-openclaw-plugin@0.1.21
+@memtensor/memos-cloud-openclaw-plugin@0.1.23
+@memtensor/memos-cloud-openclaw-plugin@0.1.25
