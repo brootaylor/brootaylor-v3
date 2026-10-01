@@ -48,7 +48,7 @@ foot: "
 
 bodyClass: "about"
 
-date: 2026-09-19T13:27:27.631Z
+date: 2026-10-01T12:27:27.631Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
@@ -71,7 +71,7 @@ Anything that impacts the user experience on the web matters to me. This is wher
 
 I have experience creating frontend solutions that support design systems and design token architecture, ensuring components are consistent, scalable, and themeable &mdash; without tying developers to any single tech stack. It’s work I really enjoy and would like to do more of. To me, a good design system should be a stable foundation: flexible and tech-agnostic enough to remain useful as technologies come and go.
 
-In short, I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/){rel="external"}, [usable](https://trentwalton.com/2014/03/10/device-agnostic/){rel="external"} and as future-friendly as possible.
+In short, I try my best to build web solutions that are [resilient](https://resilientwebdesign.com/){rel="external"}, [usable](https://trentwalton.com/2014/03/10/device-agnostic/){rel="external"} and as [future-friendly](https://futurefriendlyweb.com/){rel="external"} as possible.
 
 I’m fairly quick at picking up new skills and programming languages, and I enjoy problem solving. I’ve been fortunate to work with some really talented, kind, and supportive people over the years, and much of the success I’ve enjoyed in <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them. You can read some of the [nice things they've said](/projects#projects-testimonials) too.
 

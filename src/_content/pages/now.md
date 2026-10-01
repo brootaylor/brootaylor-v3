@@ -22,7 +22,7 @@ eleventyExcludeFromCollections: false
 
 ## Work
 
-I'm still working, on a contract basis, as a "[**Full Stack**](/about#am-i-a-“%5Bfull-stack%5D-developer”%3F) **Engineer**" for [Admiral Group Plc](/projects/admiral) on their customer facing websites. What was initially a 3 month contract *(started in April 2024)* has been extended a few times. Certainly been grateful for the continuity.
+I'm still working, on a contract basis, as a "[**Full Stack**](/about#am-i-a-full-stack-developer) **Engineer**" for [Admiral Group Plc](/projects/admiral) on their customer facing websites. What was initially a 3 month contract *(started in April 2024)* has been extended a few times. Certainly been grateful for the continuity.
 
 It looks like my contract is due to end just before Christmas 2026. I'll be actively looking for new opportunities *(contract or perm)* that start in the new year.  {.call-out}
 
