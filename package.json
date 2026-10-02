@@ -45,7 +45,7 @@
     "build:styles": "npm run sass:prod",
     "build:scripts": "rollup -c config/rollup.config.mjs",
     "build": "run-s build:styles build:scripts build:files",
-    "deploy:build": "cross-env NODE_ENV=production npm run build && npm run audit:lighthouse:build",
+    "deploy:build": "cross-env NODE_ENV=production npm run build",
     "postbuild": "npm run postcss",
     "prenetlify-build": "npm run scan:locks:review-check && npm run scan:locks:ci && echo '✅ Netlify prebuild: lockfile scan passed'",
     "netlify-build": "ntl build",

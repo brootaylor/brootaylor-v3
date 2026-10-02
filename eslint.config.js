@@ -38,14 +38,16 @@ export default [
     },
   },
 
-  // Build-time / Node-context files (Eleventy config, data files, helpers).
-  // These run under Node, so they get Node globals like `process`/`__dirname`.
+  // Build-time / Node-context files (Eleventy config, data files, helpers,
+  // local Netlify build plugins). These run under Node, so they get Node
+  // globals like `process`/`__dirname`.
   {
     files: [
       '.eleventy.js',
       'check-locklist-review.mjs',
       'scan-locks.mjs',
       'lib/**/*.js',
+      'netlify/plugins/**/*.js',
       'src/_data/**/*.js',
       'src/_content/**/*.11tydata.js',
     ],

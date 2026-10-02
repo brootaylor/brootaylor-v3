@@ -4,13 +4,15 @@
 //
 // Purpose:
 //   Audit the homepage with Lighthouse and warn when any category score
-//   drops below its threshold. Runs as part of `deploy:build`, so it behaves
-//   the same locally (`npm run netlify-build`) and on Netlify.
+//   drops below its threshold. During builds it's run by the local Netlify
+//   plugin (`netlify/plugins/lighthouse`), which also sends the scores to the
+//   Netlify UI - so it behaves the same locally (`npm run netlify-build`) and on Netlify.
 //
 // Usage:
 //   node config/lighthouse.mjs           Audit the local build in `dist/`
 //   node config/lighthouse.mjs --live    Audit https://brootaylor.com instead
 //   node config/lighthouse.mjs --view    Also open the HTML report when done
+//   import { runAudit } from './lighthouse.mjs'   (used by the Netlify plugin)
 //
 // Behavior:
 //   - informational only - never fails the build
@@ -26,6 +28,7 @@ import { readFile, stat, mkdir, writeFile } from 'node:fs/promises';
 import { join, extname, resolve, sep } from 'node:path';
 import { gzipSync } from 'node:zlib';
 import { spawn } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 import {
   Browser,
   install,
@@ -72,10 +75,6 @@ const contentTypes = {
 
 // Text formats Netlify compresses
 const compressible = /^(text\/|application\/(json|xml|manifest)|image\/svg)/;
-
-const args = process.argv.slice(2);
-const isLive = args.includes('--live');
-const shouldView = args.includes('--view');
 
 /**
  * Download the latest stable Chrome (if not already cached) and return its executable path.
@@ -164,7 +163,20 @@ function serveDist() {
   });
 }
 
-async function main() {
+/**
+ * Run the Lighthouse audit, log the scores and save the HTML report.
+ * Throws if the audit can't run - callers decide how to handle that (never by failing the build).
+ *
+ * Returns:
+ *   - label: what was audited (`dist/` or the live URL)
+ *   - version: Lighthouse version
+ *   - categories: [{ id, title, score }] (score 0-1)
+ *   - failures: titles of categories below their threshold
+ *   - report: HTML report string
+ *   - reportPath: where the HTML report was saved
+ *   - details: { formFactor, locale } settings used for the audit
+ */
+export async function runAudit({ isLive = false } = {}) {
   let server;
   let chrome;
   try {
@@ -187,7 +199,8 @@ async function main() {
       ],
     });
 
-    console.log(`🔦 Lighthouse: auditing ${isLive ? liveUrl : 'dist/'}...`);
+    const label = isLive ? liveUrl : 'dist/';
+    console.log(`🔦 Lighthouse: auditing ${label}...`);
     const result = await lighthouse(url, {
       port: chrome.port,
       output: 'html',
@@ -205,10 +218,13 @@ async function main() {
     await writeFile(reportPath, result.report);
 
     // Check scores against thresholds
+    const categories = [];
     const failures = [];
-    console.log(`Lighthouse ${result.lhr.lighthouseVersion} scores:`);
+    const version = result.lhr.lighthouseVersion;
+    console.log(`Lighthouse ${version} scores:`);
     for (const [id, minScore] of Object.entries(thresholds)) {
       const { title, score } = result.lhr.categories[id];
+      categories.push({ id, title, score });
       const passed = score >= minScore;
       if (!passed) failures.push(title);
       console.log(
@@ -217,11 +233,6 @@ async function main() {
     }
     console.log(`📄 Report: ${reportPath}`);
 
-    if (shouldView) {
-      const opener = process.platform === 'darwin' ? 'open' : 'xdg-open';
-      spawn(opener, [reportPath], { detached: true, stdio: 'ignore' }).unref();
-    }
-
     if (failures.length) {
       console.warn(
         `⚠️  Lighthouse: below threshold - ${failures.join(', ')} (see report; build continues)`,
@@ -229,16 +240,45 @@ async function main() {
     } else {
       console.log('✅ Lighthouse: all scores meet their thresholds');
     }
+
+    const { formFactor, locale } = result.lhr.configSettings;
+    return {
+      label,
+      version,
+      categories,
+      failures,
+      report: result.report,
+      reportPath,
+      details: { formFactor, locale },
+    };
   } finally {
     if (chrome) chrome.kill();
     if (server) server.close();
   }
 }
 
-// Never fail the build - Lighthouse results are informational
-main().catch((err) => {
-  console.warn(
-    '⚠️  Lighthouse: audit could not run (build continues):',
-    err.message,
-  );
-});
+/**
+ * Command line usage (`node config/lighthouse.mjs [--live] [--view]`).
+ * Skipped when this file is imported (e.g. by the Netlify plugin).
+ */
+const isCommandLine =
+  process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+
+if (isCommandLine) {
+  const args = process.argv.slice(2);
+
+  runAudit({ isLive: args.includes('--live') })
+    .then(({ reportPath }) => {
+      if (args.includes('--view')) {
+        const opener = process.platform === 'darwin' ? 'open' : 'xdg-open';
+        spawn(opener, [reportPath], { detached: true, stdio: 'ignore' }).unref();
+      }
+    })
+    // Never fail the build - Lighthouse results are informational
+    .catch((err) => {
+      console.warn(
+        '⚠️  Lighthouse: audit could not run (build continues):',
+        err.message,
+      );
+    });
+}

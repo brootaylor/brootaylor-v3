@@ -50,6 +50,16 @@
 
 
 ##############################
+# Netlify plugins
+##############################
+
+# Local Lighthouse plugin - audits `dist/` after the build and shows the scores in the Netlify UI.
+# Informational only: never fails the build. (See `netlify/plugins/lighthouse/index.js`)
+[[plugins]]
+  package = "/netlify/plugins/lighthouse"
+
+
+##############################
 # Headers
 ##############################
 

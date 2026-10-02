@@ -83,6 +83,8 @@ brootaylor.com
 │
 ├── netlify
 │   ├── edge-functions             # Netlify Edge functions (run on Deno, not Node — see deno.lock)
+│   ├── plugins
+│   │   ├── lighthouse             # Local Netlify build plugin - Lighthouse scores in the Netlify UI (never fails the build)
 │
 ├── src
 │   ├── _content                   # Content (Markdown)
@@ -287,7 +289,7 @@ npm run audit:browser-support
 # Runs the "pa11y" accessibility checks against the declared URL
 npm run audit:accessibility
 
-# Runs a "lighthouse" report against the local build (`dist/`) - also runs automatically as part of `deploy:build`
+# Runs a "lighthouse" report against the local build (`dist/`) - also runs automatically on Netlify builds (and `npm run netlify-build`) via the local Netlify plugin
 npm run audit:lighthouse:build
 
 # Runs a "lighthouse" report against the live site and opens it in the browser
