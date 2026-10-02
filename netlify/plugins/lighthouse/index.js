@@ -38,6 +38,7 @@ export const onPostBuild = async ({ utils }) => {
     });
 
     utils.status.show({
+      title: 'Lighthouse scores',
       summary: `Summary for path '${label}': ${shortSummary}`,
       extraData: [
         { path: label, summary: scores, details, report: minifiedReport },
@@ -50,7 +51,8 @@ export const onPostBuild = async ({ utils }) => {
       err.message,
     );
     utils.status.show({
-      summary: `Lighthouse audit could not run: ${err.message}`,
+      title: 'Lighthouse audit could not run',
+      summary: `${err.message} (build continues)`,
     });
   }
 };
