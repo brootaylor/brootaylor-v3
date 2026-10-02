@@ -38,6 +38,9 @@ const cacheList = [
     imagesCacheName
 ];
 
+// Used as a fallback when `request.destination` isn't set
+const imagePattern = /\.(jpe?g|webp|avif|png|gif|svg)$/i;
+
 // Define the offline page URL
 const offlinePage = '/offline';
 {# Builds the list of URLs to pre-cache for offline use: the 5 most recent
@@ -133,7 +136,7 @@ function cacheClients() {
         .catch(error => {
             console.error('Failed to cache client pages:', error);
         });
-    })
+    });
 }
 
 /**
@@ -154,6 +157,7 @@ function clearOldCaches() {
  * Trims the cache to the specified maximum number of items
  * @param {string} cacheName - The name of the cache to trim
  * @param {number} maxItems - The maximum number of items to keep in the cache
+ * @returns {Promise} A promise that resolves when trimming is complete
  */
 function trimCache(cacheName, maxItems) {
     return caches.open(cacheName)
@@ -176,42 +180,40 @@ function trimCache(cacheName, maxItems) {
  * @param {string} cacheName - The name of the cache to add to
  * @param {Request} request - The request object
  * @param {Response} response - The response object
+ * @returns {Promise} A promise that resolves when the item is cached and the cache trimmed
  */
 function addToCache(cacheName, request, response) {
-    caches.open(cacheName)
+    return caches.open(cacheName)
     .then(cache => {
-        cache.put(request, response);
-        trimCache(cacheName, cacheName === imagesCacheName ? maxImages : maxPages);
+        return cache.put(request, response);
+    })
+    .then(() => {
+        return trimCache(cacheName, cacheName === imagesCacheName ? maxImages : maxPages);
     });
 }
-
-// Flag to track if the install failure message has been shown
-let isInstallFailureMessageShown = false;
 
 // Service Worker install event
 addEventListener('install', event => {
     event.waitUntil(
         updateStaticCache()
         .then(() => {
-            return cacheClients()
+            return cacheClients();
         })
         .then(() => {
             return self.skipWaiting();
         })
         .catch(error => {
             console.error('Service Worker installation failed:', error);
-            // Show user-friendly message on installation failure
-            if (!isInstallFailureMessageShown) {
-                self.clients.matchAll().then(clients => {
-                    clients.forEach(client => {
-                        client.postMessage({
-                            type: 'INSTALL_FAILED',
-                            message: 'We\'re having trouble setting up offline functionality. Some features may not work offline.'
-                        });
+            // Let any open pages know, so they can show a user-friendly message
+            // (see the `message` listener in `components/chrome/scripts/scripts.njk`)
+            self.clients.matchAll({ includeUncontrolled: true }).then(clients => {
+                clients.forEach(client => {
+                    client.postMessage({
+                        type: 'installFailed',
+                        message: 'We\'re having trouble setting up offline functionality. Some features may not work offline.'
                     });
                 });
-                isInstallFailureMessageShown = true;
-            }
+            });
             throw error; // Rethrow to prevent installation
         })
     );
@@ -250,14 +252,24 @@ addEventListener('message', event => {
 // Fetch event listener
 addEventListener('fetch', event => {
     const request = event.request;
+    const url = new URL(request.url);
 
     // Ignore non-GET requests
     if (request.method !== 'GET') {
         return;
     }
 
+    // Ignore cross-origin requests (CDNs, analytics, embeds etc.) and let the
+    // browser handle them as normal. Their responses are usually "opaque",
+    // which can't be checked for errors and use up a lot of storage quota.
+    if (url.origin !== location.origin) {
+        return;
+    }
+
+    const isImage = request.destination === 'image' || imagePattern.test(url.pathname);
+
     // For HTML requests, try the network first, fall back to the cache, finally the offline page
-    if (request.headers.get('Accept')?.includes('text/html')) {
+    if (request.mode === 'navigate' || request.headers.get('Accept')?.includes('text/html')) {
         const retrieveFromCache = caches.match(request);
 
         // Reuse the navigation preload fetch the browser already started (see the
@@ -274,6 +286,25 @@ addEventListener('fetch', event => {
             return responseFromPreload || fetch(request);
         });
 
+        // Stash a copy of successful pages in the pages cache. Passing this to
+        // `waitUntil()` keeps the Service Worker alive until the write is done,
+        // even if the page was already answered from the cache (time out).
+        event.waitUntil(
+            networkResponse
+            .then(responseFromFetch => {
+                // Only cache successful responses (no 404s, 500s etc.)
+                if (responseFromFetch.ok) {
+                    return addToCache(pagesCacheName, request, responseFromFetch.clone())
+                    .catch(error => {
+                        console.error('Failed to cache page:', error);
+                    });
+                }
+            })
+            .catch(() => {
+                // Network failures are handled by `respondWith()` below
+            })
+        );
+
         event.respondWith(
             new Promise(resolveWithResponse => {
                 const timer = setTimeout(() => {
@@ -283,19 +314,13 @@ addEventListener('fetch', event => {
                         if (responseFromCache) {
                             resolveWithResponse(responseFromCache);
                         }
-                    })
+                    });
                 }, timeout);
 
                 networkResponse
                 .then(responseFromFetch => {
                     // NETWORK
                     clearTimeout(timer);
-                    const copy = responseFromFetch.clone();
-                    try {
-                        addToCache(pagesCacheName, request, copy);
-                    } catch (error) {
-                        console.error(error);
-                    }
                     resolveWithResponse(responseFromFetch);
                 })
                 .catch(fetchError => {
@@ -310,7 +335,7 @@ addEventListener('fetch', event => {
                     });
                 });
             })
-        )
+        );
         return;
     }
 
@@ -323,13 +348,13 @@ addEventListener('fetch', event => {
             .then(responseFromFetch => {
                 // NETWORK
                 // If the request is for an image, stash a copy of this image in the images cache
-                if (request.url.match(/\.(jpe?g|webp|avif|png|gif|svg)/)) {
-                    const copy = responseFromFetch.clone();
-                    try {
-                        addToCache(imagesCacheName, request, copy);
-                    } catch (error) {
-                        console.error(error);
-                    }
+                if (isImage && responseFromFetch.ok) {
+                    event.waitUntil(
+                        addToCache(imagesCacheName, request, responseFromFetch.clone())
+                        .catch(error => {
+                            console.error('Failed to cache image:', error);
+                        })
+                    );
                 }
                 return responseFromFetch;
             })
@@ -337,7 +362,7 @@ addEventListener('fetch', event => {
                 console.error(fetchError);
                 // FALLBACK
                 // show an offline placeholder for images
-                if (request.url.match(/\.(jpe?g|webp|avif|png|gif|svg)/)) {
+                if (isImage) {
                     return new Response('<svg role="img" aria-labelledby="offline-title" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><title id="offline-title">Offline</title><g fill="none" fill-rule="evenodd"><path fill="#3e5156" d="M0 0h400v300H0z"/><text fill="#d5dee0" font-family="Helvetica Neue,Arial,Helvetica,sans-serif" font-size="72" font-weight="bold"><tspan x="93" y="172">Offline</tspan></text></g></svg>', {headers: {'Content-Type': 'image/svg+xml', 'Cache-Control': 'no-store'}});
                 }
                 // No offline fallback for non-image assets (CSS, JS, fonts, etc.) —

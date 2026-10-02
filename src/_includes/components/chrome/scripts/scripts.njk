@@ -63,6 +63,12 @@
 	<script>
 		if (navigator.serviceWorker) {
 			navigator.serviceWorker.register('/serviceworker.js');
+			// Sent by the Service Worker if it couldn't set up offline functionality
+			navigator.serviceWorker.addEventListener('message', event => {
+				if (event.data && event.data.type === 'installFailed') {
+					console.warn(event.data.message);
+				}
+			});
 			if (navigator.serviceWorker.controller) {
 				window.addEventListener('load', () => {
 					navigator.serviceWorker.controller.postMessage({

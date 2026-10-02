@@ -53,7 +53,7 @@
     "netlify-dev:debug": "ntl dev --debug",
     "netlify-dev:live": "ntl dev --live",
     "netlify-deploy:draft": "ntl deploy --build",
-    "netlify-deploy:production": "ntl deploy --prod --build",
+    "netlify-deploy:production": "ntl deploy --prod",
     "audit:browser-support": "npx browserslist && echo '🔆 Modify .browserslistrc if and when browser support changes. 🔆'",
     "audit:accessibility": "npx pa11y-ci --config ./config/pa11y.json > ./audits/accessibility_report/brootaylor-accessibility-results.md",
     "audit:lighthouse:build": "node config/lighthouse.mjs",
