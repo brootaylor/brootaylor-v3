@@ -1,5 +1,6 @@
 # Performance results
 
-Performance (Lighthouse) results report is generated in this directory.
+Performance (Lighthouse) results reports are generated in this directory.
 
-To generate the report, run `npm run audit:performance`
+* `brootaylor-build-*.html` - the local build (`dist/`). Generated on every `deploy:build`, or run `npm run audit:lighthouse:build`
+* `brootaylor-live-*.html` - the live site. Run `npm run audit:lighthouse:live`

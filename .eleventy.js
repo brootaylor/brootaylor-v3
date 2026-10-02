@@ -1,6 +1,7 @@
 // Environment config
 import { config } from 'dotenv';
-config();
+// `quiet: true` stops dotenv (v17+) logging an "injected env" line on every build
+config({ quiet: true });
 
 // Local server (Eleventy Dev Server)
 import eleventyServer from './config/eleventy-server.config.js';

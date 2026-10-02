@@ -15,6 +15,11 @@ const dist = './dist/'
 // Data...
 import site from '../src/_data/site.js'
 
+// Logged once here rather than in `primaryPlugins()`, which runs for every config
+if (site.environment === 'production') {
+  console.log('Production environment config - minifying JS')
+}
+
 /**
  * Main script plugin function (rules / logic)
  */
@@ -31,7 +36,6 @@ function primaryPlugins() {
    * "environment" declared in _data/site.js
    */
   if (site.environment === 'production') {
-    console.log('Production environment config - minifying JS')
     plugins.push(
       // JS minification
       terser()

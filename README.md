@@ -16,7 +16,7 @@ It's deployed by and hosted with [Netlify](https://www.netlify.com/).
 ## Features
 
 * 🌶 [Progressively enhanced](https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement), semantic and accessible
-* 🚀 [Performance budgeting](https://github.com/brootaylor/brootaylor-v3/blob/main/config/performance-budget.json)
+* 🚀 [Lighthouse score thresholds checked on every build](https://github.com/brootaylor/brootaylor-v3/blob/main/config/lighthouse.mjs)
 * 🌐 [Browser support config](https://github.com/brootaylor/brootaylor-v3/blob/main/.browserslistrc)
 * ✅ [Accessibility test runner](https://github.com/pa11y/pa11y-ci)
 * 🌈 [Sass](https://sass-lang.com/) powered CSS system using the [Dart Sass implementation](https://sass-lang.com/dart-sass) - (utilising modern [custom CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) and methods)
@@ -71,7 +71,7 @@ brootaylor.com
 ├── config
 │   ├── eleventy-server.config.js  # Eleventy Dev Server configuration
 │   ├── pa11y.json                 # Accessibility config
-│   ├── performance-budget.json    # Lighthouse performance budget
+│   ├── lighthouse.mjs             # Lighthouse audit (build `dist/` or live site) with score thresholds
 │   ├── postcss.config.js          # PostCSS converts modern CSS into something most browsers can understand
 │   ├── rollup.config.mjs          # Rollup JS bundling configuration
 │
@@ -287,8 +287,11 @@ npm run audit:browser-support
 # Runs the "pa11y" accessibility checks against the declared URL
 npm run audit:accessibility
 
-# Runs a "lighthouse" performance report
-npm run audit:performance
+# Runs a "lighthouse" report against the local build (`dist/`) - also runs automatically as part of `deploy:build`
+npm run audit:lighthouse:build
+
+# Runs a "lighthouse" report against the live site and opens it in the browser
+npm run audit:lighthouse:live
 ```
 
 ---
