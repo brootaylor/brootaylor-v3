@@ -45,20 +45,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const ROOT = process.cwd();
-const LIST_FILES = ['.known-bad.locklist', '.known-bad.locklist.local'];
+const root = process.cwd();
+const listFiles = ['.known-bad.locklist', '.known-bad.locklist.local'];
 
 // CLI flags.
 // --json    => machine-readable output
 // --explain => include WHY/REF/TAGS/POLICY metadata for matches
-const ARGS = new Set(process.argv.slice(2));
-const AS_JSON = ARGS.has('--json');
-const EXPLAIN = ARGS.has('--explain');
+const args = new Set(process.argv.slice(2));
+const asJson = args.has('--json');
+const explain = args.has('--explain');
 
 // Directories that should not be traversed while searching for lockfiles.
 // These are either generated output, caches, or places where recursive
 // scanning would be wasteful/noisy.
-const IGNORES = new Set([
+const ignores = new Set([
   'node_modules',
   '.git',
   'dist',
@@ -76,27 +76,27 @@ const IGNORES = new Set([
 
 // In-memory registries built from the denylist files.
 //
-// KNOWN_BAD_EXACT:
+// knownBadExact:
 //   Exact package/version matches, e.g. "axios@1.2.3"
 //
-// KNOWN_BAD_ANYVER:
+// knownBadAnyVer:
 //   Fail-closed package name blocks, e.g. "axios" or "@scope/pkg"
 //
-// KNOWN_BAD_INTEGRITY:
+// knownBadIntegrity:
 //   Exact package/version/artifact matches, e.g.
 //   "axios@1.2.3#sha512-..."
 //
-// WHY:
+// whyNotes:
 //   Optional structured metadata captured from nearby comment blocks.
 //   key -> array of strings like ["WHY: ...", "REF: ..."]
-const KNOWN_BAD_EXACT = new Set();
-const KNOWN_BAD_ANYVER = new Set();
-const KNOWN_BAD_INTEGRITY = new Set();
-const WHY = new Map();
+const knownBadExact = new Set();
+const knownBadAnyVer = new Set();
+const knownBadIntegrity = new Set();
+const whyNotes = new Map();
 
 // Configuration errors found while parsing the denylist.
 // We collect them all first so a single run can report every bad line.
-const CONFIG_ERRORS = [];
+const configErrors = [];
 
 /**
  * Emit pretty JSON for CI or machine parsing.
@@ -118,7 +118,7 @@ function netlifySummaryLine(text) {
  * Relative paths are easier to read in CI logs and JSON output.
  */
 function rel(p) {
-  return path.relative(ROOT, p);
+  return path.relative(root, p);
 }
 
 /**
@@ -150,7 +150,7 @@ function attachWhy(key, commentBlock) {
     );
   });
 
-  if (meaningful.length) WHY.set(key, meaningful);
+  if (meaningful.length) whyNotes.set(key, meaningful);
 }
 
 /**
@@ -239,8 +239,8 @@ function parseKnownBadEntry(entry) {
  *   - malformed entries are collected as configuration errors
  */
 function loadKnownBadLists() {
-  for (const fname of LIST_FILES) {
-    const fullPath = path.join(ROOT, fname);
+  for (const fname of listFiles) {
+    const fullPath = path.join(root, fname);
     if (!fs.existsSync(fullPath)) continue;
 
     const lines = fs.readFileSync(fullPath, 'utf8').split(/\r?\n/);
@@ -268,16 +268,19 @@ function loadKnownBadLists() {
         if (!parsed) continue;
 
         if (parsed.kind === 'any') {
-          KNOWN_BAD_ANYVER.add(parsed.key);
+          knownBadAnyVer.add(parsed.key);
         } else if (parsed.kind === 'exact') {
-          KNOWN_BAD_EXACT.add(parsed.key);
+          knownBadExact.add(parsed.key);
         } else if (parsed.kind === 'integrity') {
-          KNOWN_BAD_INTEGRITY.add(parsed.key);
+          knownBadIntegrity.add(parsed.key);
         }
 
         attachWhy(parsed.key, commentBlock);
       } catch (error) {
-        CONFIG_ERRORS.push(`${fname}:${i + 1}: ${error.message}`);
+        configErrors.push({
+          file: fname,
+          message: `${fname}:${i + 1}: ${error.message}`,
+        });
       }
     }
   }
@@ -293,7 +296,7 @@ function* walk(dir) {
   const dirents = fs.readdirSync(dir, { withFileTypes: true });
 
   for (const d of dirents) {
-    if (IGNORES.has(d.name)) continue;
+    if (ignores.has(d.name)) continue;
 
     const fullPath = path.join(dir, d.name);
 
@@ -343,7 +346,7 @@ function isKnownBad(name, version, integrity) {
 
   // A package-level fail-closed block always wins, even if we do not know
   // the exact version.
-  if (KNOWN_BAD_ANYVER.has(name)) {
+  if (knownBadAnyVer.has(name)) {
     return { reason: 'any-version-block', key: name };
   }
 
@@ -351,14 +354,14 @@ function isKnownBad(name, version, integrity) {
   if (!version) return null;
 
   const exactKey = `${name}@${version}`;
-  if (KNOWN_BAD_EXACT.has(exactKey)) {
+  if (knownBadExact.has(exactKey)) {
     return { reason: 'exact-version-block', key: exactKey };
   }
 
   const normalizedIntegrity = normalizeIntegrity(integrity);
   if (normalizedIntegrity) {
     const integrityKey = `${exactKey}#${normalizedIntegrity}`;
-    if (KNOWN_BAD_INTEGRITY.has(integrityKey)) {
+    if (knownBadIntegrity.has(integrityKey)) {
       return { reason: 'integrity-block', key: integrityKey };
     }
   }
@@ -445,7 +448,7 @@ function main() {
   // This is intentionally explicit and visible in output.
   if (process.env.BYPASS_LOCK_SCAN === '1') {
     const summary = 'Lockfile scan skipped (BYPASS_LOCK_SCAN=1)';
-    if (AS_JSON) {
+    if (asJson) {
       printJson({
         ok: true,
         skipped: true,
@@ -463,17 +466,17 @@ function main() {
 
   // Treat denylist parse errors as fatal. A security denylist that cannot be
   // parsed reliably should not silently degrade into partial protection.
-  if (CONFIG_ERRORS.length > 0) {
-    const summary = `Known-bad list parse FAILED (${CONFIG_ERRORS.length} error${CONFIG_ERRORS.length === 1 ? '' : 's'})`;
-    const hits = CONFIG_ERRORS.map((msg) => ({
-      lockPath: '.known-bad.locklist',
+  if (configErrors.length > 0) {
+    const summary = `Known-bad list parse FAILED (${configErrors.length} error${configErrors.length === 1 ? '' : 's'})`;
+    const hits = configErrors.map(({ file, message }) => ({
+      lockPath: file,
       key: 'INVALID_LOCKLIST_ENTRY',
       path: '.',
       reason: 'known-bad-list-parse-error',
-      why: [msg],
+      why: [message],
     }));
 
-    if (AS_JSON) {
+    if (asJson) {
       printJson({ ok: false, summary, hits });
     } else {
       console.log('⚠️  Invalid known-bad list entries:');
@@ -491,12 +494,12 @@ function main() {
   // A missing or empty denylist is not a scan failure, but it is worth
   // reporting clearly because the scan has nothing meaningful to enforce.
   if (
-    KNOWN_BAD_EXACT.size === 0 &&
-    KNOWN_BAD_ANYVER.size === 0 &&
-    KNOWN_BAD_INTEGRITY.size === 0
+    knownBadExact.size === 0 &&
+    knownBadAnyVer.size === 0 &&
+    knownBadIntegrity.size === 0
   ) {
     const summary = 'No known-bad entries configured (nothing to scan)';
-    if (AS_JSON) {
+    if (asJson) {
       printJson({
         ok: true,
         reason: 'no-known-bad-entries',
@@ -513,7 +516,7 @@ function main() {
   }
 
   // Gather lockfiles deterministically so repeated runs produce stable ordering.
-  const lockfiles = Array.from(walk(ROOT)).sort();
+  const lockfiles = Array.from(walk(root)).sort();
 
   const hits = [];
   const seen = new Set();
@@ -534,14 +537,14 @@ function main() {
       key,
       path: where || '.',
       reason,
-      why: WHY.get(key) || null,
+      why: whyNotes.get(key) || null,
     });
   }
 
   if (lockfiles.length === 0) {
     const summary =
       'No npm lockfiles found (package-lock.json / npm-shrinkwrap.json)';
-    if (AS_JSON) {
+    if (asJson) {
       printJson({ ok: true, reason: 'no-lockfiles-found', summary, hits: [] });
     } else {
       console.log(
@@ -569,7 +572,7 @@ function main() {
   if (hits.length > 0) {
     const summary = `Lockfile scan FAILED (${hits.length} match${hits.length === 1 ? '' : 'es'})`;
 
-    if (AS_JSON) {
+    if (asJson) {
       printJson({ ok: false, summary, hits });
     } else {
       console.log('⚠️  Suspicious lockfile matches:');
@@ -577,7 +580,7 @@ function main() {
         console.log(
           ` - ${h.key}  in ${h.lockPath}  (${h.path})  [${h.reason}]`,
         );
-        if (EXPLAIN && h.why) {
+        if (explain && h.why) {
           for (const line of h.why) {
             console.log(`     ${line}`);
           }
@@ -589,7 +592,7 @@ function main() {
   }
 
   const summary = 'Lockfile scan passed (no known-bad matches)';
-  if (AS_JSON) {
+  if (asJson) {
     printJson({ ok: true, summary, hits: [] });
   } else {
     console.log('✅ No matches to the known-bad list in any detected lockfile');

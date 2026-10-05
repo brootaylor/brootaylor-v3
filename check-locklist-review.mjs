@@ -16,8 +16,8 @@
 
 import fs from 'node:fs';
 
-const MAX_DAYS = 7;
-const FILE = '.known-bad.locklist';
+const maxDays = 7;
+const file = '.known-bad.locklist';
 
 /**
  * Parse a YYYY-MM-DD string as a UTC calendar date and validate it strictly.
@@ -50,19 +50,19 @@ function parseIsoDateUtc(dateStr) {
   return roundTrip === dateStr ? ms : null;
 }
 
-if (!fs.existsSync(FILE)) {
-  console.warn(`⚠️  ${FILE} not found — skipping review-age check`);
+if (!fs.existsSync(file)) {
+  console.warn(`⚠️  ${file} not found — skipping review-age check`);
   process.exit(0);
 }
 
-const text = fs.readFileSync(FILE, 'utf8');
+const text = fs.readFileSync(file, 'utf8');
 
 // Find the metadata line anywhere in the file.
 // The comment marker is required so the field stays valid inside the locklist.
 const match = text.match(/^\s*#\s*LAST-REVIEWED:\s*(\d{4}-\d{2}-\d{2})\s*$/m);
 
 if (!match) {
-  console.warn(`⚠️  Missing "# LAST-REVIEWED: YYYY-MM-DD" in ${FILE}`);
+  console.warn(`⚠️  Missing "# LAST-REVIEWED: YYYY-MM-DD" in ${file}`);
   process.exit(0);
 }
 
@@ -70,7 +70,7 @@ const dateStr = match[1];
 const reviewedMs = parseIsoDateUtc(dateStr);
 
 if (reviewedMs === null) {
-  console.warn(`⚠️  Invalid LAST-REVIEWED date in ${FILE}: ${dateStr}`);
+  console.warn(`⚠️  Invalid LAST-REVIEWED date in ${file}: ${dateStr}`);
   process.exit(0);
 }
 
@@ -88,15 +88,15 @@ const ageDays = Math.floor((todayUtcMs - reviewedMs) / 86400000);
 // A future review date is probably a typo and should be surfaced clearly.
 if (ageDays < 0) {
   console.warn(
-    `⚠️  LAST-REVIEWED in ${FILE} is in the future (${dateStr}). Please correct it.`,
+    `⚠️  LAST-REVIEWED in ${file} is in the future (${dateStr}). Please correct it.`,
   );
   process.exit(0);
 }
 
-if (ageDays > MAX_DAYS) {
+if (ageDays > maxDays) {
   console.warn(
     `NETLIFY NOTICE: Locklist review is stale (${ageDays} days old).\n` +
-      `Please review and update LAST-REVIEWED in ${FILE}.`,
+      `Please review and update LAST-REVIEWED in ${file}.`,
   );
 } else {
   console.log(`ℹ️  Locklist review OK (${ageDays} days old).`);
