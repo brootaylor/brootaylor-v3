@@ -1,0 +1,71 @@
+{#
+	CV component
+	=======================
+	Macros that render the content in `_data/cv.js` for the `/cv` page. Imported in `_content/pages/cv.md` like so:
+	{% from "components/units/cv/cv.njk" import cvRoles, cvEarlierRoles, cvSkills %}
+
+	WHY MACROS (rather than includes)? They take the data as an argument, so nothing here depends on a global variable
+	name, and each piece can be dropped anywhere in the markdown.
+
+	WHY NO INDENTATION / BLANK LINES IN THE MACROS' OUTPUT? The page is markdown, which is processed *after* Nunjucks.
+	An indented line following a blank line gets treated as a code block, and a blank line ends an HTML block early.
+	The `-` whitespace control (eg. `{%- ... %}`) keeps the output as one tight block of HTML. If you tidy up
+	the layout of this file, check `/cv` still renders properly (ie. no `<pre><code>` blocks in the output).
+
+	Styles for these classes are in `_cv.scss`. A few (eg. `cv__title`, `cv__tech`) have no styles of their own,
+	they're just hooks to make the markup readable and easier to target later.
+#}
+
+{#
+	Current and recent roles, each with highlights and the tech used.
+
+	WHY AN ORDERED LIST? The roles are a sequence (newest first), so an `ol` / `li` describes them accurately. A screen reader
+	announces "list, 4 items", and unstyled it reads as a numbered timeline. Each role isn't a self-contained piece of content
+	(ie. an `article`) as it only makes sense as part of the whole CV, and a `div` would say nothing at all.
+	Using `role="list"` with `.no-list`, as per the rest of the site, so assistive technologies still announce it as a list.
+#}
+{% macro cvRoles(roles) -%}
+<ol class="cv__roles | no-list | flow" role="list">
+{%- for role in roles %}
+<li class="cv__role | flow">
+<h3 class="cv__title">{{ role.title }}, <span class="cv__organisation">{{ role.organisation }}</span></h3>
+{#- `datetime` values are ISO year-months (eg. 2024-04). A role without an `end` is current, so says "Present" #}
+<p class="cv__meta"><small><time datetime="{{ role.start }}">{{ role.startLabel }}</time> &ndash; {% if role.end %}<time datetime="{{ role.end }}">{{ role.endLabel }}</time>{% else %}Present{% endif %} <i aria-hidden="true">&#8275;</i> {{ role.type }}</small></p>
+{#- Optional. Used when dates alone would be misleading (eg. contracts that weren't back-to-back) #}
+{%- if role.note %}
+<p class="cv__note"><small><em>{{ role.note }}</em></small></p>
+{%- endif %}
+<ul>
+{%- for highlight in role.highlights %}
+<li>{{ highlight }}</li>
+{%- endfor %}
+</ul>
+<p class="cv__tech"><small><strong>Tech:</strong> {{ role.tech | join(', ') }}.</small></p>
+</li>
+{%- endfor %}
+</ol>
+{%- endmacro %}
+
+{# Earlier roles. Kept brief (no highlights) as they're less relevant now, but still part of the story #}
+{% macro cvEarlierRoles(earlierRoles) -%}
+{#- Using `role="list"` with `.no-list`, as per the rest of the site, so assistive technologies still announce it as a list #}
+<ul class="cv__earlier | no-list" role="list">
+{%- for role in earlierRoles %}
+<li><strong>{{ role.organisation }}</strong>: {{ role.title }} <small><em>({{ role.type }}, {{ role.period }})</em></small></li>
+{%- endfor %}
+</ul>
+{%- endmacro %}
+
+{#
+	Skills grouped by category. A description list suits the label / values pairing.
+	The `dt` / `dd` pairs are deliberately not wrapped in `div`s. Those would only exist for styling, and the
+	list's grid layout (in `_cv.scss`) can place the pairs without them.
+#}
+{% macro cvSkills(skills) -%}
+<dl class="cv__skills">
+{%- for group in skills %}
+<dt>{{ group.label }}</dt>
+<dd>{{ group.items | join(', ') }}</dd>
+{%- endfor %}
+</dl>
+{%- endmacro %}

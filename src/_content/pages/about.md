@@ -115,7 +115,7 @@ Chris Coyier's article "[The Great Divide Was Indeed Divisive](https://chriscoyi
       <li><strong>Analytics</strong>: Google Analytics, Google Tag Manager, Adobe Launch Tags</li>
     </ul>
     <h3 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h3>
-    <p><small><em>(Need to see my CV for some reason? You're welcome to <a href="/BruceTaylorCV">download a copy</a>.)</em></small></p>
+    <p><small><em>(Need to see my CV for some reason? You're welcome to <a href="/cv">read it on this website</a> or <a href="/BruceTaylorCV">download a PDF copy</a>.)</em></small></p>
   </my-tech-skill-set>
 </details>
 

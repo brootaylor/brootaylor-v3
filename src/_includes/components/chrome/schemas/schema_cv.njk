@@ -1,0 +1,88 @@
+{#-
+	Schema Structured Data for the CV page.
+	Included by `layouts/base.njk` when the page's `bodyClass` is "cv" (see its `schemaMap`).
+
+	A `ProfilePage` whose main entity is me. Roles and skills come from `_data/cv.js`, so this can't drift
+	away from what's shown on the page.
+
+	NOTE: The `-` whitespace control on the tags and comments throughout this file stops them leaving blank
+	lines in the output, so the rendered JSON-LD stays tidy (as per the other schema files).
+#}
+
+{#-
+	Flattening each skills group into one list for `knowsAbout`.
+	NOTE: `push` mutates the array in place. A plain `set` inside a Nunjucks `for` loop is scoped to that loop,
+	so wouldn't be visible out here.
+#}
+{%- set knowsAbout = [] %}
+{%- for group in cv.skills %}
+	{%- for item in group.items %}
+		{%- set knowsAbout = (knowsAbout.push(item), knowsAbout) %}
+	{%- endfor %}
+{%- endfor -%}
+
+{#-
+	NOTE: Free text values (eg. `title`, `summary`) are output using `dump`, which gives properly quoted / escaped JSON strings.
+	Without it Nunjucks HTML-escapes them (eg. "Bruce Taylor's" becomes "Bruce Taylor&#39;s"), and as this
+	is inside a `script` element those HTML entities wouldn't be decoded by anything reading the data.
+#}
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "ProfilePage",
+	"name": {{ (title + ' • ' + site.metaDescription) | dump | safe }},
+	"url": "{{ site.rootUrl }}{{ page.url | pretty }}",
+	"description": {{ summary | dump | safe }},
+	"inLanguage": "{{ site.lang }}",
+	{#- Recommended by Google for a `ProfilePage`. Same approach as `schema_blogpost.njk`: both come from the page's front matter, and `dateModified` only appears once the page has an `updated` date #}
+	"dateCreated": "{{ date | dateTime }}",
+	{%- if updated %}
+	"dateModified": "{{ updated | dateTime }}",
+	{%- endif %}
+	{#- NOTE: The other pages' breadcrumbs have one item, with `position` matching the page's slot in the main navigation.
+	   The CV isn't in the main navigation, so there's no slot to use. Instead this is a proper trail (Home > My CV),
+	   as Google expects a breadcrumb trail to start from the home page. #}
+	"breadcrumb": {
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Home",
+				"item": "{{ site.rootUrl }}/"
+			},
+			{
+				"@type": "ListItem",
+				"position": 2,
+				"name": "My CV",
+				"item": "{{ site.rootUrl }}{{ page.url | pretty }}"
+			}
+		]
+	},
+	"mainEntity": {
+		"@type": "Person",
+		"name": "{{ site.author.name }}",
+		"url": "{{ site.rootUrl }}",
+		"image": "{{ site.author.thumbnail }}",
+		{#- Also output using `dump`, as values like "Web Developer & UI Engineer" would otherwise be HTML-escaped #}
+		"jobTitle": {{ site.author.job | dump | safe }},
+		{#- The first role in `_data/cv.js` is my current one #}
+		"worksFor": {
+			"@type": "Organization",
+			"name": {{ cv.roles[0].organisation | dump | safe }}
+		},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Crawley",
+			"addressRegion": "West Sussex",
+			"addressCountry": "GB"
+		},
+		"knowsAbout": {{ knowsAbout | dump | safe }},
+		"sameAs": [
+			{% for url in site.socialMedia -%}
+			"{{ url }}"{% if not loop.last %},{% endif%}
+			{% endfor -%}
+		]
+	}
+}
+</script>

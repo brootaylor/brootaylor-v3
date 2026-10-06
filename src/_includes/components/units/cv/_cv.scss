@@ -1,0 +1,103 @@
+/**********************************************************
+ * CV component
+ **********************************************************/
+
+@use '../../../../styles/abstracts' as *;
+
+
+/// The CV page's building blocks.
+///
+/// There's no wrapping `.cv` block on purpose. The markup is output by the macros in `cv.njk` straight into
+/// the page's markdown content, so each piece (role, earlier roles list, skills list) stands on its own.
+/// Vertical spacing between children comes from the `.flow` utility in the markup, so there are no margins here.
+///
+/// NOTE: Rules for `@media print` sit alongside the rules they affect (rather than in `base/_print.scss`)
+/// so everything about this component lives in one place.
+
+
+/// A single role (job) in the "Experience" section. It's a list item within an ordered list (`.cv__roles`).
+/// @group CV Component
+.cv__role {
+  padding-block-start: 1.5em;
+  border-block-start: 1px solid var(--grey-mid);
+
+  // A role's highlights. Browsers default a list nested inside another list to hollow circles,
+  // so the filled discs used everywhere else on the site are restored.
+  ul {
+    list-style-type: disc;
+  }
+
+  // Avoids a role being split across two printed pages (or a PDF saved from the browser)
+  @media print {
+    page-break-inside: avoid;
+  }
+}
+
+/// The organisation's name within a role's title.
+///
+/// Lighter weight so the job title leads and the organisation reads as supporting detail.
+/// @group CV Component
+.cv__organisation {
+  font-weight: normal;
+}
+
+/// Dates, contract type and any note about a role (direct children of `.cv__role`).
+///
+/// These sit a little closer to the title than the usual 'flow' spacing as they belong with it. The
+/// selector is deliberately more specific than the `.flow` utility's, so this wins regardless of source order.
+/// @group CV Component
+.cv__role > .cv__meta,
+.cv__role > .cv__note {
+  margin-block-start: 0.25em;
+}
+
+/// The dates within a role's meta line.
+///
+/// Global `article time` styles (in `base/_typography.scss`) shrink any `<time>` inside an `<article>`, which
+/// suits post dates but not these, as it'd make the dates smaller than the rest of the line they sit in.
+/// @group CV Component
+.cv__meta time {
+  font-size: inherit;
+}
+
+/// Skills laid out as label / values pairs (a description list).
+///
+/// Stacks at smaller screen sizes, and sits side-by-side from medium upwards. The `dt` / `dd` elements are
+/// placed directly by the grid, so there's no need for a wrapper element around each pair.
+/// @group CV Component
+.cv__skills {
+  @include min-width($breakpoint-medium) {
+    display: grid;
+    grid-template-columns: minmax(12em, 1fr) 2fr;
+    column-gap: 1.5em;
+  }
+
+  dt {
+    padding-block-start: 0.75em;
+    border-block-start: 1px solid var(--grey-mid);
+    font-weight: bold;
+
+    // Keeps a label with its values when printing
+    @media print {
+      page-break-after: avoid;
+    }
+  }
+
+  dd {
+    padding-block-end: 0.75em;
+
+    // Side-by-side, each value needs its own top rule and padding to line up with its label
+    @include min-width($breakpoint-medium) {
+      padding-block-start: 0.75em;
+      border-block-start: 1px solid var(--grey-mid);
+    }
+  }
+}
+
+/// Earlier roles. A compact list, so only a little breathing room between items.
+/// @group CV Component
+.cv__earlier {
+  li {
+    padding-block: 0.25em;
+  }
+}
