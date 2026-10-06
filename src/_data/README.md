@@ -6,7 +6,7 @@ For example:
 
 * The **global site** values (eg. metadata) can be found in `site.js`.
 * The **navigation** (primary & footer) labels and URLs can be found in `navigation.js`.
-* The **CV** content (roles, earlier roles and skills) can be found in `cv.js`. It's rendered on the `/cv` page and feeds its structured data.
+* The **CV** content (roles, earlier roles, personal projects and skills) can be found in `cv.js`. It's rendered on the `/cv` page and feeds its structured data.
 * The **messages** values (eg. message) can be found in `messages.js`.
 * The **contact form** values (eg. intro, labels etc.) can be found in `contactform.js`.
 * The **design token** values (eg. primary colours) can be found in the top-level `tokens/` directory (converted to SCSS via `json-to-scss`, not in `_data`).

@@ -217,6 +217,43 @@ export default {
     },
   ],
 
+  // Personal projects, as listed on my GitHub profile (https://github.com/brootaylor). Kept to a short, curated
+  // list. Each has a `name`, a `url` and a one-line `description`.
+  //
+  // NOTE: The PDF version of my CV doesn't have this section, so there's nothing to keep in sync there (yet).
+  projects: [
+    {
+      name: 'Tech-agnostic, spec-first development scaffold',
+      url: 'https://github.com/brootaylor/tech-agnostic-spec-first-dev-scaffold',
+      description:
+        'A starter template for web projects, supporting both hand-built and AI-assisted development.',
+    },
+    {
+      name: '"Ai" bot blocker',
+      url: 'https://gist.github.com/brootaylor/cac258aca4a68746ba99036d7a4e808b',
+      description:
+        'A Netlify Edge Function, with supporting robots.txt and honeypot, that blocks known AI training crawlers.',
+    },
+    {
+      name: 'Lockfile denylist scanner',
+      url: 'https://gist.github.com/brootaylor/72388c711cfb3b610dde23cacd63e5ca',
+      description:
+        'Node scripts that check npm lockfiles against a denylist, protecting projects from compromised packages.',
+    },
+    {
+      name: 'Service worker',
+      url: 'https://gist.github.com/brootaylor/c039f2413874d6b0c399038d6aeaa5cb',
+      description:
+        'An offline-capable service worker, as an Eleventy (Nunjucks) template and as vanilla JavaScript.',
+    },
+    {
+      name: 'This website',
+      url: 'https://github.com/brootaylor/brootaylor-v3',
+      description:
+        'The open source codebase behind this site, built with Eleventy and Nunjucks.',
+    },
+  ],
+
   // Skills grouped by category. Every item here is also listed in the structured data's `knowsAbout`.
   skills: [
     {

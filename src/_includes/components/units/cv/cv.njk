@@ -2,7 +2,7 @@
 	CV component
 	=======================
 	Macros that render the content in `_data/cv.js` for the `/cv` page. Imported in `_content/pages/cv.md` like so:
-	{% from "components/units/cv/cv.njk" import cvRoles, cvEarlierRoles, cvSkills %}
+	{% from "components/units/cv/cv.njk" import cvRoles, cvEarlierRoles, cvSkills, cvProjects %}
 
 	WHY MACROS (rather than includes)? They take the data as an argument, so nothing here depends on a global variable
 	name, and each piece can be dropped anywhere in the markdown.
@@ -52,6 +52,19 @@
 <ul class="cv__earlier | no-list" role="list">
 {%- for role in earlierRoles %}
 <li><strong>{{ role.organisation }}</strong>: {{ role.title }} <small><em>({{ role.type }}, {{ role.period }})</em></small></li>
+{%- endfor %}
+</ul>
+{%- endmacro %}
+
+{#
+	Personal projects. Each links out to its code, so the link text is the project's name (descriptive on its own).
+	A plain unordered list, as the projects aren't in any particular sequence.
+#}
+{% macro cvProjects(projects) -%}
+{#- Using `role="list"` with `.no-list`, as per the rest of the site, so assistive technologies still announce it as a list #}
+<ul class="cv__projects | no-list | flow" role="list">
+{%- for project in projects %}
+<li><a href="{{ project.url }}">{{ project.name }}</a>: {{ project.description }}</li>
 {%- endfor %}
 </ul>
 {%- endmacro %}

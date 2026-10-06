@@ -16,7 +16,7 @@ bodyClass: "cv"
 date: 2026-10-06T17:28:25.000Z
 ---
 
-{% from "components/units/cv/cv.njk" import cvRoles, cvEarlierRoles, cvSkills %}
+{% from "components/units/cv/cv.njk" import cvRoles, cvEarlierRoles, cvSkills, cvProjects %}
 
 ## Experience
 
@@ -29,6 +29,12 @@ date: 2026-10-06T17:28:25.000Z
 ## Technical skills
 
 {{ cvSkills(cv.skills) }}
+
+## Personal projects
+
+A few things I've built and shared outside of client work. There's more on [my GitHub profile](https://github.com/brootaylor).
+
+{{ cvProjects(cv.projects) }}
 
 ## Away from the keyboard
 
