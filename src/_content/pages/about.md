@@ -48,7 +48,7 @@ foot: "
 
 bodyClass: "about"
 
-date: 2026-10-01T12:27:27.631Z
+date: 2026-10-06T16:55:31.000Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
@@ -65,9 +65,13 @@ date: 2026-10-01T12:27:27.631Z
 
 ## The work I do
 
+I’ve been building websites and web applications for just over two decades. That’s long enough to have formed a view: the conversations about what a product is, why it should exist, who it’s for, and how we want people to experience it matter more than whichever technology gets picked to build it.
+
+So I like to get involved early, asking the right questions and helping shape a piece of work before any code gets written. I enjoy that stage as much as building the thing once we know what it is, and I’m as comfortable talking with business stakeholders as I am with engineers.
+
 I’m a web developer and UI engineer at heart, though I can turn my hand to visual design, back-end, and devops work when a project calls for it.
 
-Anything that impacts the user experience on the web matters to me. This is where I’m most comfortable and where I’ve naturally ended up specialising. As a result, you’ll mostly find me tinkering around in the “[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel="external"}” &mdash; the somewhat broad and slightly *fuzzy* intersection between design and back-end engineering.
+Anything that impacts the user experience on the web matters to me &mdash; performance and accessibility especially, which I’d much rather build in from the start than bolt on later. This is where I’m most comfortable and where I’ve naturally ended up specialising. As a result, you’ll mostly find me tinkering around in the “[front-of-the-front-end](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/){rel="external"}” &mdash; the somewhat broad and slightly *fuzzy* intersection between design and back-end engineering.
 
 I have experience creating frontend solutions that support design systems and design token architecture, ensuring components are consistent, scalable, and themeable &mdash; without tying developers to any single tech stack. It’s work I really enjoy and would like to do more of. To me, a good design system should be a stable foundation: flexible and tech-agnostic enough to remain useful as technologies come and go.
 
