@@ -11,7 +11,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2026-09-14T08:03:27.631Z
+updated: 2026-10-06T19:27:21.000Z
 
 location:
   locality: Home (Crawley, West Sussex)
@@ -30,11 +30,17 @@ It looks like my contract is due to end just before Christmas 2026. I'll be acti
 
 ## Code
 
-In my own time, I'm working on a new personal project. It's mostly to help me explore and process the use of "Ai" agents in my workflow these days.
+In my own time, I'm still working on a personal project that helps me explore and process the use of "Ai" agents in my workflow.
 
-The very succinct name *(ahem!)* for this project is [Tech-Agnostic Spec-First Development Scaffold](https://github.com/brootaylor/tech-agnostic-spec-first-dev-scaffold){rel="external"}. It's intended to be a starter template to help build web projects from the ground up. It's spec-first/spec-driven, tech-agnostic, and works whether you build by hand, use an "Ai" coding agent, or both.
+The very succinct name *(ahem!)* for this project is [Tech-Agnostic Spec-First Development Scaffold](https://github.com/brootaylor/tech-agnostic-spec-first-dev-scaffold){rel="external"}. It's a starter template to help build web projects from the ground up. It's spec-first/spec-driven, tech-agnostic, and works whether you build by hand, use an "Ai" coding agent, or both. It's still evolving as I learn what works and what doesn't.
 
-This site itself is also very much a project in progress. ["brootaylor-v3" is the codebase](https://github.com/brootaylor/brootaylor-v3){rel="external"} behind it, and I use it both as a space to keep applying and experimenting with modern web development practices, and as a home for my [Notes](/notes), [Bookmarks](/bookmarks), and [Writing](/writing).
+This site itself is also very much a project in progress. ["brootaylor-v3" is the codebase](https://github.com/brootaylor/brootaylor-v3){rel="external"} behind it, and I use it both as a space to keep applying and experimenting with modern web development practices, and as a home for my [Notes](/notes), [Bookmarks](/bookmarks), and [Writing](/writing). Lately that's meant a [CV page](/cv), build-time Lighthouse audits, and service worker improvements.
+
+A few of the bits I've pulled out of it along the way are shared as gists&hellip;
+
+* ["Ai" bot blocker](https://gist.github.com/brootaylor/cac258aca4a68746ba99036d7a4e808b){rel="external"} &mdash; *A Netlify Edge Function, with supporting robots.txt and honeypot, that blocks known AI training crawlers.*
+* [Lockfile denylist scanner](https://gist.github.com/brootaylor/72388c711cfb3b610dde23cacd63e5ca){rel="external"} &mdash; *Node scripts that check npm lockfiles against a denylist, protecting projects from compromised packages.*
+* [Service worker](https://gist.github.com/brootaylor/c039f2413874d6b0c399038d6aeaa5cb){rel="external"} &mdash; *An offline-capable service worker, as an Eleventy (Nunjucks) template and as vanilla JavaScript.*
 
 Alongside that, ["brootaylor-astro-v1" is my experimental playground](https://github.com/brootaylor/brootaylor-astro-v1){rel="external"} for web development ideas, techniques, and features — using [Astro](https://astro.build/){rel="external"} as the foundation. It's where a fair bit of my current Astro learning actually plays out.
 
