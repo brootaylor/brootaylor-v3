@@ -247,6 +247,12 @@ export default {
         'An offline-capable service worker, as an Eleventy (Nunjucks) template and as vanilla JavaScript.',
     },
     {
+      name: 'Experimental playground (Astro)',
+      url: 'https://github.com/brootaylor/brootaylor-astro-v1',
+      description:
+        'A playground for testing web development ideas, techniques and features, built on Astro.',
+    },
+    {
       name: 'This website',
       url: 'https://github.com/brootaylor/brootaylor-v3',
       description:

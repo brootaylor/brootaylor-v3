@@ -3,17 +3,17 @@
 # Edit that file to change them, not this one. The macros doing the rendering live in `components/units/cv/cv.njk`.
 title: "My CV"
 # Populates the `meta description` for a page
-summary: "Bruce Taylor's CV. A web developer and UI engineer with 20+ years building accessible, resilient websites, with strength in design systems and component architecture."
+summary: "Bruce Taylor's CV. A web developer and UI engineer with 20+ years building accessible, resilient websites, now focused on design systems and component architecture."
 # Populates the opening / `lead` text on a page
 lead:
-  - I've been building accessible, resilient websites for 20+ years, with strength in design systems and component architecture &mdash; creating consistent, scalable, tech-agnostic components that outlast any single stack.
+  - I've been building accessible, resilient websites for 20+ years. That experience now shapes how I design systems &mdash; consistent, scalable, tech-agnostic components designed to stay useful long after the stack has moved on.
   - I'm comfortable coaching developers and collaborating across design, engineering and business to ship high quality digital experiences.
   - Prefer a document? You're welcome to <a href="/BruceTaylorCV">download my CV as a PDF</a>.
 
 # Also decides which structured data (schema) file is used. See `schemaMap` in `layouts/base.njk`
 bodyClass: "cv"
 
-date: 2026-10-06T17:28:25.000Z
+date: 2026-10-07T09:31:19.000Z
 ---
 
 {% from "components/units/cv/cv.njk" import cvRoles, cvEarlierRoles, cvSkills, cvProjects %}
