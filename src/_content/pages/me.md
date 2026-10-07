@@ -37,7 +37,7 @@ tags: "page" # This `page` tag is here so that the service worker picks them up.
 
 permalink: "/about/me.html"
 
-date: 2026-03-24T16:06:27.631Z
+date: 2026-10-07T09:41:33.000Z
 
 eleventyExcludeFromCollections: false
 ---
@@ -77,7 +77,7 @@ eleventyExcludeFromCollections: false
   <li><time datetime="2023">2023: </time><div>Sold my drumkit to <a href="https://x.com/gangof4official/status/1746823767135789527" rel="external">Hugo Burnham</a>, drummer for the <a href="https://www.facebook.com/gangoffour" rel="external">Gang Of Four</a> band.</div></li>
   <li><time datetime="2024">2024: </time><div>Trying to figure out where to go with this <em>'career thing'</em>&hellip; and <a href="/now#reflecting">what to make of the world</a>.</div></li>
   <li><time datetime="2025">2025: </time><div>Married to a wonderful woman for 30 years. After 8 long years, our whole family was finally able to visit South Africa again. Some fab memories.</div></li>
-  <li><time datetime="2026">2026: </time><div>Let's see&hellip;</div></li>
+  <li><time datetime="2026">2026: </time><div>My second child <em>(not a child any longer!)</em> decided to take himself to <a href="https://www.durham.ac.uk/" rel="external">university in Durham</a>.</div></li>
 </ol>
 
 ---
