@@ -69,7 +69,8 @@
 		{#- The first role in `_data/cv.js` is my current one #}
 		"worksFor": {
 			"@type": "Organization",
-			"name": {{ cv.roles[0].organisation | dump | safe }}
+			"name": {{ cv.roles[0].organisation | dump | safe }}{% if cv.roles[0].url %},
+			"url": {{ cv.roles[0].url | dump | safe }}{% endif %}
 		},
 		"address": {
 			"@type": "PostalAddress",

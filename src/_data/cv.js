@@ -12,11 +12,15 @@ export default {
   // - `start` / `end` are ISO year-month values (eg. '2024-04'), used for `<time datetime>`.
   //   The `...Label` values are what people read. A `null` / missing `end` means the role is current.
   // - `note` is optional. Used when the dates alone could mislead.
+  // - `url` is optional, on both recent and earlier roles. When set, the organisation's name links to it. Use the
+  //   organisation's own site where it still represents them. Otherwise link a web.archive.org snapshot from the time
+  //   (eg. Hugo & Cat), or a news story explaining what happened to them (eg. Time Inc. UK).
   //
   // NOTE: The first role is treated as my current role (see `worksFor` in the structured data).
   roles: [
     {
       organisation: 'Admiral Group',
+      url: 'https://www.admiralgroup.co.uk/',
       title: 'Full Stack Engineer',
       type: 'Contract, full time',
       start: '2024-04',
@@ -60,6 +64,8 @@ export default {
     },
     {
       organisation: 'Hugo & Cat',
+      // Archived, as the site no longer exists (the domain now redirects to a different company's website)
+      url: 'https://web.archive.org/web/20231030073800/https://www.hugoandcat.com/',
       title: 'Senior Frontend Developer',
       type: 'Contract, full time',
       start: '2023-10',
@@ -89,6 +95,7 @@ export default {
     },
     {
       organisation: 'UX Brighton',
+      url: 'https://uxbri.org/',
       title: 'Web Developer',
       type: 'Freelance, part time',
       start: '2022-02',
@@ -124,6 +131,7 @@ export default {
     },
     {
       organisation: 'Brunswick Group',
+      url: 'https://www.brunswickgroup.com/',
       title: 'Frontend Web Developer',
       type: 'Contracts',
       start: '2022-04',
@@ -159,58 +167,75 @@ export default {
   ],
 
   // Earlier roles, newest first. Kept brief, so `period` is a plain readable string (no `<time>`)
-  // as some span multiple, non-contiguous contracts.
+  // as some span multiple, non-contiguous contracts. They take the same optional `url`. One entry covering several
+  // organisations uses `organisations` instead, a list of `{ name, url }`.
   earlierRoles: [
     {
       organisation: 'Currys plc',
+      url: 'https://www.currysplc.com/',
       title: 'Web Developer',
       type: 'Contract',
       period: 'July 2022 – December 2022',
     },
     {
       organisation: 'IAG Loyalty',
+      url: 'https://www.iagloyalty.com/',
       title: 'Senior Frontend Developer',
       type: 'Contract',
       period: 'October 2018 – October 2021',
     },
     {
       organisation: 'Euromoney',
+      url: 'https://www.euromoney.com/',
       title: 'Frontend Web Developer',
       type: 'Contract',
       period: 'May 2018 – October 2018',
     },
     {
       organisation: 'MerchantCantos',
+      // No site to link to. It was integrated into Brunswick Group (as Brunswick Creative), so this explains what happened to it
+      url: 'https://lbbonline.com/news/merchantcantos-to-be-fully-integrated-into-brunswick-group',
       title: 'Frontend Web Developer',
       type: 'Contracts',
       period: '2017 & 2018',
     },
     {
       organisation: 'Time Inc. UK',
+      // No site to link to. It became TI Media, then was acquired by Future plc, so this explains what happened to it
+      url: 'https://printweek.com/articles/future-to-acquire-ti-media-for-140m',
       title: 'Frontend Web Developer',
       type: 'Contract',
       period: 'July 2016 – November 2016',
     },
     {
       organisation: 'Pegasus Public Relations',
+      // Archived, as the original site no longer exists (the domain is now parked)
+      url: 'https://web.archive.org/web/20160401193818/http://www.thisispegasus.co.uk/',
       title: 'Frontend Web Developer',
       type: 'Contracts',
       period: 'February – April 2016 & May – June 2016',
     },
     {
       organisation: 'Macmillan Cancer Support',
+      url: 'https://www.macmillan.org.uk/',
       title: 'Frontend Web Developer',
       type: 'Contract',
       period: 'September 2015 – December 2015',
     },
     {
       organisation: 'Airmiles & Avios',
+      url: 'https://www.avios.com/',
       title: 'Senior Frontend Designer & Developer / Manager',
       type: 'Permanent',
       period: 'December 2004 – September 2015',
     },
     {
-      organisation: 'Boston T Party, Charanga Music, Analog Implant Laboratory',
+      // Several organisations in one entry, so uses `organisations` (each with its own `url`) rather than `organisation`
+      organisations: [
+        { name: 'Boston T Party', url: 'https://bostontparty.co.za/' },
+        { name: 'Charanga Music', url: 'https://charanga.com' },
+        { name: 'Analog Implant Laboratory', url: 'http://analog-lab.co.uk/' },
+      ],
       title: 'Various brief freelance engagements',
       type: 'Freelance',
       period: 'Between 2016 and 2022',

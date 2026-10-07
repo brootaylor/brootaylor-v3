@@ -17,6 +17,15 @@
 #}
 
 {#
+	An organisation's name, linked when it has a `url` (see `_data/cv.js`), otherwise plain text.
+	Shared by the macros below so the link markup lives in one place. Kept on a single line, as the macros
+	need tight output (see above).
+#}
+{% macro cvOrganisation(name, url) -%}
+{% if url %}<a href="{{ url }}" rel="external">{{ name }}</a>{% else %}{{ name }}{% endif %}
+{%- endmacro %}
+
+{#
 	Current and recent roles, each with highlights and the tech used.
 
 	WHY AN ORDERED LIST? The roles are a sequence (newest first), so an `ol` / `li` describes them accurately. A screen reader
@@ -28,7 +37,7 @@
 <ol class="cv__roles | no-list | flow" role="list">
 {%- for role in roles %}
 <li class="cv__role | flow">
-<h3 class="cv__title">{{ role.title }}, <span class="cv__organisation">{{ role.organisation }}</span></h3>
+<h3 class="cv__title">{{ role.title }}, <span class="cv__organisation">{{ cvOrganisation(role.organisation, role.url) }}</span></h3>
 {#- `datetime` values are ISO year-months (eg. 2024-04). A role without an `end` is current, so says "Present" #}
 <p class="cv__meta"><small><time datetime="{{ role.start }}">{{ role.startLabel }}</time> &ndash; {% if role.end %}<time datetime="{{ role.end }}">{{ role.endLabel }}</time>{% else %}Present{% endif %} <i aria-hidden="true">&#8275;</i> {{ role.type }}</small></p>
 {#- Optional. Used when dates alone would be misleading (eg. contracts that weren't back-to-back) #}
@@ -51,7 +60,10 @@
 {#- Using `role="list"` with `.no-list`, as per the rest of the site, so assistive technologies still announce it as a list #}
 <ul class="cv__earlier | no-list" role="list">
 {%- for role in earlierRoles %}
-<li><strong>{{ role.organisation }}</strong>: {{ role.title }} <small><em>({{ role.type }}, {{ role.period }})</em></small></li>
+<li><strong>
+{%- if role.organisations %}{% for org in role.organisations %}{{ cvOrganisation(org.name, org.url) }}{% if not loop.last %}, {% endif %}{% endfor %}
+{%- else %}{{ cvOrganisation(role.organisation, role.url) }}{% endif -%}
+</strong>: {{ role.title }} <small><em>({{ role.type }}, {{ role.period }})</em></small></li>
 {%- endfor %}
 </ul>
 {%- endmacro %}

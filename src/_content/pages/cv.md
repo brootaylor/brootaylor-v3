@@ -13,7 +13,7 @@ lead:
 # Also decides which structured data (schema) file is used. See `schemaMap` in `layouts/base.njk`
 bodyClass: "cv"
 
-date: 2026-10-07T09:31:19.000Z
+date: 2026-10-07T10:29:41.000Z
 ---
 
 {% from "components/units/cv/cv.njk" import cvRoles, cvEarlierRoles, cvSkills, cvProjects %}
