@@ -11,7 +11,7 @@ bodyClass: "now"
 
 dateShow: true # Show the date in the header for this page
 date: 2024-03-29T16:10:27.631Z
-updated: 2026-10-06T19:27:21.000Z
+updated: 2026-10-18T22:07:21.000Z
 
 location:
   locality: Home (Crawley, West Sussex)
@@ -93,9 +93,9 @@ While I don't necessarily agree with everything that's said in many of the episo
 
 ## Plans
 
-My family and I are heading off for a few days to Italy. Startong with a few days in Milan and Lake Como. Then hopping on the [Bernina Express](https://www.berninarailway.com/){rel="external"} to St. Moritz in Switzerland for a few more days. Then back to Milan for one more night before flying home.
+I'm hoping to get back into drumming this year. I miss it desperately and it's been far too long since I've played. My daughter's expressed an interest in learning so this may be my way of getting back into it by teaching her.
 
-I'm also hoping to get back into drumming this year. I miss it desperately and it's been far too long since I've played. My daughter's expressed an interest in learning so this may be my way of getting back into it by teaching her.
+I think it's time to book a session at the [Hive Rooms](https://www.thehiverooms.com/).
 
 ---
 
