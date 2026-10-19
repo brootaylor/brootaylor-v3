@@ -59,8 +59,8 @@
     "audit:lighthouse:build": "node config/lighthouse.mjs",
     "audit:lighthouse:live": "node config/lighthouse.mjs --live --view",
     "audit:vulnerabilities": "npx is-website-vulnerable https://brootaylor.com",
-    "audit:npm-local": "ncu",
-    "audit:npm-global": "ncu -g",
+    "audit:npm-local": "npx npm-check-updates",
+    "audit:npm-global": "npx npm-check-updates -g",
     "audit:npm": "npm audit --include=dev --audit-level=high || true",
     "debug": "DEBUG=* npx eleventy"
   },
