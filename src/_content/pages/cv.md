@@ -13,7 +13,9 @@ lead:
 # Also decides which structured data (schema) file is used. See `schemaMap` in `layouts/base.njk`
 bodyClass: "cv"
 
+dateShow: true # Show the date in the header for this page
 date: 2026-10-07T10:29:41.000Z
+updated: 2026-10-19T11:38:48.000Z
 ---
 
 {% from "components/units/cv/cv.njk" import cvRoles, cvEarlierRoles, cvSkills, cvProjects %}
@@ -25,6 +27,8 @@ date: 2026-10-07T10:29:41.000Z
 ### Earlier roles
 
 {{ cvEarlierRoles(cv.earlierRoles) }}
+
+I've written up some of these roles in more detail on [my projects page](/projects), along with [what people I've worked with have said](/projects#projects-testimonials). {.call-out}
 
 ## Technical skills
 
