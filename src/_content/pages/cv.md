@@ -15,7 +15,7 @@ bodyClass: "cv"
 
 dateShow: true # Show the date in the header for this page
 date: 2026-10-07T10:29:41.000Z
-updated: 2026-10-19T11:38:48.000Z
+updated: 2026-10-19T11:56:19.000Z
 ---
 
 {% from "components/units/cv/cv.njk" import cvRoles, cvEarlierRoles, cvSkills, cvProjects %}
@@ -44,7 +44,7 @@ A few things I've built and shared outside of client work. There's more on [my G
 
 I grew up on a dairy farm in a beautiful part of South Africa. Before getting into tech in the late '90s, I qualified as a chef and spent much of my time off-road biking, hiking, wild camping, stargazing, canoeing, fishing, drumming, and playing a bunch of team and individual sports.
 
-Some of these things I still do. If you'd like to know more, there's [a bit more about me](/about/me), or you're welcome to [get in touch](/contact).
+Some of these things I still do. If you'd like to know more, there's [a bit more about me](/about), or you're welcome to [get in touch](/contact).
 
 ---
 
