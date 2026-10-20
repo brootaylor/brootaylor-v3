@@ -48,7 +48,7 @@ foot: "
 
 bodyClass: "about"
 
-date: 2026-10-06T16:55:31.000Z
+date: 2026-10-20T10:37:31.000Z
 ---
 
 {% from "components/core/images/images.njk" import imageFigure %}
@@ -79,21 +79,6 @@ In short, I try my best to build web solutions that are [resilient](https://resi
 
 I’m fairly quick at picking up new skills and programming languages, and I enjoy problem solving. I’ve been fortunate to work with some really talented, kind, and supportive people over the years, and much of the success I’ve enjoyed in <span id="fnref:career" rel="doc-noteref"><a href="#fn:career" rel="footnote">my career <sup>1</sup></a></span> is thanks to them. You can read some of the [nice things they've said](/projects#projects-testimonials) too.
 
-### Am I a "[full-stack] developer"?
-
-I mostly resist calling myself a "[[full-stack] developer](https://bradfrost.com/blog/post/full-stack-developers/){rel="external"}" &mdash; regardless of what some of my roles and experience may indicate.
-
-However I do know how to do full-stack development. Not because I've always necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've often *'had'* to <sup>2</sup></a></span>.
-
-Chris Coyier's article "[The Great Divide Was Indeed Divisive](https://chriscoyier.net/2023/01/12/the-great-divide-was-indeed-divisive/){rel="external"}" resonates with me when trying to make sense of all this job labelling malarkey.
-
-{% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
-{%- call blockquote(author='Chris Coyier', style='call-out') -%}
-  Since there is too much for any web developer to know, what is the most graceful and professionally acceptable way of not knowing things?
-
-  Whatever the answer is, it’s definitely not “ignore, shit on, and downplay the things you don’t know and gatekeep the things you do.”
-{%- endcall %}
-
 ### Skills & toolbox
 
 <details class="full-bleed">
@@ -118,6 +103,23 @@ Chris Coyier's article "[The Great Divide Was Indeed Divisive](https://chriscoyi
     <p><small><em>(Need to see my CV for some reason? You're welcome to <a href="/cv">read it on this website</a> or <a href="/BruceTaylorCV">download a PDF copy</a>.)</em></small></p>
   </my-tech-skill-set>
 </details>
+
+---
+
+### Am I a "[full-stack] developer"?
+
+I mostly resist calling myself a "[[full-stack] developer](https://bradfrost.com/blog/post/full-stack-developers/){rel="external"}" &mdash; regardless of what some of my roles and experience may indicate.
+
+However I do know how to do full-stack development. Not because I've always necessarily wanted to, but <span id="fnref:fullstack" rel="doc-noteref"><a href="#fn:fullstack" rel="footnote">because I've often *'had'* to <sup>2</sup></a></span>.
+
+Chris Coyier's article "[The Great Divide Was Indeed Divisive](https://chriscoyier.net/2023/01/12/the-great-divide-was-indeed-divisive/){rel="external"}" resonates with me when trying to make sense of all this job labelling malarkey.
+
+{% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
+{%- call blockquote(author='Chris Coyier', style='call-out') -%}
+  Since there is too much for any web developer to know, what is the most graceful and professionally acceptable way of not knowing things?
+
+  Whatever the answer is, it’s definitely not “ignore, shit on, and downplay the things you don’t know and gatekeep the things you do.”
+{%- endcall %}
 
 ---
 
