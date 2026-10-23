@@ -21,12 +21,10 @@
 #   - update LAST-REVIEWED whenever you review or materially change this file
 #   - REVIEW-NOTE is optional and meant for quick human context
 #
-# LAST-REVIEWED: 2026-09-29
-# REVIEW-NOTE: Re-audited live dependency tree after the Sep 29 ncu bump; no active matches.
-# Added the Sep 23, 2026 MemTensor/sckit worm and May 2026 node-ipc entries. Completed the
-# keyv/cacheable block from CSA advisory AD-2026-009 (@cacheable/node-cache, @cacheable/net,
-# ecto). Checked the Jun 2026 IronWorm incident (asteroiddao web3 packages, e.g. weavedb-*);
-# not present and unrelated to this stack, so not listed.
+# LAST-REVIEWED: 2026-10-23
+# REVIEW-NOTE: Re-audited after the Oct 23 ncu bump (incl. eleventy-fetch v6, normalize-url v10); no active
+# matches. Checked Oct 2026 incidents (MALFEX/imgdecode, @subql/common, tensorlake, @apexacc/cli, zod repo
+# compromise): none present or published. Manually diffed napi-postinstall 0.3.7; clean.
 
 
 # --- Core wave (Sep 8–10, 2025) ---
