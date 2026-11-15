@@ -7,31 +7,18 @@
   publish = "dist"
   command = "npm run deploy:build"
 
-  # Default site wide settings
-  # https://docs.netlify.com/configure-builds/file-based-configuration/#post-processing
-  # If skip_processing = true, all other settings are ignored
+  # Netlify post-processing. Only Pretty URLs is still supported; Netlify ended
+  # CSS/JS bundling, minification and image compression in Oct 2023.
+  # https://docs.netlify.com/build/post-processing/overview/
   [build.processing]
     skip_processing = false
   [build.processing.html]
     pretty_urls = true
-  [build.processing.css]
-    bundle = false
-    minify = false
-  [build.processing.js]
-    bundle = false
-    minify = false
-  [build.processing.images]
-    compress = true
 
-# Build and deployment config for `production` environment
-[context.production]
-  command = "npm run deploy:build"
-
-  [context.production.environment]
-    GIT_LFS_ENABLED = "true"
-    NODE_ENV = "production"
-    NODE_VERSION = "24.22.0"
-    TZ = "Europe/London"
+# Environment for `production` builds (Node version comes from .nvmrc)
+[context.production.environment]
+  NODE_ENV = "production"
+  TZ = "Europe/London"
 
 
 ##############################
@@ -45,7 +32,7 @@
   targetPort = 8080 # The port for my application server, framework or site generator
   publish = "dist" # The path to my static content folder
   autoLaunch = true # A boolean value that determines if Netlify Dev launches the local server address in the browser
-  framework = "#static" # Property that uses the command value to run an app server and the targetPort value to connect to it. Required if `command` and `targetPort` are both set.
+  framework = "#custom" # Runs `command` as the app server and connects to it on `targetPort`. Required when both are set.
   # envFiles = [".env"] # The env files to use, ordered by priority (left - highest, right - lowest)
 
 
