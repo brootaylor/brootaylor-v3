@@ -150,9 +150,9 @@ If it is, and the installed version is one of the bad ones, move to a safe versi
 Bumping a package that has install scripts makes the install fail with `ESTRICTALLOWSCRIPTS`, and nothing is installed or removed. Approvals are read from the installed packages, so install the new versions without scripts first:
 
 ```bash
-npm ci --ignore-scripts                # install the new versions, running no scripts
+npm install --ignore-scripts           # install the new versions (and update the lockfile), running no scripts
 npm install-scripts ls                 # list the scripts that need review
-npm install-scripts approve <package>  # approve each one after reviewing it
+npm install-scripts approve <package>  # approve each one after reviewing it (replaces the old version's approval)
 npm rebuild                            # run all approved install scripts
 ```
 
