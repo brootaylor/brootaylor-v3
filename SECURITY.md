@@ -21,7 +21,7 @@ Things that are in scope include:
 
 ## Dependency safeguards
 
-Every build scans `package-lock.json` against a denylist of known-bad npm packages (`.known-bad.locklist`, checked by `scan-locks.mjs`) and fails if anything matches. A second check (`check-locklist-review.mjs`) warns if that list hasn't been reviewed in the last week, and `npm audit` runs as part of the build. Any install also fails if a dependency's install scripts haven't been approved, and npm only installs versions that are at least 7 days old (both set in `.npmrc`). If you know of a compromised package that's missing from the list, please report it the same way.
+Any install fails if a dependency's install scripts haven't been approved, and npm only installs versions that are at least 7 days old (both set in `.npmrc`). `npm audit` also runs as part of every build. If you know of a compromised package in this project's dependencies, please report it the same way.
 
 ## What to expect
 

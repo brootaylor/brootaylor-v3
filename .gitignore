@@ -10,7 +10,6 @@ dist
 # Files to ignore
 .DS_Store
 .env
-.known-bad.locklist.local
 _tokens.scss
 audits/**/*brootaylor*.*
 *.zip

@@ -110,51 +110,42 @@ brootaylor.com
 ├── .eleventyignore                # Directories / files eleventy needs to ignore when building
 ├── .env.example                   # Template for local .env config — copy to .env and adjust
 ├── .gitignore                     # Files not tracked by Git
-├── .known-bad.locklist            # List of package@version entries blocked by the lockfile scan
 ├── .markdownlint.json             # Markdownlint configuration
+├── .npmrc                         # npm install safeguards (install-script approvals, minimum release age)
 ├── .nvmrc                         # Sets (and installs if necessary) the version of Node needed for this project
 ├── .prettierrc                    # Prettier formatting config (enforced via eslint-plugin-prettier)
 ├── .prettierignore                # Files Prettier/ESLint should skip formatting
-├── check-locklist-review.mjs      # Runs check on locklist to determine age of entries
 ├── deno.lock                      # Lockfile for the Deno-based Netlify Edge Function
 ├── eslint.config.js               # JS linting configuration
 ├── LICENSE                        # Repo licence (MIT)
 ├── netlify.toml                   # Netlify configuration (server)
 ├── package.json                   # Node.js package manifest
 ├── package-lock.json              # Node.js package lock
-├── README.md                      # This file (Instructions and repo information)
-└── scan-locks.mjs                 # NPM-only lockfile scanner (runs in prebuild)
+└── README.md                      # This file (Instructions and repo information)
 ```
 
 ---
 
 ## Supply chain guardrails
 
-This repo blocks known compromised npm package versions at install/build time.
+This repo uses npm's own settings to keep compromised packages from running or being installed.
 
 * **Install-script approvals** — `.npmrc` sets `strict-allow-scripts=true`, so an install fails if any dependency's install scripts aren't approved under `allowScripts` in `package.json`. Approvals are per version, so bumping one of those packages needs a fresh review — see [approving install scripts after a version bump](#approving-install-scripts-after-a-version-bump).
 * **Release age** — `.npmrc` sets `min-release-age=7`, so npm only installs versions that were published at least 7 days ago.
   - If `ncu -u` bumps a package to a version newer than that, `npm install` will refuse it. Wait a few days, or roll that package back to an older version.
-* **Lockfile scan** — `npm run scan:locks` checks npm lockfiles against `.known-bad.locklist`.
-  - Runs automatically in **prebuild** and before **netlify-build**.
-  - If any match is found, the build **fails fast** and nothing is deployed.
-* **Known-bad list** — edit `.known-bad.locklist` to add `package@version` lines when new incidents are announced.
-  - You can also create a developer-only `.known-bad.locklist.local` (gitignored) for temporary entries.
+* **npm audit** — runs in **prebuild** and reports known vulnerabilities. It's informational only and never fails the build.
 * **Overrides 'fuse'** — `package.json#overrides` pins safe versions so compromised versions can’t re-enter via transitive deps.
   - We use a **nested override** for `json-to-scss` so its Chalk/ANSI stack stays on CJS-only versions without affecting the rest of the tree.issues.
 
-### How to block a new compromised version
+### If a compromised package is announced
 
-1. Add the `package@x.y.z` to `.known-bad.locklist`.
-2. If needed, add/adjust a safe pin under `overrides` in `package.json` (or use a nested override for a single tool).
-3. Clean reinstall:
+Check whether it's anywhere in the dependency tree:
 
-   ```bash
-   rm -rf node_modules package-lock.json
-   npm i
-   ```
+```bash
+npm ls <package>
+```
 
-4. Re-run the build. The prebuild scan will fail if anything suspicious remains.
+If it is, and the installed version is one of the bad ones, move to a safe version (update the direct dependency, or add an override in `package.json`), then reinstall.
 
 ### Approving install scripts after a version bump
 

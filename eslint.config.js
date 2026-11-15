@@ -44,8 +44,6 @@ export default [
   {
     files: [
       '.eleventy.js',
-      'check-locklist-review.mjs',
-      'scan-locks.mjs',
       'lib/**/*.js',
       'netlify/plugins/**/*.js',
       'src/_data/**/*.js',
