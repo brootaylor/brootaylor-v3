@@ -34,8 +34,4 @@ Well worth a read &mdash; or watch of the video if you prefer.
 
 ## Video version of Salma's post
 
-<div class="video">
-	<div class="video--inner">
-		<iframe src="https://www.youtube-nocookie.com/embed/mD1ecA94kdY?si=axN5ySeH2Jt65jue" title="YouTube video player." allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-	</div>
-</div>
+{% youtube "mD1ecA94kdY", "I am in an abusive relationship with the technology industry (yes this is about AI)" %}

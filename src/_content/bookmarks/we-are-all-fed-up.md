@@ -28,8 +28,4 @@ Like [Jeremy Keith says](https://adactio.com/journal/22778#:~:text=My%20issue%20
 >
 > I’d love to see the technology decoupled from the current depressing narrative. I’d love to see a thousand homemade software flowers bloom from open local language models.
 
-<div class="video">
-	<div class="video--inner">
-		<iframe src="https://www.youtube-nocookie.com/embed/1aW7P3ZAUYw?si=B-JXX1mGVBocnEg6" title="YouTube video player." allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-	</div>
-</div>
+{% youtube "1aW7P3ZAUYw", "We're all fed up" %}

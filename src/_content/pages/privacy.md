@@ -11,6 +11,7 @@ bodyClass: "privacy"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 date: 2024-02-21T13:53:00
+updated: 2026-11-15T14:46:59.000Z
 
 changefreq: "yearly"
 ---
@@ -31,9 +32,17 @@ Please note that external sites linked to from our website may use cookies. The 
 
 ---
 
+## Embedded Videos
+
+Some pages include videos hosted on YouTube. These are click-to-load: until you press play, you only see a preview image that's hosted on this website, and nothing is requested from YouTube.
+
+When you press play, the video loads from YouTube's privacy-enhanced service (youtube-nocookie.com). From that point YouTube (Google) receives information such as your IP address, and may store data on your device, as described in [Google's privacy policy](https://policies.google.com/privacy). If you'd rather not, each video also has a link to watch it on YouTube instead, or you can simply not play it.
+
+---
+
 ## Contact & Communication
 
-Users contacting this website and/or its owners using the contact form, do so at their own discretion and provide any such personal details requested at their own risk. Your personal information is kept private and stored securely until a time it is no longer required or has no use, as detailed in the Data Protection Act 1998.
+Users contacting this website and/or its owners using the contact form, do so at their own discretion and provide any such personal details requested at their own risk. Your personal information is kept private and stored securely until a time it is no longer required or has no use, in line with the UK GDPR and the Data Protection Act 2018.
 
 ---
 

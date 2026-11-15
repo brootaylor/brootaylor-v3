@@ -21,8 +21,4 @@ As always, [Heydon Pickering](https://heydonworks.com/) is a genius when it come
 
 Engaging and profound.
 
-<div class="video">
-	<div class="video--inner">
-		<iframe src="https://www.youtube-nocookie.com/embed/3urk5Zht6MI?si=IaWQwB3fmy4hDfRM&t=315s" title="YouTube video player." allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-	</div>
-</div>
+{% youtube "3urk5Zht6MI", "The Folly of Chasing Demographics | Axe-con Stream 2", 315 %}

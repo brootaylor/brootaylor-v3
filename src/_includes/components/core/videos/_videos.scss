@@ -14,7 +14,8 @@
 	@include responsive-ratio(16,9,true); // 16:9
 
 		> iframe,
-		> video {
+		> video,
+		> .video__facade {
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -36,4 +37,140 @@
 	.video--inner {
 		@include responsive-ratio(21,9,true);
 	}
+}
+
+
+/**********************************************************
+ * YouTube facade (click-to-load)
+ * --------------------------------------------------------
+ * Markup comes from the `youtube` shortcode (`lib/shortcodes/youtube.js`).
+ * The facade is a link without JS, and a button once
+ * `youtubeFacade.mjs` has run, so these styles work for both.
+ **********************************************************/
+
+// Wrapper <figure> holding the video box and its caption
+.video-embed {
+  margin-block-start: 2em;
+
+  // The figure provides the spacing, so the video box inside doesn't need its own
+  > .video {
+    margin-block-start: 0;
+  }
+}
+
+// The clickable thumbnail (link or button)
+.video__facade {
+  display: block;
+  padding: 0;
+  // Reset default <button> styles so the link and button versions look identical
+  background: none;
+  color: var(--white);
+  font: inherit;
+  cursor: pointer;
+
+  // Clear keyboard focus ring. Dark green on the white page is well above the 3:1
+  // contrast needed for focus indicators, and the offset separates it from the thumbnail.
+  &:focus-visible {
+    outline: 3px solid var(--green-custom);
+    outline-offset: 3px;
+  }
+}
+
+// Fill the 16:9 box. `object-fit: cover` crops the black letterbox bars off
+// YouTube's 4:3 fallback thumbnails (`hqdefault`).
+.video__thumbnail,
+.video__facade picture {
+  display: block;
+  width: 100%;
+  height: 100%; // Overrides the reset's `height: auto` for images
+}
+
+.video__thumbnail {
+  object-fit: cover;
+}
+
+// Round play button centred over the thumbnail
+.video__play {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  width: 4.5em;
+  height: 4.5em;
+  border-radius: 50%;
+  background-color: rgb(0 0 0 / 0.75);
+  transition: background-color 0.15s ease-out;
+
+  // Only animate the press "squish" if the visitor hasn't asked for reduced motion.
+  // The colour change on hover stays on for everyone, as it isn't movement.
+  @media (prefers-reduced-motion: no-preference) {
+    transition: background-color 0.15s ease-out, scale 0.15s ease-out;
+  }
+
+  svg {
+    width: 45%;
+    height: 45%;
+    fill: currentColor;
+    translate: 6% 0; // Nudge the triangle right so it looks optically centred in the circle
+  }
+}
+
+// Each state looks different: hover changes colour, press shrinks slightly,
+// keyboard focus shows the outline (above).
+.video__facade:hover .video__play {
+  background-color: var(--green-custom);
+}
+
+.video__facade:active .video__play {
+  @media (prefers-reduced-motion: no-preference) {
+    scale: 0.92;
+  }
+}
+
+// "Watch on YouTube" badge - only present in the link (no-JS) version of the facade,
+// as a heads-up that clicking leaves the site. The JS button version removes it.
+.video__badge {
+  position: absolute;
+  inset-block-start: 0.75em;
+  inset-inline-start: 0.75em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375em;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  // Solid (not see-through) background, because it sits over thumbnails of any colour.
+  // White on #333 is ~12.6:1, well above the 4.5:1 needed for text.
+  background-color: var(--grey-dark);
+  color: var(--white);
+  font-size: 0.875em;
+  line-height: 1.2;
+  pointer-events: none; // Clicks go straight through to the link
+
+  svg {
+    width: 1em;
+    height: 1em;
+    flex: none; // Never squash the icon if the badge is short on space
+  }
+}
+
+// Hovering anywhere on the facade highlights the badge too, so it reads as one control
+.video__facade:hover .video__badge {
+  background-color: var(--green-custom);
+}
+
+// Forced colours mode (eg. Windows High Contrast) removes background colours, which would
+// leave the badge and play circle without any visible edge. A system-coloured border keeps
+// them visible.
+@media (forced-colors: active) {
+  .video__badge,
+  .video__play {
+    border: 1px solid CanvasText;
+  }
+}
+
+// Caption under the video: the YouTube privacy notice and the "watch on YouTube" link
+.video__caption {
+  margin-block-start: 0.5em;
+  font-size: 0.875em;
 }

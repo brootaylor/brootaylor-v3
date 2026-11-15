@@ -21,11 +21,7 @@ Even though I've been using the Git CLI for years, I still have plenty of head-s
 
 [Lazygit](https://github.com/jesseduffield/lazygit) to the rescue...
 
-<div class="video">
-	<div class="video--inner">
-		<iframe src="https://www.youtube-nocookie.com/embed/_REmkoIyPW0?si=k0NPs1Kesnmf9N7A" title="YouTube video player." allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-	</div>
-</div>
+{% youtube "_REmkoIyPW0", "NEW Lazygit release! (8 months worth of features)" %}
 
 I like Jesse's elevator pitch:
 

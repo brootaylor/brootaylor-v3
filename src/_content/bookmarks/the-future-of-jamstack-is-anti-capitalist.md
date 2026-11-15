@@ -22,8 +22,4 @@ eleventyExcludeFromCollections: false
 
 Here's the video as well if you just wanna watch it here...
 
-<div class="video">
-	<div class="video--inner">
-		<iframe src="https://www.youtube-nocookie.com/embed/Nn0kBdwGa78?si=YnEhbrRHNeRfXVcu" title="YouTube video player." allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-	</div>
-</div>
+{% youtube "Nn0kBdwGa78", "What's next for Jamstack | Panel discussion" %}
