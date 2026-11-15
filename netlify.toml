@@ -69,11 +69,30 @@
   for = "/*"
 
   [headers.values]
-    Content-Security-Policy = "script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; object-src 'none'; img-src 'self' 'unsafe-inline' *.cloudfront.net *.ytimg.com *.indieweb-avatar.11ty.dev"
-    Referrer-Policy = "no-referrer, strict-origin-when-cross-origin"
-    Permissions-Policy = "geolocation=(), microphone=(), camera=(), interest-cohort=()"
+    # Controls where scripts, styles, plugins and images may load from.
+    # - 'unsafe-inline' is only meaningful for script-src and style-src, so it isn't used in img-src.
+    # - img-src allows this site plus CloudFront-hosted images, YouTube thumbnails (ytimg)
+    #   and the 11ty IndieWeb avatar service.
+    Content-Security-Policy = "script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; object-src 'none'; img-src 'self' *.cloudfront.net *.ytimg.com *.indieweb-avatar.11ty.dev"
+
+    # Same-origin requests get the full URL; cross-origin requests get only the origin
+    # (e.g. https://brootaylor.com), and nothing is sent when going from HTTPS to HTTP.
+    # Use "no-referrer" instead to stop sending a referrer to other sites altogether.
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Blocks these browser features for this site and any embedded iframes.
+    # Note: 'interest-cohort' (Google's retired FLoC opt-out) was removed, as browsers no
+    # longer recognise it and Chrome logs a console warning when it's present.
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+    # Tells browsers to only use HTTPS for this domain and its subdomains for 1 year.
+    # 'preload' makes the domain eligible for the browser HSTS preload list (hstspreload.org).
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+    # Stops browsers guessing (sniffing) a file's type, so they use the declared Content-Type.
     X-Content-Type-Options = "nosniff"
+
+    # Only lets this site embed its own pages in frames, which protects against clickjacking.
     X-Frame-Options = "SAMEORIGIN"
 
 # Header for .ico files
