@@ -104,47 +104,11 @@
     "prettier": "^3.9.10"
   },
   "overrides": {
-    "ansi-styles": "^6.2.3",
-    "debug": "^4.4.3",
-    "supports-color": "^10.2.2",
-    "wrap-ansi": "^9.0.2",
-    "slice-ansi": "^7.1.2",
-    "color": "^5.0.2",
-    "color-convert": "3.1.0",
-    "color-name": "2.0.0",
-    "color-string": "2.1.0",
-    "simple-swizzle": "0.2.2",
-    "is-arrayish": "0.3.2",
-    "supports-hyperlinks": "^4.1.2",
-    "has-ansi": "^6.0.2",
-    "chalk-template": "^1.1.2",
-    "backslash": "0.2.0",
-    "@ctrl/tinycolor": "^4.2.0",
-    "json-to-scss": {
-      "chalk": "4.1.2",
-      "ansi-styles": "4.3.0",
-      "supports-color": "7.2.0",
-      "string-width": "4.2.3",
-      "strip-ansi": "6.0.1",
-      "ansi-regex": "5.0.1"
-    },
-    "npm-run-all": {
-      "chalk": "^5.6.2"
-    },
     "markdownlint-cli": {
       "js-yaml": "^5.4.2"
     },
     "brace-expansion": "^5.0.9",
-    "sharp": "^0.35.3",
-    "keyv": "5.6.0",
-    "cacheable": "2.5.0",
-    "flat-cache": "6.1.23",
-    "file-entry-cache": "11.1.5",
-    "@cacheable/utils": "2.5.0",
-    "@cacheable/memory": "2.2.0"
-  },
-  "engines": {
-    "node": "^24.18.1"
+    "sharp": "^0.35.3"
   },
   "allowScripts": {
     "unrs-resolver@1.12.2": true,

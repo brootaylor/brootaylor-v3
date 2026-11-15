@@ -134,8 +134,6 @@ This repo uses npm's own settings to keep compromised packages from running or b
 * **Release age** — `.npmrc` sets `min-release-age=7`, so npm only installs versions that were published at least 7 days ago.
   - If `ncu -u` bumps a package to a version newer than that, `npm install` will refuse it. Wait a few days, or roll that package back to an older version.
 * **npm audit** — runs in **prebuild** and reports known vulnerabilities. It's informational only and never fails the build.
-* **Overrides 'fuse'** — `package.json#overrides` pins safe versions so compromised versions can’t re-enter via transitive deps.
-  - We use a **nested override** for `json-to-scss` so its Chalk/ANSI stack stays on CJS-only versions without affecting the rest of the tree.issues.
 
 ### If a compromised package is announced
 
