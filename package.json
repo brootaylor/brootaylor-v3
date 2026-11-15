@@ -25,7 +25,7 @@
     "clean": "rimraf dist && mkdir dist",
     "prebuild": "npm run audit:npm && npm run clean && echo 'Running npm audit & getting rid of old stuff first 🔥'",
     "lint:scripts": "eslint .",
-    "lint:markdown": "markdownlint src/**/*.md",
+    "lint:markdown": "markdownlint \"src/**/*.md\"",
     "format:check": "prettier --check \"**/*.{js,mjs}\"",
     "postcss": "postcss --map --no-map -r dist/styles/*.css --config config/postcss.config.js",
     "sass:tokens": "rimraf src/styles/tokens/*.scss && json-to-scss 'tokens/*.json' 'src/styles/tokens/_tokens.scss'",

@@ -25,7 +25,7 @@ Project-specifc Node version using .nvmrc
 
 ---
 
-### References:
+## References
 
 [Youtube tutorial video](https://www.youtube.com/watch?v=8Mrj-U5gCF8&ab_channel=AnasMohammad)  
 [Node Version Manager](https://github.com/nvm-sh/nvm)
