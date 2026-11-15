@@ -1,40 +1,70 @@
 ---
+# Atom feed of everything tagged `post`: writing, notes, bookmarks and photos
+# (the tag is set in each content folder's `*.11tydata.js` file).
 permalink: '/feed.xml'
+# Keeps the feed out of the sitemap (`sitemap.njk` skips anything with `hidden: true`)
 hidden: true
+# The feed is a utility file rather than a page, so keep it out of every collection
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ site.rootUrl }}">
+	{#- Feed-level details. `site.*` values come from `src/_data/site.js`. #}
 	<title>{{ site.name }}</title>
 	<subtitle>{{ site.metaTitle }}</subtitle>
 	<link rel="self" href="{{ site.rootUrl }}{{ permalink }}" type="application/atom+xml"/>
 	<link rel="alternate" href="{{ site.rootUrl }}/" type="text/html"/>
+	{#- Feed-level "last updated" date, in the RFC 3339 format Atom requires. Only output if there are posts. #}
 	{%- if collections.post | length %}
 	<updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
 	{% endif -%}
+	{#- Atom requires the feed's <id> to be permanent and unique, so it's the site's root URL -#}
 	<id>{{ site.rootUrl }}</id>
 	<icon>{{ site.rootUrl }}{{ site.metaImage }}</icon>
+	{#- The `year` shortcode (in `.eleventy.js`) outputs the current year at build time #}
 	<rights>&#169; {{ site.name }} 2004 &#8211; {% year %}</rights>
 	<author>
 		<name>{{ site.author.name }}</name>
 		<email>{{ site.author.email }}</email>
 		<uri>{{ site.author.url }}</uri>
 	</author>
+	{#- One <entry> per post, newest first. Collections are sorted oldest first, hence `reverse`. #}
 	{%- for post in collections.post | reverse %}
+		{#- The post's full URL. The `pretty` filter strips `index.html` / `.html` from the end. #}
 		{%- set absolutePostUrl %}{{ site.rootUrl }}{{ post.url | pretty }}{% endset %}
 		{%- set postDate %}{{ post.date | dateToRfc3339 }}{% endset %}
 		<entry>
 			<title>{{ post.data.title }}</title>
 			<link rel="alternate" href="{{ absolutePostUrl }}" type="text/html"/>
 			<updated>{{ postDate }}</updated>
+			{#- The entry's permanent ID. Feed readers use it to tell posts apart, so changing a post's URL can make it show up as new. #}
 			<id>{{ absolutePostUrl }}</id>
+			{#-
+				The post's HTML goes inside CDATA, so it doesn't need escaping for XML.
+				`xml:base` lets feed readers resolve relative links (eg. `/writing/…`) against the post's URL.
+				Whitespace inside CDATA is part of the content, hence the `-` trimming on the tags below.
+			#}
 			<content type="html" xml:base="{{ absolutePostUrl }}"><![CDATA[
+				{#- Bookmarks: link to the original source first #}
 				{%- if post.data.bookmarkExternal -%}
 					Original source can be viewed at: <a href="{{ post.data.bookmarkExternal }}">{{ post.data.bookmarkLabel }}</a>
 				{%- endif -%}
+				{#
+					`lead` is normally a list of paragraphs in front matter. Output each one as its own <p>,
+					matching the page layouts (eg. `layouts/writing.njk`). Printing the list directly would
+					make Nunjucks join the items with a comma ("…first paragraph.,Second paragraph…").
+					A single-string `lead` is still handled, so it isn't looped over character by character.
+				#}
 				{%- if post.data.lead -%}
-					<p>{{ post.data.lead | safe }}</p>
+					{%- if post.data.lead is string -%}
+						<p>{{ post.data.lead | safe }}</p>
+					{%- else -%}
+						{%- for paragraph in post.data.lead -%}
+							<p>{{ paragraph | safe }}</p>
+						{%- endfor -%}
+					{%- endif -%}
 				{%- endif -%}
+				{#- The post's rendered body, followed by a reply-by-email link -#}
 				{{ post.templateContent | safe }}
 				<p><a href="mailto:{{ site.author.email }}?subject=Replying%20to:%20“{{ post.data.title }}“">Reply via email</a></p>
 			]]></content>
