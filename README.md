@@ -132,6 +132,9 @@ brootaylor.com
 
 This repo blocks known compromised npm package versions at install/build time.
 
+* **Install-script approvals** — `.npmrc` sets `strict-allow-scripts=true`, so an install fails if any dependency's install scripts aren't approved under `allowScripts` in `package.json`. Approvals are per version, so bumping one of those packages needs a fresh review — see [approving install scripts after a version bump](#approving-install-scripts-after-a-version-bump).
+* **Release age** — `.npmrc` sets `min-release-age=7`, so npm only installs versions that were published at least 7 days ago.
+  - If `ncu -u` bumps a package to a version newer than that, `npm install` will refuse it. Wait a few days, or roll that package back to an older version.
 * **Lockfile scan** — `npm run scan:locks` checks npm lockfiles against `.known-bad.locklist`.
   - Runs automatically in **prebuild** and before **netlify-build**.
   - If any match is found, the build **fails fast** and nothing is deployed.
@@ -152,6 +155,17 @@ This repo blocks known compromised npm package versions at install/build time.
    ```
 
 4. Re-run the build. The prebuild scan will fail if anything suspicious remains.
+
+### Approving install scripts after a version bump
+
+Bumping a package that has install scripts makes the install fail with `ESTRICTALLOWSCRIPTS`, and nothing is installed or removed. Approvals are read from the installed packages, so install the new versions without scripts first:
+
+```bash
+npm ci --ignore-scripts                # install the new versions, running no scripts
+npm install-scripts ls                 # list the scripts that need review
+npm install-scripts approve <package>  # approve each one after reviewing it
+npm rebuild                            # run all approved install scripts
+```
 
 ---
 
