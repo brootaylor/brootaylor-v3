@@ -35,7 +35,9 @@ export default [
       ...prettierConfig.rules,
       'prettier/prettier': 'error',
 
-      // Catches unresolved imports, missing exports, import ordering, etc.
+      // Catches imports that don't resolve to a file, named/default imports
+      // that the imported file doesn't export, and duplicate imports of the
+      // same file. (The recommended set doesn't check import ordering.)
       ...importXConfigs.recommended.rules,
 
       'no-unused-vars': 'warn',
