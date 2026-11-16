@@ -21,7 +21,7 @@ Things that are in scope include:
 
 ## Dependency safeguards
 
-Any install fails if a dependency's install scripts haven't been approved, and npm only installs versions that are at least 7 days old (both set in `.npmrc`). `npm audit` also runs as part of every build. The GitHub Actions used in CI are pinned to exact commits and only updated through reviewed Dependabot pull requests. If you know of a compromised package in this project's dependencies, please report it the same way.
+Any install fails if a dependency's install scripts haven't been approved, and npm only installs versions that are at least 7 days old (both set in `.npmrc`). `npm audit` also runs as part of every build. The GitHub Actions used in CI are pinned to exact commits and updated through reviewed Dependabot pull requests. If you know of a compromised package in this project's dependencies, please report it the same way.
 
 ## What to expect
 

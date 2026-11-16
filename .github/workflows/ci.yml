@@ -20,7 +20,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    # Third-party actions are pinned to an exact commit ID, not a version
+    # Actions from other repos are pinned to an exact commit ID, not a version
     # label like `@v7`. A label can be moved by whoever controls the action's
     # repo to point at different code; a commit ID can't, so CI only ever
     # runs the code that was reviewed. The `# vX.Y.Z` comment on the same
