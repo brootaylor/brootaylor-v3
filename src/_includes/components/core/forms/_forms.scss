@@ -24,10 +24,10 @@
   textarea {
     color: inherit;
 
-    &:focus {
+    // The focus outline itself comes from the site-wide `:focus-visible` rule in `layouts/_base.scss`
+    &:focus-visible {
       background-color: var(--grey-light);
       border-color: var(--grey-dark);
-      outline: 0;
     }
   }
 

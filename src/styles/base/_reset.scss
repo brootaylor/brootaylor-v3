@@ -27,7 +27,11 @@ ol[role="list"] {
 
 html {
   hanging-punctuation: first last; // https://developer.mozilla.org/en-US/docs/Web/CSS/hanging-punctuation
-  color-scheme: dark light; // dark mode support for user agents that support it (https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme)
+  // The site only has a light design, so browser controls (scrollbars, form fields) stay light even when
+  // someone's system is set to dark mode. If a dark theme is added later, change this to `light dark`
+  // (and the matching `<meta name="color-scheme">` in `meta.njk`).
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme
+  color-scheme: light;
 }
 
 /* Set core root defaults */

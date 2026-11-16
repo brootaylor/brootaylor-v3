@@ -1,21 +1,33 @@
 /// "Visually hidden" utility class placeholder.
 ///
 /// Use the `.visually-hidden` class on any element to hide it visually but not from an assistive technology (eg. screenreader)
+///
+/// - `clip-path: inset(50%)` clips the element down to nothing (the deprecated `clip` property did this in the past).
+/// - A 1px box (with a -1px margin) is the standard recipe. It keeps the text in the accessibility tree without
+///   taking up any visible space.
+/// - `!important` makes sure a component's own styles can't accidentally make hidden text visible again.
+///
+/// @link https://www.w3.org/WAI/WCAG22/Techniques/css/C7 Hiding text that's still available to screen readers
 
 %visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: auto;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
+  position: absolute !important;
+  clip-path: inset(50%) !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  white-space: nowrap !important;
 }
 
 // Visually hidden utility class
 // Using the `%visually-hidden` placeholder
-.visually-hidden {
+//
+// The `:where(:not(:focus-within, :active))` part means the element is only hidden while nothing
+// inside it has keyboard focus (or is being clicked). So a focusable element using this class, like the
+// "Skip to the main content" link, appears when someone tabs to it (WCAG 2.4.7 Focus Visible).
+// `:where()` adds no extra specificity, so this class stays easy to override.
+.visually-hidden:where(:not(:focus-within, :active)) {
   @extend %visually-hidden;
 }

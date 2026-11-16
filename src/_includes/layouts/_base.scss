@@ -43,6 +43,36 @@ body {
   }
 }
 
+// "Skip to the main content" link (see `base.njk`)
+// =================================================
+// Hidden until it gets keyboard focus (via `.visually-hidden`), then shown in the top-left corner.
+// `position: fixed` keeps it out of the `body` grid below. Without it, the link would take up a grid row
+// when it appears and push the header down the page.
+.skip-link {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 200; // Above `.site-header` (z-index 100)
+  padding: 0.5em 1em;
+  color: var(--white);
+  background-color: var(--green-custom);
+  box-shadow: none; // Removes the orange underline effect that all links get
+  border-radius: 4px;
+}
+
+// Keyboard focus indicator (site-wide)
+// =====================================
+// One consistent outline for anything that can receive keyboard focus.
+// - `:focus-visible` (rather than `:focus`) shows it for keyboard users, but not after a mouse click
+//   on a link or button.
+// - Dark green is well above the 3:1 contrast WCAG asks of focus indicators (2.4.7 and 1.4.11) against
+//   the white and light grey backgrounds. The logo, on the dark header, sets its own (see `_logo.scss`).
+// - `:where()` keeps the specificity low, so a component can still set its own outline colour.
+:where(a:any-link, button, input, select, textarea, summary):focus-visible {
+  outline: 3px solid var(--green-custom);
+  outline-offset: 3px;
+}
+
 // This is using CSS Grid to define grid template areas
 // =====================================================
 // NOTE: Section and component-level grid layouts will be done in those Sass files

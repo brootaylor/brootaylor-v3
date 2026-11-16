@@ -35,6 +35,9 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{# Tells the browser the page is light-only before any CSS loads, so it doesn't briefly paint a dark background
+   for people whose system is set to dark mode. Matches `color-scheme: light` in `styles/base/_reset.scss`. #}
+<meta name="color-scheme" content="light">
 <title>{{ pageTitle | safe }}</title>
 <meta name="description" content="{{ metaDescription }}">
 

@@ -15,7 +15,6 @@ input {
     font-size: 1.25rem;
     text-decoration: unset;
     background-color: var(--green-custom);
-    outline: none;
     border: 2px solid rgba($white, 0.05);
     box-shadow: 5px 5px var(--grey-dark);
     cursor: pointer;
@@ -26,9 +25,10 @@ input {
         background-color: var(--green-custom-dark);
       }
 
-      // Button `:active` and `:focus` states
+      // Button `:active` and keyboard focus states
+      // (`:focus-visible` rather than `:focus`, so a mouse click doesn't leave the focus styling behind)
       &:active,
-      &:focus {
+      &:focus-visible {
         background-color: var(--green-custom-dark);
         border: 2px dotted var(--white)
       }

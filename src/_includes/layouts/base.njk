@@ -41,8 +41,9 @@
 	</head>
 	<body {% if bodyClass or site.siteTheme %}class="{% if bodyClass %}{{ bodyClass }}{% endif %} {% if site.siteTheme %}{{ site.siteTheme }}{% endif %}"{% endif %}>
 
-		{# "Skip-to" link. Helps assistive technologies #}
-		<a class="visually-hidden" href="#main">Skip to the main content.</a>
+		{# "Skip-to" link. Lets keyboard users jump past the header and navigation.
+		   Hidden until it gets keyboard focus (`visually-hidden`), then shown in the top-left corner (`skip-link`, see `layouts/_base.scss`). #}
+		<a class="skip-link | visually-hidden" href="#main">Skip to the main content.</a>
 
 		{# Main header & navigation #}
 		{% include "components/global/header/header.njk" %}

@@ -33,5 +33,11 @@
       color: var(--orange-custom);
       border: 0;
     }
+
+    // The site-wide focus outline is dark green (see `layouts/_base.scss`), which barely shows up against
+    // this dark grey background. White keeps it clearly visible here.
+    &:focus-visible {
+      outline-color: var(--white);
+    }
   }
 }
