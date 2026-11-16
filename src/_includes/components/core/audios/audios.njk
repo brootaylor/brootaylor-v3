@@ -9,6 +9,8 @@
 
 
 {# Possibly implement a progressive enhanced solution somewhere alomng the lines of the following #}
+{# NOTE: The Content Security Policy in `netlify.toml` blocks inline scripts, so this one won't run as it is.
+   If this component gets used, move the script into a module file (eg. loaded from `main-modules.mjs`). #}
 <script>
 	/**
 		* Progressive Enhancement Script for Spotify Embed

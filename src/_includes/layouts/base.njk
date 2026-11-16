@@ -1,5 +1,14 @@
 <!doctype html>
-<html id="start" lang="{{ site.lang }}" dir="ltr">
+{#
+	The `data-` attributes on `<html>` are plain markers; they don't load or run anything themselves.
+	`scripts/main-modules.mjs` (loaded at the end of the page) reads them to decide what to switch on:
+	- `data-honeypot`: adds the hidden link that catches scraper bots (`botHoneypot` in `_data/site.js`)
+	- `data-service-worker`: registers the service worker, on production builds only (`scriptsServiceworker`)
+	Both need `scriptsMain` to be `true`, since that's what loads `main-modules.mjs`.
+#}
+<html id="start" lang="{{ site.lang }}" dir="ltr"
+	{%- if site.botHoneypot %} data-honeypot{% endif %}
+	{%- if site.scriptsServiceworker and site.environment == "production" %} data-service-worker{% endif %}>
 
 <!--
 	"The original, shimmering self gets buried so deep that most of us end up hardly living out of it at all.

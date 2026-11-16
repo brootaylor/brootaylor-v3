@@ -1,11 +1,35 @@
 /**
  * Dynamic module loading
+ *
+ * This is the site's only JavaScript entry point. All scripts live in module files like this one
+ * (there are no inline `<script>` blocks), so the Content Security Policy in `netlify.toml` can
+ * allow scripts from this site only (`script-src 'self'`).
+ *
+ * Module scripts are deferred, so this runs once the HTML has been fully parsed, before `DOMContentLoaded`.
  */
 
 import { version, name } from '../../package.json';
 
+// Static imports: Rollup copies these straight into `main.mjs`, so they don't cost an extra request.
+// They're small and needed on every page.
+import addHoneypotLink from './utilities/honeypot.mjs';
+import registerServiceWorker from './utilities/serviceWorker.mjs';
+
 const versionPrintOut = `${name}.${version}`;
 console.info(versionPrintOut);
+
+// Features switched on in `_data/site.js`. `base.njk` passes them on as `data-` attributes on `<html>`.
+const rootElement = document.documentElement;
+
+// Hidden link that catches scraper bots (see ./utilities/honeypot.mjs)
+if (rootElement.hasAttribute('data-honeypot')) {
+  addHoneypotLink();
+}
+
+// Offline support. Only switched on for production builds (see ./utilities/serviceWorker.mjs)
+if (rootElement.hasAttribute('data-service-worker')) {
+  registerServiceWorker();
+}
 
 // Method/s called from ./utilities/salary.mjs
 import('./utilities/salary.mjs').then(
@@ -25,4 +49,14 @@ if (document.querySelector('.video__facade')) {
   import('./utilities/youtubeFacade.mjs').then(({ default: youtubeFacade }) => {
     youtubeFacade();
   });
+}
+
+// `<my-tech-skill-set>` custom element (see ./utilities/myTechSkillSet.mjs)
+// Only downloaded on pages that use it (currently just the About page), as a separate chunk.
+if (document.querySelector('my-tech-skill-set')) {
+  import('./utilities/myTechSkillSet.mjs').then(
+    ({ default: defineMyTechSkillSet }) => {
+      defineMyTechSkillSet();
+    },
+  );
 }

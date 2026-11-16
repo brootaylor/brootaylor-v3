@@ -32,19 +32,8 @@ head: "
     }
   </style>"
 
-# Page-specific JS added just before the closing `</body>`
-foot: "
-  <script type=\"module\">
-    class MyTechSkillSet extends HTMLElement {
-      constructor() {
-        super();
-      }
-      connectedCallback() {
-        console.log(`The ${this.nodeName.toLowerCase()} web component has been created just for fun. Just cause I wanted to call it that. So there! 😄`);
-      }
-    }
-    customElements.define('my-tech-skill-set', MyTechSkillSet);
-  </script>"
+# The `<my-tech-skill-set>` custom element's JS is loaded by `src/scripts/main-modules.mjs`
+# (see `src/scripts/utilities/myTechSkillSet.mjs`)
 
 bodyClass: "about"
 
