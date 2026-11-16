@@ -8,6 +8,14 @@ on:
   push:
     branches: [main]
 
+# The access token GitHub gives this workflow can only read the repo's code.
+# This job never writes anything back to GitHub (no pushes, comments or
+# releases), so it shouldn't be able to. The repo's default setting is
+# already read-only, but stating it here keeps it read-only even if that
+# setting is changed later.
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,6 +32,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # By default, checkout leaves the job's access token on the machine
+          # after cloning, where every later step can read it - including
+          # the install scripts of any npm package. Nothing after this step
+          # needs git access (installing, linting and building only read
+          # files), so don't keep the token around.
+          persist-credentials: false
 
       - name: Setup Node
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
