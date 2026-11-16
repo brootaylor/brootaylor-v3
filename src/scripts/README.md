@@ -12,4 +12,4 @@ The `scripts.njk` include (`src/_includes/components/chrome/scripts/`) loads the
 <script type="module" src="/scripts/modules/main.mjs"></script>
 ```
 
-Module scripts are deferred by default, so they don't block the page from rendering. Every browser in `.browserslistrc` supports them, so no fallback script for older browsers is needed.
+Module scripts are deferred by default, so they don't block the page from rendering. There's no fallback script for browsers without module support (eg. Opera Mini and KaiOS 2.5). They get the page without the JS enhancements, which still works.

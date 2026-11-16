@@ -54,10 +54,28 @@ body {
   left: 0.5rem;
   z-index: 200; // Above `.site-header` (z-index 100)
   padding: 0.5em 1em;
-  color: var(--white);
-  background-color: var(--green-custom);
-  box-shadow: none; // Removes the orange underline effect that all links get
   border-radius: 4px;
+
+  // The general link styles in `_links.scss` also apply here. Their `:hover`, `:active` and `:visited`
+  // rules are more specific than `.skip-link` on its own, so the states are listed too. Otherwise, once
+  // `#main` had been visited, the text would turn dark grey on green (about 1.2:1 contrast).
+  &,
+  &:hover,
+  &:active,
+  &:visited {
+    color: var(--white);
+    background-color: var(--green-custom);
+    box-shadow: none; // No orange underline effect
+    transition: none; // Appear straight away, rather than animating up from the 1px hidden size
+  }
+
+  // The site-wide green focus outline (below) barely shows against the dark grey border around the page,
+  // which this link partly overlaps on wide screens. A white ring drawn just inside the link sits on the
+  // green background instead, so it stays clearly visible (8.5:1) whatever is behind the link.
+  &:focus-visible {
+    outline: 2px solid var(--white);
+    outline-offset: -5px;
+  }
 }
 
 // Keyboard focus indicator (site-wide)

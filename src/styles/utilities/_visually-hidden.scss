@@ -7,7 +7,7 @@
 ///   taking up any visible space.
 /// - `!important` makes sure a component's own styles can't accidentally make hidden text visible again.
 ///
-/// @link https://www.w3.org/WAI/WCAG22/Techniques/css/C7 Hiding text that's still available to screen readers
+/// @link https://www.w3.org/WAI/WCAG22/Techniques/css/C7 WCAG technique C7: Using CSS to hide a portion of the link text (one use of this class)
 
 %visually-hidden {
   position: absolute !important;

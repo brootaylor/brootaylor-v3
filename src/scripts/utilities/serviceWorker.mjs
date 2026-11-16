@@ -14,7 +14,11 @@ export default function registerServiceWorker() {
     return;
   }
 
-  navigator.serviceWorker.register('/serviceworker.js');
+  // `register()` returns a promise. Catching a failure (eg. the script can't be fetched) logs one clear
+  // message, instead of an "Uncaught (in promise)" error.
+  navigator.serviceWorker.register('/serviceworker.js').catch((error) => {
+    console.error('Service worker registration failed:', error);
+  });
 
   // Sent by the service worker if it couldn't set up offline functionality
   navigator.serviceWorker.addEventListener('message', (event) => {
