@@ -1,18 +1,23 @@
-<footer role="contentinfo" id="footer" aria-labelledby="site-footer--label" class="site-footer">
+{# There's only one footer per page, so it doesn't need its own label to tell it apart #}
+<footer role="contentinfo" id="footer" class="site-footer">
 	<div class="wrapper">
 
-		{# To help assistive technologies #}
-		<h2 id="site-footer--label" class="visually-hidden">Other tertiary content and external links. eg. accessibility statement, twitter and github.</h2>
+		{# Hidden heading, so screen reader users can also reach the footer by jumping between headings #}
+		<h2 class="visually-hidden">Site information and links</h2>
 		<small>&copy; 2004 &ndash; <time datetime="{% year %}">{% year %}</time> {{ site.name }}. All rights reserved.</small>
 
-		{# Pulls content from navigation.json data file #}
-		<nav aria-labelledby="nav-footer--label">
+		{#
+			Pulls content from navigation.json data file
+			`aria-label="Footer"` tells this navigation landmark apart from the "Primary" one in the header.
+			Screen readers add the word "navigation" themselves, so the label doesn't repeat it.
+		#}
+		<nav aria-label="Footer">
 
-			{# To help assistive technologies #}
-			<h2 id="nav-footer--label" class="visually-hidden">Footer navigation</h2>
+			{# Hidden heading, so screen reader users can also reach these links by jumping between headings #}
+			<h2 class="visually-hidden">Footer navigation</h2>
 
 			{% for navitem in navigation.footernav %}
-				{% if loop.first %}<ul role="list" aria-label="List of tertiary content pages and external links" class="no-list">{% endif %}
+				{% if loop.first %}<ul role="list" class="no-list">{% endif %}
 					<li>
 						<a href="{{ navitem.url }}"
 							{% if navitem.delete %} title="{{ navitem.delete.label }}"{% endif %}

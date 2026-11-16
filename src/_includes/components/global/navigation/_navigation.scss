@@ -25,15 +25,17 @@
     padding: 0.2em 0;
     transition: text-decoration 0.25s ease-in-out;
 
+    // `[aria-current]` matches both `"page"` (the exact page) and `"true"` (a page within that section).
+    // See `navigation.njk`.
     &:active,
     &:focus,
     &:hover,
-    &[aria-current="page"] {
+    &[aria-current] {
       color: var(--black);
       text-decoration-color: var(--green-custom);
     }
 
-    &[aria-current="page"] {
+    &[aria-current] {
       text-decoration-thickness: 5px;
     }
   }
@@ -96,7 +98,7 @@
         // Button `:active` and `:focus` states
         &:active,
         &:focus,
-        &[aria-current="page"] {
+        &[aria-current] {
           background-color: var(--green-custom-dark);
         }
       }

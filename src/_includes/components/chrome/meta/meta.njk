@@ -50,10 +50,7 @@
 {# Displaying the version of Eleventy used to generate this website #}
 <meta name="generator" content="{{ eleventy.generator }}">
 
-{# Styles (pre-load)... #}
-<link rel="preload" as="style" href="/styles/main.css?version={{ pkg.version }}.{{ site.timeCurrent }}">
-
-{# Styles (load) #}
+{# Styles #}
 <link rel="stylesheet" href="/styles/main.css?version={{ pkg.version }}.{{ site.timeCurrent }}">
 
 {# Generates extra page-specific <head> metadata fields eg. styles, fonts & custom preload/prefetch #}
