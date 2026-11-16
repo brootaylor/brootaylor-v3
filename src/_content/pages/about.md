@@ -33,7 +33,7 @@ head: "
   </style>"
 
 # The `<my-tech-skill-set>` custom element's JS is loaded by `src/scripts/main-modules.mjs`
-# (see `src/scripts/utilities/myTechSkillSet.mjs`)
+# (see `src/scripts/components/myTechSkillSet.mjs`)
 
 bodyClass: "about"
 

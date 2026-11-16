@@ -12,8 +12,8 @@ import { version, name } from '../../package.json';
 
 // Static imports: Rollup copies these straight into `main.mjs`, so they don't cost an extra request.
 // They're small and needed on every page.
-import addHoneypotLink from './utilities/honeypot.mjs';
-import registerServiceWorker from './utilities/serviceWorker.mjs';
+import addHoneypotLink from './features/honeypot.mjs';
+import registerServiceWorker from './features/serviceWorker.mjs';
 
 const versionPrintOut = `${name}.${version}`;
 console.info(versionPrintOut);
@@ -21,18 +21,18 @@ console.info(versionPrintOut);
 // Features switched on in `_data/site.js`. `base.njk` passes them on as `data-` attributes on `<html>`.
 const rootElement = document.documentElement;
 
-// Hidden link that catches scraper bots (see ./utilities/honeypot.mjs)
+// Hidden link that catches scraper bots (see ./features/honeypot.mjs)
 if (rootElement.hasAttribute('data-honeypot')) {
   addHoneypotLink();
 }
 
-// Offline support. Only switched on for production builds (see ./utilities/serviceWorker.mjs)
+// Offline support. Only switched on for production builds (see ./features/serviceWorker.mjs)
 if (rootElement.hasAttribute('data-service-worker')) {
   registerServiceWorker();
 }
 
-// Method/s called from ./utilities/salary.mjs
-import('./utilities/salary.mjs').then(
+// Method/s called from ./features/salary.mjs
+import('./features/salary.mjs').then(
   ({ annualSalary, dayRateOutside, dayRateInside }) => {
     console.groupCollapsed("Bruce's salary expectations");
     annualSalary();
@@ -42,19 +42,21 @@ import('./utilities/salary.mjs').then(
   },
 );
 
-// YouTube video facades (see ./utilities/youtubeFacade.mjs)
+// YouTube video facades (see ./components/youtubeFacade.mjs)
 // Only downloaded on pages that actually contain a video. Rollup outputs it as a separate chunk.
 // Without JS (or in `nomodule` browsers) the facade stays a plain link to the video on YouTube.
 if (document.querySelector('.video__facade')) {
-  import('./utilities/youtubeFacade.mjs').then(({ default: youtubeFacade }) => {
-    youtubeFacade();
-  });
+  import('./components/youtubeFacade.mjs').then(
+    ({ default: youtubeFacade }) => {
+      youtubeFacade();
+    },
+  );
 }
 
-// `<my-tech-skill-set>` custom element (see ./utilities/myTechSkillSet.mjs)
+// `<my-tech-skill-set>` custom element (see ./components/myTechSkillSet.mjs)
 // Only downloaded on pages that use it (currently just the About page), as a separate chunk.
 if (document.querySelector('my-tech-skill-set')) {
-  import('./utilities/myTechSkillSet.mjs').then(
+  import('./components/myTechSkillSet.mjs').then(
     ({ default: defineMyTechSkillSet }) => {
       defineMyTechSkillSet();
     },

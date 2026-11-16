@@ -205,7 +205,7 @@ addEventListener('install', event => {
         .catch(error => {
             console.error('Service Worker installation failed:', error);
             // Let any open pages know, so they can show a user-friendly message
-            // (see the `message` listener in `src/scripts/utilities/serviceWorker.mjs`)
+            // (see the `message` listener in `src/scripts/features/serviceWorker.mjs`)
             self.clients.matchAll({ includeUncontrolled: true }).then(clients => {
                 clients.forEach(client => {
                     client.postMessage({
