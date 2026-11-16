@@ -67,6 +67,7 @@ brootaylor.com
 ├── .github
 │   ├── workflows
 │   │   ├── build.yml              # Scheduled workflow that triggers a Netlify build hook (daily build cron)
+│   │   ├── ci.yml                 # Lints and builds on every push to main and every pull request
 │
 ├── config
 │   ├── eleventy-server.config.js  # Eleventy Dev Server configuration

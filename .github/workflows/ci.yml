@@ -12,12 +12,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    # Third-party actions are pinned to an exact commit ID, not a version
+    # label like `@v7`. A label can be moved by whoever controls the action's
+    # repo to point at different code; a commit ID can't, so CI only ever
+    # runs the code that was reviewed. The `# vX.Y.Z` comment on the same
+    # line records which version that commit is - keep it on the same line,
+    # because Dependabot updates both the commit ID and the comment together.
+    #
+    # v7 of both actions runs on Node 24. The older v4 releases ran on
+    # Node 20, which GitHub is retiring from its runners.
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           # Keep this in lockstep with the local dev/Netlify Node version
           # instead of hardcoding it here twice.
