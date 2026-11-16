@@ -67,7 +67,7 @@ brootaylor.com
 ├── .github
 │   ├── dependabot.yml             # Monthly update pull requests for the GitHub Actions used in workflows
 │   ├── workflows
-│   │   ├── build.yml              # Scheduled workflow that triggers a Netlify build hook (daily build cron)
+│   │   ├── build.yml              # Scheduled workflow that triggers a Netlify build hook (daily build cron; fails if Netlify rejects the request)
 │   │   ├── ci.yml                 # Lints and builds on every push to main and every pull request
 │
 ├── config

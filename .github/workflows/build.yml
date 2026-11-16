@@ -5,11 +5,29 @@ on:
     - cron: '0 8 * * *' # This will run the action every day at 08:00 UTC / 09:00 BST (GMT+1)
   workflow_dispatch: # This allows the workflow to be run manually
 
+# This job only sends one request to Netlify - it never reads or writes
+# anything in the repo - so its GitHub access token gets no permissions.
+permissions: {}
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Trigger Netlify Daily Build
-      run: |
-        curl -X POST -d {} https://api.netlify.com/build_hooks/${{ secrets.NETLIFY_DAILY_BUILD }}
+      # Calls the Netlify build hook (its secret ID is stored in the repo's
+      # Actions secrets as NETLIFY_DAILY_BUILD), which starts a fresh build
+      # and deploy of the live site.
+      #
+      # curl flags:
+      # --fail-with-body  Fail the run if Netlify replies with an error (eg.
+      #                   the hook was deleted or the secret is wrong), and
+      #                   print Netlify's reply. Without it, curl treats any
+      #                   reply as success, so the run (and the README's
+      #                   "daily build" badge) would show green even though
+      #                   no build happened.
+      # -sS               Hide the progress bar, but still show errors.
+      # -d '{}'           An empty JSON body. Quoted so the shell passes it
+      #                   through exactly as written.
+      - name: Trigger Netlify Daily Build
+        run: |
+          curl --fail-with-body -sS -X POST -d '{}' https://api.netlify.com/build_hooks/${{ secrets.NETLIFY_DAILY_BUILD }}
