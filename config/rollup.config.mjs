@@ -77,28 +77,6 @@ const moduleConfig = {
 }
 
 /**
- * Legacy config for <script nomodule>
- * ************************************
- * NOTE: Uses '.mjs' file extension for the input - but uses normal '.js' file extension for the output 'main' JS file
- * This output is used by [legacy] browsers that don't understand / support native ES6 modules
- */
-const nomoduleConfig = {
-  input: {
-    'main-nomodules': `${src}scripts/main-nomodules.mjs`
-  },
-  output: {
-    dir: `${dist}scripts/nomodules`,
-    format: 'iife',
-    entryFileNames: '[name].js',
-    sourcemap: true
-  },
-  plugins: primaryPlugins(),
-  watch: {
-    clearScreen: false
-  }
-}
-
-/**
  * `No JS` config
  * ************************************
  * NOTE: This is generated when there isn't any JS needed to be generated for the website
@@ -151,16 +129,6 @@ if (site.scriptsMain) {
    */
   // Update `configs` variable so `nojsConfig` isn't generated...
   configs = [ moduleConfig ]
-
-  /**
-   * 'Production' environment check
-   * "environment" declared in _data/site.js
-   * Therefore, only generate `nomodule.js` when building for production
-   */
-  if (site.environment === 'production') {
-    // Pushing `nomoduleConfig` to the `configs` array...
-    configs.push(nomoduleConfig)
-  }
 
   /**
    * Push `configVendor` to array if `scriptsVendor` is `true` in _data/site.js

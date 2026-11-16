@@ -1,9 +1,9 @@
 # Browsers that we support
 # (Config helps => https://github.com/browserslist/browserslist)
+#
+# `defaults` is browserslist's recommended list: > 0.5% usage, the last 2 versions of each browser,
+# Firefox ESR, and no browsers that are "dead" (no updates for 24 months).
+# PostCSS (postcss-preset-env) reads this list to decide which CSS fallbacks and prefixes to add.
+# Run `npm run audit:browser-support` to see the browsers it currently includes.
 
-> 0.5%
-last 2 versions
-Firefox ESR
-not dead
-Edge > 15
-IE 11
+defaults

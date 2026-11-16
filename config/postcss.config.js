@@ -1,13 +1,8 @@
 export default {
   plugins: {
+    // Adds any CSS fallbacks and vendor prefixes needed by the browsers listed in `.browserslistrc`
     'postcss-preset-env': {
-      autoprefixer: {
-        grid: false // Using @support feature queries at the moment to handle this
-      },
-      stage: 4,
-      features: {
-        'custom-properties': true // Ensuring support for browsers not supporting custom properties
-      }
-    }
-  }
-}
+      stage: 4, // Only transform CSS features that are already part of a finished web standard
+    },
+  },
+};

@@ -35,71 +35,35 @@ h4 {
   text-wrap: balance;
 }
 
+// Font sizes use `clamp(minimum, preferred, maximum)`: they grow with the viewport between the two limits
 h1 {
-  // Fallback for older browsers
-  font-size: convert-to-rem(36px);
+  font-size: clamp(#{convert-to-rem(36px)}, 5vw, #{convert-to-rem(50px)});
   font-weight: 900;
-
-  // Browsers supporting `clamp()`
-  @supports (font-size: clamp(36px, 5vw, 50px)) {
-    font-size: clamp(#{convert-to-rem(36px)}, 5vw, #{convert-to-rem(50px)});
-  }
 
   &::after {
     content: '';
     display: block;
-
-    // Fallback for older browsers
-    min-width: convert-to-rem(200px) ;
-    max-width: 30%;
-
+    width: clamp(#{convert-to-rem(200px)}, 50vw, 30%);
     height: 0.4rem;
     background-color: var(--grey-mid);
     margin: 0.5em 0 1em;
   }
-
-  // Browsers supporting `clamp()`
-  @supports (width: clamp(200px, 50vw, 30%)) {
-    &::after {
-      min-width: unset;
-      max-width: unset;
-      width: clamp(#{convert-to-rem(200px)}, 50vw, 30%);
-    }
-  }
 }
 
 h2 {
-  // Fallback for older browsers
-  font-size: convert-to-rem(28px);
+  font-size: clamp(#{convert-to-rem(28px)}, 3vw, #{convert-to-rem(34px)});
   font-weight: 700;
-
-  // Browsers supporting `clamp()`
-  @supports (font-size: clamp(28px, 3vw, 34px)) {
-    font-size: clamp(#{convert-to-rem(28px)}, 3vw, #{convert-to-rem(34px)});
-  }
 }
 
 h3 {
-  // Fallback for older browsers
-  font-size: convert-to-rem(24px);
+  font-size: clamp(#{convert-to-rem(24px)}, 3vw, #{convert-to-rem(28px)});
   font-weight: 600;
-
-  // Browsers supporting `clamp()`
-  @supports (font-size: clamp(24px, 3vw, 28px)) {
-    font-size: clamp(#{convert-to-rem(24px)}, 3vw, #{convert-to-rem(28px)});
-  }
 }
 
 h4 {
-  // Fallback for older browsers
-  font-size: convert-to-rem(18px);
+  font-size: clamp(#{convert-to-rem(18px)}, 3vw, #{convert-to-rem(22px)});
   font-weight: 700;
   font-style: italic;
-
-  // Browsers supporting `clamp()`
-  @supports (font-size: clamp(18px, 3vw, 22px)) {
-    font-size: clamp(#{convert-to-rem(18px)}, 3vw, #{convert-to-rem(22px)});
-  }
 }
 
 p,
@@ -107,15 +71,9 @@ ul:not(.navigation__list, .auto-grid), // Not the primary navigation list or gri
 ol:not(.auto-grid), // Not the grid list element
 pre,
 details {
-  // Fallback for older browsers
-  font-size: convert-to-rem(18px);
+  font-size: clamp(#{convert-to-rem(18px)}, 1.9vw, #{convert-to-rem(20px)});
   max-width: 60ch;
   text-wrap: pretty; // Prevents orphans & widows (eg. a single word on a line by itself)
-
-  // Browsers supporting `clamp()`
-  @supports (font-size: clamp(18px, 1.9vw, 22px)) {
-    font-size: clamp(#{convert-to-rem(18px)}, 1.9vw, #{convert-to-rem(20px)});
-  }
 }
 
 // Strong importance text
@@ -294,15 +252,9 @@ article {
 .lead {
   // For the <p> element in a `lead` element
   p {
-    // Fallback for older browsers
-    font-size: convert-to-rem(24px);
+    font-size: clamp(#{convert-to-rem(24px)}, 2.5vw, #{convert-to-rem(30px)});
     font-weight: 200;
     text-wrap: balance;
-
-    // Browsers supporting `clamp()`
-    @supports (font-size: clamp(24px, 2.5vw, 30px)) {
-      font-size: clamp(#{convert-to-rem(24px)}, 2.5vw, #{convert-to-rem(30px)});
-    }
 
     // An <hr> that's a sibling of the `lead` element
     + hr {

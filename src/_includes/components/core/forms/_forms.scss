@@ -84,11 +84,6 @@
         height: inherit;
         border: 0;
         appearance: none;
-
-        // IE11 ms-expand rule to remove things like arrows - IE equivalent to "appearance:none;"
-        &::-ms-expand {
-          display: none;
-        }
       }
     }
   }
