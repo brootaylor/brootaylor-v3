@@ -65,6 +65,7 @@ Possible features / enhancements for the future:
 ```bash
 brootaylor.com
 ├── .github
+│   ├── dependabot.yml             # Monthly update pull requests for the GitHub Actions used in workflows
 │   ├── workflows
 │   │   ├── build.yml              # Scheduled workflow that triggers a Netlify build hook (daily build cron)
 │   │   ├── ci.yml                 # Lints and builds on every push to main and every pull request
@@ -135,6 +136,7 @@ This repo uses npm's own settings to keep compromised packages from running or b
 * **Release age** — `.npmrc` sets `min-release-age=7`, so npm only installs versions that were published at least 7 days ago.
   - If `ncu -u` bumps a package to a version newer than that, `npm install` will refuse it. Wait a few days, or roll that package back to an older version.
 * **npm audit** — runs in **prebuild** and reports known vulnerabilities. It's informational only and never fails the build.
+* **GitHub Actions** — the workflows in `.github/workflows` pin each action to an exact commit ID (with its version in a comment on the same line), so a moved version label can't change the code CI runs. Dependabot (`.github/dependabot.yml`) opens one pull request a month to update them, only suggesting releases that are at least 7 days old. Review it, check CI passed on it, then merge. If you ever update a commit ID by hand, update its version comment too.
 
 ### If a compromised package is announced
 

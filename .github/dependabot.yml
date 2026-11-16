@@ -1,0 +1,36 @@
+# Dependabot config - GitHub Actions only.
+#
+# The workflows in .github/workflows pin every action to an exact commit ID
+# (see the comment in ci.yml). Pinned commit IDs never update themselves, so
+# Dependabot checks for newer releases and opens a pull request to update
+# both the commit ID and its `# vX.Y.Z` version comment. CI runs on that
+# pull request, so review it, check CI passed, then merge.
+#
+# npm packages are deliberately NOT included here - those are reviewed and
+# updated by hand in a monthly session (with `ncu`), so the two don't clash.
+#
+# Docs: https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    # `/` tells Dependabot to look in .github/workflows for workflow files.
+    directory: /
+
+    # Monthly, to match the monthly npm dependency session - one batch of
+    # updates to review per month rather than a drip of pull requests.
+    schedule:
+      interval: monthly
+
+    # Only suggest a release once it's been out for at least 7 days. This is
+    # the same idea as `min-release-age=7` in .npmrc: if a release turns out
+    # to be bad (or compromised), it's usually pulled within that time.
+    cooldown:
+      default-days: 7
+
+    # Bundle all action updates into a single pull request each month,
+    # instead of one pull request per action.
+    groups:
+      github-actions:
+        patterns:
+          - '*'
