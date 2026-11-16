@@ -1,7 +1,15 @@
 import globals from 'globals';
 import prettierConfig from 'eslint-config-prettier';
 import prettierPlugin from 'eslint-plugin-prettier';
-import importXPlugin from 'eslint-plugin-import-x';
+// The default export (`importXPlugin`) registers the plugin under `plugins`
+// below. Its preset rule sets are taken from the separate named export
+// `flatConfigs` (renamed to make clear which plugin they belong to), not
+// read off the default export as `importXPlugin.flatConfigs`. The plugin's
+// own `no-named-as-default-member` rule warns about that pattern, because
+// in some packages the default export's copy can differ from the named one.
+import importXPlugin, {
+  flatConfigs as importXConfigs,
+} from 'eslint-plugin-import-x';
 
 export default [
   // Files never linted: dist/config are build output/tooling config, audits
@@ -28,7 +36,7 @@ export default [
       'prettier/prettier': 'error',
 
       // Catches unresolved imports, missing exports, import ordering, etc.
-      ...importXPlugin.flatConfigs.recommended.rules,
+      ...importXConfigs.recommended.rules,
 
       'no-unused-vars': 'warn',
       'no-console': 'off',
