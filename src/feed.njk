@@ -8,9 +8,9 @@ hidden: true
 eleventyExcludeFromCollections: true
 ---
 {#-
-	How many of the newest posts the feed holds. Feed readers download the whole file every time they check
-	for new posts, so it's kept to the recent ones rather than every post ever written (that was 450 KB+).
-	Older posts are still on the site; new subscribers just don't get them all at once.
+	How many of the newest posts the feed holds. Feed readers download the whole file whenever it has changed
+	(and new subscribers always do), so it's kept to the recent ones rather than every post ever written
+	(that was 450 KB+). Older posts are still on the site; new subscribers just don't get them all at once.
 #}
 {%- set feedLimit = 50 -%}
 {#- Newest first. Collections are sorted oldest first, hence `reverse`. -#}

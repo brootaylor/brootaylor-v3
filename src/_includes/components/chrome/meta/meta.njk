@@ -68,7 +68,8 @@
 <meta name="generator" content="{{ eleventy.generator }}">
 
 {# Styles. `assetVersion` is a fingerprint of the built CSS and JS (see `src/_data/assetVersion.js`), so the
-   address only changes when the files do, and returning visitors otherwise keep using their copy. #}
+   address only changes when the files do. Until then, returning visitors keep using the copy they already have
+   (after a quick "has it changed?" check with Netlify, which answers "not modified"). #}
 <link rel="stylesheet" href="/styles/main.css?version={{ assetVersion }}">
 
 {# Generates extra page-specific <head> metadata fields eg. styles, fonts & custom preload/prefetch #}

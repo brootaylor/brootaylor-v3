@@ -7,7 +7,7 @@ bodyClass: "accessibility"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 date: 2023-07-25T19:06:00
-updated: 2026-11-17T09:03:43.000Z
+updated: 2026-11-17T18:24:34.000Z
 
 changefreq: "yearly"
 ---
@@ -25,7 +25,7 @@ The code powering this website is [standards-compliant HTML, CSS, and JavaScript
 
 The pages are structured with semantic elements like `header`, `nav`, `main` and `footer`. Hopefully this will help you move around more quickly. Heading `h1` elements mark the main content area of each page, and each page’s structure should follow a logical heading order from there.
 
-Every page on this website has a “*skip to the main content*” link at the top and bottom, as well as a “*back to top*" link at the very bottom which will return you to the start of this page / document.
+Every page on this website has a “*skip to the main content*” link at the top, as well as a “*back to top*" link at the very bottom which will return you to the start of this page / document.
 
 Images and inline SVGs are described with text equivalents, to ensure everyone can access graphical content. You should be able to zoom each page up to at least 300% without any issues.
 
@@ -60,10 +60,10 @@ This website has been tested on modern browsers, with occasional checks in older
 
 ## Known issues
 
-Sometimes I embed media in my posts, like audio or video. Some of these posts may have media that isn't adequately described. I plan to correct this, but if you encounter confusing media, please [email me](/contact) to let me know.
+Sometimes I embed media in my posts, like audio or video. Some of these posts may have media that isn't adequately described. I plan to correct this, but if you encounter confusing media, please [let me know through my contact page](/contact).
 
 ---
 
 ## Send me feedback
 
-I do care about accessibility but am still learning new things about it most days. If there are any issues with this site's accessibility please let me know by submitting a [GitHub issue](https://github.com/brootaylor/brootaylor-v2/issues){rel="external"}, or by [emailing me directly](/contact). I will try to remedy the problem as quickly as time allows. I honestly would welcome your feedback or suggestions.
+I do care about accessibility but am still learning new things about it most days. If there are any issues with this site's accessibility please let me know by submitting a [GitHub issue](https://github.com/brootaylor/brootaylor-v3/issues){rel="external"}, or by [getting in touch through my contact page](/contact). I will try to remedy the problem as quickly as time allows. I honestly would welcome your feedback or suggestions.

@@ -21,8 +21,9 @@ eleventyExcludeFromCollections: true
 	CSS and JS (see `src/_data/assetVersion.js`), so `cacheName` only changes when they do (or when the package
 	version is bumped). Then `clearOldCaches()` (see below) sweeps away the old caches on `activate`, cached
 	pages included, so offline pages are never left pointing at a stylesheet that's no longer cached.
-	When only the content changes (eg. a new post), the cache names stay the same: the new offline pages are
-	added to the existing caches, and everything already cached is kept.
+	When only the content changes (eg. a new post), the cache names stay the same: the updated service worker
+	downloads its offline pages again into the same caches (so they're current), and everything else that's
+	already cached (eg. images) is kept.
 #}
 // Define cache names and version information
 const siteName = '{{ pkg.name }}';

@@ -32,11 +32,11 @@ export default {
   botHoneypot: true, // Honeypot hidden link added to DOM to catch bots
   analyticsUrchin: '', // Analytics urchin uses this value
   scriptsVendor: false, // If using vendor (ie. 3rd party) scripts
-  scriptsMain: true, // If using any `main` scripts on the site (eg. carousel, objectfit polyfill etc.)
+  scriptsMain: true, // If using any `main` scripts on the site (eg. honeypot link, service worker registration, colour scheme choice, YouTube player)
   scriptsServiceworker: true, // If using a service worker
   colourSchemeChoice: true, // Light / Dark / System choice (footer and Accessibility page). Off = the site just follows the device setting. Needs `scriptsMain`
-  dateTimeNow: DateTime.local().toFormat('dd LLLL yyyy @ t'),
-  timeCurrent: DateTime.local().diff(DateTime.local(1982, 5, 25)).milliseconds,
+  dateTimeNow: DateTime.local().toFormat('dd LLLL yyyy @ t'), // Build date, shown on About, Me and humans.txt
+  timeCurrent: DateTime.local().diff(DateTime.local(1982, 5, 25)).milliseconds, // Build stamp for `<meta name="build">` only. CSS/JS cache-busting uses `assetVersion.js` instead, so it doesn't change on every build
   siteMessage: false, // A message 'bar' appears on the pages
   siteTheme: 'theme-default', // Eg. if wanting to theme site to support Ukraine `theme-ukraine`
   socialMedia: [
