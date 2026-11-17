@@ -6,7 +6,8 @@
  * while allowing normal visitors and search engine bots. Blocked requests get the site's 403 page.
  *
  * Logging (Netlify UI: Logs > Edge Functions): only blocked requests are logged, one line each, with the page
- * path (no query string) and the user agent. Ordinary visits aren't logged at all, in line with the privacy
+ * path (no query string) and the user agent. Netlify starts each line with this function's name (`[aiAgents]`),
+ * so the lines don't add a label of their own. Ordinary visits aren't logged at all, in line with the privacy
  * page: the site doesn't collect information about what people read.
  */
 
@@ -96,7 +97,7 @@ export default async (request) => {
   // added to the list.
   if (honeypotPaths.includes(url.pathname)) {
     console.log(
-      `[Edge Function] Honeypot triggered | page: ${url.pathname} | user agent: ${ua}`,
+      `Honeypot triggered | page: ${url.pathname} | user agent: ${ua}`,
     );
     return respondWith403(request);
   }
@@ -108,7 +109,7 @@ export default async (request) => {
 
   if (isAiAgent) {
     console.log(
-      `[Edge Function] AI crawler blocked | page: ${url.pathname} | user agent: ${ua}`,
+      `AI crawler blocked | page: ${url.pathname} | user agent: ${ua}`,
     );
     return respondWith403(request);
   }
