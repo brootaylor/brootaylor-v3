@@ -91,7 +91,7 @@ export default function addHoneypotLink() {
 A couple of things have changed since I first wrote this:
 
 1. **The honeypot script** &mdash; It used to be an inline script. It now lives in its own little JavaScript module, which is the version shown above.
-2. **The logs** &mdash; The edge function used to log the browser details and address of *every* visit to my site. Looking back, that was far more than I needed. Now it only logs the requests it actually blocks: an "Ai" crawler on my list, or something following the honeypot link. Ordinary visitors leave nothing behind in the logs, and everything that does show up is a bot that got caught.
+2. **The logs** &mdash; The edge function used to log the browser details and address of *every* visit to my site. Looking back, that was far more than I needed. Now it only logs the requests it actually blocks: an "Ai" crawler on my list, or something following the honeypot link. It doesn't log ordinary visits at all, so everything it does log is a bot that got caught.
 
 ---
 
