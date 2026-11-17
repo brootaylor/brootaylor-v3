@@ -1,13 +1,13 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/712367e5-7510-4813-9a24-5805f092cfa1/deploy-status)](https://app.netlify.com/sites/brootaylor-eleventy/deploys)
 [![Daily build](https://img.shields.io/github/actions/workflow/status/brootaylor/brootaylor-v3/build.yml?style=flat&label=daily%20build)](https://github.com/brootaylor/brootaylor-v3/actions/workflows/build.yml)
-[![Built with Eleventy](https://img.shields.io/badge/built_with-Eleventy-black?style=flat&logo=eleventy&logoColor=white)](https://www.11ty.io/)
+[![Built with Eleventy](https://img.shields.io/badge/built_with-Eleventy-black?style=flat&logo=eleventy&logoColor=white)](https://www.11ty.dev/)
 [![Node](https://img.shields.io/badge/node-24.22.3-339933?style=flat&logo=node.js&logoColor=white)](https://github.com/brootaylor/brootaylor-v3/blob/main/.nvmrc)
 [![License](https://img.shields.io/github/license/brootaylor/brootaylor-v3?style=flat)](https://github.com/brootaylor/brootaylor-v3/blob/main/LICENSE)
 [![1x-badge](https://img.shields.io/github/stars/cutenode/1x.engineer.svg?color=purple&label=1x%20Engineers&logo=image%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADAElEQVRoQ%2B1YPZMNQRQ9RyYiUCVkI0J%2BASUi4xfYzYjsVsmXX2BFZFauigyJ4hcQEtkNVQmoEjvqqh7VM6%2B%2FZ%2BapqXodvtdz%2B56%2B59zT3cTCBxeePzYA%2FncFNxUoqYCkEwC2AbwjeVTyTemctVRA0iUAH11SxwBekLxfmmRq3roA3AHwxEvkLcnrSwJwCOC2l%2FBDkg%2BWBOAzgAtewjdIvlkEAElnAHwDYEK28RvAWZLflwLAuP7aS%2FYLyYtTJG8xZhexJOP6vpfwc5LWUicZ6wDwHsAVL9u7JJ9Okv2YCki6SfJVKhFnYL8AnPTmXSb5yf%2BuJFZsnaYKSHoEYBfAIcmdWPCBgdk0E64J2IT8d0h65lz6gORebWWqAEg6DeAlgKveQjskrc%2BvDElJA5NkWjAA3TC63SL5oxRIMQC3m5b8%2BUHwn%2FZbaFFJUQNzm2HnolODePabgejRbBSF3E4ZbawC%2FrBzjWkhuJikpIG5TTEdnRvEtQrsxSrrz81WwOP7cBM%2BuOSD5S41MFcJA%2BF3qm6trC6iACJ87wI%2FJmkijg5JVQYm6QDAvUDApC6CADJ83y0pbYuBOaoakGJdrACwnuw6QxXfhzsnqcnAMrqwjtfznhCAr4FOk%2BR7IHk7uGUNLMa%2FhC6OSG4lRSzJ2tiwK1T15xIDy%2Bgn5Df2yTHJXhuPUcj6dzEPAxVovoFl9LedpZAlM7Y%2Fpwwss%2FPmzFV%2Bk2ujTf05Z2AhEK1%2BU2JkVf251MA6EGP9JgvAUcpKW9SfawxsCr8pAlCgi63uMFdqYG7nrWWP8ptiAA6ELTbURe84XWNggeN0ld9YTlUAPN52uujdb0tvYL6IvY6VPV%2BFxN8EwFVj5UrZamBrv1ImjgDNBpbyh9R%2FzRWI9PLZnhBjIKYGMNsT4uwAag2slTLD7yarQI2BTZV8cxuN8H%2FWJ8R1UKjpBja2GlNSyMzNrqPdZWjlCXFsspMaWcIL7MZ0zT07%2FntCnCP5STUwV4K5uJNRKLfQXP9vAMy1s6VxF1%2BBPxWSokDSvlDHAAAAAElFTkSuQmCC&style=flat)](https://1x.engineer)
 
 # brootaylor.com
 
-This version of my website is comprised of static files built using the fabulous [Eleventy](https://www.11ty.io/) (SSG), configurable [NPM](https://docs.npmjs.com/cli/npm) build scripts, global data configuration, [Sass](https://sass-lang.com/) powered CSS system and [rollup.js](https://rollupjs.org/) to bundle JavaScript modules. Much of the content is also available offline thanks to a [Service Worker](https://developers.google.com/web/fundamentals/primers/service-workers).
+This version of my website is comprised of static files built using the fabulous [Eleventy](https://www.11ty.dev/) (SSG), configurable [NPM](https://docs.npmjs.com/cli/npm) build scripts, global data configuration, [Sass](https://sass-lang.com/) powered CSS system and [rollup.js](https://rollupjs.org/) to bundle JavaScript modules. Much of the content is also available offline thanks to a [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API).
 
 It's deployed by and hosted with [Netlify](https://www.netlify.com/).
 
@@ -41,7 +41,7 @@ It's deployed by and hosted with [Netlify](https://www.netlify.com/).
   * [`bluesky-auth`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/bluesky-auth.njk)
   * [`google-site-verification`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/google-site-verification.njk)
 * [JAMstack](https://jamstack.org/) methodology
-* [Eleventy](https://www.11ty.io/) (SSG)
+* [Eleventy](https://www.11ty.dev/) (SSG)
 * [Netlify](https://www.netlify.com/)
 * 📧 [Netlify contact form](https://docs.netlify.com/forms/setup/)
 
@@ -223,13 +223,11 @@ netlify status
 # Create a new deploy from the `dist` folder (creates a draft URL)
 netlify deploy
 
-# Manage netlify functions
-# Ref: https://www.netlify.com/tags/functions/
-netlify functions
+# Show the last 24 hours of logs from an edge function (eg. the AI crawler blocker)
+# Add `--follow` to watch new log lines as they arrive
+netlify logs --edge-function aiAgents --since 24h
 
-# list installed plugins
-# Ref: https://www.netlify.com/tags/plugins/
-netlify plugins
+# Build plugins aren't managed with a command: they're listed under [[plugins]] in netlify.toml
 
 # Link local repo or project folder (ie. `dist`) to an existing site on Netlify
 netlify link
@@ -252,9 +250,9 @@ The changes will deploy to the live Netlify instance.
 
 ## Auto build & deployment
 
-* My preferred method is to host on [Netlify](http://www.netlify.com)
+* My preferred method is to host on [Netlify](https://www.netlify.com/)
 * This build process runs in a CI environment and then deploys the build automatically to a global CDN.
-* Such deployments are [triggered automatically](https://www.netlify.com/docs/continuous-deployment/) by every git push to the `main` branch of the origin repository.
+* Such deployments are [triggered automatically](https://docs.netlify.com/build/configure-builds/overview/) by every git push to the `main` branch of the origin repository.
 
 ---
 
@@ -277,10 +275,10 @@ npm run dev
 * Uses rules in local `netlify.toml` (and the Content Security Policy in the generated `dist/_headers`)
 * Makes environment variables available
 * Performs edge logic and routing rules
-* Compiles and runs cloud functions
+* Runs the edge functions (in `netlify/edge-functions/`)
 
 ```bash
-netlify dev
+npm run netlify-dev
 ```
 
 ### 3. Stream your dev server to a live URL
@@ -290,7 +288,7 @@ netlify dev
 * Get instant feedback.
 
 ```bash
-netlify dev --live
+npm run netlify-dev:live
 ```
 
 ---
