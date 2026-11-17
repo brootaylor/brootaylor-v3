@@ -27,9 +27,15 @@ a {
     &[rel~="external"]:not(.button) {
       // The icon is used as a mask (a stencil) over a `currentColor` background, so it's drawn in the link's
       // own text colour. As a plain background image it was always black, which disappears in the dark scheme.
+      // - `opacity: 0.6` keeps it subtle but above the 3:1 contrast icons need: 3.4:1 in the light scheme and
+      //   5.4:1 in the dark one (it reaches full strength on hover).
+      // - `forced-color-adjust: none`: in forced colours mode (eg. Windows High Contrast) the browser replaces
+      //   background colours, which would make a masked icon disappear. With this, `currentColor` follows the
+      //   forced text colour instead.
       &::after {
         mask: url(/assets/icons/icon_external.svg) no-repeat center / contain;
         background-color: currentColor;
+        forced-color-adjust: none;
         content: "";
         display: inline-block;
         width: 0.75em;
@@ -37,7 +43,7 @@ a {
         margin-left: 0.125em;
         margin-right: 0.125em;
         vertical-align: baseline;
-        opacity: 0.4;
+        opacity: 0.6;
         transition: opacity 0.3s ease-in-out;
       }
 

@@ -43,7 +43,7 @@
 {#
 	Applies a visitor's saved colour scheme (Light or Dark) before the page is drawn, so there's no flash of the
 	wrong colours. It has to be a plain inline script, straight after the `<meta>`: a module or deferred script
-	would run after the first paint.
+	can run after the first paint.
 	- It only copies a saved `light` or `dark` into the `<meta>` above. Everything else (the controls, saving the
 	  choice) is in `scripts/features/colourScheme.mjs`, which also re-applies the saved value as a backup.
 	- `try`/`catch`: reading `localStorage` can throw when site data is blocked. The site then follows the device.

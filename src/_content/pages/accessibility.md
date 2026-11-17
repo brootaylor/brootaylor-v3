@@ -45,7 +45,9 @@ If you'd rather choose for yourself, pick **Light** or **Dark** below. **System*
 
 {{ colourSchemeControl("accessibility") }}
 
-<noscript><p>Choosing a colour scheme needs JavaScript, which is turned off or unavailable in your browser. The site is following your device's setting instead.</p></noscript>
+<noscript>
+<p>Choosing a colour scheme needs JavaScript, which is turned off or unavailable in your browser. The site is following your device's setting instead.</p>
+</noscript>
 {% endif %}
 
 ---

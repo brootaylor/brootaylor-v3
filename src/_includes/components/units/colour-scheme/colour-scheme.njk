@@ -6,6 +6,8 @@
 	{{ colourSchemeControl("footer") }}
 
 	- `idPrefix` keeps the `id`s and the radio group `name` unique when the control appears twice on one page.
+	- Each radio button sits inside its `<label>`, so the whole option is one click / tap target. The label's `for`
+	  still points at the radio's `id`, because some voice control software needs that link even when nested.
 	- "System" follows the device setting. Its "(currently …)" text is two spans, and `_colour-scheme.scss`
 	  hides the one that doesn't match the device setting, so it stays right without any JavaScript.
 	- It's rendered `hidden`, because it can't work without JavaScript. `scripts/features/colourScheme.mjs`
@@ -25,7 +27,7 @@
 	{ value: "dark", label: "Dark" },
 	{ value: "system", label: "System" }
 ] %}
-<span class="colour-scheme__option"><input type="radio" id="{{ idPrefix }}-colour-scheme-{{ option.value }}" name="{{ idPrefix }}-colour-scheme" value="{{ option.value }}"> <label for="{{ idPrefix }}-colour-scheme-{{ option.value }}">{{ option.label }}{% if option.value == "system" %} <span class="colour-scheme__current">(currently <span class="colour-scheme__if-light">light</span><span class="colour-scheme__if-dark">dark</span>)</span>{% endif %}</label></span>
+<label class="colour-scheme__option" for="{{ idPrefix }}-colour-scheme-{{ option.value }}"><input type="radio" id="{{ idPrefix }}-colour-scheme-{{ option.value }}" name="{{ idPrefix }}-colour-scheme" value="{{ option.value }}"> <span>{{ option.label }}{% if option.value == "system" %} <span class="colour-scheme__current">(currently <span class="colour-scheme__if-light">light</span><span class="colour-scheme__if-dark">dark</span>)</span>{% endif %}</span></label>
 {%- endfor %}
 </span>
 </fieldset>

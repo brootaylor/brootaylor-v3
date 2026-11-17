@@ -10,13 +10,18 @@
 // Don't give `.colour-scheme` itself a `display` value: the control starts out `hidden` (until the script
 // shows it), and a `display` rule here would override that and show a control that can't work yet.
 .colour-scheme {
+  // Smallest comfortable click / tap area for each option: 24px (WCAG 2.5.8), 44px on touch screens (WCAG 2.5.5)
+  --colour-scheme-target-size: 24px;
+
+  @media (pointer: coarse) {
+    --colour-scheme-target-size: 44px;
+  }
+
   border: 0;
   margin-inline: 0; // Only the sides: the space above comes from `.flow` on a page (don't zero it)
   padding: 0;
   min-inline-size: 0; // Fieldsets otherwise refuse to shrink below their content's width
-
-  // Same size as body text paragraphs (see `p` in `base/_typography.scss`). The footer makes it smaller.
-  font-size: clamp(#{convert-to-rem(18px)}, 1.9vw, #{convert-to-rem(20px)});
+  font-size: var(--font-size-body); // Same size as body text. The footer makes it smaller.
 
   // Native radio buttons in the site's green, rather than the browser's default blue.
   // `--colour-focus` is above 3:1 against the page and footer backgrounds in both colour schemes.
@@ -31,20 +36,21 @@
 .colour-scheme__options {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25em 1.25em;
+  gap: 0 1.25em; // No row gap: each option's own height already spaces the rows
 }
 
+// Each option is a `<label>` with its radio button inside, so the whole option (radio, gap and text)
+// is one click / tap target, sized with the minimum above. The text is wrapped in one `<span>`, so the
+// flex `gap` only separates the radio from the text (not "System" from "(currently …)").
 .colour-scheme__option {
   display: inline-flex;
   align-items: center;
   gap: 0.35em;
+  min-block-size: var(--colour-scheme-target-size);
+  cursor: pointer;
 
   input {
     margin: 0;
-  }
-
-  label {
-    cursor: pointer;
   }
 }
 

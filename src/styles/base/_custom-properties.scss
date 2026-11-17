@@ -17,6 +17,7 @@
   --font-family-base: #{string.unquote(#{$font-family-base})};
   --font-family-secondary: #{string.unquote(#{$font-family-secondary})};
   --font-size-base-percent: 100%;
+  --font-size-body: clamp(#{convert-to-rem(18px)}, 1.9vw, #{convert-to-rem(20px)}); // Body text (paragraphs, lists etc.), grows with the viewport between the two limits
   --line-height-base: #{$line-height-base};
 
   /* Colours (light and dark), named by what they're used for, eg. `--colour-surface` for the page background.
@@ -54,7 +55,8 @@
 /// `.browserslistrc` still includes). In those browsers every `--colour-*` value above is invalid, so colours
 /// would drop back to the browser's defaults (eg. white logo text on a see-through background).
 /// Instead they get plain colours: the light ones, or the dark ones when the device is set to dark mode or the
-/// visitor picked Dark. Browsers that understand `light-dark()` skip all of this.
+/// visitor picked Dark. The dark rules use `:has()`, so the few browsers that lack that too (eg. KaiOS) always
+/// get the light colours. Browsers that understand `light-dark()` skip all of this.
 
 /// Outputs every `--colour-*` property with its light (`1`) or dark (`2`) value from `$colour-scheme`
 @mixin colour-scheme-values($scheme) {

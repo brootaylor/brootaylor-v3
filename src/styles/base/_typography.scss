@@ -71,7 +71,7 @@ ul:not(.navigation__list, .auto-grid), // Not the primary navigation list or gri
 ol:not(.auto-grid), // Not the grid list element
 pre,
 details {
-  font-size: clamp(#{convert-to-rem(18px)}, 1.9vw, #{convert-to-rem(20px)});
+  font-size: var(--font-size-body); // See `base/_custom-properties.scss`
   max-width: 60ch;
   text-wrap: pretty; // Prevents orphans & widows (eg. a single word on a line by itself)
 }
