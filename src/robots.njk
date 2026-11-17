@@ -9,8 +9,12 @@ eleventyExcludeFromCollections: true
 {% if site.robotsCrawl -%}
 # ALLOW crawling of all content except for certain user-agents, directories / pages etc. and their contents eg. `/foo`
 # == Open the doors to all other user-agents in Production ==
+{#- The one exception is the honeypot page (`src/_content/pages/honeypot.md`). Well-behaved crawlers read this
+    and stay away, so the only crawlers that end up there (and get blocked by `netlify/edge-functions/aiAgents.js`)
+    are ones that ignore robots.txt. `/honeypot` also covers `/honeypot/` and `/honeypot.html`, as robots.txt
+    rules match the start of an address. #}
 User-agent: *
-Disallow:
+Disallow: /honeypot
 
 {% else -%}
 # DISALLOW crawling of all content
