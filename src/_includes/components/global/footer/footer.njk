@@ -55,6 +55,13 @@
 			{% endfor %}
 		</nav>
 
+		{# Light / Dark / System choice (hidden until `scripts/features/colourScheme.mjs` shows it).
+		   Switched on with `colourSchemeChoice` (and `scriptsMain`) in `_data/site.js`. #}
+		{% if site.colourSchemeChoice and site.scriptsMain %}
+			{% from "components/units/colour-scheme/colour-scheme.njk" import colourSchemeControl %}
+			{{ colourSchemeControl("footer") }}
+		{% endif %}
+
 	</div>
 
 </footer>

@@ -40,6 +40,22 @@
    `light dark` means "follow the device setting". It's also where a visitor's own choice ends up (`light` or `dark`):
    the CSS in `_reset.scss` reads this tag back. #}
 <meta name="color-scheme" content="light dark">
+{#
+	Applies a visitor's saved colour scheme (Light or Dark) before the page is drawn, so there's no flash of the
+	wrong colours. It has to be a plain inline script, straight after the `<meta>`: a module or deferred script
+	would run after the first paint.
+	- It only copies a saved `light` or `dark` into the `<meta>` above. Everything else (the controls, saving the
+	  choice) is in `scripts/features/colourScheme.mjs`, which also re-applies the saved value as a backup.
+	- `try`/`catch`: reading `localStorage` can throw when site data is blocked. The site then follows the device.
+	- The CSP only allows this script by its hash (`'sha256-…'` in `netlify.toml`). If you change the script in
+	  `colour-scheme-init.js`, even by one character, the hash changes. The build prints a warning with the new
+	  hash to copy into `netlify.toml` (see `lib/utils/checks/cspScriptHashes.js`).
+	- Only included when visitors can choose (`colourSchemeChoice` and `scriptsMain` in `_data/site.js`). Otherwise a
+	  choice saved earlier would stick, with no control left to change it.
+#}
+{% if site.colourSchemeChoice and site.scriptsMain %}
+<script>{% include "components/chrome/meta/colour-scheme-init.js" %}</script>
+{% endif %}
 <title>{{ pageTitle | safe }}</title>
 <meta name="description" content="{{ metaDescription }}">
 

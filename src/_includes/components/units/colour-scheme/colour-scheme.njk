@@ -1,0 +1,32 @@
+{#
+	Colour scheme control
+	=====================
+	A Light / Dark / System choice, used in the footer and on the Accessibility page. Import it like so:
+	{% from "components/units/colour-scheme/colour-scheme.njk" import colourSchemeControl %}
+	{{ colourSchemeControl("footer") }}
+
+	- `idPrefix` keeps the `id`s and the radio group `name` unique when the control appears twice on one page.
+	- "System" follows the device setting. Its "(currently …)" text is two spans, and `_colour-scheme.scss`
+	  hides the one that doesn't match the device setting, so it stays right without any JavaScript.
+	- It's rendered `hidden`, because it can't work without JavaScript. `scripts/features/colourScheme.mjs`
+	  shows it, ticks the current choice and saves changes. Without JavaScript the site simply follows the device.
+
+	WHY NO INDENTATION / BLANK LINES IN THE MACRO'S OUTPUT? The Accessibility page is markdown, which is processed
+	*after* Nunjucks. An indented line after a blank line becomes a code block, and a blank line ends an HTML block
+	early. The `-` whitespace control (eg. `{%- ... %}`) keeps the output as one tight block of HTML.
+#}
+
+{% macro colourSchemeControl(idPrefix) -%}
+<fieldset class="colour-scheme" hidden>
+<legend class="colour-scheme__legend">Colour scheme</legend>
+<span class="colour-scheme__options">
+{%- for option in [
+	{ value: "light", label: "Light" },
+	{ value: "dark", label: "Dark" },
+	{ value: "system", label: "System" }
+] %}
+<span class="colour-scheme__option"><input type="radio" id="{{ idPrefix }}-colour-scheme-{{ option.value }}" name="{{ idPrefix }}-colour-scheme" value="{{ option.value }}"> <label for="{{ idPrefix }}-colour-scheme-{{ option.value }}">{{ option.label }}{% if option.value == "system" %} <span class="colour-scheme__current">(currently <span class="colour-scheme__if-light">light</span><span class="colour-scheme__if-dark">dark</span>)</span>{% endif %}</label></span>
+{%- endfor %}
+</span>
+</fieldset>
+{%- endmacro %}

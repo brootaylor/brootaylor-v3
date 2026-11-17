@@ -25,6 +25,9 @@ import { imageAlt } from './lib/utils/filters/image-alt.js';
 // Import (transforms)
 import { minifyHtml } from './lib/utils/transforms/minify-html.js';
 
+// Checks
+import { checkCspScriptHashes } from './lib/utils/checks/cspScriptHashes.js';
+
 // Import (shortcodes)
 import { photoGallery } from './lib/shortcodes/photoGallery.js';
 import { projectThumbnails } from './lib/shortcodes/projectThumbnails.js';
@@ -59,6 +62,9 @@ export default function (eleventy) {
 
   // Transforms
   eleventy.addTransform('minifyHtml', minifyHtml);
+
+  // After each build: warn (never fail) if an inline <script> isn't allowed by the CSP hashes in netlify.toml
+  eleventy.on('eleventy.after', checkCspScriptHashes);
 
   // Shortcodes
   eleventy.addShortcode('year', () => `${new Date().getFullYear()}`);

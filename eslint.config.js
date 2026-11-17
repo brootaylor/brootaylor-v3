@@ -66,8 +66,14 @@ export default [
 
   // Browser-context files: bundled by Rollup and shipped to the client, so
   // they get DOM globals like `window`/`document` instead of Node globals.
+  // `src/_includes/**/*.js` covers scripts included inline in the page, like
+  // the colour scheme script in the <head> (`chrome/meta/colour-scheme-init.js`).
   {
-    files: ['src/scripts/**/*.mjs', 'src/_includes/**/*.mjs'],
+    files: [
+      'src/scripts/**/*.mjs',
+      'src/_includes/**/*.mjs',
+      'src/_includes/**/*.js',
+    ],
     languageOptions: {
       globals: globals.browser,
     },

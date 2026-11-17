@@ -7,9 +7,13 @@ bodyClass: "accessibility"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 date: 2023-07-25T19:06:00
+updated: 2026-11-17T09:03:43.000Z
 
 changefreq: "yearly"
 ---
+
+{# The Light / Dark / System control used in the "Colour scheme" section below (also in the footer) #}
+{% from "components/units/colour-scheme/colour-scheme.njk" import colourSchemeControl %}
 
 This website is committed to providing a usable experience for anyone visiting it, regardless of technology or ability. It strives to meet the level AA standards outlined in the [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/){rel="external"}. This guide helps to explain how to make web content easier to use for disabled people.
 
@@ -28,6 +32,21 @@ Images and inline SVGs are described with text equivalents, to ensure everyone c
 All form `label` and associated `input` fields use a unique value for their respective `for` and `id` attributes.
 
 There are no `javascript:` pseudo-links. All links can be followed in any browser, even if scripting is turned off. There are no links that open new windows without warning.
+
+---
+
+## Colour scheme
+
+This website has a light and a dark colour scheme. By default it follows your device's setting, so if your device is set to dark mode, you'll see the dark scheme.
+{# The choice below only appears when it's switched on (`colourSchemeChoice` and `scriptsMain` in `_data/site.js`) #}
+{% if site.colourSchemeChoice and site.scriptsMain %}
+
+If you'd rather choose for yourself, pick **Light** or **Dark** below. **System** goes back to following your device. The same choice is at the bottom of every page. It's remembered in this browser only (see the [privacy page](/privacy) for how).
+
+{{ colourSchemeControl("accessibility") }}
+
+<noscript><p>Choosing a colour scheme needs JavaScript, which is turned off or unavailable in your browser. The site is following your device's setting instead.</p></noscript>
+{% endif %}
 
 ---
 

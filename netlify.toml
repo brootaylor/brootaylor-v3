@@ -58,9 +58,14 @@
   [headers.values]
     # Controls where scripts, styles, plugins and images may load from, and a few other things.
     # - script-src 'self': only JS files from this site can run. Inline <script> blocks are blocked,
-    #   which is one of CSP's biggest protections against injected code. All the site's JS lives in
+    #   which is one of CSP's biggest protections against injected code. The site's JS lives in
     #   files loaded from `src/scripts/main-modules.mjs`. (JSON-LD structured data blocks aren't
     #   affected, because browsers don't run them.)
+    #   The one exception is the colour scheme script in the <head> (`meta.njk`, from
+    #   `components/chrome/meta/colour-scheme-init.js`), which has to run before the page is drawn.
+    #   It's allowed by its 'sha256-…' hash below, so any other inline script is still blocked.
+    #   Changing that script changes its hash: the build prints a warning with the new one to paste
+    #   in here (`lib/utils/checks/cspScriptHashes.js`).
     # - style-src keeps 'unsafe-inline', because some pages add a <style> block through `head:` front matter.
     # - img-src allows this site plus CloudFront-hosted images, YouTube thumbnails (ytimg)
     #   and the 11ty IndieWeb avatar service.
@@ -68,7 +73,7 @@
     # - form-action 'self': forms can only submit to this site (the contact form posts to /contact/thanks).
     # - frame-ancestors 'self': only this site can show its pages in a frame. It matches
     #   X-Frame-Options below, which older browsers use instead.
-    Content-Security-Policy = "script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; img-src 'self' *.cloudfront.net *.ytimg.com *.indieweb-avatar.11ty.dev; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
+    Content-Security-Policy = "script-src 'self' 'sha256-eQl+3Ed72btHjsQ8azvlhggY6QGdlvu0QWU4UakJyRc='; style-src 'self' 'unsafe-inline'; object-src 'none'; img-src 'self' *.cloudfront.net *.ytimg.com *.indieweb-avatar.11ty.dev; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
 
     # Same-origin requests get the full URL; cross-origin requests get only the origin
     # (e.g. https://brootaylor.com), and nothing is sent when going from HTTPS to HTTP.

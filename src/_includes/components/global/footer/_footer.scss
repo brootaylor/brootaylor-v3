@@ -101,4 +101,18 @@
       }
     }
   }
+
+  // Compact colour scheme control (see `units/colour-scheme/`), on its own row below the links.
+  // Floating the legend lets it sit on the same line as the options, which a fieldset's legend won't do otherwise.
+  .colour-scheme {
+    flex-basis: 100%;
+    font-size: 0.9rem;
+    margin-block: 0;
+    padding-block: 0.5rem;
+  }
+
+  .colour-scheme__legend {
+    float: inline-start;
+    margin-inline-end: 1.25em;
+  }
 }

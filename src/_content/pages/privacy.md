@@ -11,7 +11,7 @@ bodyClass: "privacy"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 date: 2024-02-21T13:53:00
-updated: 2026-11-15T14:46:59.000Z
+updated: 2026-11-17T09:03:43.000Z
 
 changefreq: "yearly"
 ---
@@ -25,6 +25,8 @@ This website does not use any analytic or tracking technologies to collect infor
 ## Use of Cookies
 
 This website does not use cookies.
+
+If you choose a colour scheme (Light or Dark), your choice is saved in your browser's local storage so it's remembered between pages and visits. It's just the word "light" or "dark", it stays on your device, and it's never sent to this website. Choosing "System" removes it.
 
 ### Third party site disclaimer
 

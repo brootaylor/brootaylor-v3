@@ -36,6 +36,7 @@ export default {
   scriptsVendor: false, // If using vendor (ie. 3rd party) scripts
   scriptsMain: true, // If using any `main` scripts on the site (eg. carousel, objectfit polyfill etc.)
   scriptsServiceworker: true, // If using a service worker
+  colourSchemeChoice: true, // Light / Dark / System choice (footer and Accessibility page). Off = the site just follows the device setting. Needs `scriptsMain`
   dateTimeNow: DateTime.local().toFormat('dd LLLL yyyy @ t'),
   timeCurrent: DateTime.local().diff(DateTime.local(1982, 5, 25)).milliseconds,
   siteMessage: false, // A message 'bar' appears on the pages

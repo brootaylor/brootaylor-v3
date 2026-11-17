@@ -1,9 +1,10 @@
 /**
  * Dynamic module loading
  *
- * This is the site's only JavaScript entry point. All scripts live in module files like this one
- * (there are no inline `<script>` blocks), so the Content Security Policy in `netlify.toml` can
- * allow scripts from this site only (`script-src 'self'`).
+ * This is the site's only JavaScript entry point. Scripts live in module files like this one, so the
+ * Content Security Policy in `netlify.toml` can allow scripts from this site only (`script-src 'self'`).
+ * The one exception is the tiny colour scheme script inline in the `<head>` (see `meta.njk`), which has
+ * to run before the page is drawn. The CSP allows that single script by its hash.
  *
  * Module scripts are deferred, so this runs once the HTML has been fully parsed, before `DOMContentLoaded`.
  */
@@ -14,6 +15,7 @@ import { version, name } from '../../package.json';
 // They're small and needed on every page.
 import addHoneypotLink from './features/honeypot.mjs';
 import registerServiceWorker from './features/serviceWorker.mjs';
+import colourScheme from './features/colourScheme.mjs';
 
 const versionPrintOut = `${name}.${version}`;
 console.info(versionPrintOut);
@@ -29,6 +31,11 @@ if (rootElement.hasAttribute('data-honeypot')) {
 // Offline support. Only switched on for production builds (see ./features/serviceWorker.mjs)
 if (rootElement.hasAttribute('data-service-worker')) {
   registerServiceWorker();
+}
+
+// Light / Dark / System colour scheme controls (see ./features/colourScheme.mjs)
+if (rootElement.hasAttribute('data-colour-scheme')) {
+  colourScheme();
 }
 
 // Method/s called from ./features/salary.mjs
