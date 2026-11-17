@@ -17,7 +17,11 @@
   --font-family-base: #{string.unquote(#{$font-family-base})};
   --font-family-secondary: #{string.unquote(#{$font-family-secondary})};
   --font-size-base-percent: 100%;
-  --font-size-body: clamp(#{convert-to-rem(18px)}, 1.9vw, #{convert-to-rem(20px)}); // Body text (paragraphs, lists etc.), grows with the viewport between the two limits
+  /* Body text (paragraphs, lists etc.): 18px on small screens, growing with the viewport to 20px on wide ones.
+     Every part includes `rem`, so the size follows the browser's text size setting (the middle value adds `vw`
+     to grow with the viewport). The maximum stays well under 2.5× the minimum, so zooming in can still make
+     the text at least twice as big. */
+  --font-size-body: clamp(#{convert-to-rem(18px)}, 0.25rem + 1.5vw, #{convert-to-rem(20px)});
   --line-height-base: #{$line-height-base};
 
   /* Colours (light and dark), named by what they're used for, eg. `--colour-surface` for the page background.

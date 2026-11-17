@@ -99,18 +99,18 @@ $green-custom-dark: map.get($colors, green-custom-dark) !default;
 $colour-scheme: (
   frame: ($grey-dark, map.get($colors-dark, frame)),                       // Border around the page (`html`)
   surface: ($white, map.get($colors-dark, surface)),                       // Page background (`body`)
-  surface-raised: ($white, map.get($colors-dark, surface-raised)),         // Form fields, photo frames
-  surface-muted: ($grey-light, map.get($colors-dark, surface-muted)),      // Footer, cards, call-outs, info messages
-  surface-strong: ($grey-mid, map.get($colors-dark, surface-strong)),      // Header, heading bars, footnote markers
+  surface-raised: ($white, map.get($colors-dark, surface-raised)),         // Form fields, photo frames, blogroll icon backing
+  surface-muted: ($grey-light, map.get($colors-dark, surface-muted)),      // Footer, cards, call-outs, info messages, focused form fields
+  surface-strong: ($grey-mid, map.get($colors-dark, surface-strong)),      // Header, heading bars, footnote markers, footer links, video placeholder
   surface-contrast: ($grey-dark, map.get($colors-dark, surface-contrast)), // Logo block, footnote marker on hover
   text: ($font-colour-base, map.get($colors-dark, text)),                  // Body text
-  text-strong: ($black, map.get($colors-dark, text-strong)),               // Navigation, header and message text
+  text-strong: ($black, map.get($colors-dark, text-strong)),               // Navigation, header and message text, footer link hover
   divider: ($grey-light, map.get($colors-dark, divider)),                  // `<hr>` and list separators
-  border: ($grey-mid, map.get($colors-dark, border)),                      // Light borders (cards, quotes, form fields)
-  border-strong: ($grey-dark, map.get($colors-dark, border-strong)),       // Heavier borders (call-outs, messages)
-  accent: ($green-custom, map.get($colors-dark, accent)),                  // Green buttons (with white text)
-  accent-hover: ($green-custom-dark, map.get($colors-dark, accent-hover)), // Green buttons on hover
-  focus: ($green-custom, map.get($colors-dark, focus)),                    // Keyboard focus outline
+  border: ($grey-mid, map.get($colors-dark, border)),                      // Light borders (cards, quotes, form fields, footer)
+  border-strong: ($grey-dark, map.get($colors-dark, border-strong)),       // Heavier borders (call-outs, messages, focused form fields)
+  accent: ($green-custom, map.get($colors-dark, accent)),                  // Green buttons, Contact link and skip link (all with white text)
+  accent-hover: ($green-custom-dark, map.get($colors-dark, accent-hover)), // Green buttons and Contact link on hover
+  focus: ($green-custom, map.get($colors-dark, focus)),                    // Keyboard focus outline, colour scheme radio buttons
   underline: ($green-custom, map.get($colors-dark, underline)),            // Navigation and bookmark link underlines
   code: ($green-custom, map.get($colors-dark, code)),                      // Inline `<code>` text
   link-highlight: ($orange-custom-light, map.get($colors-dark, link-highlight)), // Link underline and hover fill

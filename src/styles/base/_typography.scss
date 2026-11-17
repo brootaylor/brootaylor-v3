@@ -169,7 +169,10 @@ code,
 :not(pre)>code,
 pre {
   // Highlighted code blocks are dark in both colour schemes, so their colours are the fixed ones (not `--colour-*`).
-  // `color-scheme: dark` makes the browser's own parts of them (eg. scrollbars) dark too.
+  // `color-scheme: dark` tells the browser the block is dark, so anything inside it that uses a `--colour-*`
+  // property (eg. the keyboard focus outline on a link) or a browser default colour gets its dark-scheme value.
+  // Keep setting `color` here: the text colour inherited from the page has already been worked out for the page's
+  // scheme (eg. dark grey in the light scheme), so it wouldn't switch to a dark-scheme value by itself.
   &[class*=language-] {
     color-scheme: dark;
     color: var(--grey-mid);
