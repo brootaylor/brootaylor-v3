@@ -108,7 +108,9 @@ async function getChromePath() {
 }
 
 /**
- * Resolve a request path to a file in `dist/` (pretty URLs: `/about/` -> `/about/index.html`).
+ * Resolve a request path to a file in `dist/`, the same way Netlify's pretty URLs do. This site's pages are
+ * built as `<name>.html` files (eg. `/about` -> `about.html`), so that's tried as well as an exact match and
+ * a folder's `index.html` (eg. `/` -> `index.html`).
  * Returns null if nothing matches or the path escapes `dist/`.
  */
 async function resolveFile(urlPath) {
@@ -116,7 +118,11 @@ async function resolveFile(urlPath) {
   if (filePath !== distDir && !filePath.startsWith(distDir + sep)) {
     return null;
   }
-  for (const candidate of [filePath, join(filePath, 'index.html')]) {
+  for (const candidate of [
+    filePath,
+    `${filePath}.html`,
+    join(filePath, 'index.html'),
+  ]) {
     try {
       if ((await stat(candidate)).isFile()) return candidate;
     } catch {
@@ -135,9 +141,9 @@ function serveDist() {
     let status = 200;
     let file = await resolveFile(pathname);
     if (!file) {
-      // Same 404 page Netlify serves (see netlify.toml)
+      // Same 404 page Netlify serves (see netlify.toml), built as `dist/error/404.html`
       status = 404;
-      file = await resolveFile('/error/404/');
+      file = await resolveFile('/error/404.html');
     }
     if (!file) {
       res.writeHead(404).end('Not found');

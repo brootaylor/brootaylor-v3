@@ -26,7 +26,7 @@ date: 2025-09-16T08:10:27.631Z
 ---
 
 <section aria-labelledby="projects-featured" class="projects-featured | flow">
-  <h2 id="projects-featured" tabindex="-1">Featured projects <a class="header-anchor" href="#projects-featured">#</a></h2>
+  <h2 id="projects-featured" tabindex="-1">Featured projects</h2>
   {# List of project pages #}
   <ul role="list" class="projects__list | auto-grid | no-list">
   {% for project in projects -%}
@@ -70,7 +70,7 @@ date: 2025-09-16T08:10:27.631Z
 ---
 
 <section aria-labelledby="projects-other" class="projects-other | flow">
-  <h2 id="projects-other" tabindex="-1">I have also worked with <a class="header-anchor" href="#projects-other">#</a></h2>
+  <h2 id="projects-other" tabindex="-1">I have also worked with</h2>
   <ul role="list" class="auto-grid | no-list">
     <li>
       <article class="card card--stacked">
@@ -176,7 +176,7 @@ date: 2025-09-16T08:10:27.631Z
 ---
 
 <section aria-labelledby="projects-open-source" class="projects-open-source | flow">
-  <h2 id="projects-open-source" tabindex="-1">Open source <a class="header-anchor" href="#projects-open-source">#</a></h2>
+  <h2 id="projects-open-source" tabindex="-1">Open source</h2>
   <ul role="list" class="auto-grid | no-list">
     <li>
       <article class="card card--stacked">
@@ -234,7 +234,7 @@ date: 2025-09-16T08:10:27.631Z
 {% from "components/core/blockquotes/blockquotes.njk" import blockquote %}
 
 <section aria-labelledby="projects-testimonials" class="projects-testimonials | flow">
-  <h2 id="projects-testimonials" tabindex="-1">Nice things people have said <a class="header-anchor" href="#projects-testimonials">#</a></h2>
+  <h2 id="projects-testimonials" tabindex="-1">Nice things people have said</h2>
   <ul role="list" class="auto-grid | no-list">
     <li>
     {%- call blockquote('Chris Hawkins, Staff Engineer', 'https://www.admiralgroup.co.uk/', 'Admiral Group Plc') -%}
@@ -276,6 +276,6 @@ date: 2025-09-16T08:10:27.631Z
 
 ---
 
-<h2 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV? <a class="header-anchor" href="#cv">#</a></h2>
+<h2 id="cv" tabindex="-1" class="visually-hidden">Need a copy of my CV?</h2>
 
 Need to see a copy of my CV for some reason? You're welcome to <span class="nowrap">[read it on this website](/cv)</span> or <span class="nowrap">[download a PDF copy](/BruceTaylorCV)</span>. { .call-out }

@@ -4,7 +4,8 @@
 	Only render this code snippet if `scriptsMain` and `scriptsVendor` are `true` in `_data/site.js`
 #}
 {% if site.scriptsMain and site.scriptsVendor %}
-	<script src="/scripts/vendor/vendor.js?version={{ pkg.version }}.{{ site.timeCurrent }}"></script>
+	{# `assetVersion`: a fingerprint of the built CSS and JS (see `src/_data/assetVersion.js`) #}
+	<script src="/scripts/vendor/vendor.js?version={{ assetVersion }}"></script>
 {% endif %}
 
 {#
@@ -15,8 +16,10 @@
 {% if site.scriptsMain %}
 	{# Native JS module (ESM). Module scripts are deferred by default, so this doesn't block the page from rendering.
 	   There's no fallback script for browsers without module support (eg. Opera Mini and KaiOS 2.5, which are still in
-	   `.browserslistrc`). They get the page without these extras, which still works: the JS only adds enhancements. #}
-	<script type="module" src="/scripts/modules/main.mjs?version={{ pkg.version }}.{{ site.timeCurrent }}"></script>
+	   `.browserslistrc`). They get the page without these extras, which still works: the JS only adds enhancements.
+	   `assetVersion` is a fingerprint of the built CSS and JS (see `src/_data/assetVersion.js`), so the address only
+	   changes when the files do. #}
+	<script type="module" src="/scripts/modules/main.mjs?version={{ assetVersion }}"></script>
 {% endif %}
 
 {# Generates extra page-specific JS eg. 3rd party scripts like Greensocks or custom JS functions #}

@@ -48,8 +48,9 @@
 		{# Main header & navigation #}
 		{% include "components/global/header/header.njk" %}
 
-		{# Main content #}
-		<main role="main" id="main" tabindex="-1">
+		{# Main content. `<main>` is already the "main" landmark, so it doesn't need `role="main"`.
+		   `tabindex="-1"` lets the skip link move focus here, without adding it to the Tab order. #}
+		<main id="main" tabindex="-1">
 
 			{# Check if `siteMessage` is true in `_data/site.js` and that the `bodyClass` equals 'homepage'... #}
 			{% if site.siteMessage and bodyClass == 'homepage' %}

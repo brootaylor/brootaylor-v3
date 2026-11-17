@@ -11,17 +11,24 @@ eleventyExcludeFromCollections: true
  * v{{ pkg.version }}
  * {{ pkg.homepage }}
  * Copyright (c) {% year %} {{ pkg.author.name }}. Licensed {{ pkg.license }}
- * Last generated: {{ site.dateTimeNow }}
  */
-{# `pkg.version` and `site.timeCurrent` are injected at build time. Baking the
-   deploy timestamp into `cacheName` means every deploy gets a brand new set
-   of caches, so `clearOldCaches()` (see below) sweeps away the previous
-   deploy's caches on `activate`. #}
+{#
+	There's deliberately no "last generated" date in this file. Browsers check for a new service worker by
+	comparing this file byte for byte, so a date here would make it "new" after every daily build, and every
+	visitor's service worker would reinstall and re-download its offline pages, even when nothing had changed.
+
+	`pkg.version` and `assetVersion` are injected at build time. `assetVersion` is a fingerprint of the built
+	CSS and JS (see `src/_data/assetVersion.js`), so `cacheName` only changes when they do (or when the package
+	version is bumped). Then `clearOldCaches()` (see below) sweeps away the old caches on `activate`, cached
+	pages included, so offline pages are never left pointing at a stylesheet that's no longer cached.
+	When only the content changes (eg. a new post), the cache names stay the same: the new offline pages are
+	added to the existing caches, and everything already cached is kept.
+#}
 // Define cache names and version information
 const siteName = '{{ pkg.name }}';
 const siteVersion = 'v{{ pkg.version }}';
-const siteDeployTime = '{{ site.timeCurrent }}';
-const cacheName = siteName + '_' + siteVersion + '.' + siteDeployTime;
+const assetVersion = '{{ assetVersion }}';
+const cacheName = siteName + '_' + siteVersion + '.' + assetVersion;
 
 // Set cache limits and timeout
 const maxPages = 50; // Maximum number of pages to cache
@@ -85,13 +92,13 @@ const offlinePages = [
 const staticNonMandatory = [
     '/assets/images/common/logo-social.png'
 ];
-{# `main.css`'s `?version=` query string is the same build-time cache-busting
-   pattern as `cacheName` above — it matches the versioned URL the site
-   actually serves, so this SW always fetches/caches the current CSS. #}
+{# `main.css`'s `?version=` uses the same `assetVersion` fingerprint as
+   `cacheName` above, and must match the address the pages use (see
+   `components/chrome/meta/meta.njk`), so this SW caches the CSS the pages ask for. #}
 // Define mandatory static assets
 // These assets must be cached for the service worker to complete installation
 const staticMandatory = [
-    '/styles/main.css?version={{ pkg.version }}.{{ site.timeCurrent }}',
+    '/styles/main.css?version={{ assetVersion }}',
     offlinePage
 ];
 

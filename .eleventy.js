@@ -54,7 +54,7 @@ export default function (eleventy) {
 
   // Add some utility filters
   eleventy.addFilter('pretty', prettyUrl);
-  eleventy.addFilter('dateOnly', dateOnly); // Generates numerial date (eg. 2020-02-22)
+  eleventy.addFilter('dateOnly', dateOnly); // Generates numerical date (eg. 2020-02-22)
   eleventy.addFilter('dateTime', dateTime); // Generates numerical date and time (eg. 2020-02-22T09:50:00.000Z)
   eleventy.addFilter('dateTimeReadable', dateTimeReadable); // Generates readable date and time (eg. 22 February 2020, 9:50 am)
   eleventy.addFilter('shuffle', shuffleArray); // Shuffles an array of items (eg. [1, 2, 3, 4, 5] => [3, 1, 5, 2, 4])
@@ -80,12 +80,11 @@ export default function (eleventy) {
   eleventy.addCollection('postBookmarks', postBookmarks);
   eleventy.addCollection('postPhotos', postPhotos);
 
-  // Passthrough
-  eleventy.addPassthroughCopy('./src/assets/fonts');
+  // Passthrough (copied to `dist/` as they are). The site uses system fonts and has no self-hosted video,
+  // so there's no `fonts` or `video` folder. Add a line here if either comes back.
   eleventy.addPassthroughCopy('./src/assets/ico');
   eleventy.addPassthroughCopy('./src/assets/icons');
   eleventy.addPassthroughCopy('./src/assets/images');
-  eleventy.addPassthroughCopy('./src/assets/video');
   eleventy.addPassthroughCopy('./src/assets/docs');
 
   // Enable data deep merge
@@ -100,7 +99,6 @@ export default function (eleventy) {
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
-    passthroughFileCopy: true,
 
     dir: {
       input: 'src',

@@ -18,7 +18,6 @@ export default {
   theme_color_android: '#212227',
   theme_color_ios: '#212227',
   background_color_android: '#ffffff',
-  background_color_mstile: '#212227',
   accent_color: '#212227',
   favicon: '/assets/ico/favicon.ico',
   icon: '/assets/ico/apple-touch-icon.png',
@@ -26,7 +25,6 @@ export default {
   icon_512: '/assets/ico/android-chrome-512x512.png',
   icon_maskable_196: '/assets/ico/android-chrome-maskable-196x196.png', // Maskable icon for Android devices (https://web.dev/maskable-icon-audit/),
   icon_maskable_512: '/assets/ico/android-chrome-maskable-512x512.png', // Maskable icon for Android devices (https://web.dev/maskable-icon-audit/)
-  icon_mstile: '/assets/ico/mstile-150x150.png',
   twitter: '@brootaylor', // Twitter handle
   webmentions: 'https://webmention.io/brootaylor.com/webmentions', // Webmention.io endpoint for this site
   robotsCrawl: true, // Allow search engine robots to crawl site

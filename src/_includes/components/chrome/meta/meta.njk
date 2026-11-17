@@ -67,8 +67,9 @@
 {# Displaying the version of Eleventy used to generate this website #}
 <meta name="generator" content="{{ eleventy.generator }}">
 
-{# Styles #}
-<link rel="stylesheet" href="/styles/main.css?version={{ pkg.version }}.{{ site.timeCurrent }}">
+{# Styles. `assetVersion` is a fingerprint of the built CSS and JS (see `src/_data/assetVersion.js`), so the
+   address only changes when the files do, and returning visitors otherwise keep using their copy. #}
+<link rel="stylesheet" href="/styles/main.css?version={{ assetVersion }}">
 
 {# Generates extra page-specific <head> metadata fields eg. styles, fonts & custom preload/prefetch #}
 {% if head %}
@@ -84,8 +85,9 @@
 {# Author 'humans' document #}
 <link rel="author" href="{{ rootUrl }}/humans.txt">
 
-{# RSS feed #}
-<link rel="alternate" type="application/rss+xml" href="{{ rootUrl }}/feed.xml" title="{{ metaTitle }}">
+{# Feed. It's an Atom feed (see `src/feed.njk`), so the type says Atom rather than RSS. Feed readers use this
+   to find the feed when someone subscribes with just the site's address. #}
+<link rel="alternate" type="application/atom+xml" href="{{ rootUrl }}/feed.xml" title="{{ metaTitle }}">
 
 {# Open graph #}
 {% if hidden != true %}
@@ -101,18 +103,20 @@
 {#
 	Twitter...
 	Only render this code snippet if `twitter` has a handler value in `_data/site.js`
+	There's no `twitter:url` tag: cards don't use one (they take the address from `og:url` above).
 #}
 {% if site.twitter and hidden != true %}
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="{{ site.twitter }}">
 	<meta name="twitter:title" content="{{ pageTitle }}">
 	<meta name="twitter:description" content="{{ metaDescription }}">
-	<meta name="twitter:url" property="og:url" content="{{ rootUrl }}{{ page.url | pretty }}">
 	<meta name="twitter:image" content="{{ rootUrl }}{% if socialImageUrl %}{{ socialImageUrl }}{% else %}{{ metaImage }}{% endif %}">
 	<meta name="twitter:image:alt"  content="{% if socialImageAlt %}{{ socialImageAlt | imageAlt }}{% else %}{{ metaImageAlt | imageAlt }}{% endif %}">
 {% endif %}
 
-{# Favicons, icons and manifests #}
+{# Favicons, icons and manifests.
+   There are no `msapplication-*` tags or `browserconfig.xml`: they were only for Start-screen tiles in Internet
+   Explorer and old Edge, which the site no longer supports (see `.browserslistrc`). #}
 <link rel="apple-touch-icon" sizes="180x180" href="{{ site.icon | url }}">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/ico/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/ico/favicon-16x16.png">
@@ -121,8 +125,6 @@
 <link rel="manifest" href="/manifest.json">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="{{ site.short_name }}">
-<meta name="msapplication-config" content="/browserconfig.xml">
-<meta name="msapplication-TileColor" content="{{ site.background_color_mstile }}">
 <meta name="theme-color" content="{{ site.theme_color_android }}">
 
 {#

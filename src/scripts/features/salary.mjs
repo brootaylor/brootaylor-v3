@@ -4,8 +4,8 @@
 
 // Works out my minimum annual salary
 const annualSalary = () => {
-  // Format the annual salary using the 'en-uk' locale and GBP currency style
-  const salary = new Intl.NumberFormat('en-uk', {
+  // Format the annual salary using the 'en-GB' locale and GBP currency style
+  const salary = new Intl.NumberFormat('en-GB', {
     style: 'currency', // Specify that the number should be formatted as currency
     currency: 'GBP', // Set the currency to British Pounds (GBP)
   }).format(
@@ -21,8 +21,8 @@ const annualSalary = () => {
 
 // Works out my minimum day rate (outside IR35)
 const dayRateOutside = () => {
-  // Format the outside IR35 day rate using the 'en-uk' locale and GBP currency style
-  const rateOut = new Intl.NumberFormat('en-uk', {
+  // Format the outside IR35 day rate using the 'en-GB' locale and GBP currency style
+  const rateOut = new Intl.NumberFormat('en-GB', {
     style: 'currency', // Specify that the number should be formatted as currency
     currency: 'GBP', // Set the currency to British Pounds (GBP)
   }).format(
@@ -38,8 +38,8 @@ const dayRateOutside = () => {
 
 // Works out my minimum day rate (inside IR35)
 const dayRateInside = () => {
-  // Format the inside IR35 day rate using the 'en-uk' locale and GBP currency style
-  const rateIn = new Intl.NumberFormat('en-uk', {
+  // Format the inside IR35 day rate using the 'en-GB' locale and GBP currency style
+  const rateIn = new Intl.NumberFormat('en-GB', {
     style: 'currency', // Specify that the number should be formatted as currency
     currency: 'GBP', // Set the currency to British Pounds (GBP)
   }).format(

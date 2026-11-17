@@ -53,7 +53,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # ESLint (with the Prettier plugin) covers all .js/.mjs source files.
+      # ESLint (with the Prettier plugin) covers the .js/.mjs source files.
+      # `config/` (build tooling) is left out on purpose - see `eslint.config.js`.
       - name: Lint scripts
         run: npm run lint:scripts
 
@@ -69,5 +70,9 @@ jobs:
 
       # Full production build (styles, scripts, then Eleventy) - catches
       # build-breaking errors (bad templates, missing data, etc.) before merge.
+      # `deploy:build` is the same command Netlify runs (see netlify.toml): it
+      # sets NODE_ENV=production, so the JS is minified and pages switch on the
+      # service worker (`data-service-worker` in base.njk), just as on the live
+      # site. Plain `npm run build` skips both.
       - name: Build
-        run: npm run build
+        run: npm run deploy:build

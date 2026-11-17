@@ -16,7 +16,7 @@ It's deployed by and hosted with [Netlify](https://www.netlify.com/).
 ## Features
 
 * 🌶 [Progressively enhanced](https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement), semantic and accessible
-* 🚀 [Lighthouse score thresholds checked on every build](https://github.com/brootaylor/brootaylor-v3/blob/main/config/lighthouse.mjs)
+* 🚀 [Lighthouse score thresholds checked on every Netlify build](https://github.com/brootaylor/brootaylor-v3/blob/main/config/lighthouse.mjs) (and locally with `npm run netlify-build`)
 * 🌐 [Browser support config](https://github.com/brootaylor/brootaylor-v3/blob/main/.browserslistrc)
 * ✅ [Accessibility test runner](https://github.com/pa11y/pa11y-ci)
 * 🌈 [Sass](https://sass-lang.com/) powered CSS system using the [Dart Sass implementation](https://sass-lang.com/dart-sass) - (utilising modern [custom CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) and methods)
@@ -25,7 +25,7 @@ It's deployed by and hosted with [Netlify](https://www.netlify.com/).
 * 🎳 [JS config to handle code-splitting](https://github.com/brootaylor/brootaylor-v3/blob/main/config/rollup.config.mjs) (ie. splitting code into smaller chunks to be loaded on demand)
 * 🎛 [Site & build config](https://github.com/brootaylor/brootaylor-v3/blob/main/netlify.toml)
 * 🛄 [Selective build outputs](https://github.com/brootaylor/brootaylor-v3/blob/main/.eleventyignore) using `.eleventyignore`
-* ↩️ [Redirects](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_redirects) for local `netlify dev`
+* ↩️ [Redirects](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_redirects-production.njk) (built to Netlify's `_redirects` file)
 * 🌍 [Customisable global data](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_data/site.js)
 * 🎨 Page-specific art direction. `head` and `foot` metadata fields enable things like styles, fonts, SVGs & JS
 * 🔐 [Content Security Policy](https://github.com/brootaylor/brootaylor-v3/blob/main/lib/utils/headers/contentSecurityPolicy.js) built after each build, so inline `<script>` and `<style>` blocks are allowed automatically (by hash) and anything injected is blocked
@@ -73,6 +73,10 @@ brootaylor.com
 │   │   ├── build.yml              # Scheduled workflow that triggers a Netlify build hook (daily build cron; fails if Netlify rejects the request)
 │   │   ├── ci.yml                 # Lints and builds on every push to main and every pull request
 │
+├── audits
+│   ├── accessibility_report       # pa11y results (`npm run audit:accessibility`)
+│   ├── lighthouse_report          # Lighthouse HTML reports (`npm run audit:lighthouse:*`)
+│
 ├── config
 │   ├── eleventy-server.config.js  # Eleventy Dev Server configuration
 │   ├── pa11y.json                 # Accessibility config
@@ -98,9 +102,11 @@ brootaylor.com
 │   ├── assets                     # Assets (ie. Static files like Fonts, Images, Video, Favicons)
 │   ├── scripts                    # JavaScript (Global)
 │   ├── styles                     # SCSS (Global)
+│   ├── _redirects-production.njk  # _redirects template (Netlify page redirects)
 │   ├── ai.njk                     # ai.txt template
-│   ├── browserconfig.njk          # browserconfig.xml template (For Microsoft application usage)
-│   ├── feed.njk                   # feed.xml template
+│   ├── bluesky-auth.njk           # .well-known/atproto-did template (Bluesky domain verification)
+│   ├── feed.njk                   # feed.xml template (Atom feed of the newest posts)
+│   ├── google-site-verification.njk # Google Search Console verification file
 │   ├── humans.txt.njk             # humans.txt template
 │   ├── manifest.njk               # manifest.json template
 │   ├── robots.njk                 # robots.txt template
@@ -109,7 +115,7 @@ brootaylor.com
 │
 ├── tokens                         # Design tokens directory that holds individual design token JSON files (eg. colors.json)
 │
-├── .browserlistrc                 # Browser support config list
+├── .browserslistrc                # Browser support config list
 ├── .editorconfig                  # Text editor configuration
 ├── .eleventy.js                   # Eleventy configuration
 ├── .eleventyignore                # Directories / files eleventy needs to ignore when building
@@ -126,7 +132,8 @@ brootaylor.com
 ├── netlify.toml                   # Netlify configuration (server)
 ├── package.json                   # Node.js package manifest
 ├── package-lock.json              # Node.js package lock
-└── README.md                      # This file (Instructions and repo information)
+├── README.md                      # This file (Instructions and repo information)
+└── SECURITY.md                    # How to report a security problem
 ```
 
 ---
@@ -137,7 +144,7 @@ This repo uses npm's own settings to keep compromised packages from running or b
 
 * **Install-script approvals** — `.npmrc` sets `strict-allow-scripts=true`, so an install fails if any dependency's install scripts aren't approved under `allowScripts` in `package.json`. Approvals are per version, so bumping one of those packages needs a fresh review — see [approving install scripts after a version bump](#approving-install-scripts-after-a-version-bump).
 * **Release age** — `.npmrc` sets `min-release-age=7`, so npm only installs versions that were published at least 7 days ago.
-  - If `ncu -u` bumps a package to a version newer than that, `npm install` will refuse it. Wait a few days, or roll that package back to an older version.
+  * If `npx npm-check-updates -u` bumps a package to a version newer than that, `npm install` will refuse it. Wait a few days, or roll that package back to an older version.
 * **npm audit** — runs in **prebuild** and reports known vulnerabilities. It's informational only and never fails the build.
 * **GitHub Actions** — the workflows in `.github/workflows` pin each action to an exact commit ID (with its version in a comment on the same line), so a moved version label can't change the code CI runs. Dependabot (`.github/dependabot.yml`) opens one pull request a month to update them, only suggesting releases that are at least 7 days old. Review it, check CI passed on it, then merge. If you ever update a commit ID by hand, update its version comment too. The CI workflow can also only read the repo, and doesn't keep its access token after checking out the code, so later steps (like npm install scripts) can't use it.
 
@@ -175,10 +182,10 @@ git clone git@github.com:brootaylor/brootaylor-v3.git
 # Go to the working directory
 cd brootaylor-v3
 
-# Install dependencies
-npm install
+# Install dependencies, exactly as listed in package-lock.json
+npm ci
 
-# Copy the example env file, then adjust URL / AUDIT_URL for your context
+# Copy the example env file, then adjust the addresses (URL, LOCAL_ENV_URL) for your setup
 cp .env.example .env
 ```
 
@@ -186,10 +193,9 @@ cp .env.example .env
 
 Instructions for installing, creating a [*new Netlify instance*], or linking a local dev instance to an existing remote Netlify site instance.
 
-```bash
-# Install the Netlify CLI globally
-npm i -g netlify-cli
+The Netlify CLI is already installed with the project's other dependencies (its version is pinned in `package.json`), so there's no need to install it globally. Run it with `npx netlify` (or the shorter `npx ntl`). The commands below leave out the `npx` for readability.
 
+```bash
 # Set up the deployment rules => (follow the instructions in this process)
 netlify init
 
@@ -258,7 +264,7 @@ Here are a few ways to *watch* your code changes (while developing) and getting 
 
 ### 1. Watch "local" environment
 
-* Uses browserSync to open a local server
+* Uses the Eleventy Dev Server to serve the site locally
 * Various NPM commands run on the `dev` command and output any changes
 
 ```bash

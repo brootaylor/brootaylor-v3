@@ -1,5 +1,6 @@
-{# The 'shadow--layers' class is added to this component when the bodyClass is not 'homepage' and site.siteMessage is not present. #}
-<header role="banner" id="header" class="site-header {{ 'shadow--layers' if not (bodyClass == 'homepage' and site.siteMessage) }}">
+{# The 'shadow--layers' class is added to this component when the bodyClass is not 'homepage' and site.siteMessage is not present.
+   A `<header>` that sits directly in `<body>` is already the "banner" landmark, so it doesn't need `role="banner"`. #}
+<header id="header" class="site-header {{ 'shadow--layers' if not (bodyClass == 'homepage' and site.siteMessage) }}">
 	{# Site logo #}
 	{% include "components/global/logo/logo.njk" %}
 
