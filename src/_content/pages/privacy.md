@@ -11,7 +11,7 @@ bodyClass: "privacy"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 date: 2024-02-21T13:53:00
-updated: 2026-11-17T22:07:15.000Z
+updated: 2026-11-17T22:22:25.000Z
 
 changefreq: "yearly"
 ---
@@ -38,7 +38,7 @@ Please note that external sites linked to from our website may use cookies. The 
 
 If you choose a colour scheme (Light or Dark), your choice is saved in your browser's local storage so it's remembered between pages and visits. It's just the word "light" or "dark", it stays on your device, and it's never sent to this website. Choosing "System" removes it.
 
-So that pages still work when you're offline, this website keeps copies of some of its own pages, images, styles and scripts in your browser's storage (this is done by a "service worker"). They're only this website's own files, they stay on your device and they're never sent anywhere. You can remove them at any time by clearing this site's data in your browser's settings.
+So that pages still work when you're offline, this website keeps copies of some of its own pages, images, styles and scripts in your browser's storage (this is done by a "service worker"). They're only this website's own files, they stay on your device and they're never sent anywhere. They're refreshed when the website is updated, and only a limited number are kept: the main pages and latest few posts, plus up to 50 of the pages and 100 of the images you've looked at most recently. You can remove them at any time by clearing this site's data in your browser's settings.
 
 ---
 

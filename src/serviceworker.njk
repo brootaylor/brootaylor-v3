@@ -27,7 +27,9 @@ eleventyExcludeFromCollections: true
 
 	What's saved: the stylesheet and offline pages when the service worker installs, the site's scripts at the
 	same time (see `staticScripts`), and pages and images as they're visited. The static cache stays small:
-	it only ever holds the current build's files, and it's replaced whenever `assetVersion` changes.
+	it's replaced whenever `assetVersion` changes, and in between, `tidyStaticCache()` removes anything that's
+	dropped off this build's lists (eg. a post that's no longer one of the latest five) on `activate`. Visited
+	pages and images are kept to `maxPages` and `maxImages` by `trimCache()`.
 #}
 // Define cache names and version information
 const siteName = '{{ pkg.name }}';
@@ -196,6 +198,31 @@ function clearOldCaches() {
 }
 
 /**
+ * Removes anything from the static cache that's no longer on this build's lists.
+ * When only the content changes (eg. a new post), the cache names stay the same, so without this, offline
+ * pages that drop off the list (eg. a post that's no longer one of the latest five) would stay saved until the
+ * CSS or JS next changed. Anything still being saved by `updateStaticCache()` is on the lists, so it's kept.
+ * @returns {Promise} A promise that resolves when the static cache has been tidied
+ */
+function tidyStaticCache() {
+    // The lists hold paths (eg. `/about`); the cache holds full addresses, so compare those
+    const currentFiles = new Set(
+        [...staticMandatory, ...staticNonMandatory, ...offlinePages, ...staticScripts]
+        .map(path => new URL(path, location.origin).href)
+    );
+    return caches.open(staticCacheName)
+    .then(staticCache => {
+        return staticCache.keys()
+        .then(requests => {
+            return Promise.all(requests
+                .filter(request => !currentFiles.has(request.url))
+                .map(request => staticCache.delete(request))
+            );
+        });
+    });
+}
+
+/**
  * Trims the cache to the specified maximum number of items
  * @param {string} cacheName - The name of the cache to trim
  * @param {number} maxItems - The maximum number of items to keep in the cache
@@ -265,6 +292,13 @@ addEventListener('install', event => {
 addEventListener('activate', event => {
     event.waitUntil(
         clearOldCaches()
+        .then(() => {
+            // Housekeeping only, so a failure is logged rather than stopping the steps below
+            return tidyStaticCache()
+            .catch(error => {
+                console.error('Failed to tidy the static cache:', error);
+            });
+        })
         .then(() => {
             // Enable navigation preload if available
             if (self.registration.navigationPreload) {
