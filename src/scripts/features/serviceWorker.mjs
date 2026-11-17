@@ -2,8 +2,8 @@
  * Service worker registration
  * ============================
  *
- * Registers `/serviceworker.js` (built from `src/serviceworker.njk`), which keeps recently
- * visited pages and images available offline.
+ * Registers `/serviceworker.js` (built from `src/serviceworker.njk`), which keeps the site's styles
+ * and scripts, and recently visited pages and images, available offline.
  *
  * Called from `main-modules.mjs` when `<html>` has a `data-service-worker` attribute. `base.njk`
  * only adds that attribute on production builds with `scriptsServiceworker` set to `true` in

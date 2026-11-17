@@ -11,7 +11,7 @@ bodyClass: "privacy"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 date: 2024-02-21T13:53:00
-updated: 2026-11-17T12:38:07.000Z
+updated: 2026-11-17T22:07:15.000Z
 
 changefreq: "yearly"
 ---
@@ -28,11 +28,17 @@ If your browser blocks something on a page because of this website's security ru
 
 This website does not use cookies.
 
-If you choose a colour scheme (Light or Dark), your choice is saved in your browser's local storage so it's remembered between pages and visits. It's just the word "light" or "dark", it stays on your device, and it's never sent to this website. Choosing "System" removes it.
-
 ### Third party site disclaimer
 
 Please note that external sites linked to from our website may use cookies. The owners of this website are not responsible for this. You need to check with these external sites what information is being collected using cookies.
+
+---
+
+## Storage on your device
+
+If you choose a colour scheme (Light or Dark), your choice is saved in your browser's local storage so it's remembered between pages and visits. It's just the word "light" or "dark", it stays on your device, and it's never sent to this website. Choosing "System" removes it.
+
+So that pages still work when you're offline, this website keeps copies of some of its own pages, images, styles and scripts in your browser's storage (this is done by a "service worker"). They're only this website's own files, they stay on your device and they're never sent anywhere. You can remove them at any time by clearing this site's data in your browser's settings.
 
 ---
 

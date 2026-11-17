@@ -23,7 +23,11 @@ eleventyExcludeFromCollections: true
 	pages included, so offline pages are never left pointing at a stylesheet that's no longer cached.
 	When only the content changes (eg. a new post), the cache names stay the same: the updated service worker
 	downloads its offline pages again into the same caches (so they're current), and everything else that's
-	already cached (eg. images) is kept.
+	already cached (eg. images and scripts) is kept.
+
+	What's saved: the stylesheet and offline pages when the service worker installs, the site's scripts at the
+	same time (see `staticScripts`), and pages and images as they're visited. The static cache stays small:
+	it only ever holds the current build's files, and it's replaced whenever `assetVersion` changes.
 #}
 // Define cache names and version information
 const siteName = '{{ pkg.name }}';
@@ -102,6 +106,27 @@ const staticMandatory = [
     '/styles/main.css?version={{ assetVersion }}',
     offlinePage
 ];
+{#
+	The site's JavaScript, saved when the service worker installs, so it's served straight from the cache
+	(no network request) and still works offline. The addresses must match exactly what the pages request:
+	`main.mjs` (and `vendor.js`) with the same `?version=` as `components/chrome/scripts/scripts.njk`, and the
+	extra files `main.mjs` loads with `import()` by their hash-named file names (`src/_data/scriptChunks.js`).
+	The same `site.*` settings as `scripts.njk` decide which ones exist.
+	They're non-mandatory: the JS only adds enhancements, so the service worker still installs (and offline
+	pages still work, just without those extras) if they can't be saved.
+#}
+// Define the site's scripts (non-mandatory, cached separately - see `updateStaticCache()`)
+const staticScripts = [
+{%- if site.scriptsMain %}
+    '/scripts/modules/main.mjs?version={{ assetVersion }}',
+    {%- for chunk in scriptChunks %}
+    '{{ chunk }}',
+    {%- endfor %}
+    {%- if site.scriptsVendor %}
+    '/scripts/vendor/vendor.js?version={{ assetVersion }}',
+    {%- endif %}
+{%- endif %}
+];
 
 /**
  * Updates the static cache with mandatory and non-mandatory items
@@ -115,6 +140,15 @@ function updateStaticCache() {
         .catch(error => {
             console.error('Failed to cache non-mandatory assets:', error);
         });
+        // The scripts are saved in a batch of their own. `addAll()` is all-or-nothing, so if they shared the
+        // batch above, one script that couldn't be fetched would stop every offline page being saved too.
+        // Like that batch, it doesn't block installation.
+        if (staticScripts.length) {
+            staticCache.addAll(staticScripts)
+            .catch(error => {
+                console.error('Failed to cache scripts:', error);
+            });
+        }
         // These items MUST be cached for the Service Worker to complete installation
         return staticCache.addAll(
             staticMandatory
