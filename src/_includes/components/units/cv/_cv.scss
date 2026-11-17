@@ -19,7 +19,7 @@
 /// @group CV Component
 .cv__role {
   padding-block-start: 1.5em;
-  border-block-start: 1px solid var(--grey-mid);
+  border-block-start: 1px solid var(--colour-border);
 
   // A role's highlights. Browsers default a list nested inside another list to hollow circles,
   // so the filled discs used everywhere else on the site are restored.
@@ -74,7 +74,7 @@
 
   dt {
     padding-block-start: 0.75em;
-    border-block-start: 1px solid var(--grey-mid);
+    border-block-start: 1px solid var(--colour-border);
     font-weight: bold;
 
     // Keeps a label with its values when printing
@@ -89,7 +89,7 @@
     // Side-by-side, each value needs its own top rule and padding to line up with its label
     @include min-width($breakpoint-medium) {
       padding-block-start: 0.75em;
-      border-block-start: 1px solid var(--grey-mid);
+      border-block-start: 1px solid var(--colour-border);
     }
   }
 }

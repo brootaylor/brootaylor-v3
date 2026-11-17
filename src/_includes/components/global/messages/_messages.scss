@@ -11,7 +11,7 @@
   text-wrap: balance;
   padding-block: 1.5em;
   /* offset-x | offset-y | blur-radius | spread-radius | color */
-  border: 1px solid var(--grey-dark);
+  border: 1px solid var(--colour-border-strong);
   border-width: 1px 0 2px 0;
   margin-top: -2rem;
 
@@ -46,8 +46,8 @@
 
   // 'Info' type message
   &--info {
-    --message-text: var(--black);
-    --message-background: var(--grey-light);
+    --message-text: var(--colour-text-strong);
+    --message-background: var(--colour-surface-muted);
   }
 
   // 'Alert' type message

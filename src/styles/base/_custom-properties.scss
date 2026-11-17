@@ -5,6 +5,7 @@
 @use '../abstracts/config' as *;
 @use '../abstracts/functions' as *;
 @use 'sass:string';
+@use 'sass:list';
 
 
 /// Custom CSS Properties set on the `:root`
@@ -16,15 +17,19 @@
   --font-family-base: #{string.unquote(#{$font-family-base})};
   --font-family-secondary: #{string.unquote(#{$font-family-secondary})};
   --font-size-base-percent: 100%;
-  --font-colour-base: #{rgb-format($font-colour-base)};
   --line-height-base: #{$line-height-base};
 
-  /* Colours (background) */
-  --background-colour: #{rgb-format($grey-dark)}; // `html` element
-  --background-colour-overlay: #{rgb-format($white)}; // `body` element
+  /* Colours (light and dark), named by what they're used for, eg. `--colour-surface` for the page background.
+     Each one is `light-dark(<light>, <dark>)`, built from the `$colour-scheme` map in `abstracts/_config.scss`.
+     `light-dark()` follows the `color-scheme` property (see `base/_reset.scss`), so these switch automatically.
+     Don't register these with `@property` as `<color>`: that would fix them to one value, and they'd stop
+     switching for elements that set their own `color-scheme` (like the code blocks). */
+  @each $name, $values in $colour-scheme {
+    --colour-#{$name}: light-dark(#{rgb-format(list.nth($values, 1))}, #{rgb-format(list.nth($values, 2))});
+  }
 
-
-  /* Colours (base) */
+  /* Colours (base). The same in both colour schemes. Use these only where a colour should stay fixed,
+     eg. white text on the green buttons, or the black text on orange. */
   --black: #{rgb-format($black)};
   --white: #{rgb-format($white)};
   --grey-mid: #{rgb-format($grey-mid)};
@@ -38,11 +43,6 @@
   --green-custom-light: #{rgb-format($green-custom-light)};
   --green-custom-lighter: #{rgb-format($green-custom-lighter)};
   --green-custom-dark: #{rgb-format($green-custom-dark)};
-
-  /* Links */
-  --link-initial: var(--green-custom);
-  --link-text-hover: var(--green-custom-dark);
-  --link-border-hover: var(--green-custom-light);
 
   /* Sizes */
   --site-width: #{convert-to-rem($site-width)};

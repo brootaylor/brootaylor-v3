@@ -11,13 +11,13 @@
     grid-template-rows: auto 1fr;
     min-height: 100%;
     margin-block-end: 0;
-    background: var(--grey-light);
-    border: 1px solid var(--grey-mid);
-    box-shadow: -4px 4px 0px 1px rgb($grey-dark, 0.2);
+    background: var(--colour-surface-muted);
+    border: 1px solid var(--colour-border);
+    box-shadow: -4px 4px 0px 1px color-mix(in oklab, var(--colour-shadow) 20%, transparent);
     transition: box-shadow 0.3s ease-in-out;
 
     &:hover {
-      box-shadow: -6px 6px 0px 1px rgb($grey-dark, 0.4);
+      box-shadow: -6px 6px 0px 1px color-mix(in oklab, var(--colour-shadow) 40%, transparent);
     }
 
     .card__header {
@@ -45,7 +45,7 @@
         width: 1.5rem;
         border-radius: 20%;
         margin-block-end: -0.325rem;
-        background-color: var(--white); // Making sure there's a background colour in case the image is missing
+        background-color: var(--colour-surface-raised); // Making sure there's a background colour in case the image is missing
       }
 
       a {
@@ -62,7 +62,7 @@
     &__body {
       margin-top: 0.5em;
       padding-top: 1em;
-      box-shadow: inset 0 1px var(--grey-mid);
+      box-shadow: inset 0 1px var(--colour-border);
 
       p {
         @include font-size(14px);

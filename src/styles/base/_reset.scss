@@ -27,11 +27,22 @@ ol[role="list"] {
 
 html {
   hanging-punctuation: first last; // https://developer.mozilla.org/en-US/docs/Web/CSS/hanging-punctuation
-  // The site only has a light design, so browser controls (scrollbars, form fields) stay light even when
-  // someone's system is set to dark mode. If a dark theme is added later, change this to `light dark`
-  // (and the matching `<meta name="color-scheme">` in `meta.njk`).
+  // The site has light and dark colour schemes. `light dark` follows the device setting, and it's also what
+  // the `--colour-*` properties (`light-dark()`) and the browser's own controls (scrollbars, form fields) follow.
+  // Keep this as `light dark`: a visitor's own choice is applied by the two rules below, not by changing this.
   // https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme
-  color-scheme: light;
+  color-scheme: light dark;
+
+  // A visitor's own choice (Light or Dark) is stored in the `<meta name="color-scheme">` tag (see `meta.njk`).
+  // CSS beats that tag, so these rules copy its value back onto the page. Without JavaScript the tag
+  // stays `light dark`, and the site simply follows the device setting.
+  &:has(> head > meta[name="color-scheme"][content="dark"]) {
+    color-scheme: dark;
+  }
+
+  &:has(> head > meta[name="color-scheme"][content="light"]) {
+    color-scheme: light;
+  }
 }
 
 /* Set core root defaults */

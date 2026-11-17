@@ -13,7 +13,7 @@
     }
 
   a {
-    color: var(--black);
+    color: var(--colour-text-strong);
     font-weight: 400;
     text-decoration: underline;
     text-decoration-color: transparent;
@@ -31,8 +31,8 @@
     &:focus,
     &:hover,
     &[aria-current] {
-      color: var(--black);
-      text-decoration-color: var(--green-custom);
+      color: var(--colour-text-strong);
+      text-decoration-color: var(--colour-underline);
     }
 
     &[aria-current] {
@@ -84,7 +84,7 @@
       a {
         padding: 0 0.5em;
         color: var(--white);
-        background-color: var(--green-custom);
+        background-color: var(--colour-accent);
         border: 2px solid transparent;
         border-radius: 4px;
         text-decoration: none;
@@ -92,14 +92,14 @@
 
         // Button `:hover` state
         &:hover {
-          background-color: var(--green-custom-dark);
+          background-color: var(--colour-accent-hover);
         }
 
         // Button `:active` and `:focus` states
         &:active,
         &:focus,
         &[aria-current] {
-          background-color: var(--green-custom-dark);
+          background-color: var(--colour-accent-hover);
         }
       }
     }

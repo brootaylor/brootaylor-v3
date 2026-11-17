@@ -7,9 +7,9 @@
 
 
 #footer {
-  background-color: var(--grey-light);
+  background-color: var(--colour-surface-muted);
   padding: 1rem 0;
-  border-top: 1px solid var(--grey-mid);
+  border-top: 1px solid var(--colour-border);
 
   .wrapper {
     display: flex;
@@ -68,7 +68,7 @@
         a {
           font-size: 90%;
           padding: 0.2em 0.5em;
-          background-color: var(--grey-mid);
+          background-color: var(--colour-surface-strong);
           border: 2px solid transparent;
           border-radius: 4px;
           box-shadow: none;
@@ -76,13 +76,17 @@
           transition: background-color 0.25s ease-in-out;
 
           // Link `:hover` state
+          // The orange is the same in both colour schemes, so the text is fixed to black (12:1) rather than
+          // following the footer text colour, which is light in the dark scheme.
           &:hover {
+            color: var(--black);
             background-color: var(--orange-custom);
           }
 
           // Link `:active` and `:focus` states
           &:active,
           &:focus {
+            color: var(--black);
             background-color: var(--orange-custom);
           }
         }
@@ -93,7 +97,7 @@
       font-weight: 400;
 
       &:hover {
-        color: var(--black);
+        color: var(--colour-text-strong);
       }
     }
   }

@@ -26,8 +26,8 @@
 
     // The focus outline itself comes from the site-wide `:focus-visible` rule in `layouts/_base.scss`
     &:focus-visible {
-      background-color: var(--grey-light);
-      border-color: var(--grey-dark);
+      background-color: var(--colour-surface-muted);
+      border-color: var(--colour-border-strong);
     }
   }
 
@@ -52,8 +52,8 @@
   }
 
   .form__input {
-    background-color: var(--white);
-    border: 1px solid var(--grey-mid);
+    background-color: var(--colour-surface-raised);
+    border: 1px solid var(--colour-border);
     flex: 1 0 100%;
     padding: 0.5em;
     width: 100%;
@@ -71,14 +71,14 @@
         width: 0;
         position: absolute;
         pointer-events: none;
-        border-color: rgb($black, 0);
-        border-top-color: var(--black);
+        border-color: transparent;
+        border-top-color: var(--colour-text-strong);
         border-width: convert-to-rem(5px);
         margin-right: -(#{(convert-to-rem(5px))});
       }
 
       select {
-        color: var(--grey-dark);
+        color: var(--colour-text);
         background: none;
         width: 100%;
         height: inherit;

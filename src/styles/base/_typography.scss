@@ -16,7 +16,7 @@ html {
   font-size: var(--font-size-base-percent);
 	font-weight: 300;
   font-style: normal;
-  color: var(--font-colour-base);
+  color: var(--colour-text);
   letter-spacing: -0.03em;
 }
 
@@ -45,7 +45,7 @@ h1 {
     display: block;
     width: clamp(#{convert-to-rem(200px)}, 50vw, 30%);
     height: 0.4rem;
-    background-color: var(--grey-mid);
+    background-color: var(--colour-surface-strong);
     margin: 0.5em 0 1em;
   }
 }
@@ -148,7 +148,7 @@ sup {
   // If a superscript has a parent element with a `doc-noteref` attribute...
   [rel*="doc-noteref"] & {
     color: inherit;
-    background-color: var(--grey-mid);
+    background-color: var(--colour-surface-strong);
     padding: 0.125em 0.35em;
     border-radius: 0.25em;
     transition: background-color 0.3s,
@@ -162,15 +162,18 @@ sup {
 
 code {
   font-family: 'Courier New', Courier, monospace;
-  color: var(--green-custom);
+  color: var(--colour-code);
 }
 
 code,
 :not(pre)>code,
 pre {
+  // Highlighted code blocks are dark in both colour schemes, so their colours are the fixed ones (not `--colour-*`).
+  // `color-scheme: dark` makes the browser's own parts of them (eg. scrollbars) dark too.
   &[class*=language-] {
+    color-scheme: dark;
     color: var(--grey-mid);
-    background-color: var(--background-colour);
+    background-color: var(--grey-dark);
     hyphens: none;
   }
 
@@ -208,7 +211,7 @@ pre {
 
 hr {
   border: 0;
-  background-color: var(--grey-light);
+  background-color: var(--colour-divider);
   margin-top: 2rem !important;
   margin-left: 0;
   margin-right: auto;
@@ -260,7 +263,7 @@ article {
     + hr {
       max-width: 90%;
       height: 0.2rem;
-      background-color: var(--grey-light);
+      background-color: var(--colour-divider);
       margin: 2.5em 0 !important;
     }
   }

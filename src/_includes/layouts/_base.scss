@@ -6,7 +6,7 @@
 @use '../../styles/utilities/flow' as *;
 
 html {
-  background-color: var(--background-colour);
+  background-color: var(--colour-frame);
 
     @include min-width($breakpoint-large) {
       padding: 1.5rem;
@@ -15,7 +15,7 @@ html {
 
 body {
   min-height: calc(100vh - 0.5rem);
-  background-color: var(--background-colour-overlay);
+  background-color: var(--colour-surface);
 
     @include min-width($breakpoint-large) {
       min-height: calc(100vh - 3rem);
@@ -64,7 +64,7 @@ body {
   &:active,
   &:visited {
     color: var(--white);
-    background-color: var(--green-custom);
+    background-color: var(--colour-accent);
     box-shadow: none; // No orange underline effect
     transition: none; // Appear straight away, rather than animating up from the 1px hidden size
   }
@@ -83,11 +83,12 @@ body {
 // One consistent outline for anything that can receive keyboard focus.
 // - `:focus-visible` (rather than `:focus`) shows it for keyboard users, but not after a mouse click
 //   on a link or button.
-// - Dark green is well above the 3:1 contrast WCAG asks of focus indicators (2.4.7 and 1.4.11) against
-//   the white and light grey backgrounds. The logo, on the dark header, sets its own (see `_logo.scss`).
+// - `--colour-focus` (dark green in the light scheme, bright green in the dark one) is well above the 3:1
+//   contrast WCAG asks of focus indicators (2.4.7 and 1.4.11) against the page and footer backgrounds in
+//   both schemes. The logo, on its dark block, sets its own (see `_logo.scss`).
 // - `:where()` keeps the specificity low, so a component can still set its own outline colour.
 :where(a:any-link, button, input, select, textarea, summary):focus-visible {
-  outline: 3px solid var(--green-custom);
+  outline: 3px solid var(--colour-focus);
   outline-offset: 3px;
 }
 

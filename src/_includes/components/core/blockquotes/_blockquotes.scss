@@ -12,7 +12,7 @@ blockquote {
   display: block;
   margin-left: 0;
   padding: 0 0 0 1em;
-  border-left: 0.3em solid var(--grey-mid);
+  border-left: 0.3em solid var(--colour-border);
 
     @include min-width($breakpoint-small) {
       @include font-size(22px);

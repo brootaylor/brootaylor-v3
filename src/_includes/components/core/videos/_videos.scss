@@ -5,7 +5,7 @@
 @use '../../../../styles/abstracts' as *;
 
 .video {
-	background-color: var(--grey-mid);
+	background-color: var(--colour-surface-strong);
   margin-block-start: 2em;
 }
 
@@ -68,10 +68,10 @@
   font: inherit;
   cursor: pointer;
 
-  // Clear keyboard focus ring. Dark green on the white page is well above the 3:1
-  // contrast needed for focus indicators, and the offset separates it from the thumbnail.
+  // Clear keyboard focus ring. The focus green is well above the 3:1 contrast needed for
+  // focus indicators in both colour schemes, and the offset separates it from the thumbnail.
   &:focus-visible {
-    outline: 3px solid var(--green-custom);
+    outline: 3px solid var(--colour-focus);
     outline-offset: 3px;
   }
 }

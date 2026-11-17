@@ -5,8 +5,8 @@
 @use '../../../../styles/abstracts' as *;
 
 .site-header {
-  --header-text: var(--black);
-  --header-background: var(--grey-mid);
+  --header-text: var(--colour-text-strong);
+  --header-background: var(--colour-surface-strong);
 
   position: relative; // Mostly so the contact button can be positioned relative to this element on small to medium screens.
   display: flex;

@@ -9,7 +9,7 @@
   font-size: 1.2rem;
   font-weight: 700;
   padding: 1rem;
-  background-color: var(--grey-dark);
+  background-color: var(--colour-surface-contrast);
   white-space: nowrap;
 
     @include min-width($breakpoint-large) {

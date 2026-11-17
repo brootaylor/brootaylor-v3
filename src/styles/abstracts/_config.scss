@@ -85,6 +85,38 @@ $green-custom-lighter: map.get($colors, green-custom-lighter) !default;
 $green-custom-dark: map.get($colors, green-custom-dark) !default;
 
 
+/// Colour scheme (light and dark) colours, named by what they're used for.
+///
+/// Each entry is `name: (light value, dark value)`. `base/_custom-properties.scss` turns every entry into a
+/// `--colour-<name>` custom property set with `light-dark()`, so the browser picks the right value for the
+/// current colour scheme (the device setting, or the visitor's own choice).
+///
+/// - The light values are the colours the site has always used, so the light design doesn't change.
+/// - The dark values come from `tokens/colors-dark.json` (keys match the names here).
+/// - Colours that look right in both schemes (eg. white text on the green buttons, the orange highlights)
+///   don't need an entry. Components keep using the plain colour properties (`--white`, `--orange-custom`…) for those.
+$colour-scheme: (
+  frame: ($grey-dark, map.get($colors-dark, frame)),                       // Border around the page (`html`)
+  surface: ($white, map.get($colors-dark, surface)),                       // Page background (`body`)
+  surface-raised: ($white, map.get($colors-dark, surface-raised)),         // Form fields, photo frames
+  surface-muted: ($grey-light, map.get($colors-dark, surface-muted)),      // Footer, cards, call-outs, info messages
+  surface-strong: ($grey-mid, map.get($colors-dark, surface-strong)),      // Header, heading bars, footnote markers
+  surface-contrast: ($grey-dark, map.get($colors-dark, surface-contrast)), // Logo block, footnote marker on hover
+  text: ($font-colour-base, map.get($colors-dark, text)),                  // Body text
+  text-strong: ($black, map.get($colors-dark, text-strong)),               // Navigation, header and message text
+  divider: ($grey-light, map.get($colors-dark, divider)),                  // `<hr>` and list separators
+  border: ($grey-mid, map.get($colors-dark, border)),                      // Light borders (cards, quotes, form fields)
+  border-strong: ($grey-dark, map.get($colors-dark, border-strong)),       // Heavier borders (call-outs, messages)
+  accent: ($green-custom, map.get($colors-dark, accent)),                  // Green buttons (with white text)
+  accent-hover: ($green-custom-dark, map.get($colors-dark, accent-hover)), // Green buttons on hover
+  focus: ($green-custom, map.get($colors-dark, focus)),                    // Keyboard focus outline
+  underline: ($green-custom, map.get($colors-dark, underline)),            // Navigation and bookmark link underlines
+  code: ($green-custom, map.get($colors-dark, code)),                      // Inline `<code>` text
+  link-highlight: ($orange-custom-light, map.get($colors-dark, link-highlight)), // Link underline and hover fill
+  shadow: ($grey-dark, map.get($colors-dark, shadow)),                     // Button and card shadows
+) !default;
+
+
 
 /// Media query x-small (viewport) width
 $breakpoint-x-small: map.get($breakpoints, x-small) !default;

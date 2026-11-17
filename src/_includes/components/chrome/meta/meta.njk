@@ -35,10 +35,11 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-{# Declares that the page only has a light design, matching `color-scheme: light` in `styles/base/_reset.scss`.
-   Browsers already default to light, so on its own this changes nothing visible. It matters if a dark theme is
-   added: changing both to `light dark` then lets the browser use dark colours before the CSS has loaded. #}
-<meta name="color-scheme" content="light">
+{# Declares that the site has light and dark colour schemes, matching `color-scheme` in `styles/base/_reset.scss`.
+   It comes early so the browser can use the right background before the CSS has loaded (less of a white flash).
+   `light dark` means "follow the device setting". It's also where a visitor's own choice ends up (`light` or `dark`):
+   the CSS in `_reset.scss` reads this tag back. #}
+<meta name="color-scheme" content="light dark">
 <title>{{ pageTitle | safe }}</title>
 <meta name="description" content="{{ metaDescription }}">
 
