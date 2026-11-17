@@ -28,7 +28,9 @@ It's deployed by and hosted with [Netlify](https://www.netlify.com/).
 * ↩️ [Redirects](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_redirects) for local `netlify dev`
 * 🌍 [Customisable global data](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_data/site.js)
 * 🎨 Page-specific art direction. `head` and `foot` metadata fields enable things like styles, fonts, SVGs & JS
+* 🔐 [Content Security Policy](https://github.com/brootaylor/brootaylor-v3/blob/main/lib/utils/headers/contentSecurityPolicy.js) built after each build, so inline `<script>` and `<style>` blocks are allowed automatically (by hash) and anything injected is blocked
 * 🗡 [Edge function](https://github.com/brootaylor/brootaylor-v3/blob/main/netlify/edge-functions/aiAgents.js) to perform *(known)* Ai bot detection, suspicious path blocking, and applicable error page handling
+* 📮 [Edge function](https://github.com/brootaylor/brootaylor-v3/blob/main/netlify/edge-functions/browserReports.js) that logs the reports browsers send about problems (eg. something the Content Security Policy blocked)
 * Dynamically generated...
   * [`serviceworker.js`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/serviceworker.njk)
   * [`manifest.json`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/manifest.njk)
@@ -82,7 +84,7 @@ brootaylor.com
 │   ├── collections                # Eleventy collections
 │   ├── libraries                  # Eleventy libraries
 │   ├── shortcodes                 # Eleventy shortcodes
-│   ├── utils                      # Eleventy utility templates (ie. filters, transforms, build checks etc.)
+│   ├── utils                      # Eleventy utilities (ie. filters, transforms, and the security headers written after each build)
 │
 ├── netlify
 │   ├── edge-functions             # Netlify Edge functions (run on Deno, not Node — see deno.lock)
@@ -118,7 +120,7 @@ brootaylor.com
 ├── .nvmrc                         # Sets (and installs if necessary) the version of Node needed for this project
 ├── .prettierrc                    # Prettier formatting config (enforced via eslint-plugin-prettier)
 ├── .prettierignore                # Files Prettier/ESLint should skip formatting
-├── deno.lock                      # Lockfile for the Deno-based Netlify Edge Function
+├── deno.lock                      # Lockfile for the Deno-based Netlify Edge Functions
 ├── eslint.config.js               # JS linting configuration
 ├── LICENSE                        # Repo licence (MIT)
 ├── netlify.toml                   # Netlify configuration (server)
@@ -266,7 +268,7 @@ npm run dev
 ### 2. Spawn a full "local Netlify" environment
 
 * Detects and runs your site generator - ie. `eleventy`
-* Uses rules in local `netlify.toml`
+* Uses rules in local `netlify.toml` (and the Content Security Policy in the generated `dist/_headers`)
 * Makes environment variables available
 * Performs edge logic and routing rules
 * Compiles and runs cloud functions

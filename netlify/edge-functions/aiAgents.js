@@ -113,7 +113,10 @@ export default async (request) => {
   return;
 };
 
-// This config object sets the Edge function to run on all paths (wildcard)
+// This config object sets the Edge function to run on all paths (wildcard), except where browsers post
+// reports (`browserReports.js`). This function logs each request's user agent, and the reports promise not to
+// log browser details. Browsers don't post reports as AI crawlers anyway.
 export const config = {
   path: '/*',
+  excludedPath: ['/browser-reports'],
 };

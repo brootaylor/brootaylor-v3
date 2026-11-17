@@ -1,6 +1,6 @@
 # Security policy
 
-This is my personal website, built with Eleventy and deployed as static files on Netlify. It has no accounts or database. The only server-side code is two small Netlify edge functions: one blocks AI crawlers (`netlify/edge-functions/aiAgents.js`), and one logs Content Security Policy violation reports (`netlify/edge-functions/cspReports.js`). The contact form is handled by Netlify. If you spot a security problem, I'd like to hear about it.
+This is my personal website, built with Eleventy and deployed as static files on Netlify. It has no accounts or database. The only server-side code is two small Netlify edge functions: one blocks AI crawlers (`netlify/edge-functions/aiAgents.js`), and one logs the reports browsers send about problems, such as Content Security Policy violations (`netlify/edge-functions/browserReports.js`). The contact form is handled by Netlify. If you spot a security problem, I'd like to hear about it.
 
 ## Supported versions
 
