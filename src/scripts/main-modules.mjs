@@ -1,8 +1,8 @@
 /**
  * Dynamic module loading
  *
- * This is the site's main JavaScript entry point. The other script is the tiny colour scheme one inline in
- * the `<head>` (see `meta.njk`), which has to run before the page is drawn. The Content Security Policy
+ * This is the site's main JavaScript entry point. Alongside it, a tiny colour scheme script runs inline in
+ * the `<head>` (see `meta.njk`), because it has to run before the page is drawn. The Content Security Policy
  * allows scripts from this site, and inline scripts by their hash (`lib/utils/headers/contentSecurityPolicy.js`).
  *
  * Module scripts are deferred, so this runs once the HTML has been fully parsed, before `DOMContentLoaded`.

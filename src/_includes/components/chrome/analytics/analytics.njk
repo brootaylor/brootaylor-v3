@@ -2,7 +2,9 @@
 	NOTE: Before switching analytics back on (`analyticsUrchin` in `_data/site.js`), update the Content
 	Security Policy in `lib/utils/headers/contentSecurityPolicy.js`. The inline script below is allowed
 	automatically (by its hash), but the first script comes from another site, so it's blocked until Google's
-	addresses are added (`script-src`, and `connect-src` / `img-src` for the data it sends).
+	addresses are added (`script-src`, and `connect-src` / `img-src` for the data it sends). Also check the
+	Trusted Types reports before enforcing those rules: third-party scripts often add scripts or HTML in ways
+	they'd block.
 #}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analyticsUrchin }}"></script>
 <script>

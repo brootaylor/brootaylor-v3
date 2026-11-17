@@ -59,7 +59,8 @@
     # NOTE: The Content Security Policy isn't set here. It's built after each Eleventy build by
     # `lib/utils/headers/contentSecurityPolicy.js` and written to `dist/_headers`, so every inline
     # <script> and <style> block can be allowed by its hash automatically. Don't add a
-    # Content-Security-Policy (or Reporting-Endpoints) header here: Netlify would use this one instead.
+    # Content-Security-Policy, Content-Security-Policy-Report-Only or Reporting-Endpoints header here:
+    # Netlify would use the one here instead of the generated one.
 
     # Same-origin requests get the full URL; cross-origin requests get only the origin
     # (e.g. https://brootaylor.com), and nothing is sent when going from HTTPS to HTTP.

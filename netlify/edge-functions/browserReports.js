@@ -20,7 +20,8 @@
  * Privacy: only what helps fix a problem is logged (the page path, what happened, and a short code sample for
  * CSP reports). No IP address or browser details, and query strings are removed from addresses. The AI crawler
  * edge function (`aiAgents.js`), which logs every request's browser details, skips this path for the same reason.
- * Anything that isn't a report is ignored, and every reply is an empty 204, so the endpoint gives nothing away.
+ * Only POST requests reach this function (see `config` at the bottom; anything else gets the site's 404 page).
+ * A POST that isn't a report is ignored, and every reply is the same empty 204, so the endpoint gives nothing away.
  */
 
 // Reports are small. Anything bigger isn't a real report, so it isn't read.
