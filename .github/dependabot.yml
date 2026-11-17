@@ -7,7 +7,8 @@
 # pull request, so review it, check CI passed, then merge.
 #
 # npm packages are deliberately NOT included here - those are reviewed and
-# updated by hand in a monthly session (with `ncu`), so the two don't clash.
+# updated by hand in a monthly session (with `npx npm-check-updates`, which
+# `npm run audit:npm-local` runs), so the two don't clash.
 #
 # Docs: https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference
 version: 2
