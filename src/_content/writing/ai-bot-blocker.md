@@ -6,7 +6,7 @@ lead:
   - I wrote a post a few days ago about <a href="/writing/2025-01-01/robots-txt">my robots.txt file</a> &mdash; and how I thought I was being clever by disallowing OpenAI from indexing my personal website.
   - And how not-so-clever <em>(and naive)</em> of me it had turned out to be.
 date: 2025-01-05T19:23:36.671Z
-updated: 2026-01-17T11:57:36.671Z
+updated: 2026-11-17T15:26:18.000Z
 location:
   locality: Crawley
   country_name: UK
@@ -52,39 +52,46 @@ It's worth bearing in mind my 'stack' is Eleventy, Netlify and GitHub. The princ
 Here's the code it's made up of:
 
 1. [`ai_agents.json`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_data/ai_agents.json) &mdash; Data file *(static for the time being)* that lists the bots I want to block. [Dark Visitors](https://darkvisitors.com/agents.json) is a great resource for listing the agents.
-2. [`aiAgents.js`](https://github.com/brootaylor/brootaylor-v3/blob/main/netlify/edge-functions/aiAgents.js) &mdash; Server-side edge function that's triggered on every request to my site. It reads the `agents.json` file and checks the user-agent of the incoming request. Among some other things this script does, if the user-agent matches one of the bots in the list, it returns a `403` status code.
+2. [`aiAgents.js`](https://github.com/brootaylor/brootaylor-v3/blob/main/netlify/edge-functions/aiAgents.js) &mdash; Server-side edge function that's triggered on every request to my site. It reads the `ai_agents.json` file and checks the user-agent of the incoming request. Among some other things this script does, if the user-agent matches one of the bots in the list, it returns a `403` status code.
 3. [`robots.njk`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/robots.njk) &mdash; Nunjucks template that reads the `ai_agents.json` file and generates the `robots.txt` file.
-4. **Honeypot link** &mdash; A hidden link that's added dynamically to my site using a little inline JavaScript. It's a link that's *(hopefully)* mostly only visible to naughty bots / dodgy agents. If the link is clicked, they're redirected to a `403` page.
+4. **Honeypot link** &mdash; A hidden link that's added dynamically to my site using a little bit of JavaScript. It's a link that's *(hopefully)* mostly only visible to naughty bots / dodgy agents. If the link is followed, they get a `403` response *(and my 403 page)* instead of the page.
 
 The hidden 'honeypot' link is a little bit of a gamble and I'm not sure how effective it'll be. But it's a fun little experiment and I'm curious to see if it has any effect.
 
-This is what the inline JS generates in the DOM, just before the closing `</body>` tag:
+This is what the JavaScript generates in the DOM, just before the closing `</body>` tag:
 
 ```html
 <a href="/honeypot" class="hidden" aria-hidden="true" tabindex="-1" rel="nofollow">Honeypot be this way</a>
 ```
 
-If you're interested in the script snippet that generates this link, here it is:
+If you're interested in the script that generates this link, here it is. It's a small JavaScript module, [`honeypot.mjs`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/scripts/features/honeypot.mjs), that my main script imports and calls:
 
 ```js
-(() => {
-  document.addEventListener('DOMContentLoaded', () => {
-    const honeypotLink = document.createElement('a');
-    honeypotLink.href = '/honeypot';
-    honeypotLink.textContent = 'Honeypot be this way';
-    honeypotLink.classList.add('hidden');
-    // Ensure screen readers ignore it
-    honeypotLink.setAttribute('aria-hidden', 'true');
-    // Prevent it from being focusable via keyboard navigation
-    honeypotLink.tabIndex = -1;
-    // Prevent search engines from following the link
-    honeypotLink.rel = 'nofollow';
-    document.body.appendChild(honeypotLink);
-  });
-})();
+export default function addHoneypotLink() {
+  const honeypotLink = document.createElement('a');
+  honeypotLink.href = '/honeypot';
+  honeypotLink.textContent = 'Honeypot be this way';
+  honeypotLink.classList.add('hidden');
+  // Ensure screen readers ignore it
+  honeypotLink.setAttribute('aria-hidden', 'true');
+  // Prevent it from being focusable via keyboard navigation
+  honeypotLink.tabIndex = -1;
+  // Prevent search engines from following the link
+  honeypotLink.rel = 'nofollow';
+  document.body.append(honeypotLink);
+}
 ```
 
 **NOTE:** I decided to generate the hidden honeypot link using JavaScript &mdash; hopefully to make it less likely to be discovered by bots that don’t execute JavaScript. Essentially, the attempt is to set up a trap that only bots that understand JavaScript will fall into, while humans (who are unlikely to interact with such a link) won’t even notice it. {.call-out .mb-xlg}
+
+---
+
+## Update (November 2026)
+
+A couple of things have changed since I first wrote this:
+
+1. **The honeypot script** &mdash; It used to be an inline script. It now lives in its own little JavaScript module, which is the version shown above.
+2. **The logs** &mdash; The edge function used to log the browser details and address of *every* visit to my site. Looking back, that was far more than I needed. Now it only logs the requests it actually blocks: an "Ai" crawler on my list, or something following the honeypot link. Ordinary visitors leave nothing behind in the logs, and everything that does show up is a bot that got caught.
 
 ---
 
