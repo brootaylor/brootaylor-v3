@@ -9,8 +9,9 @@
 
 
 {# Possibly implement a progressive enhanced solution somewhere alomng the lines of the following #}
-{# NOTE: The Content Security Policy in `netlify.toml` blocks inline scripts, so this one won't run as it is.
-   If this component gets used, move the script into a module file (eg. loaded from `main-modules.mjs`). #}
+{# NOTE: If this component gets used, add `https://open.spotify.com` to `frame-src` in the Content Security Policy
+   (`lib/utils/headers/contentSecurityPolicy.js`), or the player is blocked. The inline script below is allowed
+   automatically by its hash, though a module file (eg. loaded from `main-modules.mjs`) would be tidier. #}
 <script>
 	/**
 		* Progressive Enhancement Script for Spotify Embed
@@ -37,8 +38,8 @@
 			spotifyIframe.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"; // Permissions
 			spotifyIframe.allowFullscreen = true;                      // Enable fullscreen support (if relevant)
 
-			// Remove fallback content
-			spotifyPlayerContainer.innerHTML = "";
+			// Remove fallback content (`replaceChildren()` rather than `innerHTML = ""`, which Trusted Types would refuse)
+			spotifyPlayerContainer.replaceChildren();
 
 			// Append the iframe to the container
 			spotifyPlayerContainer.appendChild(spotifyIframe);

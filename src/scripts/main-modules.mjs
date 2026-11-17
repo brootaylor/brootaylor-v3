@@ -1,10 +1,9 @@
 /**
  * Dynamic module loading
  *
- * This is the site's only JavaScript entry point. Scripts live in module files like this one, so the
- * Content Security Policy in `netlify.toml` can allow scripts from this site only (`script-src 'self'`).
- * The one exception is the tiny colour scheme script inline in the `<head>` (see `meta.njk`), which has
- * to run before the page is drawn. The CSP allows that single script by its hash.
+ * This is the site's main JavaScript entry point. The other script is the tiny colour scheme one inline in
+ * the `<head>` (see `meta.njk`), which has to run before the page is drawn. The Content Security Policy
+ * allows scripts from this site, and inline scripts by their hash (`lib/utils/headers/contentSecurityPolicy.js`).
  *
  * Module scripts are deferred, so this runs once the HTML has been fully parsed, before `DOMContentLoaded`.
  */

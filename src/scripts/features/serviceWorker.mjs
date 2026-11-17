@@ -9,14 +9,43 @@
  * only adds that attribute on production builds with `scriptsServiceworker` set to `true` in
  * `_data/site.js`, so the service worker never gets in the way during local development.
  */
+
+const serviceWorkerUrl = '/serviceworker.js';
+
+/**
+ * Trusted Types (see `lib/utils/headers/contentSecurityPolicy.js`): when they're enforced, `register()` refuses
+ * a plain string, because a script address is something an attacker could try to swap. So the address goes
+ * through a named policy, `service-worker` (the only name the CSP allows), which accepts this one address and
+ * nothing else. Browsers without Trusted Types just get the plain string.
+ */
+function trustedServiceWorkerUrl() {
+  const policy = window.trustedTypes?.createPolicy('service-worker', {
+    createScriptURL(url) {
+      if (url !== serviceWorkerUrl) {
+        throw new TypeError(
+          `Only ${serviceWorkerUrl} can be registered as the service worker`,
+        );
+      }
+      return url;
+    },
+  });
+
+  return policy ? policy.createScriptURL(serviceWorkerUrl) : serviceWorkerUrl;
+}
+
+// `async`, so an error from the policy or from `register()` (eg. the script can't be fetched) ends up in the
+// one `.catch()` below
+async function register() {
+  await navigator.serviceWorker.register(trustedServiceWorkerUrl());
+}
+
 export default function registerServiceWorker() {
   if (!('serviceWorker' in navigator)) {
     return;
   }
 
-  // `register()` returns a promise. Catching a failure (eg. the script can't be fetched) logs one clear
-  // message, instead of an "Uncaught (in promise)" error.
-  navigator.serviceWorker.register('/serviceworker.js').catch((error) => {
+  // Catching a failure logs one clear message, instead of an "Uncaught (in promise)" error
+  register().catch((error) => {
     console.error('Service worker registration failed:', error);
   });
 

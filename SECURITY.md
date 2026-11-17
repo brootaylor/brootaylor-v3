@@ -1,6 +1,6 @@
 # Security policy
 
-This is my personal website, built with Eleventy and deployed as static files on Netlify. It has no accounts or database. The only server-side code is a single Netlify edge function that blocks AI crawlers (`netlify/edge-functions/aiAgents.js`), and the contact form is handled by Netlify. If you spot a security problem, I'd like to hear about it.
+This is my personal website, built with Eleventy and deployed as static files on Netlify. It has no accounts or database. The only server-side code is two small Netlify edge functions: one blocks AI crawlers (`netlify/edge-functions/aiAgents.js`), and one logs Content Security Policy violation reports (`netlify/edge-functions/cspReports.js`). The contact form is handled by Netlify. If you spot a security problem, I'd like to hear about it.
 
 ## Supported versions
 
@@ -14,7 +14,7 @@ Use GitHub's private reporting instead: go to the **Security** tab of this repos
 
 Things that are in scope include:
 
-- Weaknesses in the security headers or Content Security Policy (see `netlify.toml`)
+- Weaknesses in the security headers (see `netlify.toml`) or Content Security Policy (see `lib/utils/headers/contentSecurityPolicy.js`)
 - Vulnerable dependencies that affect the built site
 - Anything that lets someone run script or inject content on the site
 - Abuse of the contact form, or ways around the AI crawler blocking in the edge function

@@ -10,7 +10,7 @@
  * - It's applied by setting `<meta name="color-scheme">` to `light`, `dark`, or `light dark` (follow the device).
  *   The CSS in `base/_reset.scss` reads that tag, and every `--colour-*` colour follows it.
  * - The small inline script in `meta.njk` applies a stored choice before the page is drawn. This module
- *   applies it again as a backup, in case that script was blocked (eg. its CSP hash is out of date).
+ *   applies it again as a backup, in case that script was blocked or didn't run.
  *
  * A stored Light or Dark is never removed just because the device setting changes to match it. Lots of
  * devices switch between light and dark by time of day, and clearing the choice then would make it

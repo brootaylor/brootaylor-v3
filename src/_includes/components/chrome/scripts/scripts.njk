@@ -21,10 +21,9 @@
 
 {# Generates extra page-specific JS eg. 3rd party scripts like Greensocks or custom JS functions #}
 {#
-	NOTE: The Content Security Policy in `netlify.toml` only allows scripts loaded from files on this site
-	(`script-src 'self'`). Inline `<script>` blocks added through `foot` are blocked, so use
-	`<script type="module" src="...">` here instead (or load the code from `main-modules.mjs`).
-	The only inline script that's allowed is the colour scheme one in `meta.njk`, listed by its hash in the CSP.
+	NOTE: Inline `<script>` blocks added through `foot` work: the build allows each one in the Content Security
+	Policy by its hash (see `lib/utils/headers/contentSecurityPolicy.js`). Scripts from other sites are still
+	blocked unless their address is added to `script-src` there.
 #}
 {% if foot %}
 	<!-- Extra page-specific JS eg. 3rd party scripts like Greensocks or custom JS functions -->

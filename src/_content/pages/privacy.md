@@ -11,7 +11,7 @@ bodyClass: "privacy"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 date: 2024-02-21T13:53:00
-updated: 2026-11-17T09:03:43.000Z
+updated: 2026-11-17T11:23:14.000Z
 
 changefreq: "yearly"
 ---
@@ -19,6 +19,8 @@ changefreq: "yearly"
 ## Analytics & Tracking
 
 This website does not use any analytic or tracking technologies to collect information about what you read or click on.
+
+If your browser blocks something on a page because of this website's security rules, it may send this website a short report: the page's address, what was blocked and why. It's only used to find and fix problems. No IP address or browser details are kept.
 
 ---
 

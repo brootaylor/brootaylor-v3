@@ -83,8 +83,9 @@ function upgradeToButton(link) {
  * to send it a `playVideo` command once it says it's ready. If the video is already playing,
  * the command does nothing.
  *
- * No YouTube script is loaded (so no CSP change is needed) - it's just `postMessage` between
- * this page and the player iframe, following YouTube's own iframe API protocol:
+ * No YouTube script is loaded on this page (the CSP only lets the player in as a frame) - it's
+ * just `postMessage` between this page and the player iframe, following YouTube's own iframe
+ * API protocol:
  * 1. We send `listening` until the player replies, to subscribe to its events.
  * 2. The player sends `onReady` when it can accept commands.
  * 3. We send the `playVideo` command, then stop listening.

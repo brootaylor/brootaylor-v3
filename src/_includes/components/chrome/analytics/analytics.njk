@@ -1,7 +1,8 @@
 {#
 	NOTE: Before switching analytics back on (`analyticsUrchin` in `_data/site.js`), update the Content
-	Security Policy in `netlify.toml`. It currently blocks both of these scripts: the first comes from
-	another site, and the second is inline. Move the inline code into a file, or allow it by its `sha256-` hash.
+	Security Policy in `lib/utils/headers/contentSecurityPolicy.js`. The inline script below is allowed
+	automatically (by its hash), but the first script comes from another site, so it's blocked until Google's
+	addresses are added (`script-src`, and `connect-src` / `img-src` for the data it sends).
 #}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analyticsUrchin }}"></script>
 <script>

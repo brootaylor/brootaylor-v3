@@ -47,9 +47,8 @@
 	- It only copies a saved `light` or `dark` into the `<meta>` above. Everything else (the controls, saving the
 	  choice) is in `scripts/features/colourScheme.mjs`, which also re-applies the saved value as a backup.
 	- `try`/`catch`: reading `localStorage` can throw when site data is blocked. The site then follows the device.
-	- The CSP only allows this script by its hash (`'sha256-…'` in `netlify.toml`). If you change the script in
-	  `colour-scheme-init.js`, even by one character, the hash changes. The build prints a warning with the new
-	  hash to copy into `netlify.toml` (see `lib/utils/checks/cspScriptHashes.js`).
+	- The CSP only allows this script by its `'sha256-…'` hash. The build works that out from the finished page, so
+	  editing `colour-scheme-init.js` needs nothing else (see `lib/utils/headers/contentSecurityPolicy.js`).
 	- Only included when visitors can choose (`colourSchemeChoice` and `scriptsMain` in `_data/site.js`). Otherwise a
 	  choice saved earlier would stick, with no control left to change it.
 #}

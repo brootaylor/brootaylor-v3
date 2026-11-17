@@ -17,4 +17,4 @@ The `scripts.njk` include (`src/_includes/components/chrome/scripts/`) loads the
 
 Module scripts are deferred by default, so they don't block the page from rendering. There's no fallback script for browsers without module support (eg. Opera Mini and KaiOS 2.5). They get the page without the JS enhancements, which still works.
 
-There's one small inline script outside this directory: `src/_includes/components/chrome/meta/colour-scheme-init.js`, included in the `<head>` by `meta.njk`. It applies a saved colour scheme before the page is drawn, which a deferred module can't do. The CSP in `netlify.toml` allows it by its hash.
+There's one small inline script outside this directory: `src/_includes/components/chrome/meta/colour-scheme-init.js`, included in the `<head>` by `meta.njk`. It applies a saved colour scheme before the page is drawn, which a deferred module can't do. The Content Security Policy allows it by its hash, which the build works out for every inline `<script>` and `<style>` block (`lib/utils/headers/contentSecurityPolicy.js`).
