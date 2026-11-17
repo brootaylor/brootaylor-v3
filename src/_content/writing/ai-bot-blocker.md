@@ -6,7 +6,7 @@ lead:
   - I wrote a post a few days ago about <a href="/writing/2025-01-01/robots-txt">my robots.txt file</a> &mdash; and how I thought I was being clever by disallowing OpenAI from indexing my personal website.
   - And how not-so-clever <em>(and naive)</em> of me it had turned out to be.
 date: 2025-01-05T19:23:36.671Z
-updated: 2026-11-17T15:26:18.000Z
+updated: 2026-11-17T16:11:44.000Z
 location:
   locality: Crawley
   country_name: UK
@@ -88,10 +88,11 @@ export default function addHoneypotLink() {
 
 ## Update (November 2026)
 
-A couple of things have changed since I first wrote this:
+A few things have changed since I first wrote this:
 
 1. **The honeypot script** &mdash; It used to be an inline script. It now lives in its own little JavaScript module, which is the version shown above.
 2. **The logs** &mdash; The edge function used to log the browser details and address of *every* visit to my site. Looking back, that was far more than I needed. Now it only logs the requests it actually blocks: an "Ai" crawler on my list, or something following the honeypot link. It doesn't log ordinary visits at all, so everything it does log is a bot that got caught.
+3. **My `robots.txt`** &mdash; It now asks every crawler to stay away from the honeypot page (`Disallow: /honeypot`). Well behaved crawlers, like search engines, will never go near it. So anything that ends up there has ignored my `robots.txt` &mdash; which makes the honeypot a better trap.
 
 ---
 
