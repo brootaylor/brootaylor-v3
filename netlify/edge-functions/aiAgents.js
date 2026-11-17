@@ -11,7 +11,9 @@
  */
 
 // The list of known AI crawler user agents. It's intentionally limited to AI training / answer synthesis
-// agents only, so search engines aren't affected.
+// agents only, so search engines aren't affected. The same list also builds `robots.txt` (`src/robots.njk`).
+// A few names on it (eg. `Google-Extended`, `Applebot-Extended`) only mean something in `robots.txt` and
+// never appear in a user agent, so they never match here. That's harmless.
 import aiAgents from '../../src/_data/ai_agents.json' with { type: 'json' };
 
 // Lowercased once, when the function loads, rather than on every request

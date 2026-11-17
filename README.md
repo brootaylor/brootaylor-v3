@@ -29,7 +29,7 @@ It's deployed by and hosted with [Netlify](https://www.netlify.com/).
 * 🌍 [Customisable global data](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_data/site.js)
 * 🎨 Page-specific art direction. `head` and `foot` metadata fields enable things like styles, fonts, SVGs & JS
 * 🔐 [Content Security Policy](https://github.com/brootaylor/brootaylor-v3/blob/main/lib/utils/headers/contentSecurityPolicy.js) built after each build, so inline `<script>` and `<style>` blocks are allowed automatically (by hash) and anything injected is blocked
-* 🗡 [Edge function](https://github.com/brootaylor/brootaylor-v3/blob/main/netlify/edge-functions/aiAgents.js) to perform *(known)* Ai bot detection, suspicious path blocking, and applicable error page handling
+* 🗡 [Edge function](https://github.com/brootaylor/brootaylor-v3/blob/main/netlify/edge-functions/aiAgents.js) that blocks *(known)* Ai crawlers, and anything following the hidden honeypot link, with the site's 403 page. Only blocked requests are logged
 * 📮 [Edge function](https://github.com/brootaylor/brootaylor-v3/blob/main/netlify/edge-functions/browserReports.js) that logs the reports browsers send about problems (eg. something the Content Security Policy blocked)
 * Dynamically generated...
   * [`serviceworker.js`](https://github.com/brootaylor/brootaylor-v3/blob/main/src/serviceworker.njk)
@@ -87,7 +87,7 @@ brootaylor.com
 │   ├── utils                      # Eleventy utilities (ie. filters, transforms, and the security headers written after each build)
 │
 ├── netlify
-│   ├── edge-functions             # Netlify Edge functions (run on Deno, not Node — see deno.lock)
+│   ├── edge-functions             # Netlify Edge Functions (run on Deno, not Node)
 │   ├── plugins
 │   │   ├── lighthouse             # Local Netlify build plugin - Lighthouse scores in the Netlify UI (never fails the build)
 │
@@ -120,7 +120,7 @@ brootaylor.com
 ├── .nvmrc                         # Sets (and installs if necessary) the version of Node needed for this project
 ├── .prettierrc                    # Prettier formatting config (enforced via eslint-plugin-prettier)
 ├── .prettierignore                # Files Prettier/ESLint should skip formatting
-├── deno.lock                      # Lockfile for the Deno-based Netlify Edge Functions
+├── deno.lock                      # Lockfile for the Deno-based Netlify Edge Functions (created locally, not committed — see .gitignore)
 ├── eslint.config.js               # JS linting configuration
 ├── LICENSE                        # Repo licence (MIT)
 ├── netlify.toml                   # Netlify configuration (server)
