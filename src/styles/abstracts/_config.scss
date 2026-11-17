@@ -89,7 +89,8 @@ $green-custom-dark: map.get($colors, green-custom-dark) !default;
 ///
 /// Each entry is `name: (light value, dark value)`. `base/_custom-properties.scss` turns every entry into a
 /// `--colour-<name>` custom property set with `light-dark()`, so the browser picks the right value for the
-/// current colour scheme (the device setting, or the visitor's own choice).
+/// current colour scheme (the device setting, or the visitor's own choice). Older browsers without
+/// `light-dark()` get a plain-colour fallback built from the same map.
 ///
 /// - The light values are the colours the site has always used, so the light design doesn't change.
 /// - The dark values come from `tokens/colors-dark.json` (keys match the names here).

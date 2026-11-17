@@ -22,8 +22,9 @@
   /* Colours (light and dark), named by what they're used for, eg. `--colour-surface` for the page background.
      Each one is `light-dark(<light>, <dark>)`, built from the `$colour-scheme` map in `abstracts/_config.scss`.
      `light-dark()` follows the `color-scheme` property (see `base/_reset.scss`), so these switch automatically.
-     Don't register these with `@property` as `<color>`: that would fix them to one value, and they'd stop
-     switching for elements that set their own `color-scheme` (like the code blocks). */
+     Older browsers without `light-dark()` get plain colours instead (see the fallback below this block).
+     Don't register these with `@property` as `<color>`: that would fix each one to a single value, so it would
+     stop switching inside any element that sets its own `color-scheme`. */
   @each $name, $values in $colour-scheme {
     --colour-#{$name}: light-dark(#{rgb-format(list.nth($values, 1))}, #{rgb-format(list.nth($values, 2))});
   }
@@ -46,4 +47,36 @@
 
   /* Sizes */
   --site-width: #{convert-to-rem($site-width)};
+}
+
+
+/// Fallback for browsers without `light-dark()` (eg. Chrome 109, the last version for Windows 7 and 8, which
+/// `.browserslistrc` still includes). In those browsers every `--colour-*` value above is invalid, so colours
+/// would drop back to the browser's defaults (eg. white logo text on a see-through background).
+/// Instead they get plain colours: the light ones, or the dark ones when the device is set to dark mode or the
+/// visitor picked Dark. Browsers that understand `light-dark()` skip all of this.
+
+/// Outputs every `--colour-*` property with its light (`1`) or dark (`2`) value from `$colour-scheme`
+@mixin colour-scheme-values($scheme) {
+  @each $name, $values in $colour-scheme {
+    --colour-#{$name}: #{rgb-format(list.nth($values, $scheme))};
+  }
+}
+
+@supports not (color: light-dark(white, black)) {
+  :root {
+    @include colour-scheme-values(1);
+  }
+
+  // Device set to dark, unless the visitor picked Light (the `<meta>` override, see `base/_reset.scss`)
+  @media (prefers-color-scheme: dark) {
+    :root:not(:has(> head > meta[name="color-scheme"][content="light"])) {
+      @include colour-scheme-values(2);
+    }
+  }
+
+  // The visitor picked Dark
+  :root:has(> head > meta[name="color-scheme"][content="dark"]) {
+    @include colour-scheme-values(2);
+  }
 }

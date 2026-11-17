@@ -69,9 +69,10 @@ body {
     transition: none; // Appear straight away, rather than animating up from the 1px hidden size
   }
 
-  // The site-wide green focus outline (below) barely shows against the dark grey border around the page,
-  // which this link partly overlaps on wide screens. A white ring drawn just inside the link sits on the
-  // green background instead, so it stays clearly visible (8.5:1) whatever is behind the link.
+  // In the light scheme, the site-wide green focus outline (below) barely shows against the dark grey border
+  // around the page, which this link partly overlaps on wide screens. A white ring drawn just inside the link
+  // sits on the green background instead, so it stays clearly visible whatever is behind the link
+  // (8.5:1 in the light scheme, 6.4:1 in the dark one).
   &:focus-visible {
     outline: 2px solid var(--white);
     outline-offset: -5px;

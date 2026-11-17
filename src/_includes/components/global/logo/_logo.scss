@@ -34,8 +34,8 @@
       border: 0;
     }
 
-    // The site-wide focus outline is dark green (see `layouts/_base.scss`), which barely shows up against
-    // this dark grey background. White keeps it clearly visible here.
+    // In the light scheme the site-wide focus outline is dark green (see `layouts/_base.scss`), which barely
+    // shows up against this dark block (1.5:1). White is clearly visible on it in both schemes (12.6:1 and 18:1).
     &:focus-visible {
       outline-color: var(--white);
     }
