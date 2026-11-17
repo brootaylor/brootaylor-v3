@@ -1,34 +1,23 @@
 /*
- * This Edge function performs AI bot detection and error page handling.
- * Its purpose is to block known AI training / AI answer synthesis crawlers
- * while allowing normal users and search engine bots.
+ * AI crawler blocking
+ * ===================
+ *
+ * Blocks known AI training / AI answer synthesis crawlers (and anything that follows the hidden honeypot link),
+ * while allowing normal visitors and search engine bots. Blocked requests get the site's 403 page.
+ *
+ * Logging (Netlify UI: Logs > Edge Functions): only blocked requests are logged, one line each, with the page
+ * path (no query string) and the user agent. Ordinary visits aren't logged at all, in line with the privacy
+ * page: the site doesn't collect information about what people read.
  */
 
-// Load environment variables in local development
-if (typeof process !== 'undefined' && process.env.LOCAL_ENV === 'true') {
-  try {
-    await import('dotenv/config');
-  } catch (err) {
-    console.error('Failed to load dotenv:', err);
-  }
-}
-
-// Use a fallback for environment variables if `process.env` is undefined
-const LOCAL_ENV =
-  (typeof process !== 'undefined' && process.env.LOCAL_ENV === 'true') || false;
-
-// Determine the base URL for local and production environments
-const BASE_URL = LOCAL_ENV ? 'http://localhost:8888' : 'https://brootaylor.com';
-
-// Define the URL for the custom 403 error page
-const ERROR_403_URL = `${BASE_URL}/error/403.html`;
-
-// Import the list of known AI crawler user-agents from a JSON file
-// This list is intentionally limited to AI training / answer synthesis agents only
+// The list of known AI crawler user agents. It's intentionally limited to AI training / answer synthesis
+// agents only, so search engines aren't affected.
 import aiAgents from '../../src/_data/ai_agents.json' with { type: 'json' };
 
-// Define the list of file extensions to exempt from AI bot detection
-// Static assets are not useful for AI training and should not be blocked
+// Lowercased once, when the function loads, rather than on every request
+const aiAgentNames = aiAgents.map((agent) => String(agent).toLowerCase());
+
+// Static assets aren't useful for AI training, so requests for them are never blocked
 const exemptFileTypes = [
   '.mjs',
   '.js',
@@ -42,80 +31,92 @@ const exemptFileTypes = [
   '.ico',
 ];
 
-// Define the honeypot path (optional)
-// Requests to this path are always blocked
-const honeypotPath = '/honeypot';
+// The honeypot page (`src/_content/pages/honeypot.md`). The link to it is hidden from people (see
+// `src/scripts/features/honeypot.mjs`), so whatever requests it is almost certainly a scraper. These are the
+// addresses the page can be reached at. An exact match, so other pages with "honeypot" in their address
+// (eg. a post about honeypots) aren't blocked.
+const honeypotPaths = ['/honeypot', '/honeypot/', '/honeypot.html'];
+
+// The site's custom 403 page, as a path. It's turned into a full address from each request, so it's always
+// served by the same site that's answering: `netlify dev` locally, a deploy preview, or the live site.
+const errorPagePath = '/error/403.html';
 
 /**
- * Helper function to generate a 403 response with a custom error page.
+ * Returns a 403 Forbidden response with the site's custom error page.
  * Returning a 403 explicitly signals that access is denied.
  *
- * @returns {Response} - 403 Forbidden response with a custom error page.
+ * @param {Request} request - The incoming request (used to find the error page on the same site).
+ * @returns {Promise<Response>} - 403 Forbidden response.
  */
-const respondWith403 = async () => {
-  const errorPage = await fetch(ERROR_403_URL).then((res) => res.text());
+const respondWith403 = async (request) => {
+  const headers = {
+    'Content-Type': 'text/html; charset=utf-8',
+    // Additional policy signal indicating AI usage is not permitted
+    'X-Robots-Tag': 'noai, noimageai',
+  };
 
-  return new Response(errorPage, {
+  try {
+    const errorPage = await fetch(new URL(errorPagePath, request.url));
+    if (errorPage.ok) {
+      return new Response(await errorPage.text(), { status: 403, headers });
+    }
+  } catch {
+    // The error page couldn't be fetched. Fall through to the plain reply below, so the request is still
+    // blocked rather than failing with an error.
+  }
+
+  return new Response('Forbidden', {
     status: 403,
-    headers: {
-      'Content-Type': 'text/html',
-      // Additional policy signal indicating AI usage is not permitted
-      'X-Robots-Tag': 'noai, noimageai',
-    },
+    headers: { ...headers, 'Content-Type': 'text/plain; charset=utf-8' },
   });
 };
 
 /**
- * Main function that handles incoming requests and applies AI bot detection.
+ * Checks each request and blocks AI crawlers and honeypot visits. Everything else continues as normal.
  *
- * @param {Request} request - The incoming request object.
- * @returns {Response|void} - Either blocks the request or allows it to continue.
+ * @param {Request} request - The incoming request.
+ * @returns {Promise<Response|undefined>} - A 403 response, or nothing to let the request through.
  */
 export default async (request) => {
-  // Parse the request URL and User-Agent header
   const url = new URL(request.url);
   const ua = request.headers.get('user-agent') || '';
 
-  // Extract the file extension safely (handles paths with no dot)
+  // The file extension, if the path has one (eg. `.css`)
   const dot = url.pathname.lastIndexOf('.');
   const fileExtension = dot !== -1 ? url.pathname.slice(dot).toLowerCase() : '';
 
-  // Log request details for debugging and visibility
-  console.log(`[Edge Function] User agent: ${ua}`);
-  console.log(`[Edge Function] Request URL: ${request.url}`);
-
-  // Exempt requests for static assets from AI bot detection
+  // Let requests for static assets through without checking
   if (exemptFileTypes.includes(fileExtension)) {
-    console.log(`[Edge Function] Exempting static asset: ${url.pathname}`);
     return;
   }
 
-  // Block any requests to the honeypot path
-  if (url.pathname.includes(honeypotPath)) {
-    console.log(`[Edge Function] Honeypot triggered by: ${ua}`);
-    return respondWith403();
+  // Block any request for the honeypot page. Its user agent is logged so new scrapers can be spotted and
+  // added to the list.
+  if (honeypotPaths.includes(url.pathname)) {
+    console.log(
+      `[Edge Function] Honeypot triggered | page: ${url.pathname} | user agent: ${ua}`,
+    );
+    return respondWith403(request);
   }
 
-  // Check whether the User-Agent matches any known AI crawler
+  // Block known AI training / answer synthesis crawlers. Their user agent includes the crawler's name, which
+  // is the useful part of the log line.
   const uaLower = ua.toLowerCase();
-  const isAiAgent = aiAgents.some((agent) =>
-    uaLower.includes(String(agent).toLowerCase()),
-  );
+  const isAiAgent = aiAgentNames.some((name) => uaLower.includes(name));
 
-  // Block known AI training / answer synthesis crawlers
   if (isAiAgent) {
-    console.log(`[Edge Function] AI crawler detected`);
-    console.log(`[Edge Function] Blocked User-Agent: ${ua}`);
-    return respondWith403();
+    console.log(
+      `[Edge Function] AI crawler blocked | page: ${url.pathname} | user agent: ${ua}`,
+    );
+    return respondWith403(request);
   }
 
-  // Allow the request if no AI crawler is detected
+  // Not an AI crawler: let the request through
   return;
 };
 
-// This config object sets the Edge function to run on all paths (wildcard), except where browsers post
-// reports (`browserReports.js`). This function logs each request's user agent, and the reports promise not to
-// log browser details. Browsers don't post reports as AI crawlers anyway.
+// Runs on all paths (wildcard), except where browsers post reports (`browserReports.js`). Reports come from
+// visitors' browsers, never from AI crawlers, so there's nothing to check there.
 export const config = {
   path: '/*',
   excludedPath: ['/browser-reports'],
