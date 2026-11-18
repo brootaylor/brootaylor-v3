@@ -30,7 +30,7 @@
     "postcss": "postcss --no-map -r dist/styles/*.css --config config/postcss.config.js",
     "sass:tokens": "rimraf src/styles/tokens/*.scss && json-to-scss 'tokens/*.json' 'src/styles/tokens/_tokens.scss'",
     "sass:dev": "npm run sass:tokens && npx sass --style=expanded --no-source-map --watch src:dist",
-    "sass:prod": "npm run sass:tokens && npx sass --style=compressed src:dist",
+    "sass:prod": "npm run sass:tokens && npx sass --style=compressed src/styles/main.scss:dist/styles/main.css",
     "dev:files": "eleventy --serve --quiet",
     "dev:styles": "npm run sass:dev",
     "dev:scripts": "rollup -c config/rollup.config.mjs --watch",

@@ -19,6 +19,7 @@ It's deployed by and hosted with [Netlify](https://www.netlify.com/).
 * 🚀 [Lighthouse score thresholds checked on every Netlify build](https://github.com/brootaylor/brootaylor-v3/blob/main/config/lighthouse.mjs) (and locally with `npm run netlify-build`)
 * 🌐 [Browser support config](https://github.com/brootaylor/brootaylor-v3/blob/main/.browserslistrc)
 * ✅ [Accessibility test runner](https://github.com/pa11y/pa11y-ci)
+* 🔎 [Debug styles that outline markup mistakes while developing](https://github.com/brootaylor/brootaylor-v3/blob/main/src/styles/debug.scss) (eg. images with no `alt`). Local only, never built for the live site
 * 🌈 [Sass](https://sass-lang.com/) powered CSS system using the [Dart Sass implementation](https://sass-lang.com/dart-sass) - (utilising modern [custom CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) and methods)
 * 🧩 [Design Tokens](https://github.com/brootaylor/brootaylor-v3/tree/main/tokens)
 * 🌓 [Light and dark colour schemes](https://github.com/brootaylor/brootaylor-v3/blob/main/src/styles/base/_custom-properties.scss) that follow the device setting, with a Light / Dark / System choice
@@ -101,7 +102,7 @@ brootaylor.com
 │   ├── _includes                  # Layout templates, partials & components (Nunjucks, JS & SCSS)
 │   ├── assets                     # Assets (ie. Static files like Fonts, Images, Video, Favicons)
 │   ├── scripts                    # JavaScript (Global)
-│   ├── styles                     # SCSS (Global)
+│   ├── styles                     # SCSS (Global), plus debug.scss (local development only)
 │   ├── _redirects-production.njk  # _redirects template (Netlify page redirects)
 │   ├── ai.njk                     # ai.txt template
 │   ├── bluesky-auth.njk           # .well-known/atproto-did template (Bluesky domain verification)
@@ -264,6 +265,7 @@ Here are a few ways to *watch* your code changes (while developing) and getting 
 
 * Uses the Eleventy Dev Server to serve the site locally
 * Various NPM commands run on the `dev` command and output any changes
+* Loads the debug styles (`src/styles/debug.scss`), which outline markup mistakes like images with no `alt`
 
 ```bash
 npm run dev
@@ -276,6 +278,7 @@ npm run dev
 * Makes environment variables available
 * Performs edge logic and routing rules
 * Runs the edge functions (in `netlify/edge-functions/`)
+* Loads the debug styles (`src/styles/debug.scss`), which outline markup mistakes like images with no `alt`
 
 ```bash
 npm run netlify-dev
@@ -286,6 +289,7 @@ npm run netlify-dev
 * Great for collaborative development
 * Share your work as you work
 * Get instant feedback.
+* Anyone viewing the live URL will also see the debug outlines
 
 ```bash
 npm run netlify-dev:live

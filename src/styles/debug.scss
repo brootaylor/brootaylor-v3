@@ -1,0 +1,74 @@
+@charset 'UTF-8';
+
+/***************************************
+ * Debug styles - local development only
+ *
+ * Highlights mistakes in the markup while working on the site, so they're easy to spot on the page.
+ *
+ * Only loaded while developing locally (`npm run dev`, and `npm run netlify-dev`, which runs it): the `<link>` in `components/chrome/meta/meta.njk` is only added when
+ * Eleventy runs its dev server (`eleventy.env.runMode == "serve"`). The production styles build
+ * (`sass:prod` in `package.json`) only compiles `main.scss`, so this file never reaches the live site.
+ *
+ * Each rule sets an `--ERROR` custom property. It doesn't style anything; it's there so the reason for
+ * the highlight shows up in the browser's DevTools (Styles panel) when you inspect the element.
+ * (A `::before`/`::after` message can't be used instead, because `<img>` doesn't display them.)
+ */
+
+/***************************************
+ * Images with no `alt` attribute
+ *
+ * `alt=""` is left alone on purpose: it's the correct way to mark an image as decorative
+ * (eg. the YouTube poster images in `lib/shortcodes/youtube.js`), so screen readers skip it.
+ */
+img:not([alt]) {
+  --ERROR: 'Image is missing alt';
+  outline: 3px dashed red;
+  // Draw the outline inside the image's edges, so a parent that crops its overflow can't hide it
+  outline-offset: -3px;
+}
+
+/***************************************
+ * Links with no `href` attribute
+ *
+ * Without an `href`, an `<a>` can't be reached with the keyboard (Tab) and isn't announced as a link by
+ * screen readers. It's valid HTML (a "placeholder link"), but here it's usually a mistake: either the
+ * `href` is missing, or it should be a `<button>` because it does something rather than goes somewhere.
+ */
+a:not([href]) {
+  --ERROR: 'Link is missing href';
+  outline: 3px dashed red;
+  // Same inside-the-edges outline as the images above
+  outline-offset: -3px;
+}
+
+/***************************************
+ * Dialogs with no accessible name
+ *
+ * Screen readers announce a dialog's name when it opens, so people know what it's for.
+ * Name it with `aria-labelledby` pointing at the dialog's heading (preferred, as it reuses visible
+ * text), or with `aria-label` when there's no heading.
+ * A closed `<dialog>` isn't displayed, so this outline only shows while the dialog is open.
+ */
+dialog:not([aria-label], [aria-labelledby]) {
+  --ERROR: 'Dialog is missing aria-label or aria-labelledby';
+  outline: 3px dashed red;
+  outline-offset: -3px;
+}
+
+/***************************************
+ * More than one `<h1>` on the page
+ *
+ * A page should have one `<h1>` (its main heading) so screen reader users can tell which heading is the
+ * main one. An `<h1>` inside a `<dialog>` is fine, as the dialog counts as a separate window.
+ *
+ * How it works: any two `<h1>`s have a pair of sibling elements that hold them, one each (or are them).
+ * `:is(h1, :has(h1))` matches an `<h1>` or an element containing one, and `~` finds a later sibling.
+ * So this flags every `<h1>` after the first: the later sibling itself, or an `<h1>` inside it.
+ * The first `<h1>` isn't outlined, so check which one should really be the page's main heading.
+ */
+:is(h1, :has(h1)) ~ h1,
+:is(h1, :has(h1)) ~ * h1 {
+  --ERROR: 'More than one h1 on the page';
+  outline: 3px dashed red;
+  outline-offset: -3px;
+}
