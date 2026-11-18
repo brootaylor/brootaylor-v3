@@ -22,13 +22,8 @@
     }
 
     time {
-      // Fallback for older browsers
-      font-size: convert-to-rem(20px);
-
-      // Browsers supporting `clamp()`
-      @supports (font-size: clamp(20px, 2.5vw, 24px)) {
-        font-size: clamp(#{convert-to-rem(20px)}, 2.5vw, #{convert-to-rem(24px)});
-      }
+      // Grows with the viewport, between 20px and 24px
+      font-size: clamp(#{convert-to-rem(20px)}, 2.5vw, #{convert-to-rem(24px)});
     }
   }
 }
