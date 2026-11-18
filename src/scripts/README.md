@@ -5,7 +5,7 @@ The JS files in this directory are as follows:
 * `main-modules.mjs` is the primary JS file. Rollup bundles it as a native JS module (ESM), along with any modules it imports. It isn't transpiled.
 * The modules it loads are grouped by what they do:
   * `features/` holds site-wide behaviour, such as the bot honeypot link (`honeypot.mjs`), service worker registration (`serviceWorker.mjs`) and the Light / Dark / System colour scheme choice (`colourScheme.mjs`). Each one is switched on in `_data/site.js`, which `base.njk` passes on as a `data-` attribute on `<html>`.
-  * `components/` holds scripts that enhance a particular piece of markup, such as the YouTube video player (`youtubeFacade.mjs`), which is only downloaded on pages with a video, the "reply to this post by email" option on writing posts (`replyByEmail.mjs`), and filling in the contact form's Subject field when a post links to it (`contactSubject.mjs`).
+  * `components/` holds scripts that enhance a particular piece of markup. Most are only downloaded on pages that use them, as separate files: the YouTube video player (`youtubeFacade.mjs`), the `<my-tech-skill-set>` element on the About page (`myTechSkillSet.mjs`), and filling in the contact form's Subject field when a post links to it (`contactSubject.mjs`). The "reply to this post by email" option on writing posts (`replyByEmail.mjs`) is small enough to be bundled into `main.mjs` instead.
   * `utilities/` holds small reusable helpers, such as the element selector shortcuts in `domHelpers.mjs`.
 * `main-nomodules.mjs` and `main-nojs.mjs` aren't built or loaded at the moment.
 
