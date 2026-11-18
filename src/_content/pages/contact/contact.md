@@ -6,6 +6,7 @@ summary: "Interested in learning more about what I do and potentially working wi
 # Populates the opening / `lead` text on a page
 lead:
   - "Interested in learning more about what I do and potentially working with me on your next project? Or just want to connect?"
+  - "Or perhaps you'd like to reply to something I've written. If so, it helps to mention which post in the subject."
   - "Feel free to reach out using the form below."
 bodyClass: "contact"
 

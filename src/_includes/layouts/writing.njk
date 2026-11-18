@@ -43,6 +43,30 @@
 		{# This content comes from the markdown in the relevant `.md` file - within the `pages` directory #}
 		{{ content | safe }}
 
+		{#
+			Reply options. The feed's "Reply to this post" link points here (`#reply`, see `feed.njk`).
+			- The contact form link always works.
+			- The email option starts `hidden` (gone for everyone, screen readers included), because it needs
+			  JavaScript: `scripts/components/replyByEmail.mjs` turns the scrambled address into a `mailto:` link,
+			  with "Re: <post title>" as the subject, then shows it. Without JavaScript the sentence still reads
+			  correctly: "…share your thoughts, you can use my contact form."
+			- `post-reply` makes it italic (`pages/_writing.scss`), and `mt-xxlg` sets it further apart from the post.
+			- The address is scrambled at build time (`obscureEmail` filter), so it isn't readable in the HTML.
+			- Don't give `.reply-by-email` a `display` rule: it would override `hidden` and show a link that can't work.
+			- The contact form link carries "Re: <post title>" in its address (`?subject=`, URL-encoded by `urlencode`).
+			  `scripts/components/contactSubject.mjs` puts it in the form's Subject field. Without JavaScript it's ignored.
+		#}
+		<p id="reply" class="post-reply | mt-xxlg">
+			Thanks for reading. If you'd like to share your thoughts, you can
+			<span class="reply-by-email"
+				data-reply-email="{{ site.author.email | obscureEmail }}"
+				data-reply-subject="{{ title }}"
+				hidden>
+				<a>reply to this post by email</a> or
+			</span>
+			use my <a href="/contact?subject={{ ('Re: ' + title) | urlencode }}">contact form</a>.
+		</p>
+
 		<hr>
 
 		{# Takes back to writing landing page #}

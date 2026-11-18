@@ -59,6 +59,28 @@ if (document.querySelector('.video__facade')) {
   );
 }
 
+// "Reply to this post by email" option on writing posts (see ./components/replyByEmail.mjs)
+// Only downloaded on pages that have the reply paragraph, as a separate chunk.
+// Without JS the email option stays hidden, and readers get the contact form link instead.
+if (document.querySelector('[data-reply-email]')) {
+  import('./components/replyByEmail.mjs').then(({ default: replyByEmail }) => {
+    replyByEmail();
+  });
+}
+
+// Fills in the contact form's Subject field when a post links to it with `?subject=`
+// (see ./components/contactSubject.mjs). Only downloaded when both are present, as a separate chunk.
+if (
+  document.querySelector('form[name="contact"]') &&
+  new URLSearchParams(window.location.search).has('subject')
+) {
+  import('./components/contactSubject.mjs').then(
+    ({ default: contactSubject }) => {
+      contactSubject();
+    },
+  );
+}
+
 // `<my-tech-skill-set>` custom element (see ./components/myTechSkillSet.mjs)
 // Only downloaded on pages that use it (currently just the About page), as a separate chunk.
 if (document.querySelector('my-tech-skill-set')) {

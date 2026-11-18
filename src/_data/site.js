@@ -26,7 +26,6 @@ export default {
   icon_maskable_196: '/assets/ico/android-chrome-maskable-196x196.png', // Maskable icon for Android devices (https://web.dev/maskable-icon-audit/),
   icon_maskable_512: '/assets/ico/android-chrome-maskable-512x512.png', // Maskable icon for Android devices (https://web.dev/maskable-icon-audit/)
   twitter: '@brootaylor', // Twitter handle
-  webmentions: 'https://webmention.io/brootaylor.com/webmentions', // Webmention.io endpoint for this site
   robotsCrawl: true, // Allow search engine robots to crawl site
   aiCrawl: false, // Allow AI robots to crawl site and train AI models
   botHoneypot: true, // Honeypot hidden link added to DOM to catch bots

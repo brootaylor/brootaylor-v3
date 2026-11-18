@@ -5,7 +5,7 @@ lead:
   - The last time I shared a post on my <a href="/writing/2023-02-12/my-frontend-resources-2023">list of frontend/web development resources</a> was back in 2023. Thought I'd post an updated version of that list now. Even though it's near the end of 2026.
 
 date: 2026-09-13T21:47:00
-updated: ''
+updated: 2026-11-18T16:55:19.000Z
 
 # Page-specific metadata content added to the `<head>`
 head: "
@@ -97,7 +97,6 @@ Anyway, here's the list. It isn't exhaustive. It's a snapshot &mdash; mostly for
 * [Indiekit](https://getindiekit.com/) <i aria-hidden="true">&rarr;</i> *Node.js server with all the parts needed to publish content to your personal website and share it on social networks*
 * [npmx](https://npmx.dev/) <i aria-hidden="true">&rarr;</i> *Package Browser for the npm registry*
 * [regex101](https://regex101.com/) <i aria-hidden="true">&rarr;</i> *Regular expression tester*
-* [Webmention.io](https://webmention.io/) <i aria-hidden="true">&rarr;</i> *Webmention service*
 * [{JSON} Placeholder](https://jsonplaceholder.typicode.com/) <i aria-hidden="true">&rarr;</i> *Fake online REST API for testing and prototyping*
 
 ---

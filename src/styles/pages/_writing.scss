@@ -8,4 +8,10 @@
   h1 {
     margin-top: calc(var(--flow-space) / 2);
   }
+
+  // Reply paragraph at the end of a post (`layouts/writing.njk`). Italic is just a visual style here, so it's
+  // set in CSS rather than with `<em>`, which would mark the whole paragraph as stressed text.
+  .post-reply {
+    font-style: italic;
+  }
 }

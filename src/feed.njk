@@ -31,9 +31,9 @@ eleventyExcludeFromCollections: true
 	<icon>{{ site.rootUrl }}{{ site.metaImage }}</icon>
 	{#- The `year` shortcode (in `.eleventy.js`) outputs the current year at build time #}
 	<rights>&#169; {{ site.name }} 2004 &#8211; {% year %}</rights>
+	{#- No <email> here (it's optional in Atom), so the address isn't public in the feed. #}
 	<author>
 		<name>{{ site.author.name }}</name>
-		<email>{{ site.author.email }}</email>
 		<uri>{{ site.author.url }}</uri>
 	</author>
 	{#- One <entry> per post, newest first (up to `feedLimit`, set at the top) #}
@@ -72,9 +72,16 @@ eleventyExcludeFromCollections: true
 						{%- endfor -%}
 					{%- endif -%}
 				{%- endif -%}
-				{#- The post's rendered body, followed by a reply-by-email link -#}
+				{#-
+					The post's rendered body. Writing posts are followed by a link to the reply section on the post's
+					own page (`#reply` in `layouts/writing.njk`), which offers email and the contact form. It isn't a
+					`mailto:` link here, because that would put the address in the feed for anyone to read, and feed
+					readers don't run the script that keeps it hidden on the page.
+				-#}
 				{{ post.templateContent | safe }}
-				<p><a href="mailto:{{ site.author.email }}?subject=Replying%20to:%20“{{ post.data.title }}“">Reply via email</a></p>
+				{%- if 'writing' in post.data.tags -%}
+					<p><a href="{{ absolutePostUrl }}#reply">Reply to this post</a></p>
+				{%- endif -%}
 			]]></content>
 		</entry>
 	{%- endfor %}

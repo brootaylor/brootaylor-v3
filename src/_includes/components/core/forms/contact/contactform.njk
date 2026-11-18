@@ -47,6 +47,8 @@
 				<label class="form__label" for="email">{{ labelEmail }} <small class="visually-hidden">(required field)</small></label>
 				<input class="form__input" id="email" name="email" type="email" autocomplete="email" autocapitalize="none" spellcheck="false" required>
 			</li>
+			{# Can be filled in from the address (`?subject=`) when a writing post links here, by
+			   `scripts/components/contactSubject.mjs`. Otherwise it starts empty. #}
 			<li class="form__item">
 				<label class="form__label" for="subject">{{ labelSubject }} <small class="visually-hidden">(required field)</small></label>
 				<input class="form__input" id="subject" name="subject" type="text" required>

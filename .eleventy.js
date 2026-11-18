@@ -21,6 +21,7 @@ import { dateTime } from './lib/utils/filters/dateTime.js';
 import { dateTimeReadable } from './lib/utils/filters/dateTimeReadable.js';
 import { shuffleArray } from './lib/utils/filters/shuffle-array.js';
 import { imageAlt } from './lib/utils/filters/image-alt.js';
+import { obscureEmail } from './lib/utils/filters/obscure-email.js';
 
 // Import (transforms)
 import { minifyHtml } from './lib/utils/transforms/minify-html.js';
@@ -59,6 +60,7 @@ export default function (eleventy) {
   eleventy.addFilter('dateTimeReadable', dateTimeReadable); // Generates readable date and time (eg. 22 February 2020, 9:50 am)
   eleventy.addFilter('shuffle', shuffleArray); // Shuffles an array of items (eg. [1, 2, 3, 4, 5] => [3, 1, 5, 2, 4])
   eleventy.addFilter('imageAlt', imageAlt); // Guarantees an image alt attribute ends with terminal punctuation
+  eleventy.addFilter('obscureEmail', obscureEmail); // Scrambles an email address so it isn't readable in the HTML (eg. the "reply by email" option on writing posts)
 
   // Transforms
   eleventy.addTransform('minifyHtml', minifyHtml);
