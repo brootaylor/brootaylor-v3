@@ -11,7 +11,7 @@ bodyClass: "privacy"
 tags: "page" # This `page` tag is here so that the service worker picks them up. These pages are picked up in the `mainnav` or `footernav` loops
 
 date: 2024-02-21T13:53:00
-updated: 2026-11-17T22:22:25.000Z
+updated: 2026-11-18T17:50:40.000Z
 
 changefreq: "yearly"
 ---
@@ -52,7 +52,7 @@ When you press play, the video loads from YouTube's privacy-enhanced service (yo
 
 ## Contact & Communication
 
-Users contacting this website and/or its owners using the contact form, do so at their own discretion and provide any such personal details requested at their own risk. Your personal information is kept private and stored securely until a time it is no longer required or has no use, in line with the UK GDPR and the Data Protection Act 2018.
+Users contacting this website and/or its owners using the contact form or by email, do so at their own discretion and provide any such personal details requested at their own risk. Your personal information is kept private and stored securely until a time it is no longer required or has no use, in line with the UK GDPR and the Data Protection Act 2018.
 
 ---
 
@@ -82,4 +82,4 @@ Users are advised to take caution and good judgement before clicking any shorten
 
 ## Any concerns?
 
-If you have any questions or concerns related to your privacy and use of data by this website and its owners, please [email me](/contact) or call on *+44 7832 215335*.
+If you have any questions or concerns related to your privacy and use of data by this website and its owners, please [use my contact form](/contact) or call on *+44 7832 215335*.

@@ -45,6 +45,7 @@ It's deployed by and hosted with [Netlify](https://www.netlify.com/).
 * [Eleventy](https://www.11ty.dev/) (SSG)
 * [Netlify](https://www.netlify.com/)
 * 📧 [Netlify contact form](https://docs.netlify.com/forms/setup/)
+* ✉️ [Reply option on writing posts](https://github.com/brootaylor/brootaylor-v3/blob/main/src/_includes/layouts/writing.njk): the contact form (with the post as the subject), plus an email link that's built in the browser so the address isn't in the page source
 
 ---
 

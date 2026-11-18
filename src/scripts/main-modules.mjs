@@ -11,10 +11,11 @@
 import { version, name } from '../../package.json';
 
 // Static imports: Rollup copies these straight into `main.mjs`, so they don't cost an extra request.
-// They're small and needed on every page.
+// They're small and needed on every page, or (like `replyByEmail`) too small to be worth a separate download.
 import addHoneypotLink from './features/honeypot.mjs';
 import registerServiceWorker from './features/serviceWorker.mjs';
 import colourScheme from './features/colourScheme.mjs';
+import replyByEmail from './components/replyByEmail.mjs';
 
 const versionPrintOut = `${name}.${version}`;
 console.info(versionPrintOut);
@@ -60,12 +61,11 @@ if (document.querySelector('.video__facade')) {
 }
 
 // "Reply to this post by email" option on writing posts (see ./components/replyByEmail.mjs)
-// Only downloaded on pages that have the reply paragraph, as a separate chunk.
+// Imported at the top rather than downloaded separately: it's only a few hundred bytes, and a separate
+// request would make the email option appear later, possibly nudging the content below it.
 // Without JS the email option stays hidden, and readers get the contact form link instead.
 if (document.querySelector('[data-reply-email]')) {
-  import('./components/replyByEmail.mjs').then(({ default: replyByEmail }) => {
-    replyByEmail();
-  });
+  replyByEmail();
 }
 
 // Fills in the contact form's Subject field when a post links to it with `?subject=`

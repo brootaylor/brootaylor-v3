@@ -11,12 +11,19 @@
  *
  * Without JavaScript the option stays hidden and readers get the contact form link instead.
  *
- * Loaded by `main-modules.mjs`, only on pages that have the reply paragraph.
+ * Bundled into `main.mjs` (see `main-modules.mjs`), and only run on pages that have the reply paragraph.
  */
 export default function replyByEmail() {
   document.querySelectorAll('[data-reply-email]').forEach((replyOption) => {
     const replyLink = replyOption.querySelector('a');
-    const emailAddress = atob(replyOption.dataset.replyEmail);
+    const encodedAddress = replyOption.dataset.replyEmail;
+
+    // Leave the option hidden if anything is missing, rather than show a link that can't work
+    if (!replyLink || !encodedAddress) {
+      return;
+    }
+
+    const emailAddress = atob(encodedAddress);
     const subject = `Re: ${replyOption.dataset.replySubject}`;
 
     // `encodeURIComponent` keeps characters like `&` or `?` in a title from breaking the subject
