@@ -62,9 +62,11 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
+/* Make images and videos easier to work with */
+/* `height: auto` with `width`/`height` attributes keeps their shape as they shrink to fit (eg. a self-hosted `<video>`) */
 img,
-picture {
+picture,
+video {
   max-width: 100%;
   height: auto;
 }

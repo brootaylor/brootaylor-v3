@@ -18,7 +18,7 @@
  * Images with no `alt` attribute
  *
  * `alt=""` is left alone on purpose: it's the correct way to mark an image as decorative
- * (eg. the YouTube poster images in `lib/shortcodes/youtube.js`), so screen readers skip it.
+ * (eg. the video thumbnails in `lib/shortcodes/videoFacade.js`), so screen readers skip it.
  */
 img:not([alt]) {
   --ERROR: 'Image is missing alt';

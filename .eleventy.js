@@ -32,7 +32,7 @@ import { writeContentSecurityPolicy } from './lib/utils/headers/contentSecurityP
 // Import (shortcodes)
 import { photoGallery } from './lib/shortcodes/photoGallery.js';
 import { projectThumbnails } from './lib/shortcodes/projectThumbnails.js';
-import { youtube } from './lib/shortcodes/youtube.js';
+import { videoFacade } from './lib/shortcodes/videoFacade.js';
 
 // Import (collections)
 import { pageProjects } from './lib/collections/pageProjects.js';
@@ -73,8 +73,7 @@ export default function (eleventy) {
   eleventy.addShortcode('year', () => `${new Date().getFullYear()}`);
   eleventy.addNunjucksAsyncShortcode('photo', photoGallery);
   eleventy.addNunjucksAsyncShortcode('thumbnail', projectThumbnails);
-  eleventy.addNunjucksAsyncShortcode('youtube', youtube); // Click-to-load YouTube facade, eg. {% youtube "id", "Title", 144 %}
-
+  eleventy.addNunjucksAsyncShortcode('video', videoFacade); // Click-to-load video facade, any provider, eg. {% video "youtube", "id", "Title", 144 %}
   // Collections
   eleventy.addCollection('pageProjects', pageProjects);
   eleventy.addCollection('postWriting', postWriting);

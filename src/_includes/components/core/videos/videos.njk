@@ -1,15 +1,49 @@
-<div class="video">
-	<div class="video--inner">
-		{% if content.data.video.custom %}
-		{# Custom video (ie. calling own hosted videos) #}
-			<video controls>
-				<source src="{{ content.data.video.custom.src.mp4 }}" type="video/mp4">
-				<source src="{{ content.data.video.custom.src.webm }}" type="video/webm">
-				<p>Your browser doesn't support HTML5 video. Here is a <a href="{{ content.data.video.custom.src.mp4 }}">link to the video</a> instead.</p>
-			</video>
-		{% elif content.data.video.thirdParty %}
-		{# 3rd party video (ie. Youtube or Vimeo) #}
-			<iframe src="//{% if data.video.thirdParty.youtube.src %}www.youtube.com/embed/{{ data.video.thirdParty.youtube.src }}{% elif content.data.video.thirdParty.vimeo.src %}player.vimeo.com/video/{{ content.data.video.thirdParty.vimeo.src }}{% endif %}" title="Video player." allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-		{% endif %}
-	</div>
-</div>
+{#
+	Video placeholder (used by the card component, `units/card/card.njk`)
+	=====================================================================
+	Reads `component.data.video`, set in the card's front matter. Two kinds of video:
+
+	1. Embedded (YouTube, or any other provider in `lib/shortcodes/videoFacade.js`):
+	     video:
+	       provider: youtube
+	       id: nsekqm6eaD8
+	       title: Video title
+	       start: 144          <- optional, in seconds
+	   Uses the `video` shortcode, so it gets the click-to-load facade: nothing is requested from the
+	   provider until play is pressed. The shortcode outputs its own 16:9 box and privacy caption.
+
+	2. Self-hosted:
+	     video:
+	       custom:
+	         src: { webm: /assets/videos/clip.webm, mp4: /assets/videos/clip.mp4 }
+	         poster: /assets/videos/clip-poster.jpg
+	         captions: /assets/videos/clip-en.vtt   <- optional, but needed if the video has speech
+	         width: 1280       <- optional, defaults to 1280x720
+	         height: 720
+	   A plain `<video>` needs no facade: there's no third party, and the controls are the browser's own.
+	   - `preload="none"` downloads nothing but the poster until play is pressed.
+	   - `loading="lazy"` also defers the poster until the video is near the viewport, in browsers that
+	     support it (Chrome and Edge 150 so far). Others ignore it and still get `preload="none"`.
+	     Remove it for a video near the top of the page.
+	   - `width` and `height` are required with `loading="lazy"`: an unloaded video is otherwise
+	     300x150 and may never be seen as "near the viewport".
+
+	NOTE: `{% video %}` is an async shortcode, and Nunjucks silently drops its output in two places:
+	- inside a `{% for %}` loop: use `{% asyncEach %}` instead (as `collections/featured.njk` does)
+	- in an include inside `{% if %}` or `{% elif %}`: use a separate `{% ifAsync %}` block instead
+	  (as `units/card/card.njk` does). An `elif` drops it even after `ifAsync`.
+#}
+{% set video = component.data.video %}
+{% if video.provider %}
+{% video video.provider, video.id, video.title, video.start %}
+{% elif video.custom %}
+{# No wrapper needed: `width` and `height` give the video its shape, and the reset (`base/_reset.scss`) lets it shrink to fit #}
+<video controls preload="none" loading="lazy"
+	width="{{ video.custom.width | default(1280) }}" height="{{ video.custom.height | default(720) }}"
+	{%- if video.custom.poster %} poster="{{ video.custom.poster }}"{% endif %}>
+	{% if video.custom.src.webm %}<source src="{{ video.custom.src.webm }}" type="video/webm">{% endif %}
+	{% if video.custom.src.mp4 %}<source src="{{ video.custom.src.mp4 }}" type="video/mp4">{% endif %}
+	{% if video.custom.captions %}<track src="{{ video.custom.captions }}" kind="captions" srclang="en" label="English">{% endif %}
+	<p>Your browser can't play this video. Here's a <a href="{{ video.custom.src.mp4 or video.custom.src.webm }}">link to the video file</a> instead.</p>
+</video>
+{% endif %}

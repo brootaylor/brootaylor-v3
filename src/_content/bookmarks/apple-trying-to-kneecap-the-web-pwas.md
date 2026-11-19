@@ -26,4 +26,4 @@ I'm piggybacking off Remy's call to fight this, which is why this is a bookmark.
 
 [Christian Heilmann has also weighed in](https://christianheilmann.com/2024/02/28/apple-vs-pwas-go-act-now-and-help-avoid-this-disaster/) on this decision by Apple. Here's a conversation he had with Bruce Lawson and Ben Francis about it:
 
-{% youtube "Lr9f64B6Lao", "Coffee With Developers: The Uncertain Future of Web Apps on iOS in the EU" %}
+{% video "youtube", "Lr9f64B6Lao", "Coffee With Developers: The Uncertain Future of Web Apps on iOS in the EU" %}

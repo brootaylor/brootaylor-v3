@@ -4,8 +4,7 @@
 
 @use 'config' as *;
 @use 'functions' as *;
-@use 'sass:math';
-@use 'sass:string';
+// No `responsive-ratio` mixin any more: native CSS `aspect-ratio` does that job (eg. `_videos.scss`)
 
 
 /// Font size coversion to REM
@@ -82,31 +81,6 @@
 	content: $content;
 	display: $display;
 	position: $pos;
-}
-
-
-/// Responsive ratio
-///
-/// Use this for creating scalable elements (ie. images / video / background images) that maintain a ratio.
-///
-/// @group Helpers
-///
-/// @param {Value} $x [16]
-/// @param {Value} $y [9]
-/// @param {Boolean} $pseudo [false]
-@mixin responsive-ratio($x: 16, $y: 9, $pseudo: false) {
-	$padding: string.unquote((math.div($y, $x)) * 100 + '%'); // Works out percentage after entering say '(16,9)'
-
-	// Checks to see if 'psuedo' argument is 'true'
-	@if $pseudo {
-		&::before {
-			@include pseudo($pos: relative);
-			width: 100%;
-			padding-top: $padding;
-		}
-	} @else {
-		padding-top: $padding;
-	}
 }
 
 

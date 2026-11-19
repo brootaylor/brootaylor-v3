@@ -49,13 +49,13 @@ import('./features/salary.mjs').then(
   },
 );
 
-// YouTube video facades (see ./components/youtubeFacade.mjs)
+// `<video-facade>` custom element: click-to-load embedded videos, eg. YouTube (see ./components/videoFacade.mjs)
 // Only downloaded on pages that actually contain a video. Rollup outputs it as a separate chunk.
-// Without JS (or in `nomodule` browsers) the facade stays a plain link to the video on YouTube.
-if (document.querySelector('.video__facade')) {
-  import('./components/youtubeFacade.mjs').then(
-    ({ default: youtubeFacade }) => {
-      youtubeFacade();
+// Without JS (or in `nomodule` browsers) each video stays a plain link to the video on its own site.
+if (document.querySelector('video-facade')) {
+  import('./components/videoFacade.mjs').then(
+    ({ default: defineVideoFacade }) => {
+      defineVideoFacade();
     },
   );
 }

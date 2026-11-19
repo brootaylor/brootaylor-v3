@@ -21,7 +21,7 @@ Even though I've been using the Git CLI for years, I still have plenty of head-s
 
 [Lazygit](https://github.com/jesseduffield/lazygit) to the rescue...
 
-{% youtube "_REmkoIyPW0", "NEW Lazygit release! (8 months worth of features)" %}
+{% video "youtube", "_REmkoIyPW0", "NEW Lazygit release! (8 months worth of features)" %}
 
 I like Jesse's elevator pitch:
 

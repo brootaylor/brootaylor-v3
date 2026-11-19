@@ -12,7 +12,7 @@
  * How: a sha256 hash of the built files, shortened to 10 characters. They're read from `dist/`, which works
  * because `npm run build` builds the styles and scripts before Eleventy runs (see `package.json`), and
  * PostCSS runs as part of the styles step, so the file that's hashed is the final one.
- * The on-demand scripts (eg. the YouTube player) are covered too: Rollup puts a hash in their file names,
+ * The on-demand scripts (eg. the `<video-facade>` video player) are covered too: Rollup puts a hash in their file names,
  * and those names are written inside `main.mjs`.
  *
  * If none of the files exist yet (eg. at the start of `npm run dev`, where everything runs at the same time),

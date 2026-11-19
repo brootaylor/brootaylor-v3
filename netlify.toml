@@ -64,8 +64,9 @@
 
     # Same-origin requests get the full URL; cross-origin requests get only the origin
     # (e.g. https://brootaylor.com), and nothing is sent when going from HTTPS to HTTP.
-    # Don't switch to "no-referrer": YouTube refuses to play embedded videos when no referrer
-    # is sent, which would break the click-to-load video player.
+    # Don't switch to "no-referrer": YouTube's player refuses to play embedded videos when no
+    # referrer is sent, which would break the click-to-load videos (`{% video %}`). Check this
+    # for any other video provider added to `lib/shortcodes/videoFacade.js` too.
     Referrer-Policy = "strict-origin-when-cross-origin"
 
     # Blocks these browser features for this site and any embedded iframes.

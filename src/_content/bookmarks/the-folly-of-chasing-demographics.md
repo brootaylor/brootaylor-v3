@@ -21,4 +21,4 @@ As always, [Heydon Pickering](https://heydonworks.com/) is a genius when it come
 
 Engaging and profound.
 
-{% youtube "3urk5Zht6MI", "The Folly of Chasing Demographics | Axe-con Stream 2", 315 %}
+{% video "youtube", "3urk5Zht6MI", "The Folly of Chasing Demographics | Axe-con Stream 2", 315 %}

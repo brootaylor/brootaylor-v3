@@ -5,12 +5,17 @@
 #}
 <article class="card {{ component.data.modifier }}">
 
-	{# Only render this visual element if there's either an image or video #}
+	{# Only render this visual element if there's either an image or video (an image wins if there are both) #}
 	{% if component.data.hasImage %}
 		<div class="card__visual">
 			{% include "components/core/images/images.njk" %}
 		</div>
-	{% elif component.data.hasVideo %}
+	{% endif %}
+	{#
+		`ifAsync`, and a separate block rather than an `elif`: the video include can use the async `{% video %}`
+		shortcode, and inside a plain `{% if %}` (or an `elif`, even of `ifAsync`) its output is silently dropped.
+	#}
+	{% ifAsync component.data.hasVideo and not component.data.hasImage %}
 		<div class="card__visual">
 			{% include "components/core/videos/videos.njk" %}
 		</div>

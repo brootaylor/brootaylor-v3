@@ -34,4 +34,4 @@ Well worth a read &mdash; or watch of the video if you prefer.
 
 ## Video version of Salma's post
 
-{% youtube "mD1ecA94kdY", "I am in an abusive relationship with the technology industry (yes this is about AI)" %}
+{% video "youtube", "mD1ecA94kdY", "I am in an abusive relationship with the technology industry (yes this is about AI)" %}

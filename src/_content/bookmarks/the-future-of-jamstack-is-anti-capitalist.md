@@ -22,4 +22,4 @@ eleventyExcludeFromCollections: false
 
 Here's the video as well if you just wanna watch it here...
 
-{% youtube "Nn0kBdwGa78", "What's next for Jamstack | Panel discussion" %}
+{% video "youtube", "Nn0kBdwGa78", "What's next for Jamstack | Panel discussion" %}
